@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{ {../images/} }
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{Quadratic equations in one unknown}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\begin{document}
+    \section*{Learning objectives}
+    By studying this unit, we will achieve the following goals:
+    \begin{enumerate}
+        \item Solving quadratic equations by the factor methods.
+        \item Forming quadratic equations from given roots.
+        \item Solving the equation $ax^2+bx+c=0$ by plotting the graph of the parabola $y=ax^2+bx+c$ and reading the x-intercepts.
+        \item Solving quadratic equations by the quadratic formula.
+        \item Understanding the relations between the discriminant of a quadratic equation and the nature of its roots.
+        \item Solving problems involving quadratic equations.
+        \item Understanding the relations between roots and coefficients and form quadratic equations using those relations.
+        \item Appreciating the development of the number systems including the system of complex numbers.
+        \item Performing addition, subtraction, multiplication and division of complex numbers.
+    \end{enumerate}
+    \section*{Background}
+    It was a long time ago that we may not determine when did humanity started to examine quadratic equation, but it was already known to ancient Egyptians. Here, we recall some basic algebraic operations and think of a question.
+
+    We recall the algebraic expressions we learned in junior secondary, and read the following problem.
+    
+    `Given a rectangle of perimeter $p$ and area $a$, how long should its side lengths be?'
+
+    In order to solve the above problem, we may need to let $x$ and $y$ to be its side lengths. Converting the words into algebraic expressions gives us the following system of simultaneous equations:
+    \begin{align*}
+        \begin{cases}
+            x+y=p\\xy=a
+        \end{cases}
+    \end{align*}
+    
+    To be simpler, we may fix some number for $p$ and $a$, so that the problem looks easier to solve - we could literally focus on the unknowns, where we may adopt the similar deduction from the simplified case to general case.
+
+    Let's pick $p=1$ and $a=1$ for instance, which looks simpler. And now the system becomes
+    \begin{align*}
+        \begin{cases}
+            x+y=1\\xy=1
+        \end{cases}
+    \end{align*}
+
+    The genius from history thought of the solution using substitution, through transforming the system of two unknown into one first, then solve for the other using the deduced relations. Now, we may take a look at the second equation in the system, which can be modified as $$xy=1\implies y=\frac{1}{x}$$ as long as $x\neq0$ and $y\neq0$. In fact, it must not be happening since if $x=0$ or $y=0$, $xy=0$ in which it falsified the system argument. We then substitute $y=\frac{1}{x}$ into the first equation to form the new argument in one unknown:
+    \begin{align*}
+        x+(\frac{1}{x})&=1&&(\textrm{sub }y=\frac{1}{x})\\
+        x(x+\frac{1}{x})&=x(1)&&(\textrm{multiply both sides by }x)\\
+        x^2+1&=x\\
+        x^2-x+1&=0
+    \end{align*}
+    where it comes to the stopping point. This is where we starts the discussion of quadratic equation.
+
+    \section*{Factor method}
+    One observed that, to solve some quadratic equations (some but not all, you will figure out why later), we have the knowledge to construct the following: $$(x-\alpha)(x-\beta)=x^2-(\alpha+\beta)x+\alpha\beta$$ which, in fact, satisfy the form of a quadratic equation. We may also notice the fact that solving $(x-\alpha)(x-\beta)=0$ is much easier than seeing the original quadratic form. We then exhibit the following:
+    \begin{theorem}
+        If $ab=0$, then $a=0$ or $b=0$.
+    \end{theorem}
+
+    The meaning of this theorem is that, we must have either one of the factor being 0 if the product of them is zero. You may think it naturally that 0 dominant other numbers.
+
+    Therefore, we can apply this theorem to the problem $(x-\alpha)(x-\beta)=0$, and we may deduce that 
+    \begin{align*}
+        x-\alpha=0&&\textrm{or}&&x-\beta=0\\
+        x=\alpha&&\textrm{or}&&x=\beta
+    \end{align*}
+
+    The above result is cool, but the difficulties are still existing. We are still looking for the way to perform factorization. One suggested the usage of cross method.
+
+    The cross method is literally a testing by exhausting every possible results and choose the suitable one as the answer. For example, we may look at $x^2-5x+6=0$. We shall see $6=1\times 6=2\times 3=-1\times -6=-2\times -3$. As we see from previous page, we need the middle term to be $-5x$, which means $\alpha+\beta=5$. The pair that satisfies this result is 2 and 3, so the factor form becomes $(x-2)(x-3)=0$, and solved by $x=2$ or $x=3$.
+
+    But this turns out that we are in fact not seeing the quadratic equation itself but eventually returning the situation 
+    \begin{align*}
+        \begin{cases}
+            \alpha+\beta=5\\
+            \alpha\beta=6
+        \end{cases}
+    \end{align*}
+    with the method of testing, which is not a good practice, and not a reasonable system we want. We must see the factor method is not effective enough to draw out solutions for all cases. 
+
+    \section*{Forming quadratic equations from given roots}
+    Alternatively, and for the sake of seeing why factor method is not effective enough, we may acquire the concepts of forming quadratic equations using given roots.
+
+    Recalling the relation from above, we may see that $$(x-\alpha)(x-\beta)=x^2-(\alpha+\beta)x+\alpha\beta$$ gives us the concrete formula to construct a quadratic equation using given roots. We may simply plug in the roots into $\alpha$ and $\beta$ respectively. For instance, if we choose to pick complicated numbers as roots, we will see why not every quadratic equation could be solved using cross method, as we are not able to directly guess such monsters. Let's check the following:
+    \begin{enumerate}
+        \item $\alpha=\frac{2}{7}, \beta=\frac{7}{2}\implies 14x^2-53x+14=0$
+        \item $\alpha=1+\sqrt{2}, \beta=1-\sqrt{2}\implies x^2-2x-1=0$
+    \end{enumerate}
+    
+    We have no capability of these kinds of monster numbers, at least we could not directly get to the solutions. It proves the limitation of factor method.
+\end{document}
