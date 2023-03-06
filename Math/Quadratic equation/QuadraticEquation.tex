@@ -7,6 +7,7 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx,float}
 \usepackage{physics}
+\usepackage{pgfplots}
 \usepackage[a4paper, total={6in, 9in}]{geometry}
 
 \graphicspath{ {../images/} }
@@ -19,11 +20,11 @@
 \newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
 \newcommand{\id}{\mathtt{id}}
 
-\newtheorem{definition}{Definition}
-\newtheorem{theorem}[definition]{Theorem}
-\newtheorem{corollary}[definition]{Corollary}
-\newtheorem{lemma}[definition]{Lemma}
-\newtheorem{proposition}[definition]{Proposition}
+\newtheorem*{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
 \newtheorem*{remark}{Remark}
 \newtheorem*{claim}{Claim}
 \newtheorem*{example}{Example}
@@ -105,11 +106,180 @@
     \section*{Forming quadratic equations from given roots}
     Alternatively, and for the sake of seeing why factor method is not effective enough, we may acquire the concepts of forming quadratic equations using given roots.
 
-    Recalling the relation from above, we may see that $$(x-\alpha)(x-\beta)=x^2-(\alpha+\beta)x+\alpha\beta$$ gives us the concrete formula to construct a quadratic equation using given roots. We may simply plug in the roots into $\alpha$ and $\beta$ respectively. For instance, if we choose to pick complicated numbers as roots, we will see why not every quadratic equation could be solved using cross method, as we are not able to directly guess such monsters. Let's check the following:
+    Recalling the relation from above, we may see that $$(x-\alpha)(x-\beta)=x^2-(\alpha+\beta)x+\alpha\beta$$ gives us the concrete formula to construct a quadratic equation using given roots. We may simply plug the roots in $\alpha$ and $\beta$ respectively. For instance, if we choose to pick complicated numbers as roots, we will see why not every quadratic equation could be solved using cross method, as we are not able to directly guess such monsters. Let's check the following:
     \begin{enumerate}
         \item $\alpha=\frac{2}{7}, \beta=\frac{7}{2}\implies 14x^2-53x+14=0$
         \item $\alpha=1+\sqrt{2}, \beta=1-\sqrt{2}\implies x^2-2x-1=0$
     \end{enumerate}
     
     We have no capability of these kinds of monster numbers, at least we could not directly get to the solutions. It proves the limitation of factor method.
+
+    \section*{Graphical solution to quadratic equation}
+    One suggested the thought of graphing, in which we should have learned the technique of plotting a graph in junior secondary. Let's recall the memory of it first.
+
+    Consider we have a coordinate plane, and our coordinate are presented in the form of an ordered pair $(x,y)$. We set the relation $y=ax^2+bx+c$, for instance, $y=x^2-2x-1$. Observe some of the values of this equation, and we may use a table to write them down:
+    \begin{center}
+        \begin{tabular}{|c||c|c|c|c|c|}
+            \hline
+            x&-2&-1&0&1&2\\
+            \hline
+            y&7&2&-1&-2&-1\\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    We could observe that $y=2>0$ when $x=-1$, and $y=-1<0$ when $x=0$. So there must be some $x$ between $-1$ and $0$ so that $y=0$, ensured by a solid theorem called Mean Value Theorem. It turns out the solution to the quadratic equation exists. Why is this so? As we consider $y=ax^2+bx+c$, we are observing a more general case of the problem. In particular, the scenario for $y=0$ returns to the quadratic equation, and our work before provided information for the existence of $y=0$, so there is some $x$ satisfying the condition, which indeed is concluding the existence of solution.
+
+    May we complete the graphical method in following way. We first plot the points calculated before. They are $(-2,7),(-1,2),(0,-1),(1,-2),(2,-1)$ according to the table. We then have the following graph:\\
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+            axis lines = left,
+            xlabel = \(x\),
+            ylabel = {\(y\)},
+            xmin=-3, xmax=3,
+            ymin=-3, ymax=8,
+            xtick={-3,-2,-1,0,1,2,3},
+            ]
+            \addplot+ [nodes near coords,only marks,
+            point meta=explicit symbolic]
+            table [meta=label] {
+            x y label
+            -2 7 (-2,7)
+            -1 2 (-1,2)
+            0 -1 (0,-1)
+            1 -2 (1,-2)
+            2 -1 (2,-1)
+            };
+            \end{axis}
+        \end{tikzpicture}            
+    \end{center}
+
+    We shall link the points up, and with some smoothness, we may draw the graph like:
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+            axis lines = left,
+            xlabel = \(x\),
+            ylabel = {\(y\)},
+            xmin=-3, xmax=3,
+            ymin=-3, ymax=8,
+            xtick={-3,-2,-1,0,1,2,3},
+            ]
+            \addplot+ [nodes near coords,only marks,
+            point meta=explicit symbolic]
+            table [meta=label] {
+            x y label
+            -2 7 (-2,7)
+            -1 2 (-1,2)
+            0 -1 (0,-1)
+            1 -2 (1,-2)
+            2 -1 (2,-1)
+            };
+            \addplot [
+                domain=-3:3, 
+                samples=100, 
+                color=red,
+            ]
+            {x^2 - 2*x - 1};
+            \end{axis}
+        \end{tikzpicture}            
+    \end{center}
+
+    And we observe that solving $x^2-2x-1=0$ is equivalent to solve the system
+    \begin{align*}
+        \begin{cases}
+            y=x^2-2x-1\\
+            y=0
+        \end{cases}    
+    \end{align*}
+    which, we can put the line $y=0$ on the graph to search for the intersections, as we knew the solution to the system of equations are the intersections of the equations. Hence, we have\\
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+            axis lines = left,
+            xlabel = \(x\),
+            ylabel = {\(y\)},
+            xmin=-3, xmax=3,
+            ymin=-3, ymax=8,
+            xtick={-3,-2,-1,0,1,2,3},
+            ]
+            \addplot [
+                domain=-3:3, 
+                samples=100, 
+                color=blue,
+            ]
+            {x^2 - 2*x - 1};
+            \addlegendentry{$y=x^2-2x-1$}
+            \addplot[
+                domain=-3:3,
+                samples=100,
+                color=red
+            ]{0};
+            \addlegendentry{$y=0$}
+            \end{axis}
+        \end{tikzpicture}            
+    \end{center}
+
+    Here, we can observe the intersections lie in between $-1$ to $0$ and $2$ to $3$. They are the desired roots, a.k.a. solutions, to the quadratic equation. This is the visualisation to quadratic equation in some sense. But one could still not easily determine the roots of the quadratic equation explicitly from the graph. We still need other effective thinking to achieve the goal.
+
+    \section*{The quadratic formula}
+    Modern society equipped with modern tools. The explicit solution usually exists in algebraic ways, because algebraic expressions are meaningful in expressing thoughts. We could now study two of the genius thinking to solve \textbf{any} quadratic equation effectively.
+
+    \subsection*{Completing square}
+    One should see if $x^2=c$ with $c\geq0$ constant, then $x=\pm\sqrt{c}$. We adopt the meaning of $\pm$ as `plus or minus'. The historical genius thought that if they could complete a square from the original equation, then they would be able to resolve the problems. Recall the identity $$(a+b)^2\equiv a^2+2ab+b^2$$ such that we are able to see $x=a$ and remain to find what $b$ substitutes. Let's check a simpler case (monic case) of a quadratic equation: $$x^2+px+q=0$$
+
+    We shall compare the like terms and retrieve the condition $p=2b$ such that there is a complete square to simplify the variables. We have the following trick:
+    \begin{align*}
+        0=x^2+px+q&=x^2+2(\frac{p}{2})x+q\\
+        &=x^2+2(\frac{p}{2})x+(\frac{p}{2})^2-(\frac{p}{2})^2+q\\
+        &=(x+\frac{p}{2})^2+q-\frac{p^2}{4}
+    \end{align*}
+    Then,
+    \begin{align*}
+        (x+\frac{p}{2})^2&=\frac{p^2}{4}-q\\
+        (x+\frac{p}{2})^2&=\frac{p^2-4q}{4}\\
+        x+\frac{p}{2}&=\pm\sqrt{\frac{p^2-4q}{4}}\\
+        x&=\frac{-p\pm\sqrt{p^2-4q}}{2}
+    \end{align*}
+
+    We can next consider the more general case of quadratic equation $$ax^2+bx+c=0$$ with $a\neq 0$ and $b,c$ be constants. With the previous work, the simplification is simple:
+    \begin{align*}
+        ax^2+bx+c&=0\\
+        x^2+\frac{b}{a}x+\frac{c}{a}&=0\\
+        \implies x&=\frac{-b/a\pm\sqrt{(b/a)^2-4(c/a)}}{2}\\
+        &=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+    \end{align*}
+
+    Hence, the solutions could be deduced using coeficients of the quadratic equation. This is called the quadratic formula. The formula is useful and we will emphasis the content later.
+
+    \subsection*{Lagrange resolvent}
+    Another method to find the quadratic equation is by the Lagrange resolvent, which is quite abstract but powerful. We recall the relation $$(a+b)^2-(a-b)^2=4ab\implies(a-b)^2=(a+b)^2-4ab$$
+    
+    Also, from the part of forming equations, we knew that if $$x^2+px+q=(x-\alpha)(x-\beta)$$ then $$p=-(\alpha+\beta), q=\alpha\beta$$ by comparing like terms. More about coefficients and roots will be emphasis in later sections.
+
+    We may consider the following:
+    \begin{align*}
+        \begin{cases}
+            r_1=\alpha+\beta\\
+            r_2=\alpha-\beta
+        \end{cases}
+    \end{align*}
+    in which we can easily see $\alpha=\frac{r_1+r_2}{2}$ and $\beta=\frac{r_1-r_2}{2}$. It suffices to resolve $r_1$ and $r_2$. 
+
+    It is easy to see $r_1=-p$, and for $r_2$, we use the identity $r_2^2=(\alpha-\beta)^2=(\alpha+\beta)^2-4\alpha\beta=p^2-4q$. Hence, $r_2=\pm\sqrt{p^2-4q}$.
+
+    Finally, we conclude $\frac{-p\pm\sqrt{p^2-4q}}{2}$ the quadratic formula of monic case. The general case is similar to previous method.
+
+    \section*{Discriminant}
+    Throughout the process, we have the quadratic formula $$\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$ as the solution to the quadratic equation $ax^2+bx+c=0$. Observe the formula has a square root operation, which is not defining for negative numbers.
+
+    It is interesting that if we apply the above thinking to the quadratic formula, we will have 3 cases: (1) if $b^2-4ac>0$, then there are two distinct roots; (2) if $b^2-4ac=0$, there will be double roots, or we call it only one root; (3) if $b^2-4ac<0$, the square root broke, and no solution can be found. In fact, we focus on real solution and results follow.
+
+    We extensively define $\Delta=b^2-4ac$ for quadratic equation usage, and this will be convenient to deal with when there is more than one quadratic function to be considered.
+
+    As a consequence, we could now write the components separately as: for $ax^2+bx+c=0$, we have $$x=\frac{-b\pm\sqrt{\Delta}}{2a}$$ where $\Delta=b^2-4ac$ is the discriminant of the quadratic equation.
+
+    \section*{Extending to complex numbers}
+    
 \end{document}
