@@ -281,5 +281,77 @@
     As a consequence, we could now write the components separately as: for $ax^2+bx+c=0$, we have $$x=\frac{-b\pm\sqrt{\Delta}}{2a}$$ where $\Delta=b^2-4ac$ is the discriminant of the quadratic equation.
 
     \section*{Extending to complex numbers}
-    Notice that our discussion has been focused on real numbers, that we assumed that negative numbers could not be square-rooted. One observed that we are missing the completeness of rooting operations, that if we could find something that could be squaring to negative numbers, it will be perfect to talk about 
+    Notice that our discussion has been focused on real numbers, that we assumed that negative numbers could not be square-rooted. One observed that we are missing the completeness of rooting operations, that if we could find something that could be squaring to negative numbers, it will be perfect to talk about the general number of roots for quadratic equations, as well as higher degree polynomials.
+
+    As we know the roots of a quadratic equation can be presented using quadratic formula, and the halting point of the quadratic formula is when the discriminant becomes negative. How should we deal with it? One suggested that we could `create' a new symbol so that we can solve for negative square roots, i.e. $x^2=-1$, where we usually observe for the case of 1. The symbol is called an \textbf{imaginary number} $i$, such that $i^2=-1$.
+
+    Many of the public remember the symbol $i$ as $i=\sqrt{-1}$, in which many school textbooks wrote that down as the definition. However, it is wrong. We want a solution for the equation $x^2=-1$, but we don't know whether the solution is positive or negative, and in fact, we could not write about the sign of such solution as $i$ has no direction on the real line. That's why we would like to call it imaginary, because the number $i$ itself does not contain any information on positivity.
+
+    As long as we define $i$ to be the solution of $x^2=-1$, we may notice that $-i$ also satisfies the equation $x^2=-1$, as we know $(-1)^2=1$. The meaning of the negative sign here will no longer be the direction as if in real line, but we will extend its meaning by the implication of `opposite side'. We could use an argand diagram to draw it out.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{argand.jpg}
+    \end{figure}
+
+    The horizontal axis denotes the usual real line, and the vertical axis denotes the imaginary line, where the two axis spans the whole argand diagram, which we call it the \textbf{complex plane}. We may here observe that $i$ does not lie on the real line, and thus we may not be able to talk about $i=\sqrt{-1}$ because we are really unable to determine its positivity. But we could still denote the opposite direction of $i$ as $-i$, which gives a broader meaning to mathematical symbols.
+
+    For instance, we know that $i^2=-1$, so that when we are facing $x^2=-c$, where $c$ is a constant, we could write $x=i\sqrt{c}$ or $x=-i\sqrt{c}$ as our solution. This gives further information about number of roots to quadratic equation. We shall claim that any quadratic equation has at most 2 distinct roots, including complex roots. In higher mathematics, we will say it must have 2 roots, counted with multiplicity.
+
+    \section*{The development of the number systems}
+    One should feel that our number systems are developed well according to wide usages, and the development is called completion if we see the action of extending number systems as completing the tools for solving equations.
+
+    In fact, we start from natural numbers. We could only perform addition and multiplication in it. We then have negative numbers and the zero, which makes the number system being `complete' under subtraction. We then complete the number system for division, using the fractional representation, and is called the rational number system. From Pythagoras theorem, we know that there are some numbers that could not be represented using fractional form, so we call those numbers the irrational numbers. Combining rationals and irrationals gives us the usual number system, the real number system, with literally every constructible number using compass and ruler. In higher mathematics, we know that real number system is the largest number system preserves ordering. Then we develop the completion of real numbers, which is the complex number system, through the research of solving quadratic equations.
+
+    \section*{Arithmetic operations on complex numbers}
+    For arithmetic, we simply take $i$ as algebraic variables, and remember not to do magic with real numbers. There is a separation between real and imaginary part. That is, we can write complex numbers as $$z=x+yi$$ where $z$ is the complex numebr itself, $x,y$ ar real numebrs and $x=\Re{z}$, $y=\Im{z}$. And the above presentation format is called the standard form.
+    
+    The arithmetic operations goes like:
+    \begin{itemize}
+        \item Addition: $(a+bi)+(c+di)=(a+c)+(b+d)i$, which is simply adding numbers part by part.
+        \item Subtraction: $(a+bi)-(c+di)=(a-c)+(b-d)i$, similar to how addition does.
+        \item Multiplication: $(a+bi)(c+di)=ac+bci+adi+bdi^2=(ac-bd)+(bc+ad)i$.
+        \item Division: $\frac{a+bi}{c+di}=\frac{a+bi}{c+di}\cdot \frac{c-di}{c-di}=\frac{(a+bi)(c-di)}{c^2-d^2i^2}=\frac{ac+bd}{c^2+d^2}+\frac{bc-ad}{c^2+d^2}i$, where it rationalized the fraction to return to standard form.
+    \end{itemize}
+    
+    We also have some more operations to categorize complex numbers from real numbers:
+    \begin{itemize}
+        \item Complex conjugate: $\overline{z}=x-yi$. It is like to multiply $-1$ to the imaginary part.
+        \item Modulus: $|z|=\sqrt{x^2+y^2}$. It is, in some sense, the distance (length) function of a complex number.
+    \end{itemize}
+
+    \section*{Chapter exercise}
+    \subsection*{Level 1}
+    \begin{enumerate}
+        \item Solve the following quadratic equations using factor method, graphing method and quadratic formula respectively.\begin{enumerate}
+            \item $x^2-2x+1=0$
+            \item $x^2-6x+9=0$
+            \item $x^2-5x+6=0$
+            \item $x^2-6x+5=0$
+            \item $x^2-8x+12=0$
+            \item $x^2+4x-32=0$
+            \item $x^2-5x-84=0$
+            \item $2x^2-5x+2=0$
+            \item $5x^2-50x+125=0$
+            \item $7x^2+75x-22=0$
+        \end{enumerate}
+        \item Construct 3 quadratic equations that has distinct real roots, double root, and no real roots respectively. Prove the propositions using discriminant.
+        \item Solve the rectangle problem stated at the beginning of the notes.
+    \end{enumerate}
+
+    \subsection*{Level 2}
+    \begin{enumerate}
+        \item Show that if we have $ax^2+bx+c=0$ with $a\neq 0$ and $c\neq 0$, then $x\neq 0$.
+        \item Show that if $x_1$ and $x_2$ are roots of $ax^2+bx+c=0$, then $\frac{1}{x_1}$ and $\frac{1}{x_2}$ are roots of $cx^2+bx+a=0$.
+        \item Given $x_1$ and $x_2$ are roots of $ax^2+bx+c=0$, find the quadratic equation having roots $x_1^2$ and $x_2^2$.
+        \item Expand $(x+a)^3$. Discuss how to make a first step to solve cubic equation $x^3+px^2+qx+r=0$.
+        \item Given $\Delta_1$ and $\Delta_2$ the discriminants of $x^2+p_1x+q_1=0$ and $x^2+p_2x+q_2=0$ respectively. Define $\Delta_0$ be the discriminant of $x^2+(p_1+p_2)x+(q_1+q_2)=0$. Find an equation to relate $\Delta_0,\Delta_1,\Delta_2$. Discuss the condition for $\Delta_0=\Delta_1+\Delta_2$, and solve $x^2+p_1x+q_1=0$ and $x^2+p_2x+q_2=0$ under that condition.
+        \item By completing square, find the general solution of $(a+bi)z^2+(c+di)z+(e+fi)=0$. Can we represent every solution using complex numbers? This is called algebraic closure in the field of algebra.
+    \end{enumerate}
+
+    \subsection*{Challenges}
+    \begin{enumerate}
+        \item Prove the theorem in Factor method.
+        \item If $ax^2+bx+c=0$ has double root, at the same time $c$ is a root of the equation $x^2+4ax-bc=0$, solve for $x$ in terms of golden ratio $\varphi=\frac{1\pm\sqrt{5}}{2}$. 
+    \end{enumerate}
 \end{document}

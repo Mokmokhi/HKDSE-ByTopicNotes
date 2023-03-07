@@ -1,7 +1,7 @@
-PWD c:\Users\Owenm\Documents\GitHub\HKDSE-ByTopicNotes\Math\Quadratic equation
+PWD c:\Users\Owenm\Documents\GitHub\HKDSE-ByTopicNotes\Math\Functions and graphs
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Owenm\Documents\GitHub\HKDSE-ByTopicNotes\Math\Quadratic equation\QuadraticEquation.tex
-OUTPUT QuadraticEquation.log
+INPUT c:\Users\Owenm\Documents\GitHub\HKDSE-ByTopicNotes\Math\Functions and graphs\function.tex
+OUTPUT function.log
 INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
 INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
 INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
@@ -893,10 +893,10 @@ INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
-INPUT .\QuadraticEquation.aux
-INPUT QuadraticEquation.aux
-INPUT QuadraticEquation.aux
-OUTPUT QuadraticEquation.aux
+INPUT .\function.aux
+INPUT function.aux
+INPUT function.aux
+OUTPUT function.aux
 INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -918,69 +918,14 @@ INPUT D:\Program Files (x86)\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT D:\Program Files (x86)\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\pdftex\config\pdftex.map
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\sfd\ttf2pk\UGBK.sfd
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\sfd\ttf2pk\Unicode.sfd
-OUTPUT QuadraticEquation.pdf
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT ..\images\\argand.jpg
-INPUT ..\images\\argand.jpg
-INPUT ..\images\\argand.jpg
-INPUT ..\images\\argand.jpg
-INPUT ..\images\\argand.jpg
-INPUT ..\images\\argand.jpg
-INPUT ..\images\\argand.jpg
-INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
-INPUT QuadraticEquation.aux
-INPUT C:\Users\Owenm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\Owenm\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+OUTPUT function.pdf
+INPUT function.aux
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
