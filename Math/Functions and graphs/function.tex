@@ -44,4 +44,32 @@
     Nowadays, humanity rely on technology very much, and we always have to get outputs from the computers. We input something, wait for the process, and it output something. This  is called the input-process-output procedure. Throw back to a long time ago, whenever there is business, the stratgies are similar. We gave money (input) to the businessman, wait for his process, and he returned some products (output) to us. We don't know how he packed things up, but we simply accept the product and go home. This was the origination of function.
 
     A function consists of input and output, with no information about the process. Of course, in mathematics, or if we want to complete the concept of function, we still need to know about the process so that we could talk about properties of a function.
+
+    We usually define a function (naively) as $$f(x)=\textrm{some formulae consisting of }x$$
+
+    For a better intuition, we may refer to the formulae we learnt before, such as 
+    \begin{itemize}
+        \item the area formula of square: $A(\ell)=\ell^2$ where $\ell$ is the side length of a square.
+        \item the perimeter formula of rectangle: $P(\ell,w)=2(\ell+w)$ where $\ell$ denotes the length and $w$ denotes the width of the rectangle.
+        \item $\sin{x},\cos{x},\tan{x}$ as trigonometric functions giving out values according to $x$.
+    \end{itemize}
+
+    \section*{Domain of a function}
+    We always need to know if, given a function $f$ with concrete definition, where should the input be so that the function is well functioning. By concrete we mean that the output could be determined using combinations of operations explicitly. 
+    
+    We may discuss the meaning of domain by considering some extraordinary examples.
+
+    \begin{example}
+        Let $f(x)=\sqrt{x}$. The square-root operation can only be operated when $x\geq0$. It is originated from solving the equation $y^2=x$ and results in $y=\pm\sqrt{x}$. By the origination, we could see $x\geq 0$ as long as $y^2\geq 0$. This can be proven by checking $(-1)^2=1>0$. As a result, we define the domain of $f(x)=\sqrt{x}$ as $x\geq0$.
+    \end{example}
+
+    \begin{example}
+        Let $g(x)=\frac{1}{x}$. We will define its domain as $x\neq 0$. We know that whenever $x\neq 0$, $\frac{1}{x}$ is well defined and $x\cdot\frac{1}{x}=1$. But we could not define $\frac{1}{0}$. We could think of if $\frac{1}{0}$ is well defined, then we could approximate its value from both positive and negative sides to obtain the same value. But we will see $\frac{1}{0.1}=10, \frac{1}{0.01}=100,\dots,+\infty$ and $\frac{1}{-0.1}=-10, \frac{1}{-0.01}=-100,\dots,-\infty$, which differentiate apart. Unless we have a better definition to what is infinity (in fact, in the sense of complex number, we can define $\frac{1}{0}$ explicitly, with a useful restriction and property of numbers), we should write $g(x)=\frac{1}{x}$ has domain $x\neq 0$.
+    \end{example}
+
+    \begin{example}
+        Let $h(x)=\frac{1}{\sqrt{x}}$. We could see this function as a composition of two functions. First we know from $g(x)$ that we need $\sqrt{x}\neq 0$. Second, we have $\sqrt{x}\geq 0$. Combining two condition, we have to have $x>0$ as domain of $h(x)=\frac{1}{\sqrt{x}}$.
+    \end{example}
+
+    As a conclusion, we shall see the definition of domain of function is to consider the largest set of numbers that making the function of sense, that we can write out the outputs properly.
 \end{document}
