@@ -34,5 +34,47 @@
 
     Imagine we are having a slide. Place a ball on the top of the slide and let it roll down. We will always want to ask: What is the instantaneous speed of the ball at every moment? This is the origin of differentiation, and in fact we shall refer this question to some general statement: What is the \textit{rate of change} of the distance travel at every moment?
 
-    If we further convert the question to a mathematical statement, we will see that the formulation of the question be like: $$v(t)=\frac{\Delta s(t)}{\Delta t}=\frac{s(t)-s(t_0)}{t-t_0}$$ which comes from Newtonian physics with $v$ denoting the average speed of the ball at some time interval, and $s$ denoting the displacement of the ball at some moment.
+    If we further convert the question to a mathematical statement, we will see that the formulation of the question be like: $$v(t_0)=\frac{\Delta s(t)}{\Delta t}=\frac{s(t)-s(t_0)}{t-t_0}$$ which comes from Newtonian physics with $v$ denoting the average speed of the ball at some time interval, and $s$ denoting the displacement of the ball at some moment. We want, as our ultimate goal to take the estimation of the instantaneous velocity of the ball, we need the time interval to be as small as possible, and we call it \textit{infinitesimally small time interval}, in following manner: $$v(t_0)=\lim_{\Delta t \to 0}\frac{\Delta s(t)}{\Delta t}$$
+
+    We shall generalize the concept of finding the velocity of the ball to finding the rate of change of any motion, or any state-changeable object.
+
+    \section*{The definition - the first principle}
+    In this theme we shall generalize the meaning of rate of change, and we recall that one mathematical object makes sense of changing is the mathematical functions. We take functions that are continuous so that it is possible to say limit.
+
+    \begin{definition}[Continuous functions]
+        A function $f$ is continuous on a set $\Omega$ if\begin{enumerate}
+            \item it is well-defined at any point in $\Omega$, i.e. $f(x_0)$ has value whenever $x_0\in\Omega$;
+            \item $\lim_{x\to x_0}f(x)=f(x_0)$ for all $x_0\in\Omega$.
+        \end{enumerate}
+    \end{definition}
+
+    There is a more rigorous definition in higher mathematics discussion, and it is written below:
+    \begin{definition}[Continuity of real-valued function]
+        Given a function $f:(a,b) \to \mathbb{R}$. We say $f$ is continuous if for any $\epsilon>0$, there exists a $\delta>0$ such that whenever $x,y\in(a,b)$, if $|x-y|<\delta$, then $|f(x)-f(y)|<\epsilon$.
+    \end{definition}
+
+    We may ignore the latter definition first, as we don't want to encounter the complicated definition. We shall look at some common functions we may encounter later.
+
+    \begin{example}
+        Define $f(x):=|x|$ to be the absolute value function. We may check that $|x|$ is well-defined on every point in $\mathbb{R}$, and the limit is naturally obtained. In fact, we only need to check for when $x=0$: $$\lim_{x\to0^-}|x|=0=\lim_{x\to0^+}|x|$$ Then, the continuity of $f$ is checked.
+    \end{example}
+
+    We take this as an example because it is an important function in mathematics. We also acknowledge one more theorem for the sake of rigorous mathematics. The proof can be ignored, but I will put it down for your interest.
+
+    \begin{definition}[Composition of functions]
+        Define $f$, $g$ be two functions, where the range of $f$ is captured by domain of $g$, so that $g(f(x))$ is valid. We say $h(x):=g(f(x))$ is a composition of $f$ and $g$, and it can be denoted as $h=g\circ f$.
+    \end{definition}
+
+    \begin{theorem}[Compositivity of continuity]
+        Let $f,g$ be two continuous functions and $h:=g\circ f$ is valid. Then $h$ is continuous.
+    \end{theorem}
+    \begin{proof}
+        By the continuity of $f,g$, we may write down\begin{align*}
+            \forall \epsilon>0, \exists \delta_f>0, |x-y|<\delta_f \implies |f(x)-f(y)|<\epsilon\\
+            \forall \epsilon>0, \exists \delta_g>0, |u-v|<\delta_g \implies |g(u)-g(v)|<\epsilon
+        \end{align*}
+        Therefore we have for every $\epsilon>0$, there is a $\delta_g>0$ such that $|f(x)-f(y)|<\delta_g\implies|h(x)-h(y)|<\epsilon$, and a corresponding $\delta_f>0$ such that $|x-y|<\delta_f\implies|f(x)-f(y)|<\delta_g$.
+    \end{proof}
+
+    The theorem provides a strong base for differentiation, especially for some rules of differentiability.
 \end{document}
