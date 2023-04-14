@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{Differentiation and its applications}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem*{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\begin{document}
+\section*{Intuition - What is differentiation}
+    One would say that differentiation is quite difficult to learn, but we as a Math learner should see it as a simple tool that helps Understand many complicated concepts. We shall start with the intuition of differentiation.
+
+    Imagine we are having a slide. Place a ball on the top of the slide and let it roll down. We will always want to ask: What is the instantaneous speed of the ball at every moment? This is the origin of differentiation, and in fact we shall refer this question to some general statement: What is the \textit{rate of change} of the distance travel at every moment?
+
+    If we further convert the question to a mathematical statement, we will see that the formulation of the question be like: $$v(t)=\frac{\Delta s(t)}{\Delta t}=\frac{s(t)-s(t_0)}{t-t_0}$$ which comes from Newtonian physics with $v$ denoting the average speed of the ball at some time interval, and $s$ denoting the displacement of the ball at some moment.
+\end{document}
