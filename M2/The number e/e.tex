@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{The number $e$}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem*{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\begin{document}
+    \section{The normal tuition of the Euler number $e$ and natural logarithmic function $\ln x$}
+    Following our usual tuition system, we introduce the number $e$ as the definition $$e=\lim_{n\to \infty}(1+\frac{1}{n})^n=\sum_{n=0}^\infty \frac{1}{n!}$$ and define the functions \begin{align*}
+        e^x&=\lim_{n\to \infty}(1+\frac{x}{n})^n=\sum_{n=0}^\infty \frac{x^n}{n!}\\
+        \ln{x}&=u \iff x=e^u
+    \end{align*}which is, as `defined' by some natural force or by some certainty. It is also natural to write $$e^{ax}=\lim_{n\to \infty}(1+\frac{ax}{n})^n=\lim_{n\to \infty}(1+\frac{x}{n})^{an}$$ which is just like some transposition of variables. But one must ask: Why is this number defined in this fashion? Does the limit really exist? Is it unique? And the most important thing, why is the log function called `natural'?
+
+    To answer these questions, we must use some higher level techniques, and I would like to inherit the content of the book `Elementary Mathematics from a Higher Standpoint' written by F. Klein, so that the insight become more fruitful.
+
+    \section{Existence and uniqueness of $e$}
+    We first tackle the problem of its existence and uniqueness, so that we have interest in discussing the meaning of the number $e$. This time we could follow the definition on limit.
+
+    
+
+    \begin{theorem}
+        The infinite sum $\sum_{n=0}^\infty \frac{1}{n!}$ converges.
+    \end{theorem}
+    \begin{proof}
+        
+    \end{proof}
+
+    \begin{theorem}
+        The limit $\lim_{n\to \infty}(1+\frac{1}{n})^n$ exists, and is unique.
+    \end{theorem}
+    \begin{proof}
+        To prove the limit exists, we consider its boundedness and monotonicity. 
+    \end{proof}
+\end{document}
