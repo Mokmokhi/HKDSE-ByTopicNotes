@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{Solution to Calculus Test}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem*{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\begin{document}
+    \begin{enumerate}
+        \item \begin{align*}
+            f'(\pi)&=\lim_{h\to 0}\frac{f(\pi+h)-f(\pi)}{h}\\
+            &=\lim_{h\to 0}\frac{e^{\sin{\pi+h}}-e^{\sin{\pi}}}{h}\\
+            &=\lim_{h\to 0}\frac{e^{-\sin{h}}-1}{h}\\
+            &=\lim_{h\to 0}\frac{e^{-\sin{h}}-1}{-\sin{h}}\lim_{h\to 0}\frac{-\sin{h}}{h}\\
+            &=(1)(-1)\\
+            &=-1
+        \end{align*}
+        \item \begin{enumerate}
+            \item $f'(0)=\pi\cos{\pi\cdot 0}=\pi$.
+            \item We have \begin{align*}
+                g_1(0)=0, g_1'(0)=\pi\\
+                g_2(0)=0, g_2'(0)=\pi^2\\
+                g_3(0)=0, g_3'(0)=\pi^3\\
+            \end{align*}
+            so on and so forth. We shall claim $g_n'(0)=\pi^n$ and prove it by induction.
+        \end{enumerate}
+        \item $f'(x)=2x+a$ and $f"(x)=2$. Existence of extrema by derivative solvable and minima by second derivative test.
+        \item $f'(x)=3ax^2+2bx+c$. The quadratic function has no solution when $b^2<3ac$.
+        \item \begin{enumerate}
+            \item Suppose $f$ is nonzero at every point. First case: either left or right limit $\neq 0$, this immediately discontinuous. Second case: both left and right limit equal 0, but f is nonzero, then $f$ is discontinuous. Then $f$ must at some point equal 0.
+            \item \begin{enumerate}
+                \item $y-f(c)=f'(c)(x-c)$.
+                \item $x=c-\frac{f(c)}{f'(c)}$.
+            \end{enumerate}
+            \item \begin{enumerate}
+                \item \begin{align*}
+                    |x_{n+1}-x_n|&=|x_n-\frac{f(x_n)}{f'(x_n)}-x_{n-1}+\frac{f(x_{n-1})}{f'(x_{n-1})}|\\
+                    &\leq |x_n-x_{n-1}|+|\frac{f(x_n)}{f'(x_n)}-\frac{f(x_{n-1})}{f'(x_{n-1})}|\\
+                    &\to |x_n-x_{n-1}|
+                \end{align*}
+                \item $f(x_n)=0\implies x_{n+1}=x_n$.
+            \end{enumerate}
+            \item 3,3.142547,3.141593,3.141593.
+        \end{enumerate}\
+        \item [Bonus]\begin{enumerate}
+            \item $y-f(t)=f'(t)(x-t)$.
+            \item $y-f(t)=-\frac{1}{f'(t)}(x-t)$.
+            \item \begin{enumerate}
+                \item There is some point $c$ such that $f'(c)=0$, then $g'$ is not entirely finite.
+                \item $f'(x)=e^x\implies g'(x)=e^{-x}\implies g(x)=-e^{-x}$.
+                \item $(t+\frac{e^t-e^{-t}}{e^t+e^{-t}},\frac{2}{e^t+e^{-t}})$
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+\end{document}

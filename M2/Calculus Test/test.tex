@@ -33,29 +33,29 @@
     \item Let $f(x)=e^{\sin{x}}$. Compute $f'(\pi)$ from first principle.
     \item Let $f(x)=\sin{\pi x}$.\begin{enumerate}
         \item Find $f'(0)$;
-        \item Suppose $g_n$ is a sequence of functions defined by $g_1(x)=f(x)$ and $g_n(x)=f(g_{n-1}(x))$. Show that $g_n'(0)=1$ for all positive integer $n$.
+        \item Suppose $g_n$ is a sequence of functions defined by $g_1(x)=f(x)$ and $g_n(x)=f(g_{n-1}(x))$. Show that $g_n'(0)=\pi^n$ for all positive integer $n$.
     \end{enumerate}
     \item Define $f(x)=x^2+ax+b$, where $a,b$ are constants from $x$. Show that the extrema of $f$ must exist, and discuss whether it is maxima of minima of $f$.
     \item Give a condition for which $f(x)=ax^3+bx^2+cx+d$ has no extrema, where $a,b,c,d$ are real numbers and $a\neq 0$.
     \item In this question we will introduce the Newton's method of finding x-intercept. Define $f(x)$ to be a differentiable (and immediately continuous) function with respect to $x$.\begin{enumerate}
-        \item Prove that if $f$ is a continuous function, and there are points $a$ and $b$ satisfy $f(a)>0$ and $f(b)<0$ (or vice versa), then there exists a point $c$ between $a$ and $b$ such that $f(c)=0$. This is called the intermediate value theorem.
+        \item Prove that if $f$ is a continuous function, and there are points $a$ and $b$ satisfy $f(a)>0$ and $f(b)<0$ (or vice versa), then there exists a point $c$ between $a$ and $b$ such that $f(c)=0$. This is called the intermediate value theorem. [Hint: Suppose f is non-zero at every point, then we can pick some point to show the left limit does not equal to the right limit, or the left limit and the right limit both equal to 0 but the value is not 0, conclude it is not continuous.]
         \item Suppose that $f(c)\neq 0$ and $f'(c)\neq 0$. \begin{enumerate}
             \item Find the tangent line at $(c,f(c))$.
             \item Compute the x-intercept of the tangent line.
         \end{enumerate}
         \item In reference to (b), we take the form of x-intercept of tangent line, and define the recurrence relation by $$x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}$$ \begin{enumerate}
-            \item Show that $|x_{n+1}-x_n|\leq |x_n-x_{n-1}|$ for all integer $n$.
+            \item Show that $|x_{n+1}-x_n|\leq |x_n-x_{n-1}|$ for all integer $n$ when $x_n$ are near to the point of intersection.
             \item Show that if the sequence arrive at the desired x-intercept at $x_k$ for some $k$, then $x_n=x_{n+1}$ for all $n \geq k$.
         \end{enumerate}
-        \item Approximate $\pi$ correct to 6 decimal place by finding the x-intercept of $f(x)=\sin{x}$, showing the step of applying Newton's method started at $x=3$.
+        \item Approximate $\pi$ correct to 6 decimal place by finding the x-intercept of $f(x)=\sin{x}$, showing the first 3 steps of applying Newton's method started at $x=3$.
     \end{enumerate} 
     \item [Bonus] Given a differentiable function $f$.\begin{enumerate}
         \item Find the tangent line at $(t,f(t))$.
         \item Find the normal line at $(t,f(t))$.
-        \item If a function $g$ always satisfy $g'(x)=-\frac{1}{f'(x)}$, then we may call it the \textbf{normal function of $f$}.\begin{enumerate}
+        \item If a function $g$ always satisfy $g'(x)=-\frac{1}{f'(x)}$ without constant term, then we may call it the \textbf{normal function of $f$}.\begin{enumerate}
             \item Show that if $f$ has extrema, then no entirely continuous functions (continuous at every real number) can be a normal function of $f$.
             \item Show that $f(x)=e^x$ has normal function.
-            \item Derive the locus of the intersection of tangent lines of $f$ and $g$.
+            \item Derive the locus of the intersection of tangent lines of $f(x)=e^x$ and $g(x)=-e^{-x}$.
         \end{enumerate}
     \end{enumerate}
 \end{enumerate}
