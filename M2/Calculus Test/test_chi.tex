@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{M2 測驗}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem*{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+
+\begin{document}
+    全卷60分，限時24小時。請將答案以pdf形式提交。
+    \section*{函數基礎}
+
+    \begin{enumerate}
+        \item （10分）設$f:\mathbb{R}\to\mathbb{R}$為實函數。\begin{enumerate}
+            \item （4分）證明$\frac{f(x)+f(-x)}{2}$為偶函數；$\frac{f(x)-f(-x)}{2}$為奇函數。
+            \item （2分）證明對於任意實函數，均可拆分為奇函數及偶函數兩部分。
+            \item 現假設對於任意$x,y\in\mathbb{R}$，函數$f$都符合以下函數等式$$f(x+y)=f(x)f(y)$$\begin{enumerate}
+                \item （3分）證明對於任意$x\in\mathbb{R}$, $f(x)\geq 0$；
+                \item （1分）由此，證明$f$的偶函數部分必定大於或等於$0$。
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+
+    
+
+    \section*{二項式展開}
+
+    \begin{enumerate}
+        \item （5分）記$C_r^n=\frac{n!}{(n-r)!r!}$。\begin{enumerate}
+            \item （2分）求$\sum_{k=0}^n C_k^n$。
+            \item （3分）證明$\sum_{\textrm{奇數}k}^n C_k^n=\sum_{\textrm{偶數}k}^n C_k^n$。
+        \end{enumerate}
+        \item （5分）記$\begin{pmatrix}
+            n\\x_1,x_2,\dots,x_k
+        \end{pmatrix}=\frac{n!}{x_1!x_2!\cdots x_k!}$。\begin{enumerate}
+            \item （3分）證明若$x_1+x_2+\cdots+x_k=n$，$$\begin{pmatrix}
+                n\\x_1,x_2,\dots,x_k
+            \end{pmatrix}=C_{x_1}^n C_{x_2}^{n-x_1}\cdots C_{x_{k-1}}^{n-x_1-x_2-\cdots-x_{k-2}}$$
+            \item （2分）由此，證明對於任意正整數$n$，$$(a+b+c)^n=\sum_{\substack{i+j+k=n, \\ i,j,k\textrm{為非負整數}}} \begin{pmatrix}
+                n\\i,j,k
+            \end{pmatrix}a^ib^jc^k$$
+        \end{enumerate}
+    \end{enumerate}
+
+    \section*{數學歸納法}
+
+    \begin{enumerate}
+        \item （2分）利用數學歸納法，證明對於任意正整數$n$，$n!<n^n$。
+        \item （3分）利用數學歸納法，證明對於任意正整數$n$及$-1<r<1$，$$\sum_{k=0}^\infty C_k^{n+k-1}r^k=\frac{(-1)^{n-1}}{(1-r)^n}$$
+    \end{enumerate}
+
+    \section*{三角函數}
+
+    \begin{enumerate}
+        \item （7分）設$i^2=1$。證明對於任意整數$n$，$$(\cos(\theta)+i\sin(\theta))^n=\cos(n\theta)+i\sin(n\theta)$$
+        \item （8分）考慮$\cos(72)=\cos(108)$，證明$\cos(18)=\frac{\sqrt{5}-1}{2}$。
+    \end{enumerate}
+
+    \section*{極限}
+
+    \begin{enumerate}
+        \item （5分）設$f,g,h$為實函數，并且$f(0)=g(0)=h(0)=0$。若$\lim_{x\to 0}\frac{f(x)-g(x)}{h(x)}=9$，求$$\lim_{x\to 0}\frac{e^{f(x)}-e^{g(x)}}{\sin(h(x))}$$
+    \end{enumerate}
+
+    \section*{微分原理}
+
+    \begin{enumerate}
+        \item （10分）設$f(x)=\sin{\pi x}$。\begin{enumerate}
+            \item （2分）求$f'(0)$;
+            \item （8分）設$(g_n)$為函數數列，定義$g_1(x)=f(x)$及$g_n(x)=f(g_{n-1}(x))$。證明對於任意正整數$n$，$g_n'(0)=\pi^n$。
+        \end{enumerate}
+        \item （5分）寫出令$f(x)=ax^3+bx^2+cx+d$沒有頂點的條件，已知$a,b,c,d$均爲實數及$a\neq 0$。
+    \end{enumerate}
+\end{document}
