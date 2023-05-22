@@ -1,0 +1,417 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{M2 測驗題解}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem*{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \section*{函數基礎}
+
+    我們必須瞭解題目當中字眼的含義，才能更好的利用定義進行推論。
+
+    \begin{definition}[實數域]
+        $\mathbb{R}$為包含所有實數之集合。
+    \end{definition}
+
+    \begin{definition}[函數、定義域、值域]
+        若$f$為函數，擁有定義域$D$和值域$R$，則以下三種敘述均可描述$f$：\begin{itemize}
+            \item $f:D\to R$;
+            \item $x\in D$, $f(x)\in R$, $x\mapsto f(x)$;
+            \item $f(x)=$以$x$建立/表述的算式。
+        \end{itemize}
+    \end{definition}
+
+    \begin{definition}[實函數]
+        若$f:D\to R$為函數，值域$R=\mathbb{R}$(或$R\subset \mathbb{R}$)，我們稱之爲\textbf{實函數}。
+    \end{definition}
+
+    \begin{definition}[奇偶函數]
+        設$f:D\to R$為函數。\begin{itemize}
+            \item 若對於所有$x\in D$，均使$f(-x)=-f(x)$成立，則$f$為\textbf{奇函數}；
+            \item 若對於所有$x\in D$，均使$f(-x)=f(x)$成立，則$f$為\textbf{偶函數}。
+        \end{itemize}
+    \end{definition}
+
+    \begin{example}
+        \begin{enumerate}
+            \item $f(x)=x$時，$f$為奇函數；
+            \item 對於整數$n$，$f(x)=x^{2n+1}$時，$f$為奇函數；
+            \item $f(x)=x^2$時，$f$為偶函數；
+            \item 對於整數$n$，$f(x)=x^{2n}$時，$f$為偶函數；
+            \item $\sin{x},\tan{x},\csc{x},\cot{x}$均爲奇函數；
+            \item $\cos{x},\sec{x}$均爲偶函數。
+        \end{enumerate}
+    \end{example}
+
+    \begin{proposition}
+        設$f_1,f_2$為奇函數，$g_1,g_2$為偶函數。則以下成立：\begin{itemize}
+            \item $f_1\circ f_2$是奇函數；
+            \item $f_1\circ g_1$是偶函數；
+            \item $g_1\circ f_2$是偶函數；
+            \item $g_1\circ g_2$是偶函數。
+        \end{itemize}
+    \end{proposition}
+
+    \begin{proof}
+        設$f_1,f_2$為奇函數，$g_1,g_2$為偶函數。則\begin{itemize}
+            \item $f_1(-x)=-f_1(x)$;
+            \item $f_2(-x)=-f_2(x)$;
+            \item $g_1(-x)=g_1(x)$;
+            \item $g_2(-x)=g_2(x)$。
+        \end{itemize}
+        由此可得\begin{itemize}
+            \item $(f_1\circ f_2)(-x)=f_1(f_2(-x))=f_1(-f_2(x))=-f_1(f_2(x))=-(f_1\circ f_2)(x)$;
+            \item $(f_1\circ g_2)(-x)=f_1(g_2(-x))=f_1(g_2(x))=(f_1\circ g_2)(x)$;
+            \item $(g_1\circ f_2)(-x)=g_1(f_2(-x))=g_1(-f_2(x))=g_1(f_2(x))=(g_1\circ f_2)(x)$;
+            \item $(g_1\circ g_2)(-x)=g_1(g_2(-x))=g_1(g_2(x))=(g_1\circ g_2)(x)$。
+        \end{itemize}
+    \end{proof}
+
+    \subsection*{題解}
+
+    \begin{enumerate}
+        \item （10分）設$f:\mathbb{R}\to\mathbb{R}$為實函數。\begin{enumerate}
+            \item （4分）證明$\frac{f(x)+f(-x)}{2}$為偶函數；$\frac{f(x)-f(-x)}{2}$為奇函數。\begin{sol}
+                設$g(x)=\frac{f(x)+f(-x)}{2}$及$h(x)=\frac{f(x)-f(-x)}{2}$。\begin{align*}
+                    g(-x)&=\frac{f(-x)+f(-(-x))}{2}\\
+                    &=\frac{f(-x)+f(x)}{2}\\
+                    &=\frac{f(x)+f(-x)}{2}\\
+                    &=g(x)\\
+                    h(-x)&=\frac{f(-x)-f(-(-x))}{2}\\
+                    &=\frac{f(-x)-f(x)}{2}\\
+                    &=-\frac{f(x)-f(-x)}{2}\\
+                    &=-h(x)\\
+                \end{align*}
+                由此，$g$為偶函數，$h$為奇函數。
+            \end{sol}
+            \item （2分）證明對於任意實函數，均可拆分為奇函數及偶函數兩部分。\begin{sol}
+                對於任意函數$f$，均可寫成$$f(x)=\frac{f(x)+f(-x)}{2}+\frac{f(x)-f(-x)}{2}$$
+                根據(a)，$\frac{f(x)+f(-x)}{2}$為偶函數，$\frac{f(x)-f(-x)}{2}$為奇函數，證畢。
+            \end{sol}
+            \item 現假設對於任意$x,y\in\mathbb{R}$，函數$f$都符合以下函數等式$$f(x+y)=f(x)f(y)$$\begin{enumerate}
+                \item （3分）證明對於任意$x\in\mathbb{R}$, $f(x)\geq 0$；\begin{sol}
+                    對於任意$x\in\mathbb{R}$，均有$$f(x)=f(2\cdot\frac{x}{2})=f(\frac{x}{2}+\frac{x}{2})=f(\frac{x}{2})f(\frac{x}{2})=(f(\frac{x}{2}))^2$$
+                    $f$爲實函數，則對於任意$y\in\mathbb{R}$，$(f(y))^2\geq 0$。
+                    
+                    故此，代$y=\frac{x}{2}\in\mathbb{R}$可得$f(x)\geq 0$。
+                \end{sol}
+                \item （1分）由此，證明$f$的偶函數部分必定大於或等於$0$。\begin{sol}
+                    根據(c)i及(b)，$$\frac{f(x)+f(-x)}{2}\geq \frac{0+0}{2}=0$$
+                \end{sol}
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+
+    \section*{二項式展開}
+
+    \begin{theorem}[二項式定理]
+        對於$a,b\in\mathbb{R}$及整數$n\geq 0$，$$(a+b)^n=\sum_{r=0}^{n}C_r^n a^rb^{n-r}$$其中$C_r^n=\frac{n!}{r!(n-r)!}$。
+    \end{theorem}
+
+    \subsection*{題解}
+
+    \begin{enumerate}
+        \item （5分）記$C_r^n=\frac{n!}{(n-r)!r!}$。\begin{enumerate}
+            \item （2分）求$\sum_{k=0}^n C_k^n$。\begin{sol}
+                考慮$(1+1)^n=\sum_{k=0}^{n}(1)^k(1)^{n-k}$，可得$$\sum_{k=0}^{n}C_k^n=2^n$$
+            \end{sol}
+            \item （3分）證明$\sum_{\textrm{奇數}k}^n C_k^n=\sum_{\textrm{偶數}k}^n C_k^n$。\begin{sol}
+                考慮$(1-1)^n=\sum_{k=0}^{n}(-1)^k(1)^{n-k}=$，可得$$\sum_{\textrm{偶數}k}C_k^n-\sum_{\textrm{奇數}k}C_k^n=0$$
+
+                由此，$$\sum_{\textrm{奇數}k}^n C_k^n=\sum_{\textrm{偶數}k}^n C_k^n$$
+            \end{sol}
+        \end{enumerate}
+        \item （5分）記$\begin{pmatrix}
+            n\\x_1,x_2,\dots,x_k
+        \end{pmatrix}=\frac{n!}{x_1!x_2!\cdots x_k!}$。\begin{enumerate}
+            \item （3分）證明若$x_1+x_2+\cdots+x_k=n$，$$\begin{pmatrix}
+                n\\x_1,x_2,\dots,x_k
+            \end{pmatrix}=C_{x_1}^n C_{x_2}^{n-x_1}\cdots C_{x_{k-1}}^{n-x_1-x_2-\cdots-x_{k-2}}$$\begin{sol}
+                設$P(k)$為上述設理。
+
+                對於$k=2$，$P(2)$：$x_1+x_2=n$
+
+                左方$=\begin{pmatrix}
+                    n\\x_1,x_2
+                \end{pmatrix}=\frac{n!}{x_1!x_2!}=\frac{n!}{x_1!(n-x_2)!}=C_{x_1}^n=$右方
+
+                $\therefore P(2)$成立。
+
+                假設$P(m)$對某正整數$m$成立，即若$x_1+x_2+\cdots+x_m=n$，$$\begin{pmatrix}
+                    n\\x_1,x_2,\dots,x_m
+                \end{pmatrix}=C_{x_1}^n C_{x_2}^{n-x_1}\cdots C_{x_{m-1}}^{n-x_1-x_2-\cdots-x_{m-2}}$$
+
+                當$k=m+1$時，$x_1+x_2+\cdots+x_m+x_{m+1}=n$，\begin{align*}
+                    \textrm{左方}&=\begin{pmatrix}
+                        n\\x_1,x_2,\dots,x_m,x_{m+1}
+                    \end{pmatrix}\\&=\frac{n!}{x_1!x_2!\cdots x_m!x_{m+1}!}\\
+                    &=\frac{n!}{x_1!(n-x_1)!}\begin{pmatrix}
+                        n-x_1\\x_2,\dots,x_m,x_{m+1}
+                    \end{pmatrix}\\
+                    &=C_{x_1}^n C_{x_2}^{n-x_1} C_{x_3}^{n-x_1-x_2}\cdots C_{x_m}^{n-x_1-x_2-\cdots-x_{m-1}}\\
+                    &=\textrm{右方}
+                \end{align*}
+
+                $\therefore$若$P(m)$成立，則$P(m+1)$成立。
+
+                $\therefore$根據數學歸納法原理，$P(k)$對所有整數$k\geq 2$成立。
+            \end{sol}
+            \item （2分）由此，證明對於任意正整數$n$，$$(a+b+c)^n=\sum_{\substack{i+j+k=n, \\ i,j,k\textrm{為非負整數}}} \begin{pmatrix}
+                n\\i,j,k
+            \end{pmatrix}a^ib^jc^k$$\begin{sol}
+                根據(a)，取$k=3$，則\begin{align*}
+                    (a+b+c)^n&=\sum_{m=0}^{n}C_m^n a^m(b+c)^{n-m}\\
+                    &=\sum_{m=0}^{n}C_m^n a^m\sum_{r=0}^{n-m}C_r^{n-m} b^r c^{n-m-r}\\
+                    &=\sum_{m=0}^{n}\sum_{r=0}^{n-m}C_m^n C_r^{n-m} a^m b^r c^{n-m-r}
+                \end{align*}
+                若設$i=m,j=r,k=n-m-r$,則$i+j+k=n$。由此可得$$(a+b+c)^n=\sum_{\substack{i+j+k=n, \\ i,j,k\textrm{為非負整數}}} \begin{pmatrix}
+                    n\\i,j,k
+                \end{pmatrix}a^ib^jc^k$$
+            \end{sol}
+        \end{enumerate}
+    \end{enumerate}
+
+    \section*{數學歸納法}
+
+    回憶數學歸納法原則的定理：
+
+    \begin{axiom}[一般歸納法]
+        設$P(n)$為對於整數$n\geq 1$的設理。若以下條件同時成立：\begin{itemize}
+            \item $P(1)$成立；
+            \item 若$P(n)$成立，則$P(n+1)$成立。
+        \end{itemize}
+        則$P(n)$對所有整數$n\geq 1$成立。
+    \end{axiom}
+
+    \begin{corollary}[強歸納法]
+        設$P(n)$為對於整數$n\geq 1$的設理。若以下條件同時成立：\begin{itemize}
+            \item $P(1)$成立；
+            \item 若$P(1),P(2),\dots,P(n)$成立，則$P(n+1)$成立。
+        \end{itemize}
+        則$P(n)$對所有整數$n\geq 1$成立。
+    \end{corollary}
+
+    \subsection*{題解}
+
+    \begin{enumerate}
+        \item （2分）利用數學歸納法，證明對於任意正整數$n$，$n!\leq n^n$。\begin{sol}
+            設$P(n)$為上述設理。
+
+                對於$n=1$，$P(1)$：
+
+                左方$=1!=1=1^1=$右方
+
+                $\therefore P(1)$成立。
+
+                假設$P(k)$對某正整數$k$成立，即$$k!\leq k^k$$
+
+                當$n=k+1$時，\begin{align*}
+                    \textrm{左方}&=(k+1)!\\
+                    &=(k+1)k!\\
+                    &\leq (k+1)k^k\\
+                    &\leq (k+1)(k+1)^k\\
+                    &=(k+1)^{k+1}
+                    &=\textrm{右方}
+                \end{align*}
+
+                $\therefore$若$P(k)$成立，則$P(k+1)$成立。
+
+                $\therefore$根據數學歸納法原理，$P(n)$對所有整數$n\geq 1$成立。
+        \end{sol}
+        \item （3分）利用數學歸納法，證明對於任意正整數$n$及$-1<r<1$，$$\sum_{k=0}^\infty C_k^{n+k-1}r^k=\frac{1}{(1-r)^n}$$\begin{sol}
+            設$P(n)$為上述設理。
+
+                對於$n=1$，$P(1)$：
+
+                左方$=\sum_{k=0}^\infty C_k^{1+k-1}r^k=\sum_{k=0}^{\infty}C_k^kr^k=\sum_{k=0}^{\infty}r^k=\frac{1}{1-r}=\frac{1}{(1-r)^1}=$右方
+
+                $\therefore P(1)$成立。
+
+                假設$P(m)$對某正整數$m$成立，即$$\sum_{k=0}^\infty C_k^{m+k-1}r^k=\frac{1}{(1-r)^m}$$
+
+                當$n=m+1$時，由於$C_r^n+C_{r+1}^n=C_{r+1}^{n+1}$，\begin{align*}
+                    \textrm{左方}&=\sum_{k=0}^\infty C_k^{m+k}r^k\\
+                    &=1+\sum_{k=1}^\infty C_k^{m+k}r^k\\
+                    &=1+\sum_{k=1}^\infty (C_k^{m+k-1}+C_{k-1}^{m+k-1})r^k\\
+                    &=1+\sum_{k=1}^\infty C_k^{m+k-1}r^k+\sum_{k=1}^\infty C_{k-1}^{m+k-1}r^k\\
+                    &=\sum_{k=0}^\infty C_k^{m+k-1}r^k+r\sum_{k=0}^\infty C_k^{m+k}r^k\\
+                    (1-r)\sum_{k=0}^\infty C_k^{m+k}r^k&=\sum_{k=0}^\infty C_k^{m+k-1}r^k\\
+                    &=\frac{1}{(1-r)^m}\\
+                    \textrm{左方}&=\sum_{k=0}^\infty C_k^{m+k}r^k\\
+                    &=\frac{1}{(1-r)^{m+1}}\\
+                    &=\textrm{右方}
+                \end{align*}
+
+                $\therefore$若$P(m)$成立，則$P(m+1)$成立。
+
+                $\therefore$根據數學歸納法原理，$P(n)$對所有整數$n\geq 1$成立。
+        \end{sol}
+    \end{enumerate}
+
+    \section*{三角函數}
+
+    \begin{proposition}[公式]
+        三角恆等式：\\
+        \begin{itemize}
+            \item $\sin(a\pm b)=\sin{a}\cos{b}\pm\sin{b}\cos{a}$；
+            \item $\cos(a\pm b)=\cos{a}\cos{b}\mp\sin{a}\sin{b}$。
+        \end{itemize}
+    \end{proposition}
+
+    \subsection*{題解}
+
+    \begin{enumerate}
+        \item （7分）設$i^2=1$。證明對於任意整數$n$，$$(\cos(\theta)+i\sin(\theta))^n=\cos(n\theta)+i\sin(n\theta)$$\begin{sol}
+            當$n=0$時，$(\cos(\theta)+i\sin(\theta))^0=1=\cos(0)+i\sin(0)$；
+
+            當$n\geq 1$時，利用數學歸納法：設$P(n)$為上述設理。
+
+            對於$n=1$，$P(1)$：
+
+            左方$=(\cos(\theta)+i\sin(\theta))^1=\cos{\theta}+i\sin{\theta}=$右方
+
+            $\therefore P(1)$成立。
+
+            假設$P(m)$對某所有正整數$m$成立，即$$(\cos(\theta)+i\sin(\theta))^m=\cos(m\theta)+i\sin(m\theta)$$
+
+            當$n=m+1$時，\begin{align*}
+                \textrm{左方}&(\cos(\theta)+i\sin(\theta))^{m+1}\\
+                &=(\cos(\theta)+i\sin(\theta))^m(\cos(\theta)+i\sin(\theta))\\
+                &=(\cos(m\theta)+i\sin(m\theta))(\cos(\theta)+i\sin(\theta))\\
+                &=\cos(m\theta)\cos(\theta)-\sin(m\theta)\sin(\theta)+i\sin(m\theta)\cos(\theta)+i\sin(\theta)\cos(m\theta)\\
+                &=\cos((m+1)\theta)+i\sin((m+1)\theta)\\
+                &=\textrm{右方}
+            \end{align*}
+
+            $\therefore$若$P(m)$成立，則$P(m+1)$成立。
+
+            $\therefore$根據數學歸納法原理，$P(n)$對所有整數$n\geq 1$成立。
+
+            當$n\leq -1$時，考慮$(\cos(\theta)+i\sin(\theta))^n(\cos(\theta)+i\sin(\theta))^{-n}=1$，則\begin{align*}
+                (\cos(\theta)+i\sin(\theta))^n&=\frac{1}{(\cos(\theta)+i\sin(\theta))^{-n}}\\
+                &=\frac{1}{\cos(-n\theta)+i\sin(-n\theta)}\\
+                &=\frac{1}{\cos(n\theta)-i\sin(n\theta)}\\
+                &=\frac{\cos(n\theta)+i\sin(n\theta)}{\cos^2(n\theta)+\sin^2(n\theta)}\\
+                &=\cos(n\theta)+i\sin(n\theta)
+            \end{align*}
+
+            $\therefore$$P(n)$對所有整數$n$成立。
+        \end{sol}
+        \item （8分）考慮$\sin(36^\circ)=\cos(54^\circ)$，求$\sin(18^\circ)$。\begin{sol}
+            由恆等式，可得：\begin{align*}
+                \cos{2\theta}&=2\cos^2{\theta}-1\\
+                \cos{3\theta}&=\cos{2\theta}\cos{\theta}-\sin{2\theta}\sin{\theta}\\
+                &=(2\cos^2{\theta}-1)\cos{\theta}-(2\sin{\theta}\cos{\theta})\sin{\theta}\\
+                &=2\cos^3{\theta}-\cos{\theta}-2(1-\cos^2{\theta})\cos{\theta}\\
+                &=4\cos^3{\theta}-3\cos{\theta}
+            \end{align*}
+            因此，\begin{align*}
+                \sin(36^\circ)&=\cos(54^\circ)\\
+                2\sin(18^\circ)\cos(18^\circ)&=4\cos^3(18^\circ)-3\cos{18^\circ}\\
+                4\cos^2(18^\circ)-2\sin(18^\circ)-3&=0\\
+                4\sin^2(18^\circ)+2\sin(18^\circ)-1&=0\\
+                \sin(18^\circ)&=\frac{-2\pm\sqrt{4+4\cdot 4}}{8}\\
+                \sin(18^\circ)&=\frac{\sqrt{5}-1}{4}
+            \end{align*}
+        \end{sol}
+    \end{enumerate}
+
+    \section*{極限}
+
+    \begin{proposition}[公式]
+        極限公式：\begin{itemize}
+            \item $\lim_{x\to 0}\frac{\sin{x}}{x}=1$；
+            \item $\lim_{x\to 0}\frac{e^x-1}{x}=1$。
+        \end{itemize}
+    \end{proposition}
+
+    \subsection*{題解}
+
+    \begin{enumerate}
+        \item （5分）設$f,g,h$為實函數，并且$f(0)=g(0)=h(0)=0$。若$\lim_{x\to 0}\frac{f(x)-g(x)}{h(x)}=9$，求$$\lim_{x\to 0}\frac{e^{f(x)}-e^{g(x)}}{\sin(h(x))}$$\begin{sol}
+            \begin{align*}
+                \lim_{x\to 0}\frac{e^{f(x)}-e^{g(x)}}{\sin(h(x))}&=\lim_{x\to 0}(e^{g(x)}\cdot\frac{e^{f(x)-g(x)}-1}{f(x)-g(x)}\cdot\frac{h(x)}{\sin{h(x)}}\cdot\frac{f(x)-g(x)}{h(x)})\\
+                &=9
+            \end{align*}
+        \end{sol}
+    \end{enumerate}
+
+    \section*{微分原理}
+
+    \begin{proposition}[基本原理]
+        若$f$為可微函數，則$f'$為$f$的導數，且$$f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$$
+    \end{proposition}
+
+    \begin{proposition}[基本導數]
+        按照基本原理可直接得出以下函數之導數：\begin{itemize}
+            \item $\dfrac{d}{dx}x^n=nx^{n-1}$；
+            \item $\dfrac{d}{dx}e^x=e^x$；
+            \item $\dfrac{d}{dx}\sin{x}=\cos{x}$；
+            \item $\dfrac{d}{dx}\cos{x}=-\sin{x}$。
+        \end{itemize}
+    \end{proposition}
+
+    \begin{proposition}[求導法則]
+        對於可微函數$f,g$：\begin{itemize}
+            \item 綫性：$(af\pm bg)'=af'\pm bg'$，其中$a,b$為常數；
+            \item 乘積：$(fg)'=f'g+fg'$；
+            \item 商：$(f/g)'=\frac{f'g-fg'}{g^2}$；
+            \item 複合：$(f(g(x)))'=f'(g(x))g'(x)$。
+        \end{itemize}
+    \end{proposition}
+
+    \begin{proposition}[頂點]
+        若$f$為可微函數，當$f'(x)=0$時，$f$可處於頂點。
+    \end{proposition}
+
+    \subsection*{題解}
+
+    \begin{enumerate}
+        \item （10分）設$f(x)=\sin{\pi x}$。\begin{enumerate}
+            \item （2分）求$f'(0)$;\begin{sol}
+                \begin{align*}
+                    f'(0)&=\lim_{h\to 0}\frac{\sin{\pi h}-\sin{\pi 0}}{h}\\
+                    &=\lim_{h\to 0}\frac{\sin{\pi h}}{\pi h}\pi\\
+                    &=\pi
+                \end{align*}
+            \end{sol}
+            \item （8分）設$(g_n)$為函數數列，定義$g_1(x)=f(x)$及$g_n(x)=f(g_{n-1}(x))$。證明對於任意正整數$n$，$g_n'(0)=\pi^n$。\begin{sol}
+                \begin{align*}
+                    &g_1'(0)=f'(0)=\pi=\pi^1\\
+                    &\textrm{設}g_k'(0)=\pi^k\textrm{則}\\
+                    &g_{k+1}'(0)=(f(g_k(0)))'=f'(g_k(0))g_k'(0)=\pi\cdot\pi^k=\pi^{k+1}
+                \end{align*}
+            \end{sol}
+        \end{enumerate}
+        \item （5分）寫出令$f(x)=ax^3+bx^2+cx+d$沒有頂點的條件，已知$a,b,c,d$均爲實數及$a\neq 0$。\begin{sol}
+            若$f'(x)=3ax^2+2bx+c\neq 0$，則$$\Delta<0\implies 4b^2<12ac\iff b^2<3ac$$
+        \end{sol}
+    \end{enumerate}
+\end{document}
