@@ -127,6 +127,23 @@
                 \end{sol}
             \end{enumerate}
         \end{enumerate}
+        \item （10分）設$f:\mathbb{R}\to\mathbb{R}$為實函數。\begin{enumerate}
+            \item （3分）證明若$f(ix)=if(x)$，則$f$為奇函數。\begin{sol}
+                $f(-x)=f(i^2x)=if(ix)=i^2f(x)=-f(x)$。
+            \end{sol}
+            \item （7分）設$F(x)=f(x)+if(-x)$，而且$F(x+y)=F(x)+F(y)$。\begin{enumerate}
+                \item （3分）求$f(0)$。\begin{sol}
+                    考慮$F(x)=F(x+0)=F(x)+F(0)$，可得$F(0)=0$。
+
+                    因此$0=F(0)=f(0)+if(0)$，可得$f(0)=0$。
+                \end{sol}
+                \item （4分）證明$f$為奇函數。\begin{sol}
+                    考慮$0=F(0)=F(x-x)=F(x)+F(-x)$，可得$F(-x)=-F(x)$。
+
+                    因此$f(-x)=\Re{F(-x)}=\Re{-F(x)}=-f(x)$。
+                \end{sol}
+            \end{enumerate}
+        \end{enumerate}
     \end{enumerate}
 
     \section*{二項式展開}
@@ -151,7 +168,7 @@
         \item （5分）記$\begin{pmatrix}
             n\\x_1,x_2,\dots,x_k
         \end{pmatrix}=\frac{n!}{x_1!x_2!\cdots x_k!}$。\begin{enumerate}
-            \item （3分）證明若$x_1+x_2+\cdots+x_k=n$，$$\begin{pmatrix}
+            \item （3分）證明對於任意正整數$n$及$k\geq 2$，若$x_1+x_2+\cdots+x_k=n$，$$\begin{pmatrix}
                 n\\x_1,x_2,\dots,x_k
             \end{pmatrix}=C_{x_1}^n C_{x_2}^{n-x_1}\cdots C_{x_{k-1}}^{n-x_1-x_2-\cdots-x_{k-2}}$$\begin{sol}
                 設$P(k)$為上述設理。
@@ -237,7 +254,7 @@
                     &=(k+1)k!\\
                     &\leq (k+1)k^k\\
                     &\leq (k+1)(k+1)^k\\
-                    &=(k+1)^{k+1}
+                    &=(k+1)^{k+1}\\
                     &=\textrm{右方}
                 \end{align*}
 
@@ -288,7 +305,7 @@
     \subsection*{題解}
 
     \begin{enumerate}
-        \item （7分）設$i^2=1$。證明對於任意整數$n$，$$(\cos(\theta)+i\sin(\theta))^n=\cos(n\theta)+i\sin(n\theta)$$\begin{sol}
+        \item （7分）設$i^2=-1$。證明對於任意整數$n$，$$(\cos(\theta)+i\sin(\theta))^n=\cos(n\theta)+i\sin(n\theta)$$\begin{sol}
             當$n=0$時，$(\cos(\theta)+i\sin(\theta))^0=1=\cos(0)+i\sin(0)$；
 
             當$n\geq 1$時，利用數學歸納法：設$P(n)$為上述設理。
@@ -361,6 +378,39 @@
                 &=9
             \end{align*}
         \end{sol}
+        \item （15分）設$f:\mathbb{R}\to \mathbb{R}$為實函數，定義$$f(x)=\begin{cases}
+            x\sin{\frac{1}{x}}&x\neq 0\\
+            0&x=0
+        \end{cases}$$\begin{enumerate}
+            \item （3分）求$\displaystyle \lim_{x\to 0}f(x)$，並證明$f$為連續函數。\begin{sol}
+                \begin{align*}
+                    0\leq \lim_{x\to 0}f(x)&=\lim_{x\to 0}x\sin{\frac{1}{x}}\leq \lim_{x\to 0}x=0\\
+                    \lim_{x\to 0}f(x)&=0
+                \end{align*}
+            \end{sol}
+            \item （4分）求$\displaystyle \lim_{x\to \infty}f(x)$及$\displaystyle \lim_{x\to -\infty}f(x)$。\begin{sol}
+                \begin{align*}
+                    \lim_{x\to \infty}f(x)&=\lim_{x\to \infty}x\sin{\frac{1}{x}}\\
+                    &=\lim_{x\to \infty}\frac{\sin{\frac{1}{x}}}{\frac{1}{x}}\\
+                    &=\lim_{h\to 0}\frac{\sin{h}}{h}\\
+                    &=1\\
+                    \lim_{x\to -\infty}f(x)&=\lim_{x\to -\infty}x\sin{\frac{1}{x}}\\
+                    &=\lim_{x\to -\infty}\frac{\sin{\frac{1}{x}}}{\frac{1}{x}}\\
+                    &=\lim_{h\to 0}\frac{\sin{h}}{h}\\
+                    &=1
+                \end{align*}
+            \end{sol}
+            \item （8分）設$\displaystyle g(x)=\lim_{h\to 0}\frac{f(x+h)-f(x-h)}{2h}$，證明$\lim_{x\to 0}g(x)$無法被定義。\begin{sol}
+                \begin{align*}
+                    g(x)&=\lim_{h\to 0}\frac{f(x+h)-f(x-h)}{2h}\\
+                    &=\lim_{h\to 0}\frac{(x+h)\sin{\frac{1}{x+h}}-(x-h)\sin{\frac{1}{x-h}}}{2h}\\
+                    &=\lim_{h\to 0}\frac{2x\sin{\frac{h}{x^2-h^2}}\cos{\frac{x}{x^2-h^2}}-2h\sin{\frac{x}{x^2-h^2}}\cos{\frac{h}{x^2-h^2}}}{2h}\\
+                    &=\lim_{x\to 0}(\frac{x\cos{\frac{x}{x^2-h^2}}}{x^2-h^2}-\sin{\frac{x}{x^2-h^2}}\cos{\frac{h}{x^2-h^2}})\\
+                    &=\frac{1}{x}\cos{\frac{1}{x}}-\sin{\frac{1}{x}}
+                \end{align*}
+                因爲$\lim_{x\to 0}g(x)=\infty$，所以$\lim_{x\to 0}g(x)$無法被定義。
+            \end{sol}
+        \end{enumerate}
     \end{enumerate}
 
     \section*{微分原理}
@@ -388,7 +438,7 @@
     \end{proposition}
 
     \begin{proposition}[頂點]
-        若$f$為可微函數，當$f'(x)=0$時，$f$可處於頂點。
+        若$f$為可微函數，當$f'(x)=0$而$f''(x)\neq 0$時，$f$可處於頂點。
     \end{proposition}
 
     \subsection*{題解}
@@ -412,6 +462,13 @@
         \end{enumerate}
         \item （5分）寫出令$f(x)=ax^3+bx^2+cx+d$沒有頂點的條件，已知$a,b,c,d$均爲實數及$a\neq 0$。\begin{sol}
             若$f'(x)=3ax^2+2bx+c\neq 0$，則$$\Delta<0\implies 4b^2<12ac\iff b^2<3ac$$
+            或若$f'(x)=0$而$f''(x)=0$,則\begin{align*}
+                \begin{cases}
+                    x&=\frac{-b\pm\sqrt{b^2-3ac}}{3a}\\
+                    x&=\frac{-b}{3a}
+                \end{cases}\implies b^2=3ac
+            \end{align*}
+            因此，$b^2\leq 3ac$為$f$沒有頂點的條件。
         \end{sol}
     \end{enumerate}
 \end{document}

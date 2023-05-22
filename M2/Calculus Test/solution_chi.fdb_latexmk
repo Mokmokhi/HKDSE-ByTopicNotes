@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1684753483 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Calculus Test/solution_chi.tex" "solution_chi.pdf" "solution_chi" 1684753487
+["pdflatex"] 1684777923 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Calculus Test/solution_chi.tex" "solution_chi.pdf" "solution_chi" 1684777926
   "C:/Users/Owenm/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1664299329 14064 d51fe1154d65350215fea1f8fca0323d ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1677243002 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
@@ -62,6 +62,7 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai7b.tfm" 1247154072 1172 24787e626a4658aa0badf81d8fb205c2 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai7d.tfm" 1247154072 1172 45192779e9504ae3973fc200c85c4e92 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai7f.tfm" 1247154072 1172 8888f21d9f0fb36dc88978ac8b858141 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai80.tfm" 1247154072 1172 de132e72cc42494d494f75f2ab7eafa3 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai82.tfm" 1247154072 1172 94b76a81366dd427039de2d5a937845c ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai86.tfm" 1247154072 1172 0db5113966119eb5ab52d9bbe6979f53 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai88.tfm" 1247154072 1172 f678f2e4330ffe085177dd8b1cd53ca6 ""
@@ -101,6 +102,7 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6c.tfm" 1247154072 1172 da6dd37ba8d24cc1a36aa510c8ac56f9 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6e.tfm" 1247154072 1172 42ca517602ab12cb60a5174be463b80a ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong70.tfm" 1247154072 1172 65f78ffa41ce8b45f91f362b219db0e7 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong71.tfm" 1247154072 1172 ac9bcd3bdbf45728188f855f6ba1cf2f ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong72.tfm" 1247154072 1172 3988931ed4f7026bbecd81a5650d7854 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong73.tfm" 1247154072 1172 fd0cb8a34c74e2d27b9d6ceb95f2f96d ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong74.tfm" 1247154072 1172 9c784b2c832c4124ae2a4cc407dc47a5 ""
@@ -110,6 +112,7 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong7a.tfm" 1247154072 1172 f8375167264f31944f2511f305972138 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong7b.tfm" 1247154072 1172 11ddb11e6fbba10bd31629a75b0d10c6 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong7d.tfm" 1247154072 1172 4025c8a91771a1668f52295903b8fc89 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong7e.tfm" 1247154072 1172 c58659cf25f9ba2d1c548f969b16af79 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong7f.tfm" 1247154072 1172 4fb15fe26ea6dad0b54285fd42fdf8b9 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong80.tfm" 1247154072 1172 bc023ebc9b121bce07974f18a4be28bc ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong82.tfm" 1247154072 1172 97758becb7742daa4b4c772be88e9009 ""
@@ -348,9 +351,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Calculus Test/solution_chi.tex" 1684753479 18805 dbe846b5f54a75d29156650149637b3e ""
-  "solution_chi.aux" 1684753486 113 4749f889d66ee3cc8986402620fc63a9 "pdflatex"
-  "solution_chi.tex" 1684753479 18805 dbe846b5f54a75d29156650149637b3e ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Calculus Test/solution_chi.tex" 1684777920 22174 170aeaa53c7017bfd1ec9e8a5f667e6a ""
+  "solution_chi.aux" 1684777925 113 e5a4f982d4391f19cad3edc2957e860f "pdflatex"
+  "solution_chi.tex" 1684777920 22174 170aeaa53c7017bfd1ec9e8a5f667e6a ""
   (generated)
   "solution_chi.aux"
   "solution_chi.log"
