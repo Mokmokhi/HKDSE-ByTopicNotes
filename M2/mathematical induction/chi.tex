@@ -1,0 +1,204 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{數學歸納法}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \section*{求和記法}
+
+    求和記法的作用：避免混淆
+
+    \begin{definition}[求和號]
+        設$a_1,a_2,\dots,a_n$是一組數，他們的\textbf{和}記爲$\displaystyle \sum_{i=1}^{n}a_i$，即$$\sum_{i=1}^{n}a_i=a_1+a_2+\cdots+a_n.$$
+    \end{definition}
+
+    $\displaystyle \sum_{i=1}^{n}a_i$也可寫作$\displaystyle \sum_{1\leq i\leq n} a_i$ 或 $\displaystyle\sum_{i\in S}a_i$，其中$S=\{1,2,\dots,n\}$；此爲\textbf{條件式求和}，即將符合條件的項加總。
+
+    當$i$的範圍不言自明（或無須定義）時，還可簡記為$\displaystyle\sum_{i}a_i$或$\sum_{} a_i$。
+
+    \begin{remark}[啞變量]
+        求和變量$i$也可用$j,k$等其他代數表示，就像函數的自變量除了用$x$表示也可用$u,t$等代數表示一樣。因此，$$a_1+a_2+\cdots+a_n=\sum_{i=1}^{n}a_i=\sum_{j=1}^{n}a_j=\sum_{s=1}^{n}a_s=\sum_{X=1}^{n}a_X=\cdots$$
+    \end{remark}
+
+    \begin{definition}[雙重求和號]
+        若$a_{ij}$是同時由$i,j$定義的一組數，即若
+        \begin{center}
+            \begin{tabular}{c c c c}
+                $a_{11}$&$a_{12}$&$a_{13}$&$\cdots$\\
+                $a_{21}$&$a_{22}$&$a_{23}$&$\cdots$\\
+                $a_{31}$&$a_{32}$&$a_{33}$&$\cdots$\\
+                $\vdots$&$\vdots$&$\vdots$&$\ddots$
+            \end{tabular}
+        \end{center}
+        爲一陣列數，則$$\sum_{i=1}^{m}\sum_{j=1}^{n}a_{ij}=\sum_{i=1}^{m}A_i$$其中$\displaystyle A_i=\sum_{j}^{n}a_{ij}$。
+    \end{definition}
+
+    雙重求和的順序由内而外，表示先對$j$進行求和，再對$i$進行求和。
+
+    \begin{proposition}[求和號的性質]
+        求和號有以下性質：\begin{enumerate}
+            \item $\displaystyle\sum_{i=1}^{n}a_i+\sum_{i=1}^{n}b_i=\sum_{i=1}^{n}(a_i+b_i)$；
+            \item $\displaystyle c\sum_{i=1}^{n}a_i=\sum_{i=1}^{n}ca_i$；
+            \item $\displaystyle (\sum_{i=1}^{n}a_i)(\sum_{j=1}^{m}b_j)=\sum_{i=1}^{n}\sum_{j=1}^{m}a_ib_j$；
+            \item $\displaystyle \sum_{i=1}^{n}\sum_{j=1}^{m}a_ib_j=\sum_{j=1}^{m}\sum_{i=1}^{n}a_ib_j$。
+        \end{enumerate}
+    \end{proposition}
+
+    \begin{proof}
+        留作習題，利用數學歸納法證明。
+    \end{proof}
+
+    \section*{求積記法}
+
+    \begin{definition}[求積號]
+        設$a_1,a_2,\dots,a_n$是一組數，他們的\textbf{積}記爲$\displaystyle \prod_{i=1}^{n}a_i$，即$$\prod_{i=1}^{n}a_i=a_1a_2\cdots a_n.$$
+    \end{definition}
+
+    與求和號相同，$\displaystyle \prod_{i=1}^{n}a_i$也可寫作$\displaystyle \prod_{1\leq i\leq n} a_i$ 或 $\displaystyle\prod_{i\in S}a_i$，其中$S=\{1,2,\dots,n\}$；此爲\textbf{條件式求積}，即將符合條件的項乘積。
+
+    當$i$的範圍不言自明（或無須定義）時，還可簡記為$\displaystyle\prod_{i}a_i$或$\prod_{} a_i$。
+
+    \begin{definition}[雙重求積號]
+        若$a_{ij}$是同時由$i,j$定義的一組數，即若
+        \begin{center}
+            \begin{tabular}{c c c c}
+                $a_{11}$&$a_{12}$&$a_{13}$&$\cdots$\\
+                $a_{21}$&$a_{22}$&$a_{23}$&$\cdots$\\
+                $a_{31}$&$a_{32}$&$a_{33}$&$\cdots$\\
+                $\vdots$&$\vdots$&$\vdots$&$\ddots$
+            \end{tabular}
+        \end{center}
+        爲一陣列數，則$$\prod_{i=1}^{m}\prod_{j=1}^{n}a_{ij}=\prod_{i=1}^{m}A_i$$其中$\displaystyle A_i=\prod_{j=1}^{n}a_{ij}$。
+    \end{definition}
+
+    \begin{proposition}[求積號的性質]
+        求積號有以下性質：\begin{enumerate}
+            \item $\displaystyle c^n\prod_{i=1}^{n}a_i=\prod_{i=1}^{n}ca_i$；
+            \item $\displaystyle (\prod_{i=1}^{n}a_i)(\prod_{j=1}^{m}b_j)=\prod_{i=1}^{n+m}c_i$，其中$c_i=\begin{cases}
+                a_i&i\leq n\\
+                b_{i-n}&i>n 
+            \end{cases}$；
+            \item $\displaystyle \prod_{i=1}^{n}\prod_{j=1}^{m}a_ib_j=\prod_{j=1}^{m}\prod_{i=1}^{n}a_ib_j$。
+        \end{enumerate}
+    \end{proposition}
+
+    \begin{proof}
+        留作習題，利用數學歸納法證明。
+    \end{proof}
+
+    \section*{數學歸納法原理}
+
+    \begin{definition}[數學陳述]
+        \textbf{數學陳述}是一種有關數學，並且能分辨對錯的句子。
+    \end{definition}
+
+    \begin{example}
+        $1=2$是一種錯誤的數學陳述。
+    \end{example}
+
+    \begin{example}
+        $1+2=3$是一種正確的數學陳述。
+    \end{example}
+
+    \begin{definition}[判斷式]
+        \textbf{判斷式}是一種牽涉變量，有待判斷對錯的數學句子。若闡明變量的值，則判斷式可有特定結果，並成爲數學陳述。
+    \end{definition}
+
+    \begin{example}
+        $P(x)$為包含變量$x$的判斷式。
+    \end{example}
+    
+    \begin{example}
+        $P(x,y)$為包含變量$x,y$的判斷式。
+    \end{example}
+
+    \begin{axiom}[數學歸納法基本原理]
+        設$P(n)$為對於整數$n\geq 1$的判斷式。若以下條件同時成立：\begin{itemize}
+            \item $P(1)$成立；
+            \item 若$P(n)$成立，則$P(n+1)$成立。
+        \end{itemize}
+        則$P(n)$對所有整數$n\geq 1$成立。
+    \end{axiom}
+
+    \begin{example}
+        設$P(n)$代表對假設$\displaystyle\sum_{i=1}^{n}i=\frac{n(n+1)}{2}$的值。
+
+        $P(1):\sum_{i=1}^{1}i=1=\frac{1(1+1)}{2}$成立。
+
+        假定$P(k)$對某正整數$k$成立，則對於$P(k+1):$
+
+        $$\sum_{i=1}^{k+1}i=(k+1)+\sum_{i=1}^{k}i=(k+1)+\frac{k(k+1)}{2}=(k+1)(1+\frac{k}{2})=\frac{(k+1)(k+2)}{2}$$
+
+        $\therefore$根據基本原理，$P(n)$對於所有正整數$n$成立。
+    \end{example}
+
+    \section*{習題}
+
+    \begin{enumerate}
+        \item 證明求和號的性質：\begin{enumerate}
+            \item $\displaystyle\sum_{i=1}^{n}a_i+\sum_{i=1}^{n}b_i=\sum_{i=1}^{n}(a_i+b_i)$；
+            \item $\displaystyle c\sum_{i=1}^{n}a_i=\sum_{i=1}^{n}ca_i$；
+            \item $\displaystyle (\sum_{i=1}^{n}a_i)(\sum_{j=1}^{m}b_j)=\sum_{i=1}^{n}\sum_{j=1}^{m}a_ib_j$；
+            \item $\displaystyle \sum_{i=1}^{n}\sum_{j=1}^{m}a_ib_j=\sum_{j=1}^{m}\sum_{i=1}^{n}a_ib_j$。
+        \end{enumerate}
+        \item 證明求積號的性質：\begin{enumerate}
+            \item $\displaystyle c^n\prod_{i=1}^{n}a_i=\prod_{i=1}^{n}ca_i$；
+            \item $\displaystyle (\prod_{i=1}^{n}a_i)(\prod_{j=1}^{m}b_j)=\prod_{i=1}^{n+m}c_i$，其中$c_i=\begin{cases}
+                a_i&i\leq n\\
+                b_{i-n}&i>n 
+            \end{cases}$；
+            \item $\displaystyle \prod_{i=1}^{n}\prod_{j=1}^{m}a_ib_j=\prod_{j=1}^{m}\prod_{i=1}^{n}a_ib_j$。
+        \end{enumerate}
+        \item 證明以下等式：\begin{enumerate}
+            \item $\displaystyle(\sum_{i=1}^{m}a_ic^i)(\sum_{i}^{n}b_ic^i)=\sum_{k=0}^{m+n}(\sum_{i+j=k}a_ib_j)c^k$；
+            \item $\displaystyle a^n-b^n=(a-b)\sum_{i=0}^{n-1}a^{n-1-i}b^i$；
+            \item $\displaystyle (\sum_{i=0}^{n-1}a_i)(\sum_{i=0}^{n+1}a_i)=(\sum_{i=0}^{n}a_i)^2-a^n$；
+            \item $\displaystyle (a_1+a_2+\cdots+a_m)^n=\sum_{i_1+i_2+\cdots+i_m=n}\frac{n!}{i_1!i_2!\cdots i_m!}a_1^{i_1}a_2^{i_2}\cdots a_m^{i_m}$。
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item 證明對於所有正整數$n$，$\displaystyle \sum_{i=1}^{n}i^2=\frac{n(n+1)(2n+1)}{6}$；
+            \item 由此，求\begin{enumerate}
+                \item $101^2+102^2+103^2+\cdots+200^2$；
+                \item $20^2+22^2+24^2+\cdots+40^2$；
+                \item $3^2+5^2+7^2+\cdots+31^2$。
+            \end{enumerate}
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item 證明對於所有正整數$n$，$\displaystyle \sum_{i=0}^{n}3^i=\frac{3^n-1}{2}$；
+            \item 證明對於所有正整數$n$，$\displaystyle \sum_{i=1}^{n}i3^i=\frac{3^{n+1}(2n-1)+3}{4}$；
+            \item 由此，求$1\times 1+2\times 3+3\times 3^2+4\times 3^3+\cdots +(n+1)\times 3^n$的公式。
+        \end{enumerate}
+        \item 證明對於所有正整數$n$，$\displaystyle \frac{1}{2\cdot 5}+\frac{1}{5\cdot 8}+\frac{1}{8\cdot 11}+\cdots+\frac{1}{(6n-1)(6n+2)}=\frac{n}{6n+2}$。
+        \item 證明對於任意正整數$n$，$n!\leq n^n$。
+        \item 證明對於任意正整數$n$及$-1<r<1$，$$\sum_{k=0}^\infty C_k^{n+k-1}r^k=\frac{1}{(1-r)^n}$$
+    \end{enumerate}
+    
+\end{document}
