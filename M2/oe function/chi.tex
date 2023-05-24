@@ -133,4 +133,103 @@
     \begin{corollary}
         任何實函數都是複函數。
     \end{corollary}
+
+    由於逆函數的存在性並非必然，故需要作出新的猜想以求其存在條件。實際上，若逆函數存在，則必然牽涉其作爲函數的基本性質。
+
+    於是我們給出以下條件：
+
+    若$f$的逆函數$g$存在，則下列條件成立：\begin{enumerate}
+        \item 存在性：若$y\in R$，則$g(y)\in D$；
+        \item 唯一性：若$x,y\in R$且$x=y$，則$g(x)=g(y)$。
+    \end{enumerate}
+    並且$f(g(y))=y,g(f(x))=x$。
+
+    於是，從$f$的角度定義：
+
+    \begin{definition}[單射性]
+        設$f:D\to R$為函數。若當$f(x)=f(y)$時，可令$x=y$，則稱$f$為\textbf{單射函數}。
+    \end{definition}
+    
+    \begin{definition}[滿射性]
+        設$f:D\to R$為函數。若當$y\in R$時，存在至少一個$x\in D$符合$y=f(x)$，則稱$f$為\textbf{滿射函數}。
+    \end{definition}
+
+    以上定義分別對應逆函數的唯一性與存在性。因此若定義：
+
+    \begin{definition}[雙射性]
+        函數$f$若同時滿足單射性與滿射性，則稱其爲\textbf{雙射函數}。
+    \end{definition}
+
+    \begin{theorem}
+        函數$f$的逆函數存在當且僅當$f$為雙射函數。
+    \end{theorem}
+
+    對於擁有逆函數的函數$f$，我們稱$f$是\textbf{可逆的}，並記其逆函數作$f^{-1}$。
+
+    \begin{example}
+        證明$f:\mathbb{R}\to\mathbb{R}$且$x\mapsto x^{2n+1}$為可逆函數，其中$n$為非負整數，並求出$f^{-1}$。
+
+        \begin{sol}
+            證明$f$的單射性：\begin{align*}
+                f(x)&=f(y)\\
+                x^{2n+1}&=y^{2n+1}\\
+                x^{2n+1}-y^{2n+1}&=0\\
+                (x-y)\sum_{i=0}^{2n}x^i y^{2n-i}&=0
+            \end{align*}
+            考慮$f(x)=f(y)$則$sgn(x)=sgn(y)$，其中$sgn(x):=\begin{cases}
+                +1&x>0\\
+                0&x=0\\
+                -1&x<0
+            \end{cases}$。故$sgn(x^i y^{2n-i})=(\pm 1)^{2n}=+1$。因此$\displaystyle\sum_{i=0}^{2n}x^i y^{2n-i}\neq 0$，則$x=y$。
+
+            證明$f$的滿射性：對於任意$y$，存在$x=y^{\frac{1}{2n+1}}$滿足$x^{2n+1}=y$。
+
+            因此，$f$是雙射的，擁有逆函數$f^{-1}$。$(f^{-1}(y))^{2n+1}=y$，故$f^{-1}(y)=y^{\frac{1}{2n+1}}$。
+        \end{sol}
+    \end{example}
+
+    \section*{奇偶函數}
+
+    \begin{definition}[奇偶函數]
+        設$f:D\to R$為函數。\begin{itemize}
+            \item 若對於所有$x\in D$，均使$f(-x)=-f(x)$成立，則$f$為\textbf{奇函數}；
+            \item 若對於所有$x\in D$，均使$f(-x)=f(x)$成立，則$f$為\textbf{偶函數}。
+        \end{itemize}
+    \end{definition}
+
+    \begin{example}
+        \begin{enumerate}
+            \item $f(x)=x$時，$f$為奇函數；
+            \item 對於整數$n$，$f(x)=x^{2n+1}$時，$f$為奇函數；
+            \item $f(x)=x^2$時，$f$為偶函數；
+            \item 對於整數$n$，$f(x)=x^{2n}$時，$f$為偶函數；
+            \item $\sin{x},\tan{x},\csc{x},\cot{x}$均爲奇函數；
+            \item $\cos{x},\sec{x}$均爲偶函數。
+        \end{enumerate}
+    \end{example}
+
+    \begin{proposition}
+        設$f_1,f_2$為奇函數，$g_1,g_2$為偶函數。則以下成立：\begin{itemize}
+            \item $f_1\circ f_2$是奇函數；
+            \item $f_1\circ g_1$是偶函數；
+            \item $g_1\circ f_2$是偶函數；
+            \item $g_1\circ g_2$是偶函數。
+        \end{itemize}
+    \end{proposition}
+
+    \begin{proof}
+        設$f_1,f_2$為奇函數，$g_1,g_2$為偶函數。則\begin{itemize}
+            \item $f_1(-x)=-f_1(x)$;
+            \item $f_2(-x)=-f_2(x)$;
+            \item $g_1(-x)=g_1(x)$;
+            \item $g_2(-x)=g_2(x)$。
+        \end{itemize}
+        由此可得\begin{itemize}
+            \item $(f_1\circ f_2)(-x)=f_1(f_2(-x))=f_1(-f_2(x))=-f_1(f_2(x))=-(f_1\circ f_2)(x)$;
+            \item $(f_1\circ g_2)(-x)=f_1(g_2(-x))=f_1(g_2(x))=(f_1\circ g_2)(x)$;
+            \item $(g_1\circ f_2)(-x)=g_1(f_2(-x))=g_1(-f_2(x))=g_1(f_2(x))=(g_1\circ f_2)(x)$;
+            \item $(g_1\circ g_2)(-x)=g_1(g_2(-x))=g_1(g_2(x))=(g_1\circ g_2)(x)$。
+        \end{itemize}
+    \end{proof}
+
 \end{document}

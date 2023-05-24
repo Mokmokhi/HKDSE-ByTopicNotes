@@ -173,7 +173,7 @@
     \begin{corollary}[強歸納法原理]
         設$P(n)$為對於整數$n\geq 1$的判斷式。若以下條件同時成立：\begin{itemize}
             \item 基：$P(1)$成立；
-            \item 渡：若$P(k)$對某$1\leq k\leq n$成立，則$P(n+1)$成立。
+            \item 渡：若$P(k)$對所有$1\leq k\leq n$成立，則$P(n+1)$成立。
         \end{itemize}
         則$P(n)$對所有整數$n\geq n_0$成立。
     \end{corollary}
@@ -219,7 +219,14 @@
             \item 由此，求$1\times 1+2\times 3+3\times 3^2+4\times 3^3+\cdots +(n+1)\times 3^n$的公式。
         \end{enumerate}
         \item 證明對於所有正整數$n$，$\displaystyle \frac{1}{2\cdot 5}+\frac{1}{5\cdot 8}+\frac{1}{8\cdot 11}+\cdots+\frac{1}{(6n-1)(6n+2)}=\frac{n}{6n+2}$。
-        \item 證明對於任意正整數$n$，$n!\leq n^n$。
+        \item 證明對於任意正整數$n$，\begin{enumerate}
+            \item $n<2^n$；
+            \item $n!\leq n^n$。
+        \end{enumerate}
+        \item 證明對於任意正整數$n\geq 4$，$2^n<n!$。
+        \item 證明對於任意正整數$n\geq 5$，$2n-3<2^{n-2}$。
+        \item 求出所有正整數$n$使得$n^2<2^n$，並予以證明。
+        \item 求最大的正整數$m$使得對於所有正整數$n$，$n^3-n$均可被$m$整除，並予以證明。
         \item 證明對於任意正整數$n$及$-1<r<1$，$$\sum_{k=0}^\infty C_k^{n+k-1}r^k=\frac{1}{(1-r)^n}$$
     \end{enumerate}
     
