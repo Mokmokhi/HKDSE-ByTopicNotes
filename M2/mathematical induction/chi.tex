@@ -143,7 +143,7 @@
     \begin{axiom}[數學歸納法基本原理]
         設$P(n)$為對於整數$n\geq 1$的判斷式。若以下條件同時成立：\begin{itemize}
             \item $P(1)$成立；
-            \item 若$P(n)$成立，則$P(n+1)$成立。
+            \item 若$P(n)$對某$n\geq 1$成立，則$P(n+1)$成立。
         \end{itemize}
         則$P(n)$對所有整數$n\geq 1$成立。
     \end{axiom}
@@ -159,6 +159,28 @@
 
         $\therefore$根據基本原理，$P(n)$對於所有正整數$n$成立。
     \end{example}
+
+    若歸納起點並非$n=1$，則可拓展至以下原理：
+
+    \begin{axiom}[數學歸納法第二原理]
+        設$P(n)$為對於整數$n\geq n_0$的判斷式。若以下條件同時成立：\begin{itemize}
+            \item 基：$P(n_0)$成立；
+            \item 渡：若$P(n)$對某$n\geq n_0$成立，則$P(n+1)$成立。
+        \end{itemize}
+        則$P(n)$對所有整數$n\geq n_0$成立。
+    \end{axiom}
+
+    \begin{corollary}[強歸納法原理]
+        設$P(n)$為對於整數$n\geq 1$的判斷式。若以下條件同時成立：\begin{itemize}
+            \item 基：$P(1)$成立；
+            \item 渡：若$P(k)$對某$1\leq k\leq n$成立，則$P(n+1)$成立。
+        \end{itemize}
+        則$P(n)$對所有整數$n\geq n_0$成立。
+    \end{corollary}
+
+    \begin{remark}
+        強歸納法原理等價於數學歸納法基本原理。
+    \end{remark}
 
     \section*{習題}
 
