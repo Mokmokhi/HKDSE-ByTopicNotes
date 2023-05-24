@@ -1,0 +1,114 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{函數}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \section*{函數基礎}
+
+    \begin{definition}[元素]
+        設$X$為數集，則$$x\in X$$表示$x$為數集$X$的成員；相反，$x\notin X$表示$x$并非數集$X$的成員。 
+    \end{definition}
+
+    \begin{example}
+        設$X=\{1,2,3,4,5\}$，則$1\in X$，$0\notin X$.
+    \end{example}
+
+    \begin{definition}[數集等價]
+        設$X$及$Y$皆爲數集，其中$Y$為$X$重複附帶$x\in X$，則寫$Y=X$.
+    \end{definition}
+
+    \begin{example}
+        設$X=\{1,2,3,4,5\}$及$Y=\{1,1,2,3,4,5\}$，則$X=Y$.
+    \end{example}
+
+    \begin{definition}[子集]
+        設$X$及$Y$皆爲數集，則$$X\subset Y$$ 表示所有$X$的成員都是$Y$的成員。我們稱$X$為$Y$的子集。
+    \end{definition}
+
+    \begin{example}
+        Let $X=\{1,2,3\}$, $Y=\{1,2,3,4\}$, $Z=\{0,1\}$. Then $X\subset Y$ but $Z\not \subset Y$.
+    \end{example}
+
+    \begin{proposition}
+        Suppose $X,Y$ and $Z$ are sets. Then the followign holds:\begin{enumerate}
+            \item $X\subset X$.
+            \item If $X\subset Y$ and $Y\subset Z$, then $X\subset Z$.
+            \item If $X\subset Y$ and $Y\subset X$, then $X=Y$.
+        \end{enumerate}
+    \end{proposition}
+
+    \begin{proof}
+        \begin{enumerate}
+            \item Every $x\in X$ is trivially in $X$. The conclusion is obvious.
+            \item If $X\subset Y$ and $Y\subset Z$, then we have two assumption:\begin{enumerate}
+                \item Every $x\in X$ is in $Y$.
+                \item Every $y\in Y$ is in $Z$.
+            \end{enumerate}
+            Then every $x$ in $X$ is in $Y$, and also in $Z$. So $x\in Z$ and concludes that $X\subset Z$.
+            \item Every $x\in X$ is also in $Y$, So $Y$ might contain some element out of $X$. But $Y\subset X$, so $Y$ contains no element out of $X$. Therefore, $Y=X$. 
+        \end{enumerate}
+    \end{proof}
+
+    We always need to write set as a collection of objects, which may have infinite number of elements. We introduce a new notation using property verification.
+
+    \begin{definition}
+        Given a set $X$ and a property $P$, there is a unique subset of $X$ whose elements are all elements $x\in X$ for which $P(x)$ is true. We write the subset as $$\{x\in X|P(x)\}\textrm{ or }\{x\in X:P(x)\}$$
+    \end{definition}
+
+    \begin{example}
+        $\{x\in\mathbb{R}:x^2-2=0\}$ is equivalent to the set $\{-\sqrt{2},\sqrt{2}\}$.
+    \end{example}
+
+    \begin{definition}[Empty set]
+        If a set $X$ contains no element, we call it an empty set, and denote by $\emptyset$.
+    \end{definition}
+
+    \begin{definition}[數域]
+        設$S$為數集，至少包含兩個數，並且關於加、減、乘、除四則運算封閉，則稱$S$為\textbf{數域}。
+    \end{definition}
+
+    \begin{example}[實數域]
+        $\mathbb{R}$為包含所有實數之集合，亦是數域。
+    \end{example}
+
+    \begin{definition}[函數、定義域、值域]
+        若$f$為函數，擁有定義域$D$和值域$R$，則以下三種敘述均可描述$f$：\begin{itemize}
+            \item $f:D\to R$;
+            \item $x\in D$, $f(x)\in R$, $x\mapsto f(x)$;
+            \item $f(x)=$以$x$建立/表述的算式。
+        \end{itemize}
+    \end{definition}
+
+    \begin{definition}[實函數]
+        若$f:D\to R$為函數，值域$R=\mathbb{R}$(或$R\subset \mathbb{R}$)，我們稱之爲\textbf{實函數}。
+    \end{definition}
+\end{document}
