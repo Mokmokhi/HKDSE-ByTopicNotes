@@ -199,10 +199,26 @@
 
     \begin{example}
         \begin{enumerate}
-            \item $f(x)=x$時，$f$為奇函數；
-            \item 對於整數$n$，$f(x)=x^{2n+1}$時，$f$為奇函數；
-            \item $f(x)=x^2$時，$f$為偶函數；
-            \item 對於整數$n$，$f(x)=x^{2n}$時，$f$為偶函數；
+            \item $f(x)=x$時，$f$為奇函數；\begin{sol}
+                \begin{align*}
+                    f(-x)=-x=-f(x)
+                \end{align*}
+            \end{sol}
+            \item 對於整數$n$，$f(x)=x^{2n+1}$時，$f$為奇函數；\begin{sol}
+                \begin{align*}
+                    f(-x)=(-x)^{2n+1}=-x^{2n+1}=-f(x)
+                \end{align*}
+            \end{sol}
+            \item $f(x)=x^2$時，$f$為偶函數；\begin{sol}
+                \begin{align*}
+                    f(-x)=x=f(x)
+                \end{align*}
+            \end{sol}
+            \item 對於整數$n$，$f(x)=x^{2n}$時，$f$為偶函數；\begin{sol}
+                \begin{align*}
+                    f(-x)=(-x)^{2n}=x^{2n}=f(x)
+                \end{align*}
+            \end{sol}
             \item $\sin{x},\tan{x},\csc{x},\cot{x}$均爲奇函數；
             \item $\cos{x},\sec{x}$均爲偶函數。
         \end{enumerate}
@@ -231,5 +247,35 @@
             \item $(g_1\circ g_2)(-x)=g_1(g_2(-x))=g_1(g_2(x))=(g_1\circ g_2)(x)$。
         \end{itemize}
     \end{proof}
+
+    \begin{remark}
+        奇偶函數在微積分有重大作用，應熟練並一眼看穿。
+    \end{remark}
+
+    \section*{習題}
+
+    \begin{enumerate}
+        \item 設$f:\mathbb{R}\to\mathbb{R}$為實函數。\begin{enumerate}
+            \item 證明$\frac{f(x)+f(-x)}{2}$為偶函數；$\frac{f(x)-f(-x)}{2}$為奇函數。
+            \item 證明對於任意實函數，均可拆分為奇函數及偶函數兩部分。
+            \item 現假設對於任意$x,y\in\mathbb{R}$，函數$f$都符合以下函數等式$$f(x+y)=f(x)f(y)$$\begin{enumerate}
+                \item 證明對於任意$x\in\mathbb{R}$, $f(x)\geq 0$；
+                \item 由此，證明$f$的偶函數部分必定大於或等於$0$。
+            \end{enumerate}
+        \end{enumerate}
+        \item 設$f:\mathbb{R}\to\mathbb{R}$為實函數。\begin{enumerate}
+            \item 證明若$f(ix)=if(x)$，則$f$為奇函數。
+            \item 設$F(x)=f(x)+if(-x)$，而且$F(x+y)=F(x)+F(y)$。\begin{enumerate}
+                \item 求$f(0)$。
+                \item 證明$f$為奇函數。
+            \end{enumerate}
+        \end{enumerate}
+        \item 判斷下列結果為何種函數：\begin{enumerate}
+            \item 奇函數相加；
+            \item 偶函數相加；
+            \item 奇函數相乘；
+            \item 偶函數相乘。
+        \end{enumerate}
+    \end{enumerate}
 
 \end{document}
