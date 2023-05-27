@@ -1,0 +1,167 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{F4 M2 Level 5 solution}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem*{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\newenvironment*{sol}{\par \textbf{Solution}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \begin{enumerate}
+        \item \begin{sol}
+            Let $P(n)$ be the proposition $$\sum_{k=1}^{n}T_k=n[(n+1)!]$$ where $T_n=(n^2+1)(n!)$ for any positive integer $n$.
+
+            For $P(1)$:\begin{align*}
+                \textrm{L.H.S.}&=\sum_{k=1}^{1}T_k\\
+                &=T_1\\
+                &=(1^2+1)(1!)\\
+                &=2\\
+                \textrm{R.H.S.}&=1[(1+1)!]\\
+                &=2
+            \end{align*}
+            $\therefore$ L.H.S=R.H.S.
+
+            $\therefore P(1)$ is true.
+            
+            Assume $P(m)$ is true for some positive integer $m$, i.e. $$\sum_{k=1}^{m}T_k=m[(m+1)!]$$
+
+            Then for $P(m+1)$:\begin{align*}
+                \sum_{k=1}^{m+1}T_k&=m[(m+1)!]+[(m+1)^2+1][(m+1)!]\\
+                &=[m^2+2m+2+m][(m+1)!]\\
+                &=(m+1)(m+2)[(m+1)!]\\
+                &=(m+1)[(m+2)!]
+            \end{align*}
+
+            $\therefore P(m+1)$ is true when $P(m)$ is true.
+
+            Thus, by the principle of Mathematical Induction, $P(n)$ is true for all positive integer $n$.
+        \end{sol}
+        \item \begin{enumerate}
+            \item \begin{sol}
+                Let $P(n)$ be the proposition $$A_n=(-1)^{n-1}B_n$$ where $A_n=\sum_{k=1}^{n}(-1)^{k-1}k^2$ and $B_n=\dfrac{n(n+1)}{2}$ for any positive integer $n$.
+        
+                For $P(1)$:\begin{align*}
+                    \textrm{L.H.S.}&=A_1\\
+                    &=\sum_{k=1}^{1}(-1)^{k-1}k^2\\
+                    &=(-1)^0 1^2\\
+                    &=(-1)^0 1\\
+                    &=(-1)^{1-1}\dfrac{1(1+1)}{2}\\
+                    &=\textrm{R.H.S.}
+                \end{align*}
+                $\therefore$ L.H.S=R.H.S.
+        
+                $\therefore P(1)$ is true.
+                
+                Assume $P(m)$ is true for some positive integer $m$, i.e. $$A_m=(-1)^{m-1}B_m$$
+        
+                Then for $P(m+1)$:\begin{align*}
+                    A_{m+1}&=\sum_{k=1}^{m+1}(-1)^{k-1}k^2\\
+                    &=(-1)^{m-1}\dfrac{m(m+1)}{2}+(-1)^m(m+1)^2\\
+                    &=(-1)^m(m+1)[(m+1)-\frac{m}{2}]\\
+                    &=(-1)^m(m+1)\frac{m+2}{2}\\
+                    &=(-1)^m B_{m+1}
+                \end{align*}
+        
+                $\therefore P(m+1)$ is true when $P(m)$ is true.
+        
+                Thus, by the principle of Mathematical Induction, $P(n)$ is true for all positive integer $n$.
+            \end{sol}
+            \item \begin{sol}
+                \begin{align*}
+                    \sum_{n=1}^{2m}A_n&=\sum_{n=1}^{2m}(-1)^{n-1}B_n\\
+                    &=\sum_{n=1}^{m}(B_{2n-1}-B_{2n})\\
+                    &=\sum_{n=1}^{m}(-2n)\\
+                    &=-2\sum_{n=1}^{m}n\\
+                    &=-2 B_m\\
+                    &=-m(m+1)\\
+                    \sum_{n=1}^{2m+1}A_n&=-m(m+1)+A_{2m+1}\\
+                    &=-m(m+1)+B_{2m+1}\\
+                    &=-m(m+1)+(m+1)(2m+1)\\
+                    &=(m+1)^2
+                \end{align*}
+            \end{sol}
+        \end{enumerate}
+        \item \begin{sol}
+            By considering the corresponding coefficients, we have
+            \begin{align*}
+                \lambda_1&=C_1^8a=8a\\
+                \lambda_2&=C_2^8a^2=28a^2\\
+                \mu_7&=C_7^9b^2=36b^2\\
+                \mu_8&=C_8^9b=9b
+            \end{align*}
+            That means we have to solve the folloing system:\begin{align*}
+                \begin{cases}
+                    \frac{28a^2}{36b^2}=\frac{7}{4}\implies 4a^2=9b^2&\implies 2a=\pm 3b\\
+                    8a+9b+6=0
+                \end{cases}
+            \end{align*}
+            If $2a=3b$, we have \begin{align*}
+                12b+9b+6&=0\\
+                b=-\frac{2}{7} &a=-\frac{3}{7}
+            \end{align*}
+            If $2a=-3b$, we have \begin{align*}
+                -12b+9b+6&=0\\
+                b=-2 &a=3
+            \end{align*}
+            Then $a=-\dfrac{3}{7}$ or $a=3$.
+        \end{sol}
+        \item \begin{enumerate}
+            \item \begin{sol}
+                We have the fundamental identities:\begin{align*}
+                    \sin{2x}&=2\sin{x}\cos{x}\\
+                    \sin{3x}&=3\sin{x}-4\sin^3{x}\\
+                \end{align*}
+                Then \begin{align*}
+                    \sin{x}-\sin{2x}+\sin{3x}&=0\\
+                    \sin{x}(1-2\cos{x}+3-4\sin^2{x})&=0\\
+                \end{align*}
+                One solution is $\sin{x}=0$ which means $x=\pi$. Otherwise,\begin{align*}
+                    1-2\cos{x}+3-4\sin^2{x}&=0\\
+                    -2\cos{x}+4\cos^2{x}&=0\\
+                    -2\cos{x}(1-2\cos{x})&=0\\
+                \end{align*}
+                Then, either $\cos{x}=0\implies x=\pi/2,3\pi/2$ or $\cos{x}=1/2\implies x=\pi/3,5\pi/3$.
+
+                In conclusion, the set of solution to the equation is $\{\pi/3,\pi/2,\pi,3\pi/2,5\pi/3\}$.
+            \end{sol}
+            \item \begin{enumerate}
+                \item \begin{align*}
+                    f(\theta)&=\sin{2\theta}+\sin{\theta}+\cos{\theta}\\
+                    &=2\sin{\theta}\cos{\theta}+\sin{\theta}+\cos{\theta}\\
+                    &=\sin^2{\theta}+2\sin{\theta}\cos{\theta}+\cos^2{\theta}+\sin{\theta}+\cos{\theta}-1\\
+                    &=p^2+p-1
+                \end{align*}
+                \item $f(\theta)=(p+1/2)^2-5/4$. So $f(\theta)$ has the minimum value $-5/4$. Such $\theta$ can be computed as follows:\begin{align*}
+                    p+\frac{1}{2}&=0\\
+                    \sin{\theta}+\cos{\theta}+\frac{1}{2}&=0\\
+                    1+\sin{2\theta}=\frac{1}{4}\\
+                    
+                \end{align*}
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
