@@ -121,11 +121,11 @@
             \end{align*}
             If $2a=3b$, we have \begin{align*}
                 12b+9b+6&=0\\
-                b=-\frac{2}{7} &a=-\frac{3}{7}
+                b=-\frac{2}{7} &,a=-\frac{3}{7}
             \end{align*}
             If $2a=-3b$, we have \begin{align*}
                 -12b+9b+6&=0\\
-                b=-2 &a=3
+                b=-2 &,a=3
             \end{align*}
             Then $a=-\dfrac{3}{7}$ or $a=3$.
         \end{sol}
@@ -149,18 +149,203 @@
                 In conclusion, the set of solution to the equation is $\{\pi/3,\pi/2,\pi,3\pi/2,5\pi/3\}$.
             \end{sol}
             \item \begin{enumerate}
-                \item \begin{align*}
-                    f(\theta)&=\sin{2\theta}+\sin{\theta}+\cos{\theta}\\
-                    &=2\sin{\theta}\cos{\theta}+\sin{\theta}+\cos{\theta}\\
-                    &=\sin^2{\theta}+2\sin{\theta}\cos{\theta}+\cos^2{\theta}+\sin{\theta}+\cos{\theta}-1\\
-                    &=p^2+p-1
+                \item \begin{sol}
+                    \begin{align*}
+                        f(\theta)&=\sin{2\theta}+\sin{\theta}+\cos{\theta}\\
+                        &=2\sin{\theta}\cos{\theta}+\sin{\theta}+\cos{\theta}\\
+                        &=\sin^2{\theta}+2\sin{\theta}\cos{\theta}+\cos^2{\theta}+\sin{\theta}+\cos{\theta}-1\\
+                        &=p^2+p-1
+                    \end{align*}
+                \end{sol}
+                \item \begin{sol}
+                    $f(\theta)=(p+1/2)^2-5/4$. So $f(\theta)$ has the minimum value $-5/4$. Such $\theta$ can be computed as follows:\begin{align*}
+                        p+\frac{1}{2}&=0\\
+                        p&=-\frac{1}{2}\\
+                        \sin{2\theta}-\frac{1}{2}&=-\frac{5}{4}\\
+                        \sin{2\theta}&=-\frac{3}{4}\\
+                    \end{align*}
+
+                    Case 1:
+                    \begin{align*}
+                        \tan{2\theta}&=\frac{3}{\sqrt{7}}\\
+                        \frac{2\tan{\theta}}{1-\tan^2{\theta}}&=\frac{3}{\sqrt{7}}\\
+                        2\sqrt{7}\tan{\theta}&=3-3\tan^2{\theta}\\
+                        3\tan^2{\theta}+2\sqrt{7}\tan{\theta}-3&=0\\
+                        \tan{\theta}&=\frac{-2\sqrt{7}\pm\sqrt{28+36}}{6}\\
+                        &=\frac{-\sqrt{7}\pm 4}{3}
+                    \end{align*}
+                    By $\tan{\theta}<0$, $\theta=\tan^{-1}(-\frac{4+\sqrt{7}}{3})$.
+
+                    Case 2:
+                    \begin{align*}
+                        \tan{2\theta}&=-\frac{3}{\sqrt{7}}\\
+                        \frac{2\tan{\theta}}{1-\tan^2{\theta}}&=-\frac{3}{\sqrt{7}}\\
+                        -2\sqrt{7}\tan{\theta}&=3-3\tan^2{\theta}\\
+                        3\tan^2{\theta}-2\sqrt{7}\tan{\theta}-3&=0\\
+                        \tan{\theta}&=\frac{2\sqrt{7}\pm\sqrt{28+36}}{6}\\
+                        &=\frac{\sqrt{7}\pm 4}{3}
+                    \end{align*}
+                    By $\tan{\theta}<0$, $\theta=\tan^{-1}(\frac{\sqrt{7}-4}{3})$.
+
+                    Hence the conclusion is $f$ attains minimum at $\theta=\tan^{-1}(\frac{-4\pm\sqrt{7}}{3})$.
+                \end{sol}
+            \end{enumerate}
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item \begin{sol}
+                \begin{align*}
+                    \tan{4\theta}&=\frac{2\tan{2\theta}}{1-\tan^2{2\theta}}\\
+                    &=\frac{2\frac{2\tan{\theta}}{1-\tan^2{\theta}}}{1-(\frac{2\tan{\theta}}{1-\tan^2{\theta}})^2}\\
+                    &=\frac{4\tan{\theta}(1-\tan^2{\theta})}{(1-\tan^2{\theta})^2-4\tan^2{\theta}}\\
+                    &=\frac{4\tan{\theta}-4\tan^3{\theta}}{1-6\tan^2{\theta}+\tan^4{\theta}}
                 \end{align*}
-                \item $f(\theta)=(p+1/2)^2-5/4$. So $f(\theta)$ has the minimum value $-5/4$. Such $\theta$ can be computed as follows:\begin{align*}
-                    p+\frac{1}{2}&=0\\
-                    \sin{\theta}+\cos{\theta}+\frac{1}{2}&=0\\
-                    1+\sin{2\theta}=\frac{1}{4}\\
-                    
+
+                Then \begin{align*}
+                    \cot{4\theta}&=\frac{1}{\tan{4\theta}}\\
+                    &=\frac{1-6\tan^2{\theta}+\tan^4{\theta}}{4\tan{\theta}-4\tan^3{\theta}}\\
+                    &=\frac{\cot^4{\theta}-6\cot^2{\theta}+1}{4\cot^3{\theta}-4\cot{\theta}}
                 \end{align*}
+
+                Hence $\cot{\theta}$ solve the equation $x^4-4x^3-6x^2+4x+1=0$ when $\cot{4\theta}=1$, which is \begin{align*}
+                    4\theta&=n\pi+\pi/4\\
+                    \theta&=n\pi/4+\pi/16\\
+                    x&=\cot(\pi/16),\cot(5\pi/16),\cot(9\pi/16),\cot(13\pi/16)
+                \end{align*}
+                restricting to $[0,2\pi]$.
+            \end{sol}
+            \item \begin{enumerate}
+                \item \begin{sol}
+                    \begin{align*}
+                        \frac{1}{2}(2-a^2-b^2)&=\frac{1}{2}(2-\cos^2{\theta}+2\cos{\theta}\cos{\phi}-\cos^2{\phi}-\sin^2{\theta}+2\sin{\theta}\sin{\phi}-\sin^2{\phi})\\
+                        &=\cos{\theta}\cos{\phi}+\sin{\theta}\sin{\phi}\\
+                        &=\cos{(\theta-\phi)}
+                    \end{align*}
+                    and \begin{align*}
+                        \frac{-a}{b}&=\frac{\cos{\phi}-\cos{\theta}}{\sin{\theta}-\sin{\phi}}\\
+                        &=\frac{-2\sin{\frac{\phi+\theta}{2}}\sin{\frac{\phi-\theta}{2}}}{2\cos{\frac{\theta+\phi}{2}}\sin{\frac{\theta-\phi}{2}}}\\
+                        &=\tan{\frac{\theta+\phi}{2}}
+                    \end{align*}
+                \end{sol}
+                \item \begin{sol}
+                    By i.\begin{align*}
+                        a=1&,b=\sqrt{3}\\
+                        \implies&\begin{cases}
+                            \cos{(\theta-\phi)}=-1\\
+                            \tan{\frac{\theta+\phi}{2}}=-\frac{1}{\sqrt{3}}
+                        \end{cases}\\
+                        \implies&\begin{cases}
+                            \theta-\phi=2n\pi-\pi/2\\
+                            \theta+\phi=2n\pi-\pi/3
+                        \end{cases}\\
+                        \implies&\theta=7\pi/12, \phi=11\pi/12
+                    \end{align*}
+                \end{sol}
+            \end{enumerate}
+        \end{enumerate}
+        \item \begin{sol}
+            Let $f(x)=(x^2-1)e^x$. Then \begin{align*}
+                f(1+h)&=[(1+h)^2-1]e^{1+h}=h(2+h)e^{1+h}\\
+                f'(1)&=\lim_{h\to 0}\frac{f(1+h)-f(1)}{h}\\
+                &=\lim_{h\to 0}\frac{h(2+h)e^{1+h}}{h}\\
+                &=\lim_{h\to 0}(2+h)e^{1+h}\\
+                &=2e
+            \end{align*}
+        \end{sol}
+        \item \begin{enumerate}
+            \item \begin{sol}
+                \begin{align*}
+                    f'(x)&=e^x(\sin{x}+\cos{x})+e^x(\cos{x}-\sin{x})\\
+                    &=2e^x\cos{x}\\
+                    f''(x)&=2e^x\cos{x}-2e^x\sin{x}\\
+                    &=2e^x(\cos{x}-\sin{x})
+                \end{align*}
+            \end{sol}
+            \item \begin{sol}
+                \begin{align*}
+                    f''(x)-f'(x)+f(x)&=0\\
+                    2e^x(\cos{x}-\sin{x})-2e^x\cos{x}+e^x(\sin{x}+\cos{x})&=0\\
+                    \cos{x}-\sin{x}&=0\\
+                    \tan{x}&=1\\
+                    x&=n\pi+\pi/4
+                \end{align*}
+                where $n\in \mathbb{Z}$ is integer.
+            \end{sol}
+        \end{enumerate}
+        \item \begin{sol}
+            \begin{align*}
+                \frac{dy}{dx}=\frac{-6}{(x+1)^2}&=-\frac{1}{6}\\
+                (x+1)^2&=36\\
+                x=5,-7
+            \end{align*}
+
+            Then the equation of tangent to $C$ at $(5,1)$ is \begin{align*}
+                y-1&=-\frac{1}{6}(x-5)\\
+                x+6y-11&=0
+            \end{align*}
+
+            Then the equation of tangent to $C$ at $(-7,-1)$ is \begin{align*}
+                y+1&=-\frac{1}{6}(x+7)\\
+                x+6y+13&=0
+            \end{align*}
+        \end{sol}
+        \item \begin{enumerate}
+            \item \begin{enumerate}
+                \item \begin{sol}
+                    $x=4\sin{\theta}$.
+                \end{sol}
+                \item \begin{sol}
+                    Since $\dfrac{dx}{dt}=\dfrac{1}{2}$, we have \begin{align*}
+                        \frac{dx}{dt}&=4\cos{\theta}\frac{d\theta}{dt}\\
+                        \frac{d\theta}{dt}&=\frac{1}{8\cos{\theta}}
+                    \end{align*}
+                \end{sol}
+            \end{enumerate}
+            \item \begin{enumerate}
+                \item \begin{sol}
+                    Write $y=4\cos{\theta}$ and $z=\sqrt{5^2-x^2}=\sqrt{25-16\sin^2{\theta}}$. Then \begin{align*}
+                        \frac{dy}{dt}&=-4\sin{\theta}\frac{d\theta}{dt}\\
+                        &=-4\sin{\theta}\frac{1}{8\cos{\theta}}\\
+                        &=-\frac{1}{2}\tan{\theta}\\
+                        \frac{dz}{dt}&=\frac{-32\sin{\theta}\cos{\theta}}{2\sqrt{25-16\sin^2{\theta}}}\frac{1}{8\cos{\theta}}\\
+                        &=\frac{-2\sin{\theta}}{\sqrt{25-16\sin^2{\theta}}}
+                    \end{align*}
+                \end{sol}
+                \item \begin{sol}
+                    \begin{align*}
+                        \frac{dPQ}{dt}|_{\theta=\pi/6}&=\frac{dy}{dt}|_{\theta=\pi/6}+\frac{dz}{dt}|_{\theta=\pi/6}\\
+                        &=-\frac{1}{2}\tan{\pi/3}-\frac{2\sin{\pi/6}}{\sqrt{25-16\sin^2{\pi/6}}}\\
+                        &=-\frac{\sqrt{3}}{2}-\frac{1}{\sqrt{25-4}}\\
+                        &=-\frac{\sqrt{3}}{2}-\frac{\sqrt{21}}{21}
+                    \end{align*}
+                \end{sol}
+            \end{enumerate}
+            \item \begin{enumerate}
+                \item \begin{sol}
+                    Recall area of $\triangle OPR$ is $\dfrac{xy}{2}$,\begin{align*}
+                        \frac{d}{dt}\frac{xy}{2}&=\frac{1}{2}(x\frac{dy}{dt}+y\frac{dx}{dt})\\
+                        &=\frac{1}{2}(-2\sin{\theta}\tan{\theta}+2\cos{\theta})\\
+                        &=\cos{\theta}-\sin{\theta}\tan{\theta}
+                    \end{align*}
+
+                    Set $\dfrac{d}{dt}\dfrac{xy}{2}=0$, then we have \begin{align*}
+                        \tan^2{\theta}&=1\\
+                        \tan{\theta}&=\pm1\\
+                        \theta&=n\pi/2+\pi/4
+                    \end{align*}
+
+                    Since $0<\theta<\pi/2$, $\theta=\pi/4$.
+                \end{sol}
+                \item \begin{sol}
+                    Let $\angle OQR=\phi$, then \begin{align*}
+                        4\sin{\theta}&=5\sin{\phi}
+                    \end{align*}
+
+                    Similar to i., we have to have $\phi=\pi/4$ so that $\triangle ORQ$ is having maximum area. Then \begin{align*}
+                        \theta&=\sin^{-1}(\frac{5\sin{\pi/4}}{4})\\
+                        &=\sin^{-1}(\frac{5\sqrt{2}}{8})\\
+                        &=1.08 rad
+                    \end{align*}
+                \end{sol}
             \end{enumerate}
         \end{enumerate}
     \end{enumerate}

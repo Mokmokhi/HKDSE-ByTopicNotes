@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  28 MAY 2023 04:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  29 MAY 2023 01:16
 entering extended mode
 **"c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex"
 (c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex
@@ -789,128 +789,6 @@ Overfull \hbox (4.9659pt too wide) in paragraph at lines 149--151
 []\OT1/cmr/m/n/12 In con-clu-sion, the set of so-lu-tion to the equa-tion is $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; =\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 3\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 .
  []
 
-Runaway argument?
- p+\frac {1}{2}&=0\\ \sin {\theta }+\cos {\theta }+\frac {1}{2}&=0\\ \ETC.
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:162: Paragraph ended before \align* was complete.
-<to be read again> 
-                   \par 
-l.162 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:162: Missing $ inserted.
-<inserted text> 
-                $
-l.162 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:162: Missing } inserted.
-<inserted text> 
-                }
-l.162 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:162: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.162 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:162: Display math should end with $$.
-<to be read again> 
-                   \tex_par:D 
-l.162 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:162: Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.162 
-      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:163: Misplaced \cr.
-\math@cr@@@ ->\cr 
-                  
-l.163                 \end{align*}
-                                  
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:163: Misplaced \noalign.
-\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
-                                                  {\vskip #1\relax }
-l.163                 \end{align*}
-                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:163: Misplaced \noalign.
-\black@ #1->\noalign 
-                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
-l.163                 \end{align*}
-                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-Overfull \hbox (272.90974pt too wide) detected at line 163
-[]
- []
-
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:163: Extra }, or forgotten \endgroup.
-\endalign ->\math@cr \black@ \totwidth@ \egroup 
-                                                \ifingather@ \restorealignst...
-l.163                 \end{align*}
-                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:163: Missing $ inserted.
-<inserted text> 
-                $
-l.163                 \end{align*}
-                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/Level 5/sol.tex:163: Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.163                 \end{align*}
-                                  
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -926,19 +804,55 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5] (sol.aux) ) 
+[5]
+Overfull \hbox (69.9731pt too wide) detected at line 222
+[]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9] (sol.aux) ) 
 Here is how much of TeX's memory you used:
  28756 strings out of 478864
  690431 string characters out of 2855690
- 1155692 words of memory out of 3000000
+ 1160692 words of memory out of 3000000
  46110 multiletter control sequences out of 15000+600000
  410032 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,14n,106p,820b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-<D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on sol.pdf (5 pages, 116130 bytes).
+ 103i,15n,106p,820b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+<D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on sol.pdf (9 pages, 139150 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
