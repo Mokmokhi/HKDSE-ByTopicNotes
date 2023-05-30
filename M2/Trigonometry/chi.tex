@@ -1,0 +1,352 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{{../image/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{三角函數}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \section*{實域拓展的三角函數}
+
+    回顧直角三角形及三角函數：
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.6]{triangle.png}
+        \caption{邊長爲$a,b,c$的直角三角形}
+    \end{figure}
+
+    對以上直角三角形，我們定義$c$為\textbf{斜邊}。
+
+    對於$\theta$，我們稱$a$為$\theta$的\textbf{對邊}，$b$為$\theta$的\textbf{鄰邊}；對於$\phi$，我們稱$b$為$\phi$的\textbf{對邊}，$a$為$\phi$的\textbf{鄰邊}。
+
+    \begin{definition}[三角函數]
+        參考上述直角三角形，我們定義以下三角函數：\begin{itemize}
+            \item 正弦函數(sine)：$\displaystyle\sin{\theta}=\frac{a}{c}$。
+            \item 餘弦函數(cosine)：$\displaystyle\cos{\theta}=\frac{b}{c}$。
+            \item 正切函數(tangent)：$\displaystyle\tan{\theta}=\frac{a}{b}$。
+            \item 正割函數(secant)：$\displaystyle\sec{\theta}=\frac{c}{b}$。
+            \item 餘割函數(cosecant)：$\displaystyle\csc{\theta}=\frac{c}{a}$。
+            \item 餘切函數(cotangent)：$\displaystyle\cot{\theta}=\frac{b}{a}$。
+        \end{itemize}
+    \end{definition}
+
+    \begin{remark}
+        在描述三角函數的正整數次冪時，我們會寫$\sin^n{\theta}:=(\sin{\theta})^n$。但留意此寫法只適用於$n$為正整數的情況。一般而言，函數$f$的次冪以$(f)^n$記之。
+    \end{remark}
+
+    \begin{lemma}[畢氏定理]
+        參考上述直角三角形，則以下等式成立：$$a^2+b^2=c^2$$
+    \end{lemma}
+
+    \begin{proposition}[恆等式]
+        參考上述直角三角形，有以下恆等式：\begin{enumerate}
+            \item $\sin^2{\theta}+\cos^2{\theta}=1$；
+            \item $\tan{\theta}=\dfrac{\sin{\theta}}{\cos{\theta}}$；
+            \item $\csc{\theta}=\dfrac{1}{\sin{\theta}}$, $\sec{\theta}=\dfrac{1}{\cos{\theta}}$, $\cot{\theta}=\dfrac{1}{\tan{\theta}}$；
+            \item $\tan^2{\theta}+1=\sec^2{\theta}$, $\cot^2{\theta}+1=\csc^2{\theta}$；
+            \item $\sin{\theta}=\cos{\phi}$, $\sin{\phi}=\cos{\theta}$。
+        \end{enumerate}
+    \end{proposition}
+
+    \subsection*{三角函數在圓上的拓展}
+
+    在代數幾何學中，一般考慮圓形為圓心與圓周的程差公式：考慮半徑爲$r$的圓並設圓心於原點$(0,0)$，則任何位於圓周上的點$P(x,y)$，其與圓心的距離為：$$\sqrt{x^2+y^2}=r\implies x^2+y^2=r^2$$
+
+    若設$r=1$，我們稱其爲\textbf{單位圓}。留意圓形公式與三角恆等式$\sin^2{\theta}+\cos^2{\theta}=1$的相似性，並參考下圖：
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.6]{circle1.png}
+        \caption{半徑爲1的圓}
+    \end{figure}
+
+    由此得出，對於半徑爲1的圓，其坐標$(x,y)$亦可寫作$(\cos{\theta},\sin{\theta})$。以此爲鑒，將$\sin{\theta}$與$\cos{\theta}$的定義域從$0^\circ \leq \theta\leq 90^\circ$拓展至$0^\circ\leq \theta\leq 360^\circ$，則有以下定義：
+
+    \begin{definition}[象限]
+        按一個圓的角度$\theta$分類，給出以下名稱：\begin{itemize}
+            \item 第一象限(I)：$0^\circ\leq \theta\leq 90^\circ$；
+            \item 第二象限(II)：$90^\circ\leq \theta\leq 180^\circ$；
+            \item 第三象限(III)：$180^\circ\leq \theta\leq 270^\circ$；
+            \item 第四象限(IV)：$270^\circ\leq \theta\leq 360^\circ$。
+        \end{itemize}
+    \end{definition}
+
+    第一象限為基本三角形的角度象限，至於第二、三、四象限，考慮以下圖像：
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{circle2.png}
+        \includegraphics[scale=0.3]{circle3.png}
+        \includegraphics[scale=0.3]{circle4.png}
+        \caption{第二、三、四象限的展現}
+    \end{figure}
+
+    因此，對於三角函數在圓上的拓展，我們給出以下定義：
+
+    \begin{definition}[圓拓展三角函數]
+        設$P(x,y)$為單位圓上的一點，而$\theta$為$(1,0)$展至$P$的角度，則$$x=\cos{\theta}, y=\sin{\theta}$$
+    \end{definition}
+
+    \begin{corollary}
+        設$P(x,y)$為半徑$r$的圓上的一點，而$\theta$為$(r,0)$展至$P$的角度，則$$x=r\cos{\theta}, y=r\sin{\theta}$$
+    \end{corollary}
+
+    \begin{remark}
+        考慮$\sin{\theta},\cos{\theta},\tan{\theta}$的值，第一象限給出所有(All)函數均爲正數，第二象限給出$\sin{\theta}$爲正數，第三象限給出$\tan{\theta}$爲正數，第四象限給出$\cos{\theta}$爲正數。故引稱C-A-S-T圖以便考慮三角函數的符號。
+    \end{remark}
+
+    至於如何求出此拓展函數的值，考慮以旋轉求出第二象限的數值：設$0^\circ\leq\theta\leq 90^\circ$，則$90^\circ\leq\theta+90^\circ\leq 180^\circ$。考慮下圖：
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.4]{circleII.png}
+        $\implies$
+        \includegraphics[scale=0.4]{circleI.png}
+        \caption{以順時針方向旋轉$90^\circ$}
+    \end{figure}
+
+    留意$\sin(\theta+90^\circ)=y=\cos{\theta}$，$\cos(\theta+90^\circ)=-x=-\sin{\theta}$。因此得出\begin{align*}
+        &\sin(\theta+90^\circ)=\cos{\theta},&&\cos(\theta+90^\circ)=-\sin{\theta},&&\tan(\theta+90^\circ)=-\cot{\theta}\\
+        &\sin(\theta+180^\circ)=-\sin{\theta},&&\cos(\theta+180^\circ)=-\cos{\theta},&&\tan(\theta+180^\circ)=\tan{\theta}\\
+        &\sin(\theta+270^\circ)=-\cos{\theta},&&\cos(\theta+270^\circ)=\sin{\theta},&&\tan(\theta+270^\circ)=-\cot{\theta}
+    \end{align*}
+
+    因圓形每$360^\circ$為一周期，故可定義：
+
+    \begin{definition}[三角函數的周期性]
+        $\sin(\theta+360^\circ)=\sin{\theta},\cos(\theta+360^\circ)=\cos{\theta}$
+    \end{definition}
+
+    \begin{theorem}
+        設$\sin{\theta},\cos{\theta},\tan{\theta}$為圓拓展三角函數，$0^\circ\leq \theta\leq 90^\circ$，則：\begin{align*}
+            &\sin(\pm\theta)=\pm\sin{\theta},&&\cos(\pm\theta)=\cos{\theta},&&\tan(\pm\theta)=\pm\tan{\theta}\\
+            &\sin(90^\circ\pm\theta)=\cos{\theta},&&\cos(90^\circ\pm\theta)=\mp\sin{\theta},&&\tan(90^\circ\pm\theta)=\mp\cot{\theta}\\
+            &\sin(180^\circ\pm\theta)=\mp\sin{\theta},&&\cos(180^\circ\pm\theta)=-\sin{\theta},&&\tan(180^\circ\pm\theta)=\pm\tan{\theta}\\
+            &\sin(270^\circ\pm\theta)=-\cos{\theta},&&\cos(270^\circ\pm\theta)=\pm\sin{\theta},&&\tan(270^\circ\pm\theta)=\mp\cot{\theta}
+        \end{align*}
+    \end{theorem}
+
+    \begin{corollary}
+        設$\sin{\theta},\cos{\theta},\tan{\theta}$為圓拓展三角函數，$\theta$為任意角度，則：\begin{align*}
+            &\sin(\pm\theta)=\pm\sin{\theta},&&\cos(\pm\theta)=\cos{\theta},&&\tan(\pm\theta)=\pm\tan{\theta}\\
+            &\sin(90^\circ\pm\theta)=\cos{\theta},&&\cos(90^\circ\pm\theta)=\mp\sin{\theta},&&\tan(90^\circ\pm\theta)=\mp\cot{\theta}\\
+            &\sin(180^\circ\pm\theta)=\mp\sin{\theta},&&\cos(180^\circ\pm\theta)=-\sin{\theta},&&\tan(180^\circ\pm\theta)=\pm\tan{\theta}\\
+            &\sin(270^\circ\pm\theta)=-\cos{\theta},&&\cos(270^\circ\pm\theta)=\pm\sin{\theta},&&\tan(270^\circ\pm\theta)=\mp\cot{\theta}
+        \end{align*}
+    \end{corollary}
+
+    \begin{definition}[弧度]
+        依照圓周計算，定義\textbf{弧度}為角度對應的單位弧長路徑，並以rad爲單位（使用時可忽略單位不寫）。$\pi$對應$180^\circ$。
+    \end{definition}
+
+    \begin{corollary}
+        設$\sin{\theta},\cos{\theta},\tan{\theta}$為圓拓展三角函數，$\theta$為任意角度，則：\begin{align*}
+            &\sin(\pm\theta)=\pm\sin{\theta},&&\cos(\pm\theta)=\cos{\theta},&&\tan(\pm\theta)=\pm\tan{\theta}\\
+            &\sin(\frac{\pi}{2}\pm\theta)=\cos{\theta},&&\cos(\frac{\pi}{2}\pm\theta)=\mp\sin{\theta},&&\tan(\frac{\pi}{2}\pm\theta)=\mp\cot{\theta}\\
+            &\sin(\pi\pm\theta)=\mp\sin{\theta},&&\cos(\pi\pm\theta)=-\sin{\theta},&&\tan(\pi\pm\theta)=\pm\tan{\theta}\\
+            &\sin(\frac{3\pi}{2}\pm\theta)=-\cos{\theta},&&\cos(\frac{3\pi}{2}\pm\theta)=\pm\sin{\theta},&&\tan(\frac{3\pi}{2}\pm\theta)=\mp\cot{\theta}
+        \end{align*}
+    \end{corollary}
+
+    \subsection*{逆三角函數}
+
+    考慮三角函數作爲函數的可逆性並不理想（不符合單射性），故對於逆三角函數的討論，雖稱其爲逆函數，卻視之為逆映射。
+
+    \begin{definition}[三角函數的逆函數]
+        對於逆三角函數，給出以下定義：\begin{align*}
+            &\arcsin:\{-1\leq x\leq 1\}\to\mathbb{R},&&x\mapsto\{\theta\in\mathbb{R}:\sin{\theta}=x\}\\
+            &\arccos:\{-1\leq x\leq 1\}\to\mathbb{R},&&x\mapsto\{\theta\in\mathbb{R}:\cos{\theta}=x\}\\
+            &\arctan:\mathbb{R}\to\mathbb{R},&&x\mapsto\{\theta\in\mathbb{R}:\tan{\theta}=x\}
+        \end{align*}
+        同理，對於另外三個三角函數：\begin{align*}
+            &\arcsec:\{-1\leq x\leq 1\}\to\mathbb{R},&&x\mapsto\{\theta\in\mathbb{R}:\sec{\theta}=x\}\\
+            &\arccsc:\{-1\leq x\leq 1\}\to\mathbb{R},&&x\mapsto\{\theta\in\mathbb{R}:\csc{\theta}=x\}\\
+            &\arccot:\mathbb{R}\to\mathbb{R},&&x\mapsto\{\theta\in\mathbb{R}:\cot{\theta}=x\}
+        \end{align*}
+    \end{definition}
+
+    \begin{remark}
+        留意前綴`arc'，其意義為`求弧度'。因此意義上與求角度是一樣的，惟需注意的是因應三角函數的周期性，符合條件的結果有無窮多項，因此定義以數集表示。通常所求角度在$0$至$2\pi$之間，對應結果有兩項。若限於$0$至$\pi/2$之間，則可視爲逆函數，亦是常規解釋，分別記爲$\sin^{-1},\cos^{-1},\tan^{-1},\sec^{-1},\csc^{-1},\cot^{-1}$。
+    \end{remark}
+
+    \begin{proposition}
+        對於$x\in\mathbb{R}$，\begin{align*}
+            &\arcsin(\sin{x})=\{2n\pi+x, (2n+1)\pi-x:n\textrm{為整數}\}\\
+            &\arccos(\cos{x})=\{2n\pi\pm x:n\textrm{為整數}\}\\
+            &\arctan(\tan{x})=\{n\pi+x:n\textrm{為整數}\}
+        \end{align*}
+    \end{proposition}
+
+    \section*{三角函數的和積互化}
+
+    目前已知特殊角度的加減可簡化爲單一角度的算式，如此衍伸問題：對於任意角度$\alpha,\beta$，若寫$\sin(\alpha+\beta),\cos(\alpha+\beta),\tan(\alpha+\beta)$，能否將之簡化爲$\alpha$與$\beta$的三角函數算式呢？即是否有函數$f,g,h$使得\begin{align*}
+        \sin(\alpha+\beta)&=f(\sin{\alpha},\sin{\beta},\cos{\alpha},\cos{\beta},\tan{\alpha},\tan{\beta})\\
+        \cos(\alpha+\beta)&=g(\sin{\alpha},\sin{\beta},\cos{\alpha},\cos{\beta},\tan{\alpha},\tan{\beta})\\
+        \tan(\alpha+\beta)&=h(\sin{\alpha},\sin{\beta},\cos{\alpha},\cos{\beta},\tan{\alpha},\tan{\beta})
+    \end{align*}
+
+    從$\sin(\alpha+\beta)$入手，考慮以下扇形
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{ab.png}
+    \end{figure}
+
+    如上圖所示，$\sin(\alpha+\beta)=x+y$。又見$$x=\sin{\beta}\cos{\alpha}, y=\cos{\beta}\sin{\alpha}$$則$\sin(\alpha+\beta)=\sin{\alpha}\cos{\beta}+\sin{\beta}\cos{\alpha}$。
+
+    現求得$\sin(\alpha+\beta)$的變化，則可通過代入求得其餘變化：\begin{align*}
+        \sin(\alpha-\beta)&=\sin(\alpha+(-\beta))=\sin{\alpha}\cos(-\beta)+\sin(-\beta)\cos{\alpha}\\&=\sin{\alpha}\cos{\beta}-\sin{\beta}\cos{\alpha}\\
+        \cos(\alpha+\beta)&=\sin(\frac{\pi}{2}-(\alpha+\beta))=\sin(\frac{\pi}{2}-\alpha)\cos(-\beta)+\sin(-\beta)\cos(\frac{\pi}{2}-\alpha)\\&=\cos{\alpha}\cos{\beta}-\sin{\alpha}\sin{\beta}\\
+        \cos(\alpha-\beta)&=\cos(\alpha+(-\beta))=\cos{\alpha}\cos(-\beta)-\sin{\alpha}\sin(-\beta)\\&=\cos{\alpha}\cos{\beta}+\sin{\alpha}\sin{\beta}\\
+        \tan(\alpha+\beta)&=\frac{\sin(\alpha+\beta)}{\cos(\alpha+\beta)}=\frac{\sin{\alpha}\cos{\beta}+\sin{\beta}\cos{\alpha}}{\cos{\alpha}\cos{\beta}-\sin{\alpha}\sin{\beta}}\\&=\frac{\frac{\sin{\alpha}}{\cos{\alpha}}+\frac{\sin{\beta}}{\cos{\beta}}}{1-\frac{\sin{\alpha}}{\cos{\alpha}}\frac{\sin{\beta}}{\cos{\beta}}}=\frac{\tan{\alpha}+\tan{\beta}}{1-\tan{\alpha}\tan{\beta}}\\
+        \tan(\alpha-\beta)&=\frac{\tan{\alpha}+\tan(-\beta)}{1-\tan{\alpha}\tan(-\beta)}\\
+        &=\frac{\tan{\alpha}-\tan{\beta}}{1+\tan{\alpha}\tan{\beta}}
+    \end{align*}
+
+    \begin{theorem}
+        設$\alpha,\beta$為弧度角，則\begin{align*}
+            &\sin(\alpha\pm\beta)=\sin{\alpha}\cos{\beta}\pm\sin{\beta}\cos{\alpha}\\
+            &\cos(\alpha\pm\beta)=\cos{\alpha}\cos{\beta}\mp\sin{\alpha}\sin{\beta}\\
+            &\tan(\alpha\pm\beta)=\frac{\tan{\alpha}\pm\tan{\beta}}{1\mp\tan{\alpha}\tan{\beta}}
+        \end{align*}
+    \end{theorem}
+
+    由此，可逆推算出以下設理：
+
+    \begin{proposition}
+        設$\alpha,\beta$為弧度角，則\begin{align*}
+            &\sin{\alpha}\cos{\beta}=\frac{1}{2}[\sin(\alpha-\beta)+\sin(\alpha+\beta)]\\
+            &\sin{\alpha}\sin{\beta}=\frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]\\
+            &\cos{\alpha}\cos{\beta}=\frac{1}{2}[\cos(\alpha-\beta)+\cos(\alpha+\beta)]
+        \end{align*}
+    \end{proposition}
+
+    \begin{corollary}
+        設$\alpha,\beta$為弧度角，則\begin{align*}
+            &\sin{\alpha}\pm\sin{\beta}=2\sin{\frac{\beta\pm\alpha}{2}}\cos{\frac{\beta\mp\alpha}{2}}\\
+            &\cos{\alpha}+\cos{\beta}=2\cos{\frac{\beta+\alpha}{2}}\cos{\frac{\beta-\alpha}{2}}\\
+            &\cos{\alpha}-\cos{\beta}=2\sin{\frac{\beta+\alpha}{2}}\sin{\frac{\beta-\alpha}{2}}\\
+        \end{align*}
+    \end{corollary}
+
+    \subsection*{兩倍角公式}
+
+    從以上和積互化公式可見，若$\alpha=\beta$，則可視爲\textbf{兩倍角公式}：
+
+    \begin{theorem}
+        設$x$為弧度角，則\begin{align*}
+            &\sin(2x)=2\sin{x}\cos{x}\\
+            &\cos(2x)=\cos^2{x}-\sin^2{x}\\
+            &\tan(2x)=\frac{2\tan{x}}{1-\tan^2{x}}
+        \end{align*}
+    \end{theorem}
+
+    留意$\cos(2x)=\cos^2{x}-\sin^2{x}$可化為\begin{align*}
+        \cos^2{x}-\sin^2{x}&=(1-\sin^2{x})-\sin^2{x}\\
+        &=1-2\sin^2{x}
+    \end{align*}
+    或\begin{align*}
+        \cos^2{x}-\sin^2{x}&=\cos^2{x}-(1-\cos^2{x})\\
+        &=2\cos^2{x}-1
+    \end{align*}
+
+    故當$0<x<\pi$時，$$\sin{x}=\sqrt{\frac{1-\cos(2x)}{2}}\implies\sin{\frac{t}{2}}=\sqrt{\frac{1-\cos{t}}{2}}$$
+    當$0<x<\frac{\pi}{2}$時，$$\cos{x}=\sqrt{\frac{1+\cos(2x)}{2}}\implies\cos{\frac{t}{2}}=\sqrt{\frac{1+\cos{t}}{2}}$$
+    當$\frac{\pi}{2}<x<\pi$時，$$\cos{x}=-\sqrt{\frac{1+\cos(2x)}{2}}\implies\cos{\frac{t}{2}}=-\sqrt{\frac{1+\cos{t}}{2}}$$
+    其中$t=2x$。此算式稱爲\textbf{半倍角公式}。
+
+    同時考慮$t=\tan{\frac{x}{2}}$，則對於所有三角函數，均可以$t$表示。以$\sin{x}$爲例：\begin{align*}
+        \sin{x}&=2\sin{\frac{x}{2}}\cos{\frac{x}{2}}\\
+        &=\frac{2\tan{\frac{x}{2}}}{\sec^2{\frac{x}{2}}}\\
+        &=\frac{2t}{1+t^2}
+    \end{align*}
+
+    對此，以下定理成立：
+
+    \begin{theorem}
+        設$x\in\mathbb{R}$，若$t=\tan{\frac{x}{2}}$，則\begin{align*}
+            &\sin{x}=\frac{2t}{1+t^2},&&\cos{x}=\frac{1-t^2}{1+t^2},&&\tan{x}=\frac{2t}{1-t^2}
+        \end{align*}
+    \end{theorem}
+
+    \subsection*{三倍角公式}
+
+    \begin{theorem}
+        設$x\in\mathbb{R}$，則\begin{align*}
+            &\sin(3x)=3\sin{x}-4\sin^3{x}\\
+            &\cos(3x)=4\cos^3{x}-3\cos{x}\\
+            &\tan(3x)=\frac{3\tan{x}-\tan^3{x}}{1-3\tan^2{x}}
+        \end{align*}
+    \end{theorem}
+
+    \begin{proof}
+        重複運用兩倍角公式以推導出$\sin(3x)$和$\cos(3x)$的算式，並運用$\tan(3x)=\dfrac{\sin(3x)}{\cos(3x)}$推導結果。
+    \end{proof}
+
+    \subsection*{輔助角}
+
+    回顧和積互化公式，大部分三角學算式都能化作$\sin$與$\cos$的組合，如此便能讓大部分等式迎刃而解。但亦有例外：$$2\sin{x}+3\cos{x}=4$$
+
+    對於以上等式，我們無法直接套用任何一條三角形公式以求得答案。如此便需要額外技巧，稱爲\textbf{輔助角}。在運用輔助角時需要一定條件，考慮通用式：$$a\sin{x}+b\cos{x}=c$$其中$a,b,c\in\mathbb{R}$。考慮左邊算式與$\sin(x+y)$的展開式的相似性，便作以下猜想：
+
+    \begin{claim}
+        設存在$r$與$\alpha$使得以下等式成立：$$r\sin(x+\alpha)=a\sin{x}+b\cos{x}$$且$r\geq |c|$，則$a\sin{x}+b\cos{x}=c$可解。
+    \end{claim}
+
+    \begin{proof}
+        直接計算即可。若\begin{align*}
+            r\sin(x+\alpha)&=a\sin{x}+b\cos{x}
+        \end{align*}
+        則\begin{align*}
+            r\sin{x}\cos{\alpha}+r\cos{x}\sin{\alpha}&=a\sin{x}+b\cos{x}\\
+            \implies&\begin{cases}
+                r\cos{\alpha}=a\\
+                r\sin{\alpha}=b
+            \end{cases}\\
+            \implies&\begin{cases}
+                r=\sqrt{a^2+b^2}\\
+                \alpha=\tan^{-1}(\frac{b}{a})
+            \end{cases}
+        \end{align*}
+
+        同時$$r\sin(x+\alpha)=c\implies \sin(x+\alpha)=\frac{c}{r}$$
+        由於$\sin{x}$的值域介乎$-1$與$1$之間，故$|c|/r\leq 1\implies |c|\leq r$時等式可解。
+    \end{proof}
+
+    \begin{theorem}
+        設$a,b,c$為常數，$x\in\mathbb{R}$。當$a^2+b^2\geq c^2$時，則$a\sin{x}+b\cos{x}=c$的解為$$x=\sin^{-1}(\frac{c}{\sqrt{a^2+b^2}})-\tan^{-1}(\frac{b}{a})$$
+    \end{theorem}
+
+    \section*{複域幾何}
+
+    \section*{歐拉公式與多倍角}
+\end{document}
