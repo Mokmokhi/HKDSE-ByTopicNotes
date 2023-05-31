@@ -1,7 +1,7 @@
 PWD c:\Users\Owenm\Documents\GitHub\HKDSE-ByTopicNotes\Math\Exam
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Owenm\Documents\GitHub\HKDSE-ByTopicNotes\Math\Exam\easychi.tex
-OUTPUT easychi.log
+INPUT c:\Users\Owenm\Documents\GitHub\HKDSE-ByTopicNotes\Math\Exam\f4chi.tex
+OUTPUT f4chi.log
 INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
 INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
 INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
@@ -894,10 +894,10 @@ INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
-INPUT .\easychi.aux
-INPUT easychi.aux
-INPUT easychi.aux
-OUTPUT easychi.aux
+INPUT .\f4chi.aux
+INPUT f4chi.aux
+INPUT f4chi.aux
+OUTPUT f4chi.aux
 INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -924,7 +924,7 @@ INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\fd\c70rm.fd
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\fd\c70rm.fd
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\ctex\fd\c70rm.fd
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei7d.tfm
-OUTPUT easychi.pdf
+OUTPUT f4chi.pdf
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei7f.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei8a.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei53.tfm
@@ -1090,7 +1090,7 @@ INPUT ..\images\\f4finalq40.png
 INPUT ..\images\\f4finalq40.png
 INPUT ..\images\\f4finalq40.png
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong74.tfm
-INPUT easychi.aux
+INPUT f4chi.aux
 INPUT C:\WINDOWS\Fonts\simsun.ttc
 INPUT C:\WINDOWS\Fonts\simsun.ttc
 INPUT C:\WINDOWS\Fonts\simsun.ttc

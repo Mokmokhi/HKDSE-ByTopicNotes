@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1685534679 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Exam/easychi.tex" "easychi.pdf" "easychi" 1685534683
+["pdflatex"] 1685552585 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Exam/f4chi.tex" "f4chi.pdf" "f4chi" 1685552588
   "../images//f4finalq3.png" 1685467564 4412 fb5a133549cfbf9b0c8c68718e5bc3c6 ""
   "../images//f4finalq37.png" 1685518570 10329 1924a6311202a802f4b50f9547e79126 ""
   "../images//f4finalq38.png" 1685476040 3139 2a08e741109f4346e9063aa7e0533d4e ""
@@ -307,10 +307,10 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Exam/easychi.tex" 1685534679 42527 b782f039e94a3eb27b94f1d2a3cacf59 ""
-  "easychi.aux" 1685534682 113 230d32343a9dd3260c79258b168cfae1 "pdflatex"
-  "easychi.tex" 1685534679 42527 b782f039e94a3eb27b94f1d2a3cacf59 ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Exam/f4chi.tex" 1685534679 42527 b782f039e94a3eb27b94f1d2a3cacf59 ""
+  "f4chi.aux" 1685552588 113 230d32343a9dd3260c79258b168cfae1 "pdflatex"
+  "f4chi.tex" 1685534679 42527 b782f039e94a3eb27b94f1d2a3cacf59 ""
   (generated)
-  "easychi.aux"
-  "easychi.log"
-  "easychi.pdf"
+  "f4chi.aux"
+  "f4chi.log"
+  "f4chi.pdf"

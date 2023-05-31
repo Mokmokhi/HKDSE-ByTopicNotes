@@ -1,7 +1,7 @@
-PWD c:\Users\Owenm\Documents\GitHub\HKDSE-ByTopicNotes\Math\Exam
+PWD c:\Users\Owenm\Documents\GitHub\HKDSE-ByTopicNotes\Math\Pre Senior secondary test
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Owenm\Documents\GitHub\HKDSE-ByTopicNotes\Math\Exam\easy.tex
-OUTPUT easy.log
+INPUT c:\Users\Owenm\Documents\GitHub\HKDSE-ByTopicNotes\Math\Pre Senior secondary test\eng.tex
+OUTPUT eng.log
 INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
 INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
 INPUT D:\Program Files (x86)\MiKTeX\tex\latex\base\article.cls
@@ -921,16 +921,89 @@ INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\wrapfig\wrapfig.sty
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\wrapfig\wrapfig.sty
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\wrapfig\wrapfig.sty
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\wrapfig\wrapfig.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile-hook-3.34.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile-hook-3.34.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile-hook-3.34.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile-hook-3.34.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile-hook-3.34.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile-hook-3.34.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile-hook-3.34.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile-hook-3.34.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile-hook-3.34.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile-hook-3.34.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlfile-hook-3.34.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT D:\Program Files (x86)\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\footmisc\footmisc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\footmisc\footmisc.sty
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\koma-script\scrlogo.sty
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.bdg
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.bdg
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
-INPUT .\easy.aux
-INPUT easy.aux
-INPUT easy.aux
-OUTPUT easy.aux
+INPUT .\eng.aux
+INPUT eng.aux
+INPUT eng.aux
+OUTPUT eng.aux
 INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT D:\Program Files (x86)\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -960,7 +1033,7 @@ INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-wi
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\pdftex\config\pdftex.map
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\sfd\ttf2pk\UGBK.sfd
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\sfd\ttf2pk\Unicode.sfd
-OUTPUT easy.pdf
+OUTPUT eng.pdf
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
@@ -986,73 +1059,26 @@ INPUT D:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT ..\images\\f4finalq3.png
-INPUT ..\images\\f4finalq3.png
-INPUT ..\images\\f4finalq3.png
-INPUT ..\images\\f4finalq3.png
-INPUT ..\images\\f4finalq3.png
-INPUT ..\images\\f4finalq3.png
-INPUT ..\images\\f4finalq3.png
-INPUT ..\images\\f4finalq4.png
-INPUT ..\images\\f4finalq4.png
-INPUT ..\images\\f4finalq4.png
-INPUT ..\images\\f4finalq4.png
-INPUT ..\images\\f4finalq4.png
-INPUT ..\images\\f4finalq4.png
-INPUT ..\images\\f4finalq4.png
-INPUT ..\images\\f4finalq5.png
-INPUT ..\images\\f4finalq5.png
-INPUT ..\images\\f4finalq5.png
-INPUT ..\images\\f4finalq5.png
-INPUT ..\images\\f4finalq5.png
-INPUT ..\images\\f4finalq5.png
-INPUT ..\images\\f4finalq5.png
-INPUT ..\images\\f4finalq37.png
-INPUT ..\images\\f4finalq37.png
-INPUT ..\images\\f4finalq37.png
-INPUT ..\images\\f4finalq37.png
-INPUT ..\images\\f4finalq37.png
-INPUT ..\images\\f4finalq37.png
-INPUT ..\images\\f4finalq37.png
-INPUT ..\images\\f4finalq38.png
-INPUT ..\images\\f4finalq38.png
-INPUT ..\images\\f4finalq38.png
-INPUT ..\images\\f4finalq38.png
-INPUT ..\images\\f4finalq38.png
-INPUT ..\images\\f4finalq38.png
-INPUT ..\images\\f4finalq38.png
-INPUT ..\images\\f4finalq39.png
-INPUT ..\images\\f4finalq39.png
-INPUT ..\images\\f4finalq39.png
-INPUT ..\images\\f4finalq39.png
-INPUT ..\images\\f4finalq39.png
-INPUT ..\images\\f4finalq39.png
-INPUT ..\images\\f4finalq39.png
-INPUT ..\images\\f4finalq40.png
-INPUT ..\images\\f4finalq40.png
-INPUT ..\images\\f4finalq40.png
-INPUT ..\images\\f4finalq40.png
-INPUT ..\images\\f4finalq40.png
-INPUT ..\images\\f4finalq40.png
-INPUT ..\images\\f4finalq40.png
-INPUT easy.aux
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT ..\images\\pythagoras.png
+INPUT ..\images\\pythagoras.png
+INPUT ..\images\\pythagoras.png
+INPUT ..\images\\pythagoras.png
+INPUT ..\images\\pythagoras.png
+INPUT ..\images\\pythagoras.png
+INPUT ..\images\\pythagoras.png
+INPUT eng.aux
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
-INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
