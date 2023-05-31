@@ -348,5 +348,136 @@
 
     \section*{複域幾何}
 
-    \section*{歐拉公式與多倍角}
+    回顧中四對於複數的教學：對於任意複數$z\in\mathbb{C}$，均可寫$$z=x+yi$$其中$x,y\in\mathbb{R}$，$i^2=-1$。此表達式稱爲\textbf{標準式}（或稱\textbf{笛卡爾式}），因爲對於任何複數而言，此表達式都是獨特的，而且可輕易區分\textbf{實部}和\textbf{複部}：\begin{itemize}
+        \item 實部：記$\Re{z}=x$；
+        \item 複部：記$\Im{z}=y$；
+    \end{itemize}
+
+    對此，考慮$i$並非實數，則可假設$i$為與實數綫垂直的方向。由此引用\textbf{阿根圖}：
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.6]{argand.jpg}
+    \end{figure}
+
+    以此爲鑒，此圖考慮等價於\textbf{笛卡爾坐標圖}，作y軸為$\Im{z}$的向量，x軸為$\Re{z}$的向量，則任何複數$z=x+yi\in\mathbb{C}$，都可記爲：$$x+yi\sim(x,y)$$
+    並且留意到\begin{align*}
+        i&=0+1i\sim(0,1)\\
+        (a,b)+(c,d)\sim (a+bi)+(c+di)&=(a+c)+(b+d)i\sim(a+c,b+d)\\
+        (a,b)\cdot (c,d)\sim(a+bi)(c+di)&=(ac-bd)+(ad+bc)i\sim(ac-bd,ad+bc)
+    \end{align*}
+
+    運用坐標可使我們對複數的理解更具體。現定義：
+
+    \begin{definition}[模]
+        對於$z\in\mathbb{C}$，我們稱$z$與$0$的距離為\textbf{模}，並記為：$$|z|=\sqrt{(\Re{z})^2+(\Im{z})^2}$$
+    \end{definition}
+
+    \begin{definition}[模]
+        對於$z\in\mathbb{C}$，定義$z$的\textbf{共軛}為：$$\overline{z}=\Re{z}-\Im{z}$$若以坐標描述，可定義爲$(x,y)\mapsto(x,-y)$，並視爲沿實數軸反射。
+    \end{definition}
+
+    \begin{proposition}
+        對於任意$z\in\mathbb{C}-\{0\}$，均有$$|z|=\sqrt{z\overline{z}}$$
+    \end{proposition}
+
+    \begin{corollary}
+        對於任意$z\in\mathbb{C}-\{0\}$，$z$可逆，並且$$z^{-1}=\frac{\overline{z}}{|z|^2}$$
+    \end{corollary}
+
+    \begin{remark}
+        需注意$0$沒有逆元素，除非對於$\dfrac{1}{0}$有明確定義，否則不作考慮。詳細參考\textbf{擴充平面}的敘述。
+    \end{remark}
+
+    考慮笛卡爾平面與極坐標的轉換，參考
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5]{argand.jpg}
+        \includegraphics[scale=0.5]{polar.png}
+        \caption{阿根圖與極坐標}
+    \end{figure}
+
+    坐標的對應方式如下：
+
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            複數&笛卡爾&極坐標\\
+            \hline
+            0&(0,0)&(0,0)\\
+            \hline
+            $1$&$(1,0)$&$(1,0)$\\
+            \hline
+            $i$&$(0,1)$&$(1,\pi/2)$\\
+            \hline
+            $-1$&$(-1,0)$&$(1,\pi)$\\
+            \hline
+            $-i$&$(0,-1)$&$(1,3\pi/2)$\\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    並且回憶圓形與三角函數的關係，可得以下表達式：
+
+    \begin{theorem}
+        對於任意$z\in\mathbb{C}$，均可寫作$$z=r(\cos{\theta}+i\sin{\theta})$$其中$r=|z|,\theta=\arctan{\frac{\Im{z}}{\Re{z}}}$。
+    \end{theorem}
+
+    \begin{proof}
+        考慮單位圓：
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.6]{circle1.png}
+        \end{figure}
+        並由定義3之衍理，可得$z\sim(r\cos{\theta},r\sin{\theta})\sim r\cos{\theta}+ir\sin{\theta}=r(\cos{\theta}+i\sin{\theta})$。其中\begin{align*}
+            |z|&=\sqrt{(r\cos{\theta})^2+(r\sin{\theta})^2}\\
+            &=\sqrt{r^2}\\
+            &=r\\
+            \tan{\theta}&=\frac{r\sin{\theta}}{r\cos{\theta}}=\frac{\Im{z}}{\Re{z}}\\
+            \theta&=\arctan{\frac{\Im{z}}{\Re{z}}}
+        \end{align*}
+    \end{proof}
+
+    \section*{棣莫弗定理與多倍角}
+
+    對於複數加減法，我們不再多説，因爲加減法屬於非常簡單的運算。但是，對於乘除法，我們可有更深刻的瞭解，而且其中牽涉的很大程度與三角函數有關。
+
+    \begin{theorem}[棣莫弗定理]
+        設$z,w\in\mathbb{C}$，並表$z=r(\cos{\theta}+i\sin{\theta}),w=s(\cos{\phi}+i\sin{\phi})$。則$$zw=rs(\cos(\theta+\phi)+i\sin(\theta+\phi))$$
+    \end{theorem}
+
+    \begin{proof}
+        通過直接計算：\begin{align*}
+            zw&=r(\cos{\theta}+i\sin{\theta})s(\cos{\phi}+i\sin{\phi})\\
+            &=rs(\cos{\theta}+i\sin{\theta})(\cos{\phi}+i\sin{\phi})\\
+            &=rs(\cos{\theta}\cos{\phi}-\sin{\theta}\sin{\phi}+i(\cos{\theta}\sin{\phi}+\sin{\theta}\cos{\phi}))\\
+            &=rs(\cos(\theta+\phi)+i\sin(\theta+\phi))
+        \end{align*}
+    \end{proof}
+
+    \begin{proposition}[棣莫弗定理的推廣形式]
+        設$(z_k)_{k=1}^n$為一系列複數，其中對於所有$1\leq k\leq n$，$z_k=r_k(\cos{\theta_k}+i\sin{\theta_k})$。則$$\prod_{k=1}^{n}z_k=(\prod_{k=1}^{n}r_k)[\cos(\sum_{k=1}^{n}\theta_k)+i\sin(\sum_{k=1}^{n}\theta_k)]$$
+    \end{proposition}
+
+    \begin{proof}
+        運用數學歸納法。
+    \end{proof}
+
+    \begin{proposition}[乘方形式]
+        對於任意$z\in\mathbb{C}$，若$z=r(\cos{\theta}+i\sin{\theta})$，則對於任何整數$n$，均有$$z^n=r^n(\cos(n\theta)+i\sin(n\theta))$$
+    \end{proposition}
+
+    \begin{proof}
+        推廣形式中所有$\theta_k$相等時的結果。
+    \end{proof}
+
+    \begin{corollary}
+        若考慮乘方形式中$r=1$，即模為1的複數，則$$(\cos{\theta}+i\sin{\theta})^n=\cos(n\theta)+i\sin(n\theta)$$
+    \end{corollary}
+
+    根據以上衍理，可得出多倍角的算式為\begin{align*}
+        \cos(nx)&=\sum_{0\leq k\leq n/2}\cos^{n-2k}{x}\sin^{2k}{x}\\
+        \sin(nx)&=\sum_{0\leq k\leq n/2}\cos^{n-2k-1}{x}\sin^{2k+1}{x}\\
+    \end{align*}
 \end{document}
