@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1685528405 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Trigonometry/chi.tex" "chi.pdf" "chi" 1685528409
+["pdflatex"] 1685673966 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Trigonometry/chi.tex" "chi.pdf" "chi" 1685673970
   "../image//ab.png" 1685451587 11813 d9cbe6b5dbb2f8e0cb1fdf8ef722dd12 ""
   "../image//argand.jpg" 1678195790 7646 fa339ac58a5efb54452a395a71712fb5 ""
   "../image//circle1.png" 1685438466 16989 cdfd35efd9ebac19c7cef74e0786ecc5 ""
@@ -12,7 +12,7 @@
   "../image//triangle.png" 1685434908 9149 bbf4c91380a3f47e34190988496ae2dc ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1664299329 14064 d51fe1154d65350215fea1f8fca0323d ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
-  "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1677243002 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
+  "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1685554408 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/sfd/ttf2pk/Unicode.sfd" 1458473944 107591 c249c63d38b8b55408aee52d643b0c18 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei4e.tfm" 1247154072 1172 2d5e87dd6ec409d864e1fe1662d00646 ""
@@ -49,6 +49,7 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei90.tfm" 1247154072 1172 bf3a9ea28c06174042dcd642737f0ad2 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei91.tfm" 1247154072 1172 af08f180dd0ec6a7129972d09ff61a98 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei96.tfm" 1247154072 1172 baafaa35cbf14b936974ec3a58b5f3e8 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei98.tfm" 1247154072 1172 1261ce7302f6ac3352bb5ce3d475a0d8 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai30.tfm" 1247154072 1172 94a4899058cb02d50d2382a329a7fd2a ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai4e.tfm" 1247154072 1172 e4e06d6f1e84d28bfcd86fa041ead712 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai4f.tfm" 1247154072 1172 8c8dbd4c88f73fa5916173eba96c1998 ""
@@ -401,9 +402,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Trigonometry/chi.tex" 1685528404 24276 a19d43cae19c800ed60956fa51a7f0a3 ""
-  "chi.aux" 1685528408 768 2d120414e9bdcae3aaa1f27ceb8a72cc "pdflatex"
-  "chi.tex" 1685528404 24276 a19d43cae19c800ed60956fa51a7f0a3 ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Trigonometry/chi.tex" 1685673966 27935 0d7660088405915abd2f8fe91951be3d ""
+  "chi.aux" 1685673969 768 88886585f1b1f5e6113301a7b1d21126 "pdflatex"
+  "chi.tex" 1685673966 27935 0d7660088405915abd2f8fe91951be3d ""
   (generated)
   "chi.aux"
   "chi.log"
