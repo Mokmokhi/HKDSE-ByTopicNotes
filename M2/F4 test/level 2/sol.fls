@@ -1,6 +1,6 @@
-PWD c:\GitHub\HKDSE-ByTopicNotes\M2\F4 test\level 4
+PWD c:\GitHub\HKDSE-ByTopicNotes\M2\F4 test\level 2
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\GitHub\HKDSE-ByTopicNotes\M2\F4 test\level 4\sol.tex
+INPUT c:\GitHub\HKDSE-ByTopicNotes\M2\F4 test\level 2\sol.tex
 OUTPUT sol.log
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
