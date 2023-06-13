@@ -10,6 +10,8 @@
 \usepackage{pgfplots}
 \usepackage[a4paper, total={6in, 9in}]{geometry}
 
+\graphicspath{{../image/}}
+
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhf[HL]{二項式定理}
@@ -42,8 +44,28 @@
         並定義$0!=1$.
     \end{definition}
 
-    \begin{remark}
+    \begin{example}
+        $1!=1$.
+    \end{example}
+
+    \begin{example}
+        $2!=2\cdot 1!=2$.
+    \end{example}
+
+    \begin{example}
+        $3!=3\cdot 2!=6$.
+    \end{example}
+
+    \begin{example}
+        $4!=4\cdot 3!=24$.
+    \end{example}
+
+    \begin{example}
         對於$0!$的定義，可以如此理解：$n!=n(n-1)!$，則$(n-1)!=\frac{n!}{n}$。因此，$$0!=(1-1)!=\frac{1!}{1}=1$$
+    \end{example}
+
+    \begin{remark}
+        階乘的運用只限非負整數；若需要對階乘進行拓展，可參考伽馬函數:$$\Gamma(s):=\int_0^\infty t^{s-1}e^{-t}dt$$
     \end{remark}
 
     \section*{組合}
@@ -52,17 +74,74 @@
         對於從$n$項物品中隨機抽取$r$項物品的組合數，定義爲$$C_r^n=\frac{n!}{r!(n-r)!}.$$
     \end{definition}
 
+    \begin{example}[HKDSE MA 2019 I-15]
+        設一班有21男與11女，若從班裏抽取5人成爲班會成員，並有至少1男，則有多少種不同的班會組合？
+        \begin{sol}
+            至少有1男，則全部組合方式排除沒有男生的組合方式：\begin{align*}
+                C_5^{21+11}-C_5^{11}=200914
+            \end{align*}
+        \end{sol}
+    \end{example}
+
+    \begin{example}
+        數出下圖中純長方形與正方形的數量。
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.6]{nCr.png}
+        \end{figure}
+
+        \begin{sol}
+            數出正方形數量，則相當於相同長度的直綫與橫綫組合：\begin{align*}
+                \sum_{k=1}^{4}k^2=\frac{1}{6}(4)(4+1)(2\times 4+1)=30
+            \end{align*}
+
+            數出任意長方形數量，則相當於任意兩條直綫與任意兩條橫綫組合：\begin{align*}
+                (C_2^5)^2=100
+            \end{align*}
+
+            數出純長方形數量，則相當於任意長方形的數量減去正方形的數量：\begin{align*}
+                100-30=70
+            \end{align*}
+        \end{sol}
+    \end{example}
+
     \begin{theorem}
         設$n,k$為正整數，$0\leq k\leq n$，則$$C_k^n=C_{n-k}^n$$
     \end{theorem}
+
+    \begin{proof}
+        \begin{align*}
+            C_k^n&=\frac{n!}{k!(n-k)!}\\
+            &=\frac{n!}{[n-(n-k)]!(n-k)!}\\
+            &=C_{n-k}^n
+        \end{align*}
+    \end{proof}
 
     \begin{theorem}
         設$n,k$為正整數，$0\leq k< n$，則$$C_k^n+C_{k+1}^n=C_{k+1}^{n+1}$$
     \end{theorem}
 
+    \begin{proof}
+        \begin{align*}
+            C_k^n+C_{k+1}^n&=\frac{n!}{k!(n-k)!}+\frac{n!}{(k+1)!(n-k-1)!}\\
+            &=\frac{(k+1)n!}{(k+1)!(n-k)!}+\frac{(n-k)n!}{(k+1)!(n-k)!}\\
+            &=\frac{(n+1)n!}{(k+1)!(n-k)!}\\
+            &=\frac{(n+1)!}{(k+1)![(n+1)-(k+1)]!}\\
+            &=C_{k+1}^{n+1}
+        \end{align*}
+    \end{proof}
+
     \section*{二項式定理}
 
-    對於二項式展開的係數，除了以帕斯卡三角為入門設想，我們亦可考慮$$(a+b)^n=(a+b)(a+b)(a+b)\cdots(a+b)=\prod_{i=1}^{n}(a+b)$$
+    一般而言，面對二項式展開，會提及\textbf{帕斯卡三角}：
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=1]{pascal_triangle.png}
+        \caption{Pascal Triangle 帕斯卡三角}
+    \end{figure}
+
+    對於二項式展開的係數，除了以帕斯卡三角為入門設想，我們亦可考慮$$\prod_{i=1}^{n}(a+b)=(a+b)^n=\sum_{i=0}^{n}ka^ib^{n-i}$$
 
     已知展開式中任意一項的表達式必爲$ka^xb^y$，其中$x+y=n$及$k$為常數。現求對應的$k$的值，考慮$$a^xb^y=(\prod_{i=1}^{x}a)(\prod_{j=1}^{y}b)$$
 
@@ -93,6 +172,10 @@
             n\\i_1,i_2,\dots,i_m
         \end{pmatrix}a_1^{i_1}a_2^{i_2}\cdots a_m^{i_m}$$
     \end{theorem}
+
+    \begin{proof}
+        詳見習題11。
+    \end{proof}
 
     \section*{習題}
     \begin{enumerate}
