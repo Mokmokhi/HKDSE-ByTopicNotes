@@ -14,7 +14,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhf[HL]{三角函數}
+\fancyhf[HL]{極限}
 \fancyhf[CF]{\thepage}
 
 \newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
@@ -41,7 +41,26 @@
     我們可以考慮數列$\{a_n\}$, 其中對於任意整數$n$，$a_n=\dfrac{1}{10^n}$。則當$n$越大時，$a_n$越靠近0。對此，記$$a_n\to 0$$考慮對任意$n$，均有$\varepsilon>0$使得$0<\varepsilon<a_n$，則稱變量$\varepsilon$為無窮小量。記$\varepsilon\to 0$。
 
     相對的，考慮數列$\{A_n\}$, 其中對於任意整數$n$，$A_n=10^n$。則當$n$越大時，$A_n$越靠近$\infty$。對此，記$$A_n\to \infty$$考慮對任意$n$，均有$N>0$使得$A_n<N$，則稱變量$N$為無窮大量。記$N\to \infty$。
+
+    由此發現，無窮小量與無窮大量互相關聯：
+
+    \begin{axiom}
+        若$a_n=\dfrac{1}{A_n}$，則$$\lim_{A_n\to \infty}a_n=0$$ 
+    \end{axiom}
+
+    以上亦可簡記為$\displaystyle\lim_{x\to\infty}\frac{1}{x}=0$.
+
     \section*{極限的幾何概念}
+
+    想象一個漩渦，然後有一個點$p$在漩渦裏漂浮，其結果就是\textbf{$p$會不斷沿著漩渦中心繞圈，無限接近漩渦中心，但永遠不會到達中心}。此刻，我們稱$p$所走的路綫為$p$的\textbf{軌跡}，記$p(t)$並以$t>0$作時間變數，而漩渦中心$p_0$則爲$p$的軌跡的極限，記$$p_0=\lim_{t\to\infty}p(t)$$
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.4]{limit1.png}
+    \end{figure}    
+
+    留意上圖，$p$的軌跡從外圍開始，不斷趨近於$p_0$。可見對於任何圓心為$p_0$且半徑爲$r>0$的圓形，均有$p(t)$位於圓形内。
+
     \section*{$\varepsilon-\delta$定義-於無窮小的極限}
     \section*{極限的性質}
     \section*{特殊的極限}
