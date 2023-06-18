@@ -59,7 +59,56 @@
         \includegraphics[scale=0.4]{limit1.png}
     \end{figure}    
 
-    留意上圖，$p$的軌跡從外圍開始，不斷趨近於$p_0$。可見對於任何圓心為$p_0$且半徑爲$r>0$的圓形，均有$p(t)$位於圓形内。
+    留意上圖，$p$的軌跡從外圍開始，不斷趨近於$p_0$。可見對於任何圓心為$p_0$且半徑爲$r>0$的圓形，均有$p(t)$位於圓形内。我們稱$p(t)$的極限\textbf{收斂}；反之，若$p(t)$沒有唯一極限（甚至沒有極限），我們稱之爲\textbf{發散}。
+
+    那麽，該如何證明極限收斂性成爲了微分數學一個重要命題。對此，幾何學家定名了一個數學模型，稱爲\textbf{賦距空間}，指一個數學空間中，擁有計算距離的函數：
+
+    \begin{definition}[距離函數]
+        對於一個數集$S$，若函數$d:S\times S\to\mathbb{R}$符合以下條件：\begin{itemize}
+            \item (正定性)對於任何$x,y\in S$，均有$d(x,y)\geq 0$；$d(x,y)=0$當且僅當$x=y$。
+            \item (對稱性)對於任何$x,y\in S$，$d(x,y)=d(y,x)$。
+            \item (三角不等式)對於任何$x,y,z\in S$，$d(x,z)\leq d(x,y)+d(y,z)$。
+        \end{itemize}
+        則稱$d$為$S$的距離函數。
+    \end{definition}
+
+    \begin{definition}[賦距空間]
+        設$d$為數集$S$的距離函數，則稱$(S,d)$為賦距空間。
+    \end{definition}
+
+    \begin{example}
+        若$d(x,y)=\sqrt{(x-y)^2}:\mathbb{R}\times\mathbb{R}\to \mathbb{R}$，則$(\mathbb{R},d)$為賦距空間。
+
+        \begin{proof}
+            證明函數$d$符合距離公式條件：
+            \begin{enumerate}
+                \item 正定性：$d(x,y)=\sqrt{(x-y)^2}\geq \sqrt{0}=0$。同時$$d(x,y)=0\iff (x-y)^2=0\iff x-y=0\iff x=y$$
+                \item 對稱性：$d(x,y)=\sqrt{(x-y)^2}=\sqrt{(y-x)^2}=d(y,x)$。
+                \item 三角不等式：\begin{align*}
+                    [d(x,z)]^2&=(x-z)^2\\
+                    &=(x-y+y-z)^2\\
+                    &=(x-y)^2+2(x-y)(y-z)+(y-z)^2\\
+                    &\leq [d(x,y)]^2+2[d(x,y)][d(y,z)]+[d(y,z)]^2\\
+                    &=[d(x,y)+d(y,z)]^2
+                \end{align*}
+            \end{enumerate}
+            因此，$d$為$\mathbb{R}$上的距離公式，$(\mathbb{R},d)$為賦距空間。
+        \end{proof}
+    \end{example}
+
+    在正規數學當中，無論是在一維、二維、三維，還是更高維的賦距空間，我們都希望擁有極限收斂。利用距離公式定義收斂性，可讓我們對收斂性有更直觀的判斷。現定義於賦距空間$(S,d)$上$p$點的\textbf{$\varepsilon$-鄰域}為$$U_\varepsilon(p):=\{q\in S:d(p,q)<\varepsilon\}$$
+
+    \begin{definition}[聚點]
+        設$x(t)$為軌跡，若有$x_0$令任何$\varepsilon>0$，均有$x(t)\in U_\varepsilon(x_0)$，則$x_0$為$x(t)$的聚點。
+    \end{definition}
+
+    \begin{definition}[聚點(2)]
+        設$(x_n)$為一系列點，若有$x_0$令任何$\varepsilon>0$，均有$x_n\in U_\varepsilon(x_0)$，則$x_0$為$x_n$的聚點。
+    \end{definition}
+
+    \begin{definition}[極限收斂]
+        設$x_0$為$(x_n)$的聚點，而且對於任何$n>0$，均有$\varepsilon>0$使得所有$m\geq n$都有$x_m\in U_\varepsilon(x_0)$，則稱$x_0$為$(x_n)$的極限，或$(x_n)$收斂於$x_0$。
+    \end{definition}
 
     \section*{$\varepsilon-\delta$定義-於無窮小的極限}
     \section*{極限的性質}
