@@ -96,6 +96,36 @@
         \end{proof}
     \end{example}
 
+    \begin{remark}
+        此距離為絕對值函數$|\cdot|$。
+    \end{remark}
+
+    \begin{example}
+        設$x=(x_1,x_2),y=(y_1,y_2)$。若$d(x,y)=\sqrt{(x_1-y_1)^2+(x_2-y_2)^2}:\mathbb{R}^2\times\mathbb{R}^2\to \mathbb{R}$，則$(\mathbb{R}^2,d)$為賦距空間。
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.6]{EuclideanDistance.png}
+            \caption{歐氏幾何：$\mathbb{R}^2=\mathbb{R}\times\mathbb{R}$即xy坐標平面}
+        \end{figure}
+
+        \begin{proof}
+            證明函數$d$符合距離公式條件：
+            \begin{enumerate}
+                \item 正定性：$d(x,y)=\sqrt{(x_1-y_1)^2+(x_2-y_2)^2}\geq \sqrt{0}=0$。同時$$d(x,y)=0\iff (x_1-y_1)^2+(x_2-y_2)^2=0\iff \begin{cases}
+                    x_1-y_1=0\\
+                    x_2-y_2=0
+                \end{cases}\iff x=y$$
+                \item 對稱性：$d(x,y)=\sqrt{(x_1-y_1)^2+(x_2-y_2)^2}=\sqrt{(y_1-x_1)^2+(y_2-x_2)^2}=d(y,x)$。
+                \item 三角不等式：證明留作習題。
+            \end{enumerate}
+            因此，$d$為$\mathbb{R}^2$上的距離公式，$(\mathbb{R}^2,d)$為賦距空間。
+        \end{proof}
+    \end{example}
+
+    \begin{remark}
+        此距離為歐式距離函數，亦稱通常距離。
+    \end{remark}
+
     在正規數學當中，無論是在一維、二維、三維，還是更高維的賦距空間，我們都希望擁有極限收斂。利用距離公式定義收斂性，可讓我們對收斂性有更直觀的判斷。現定義於賦距空間$(S,d)$上$p$點的\textbf{$\varepsilon$-鄰域}為$$U_\varepsilon(p):=\{q\in S:d(p,q)<\varepsilon\}$$
 
     \begin{definition}[聚點]
@@ -107,8 +137,16 @@
     \end{definition}
 
     \begin{definition}[極限收斂]
-        設$x_0$為$(x_n)$的聚點，而且對於任何$n>0$，均有$\varepsilon>0$使得所有$m\geq n$都有$x_m\in U_\varepsilon(x_0)$，則稱$x_0$為$(x_n)$的極限，或$(x_n)$收斂於$x_0$。
+        設$x_0$為$(x_n)$的聚點，而且對於任何$n>0$，均有$\varepsilon>0$使得所有$m> n$都有$x_m\in U_\varepsilon(x_0)$，則稱$x_0$為$(x_n)$的極限，或$(x_n)$收斂於$x_0$。
     \end{definition}
+
+    \begin{example}
+        設$x_n:=\dfrac{1}{n}$，則$(x_n)$在$(\mathbb{R},|\cdot|)$收斂於$0$，$\lim_{n\to \infty}x_n=0$。
+
+        \begin{proof}
+            對於任意$n>0$，均可設$\varepsilon=\frac{1}{n}$使得當$m> n$時$$d(x_m,0)=\frac{1}{m}<\frac{1}{n}=\varepsilon$$
+        \end{proof}
+    \end{example}
 
     \section*{$\varepsilon-\delta$定義-於無窮小的極限}
     \section*{極限的性質}
