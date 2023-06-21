@@ -149,11 +149,100 @@
     \end{example}
 
     \section*{$\varepsilon-\delta$定義-於無窮小的極限}
+
+    當討論與函數相關時，我們必須將原有的幾何看法濃縮至代數看法，以方便計算。作爲入門理解，目前以$C(\overline{\mathbb{R}})$作討論範圍（即所有函數$f:\overline{\mathbb{R}}\to\overline{\mathbb{R}}$），這裏以$\overline{\mathbb{R}}$指代賦距空間$(\overline{\mathbb{R}},|\cdot|)$。
+
+    $\overline{\mathbb{R}}$的定義如下：
+
+    \begin{definition}[拓展實域]
+        $\overline{\mathbb{R}}=\mathbb{R}\cup\{-\infty,+\infty\}$，同時定義：\begin{itemize}
+            \item $a+\infty=+\infty+a=+\infty$，當$a\neq -\infty$；
+            \item $a-\infty=-\infty+a=-\infty$，當$a\neq +\infty$；
+            \item $a\cdot(\pm\infty)=\pm\infty\cdot a=\pm\infty$，當$a>0$；
+            \item $a\cdot(\pm\infty)=\pm\infty\cdot a=\mp\infty$，當$a<0$；
+            \item $\dfrac{a}{\pm\infty}=0$，當$a\in\mathbb{R}$；
+            \item $\dfrac{\pm\infty}{a}=\pm\infty$，當$a>0$；
+            \item $\dfrac{\pm\infty}{a}$，當$a<0$。
+        \end{itemize}
+    \end{definition}
+    
+    討論函數的極限，我們考慮下圖：
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5]{function_limit.png}
+    \end{figure}
+
+    如上圖，我們希望求得$\lim_{x\to a}f(x)$的值，故以幾何角度觀看，這等同於對任意$\varepsilon>0$，當$f(x)\in U_\varepsilon(L)$時，存在$\delta>0$使得$x\in U_\delta(a)$，其中$L=\lim_{x\to a}f(x)$。
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5]{epsilon-delta_limit.png}
+    \end{figure}
+
+    故此，以$|\cdot|$作爲距離函數，$x\in U_\delta(a)$等價於$|x-a|<\delta$，$y\in U_\varepsilon(L)$等價於$|y-L|<\varepsilon$，可得以下極限定理：
+
+    \begin{theorem}
+        設$f$為函數，$f$在$a$存在極限當且僅當對於任意$\varepsilon>0$，存在$\delta>0$使得所有$x$符合$0<|x-a|<\delta$時，$$|f(x)-L|<\varepsilon$$ 此則寫$L=\lim_{x\to a}f(x)$。
+    \end{theorem}
+
+    \begin{example}
+        證明$\lim_{x\to a}x=a$。
+
+        \begin{proof}
+            設$\varepsilon>0$及$\delta<\varepsilon$。
+
+            若$0<|x-a|<\delta$，則\begin{align*}
+                |x-a|&<\delta\\
+                &<\varepsilon
+            \end{align*}
+        \end{proof}
+    \end{example}
+
+    \begin{example}
+        證明$\lim_{x\to a}x^n=a^n$，$n>1$為整數。
+        
+        \begin{proof}
+            設$\varepsilon>0$及$\delta<\dfrac{\varepsilon}{nM^{n-1}}$，其中$M:=\max\{|a-\delta|,|a+\delta|\}$。
+
+            若$0<|x-a|<\delta$，則\begin{align*}
+                |x^n-a^n|&=|x-a||\sum_{i=0}^{n-1}x^ia^{n-i-1}|\\
+                &\leq |x-a|\sum_{i=0}^{n-1}|x^ia^{n-i-1}|\\
+                &\leq |x-a|\sum_{i=0}^{n-1}|M^iM^{n-i-1}|\\
+                &=|x-a|nM^{n-1}\\
+                &<\delta\cdot nM^{n-1}\\
+                &<\varepsilon
+            \end{align*}
+        \end{proof}
+    \end{example}
+
+    從定義及定理不難發現，極限的求值無關$x=a$，説明$x=a$是一個可排除不理的點。我們稱之爲\textbf{可移去點}(point of removable discontinuity)。
+
+    有鑒於可移去點的概念，我們求得更多難以想象、非必然但可以理解的極限的值。
+
+    \begin{example}
+        證明$\lim_{x\to a}\dfrac{x^{n+1}-a^{n+1}}{x-a}=(n+1)a^n$，$n\geq 0$為整數。
+        
+        \begin{proof}
+            設$\varepsilon>0$及$\delta<\dfrac{2\varepsilon}{n(n+1)M^n}$，其中$M:=\max\{|a-\delta|,|a+\delta|\}$。
+
+            若$0<|x-a|<\delta$，則\begin{align*}
+                |\frac{x^{n+1}-a^{n+1}}{x-a}-(n+1)a^n|&=|\sum_{i=0}^{n}x^ia^{n-i}-(n+1)a^n|\\
+                &\leq \sum_{i=0}^{n}|x^ia^{n-i}-a^n|\\
+                &=\sum_{i=1}^{n}|a^{n-i}||x^i-a^i|\\
+                &\leq |x-a|\sum_{i=1}^{n}|a^{n-i}|\sum_{k=0}^{i-1}|x^ka^{i-1-k}|\\
+                &\leq |x-a|\sum_{i=1}^{n}M^{n-i}\sum_{k=0}^{i-1}M^kM^{i-1-k}\\
+                &<\delta\cdot \sum_{i=1}^{n}iM^n\\
+                &=\delta\cdot \dfrac{n(n+1)}{2}M^n\\
+                &<\varepsilon
+            \end{align*}
+        \end{proof}
+    \end{example}
+
     \section*{極限的性質}
     \section*{特殊的極限}
     \section*{於無窮大的極限}
     \section*{連續函數}
     \section*{連續函數的性質}
-    \section*{介值定理}
-    \section*{單調函數與逆函數}
+    \section*{可微函數及基本原理}
 \end{document}
