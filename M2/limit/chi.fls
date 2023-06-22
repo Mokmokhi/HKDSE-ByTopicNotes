@@ -1151,8 +1151,13 @@ INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei79.
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei9e.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong94.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong79.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong78.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei60.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei8c.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unikai\unikai6c.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unikai\unikai74.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unikai\unikai72.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unikai\unikai6e.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei72.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei6b.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei90.tfm
@@ -1165,7 +1170,12 @@ INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei74.
 INPUT chi.aux
 INPUT C:\WINDOWS\Fonts\simhei.ttf
 INPUT C:\WINDOWS\Fonts\simhei.ttf
+INPUT C:\WINDOWS\Fonts\simkai.ttf
+INPUT C:\WINDOWS\Fonts\simkai.ttf
+INPUT C:\WINDOWS\Fonts\simkai.ttf
+INPUT C:\WINDOWS\Fonts\simkai.ttf
 INPUT C:\WINDOWS\Fonts\simhei.ttf
+INPUT C:\WINDOWS\Fonts\simsun.ttc
 INPUT C:\WINDOWS\Fonts\simsun.ttc
 INPUT C:\WINDOWS\Fonts\simsun.ttc
 INPUT C:\WINDOWS\Fonts\simhei.ttf

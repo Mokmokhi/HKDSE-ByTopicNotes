@@ -224,7 +224,7 @@
         證明$\lim_{x\to a}\dfrac{x^{n+1}-a^{n+1}}{x-a}=(n+1)a^n$，$n\geq 0$為整數。
         
         \begin{proof}
-            設$\varepsilon>0$及$\delta<\dfrac{2\varepsilon}{n(n+1)M^n}$，其中$M:=\max\{|a-\delta|,|a+\delta|\}$。
+            設$\varepsilon>0$及$\delta<\dfrac{2\varepsilon}{n(n+1)M^{n-1}}$，其中$M:=\max\{|a-\delta|,|a+\delta|\}$。
 
             若$0<|x-a|<\delta$，則\begin{align*}
                 |\frac{x^{n+1}-a^{n+1}}{x-a}-(n+1)a^n|&=|\sum_{i=0}^{n}x^ia^{n-i}-(n+1)a^n|\\
@@ -232,14 +232,51 @@
                 &=\sum_{i=1}^{n}|a^{n-i}||x^i-a^i|\\
                 &\leq |x-a|\sum_{i=1}^{n}|a^{n-i}|\sum_{k=0}^{i-1}|x^ka^{i-1-k}|\\
                 &\leq |x-a|\sum_{i=1}^{n}M^{n-i}\sum_{k=0}^{i-1}M^kM^{i-1-k}\\
-                &<\delta\cdot \sum_{i=1}^{n}iM^n\\
-                &=\delta\cdot \dfrac{n(n+1)}{2}M^n\\
+                &<\delta\cdot \sum_{i=1}^{n}iM^{n-1}\\
+                &=\delta\cdot \dfrac{n(n+1)}{2}M^{n-1}\\
                 &<\varepsilon
             \end{align*}
         \end{proof}
     \end{example}
 
+    上例證得$x=a$為可移去點。
+
+    對極限的討論，除了需要求得極限的值，還需要確定極限的唯一性，如此才能體現極限的價值。
+
+    \begin{theorem}[唯一性]
+        若$f:A\to\mathbb{R}$且$c$是$A$的聚點，則$f$在$c$點上只有一個極限。
+    \end{theorem}
+
+    \begin{proof}
+        設$L,L'$均爲$\lim_{x\to c}f(x)$的值，則對於任意$\varepsilon>0$，均有：\begin{align*}
+            |L-L'|&=|L-f(x)+f(x)-L'|\\
+            &\leq|L-f(x)|+|L'-f(x)|\\
+            &<\varepsilon/2+\varepsilon/2\\
+            &=\varepsilon
+        \end{align*}
+    \end{proof}
+
     \section*{極限的性質}
+
+    理解了極限的唯一性，現在可以更進一步探討極限的性質，包括其運算原理和重要定理。
+
+    \begin{definition}[運算符]
+        設$f,g$為實函數，則定義以下函數運算：\begin{itemize}
+            \item 定義加法為$f+g$，並理解爲$(f+g)(x):=f(x)+g(x)$。
+            \item 定義減法為$f-g$，並理解爲$(f-g)(x):=f(x)-g(x)$。
+            \item 定義乘法為$fg$，並理解爲$(fg)(x):=f(x)g(x)$。
+            \item 若$g(x)\neq 0$，定義除法為$\dfrac{f}{g}$，並理解爲$(\dfrac{f}{g})(x):=\dfrac{f(x)}{g(x)}$。
+        \end{itemize}
+    \end{definition}
+
+    \begin{theorem}
+        若$\lim_{x\to c}f(x)=L$及$\lim_{x\to c}g(x)=M$，則：\begin{itemize}
+            \item $\lim_{x\to c}(f+g)=L+M$；
+            \item $\lim_{x\to c}(f-g)=L-M$；
+            \item $\lim_{x\to c}(fg)=LM$；
+            \item 若$M\neq 0$，$\lim_{x\to c}(f/g)=L/M$。
+        \end{itemize}
+    \end{theorem}
     \section*{特殊的極限}
     \section*{於無窮大的極限}
     \section*{連續函數}
