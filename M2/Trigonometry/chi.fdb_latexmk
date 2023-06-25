@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1685673966 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Trigonometry/chi.tex" "chi.pdf" "chi" 1685673970
+["pdflatex"] 1687697873 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Trigonometry/chi.tex" "chi.pdf" "chi" 1687697878
   "../image//ab.png" 1685451587 11813 d9cbe6b5dbb2f8e0cb1fdf8ef722dd12 ""
   "../image//argand.jpg" 1678195790 7646 fa339ac58a5efb54452a395a71712fb5 ""
   "../image//circle1.png" 1685438466 16989 cdfd35efd9ebac19c7cef74e0786ecc5 ""
@@ -217,9 +217,9 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1588360716 5646 2609567579096c69f0472004a72489a6 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1588360716 31921 5879df709f54630647c1aa6545bcedb7 ""
-  "C:/WINDOWS/Fonts/simhei.ttf" 1685282978 9755440 983b60188a8e5a7c29c06c674f428b3d ""
-  "C:/WINDOWS/Fonts/simkai.ttf" 1685282978 11789376 868a8b82664dfab00a95e3e30eaa705a ""
-  "C:/WINDOWS/Fonts/simsun.ttc" 1684654067 18008680 490583a172d4371a68d1e0526a6bca81 ""
+  "C:/WINDOWS/Fonts/simhei.ttf" 1681102920 9755440 983b60188a8e5a7c29c06c674f428b3d ""
+  "C:/WINDOWS/Fonts/simkai.ttf" 1681102920 11789376 868a8b82664dfab00a95e3e30eaa705a ""
+  "C:/WINDOWS/Fonts/simsun.ttc" 1686277994 18008680 490583a172d4371a68d1e0526a6bca81 ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -253,6 +253,7 @@
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "D:/Program Files (x86)/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "D:/Program Files (x86)/MiKTeX/tex/generic/babel/babel.def" 1622647513 121009 d797444026f7ec580bc6c8aa432a71ab ""
@@ -402,9 +403,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Trigonometry/chi.tex" 1685673966 27935 0d7660088405915abd2f8fe91951be3d ""
-  "chi.aux" 1685673969 768 88886585f1b1f5e6113301a7b1d21126 "pdflatex"
-  "chi.tex" 1685673966 27935 0d7660088405915abd2f8fe91951be3d ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Trigonometry/chi.tex" 1687697873 28582 f788adc72f2c270a7540210b17cc3035 ""
+  "chi.aux" 1687697877 768 88886585f1b1f5e6113301a7b1d21126 "pdflatex"
+  "chi.tex" 1687697873 28582 f788adc72f2c270a7540210b17cc3035 ""
   (generated)
   "chi.aux"
   "chi.log"
