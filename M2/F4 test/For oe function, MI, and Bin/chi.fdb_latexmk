@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1687763478 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/For oe function, MI, and Bin/chi.tex" "chi.pdf" "chi" 1687763481
+["pdflatex"] 1687859960 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/For oe function, MI, and Bin/chi.tex" "chi.pdf" "chi" 1687859963
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1685554408 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
@@ -28,7 +28,6 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong88.tfm" 1247154072 1172 e80b61bcc19bffe1009dc0e70ca042e8 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong8a.tfm" 1247154072 1172 a036683e790606984e21b7cb9523d25d ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong8b.tfm" 1247154072 1172 cb1829d4415ae14a6d1b42840373e23a ""
-  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong8f.tfm" 1247154072 1172 39abbbe02586d0f65fa39c19429184a6 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong90.tfm" 1247154072 1172 1dd258add692258fd748a53ff76ed075 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong9a.tfm" 1247154072 1172 37a3cd36cf03e67f393bee80b1370d05 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisongff.tfm" 1247154072 1172 156175f4eaa9daea4e21b890ac9fafb8 ""
@@ -238,9 +237,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/For oe function, MI, and Bin/chi.tex" 1687763478 1382 8266c7cb58411d3f08b885c2c202f26b ""
-  "chi.aux" 1687763481 112 d2ca28f0a8afe573a12973a007b9ea93 "pdflatex"
-  "chi.tex" 1687763478 1382 8266c7cb58411d3f08b885c2c202f26b ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/F4 test/For oe function, MI, and Bin/chi.tex" 1687859960 1474 9d1f34e99a2bcfa1be2760da0ed878d5 ""
+  "chi.aux" 1687859963 112 d2ca28f0a8afe573a12973a007b9ea93 "pdflatex"
+  "chi.tex" 1687859960 1474 9d1f34e99a2bcfa1be2760da0ed878d5 ""
   (generated)
   "chi.aux"
   "chi.log"
