@@ -277,6 +277,59 @@
             \item 若$M\neq 0$，$\lim_{x\to c}(f/g)=L/M$。
         \end{itemize}
     \end{theorem}
+
+    \begin{proof}
+        加法：對於任意$\varepsilon>0$，均有：\begin{align*}
+            |(f+g)-(L+M)|&=|L-f(x)+g(x)-M|\\
+            &\leq|L-f(x)|+|M-g(x)|\\
+            &<\varepsilon/2+\varepsilon/2\\
+            &=\varepsilon
+        \end{align*}
+        減法：對於任意$\varepsilon>0$，均有：\begin{align*}
+            |(f-g)-(L-M)|&=|f(x)-L+M-g(x)|\\
+            &\leq|L-f(x)|+|M-g(x)|\\
+            &<\varepsilon/2+\varepsilon/2\\
+            &=\varepsilon
+        \end{align*}
+        乘法：對於任意$\varepsilon>0$，均有：\begin{align*}
+            |(fg)-(LM)|&=|f(x)g(x)-Lg(x)+Lg(x)-LM|\\
+            &\leq|g(x)||L-f(x)|+|L||M-g(x)|\\
+            &<(|M|+\varepsilon)\varepsilon/(2|M|+\varepsilon)+|L|\varepsilon/2|L|\\
+            &=\varepsilon
+        \end{align*}
+        除法：對於任意$\varepsilon>0$，均有：\begin{align*}
+            |(f/g)-(L/M)|&=|Mf(x)-LM+LM-Lg(x)|/|LM|\\
+            &\leq|L-f(x)|/|L|+|M-g(x)|/|M|\\
+            &<|L|\varepsilon/2|L|+|M|\varepsilon/2|M|\\
+            &=\varepsilon
+        \end{align*}
+    \end{proof}
+
+    以上定理其實就是極限的分配律：
+
+    \begin{itemize}
+        \item $\displaystyle\lim_{x\to c}(f+g)=\lim_{x\to c}f(x)+\lim_{x\to c}g(x)$；
+        \item $\displaystyle\lim_{x\to c}(f-g)=\lim_{x\to c}f(x)-\lim_{x\to c}g(x)$；
+        \item $\displaystyle\lim_{x\to c}(fg)=\lim_{x\to c}f(x)\lim_{x\to c}g(x)$；
+        \item 若$M\neq 0$，$\displaystyle\lim_{x\to c}(f/g)=\lim_{x\to c}f(x)/\lim_{x\to c}g(x)$。
+    \end{itemize}
+
+    \begin{proposition}
+        設$f,g,h$為函數，并且對於所有$x\in\mathbb{R}$符合$g(x)\leq f(x)\leq h(x)$，若$\displaystyle \lim_{x\to c}g(x)=\lim_{x\to c}h(x)$，則$$\lim_{x\to c}g(x)=\lim_{x\to c}f(x)=\lim_{x\to c}h(x)$$
+    \end{proposition}
+
+    \begin{proof}
+        設$\displaystyle \lim_{x\to c}g(x)=\lim_{x\to c}h(x)=L$，則$$-\varepsilon\leq g(x)-L\leq f(x)-L\leq h(x)-L\leq \varepsilon$$
+        因此，$|f(x)-L|\leq \varepsilon$。
+    \end{proof}
+
+    以上定理汎用性極高，如下列例子：
+    
+    \begin{example}
+        求$\lim_{n\to \infty}\dfrac{\sin{n}}{n}$。
+
+        因$-1\leq \sin{x}\leq 1$，$$\frac{-1}{n}\leq \frac{\sin{n}}{n}\leq \frac{1}{n}\implies \lim_{n\to\infty}\frac{\sin{n}}{n}=0$$
+    \end{example}
     \section*{特殊的極限}
     \section*{於無窮大的極限}
     \section*{連續函數}

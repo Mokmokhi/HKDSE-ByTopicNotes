@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1687427198 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" "chi.pdf" "chi" 1687427201
+["pdflatex"] 1688483219 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" "chi.pdf" "chi" 1688483223
   "../image//EuclideanDistance.png" 1687160464 16054 5a1d65d54434a092ace50dadde47c649 ""
   "../image//epsilon-delta_limit.png" 1687313555 20173 5d41ca36b11a6d8d42a481aad1ef2ab9 ""
   "../image//function_limit.png" 1687312778 17935 c89b637c76d7244db5d112e3b4e675ea ""
@@ -108,6 +108,7 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong53.tfm" 1247154072 1172 e2a03d4bc65395303b42aaff9aacd7be ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong54.tfm" 1247154072 1172 c93f9362e45903cde8748b054b30ab56 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong55.tfm" 1247154072 1172 3c2677828bb3b2231f72896b373b851c ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong56.tfm" 1247154072 1172 483bbebc510ee17933c3af062965b6d4 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong57.tfm" 1247154072 1172 eb821bcbfd385c0d470afef6ff6ac95b ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong59.tfm" 1247154072 1172 2aa8dc9bdcfa6684a19d81e71fa8a3e1 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong5b.tfm" 1247154072 1172 449ef25f4dcd447addb8325f7bf12b2a ""
@@ -385,9 +386,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" 1687427195 13491 4bdd37248ce5c5bda7d27b870103961c ""
-  "chi.aux" 1687427200 295 3e763005e509b63239184044adadd832 "pdflatex"
-  "chi.tex" 1687427195 13491 4bdd37248ce5c5bda7d27b870103961c ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" 1688483218 15859 48dcbf172ef9ade129d48bb55fbe6cd8 ""
+  "chi.aux" 1688483222 296 ded5e4b9607b5fe30bf908d4c174dcb3 "pdflatex"
+  "chi.tex" 1688483218 15859 48dcbf172ef9ade129d48bb55fbe6cd8 ""
   (generated)
   "chi.aux"
   "chi.log"
