@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1688483219 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" "chi.pdf" "chi" 1688483223
+["pdflatex"] 1688541322 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" "chi.pdf" "chi" 1688541328
   "../image//EuclideanDistance.png" 1687160464 16054 5a1d65d54434a092ace50dadde47c649 ""
   "../image//epsilon-delta_limit.png" 1687313555 20173 5d41ca36b11a6d8d42a481aad1ef2ab9 ""
   "../image//function_limit.png" 1687312778 17935 c89b637c76d7244db5d112e3b4e675ea ""
@@ -386,9 +386,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" 1688483218 15859 48dcbf172ef9ade129d48bb55fbe6cd8 ""
-  "chi.aux" 1688483222 296 ded5e4b9607b5fe30bf908d4c174dcb3 "pdflatex"
-  "chi.tex" 1688483218 15859 48dcbf172ef9ade129d48bb55fbe6cd8 ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" 1688541320 15821 1e1eb5b16ca3fdfa488b5218edcf7283 ""
+  "chi.aux" 1688541327 296 ded5e4b9607b5fe30bf908d4c174dcb3 "pdflatex"
+  "chi.tex" 1688541320 15821 1e1eb5b16ca3fdfa488b5218edcf7283 ""
   (generated)
   "chi.aux"
   "chi.log"
