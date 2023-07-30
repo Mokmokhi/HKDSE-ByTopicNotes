@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1688541322 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" "chi.pdf" "chi" 1688541328
+["pdflatex"] 1690727880 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" "chi.pdf" "chi" 1690727884
   "../image//EuclideanDistance.png" 1687160464 16054 5a1d65d54434a092ace50dadde47c649 ""
   "../image//epsilon-delta_limit.png" 1687313555 20173 5d41ca36b11a6d8d42a481aad1ef2ab9 ""
   "../image//function_limit.png" 1687312778 17935 c89b637c76d7244db5d112e3b4e675ea ""
@@ -203,9 +203,9 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1588360716 5646 2609567579096c69f0472004a72489a6 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1588360716 31921 5879df709f54630647c1aa6545bcedb7 ""
-  "C:/WINDOWS/Fonts/simhei.ttf" 1681102920 9755440 983b60188a8e5a7c29c06c674f428b3d ""
-  "C:/WINDOWS/Fonts/simkai.ttf" 1681102920 11789376 868a8b82664dfab00a95e3e30eaa705a ""
-  "C:/WINDOWS/Fonts/simsun.ttc" 1686277994 18008680 490583a172d4371a68d1e0526a6bca81 ""
+  "C:/WINDOWS/Fonts/simhei.ttf" 1689443995 9755440 983b60188a8e5a7c29c06c674f428b3d ""
+  "C:/WINDOWS/Fonts/simkai.ttf" 1689443995 11789376 868a8b82664dfab00a95e3e30eaa705a ""
+  "C:/WINDOWS/Fonts/simsun.ttc" 1688811788 18008680 490583a172d4371a68d1e0526a6bca81 ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -386,9 +386,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" 1688541320 15821 1e1eb5b16ca3fdfa488b5218edcf7283 ""
-  "chi.aux" 1688541327 296 ded5e4b9607b5fe30bf908d4c174dcb3 "pdflatex"
-  "chi.tex" 1688541320 15821 1e1eb5b16ca3fdfa488b5218edcf7283 ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/limit/chi.tex" 1690727879 16097 e3e2fd74cbb442c6559dda5349e97eaf ""
+  "chi.aux" 1690727883 296 ded5e4b9607b5fe30bf908d4c174dcb3 "pdflatex"
+  "chi.tex" 1690727879 16097 e3e2fd74cbb442c6559dda5349e97eaf ""
   (generated)
   "chi.aux"
   "chi.log"
