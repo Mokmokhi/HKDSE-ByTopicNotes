@@ -34,6 +34,7 @@
 \newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
 
 \begin{document}
+    Reference from Introduction to Real Analysis, by R. Bartle and D. Sherbert.
     \section*{無窮小量與無窮大量}
     
     在高等數學，對於無窮的討論，一般從無窮小量開始。何爲無窮小量？即一個非常接近0的變量不斷向零靠近，而永遠無法到達0，即爲無窮小量。
@@ -338,6 +339,65 @@
 
     由於證明以上極限需使用泰勒展開式，故目前不做證明。（或以切綫解釋：需要導數基礎）
     \section*{連續函數}
+    \begin{definition}[連續函數]
+        設$f$為函數，$f$在$a$存在連續性當且僅當對於任意$\varepsilon>0$，存在$\delta>0$使得所有$x$符合$0<|x-a|<\delta$時，$$|f(x)-f(a)|<\varepsilon$$ 若$f$不符合以上條件，則稱$f$在$a$不連續。
+    \end{definition}
+    \begin{definition}
+        設$f:D\to R$為函數，若$f$對所有$a\in D$均存在連續性，則稱$f$為$D$上的連續函數。
+    \end{definition}
+    \begin{example}
+        \begin{enumerate}
+            \item 常函數$f(x):=b$是$\mathbb{R}$上的連續函數。
+            \item 函數$f(x):=x$是$\mathbb{R}$上的連續函數。
+            \item 函數$f(x):=x^2$是$\mathbb{R}$上的連續函數。
+            \item 函數$f(x):=\dfrac{1}{x}$是$\{x\in\mathbb{R}:x>0\}$上的連續函數。
+            \item 函數$f(x):=\dfrac{1}{x}$不是$\mathbb{R}$上的連續函數。
+            \item 函數$f(x):=\begin{cases}
+                1&\textrm{若}x\textrm{為有理數}\\
+                0&\textrm{若}x\textrm{為無理數}
+            \end{cases}$是$\mathbb{R}$上的連續函數。
+        \end{enumerate}
+    \end{example}
+    \begin{remark}
+        若$f$不在$c$上連續，但在$c$上存在極限，則可得$$g(x):=\begin{cases}
+            \lim_{x\to c}f(x) & x=c\\
+            f(x) & x\neq c
+        \end{cases}$$ 為連續函數。此概念多見於拓展函數。
+    \end{remark}
     \section*{連續函數的性質}
+
+    與極限相似，連續性亦擁有綫性性。
+
+    \begin{theorem}
+        若$f,g$為連續函數，則：\begin{itemize}
+            \item $f\pm g, fg$均爲連續函數；
+            \item 若$g\neq 0$，$f/g$為連續函數。
+        \end{itemize}
+    \end{theorem}
+
+    \begin{proof}
+        證明只需引用連續函數之定義即可。
+    \end{proof}
+
+    \begin{example}
+        \begin{enumerate}
+            \item 多項式函數：$p(x):=a_0+a_1x+a_2x^2+\cdots +a_nx^n$。
+            \item 有理函數：$r(x):=\dfrac{p(x)}{q(x)}$，而$x\notin\{\alpha_i:q(\alpha_i)=0\}$。
+            \item （基本）三角函數：$\sin{x}$和$\cos{x}$。
+
+            \begin{proof}
+                基於$|\sin{x}|\leq |x|$和$|\cos{x}|\leq 1$（同理，對於$\cos{x}$），可得$$|\sin{x}-\sin{c}|=2|\sin[\frac{1}{2}(x-c)]||\cos[\frac{1}{2}(x+y)]|\leq 2\cdot \frac{1}{2}|x-c|=|x-c|$$
+            \end{proof}
+            \item 三角函數：$\tan{x},\cot{x},\sec{x},\csc{x}$。證明從有理函數可得。
+        \end{enumerate}
+    \end{example}
+
+    \begin{theorem}[複合函數的延續性]
+        若$f:A\to B$, $g:C\to D$均爲連續函數，且$B\subset C$，則$$h(x):=(g\circ f)(x)=g(f(x))$$亦爲連續函數。
+    \end{theorem}
+
+    \begin{proof}
+        留做習題。
+    \end{proof}
     \section*{可微函數及基本原理}
 \end{document}
