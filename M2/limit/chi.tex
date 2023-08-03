@@ -399,5 +399,22 @@
     \begin{proof}
         留做習題。
     \end{proof}
-    \section*{可微函數及基本原理}
+    \section*{區間上的連續函數}
+    
+    \begin{definition}[有界性]
+        函數$f:D\to R$被稱爲\textbf{在$A$上有界}若存在$M>0$使得對於任意$x\in D$，均有$|f(x)|\leq M$。
+    \end{definition}
+
+    換言之，有界性的定義在於$f$是一個值域受限的函數，以便討論極大極小值。反之，成爲無界。
+
+    \begin{theorem}
+        設$I:=[a,b]$為閉合區間，並設$f:I\to\mathbb{R}$為連續函數，則$f$在$I$上有界。
+    \end{theorem}
+
+    \begin{definition}[絕對極值]
+        設$A\subset \mathbb{R}$及$f:A\to\mathbb{R}$。\begin{itemize}
+            \item 若存在$x^*\in A$使得對於所有$x\in A$均有$$f(x^*)\geq f(x)$$則稱$f$有\textbf{絕對峰值}，$x^*$為\textbf{峰點}。
+            \item 若存在$x_*\in A$使得對於所有$x\in A$均有$$f(x_*)\leq f(x)$$則稱$f$有\textbf{絕對谷值}，$x_*$為\textbf{谷點}。
+        \end{itemize}
+    \end{definition}
 \end{document}
