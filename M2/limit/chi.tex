@@ -405,7 +405,7 @@
         函數$f:D\to R$被稱爲\textbf{在$A$上有界}若存在$M>0$使得對於任意$x\in D$，均有$|f(x)|\leq M$。
     \end{definition}
 
-    換言之，有界性的定義在於$f$是一個值域受限的函數，以便討論極大極小值。反之，成爲無界。
+    換言之，有界性的定義在於$f$是一個值域受限的函數，以便討論極大極小值。反之，爲無界。
 
     \begin{theorem}
         設$I:=[a,b]$為閉合區間，並設$f:I\to\mathbb{R}$為連續函數，則$f$在$I$上有界。
@@ -417,4 +417,14 @@
             \item 若存在$x_*\in A$使得對於所有$x\in A$均有$$f(x_*)\leq f(x)$$則稱$f$有\textbf{絕對谷值}，$x_*$為\textbf{谷點}。
         \end{itemize}
     \end{definition}
+
+    倘若連續函數存在峰點$x^*>0$與谷點$x_*<0$，則有以下理論：
+
+    \begin{theorem}[根點]
+        設$I=[a,b]$並設$f:I\to \mathbb{R}$為連續函數。若$f(a)<0<f(b)$或$f(b)<0<f(a)$，則存在$c\in(a,b)$使得$f(c)=0$。
+    \end{theorem}
+
+    \begin{corollary}[介值定理]
+        設$I=[a,b]$並設$f:I\to \mathbb{R}$為連續函數。若$f(a)<k<f(b)$或$f(b)<k<f(a)$，則存在$c\in(a,b)$使得$f(c)=k$。
+    \end{corollary}
 \end{document}
