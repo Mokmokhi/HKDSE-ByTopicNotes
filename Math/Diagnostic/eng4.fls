@@ -1,7 +1,7 @@
 PWD c:\GitHub\HKDSE-ByTopicNotes\Math\Diagnostic
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\GitHub\HKDSE-ByTopicNotes\Math\Diagnostic\eng.tex
-OUTPUT eng.log
+INPUT c:\GitHub\HKDSE-ByTopicNotes\Math\Diagnostic\eng4.tex
+OUTPUT eng4.log
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -926,10 +926,10 @@ INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
-INPUT .\eng.aux
-INPUT eng.aux
-INPUT eng.aux
-OUTPUT eng.aux
+INPUT .\eng4.aux
+INPUT eng4.aux
+INPUT eng4.aux
+OUTPUT eng4.aux
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -959,7 +959,7 @@ INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\tex\generic\ctex\zhmap\ctex-z
 INPUT C:\Users\Owenm\AppData\Local\MiKTeX\pdftex\config\pdftex.map
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\sfd\ttf2pk\UGBK.sfd
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\sfd\ttf2pk\Unicode.sfd
-OUTPUT eng.pdf
+OUTPUT eng4.pdf
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
@@ -999,7 +999,7 @@ INPUT ..\images\\shooting_board.png
 INPUT ..\images\\shooting_board.png
 INPUT ..\images\\shooting_board.png
 INPUT ..\images\\shooting_board.png
-INPUT eng.aux
+INPUT eng4.aux
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\Owenm\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
