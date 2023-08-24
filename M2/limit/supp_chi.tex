@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{{../image/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{多元極限}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \section*{二元極限}
+
+    對於多元極限，我們可從二元極限出發：$$\lim_{x\to 0, y\to 0}f(x,y)$$
+
+    為符合極限的唯一性，我們需作$(x,y)\mapsto(r,\theta)$的置換。參考圓形，可得$$\begin{cases}
+        x=r\cos{\theta}\\y=r\sin{\theta}
+    \end{cases}$$
+
+    則$\displaystyle \lim_{x\to 0, y\to 0}f(x,y)$存在當且僅當$\displaystyle\lim_{r\to 0}f(r\cos{\theta},r\sin{\theta})$存在。
+
+    \begin{theorem}
+        若$\displaystyle\lim_{r\to 0}f(r\cos{\theta},r\sin{\theta})$存在，則$$\lim_{x\to 0, y\to 0}f(x,y)=\lim_{x\to 0}\lim_{y\to 0}f(x,y)=\lim_{y\to 0}\lim_{x\to 0}f(x,y)$$
+    \end{theorem}
+
+    \begin{proof}
+        若$\displaystyle\lim_{r\to 0}f(r\cos{\theta},r\sin{\theta})$存在，則極限受$r$控制，並符合極限唯一性。故從任何方向推演極限必然得到相同結果。故以任何方式求得極限，結果必然相同。
+    \end{proof}
+
+    \section*{多元極限}
+
+    面對更高維度的極限時，可作二元分立。設$\mathbf{x}=(x_1,x_2,\dots,x_n)\in\mathbb{R}^n$,$y\in\mathbb{R}$，對於$$\lim_{\mathbf{x}\to 0,y\to 0}f(\mathbf{x},y)$$
+
+    作$(\mathbf{x},y)\mapsto(r,\theta)$的置換，可得如二元極限的變化：$$\begin{cases}
+        r^2=\norm*{\mathbf{x}}^2+y^2\\
+        \norm*{\mathbf{x}}=r\cos{\theta}\\
+        y=r\sin{\theta}
+    \end{cases}$$
+    其中$\norm*{\mathbf{x}}:=\sqrt{x_1^2+x_2^2+\cdots+x_n^2}$。重複步驟可得多元極限結果。
+\end{document}
