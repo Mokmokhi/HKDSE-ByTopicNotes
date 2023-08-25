@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{{../image/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{微分}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \section*{單元導數定義}
+
+    由牛頓發揚光大的流數法，今時今日變成了以極限定義的導數。
+
+    \begin{definition}[導數定義]
+        若$f$在$c$可導，則其導數$f'(c)$為$$f'(c)=\lim_{x\to c}\frac{f(x)-f(c)}{x-c}$$
+    \end{definition}
+
+    \begin{definition}[現代導數嚴謹定義]
+        $L$為$f$在$c$的導數當：對於任意$\epsilon>0$,若存在$\delta(\epsilon)>0$使得對於$0<|x-c|<\delta(\epsilon)$，$$|\frac{f(x)-f(c)}{x-c}-L|<\epsilon$$
+        則寫$f'(c)=L$。
+    \end{definition}
+\end{document}
