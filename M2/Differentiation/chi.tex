@@ -46,4 +46,35 @@
         $L$為$f$在$c$的導數當：對於任意$\epsilon>0$,若存在$\delta(\epsilon)>0$使得對於$0<|x-c|<\delta(\epsilon)$，$$|\frac{f(x)-f(c)}{x-c}-L|<\epsilon$$
         則寫$f'(c)=L$。
     \end{definition}
+
+    \begin{theorem}
+        若$f:I\to\mathbb{R}$在$c\in I$可微，則$f$在$c\in I$連續。
+    \end{theorem}
+
+    \begin{proof}
+        導數存在，則\begin{align*}
+            \lim_{x\to c}(f(x)-f(c))&=\lim_{x\to c}\frac{f(x)-f(c)}{x-c}\cdot \lim_{x\to c}(x-c)\\
+            &=f'(c)\cdot 0\\
+            &=0
+        \end{align*}
+        因此$\displaystyle\lim_{x\to c}f(x)=f(c)$使得$f$在$c\in I$連續。
+    \end{proof}
+
+    導數的目的在於處理函數的變化：從算式可見，導數取自$f$的變化除以變量$x$的變化，即可理解爲變化的比例，等於變化比率。簡而言之，導數為函數的斜率。
+
+    \begin{theorem}[導數的性質]
+        導數擁有以下性質：\begin{enumerate}
+            \item 綫性性：對於連續函數$f,g$，常數$\alpha,\beta$，$(\alpha f+\beta g)'=\alpha f' + \beta g'$。
+            \item 乘積法則：對於連續函數$f,g$，$(f\cdot g)'=f'\cdot g + f\cdot g'$。
+            \item 除法定則：對於連續函數$f,g$，$(\frac{f}{g})'=\frac{f'\cdot g-f\cdot g'}{g^2}$。
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{theorem}[連鎖律]
+        對於複合函數$h:=(g\circ f)$，$$h'=(g'\circ f)\cdot(f')$$
+    \end{theorem}
+
+    \begin{theorem}[逆函數]
+        對於逆函數$g:=f^{-1}$，$$g'=\frac{1}{f'\circ g}$$
+    \end{theorem}
 \end{document}
