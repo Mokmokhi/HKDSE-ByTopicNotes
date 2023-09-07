@@ -1,0 +1,328 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{根數測驗}
+\fancyhf[HR]{時限：30分鐘}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem*{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\begin{document}
+    \begin{center}
+        \textbf{根數測驗}
+    \end{center}
+    姓名:\hrulefill \hfill 得分:\hrulefill/50
+    \begin{enumerate}
+        \item (9分, 3@) 化簡以下根數:\begin{align*}
+            &a) \sqrt{20} && b) \sqrt{147} && c) \sqrt{3125}
+        \end{align*}
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+        \item (12分, 3@) 計算並化至最簡: \begin{align*}
+            &a) \sqrt{20}+\sqrt{80}-\sqrt{125} && b) 7\sqrt{3}-2\sqrt{27}-\dfrac{\sqrt{243}}{9}\\
+            &c) 2\sqrt{8}+\sqrt{99}+3\sqrt{11} && d) (1+\sqrt{2})^3
+        \end{align*}
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+        \item (13分, (a)-(c)佔3@, (d)佔4@) 有理化以下算式: \begin{align*}
+            &a) \dfrac{1}{\sqrt{3}} && b) \dfrac{2}{\sqrt{5}-\sqrt{3}}\\
+            &c) \dfrac{\sqrt{2}-1}{\sqrt{2}+1} && d) \dfrac{1}{1+\sqrt{3}+\sqrt{5}}
+        \end{align*}
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+        \item (7分) 解下列各方程的$x$:\begin{enumerate}
+            \item (3分) $\sqrt{x}=\sqrt{2}-1$.
+            \item (4分) $\sqrt{x^2+1}-x=1$.
+        \end{enumerate}
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+        \item (9分)設 $p=\sqrt{a^2+1}-a$.\begin{enumerate}
+            \item (4分) 有理化 $\dfrac{1}{\sqrt{a^2+1}-a}$.
+            \item (5分) 解方程 $p+\dfrac{1}{p}=\sqrt{8}$中$a$的值.
+        \end{enumerate}
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+    \end{enumerate}
+
+    \newpage
+
+    \begin{center}
+        \textbf{參考答案}
+    \end{center}
+
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item \begin{flalign*}
+                \sqrt{20}&=\sqrt{2^2\times 5}&& (1M)\\
+                &=2\sqrt{5}&& (1M+1A)
+            \end{flalign*}
+            \item \begin{flalign*}
+                \sqrt{147}&=\sqrt{3\times 7^2}&& (1M)\\
+                &=7\sqrt{3}&& (1M+1A)
+            \end{flalign*}
+            \item \begin{flalign*}
+                \sqrt{3125}&=\sqrt{5^5}&& (1M)\\
+                &=25\sqrt{5}&& (1M+1A)
+            \end{flalign*}
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item \begin{flalign*}
+                \sqrt{20}+\sqrt{80}-\sqrt{125} &= 2\sqrt{5}+4\sqrt{5}-5\sqrt{5}&& (1M)\\ 
+                &=\sqrt{5}&& (1M+1A)
+            \end{flalign*}
+            \item \begin{flalign*}
+                7\sqrt{3}-2\sqrt{27}-\dfrac{\sqrt{243}}{9} &= 7\sqrt{3}-6\sqrt{3}-\dfrac{9\sqrt{3}}{9}&& (1M)\\
+                &=0&& (1M+1A)
+            \end{flalign*}
+            \item \begin{flalign*}
+                2\sqrt{8}+\sqrt{99}+3\sqrt{11}&=4\sqrt{2}+3\sqrt{11}+3\sqrt{11}&& (1M)\\
+                &=4\sqrt{2}+6\sqrt{11}&&(1M+1A)
+            \end{flalign*}
+            \item \begin{flalign*}
+                (1+\sqrt{2})^3&=(1+\sqrt{2})^2(1+\sqrt{2})&&\\
+                &=(3+2\sqrt{2})(1+\sqrt{2})&& (1M)\\
+                &=7+5\sqrt{2}&& (1M+1A)
+            \end{flalign*}
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item \begin{flalign*}
+                \dfrac{1}{\sqrt{3}}&=\dfrac{1}{\sqrt{3}}\cdot\dfrac{\sqrt{3}}{\sqrt{3}}&& (1M)\\
+                &=\dfrac{\sqrt{3}}{3}&& (1M+1A)
+            \end{flalign*}
+            \item \begin{flalign*}
+                \dfrac{2}{\sqrt{5}-\sqrt{3}}&=\dfrac{2}{\sqrt{5}-\sqrt{3}}\cdot\dfrac{\sqrt{5}+\sqrt{3}}{\sqrt{5}+\sqrt{3}}&& (1M)\\
+                &=\dfrac{2(\sqrt{5}+\sqrt{3})}{5-3}&&\\
+                &=\sqrt{5}+\sqrt{3}&& (1M+1A)
+            \end{flalign*}
+            \item \begin{flalign*}
+                \dfrac{\sqrt{2}-1}{\sqrt{2}+1}&=\dfrac{\sqrt{2}-1}{\sqrt{2}+1}\cdot\dfrac{\sqrt{2}-1}{\sqrt{2}-1}&& (1M)\\
+                &=\dfrac{(\sqrt{2}-1)^2}{2-1}&&\\
+                &=3-2\sqrt{2}&& (1M+1A)
+            \end{flalign*}
+            \item \begin{flalign*}
+                \dfrac{1}{1+\sqrt{3}+\sqrt{5}}&=\dfrac{1}{(1+\sqrt{3})+\sqrt{5}}\cdot\dfrac{(1+\sqrt{3})-\sqrt{5}}{(1+\sqrt{3})-\sqrt{5}}&& (1M)\\
+                &=\dfrac{1+\sqrt{3}-\sqrt{5}}{2\sqrt{3}-1}\cdot\dfrac{2\sqrt{3}+1}{2\sqrt{3}+1}&& (1M)\\
+                &=\dfrac{7+3\sqrt{3}-\sqrt{5}-2\sqrt{15}}{11}&& (1M+1A)
+            \end{flalign*}
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item \begin{flalign*}
+                \sqrt{x}&=\sqrt{2}-1 &&\\
+                x&=(\sqrt{2}-1)^2 && (1M)\\
+                &=3-2\sqrt{2} && (1M+1A)
+            \end{flalign*}
+            \item \begin{flalign*}
+                \sqrt{x^2+1}-x&=1 &&\\
+                x^2+1&=(x+1)^2&&(1M)\\
+                &=x^2+2x+1&&\\
+                2x&=0&&\\
+                x&=0&&(1M+1A)
+            \end{flalign*}
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item \begin{flalign*}
+                \frac{1}{\sqrt{a^2+1}-a}&=\frac{1}{\sqrt{a^2+1}-a}\cdot\frac{\sqrt{a^2+1}+a}{\sqrt{a^2+1}+a}&&(2M)\\
+                &=\sqrt{a^2+1}+a&&(1M+1A)
+            \end{flalign*}
+            \item \begin{flalign*}
+                p+\frac{1}{p}&=\sqrt{8}&&\\
+                \sqrt{a^2+1}-a+\sqrt{a^2+1}+a&=\sqrt{8}&&(1M)\\
+                2\sqrt{a^2+1}&=\sqrt{8}&&\\
+                4(a^2+1)&=8&&(1M)\\
+                a^2+1&=2&&\\
+                a^2&=1&&\\
+                a=1&\textrm{ or }a=-1&&(1M+2A)
+            \end{flalign*}
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
