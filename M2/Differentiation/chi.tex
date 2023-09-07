@@ -62,19 +62,96 @@
 
     導數的目的在於處理函數的變化：從算式可見，導數取自$f$的變化除以變量$x$的變化，即可理解爲變化的比例，等於變化比率。簡而言之，導數為函數的斜率。
 
+    \begin{theorem}[基本導數定則]
+        \begin{enumerate}
+            \item 常函數的導數：$$\frac{d}{dx}(c)=0$$
+            \item 冪函數的導數：$$\frac{d}{dx}(x^n)=nx^{n-1}$$
+            \item 自然指數的導數：$$\frac{d}{dx}(e^x)=e^x$$
+            \item 自然對數的導數：$$\frac{d}{dx}(\ln|x|)=\dfrac{1}{x}$$
+            \item 三角函數的導數：\begin{enumerate}
+                \item $$\frac{d}{dx}(\sin{x})=\cos{x}$$
+                \item $$\frac{d}{dx}(\cos{x})=-\sin{x}$$
+                \item $$\frac{d}{dx}(\tan{x})=\sec^2{x}$$
+            \end{enumerate}
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}
+        留做習題。
+    \end{proof}
+
     \begin{theorem}[導數的性質]
         導數擁有以下性質：\begin{enumerate}
-            \item 綫性性：對於連續函數$f,g$，常數$\alpha,\beta$，$(\alpha f+\beta g)'=\alpha f' + \beta g'$。
+            \item 綫性性：對於可微函數$f,g$，常數$\alpha,\beta$，$(\alpha f+\beta g)'=\alpha f' + \beta g'$。
             \item 乘積法則：對於連續函數$f,g$，$(f\cdot g)'=f'\cdot g + f\cdot g'$。
             \item 除法定則：對於連續函數$f,g$，$(\frac{f}{g})'=\frac{f'\cdot g-f\cdot g'}{g^2}$。
         \end{enumerate}
     \end{theorem}
 
+    \begin{proof}
+        \begin{enumerate}
+            \item 綫性性：從$f,g$的可微性，可得對任意$\varepsilon>0$，均有$\delta_f,\delta_g>0$使得對於所有$c$，若$x$符合$0<|x-c|<\min\{\delta_f,\delta_g\}$時，$$|\frac{f(x)-f(c)}{x-c}-f'(c)|<\frac{\varepsilon}{2\alpha};|\frac{g(x)-g(c)}{x-c}-g'(c)|<\frac{\varepsilon}{2\beta}$$
+            則\begin{align*}
+                &|\frac{(\alpha f(x)+\beta g(x))-(\alpha f(c)+\beta g(c))}{x-c}-(\alpha f'(c)+\beta g'(c))|\\
+                &<\alpha|\frac{f(x)-f(c)}{x-c}-f'(c)|+\beta|\frac{g(x)-g(c)}{x-c}-g'(c)|\\
+                &<\alpha\cdot\frac{\varepsilon}{2\alpha}+\beta\cdot\frac{\varepsilon}{2\beta}\\
+                &=\varepsilon
+            \end{align*}
+            \item 乘積法則：從$f,g$的可微性，可得
+            \begin{align*}
+                \lim_{x\to c}\frac{f(x)g(x)-f(c)g(c)}{x-c} &= \lim_{x\to c}\frac{f(x)g(x)-f(x)g(c)+f(x)g(c)-f(c)g(c)}{x-c}\\
+                &=\lim_{x\to c}(\frac{f(x)-f(c)}{x-c}\cdot g(c)+f(x)\cdot \frac{g(x)-g(c)}{x-c})\\
+                &=f'(c)g(c)+f(c)g'(c)
+            \end{align*}
+            \item 除法定則：留作習題
+        \end{enumerate}
+    \end{proof}
+
+    \begin{corollary}
+        導數擁有以下性質：\begin{enumerate}
+            \item 綫性性：對於一系列可微函數$\{f_k\}_{k=1}^n$，及一系列常數$\{\alpha_k\}_{k=1}^n$，$\displaystyle(\sum_{k=1}^{n}\alpha_k f_k)'=\sum_{k=1}^{n}(\alpha_k f_k')$。
+            \item 乘積法則：對於一系列可微函數$\{f_k\}_{k=1}^n$，$\displaystyle(\prod_{k=1}^{n}f_k)'=\sum_{k=1}^{n}(f_1f_2\cdots f_k'\cdots f_{n-1}f_n)$。
+        \end{enumerate}
+    \end{corollary}
+
     \begin{theorem}[鏈鎖律]
         對於複合函數$h:=(g\circ f)$，$$h'=(g'\circ f)\cdot(f')$$
     \end{theorem}
 
+    \begin{proof}
+        留做習題
+    \end{proof}
+
     \begin{theorem}[逆函數]
         對於逆函數$g:=f^{-1}$，$$g'=\frac{1}{f'\circ g}$$
     \end{theorem}
+
+    \begin{proof}
+        設$g(x)=f^{-1}(x)$，則$(f\circ g)(x)=x$。利用鏈鎖律，可得\begin{align*}
+            (f'\circ g)(x)\cdot g'(x)&=1\\
+            g'(x)&=\frac{1}{(f'\circ g)(x)}
+        \end{align*}
+    \end{proof}
+
+    導數可視爲函數於任意點的斜率，換言之，利用直綫方程的點斜式，可得出函數$f$於任意點$(x_0,f(x_0))$上的切綫方程為$$y-f(x_0)=f'(x_0)(x-x_0)$$
+
+    \begin{definition}[高維導數]
+        若$f$可微，則$f'$為$f$的第一導數；若$f'$可微，則$f''$為$f$的第二導數，並記$$f''(x)=\dfrac{d}{dx}(f'(x))=\dfrac{d^2}{dx^2}(f(x))$$如此類推，我們稱$f^{(n)}(x)$為$f$的第$n$導數，記$$f^{(n)}(x)=\dfrac{d^n}{dx^n}(f(x))$$
+    \end{definition}
+
+    \section*{均值定理}
+
+    \section*{洛必達法則}
+
+    \section*{泰勒定理}
+
+    \section*{向量函數}
+
+    \section*{偏導數與全導數}
+
+    \section*{方向導數}
+
+    \section*{切面與法綫}
+
+    \section*{二維極值與鞍點}
 \end{document}
