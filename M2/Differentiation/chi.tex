@@ -141,6 +141,18 @@
 
     \section*{均值定理}
 
+    均值定理為數學分析其中一個重要工具，亦是導數的重要應用結果。其含義在於將導數與函數值作連接，將切綫普及化。
+
+    \begin{theorem}[極值定理]
+        設$c\in I$使得$f:I\to \mathbb{R}$有極值於$c$。若$f$可微，則$f'(c)=0$。
+    \end{theorem}
+
+    \begin{proof}
+        先證明$f(c)$為極大值的情況：若$f'(c)>0$，則存在$c$的鄰域$V\subseteq I$使得對於$x\in V$，$$\frac{f(x)-f(c)}{x-c}>0$$因此，若$x\in V$同時$x>c$，則$$f(x)-f(c)=(x-c)\cdot\frac{f(x)-f(c)}{x-c}>0$$此則違反$f(c)$為極大值的假設，$f'(c)\not > 0$。
+
+        同理，證明$f'(c)\not < 0$可運用相似做法，因此$f'(c)=0$。
+    \end{proof}
+
     \section*{洛必達法則}
 
     \section*{泰勒定理}
