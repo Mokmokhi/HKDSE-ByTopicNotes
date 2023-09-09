@@ -34,6 +34,7 @@
 \newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
 
 \begin{document}
+    References: Introduction to Real Analysis (Bartle \& Sherbert), Thomas Calculus 12th Edition
     \section*{單元導數定義}
 
     由牛頓發揚光大的流數法，今時今日變成了以極限定義的導數。
@@ -152,6 +153,40 @@
 
         同理，證明$f'(c)\not < 0$可運用相似做法，因此$f'(c)=0$。
     \end{proof}
+
+    \begin{corollary}
+        設$f:I\to\mathbb{R}$為連續函數，並設$f$在$c\in I$有極值。則$f'(c)$不存在或$f'(c)=0$。
+    \end{corollary}
+
+    \begin{remark}
+        $f(x):=|x|$可作衍理的例證：$f$在$0\in I:=[-1,1]$上存在極小值，但$f'(0)$並不存在。
+    \end{remark}
+
+    \begin{theorem}[羅爾定理]
+        設$f$在閉合區間$[a,b]$上連續，且可微於開放區間$(a,b)$，使得$f(a)=f(b)=0$。則存在至少一個$c\in(a,b)$使得$f'(c)=0$。
+    \end{theorem}
+
+    \begin{theorem}[基本均值定理]
+        設$f$在閉合區間$[a,b]$上連續，且可微於開放區間$(a,b)$，則存在至少一個$c\in(a,b)$使得$$f(b)-f(a)=f'(c)(b-a)$$
+    \end{theorem}
+
+    \begin{proof}
+        設$$\varphi(x):=f(x)-f(a)-\frac{f(b)-f(a)}{b-a}(x-a)$$可見$\varphi$在閉合區間$[a,b]$上連續，且可微於開放區間$(a,b)$，而且$\varphi(b)=\varphi(a)=0$。則可利用羅爾定理引存在$c\in(a,b)$使得$$0=\varphi'(c)=f'(c)-\frac{f(b)-f(a)}{b-a}$$通過簡單移項，便得$$f(b)-f(a)=f'(c)(b-a)$$
+    \end{proof}
+
+    逆微分的基本原理，以及導數第一測試，都是從均值定理發展的一些應用。
+
+    \begin{theorem}
+        設$f$在閉合區間$I:=[a,b]$上連續，且可微於開放區間$(a,b)$，且$f'(x)=0$對所有$x\in(a,b)$，則$f$為$I$上的常函數。
+    \end{theorem}
+
+    \begin{proof}
+        利用均值定理，存在至少一個$c\in(a,b)$使得$f(b)-f(a)=f'(c)(b-a)=0$，則$f(a)=f(b)$；並對於所有$x\in(a,b)$，均有$c\in(x,a)$使得$f(x)-f(a)=f'(c)(x-a)=0$。則$f(x)=f(a)$對所有$x\in[a,b]$成立。
+    \end{proof}
+
+    \begin{corollary}
+        設$f,g$在閉合區間$I:=[a,b]$上連續，且均可微於開放區間$(a,b)$，且$f'(x)=g'(x)$對所有$x\in(a,b)$，則$f=g+C$，其中$C$為常數。
+    \end{corollary}
 
     \section*{洛必達法則}
 
