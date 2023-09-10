@@ -174,7 +174,7 @@
         設$$\varphi(x):=f(x)-f(a)-\frac{f(b)-f(a)}{b-a}(x-a)$$可見$\varphi$在閉合區間$[a,b]$上連續，且可微於開放區間$(a,b)$，而且$\varphi(b)=\varphi(a)=0$。則可利用羅爾定理引存在$c\in(a,b)$使得$$0=\varphi'(c)=f'(c)-\frac{f(b)-f(a)}{b-a}$$通過簡單移項，便得$$f(b)-f(a)=f'(c)(b-a)$$
     \end{proof}
 
-    逆微分的基本原理，以及導數第一測試，都是從均值定理發展的一些應用。
+    逆微分的基本原理，以及第一導數測試，都是從均值定理發展的一些應用。
 
     \begin{theorem}
         設$f$在閉合區間$I:=[a,b]$上連續，且可微於開放區間$(a,b)$，且$f'(x)=0$對所有$x\in(a,b)$，則$f$為$I$上的常函數。
@@ -187,6 +187,48 @@
     \begin{corollary}
         設$f,g$在閉合區間$I:=[a,b]$上連續，且均可微於開放區間$(a,b)$，且$f'(x)=g'(x)$對所有$x\in(a,b)$，則$f=g+C$，其中$C$為常數。
     \end{corollary}
+
+    \begin{definition}[遞升函數]
+        設$f$為連續函數，若對於所有$x_1<x_2$均有$f(x_1)\leq f(x_2)$，則稱$f$為遞升函數。
+    \end{definition}
+
+    \begin{definition}[遞降函數]
+        設$f$為連續函數，若對於所有$x_1<x_2$均有$f(x_1)\geq f(x_2)$，則稱$f$為遞降函數。
+    \end{definition}
+
+    \begin{theorem}
+        設$f:I\to\mathbb{R}$為可微函數，則：\begin{enumerate}
+            \item $f$為遞升函數當且僅當所有$x\in I$均有$f'(x)\geq 0$；
+            \item $f$為遞降函數當且僅當所有$x\in I$均有$f'(x)\leq 0$。
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}
+        證明1：設$f'(x)\geq 0$。若$x_1<x_2$，則根據均值定理存在$c\in(x_1,x_2)$使得$$f(x_2)-f(x_1)=f'(c)(x_2-x_1)\geq 0$$
+        
+        相對地，若$f$為遞升函數，則$$f'(x)=\lim_{x\to c}\frac{f(x)-f(c)}{x-c}\geq 0$$
+
+        證明2：與證明1相似，留做習題。
+    \end{proof}
+
+    \begin{theorem}[第一導數測試]
+        設$f$為$I:=[a,b]$上的連續函數，並設$c\in(a,b)$。假定$f$在$(a,c)$及$(b,c)$上可微，則：\begin{enumerate}
+            \item 若存在$c$的$\delta$-鄰域$V_\delta(c):=(c-\delta,c+\delta)\subseteq I$使得$\begin{cases}
+                f'(x)\geq 0, &c-\delta<x<c;\\
+                f'(x)\leq 0, &c<x<c+\delta
+            \end{cases}$，則$c$為$f$在$I$上的相對極大值；
+            \item 若存在$c$的$\delta$-鄰域$V_\delta(c):=(c-\delta,c+\delta)\subseteq I$使得$\begin{cases}
+                f'(x)\leq 0, &c-\delta<x<c;\\
+                f'(x)\geq 0, &c<x<c+\delta
+            \end{cases}$，則$c$為$f$在$I$上的相對極小值。
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}
+        對於$c-\delta<x<c$時$f'(x)\geq 0$，則根據均值定理，存在$c_x\in(x,c)$使得$$f(c)-f(x)=f'(c_x)(c-x)\geq 0$$則$f(c)\geq f(x)$；同理，對於$c<x<c+\delta$時$f'(x)\leq 0$，則根據均值定理，存在$c_x\in(c,x)$使得$$f(x)-f(c)=f'(c_x)(x-c)\leq 0$$則$f(c)\geq f(x)$。因此，$f(c)$為相對極大值。
+
+        2的證明與1相似，留做習題。
+    \end{proof}
 
     \section*{洛必達法則}
 
