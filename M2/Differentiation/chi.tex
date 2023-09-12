@@ -313,9 +313,15 @@
         \end{align*}
     \end{definition}
 
+    我們記$\displaystyle P_n(x)=\sum_{k=0}^{n+1}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k$。
+
     \begin{theorem}[泰勒多項式定理]
         設$n\in\mathbb{N}$及$I:=[a,b]$，並設$f:I\to\mathbb{R}$使得$f$及其導數$f',f'',\dots,f^{(n)}$均為$(a,b)$上的連續函數，並於$(a,b)$上存在$(n+1)$-階導數$f^{(n+1)}$，則對於定點$x_0\in I$，及任意$x\in I$，存在$c$位於$x$與$x_0$之間使得$$f(x)= f(x_0)+f'(x_0)(x-x_0)+\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^{n}+\frac{f^{(n+1)}(c)}{(n+1)!}(x-x_0)^{n+1}$$
     \end{theorem}
+
+    \begin{proof}
+        設$$R_n(x):=f(x)-\sum_{k=0}^{n+1}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k$$
+    \end{proof}
     
     \section*{向量函數}
 
