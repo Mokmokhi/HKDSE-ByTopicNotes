@@ -320,8 +320,54 @@
     \end{theorem}
 
     \begin{proof}
-        設$$R_n(x):=f(x)-\sum_{k=0}^{n+1}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k$$
+        設$$F(t):=f(x)-\sum_{k=0}^{n}\frac{(x-t)^k}{k!}f^{(k)}(t)$$則\begin{align*}
+            F'(t)&=-f'(t)-\sum_{k=1}^{n}\biggl(-\frac{(x-t)^{k-1}}{(k-1)!}f^{(k)}(t)+\frac{(x-t)^k}{k!}f^{(k+1)}(t)\biggr)\\
+            &=-f'(t)-(-f'(t)+\frac{(x-t)^{n}}{n!}f^{(n+1)}(t))\\
+            &=-\frac{(x-t)^{n}}{n!}f^{(n+1)}(t)
+        \end{align*}
+        又設$\displaystyle G(t):=F(t)-\biggl(\frac{x-t}{x-x_0}\biggr)^{n+1}F(x_0)$，則見$G(x)=G(x_0)=0$。根據羅爾定理，存在$c$位於$x$和$x_0$之間使得$$0=G'(c)=F'(c)+(n+1)\frac{(x-c)^{n}}{(x-x_0)^{n+1}}F(x_0)$$則\begin{align*}
+            F(x_0)&=-\frac{(x-x_0)^{n+1}}{(n+1)(x-c)^n}F'(c)\\
+            &=\frac{(x-x_0)^{n+1}}{(n+1)(x-c)^n}\frac{(x-c)^{n}}{n!}f^{(n+1)}(c)\\
+            &=\frac{f^{(n+1)}(c)}{(n+1)!}(x-x_0)^{n+1}
+        \end{align*}
     \end{proof}
+
+    泰勒定理對相對極值有很大的貢獻。回顧二階導數對極值的影響：
+
+    \begin{theorem}
+        設$f:[x_0-\delta,x_0+\delta]\to\mathbb{R}$使得$f$及其導數$f'$均為$(x_0-\delta,x_0+\delta)$上的連續函數，並於$(x_0-\delta,x_0+\delta)$上存在二階導數$f''$使得$f'(x_0)=0$而$f''(x_0)\neq 0$，則\begin{enumerate}
+            \item 若$f''(x_0)>0$，$f(x_0)$為相對極小值；
+            \item 若$f''(x_0)<0$，$f(x_0)$為相對極大值。
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}
+        證明1：根據泰勒定理，存在$c\in(x_0,x_0+\delta)$使得所有$c'\in(x_0,c)$均有$$f(x)=f(x_0)+\frac{f''(c')}{2}(x-x_0)^2\geq f(x_0)$$同理，存在$d\in(x_0-\delta,x_0)$使得所有$d'\in(d,x_0)$均有$$f(x)=f(x_0)+\frac{f''(d')}{2}(x-x_0)^2\geq f(x_0)$$則$f(x_0)$為$x_0$鄰域上的相對極小值。
+
+        證明2的情況相似，留做習題。
+    \end{proof}
+
+    因此利用泰勒定理，可將上述極值的定理拓展至高階導數版本：
+
+    \begin{theorem}
+        設$f:[x_0-\delta,x_0+\delta]\to\mathbb{R}$使得$f$及其導數$f',f'',\dots,f^{(n-1)}$均為$(x_0-\delta,x_0+\delta)$上的連續函數，並於$(x_0-\delta,x_0+\delta)$上存在$n$階導數$f^{(n)}$使得$f'(x_0)=f''(x_0)=\cdots=f^{(n-1)}(x_0)=0$而$f^{(n)}(x_0)\neq 0$，則\begin{enumerate}
+            \item 若$n$為偶數而$f^{(n)}(x_0)>0$，$f(x_0)$為相對極小值；
+            \item 若$n$為偶數而$f^{(n)}(x_0)<0$，$f(x_0)$為相對極大值；
+            \item 若$n$為奇數，則$f(x_0)$並非極值。
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}
+        證明留做習題。
+    \end{proof}
+
+    另外還有一種導數的應用，在於尋找函數的根。我們以往可以利用分割法進行推演，但效率實在太低；因此牛頓發明了更快捷的做法，我們稱其爲牛頓分割法。
+
+    此方法利用切綫做切入，加速靠近根點。因此，通過數列的創造，可不斷接近根點。考慮$$y-f(x_n)=f'(x_n)(x-x_n)$$代$y=0$可得$x$軸切點，則爲數列的新一項：$$-f(x_n)=f'(x_n)(x_{n+1}-x_n) \implies x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}$$
+
+    \begin{theorem}[牛頓分割法]
+        設$I:=[a,b]$並設$f:I\to\mathbb{R}$為二階可微函數。假定$f(a)f(b)<0$並存在$m,M>0$使得所有$x\in I$均符合$|f'(x)|\geq m>0$及$|f''(x)|\leq M$。設$K:=M/2m$。則存在$r\in I'\subset I$使得$f(r)=0$，同時有數列$(x_n)$定義爲$$x_{n+1}:=x_n-\frac{f(x_n)}{f'(x_n)}$$使得$\displaystyle\lim_{n\to \infty}x_n=r$，而且$|x_{n+1}-r|<K|x_n-r|^2$。
+    \end{theorem}
     
     \section*{向量函數}
 
