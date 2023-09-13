@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  13 SEP 2023 02:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  13 SEP 2023 14:34
 entering extended mode
 **c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi.tex
 (c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi.tex
@@ -811,18 +811,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-Overfull \hbox (41.53703pt too wide) in paragraph at lines 215--215
-[]\C70/rm/bx/n/12/5b ö \C70/rm/bx/n/12/74  \OT1/cmr/m/n/12 (\C70/rm/m/n/12/7b , \C70/rm/m/n/12/4e   \C70/rm/m/n/12/5c  \C70/rm/m/n/12/65 x \C70/rm/m/n/12/6e , \C70/rm/m/n/12/8a f\OT1/cmr/m/n/12 )\OT1/cmr/bx/n/12 . []\C70/rm/m/it/12/8a -$\OML/cmm/m/it/12 f$\C70/rm/m/it/12/70 ∫$\OML/cmm/m/it/12 I \OT1/cmr/m/n/12 := [\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 ]$\C70/rm/m/it/12/4e 
- \C70/rm/m/it/12/76 Ñ \C70/rm/m/it/12/90 # \C70/rm/m/it/12/7e å \C70/rm/m/it/12/51 ˝ \C70/rm/m/it/12/65 x|\C70/rm/m/it/12/ff | \C70/rm/m/it/12/4e & \C70/rm/m/it/12/8a -$\OML/cmm/m/it/12 c \OMS/cmsy/m/n/12 2 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 )$|\C70/rm/m/it/12/30 | \C70/rm/m/it/12/50 G \C70/rm/m/it/12/5b ö$\OML/cmm/m/it/12 f$\C70/rm/m/it/12/57 ($\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a; c\OT1/cmr/m/n/12 )$\C70/rm/m/it/12/53  $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b; c\OT1/cmr/m/n/12 )$\C70/rm/m/it/12/4e 
-
- []
-
-
-Overfull \hbox (6.17621pt too wide) in paragraph at lines 216--220
-[]\C70/rm/m/it/12/82 Â \C70/rm/m/it/12/5b X \C70/rm/m/it/12/57 ($\OML/cmm/m/it/12 c$\C70/rm/m/it/12/76 Ñ$\OML/cmm/m/it/12 $\OT1/cmr/m/it/12 -\C70/rm/m/it/12/91 0 \C70/rm/m/it/12/57 ﬂ$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 c \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 ; c \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 \OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 I$\C70/rm/m/it/12/4f  \C70/rm/m/it/12/5f ó$[]$|\C70/rm/m/it/12/ff | \C70/rm/m/it/12/52 G$\OML/cmm/m/it/12 c$\C70/rm/m/it/12/70 ∫$\OML/cmm/m/it/12 f$\C70/rm/m/it/12/57 ($\OML/cmm/m/it/12 I$\C70/rm/m/it/12/4e 
-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -831,13 +819,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-Overfull \hbox (20.30188pt too wide) in paragraph at lines 220--224
+Overfull \hbox (41.53703pt too wide) in paragraph at lines 230--230
+[]\C70/rm/bx/n/12/5b ö \C70/rm/bx/n/12/74  \OT1/cmr/m/n/12 (\C70/rm/m/n/12/7b , \C70/rm/m/n/12/4e   \C70/rm/m/n/12/5c  \C70/rm/m/n/12/65 x \C70/rm/m/n/12/6e , \C70/rm/m/n/12/8a f\OT1/cmr/m/n/12 )\OT1/cmr/bx/n/12 . []\C70/rm/m/it/12/8a -$\OML/cmm/m/it/12 f$\C70/rm/m/it/12/70 ∫$\OML/cmm/m/it/12 I \OT1/cmr/m/n/12 := [\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 ]$\C70/rm/m/it/12/4e 
+ \C70/rm/m/it/12/76 Ñ \C70/rm/m/it/12/90 # \C70/rm/m/it/12/7e å \C70/rm/m/it/12/51 ˝ \C70/rm/m/it/12/65 x|\C70/rm/m/it/12/ff | \C70/rm/m/it/12/4e & \C70/rm/m/it/12/8a -$\OML/cmm/m/it/12 c \OMS/cmsy/m/n/12 2 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 )$|\C70/rm/m/it/12/30 | \C70/rm/m/it/12/50 G \C70/rm/m/it/12/5b ö$\OML/cmm/m/it/12 f$\C70/rm/m/it/12/57 ($\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a; c\OT1/cmr/m/n/12 )$\C70/rm/m/it/12/53  $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b; c\OT1/cmr/m/n/12 )$\C70/rm/m/it/12/4e 
+
+ []
+
+
+Overfull \hbox (6.17621pt too wide) in paragraph at lines 231--235
+[]\C70/rm/m/it/12/82 Â \C70/rm/m/it/12/5b X \C70/rm/m/it/12/57 ($\OML/cmm/m/it/12 c$\C70/rm/m/it/12/76 Ñ$\OML/cmm/m/it/12 $\OT1/cmr/m/it/12 -\C70/rm/m/it/12/91 0 \C70/rm/m/it/12/57 ﬂ$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 c \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 ; c \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 \OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 I$\C70/rm/m/it/12/4f  \C70/rm/m/it/12/5f ó$[]$|\C70/rm/m/it/12/ff | \C70/rm/m/it/12/52 G$\OML/cmm/m/it/12 c$\C70/rm/m/it/12/70 ∫$\OML/cmm/m/it/12 f$\C70/rm/m/it/12/57 ($\OML/cmm/m/it/12 I$\C70/rm/m/it/12/4e 
+
+ []
+
+
+Overfull \hbox (20.30188pt too wide) in paragraph at lines 235--239
 []\C70/rm/m/it/12/82 Â \C70/rm/m/it/12/5b X \C70/rm/m/it/12/57 ($\OML/cmm/m/it/12 c$\C70/rm/m/it/12/76 Ñ$\OML/cmm/m/it/12 $\OT1/cmr/m/it/12 -\C70/rm/m/it/12/91 0 \C70/rm/m/it/12/57 ﬂ$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 c \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 ; c \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 \OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 \ \OML/cmm/m/it/12 I \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 I$\C70/rm/m/it/12/4f  \C70/rm/m/it/12/5f ó$[]$|\C70/rm/m/it/12/ff | \C70/rm/m/it/12/52 G$\OML/cmm/m/it/12 c$\C70/rm/m/it/12/70 ∫$\OML/cmm/m/it/12 f$\C70/rm/m/it/12/57 ($\OML/cmm/m/it/12 I$\C70/rm/m/it/12/4e 
 
  []
 
 
-Overfull \hbox (47.01634pt too wide) in paragraph at lines 235--235
+Overfull \hbox (47.01634pt too wide) in paragraph at lines 250--250
 []\C70/rm/m/n/12/6d  \C70/rm/m/n/12/5f ≈ \C70/rm/m/n/12/90 T \C70/rm/m/n/12/6c ’ \C70/rm/m/n/12/52 G \C70/rm/m/n/12/4e ; \C70/rm/m/n/12/89 Å \C70/rm/m/n/12/75 ( \C70/rm/m/n/12/4f Ü \C70/rm/m/n/12/86 U \C70/rm/m/n/12/74  \C70/rm/m/n/12/4e  \C70/rm/m/n/12/80 ˝ \C70/rm/m/n/12/6b c \C70/rm/m/n/12/5e 8 \C70/rm/m/n/12/6c B \C70/rm/m/n/12/5f ó \C70/rm/m/n/12/76 Ñ \C70/rm/m/n/12/69 u \C70/rm/m/n/12/96 P|\C70/rm/m/n/12/ff | \C70/rm/m/n/12/82 	 \C70/rm/m/n/12/4f ã \C70/rm/m/n/12/59 Ç$\OML/cmm/m/it/12 f; g$\C70/rm/m/n/12/57 G \C70/rm/m/n/12/72 2 \C70/rm/m/n/12/90 # \C70/rm/m/n/12/7e å \C70/rm/m/n/12/51 ˝ \C70/rm/m/n/12/65 x|\C70/rm/m/n/12/ff | \C70/rm/m/n/12/80 $[] [] \OT1/cmr/m/n/12 =
  []
 
@@ -865,20 +866,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
-Overfull \hbox (31.83789pt too wide) in paragraph at lines 310--310
+Overfull \hbox (31.83789pt too wide) in paragraph at lines 325--325
 []\C70/rm/bx/n/12/5b ö \C70/rm/bx/n/12/7f © \OT1/cmr/bx/n/12 6 \OT1/cmr/m/n/12 (\C70/rm/m/n/12/6c  \C70/rm/m/n/12/52 “ \C70/rm/m/n/12/59  \C70/rm/m/n/12/98  \C70/rm/m/n/12/5f \OT1/cmr/m/n/12 )\OT1/cmr/bx/n/12 . []\C70/rm/m/it/12/8a -$\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N$\C70/rm/m/it/12/53  $\OML/cmm/m/it/12 I \OT1/cmr/m/n/12 := [\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 ]$|\C70/rm/m/it/12/ff | \C70/rm/m/it/12/4e & \C70/rm/m/it/12/8a -$\OML/cmm/m/it/12 f \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 I \OMS/cmsy/m/n/12 ! \U/msb/m/n/12 R$\C70/rm/m/it/12/4f  \C70/rm/m/it/12/5f ó$\OML/cmm/m/it/12 f$\C70/rm/m/it/12/53   \C70/rm/m/it/12/51 v \C70/rm/m/it/12/5c  \C70/rm/m/it/12/65 x$\OML/cmm/m/it/12 f[]; f[]; [] ; f[]$\C70/rm/m/it/12/57 G
  []
 
 
-Overfull \hbox (41.15498pt too wide) in paragraph at lines 310--310
+Overfull \hbox (41.15498pt too wide) in paragraph at lines 325--325
 \C70/rm/m/it/12/70 ∫$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 )$\C70/rm/m/it/12/4e 
  \C70/rm/m/it/12/76 Ñ \C70/rm/m/it/12/90 # \C70/rm/m/it/12/7e å \C70/rm/m/it/12/51 ˝ \C70/rm/m/it/12/65 x|\C70/rm/m/it/12/ff | \C70/rm/m/it/12/4e & \C70/rm/m/it/12/65 º$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 )$\C70/rm/m/it/12/4e 
  \C70/rm/m/it/12/5b X \C70/rm/m/it/12/57 ($\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n \OT1/cmr/m/n/12 + 1)$\OT1/cmr/m/it/12 -\C70/rm/m/it/12/96 é \C70/rm/m/it/12/5c  \C70/rm/m/it/12/65 x$\OML/cmm/m/it/12 f[]$|\C70/rm/m/it/12/ff | \C70/rm/m/it/12/52 G \C70/rm/m/it/12/5c  \C70/rm/m/it/12/65 º$\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 I$|\C70/rm/m/it/12/ff | \C70/rm/m/it/12/8a -$\OML/cmm/m/it/12 V\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )$\C70/rm/m/it/12/70 ∫$\OML/cmm/m/it/12 x[]$\C70/rm/m/it/12/76 Ñ
- []
-
-
-Overfull \hbox (46.08789pt too wide) in paragraph at lines 319--319
-[]\C70/rm/bx/n/12/5b ö \C70/rm/bx/n/12/74  \OT1/cmr/m/n/12 (\C70/rm/m/n/12/6c  \C70/rm/m/n/12/52 “ \C70/rm/m/n/12/59  \C70/rm/m/n/12/98  \C70/rm/m/n/12/5f  \C70/rm/m/n/12/5b ö \C70/rm/m/n/12/74 \OT1/cmr/m/n/12 )\OT1/cmr/bx/n/12 . []\C70/rm/m/it/12/8a -$\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N$\C70/rm/m/it/12/53  $\OML/cmm/m/it/12 I \OT1/cmr/m/n/12 := [\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 ]$|\C70/rm/m/it/12/ff | \C70/rm/m/it/12/4e & \C70/rm/m/it/12/8a -$\OML/cmm/m/it/12 f \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 I \OMS/cmsy/m/n/12 ! \U/msb/m/n/12 R$\C70/rm/m/it/12/4f  \C70/rm/m/it/12/5f ó$\OML/cmm/m/it/12 f$\C70/rm/m/it/12/53   \C70/rm/m/it/12/51 v \C70/rm/m/it/12/5c  \C70/rm/m/it/12/65 x$\OML/cmm/m/it/12 f[]; f[]; [] ; f[]$\C70/rm/m/it/12/57 G
  []
 
 
@@ -889,6 +885,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
+Overfull \hbox (46.08789pt too wide) in paragraph at lines 334--334
+[]\C70/rm/bx/n/12/5b ö \C70/rm/bx/n/12/74  \OT1/cmr/m/n/12 (\C70/rm/m/n/12/6c  \C70/rm/m/n/12/52 “ \C70/rm/m/n/12/59  \C70/rm/m/n/12/98  \C70/rm/m/n/12/5f  \C70/rm/m/n/12/5b ö \C70/rm/m/n/12/74 \OT1/cmr/m/n/12 )\OT1/cmr/bx/n/12 . []\C70/rm/m/it/12/8a -$\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N$\C70/rm/m/it/12/53  $\OML/cmm/m/it/12 I \OT1/cmr/m/n/12 := [\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 ]$|\C70/rm/m/it/12/ff | \C70/rm/m/it/12/4e & \C70/rm/m/it/12/8a -$\OML/cmm/m/it/12 f \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 I \OMS/cmsy/m/n/12 ! \U/msb/m/n/12 R$\C70/rm/m/it/12/4f  \C70/rm/m/it/12/5f ó$\OML/cmm/m/it/12 f$\C70/rm/m/it/12/53   \C70/rm/m/it/12/51 v \C70/rm/m/it/12/5c  \C70/rm/m/it/12/65 x$\OML/cmm/m/it/12 f[]; f[]; [] ; f[]$\C70/rm/m/it/12/57 G
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -904,19 +904,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11] (chi.aux) ) 
+[11]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12] (chi.aux) ) 
 Here is how much of TeX's memory you used:
- 30374 strings out of 478864
- 717823 string characters out of 2855690
- 1161692 words of memory out of 3000000
- 47428 multiletter control sequences out of 15000+600000
- 451215 words of font info for 201 fonts, out of 8000000 for 9000
+ 30382 strings out of 478864
+ 717965 string characters out of 2855690
+ 1162693 words of memory out of 3000000
+ 47431 multiletter control sequences out of 15000+600000
+ 451485 words of font info for 202 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,12n,106p,818b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on chi.pdf (11 pages, 815765 bytes).
+<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on chi.pdf (12 pages, 818456 bytes).
 PDF statistics:
- 750 PDF objects out of 1000 (max. 8388607)
+ 752 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  289 words of extra memory for PDF output out of 10000 (max. 10000000)
 

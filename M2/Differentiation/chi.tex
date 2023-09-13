@@ -119,8 +119,23 @@
         對於複合函數$h:=(g\circ f)$，$$h'=(g'\circ f)\cdot(f')$$
     \end{theorem}
 
-    \begin{proof}
-        留做習題
+    證明以上定理需引用一下引理：
+
+    \begin{lemma}
+        設$f:I\to\mathbb{R}$，$c\in I$。則$f$可微當且僅當存在函數$\varphi$在$I$上定義且於$c$點連續使得對於所有$x\in I$均有$$f(x)-f(c)=\varphi(x)(x-c)$$則寫$\varphi(c)=f'(c)$。
+    \end{lemma}
+
+    \begin{proof}[引理]
+        若$f'(c)$存在，即$$\varphi(x):=\begin{cases}
+            \frac{f(x)-f(c)}{x-c}, & x\neq c\\
+            f'(c), & x=c
+        \end{cases}$$為連續函數，使得$\varphi(c)=f'(c)$。
+
+        若$\varphi$為連續函數符合$$f(x)-f(c)=\varphi(x)(x-c)$$則$$\varphi(c)=\lim_{x\to c}\varphi(x)=\lim_{x\to c}\frac{f(x)-f(c)}{x-c}=f'(c)$$
+    \end{proof}
+
+    \begin{proof}[鏈鎖律]
+        
     \end{proof}
 
     \begin{theorem}[逆函數]
