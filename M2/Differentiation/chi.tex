@@ -48,6 +48,17 @@
         則寫$f'(c)=L$。
     \end{definition}
 
+    \begin{example}
+        $f(x):=x^2$在$c$可微。
+
+        \begin{align*}
+            f'(c)&=\lim_{x\to c}\frac{f(x)-f(c)}{x-c}\\
+            &=\lim_{x\to c}\frac{x^2-c^2}{x-c}\\
+            &=\lim_{x\to c}(x+c)\\
+            &=2c
+        \end{align*}
+    \end{example}
+
     \begin{theorem}
         若$f:I\to\mathbb{R}$在$c\in I$可微，則$f$在$c\in I$連續。
     \end{theorem}
@@ -63,7 +74,7 @@
 
     導數的目的在於處理函數的變化：從算式可見，導數取自$f$的變化除以變量$x$的變化，即可理解爲變化的比例，等於變化比率。簡而言之，導數為函數的斜率。
 
-    \begin{theorem}[基本導數定則]
+    \begin{example}[基本導數定則]
         \begin{enumerate}
             \item 常函數的導數：$$\frac{d}{dx}(c)=0$$
             \item 冪函數的導數：$$\frac{d}{dx}(x^n)=nx^{n-1}$$
@@ -75,7 +86,7 @@
                 \item $$\frac{d}{dx}(\tan{x})=\sec^2{x}$$
             \end{enumerate}
         \end{enumerate}
-    \end{theorem}
+    \end{example}
 
     \begin{proof}
         留做習題。
@@ -108,6 +119,14 @@
         \end{enumerate}
     \end{proof}
 
+    \begin{example}
+        若$f,g$為可微函數使得$f(c)=1, g(c)=c^2, f'(c)=1$及$g'(c)=2c$，則：\begin{enumerate}
+            \item $(2f+3g)'(c)=2f'(c)+3g'(c)=2+6c$。
+            \item $(fg)'(c)=f'(c)g(c)+f(c)g'(c)=c^2+2c$。
+            \item $(f/g)'(c)=(f'(c)g(c)-f(c)g'(c))/(g(c))^2=c^{-2}-2c^{-3}$。
+        \end{enumerate}
+    \end{example}
+
     \begin{corollary}
         導數擁有以下性質：\begin{enumerate}
             \item 綫性性：對於一系列可微函數$\{f_k\}_{k=1}^n$，及一系列常數$\{\alpha_k\}_{k=1}^n$，$\displaystyle(\sum_{k=1}^{n}\alpha_k f_k)'=\sum_{k=1}^{n}(\alpha_k f_k')$。
@@ -135,8 +154,21 @@
     \end{proof}
 
     \begin{proof}[鏈鎖律]
-        
+        對任意$c\in I$，存在$\varphi_c,\phi_c$使得下列成立
+        \begin{align*}
+            h(x)-h(c)&=g(f(x))-g(f(c))\\
+            &=\varphi_c(f(x))(f(x)-f(c))\\
+            &=\varphi_c(f(x))\cdot \phi_c(x)(x-c)
+        \end{align*}
+        因此，$h'(c)=\varphi_c(f(c))\cdot \phi_c(c)=g'(f(c))\cdot f'(c)$。
     \end{proof}
+
+    \begin{example}
+        設$h(x):=\sin{e^x}$，則\begin{align*}
+            h'(c)&=(\sin)'(e^x)\cdot (e^x)'\\
+            &=e^x\cos{e^x}
+        \end{align*}
+    \end{example}
 
     \begin{theorem}[逆函數]
         對於逆函數$g:=f^{-1}$，$$g'=\frac{1}{f'\circ g}$$
@@ -148,6 +180,13 @@
             g'(x)&=\frac{1}{(f'\circ g)(x)}
         \end{align*}
     \end{proof}
+
+    \begin{example}
+        已知$\ln(x)$為$e^x$的逆函數，則\begin{align*}
+            (\ln(x))'&=\frac{1}{e^{\ln(x)}}\\
+            &=\frac{1}{x}
+        \end{align*}
+    \end{example}
 
     導數可視爲函數於任意點的斜率，換言之，利用直綫方程的點斜式，可得出函數$f$於任意點$(x_0,f(x_0))$上的切綫方程為$$y-f(x_0)=f'(x_0)(x-x_0)$$
 
@@ -383,14 +422,15 @@
     \begin{theorem}[牛頓分割法]
         設$I:=[a,b]$並設$f:I\to\mathbb{R}$為二階可微函數。假定$f(a)f(b)<0$並存在$m,M>0$使得所有$x\in I$均符合$|f'(x)|\geq m>0$及$|f''(x)|\leq M$。設$K:=M/2m$。則存在$r\in I'\subset I$使得$f(r)=0$，同時有數列$(x_n)$定義爲$$x_{n+1}:=x_n-\frac{f(x_n)}{f'(x_n)}$$使得$\displaystyle\lim_{n\to \infty}x_n=r$，而且$|x_{n+1}-r|<K|x_n-r|^2$。
     \end{theorem}
-    
-    \section*{向量函數}
 
-    \section*{偏導數與全導數}
+    \begin{proof}
+        留做習題。
 
-    \section*{方向導數}
-
-    \section*{切面與法綫}
-
-    \section*{二維極值與鞍點}
+        提示：\begin{enumerate}
+            \item $f(a)f(b)<0\implies f(a)$和$f(b)$一正一負。根據介值定理得到$r\in(a,b)$使得$f(r)=0$。
+            \item 考慮泰勒多項式$$0=f(r)=f(x_n)+f'(x_n)(x_n-r)+\frac{f''(c)}{2}(x_n-r)^2$$其中$x_n\in I$，$c$介乎$x_n$與$r$之間。
+            \item 考慮$$x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}$$得到$|x_{n+1}-r|<K|x_n-r|^2$。
+            \item 設$\delta<1/K$完成極限證明。
+        \end{enumerate}
+    \end{proof}
 \end{document}
