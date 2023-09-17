@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{{../image/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{測驗2參考答案}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item \begin{flalign*}
+                e^{i2x}&=\cos^2{x}-\sin^2{x}+i2\sin{x}\cos{x}\\
+                e^{i3x}&=4\cos^3{x}-3\cos{x}+i(3\sin{x}-4\sin^3{x})
+            \end{flalign*}
+            \item Remember to do both directions.
+            \item \begin{enumerate}
+                \item \begin{flalign*}
+                \sum_{k=0}^{n}\cos{kx}&=\Re{\sum_{k=0}^{n}e^{ikx}}\\
+                &=\Re{\frac{1-e^{i(n+1)x}}{1-e^{ix}}}
+            \end{flalign*}
+            \item \begin{flalign*}
+                \sum_{k=0}^{n}\sin{kx}&=\Im{\sum_{k=0}^{n}e^{ikx}}\\
+                &=\Im{\frac{1-e^{i(n+1)x}}{1-e^{ix}}}
+            \end{flalign*}
+            \item \begin{flalign*}
+                \sum_{k=0}^{n}r^k\cos{kx}&=\Re{\sum_{k=0}^{n}r^ke^{ikx}}\\
+                &=\Re{\frac{1-r^{n+1}e^{i(n+1)x}}{1-re^{ix}}}
+            \end{flalign*}
+            \item \begin{flalign*}
+                \sum_{k=0}^{n}r^k\sin{kx}&=\Im{\sum_{k=0}^{n}r^ke^{ikx}}\\
+                &=\Im{\frac{1-r^{n+1}e^{i(n+1)x}}{1-re^{ix}}}
+            \end{flalign*}
+            \end{enumerate}
+            \item \begin{enumerate}
+                \item \begin{flalign*}
+                    \sum_{k=0}^{\infty}r^k\cos{kx}&=\Re{\sum_{k=0}^{\infty}r^ke^{ikx}}\\
+                    &=\Re{\frac{1}{1-re^{ix}}}
+                \end{flalign*}
+                \item \begin{flalign*}
+                    \sum_{k=0}^{\infty}r^k\sin{kx}&=\Im{\sum_{k=0}^{n}r^ke^{ikx}}\\
+                    &=\Im{\frac{1}{1-re^{ix}}}
+                \end{flalign*}
+            \end{enumerate}
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item \begin{enumerate}
+                \item Taylor
+                \item Taylor
+                \item Taylor
+            \end{enumerate}
+            \item 弧長等於弧度角，并且弧長永遠大於垂直高度。
+            \item 利用極限。
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $\lim_{x\to a}(f(x)-f(a))=\lim_{x\to a}D_af(x)\cdot \lim_{x\to a}(x-a)=0$.
+            \item 沒有一點有導數，則為離散函數。
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item 0
+            \item 代$x=r\cos{\theta}, y=r\sin{\theta}$.
+        \end{enumerate}
+    \end{enumerate}
+\end{document}

@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{{../image/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{測驗2}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \begin{enumerate}
+        \item 已知歐拉公式為$$e^{ix}=\cos{x}+i\sin{x}$$其中$i^2=-1$為虛數，$e$為自然常數。\begin{enumerate}
+            \item 試以$\sin{x}$及$\cos{x}$表述$e^{i2x}$和$e^{i3x}$。
+            \item 利用M.I.，證明以下等式對所有整數$n$均成立：$$e^{ikx}=\cos{kx}+i\sin{kx}$$[Hint:分case $n<0,n=0,n>0$]
+            \item 已知$\displaystyle\sum_{k=0}^{n}z^k=\frac{1-z^{n+1}}{1-z}$對任意$z\in\mathbb{C}$, $z\neq 1$。運用$(a),(b)$及就你所知，求以下式的閉合式：\begin{enumerate}
+                \item $\displaystyle\sum_{k=0}^{n}\cos{kx}$
+                \item $\displaystyle\sum_{k=0}^{n}\sin{kx}$
+                \item $\displaystyle\sum_{k=0}^{n}r^k\cos{kx}$, $|r|<1$
+                \item $\displaystyle\sum_{k=0}^{n}r^k\sin{kx}$, $|r|<1$
+            \end{enumerate}
+            \item 已知$|r|<1$,求\begin{enumerate}
+                \item $\displaystyle\sum_{k=0}^{\infty}r^k\cos{kx}$, $|r|<1$
+                \item $\displaystyle\sum_{k=0}^{\infty}r^k\sin{kx}$, $|r|<1$
+            \end{enumerate}
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item 運用任意合理方法，求\begin{enumerate}
+                \item $\displaystyle\lim_{x\to 0}\frac{e^x-1}{x}$.
+                \item $\displaystyle\lim_{x\to 0}\frac{\sin{x}}{x}$.
+                \item $\displaystyle\lim_{x\to 0}\frac{\cos{x}-1}{x}$.
+            \end{enumerate}
+            \item 利用單位圓的概念，證明$|\sin{x}|\leq |x|$.
+            \item 運用(a)和(b)，及就你所知，證明對於$x$符合$0<|x|<\delta(\varepsilon)$，均有$$\biggl|\frac{\sin(e^x-1)-\sin(\cos{x}-1)}{x}-1\biggr|<\varepsilon$$其中$\delta(\varepsilon)$為受$\varepsilon$操控的數值，$\delta>0,\varepsilon>0$。
+        \end{enumerate}
+        \item 設汎函$D$有以下定義：\\
+        \begin{definition}
+            對於任意連續函數$f:A\to B$，給定$a\in A$, $$D_af:=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}$$
+        \end{definition}
+        \begin{definition}
+            $$Df:=\{D_af:a\in A, f:A\to B\}$$
+        \end{definition}
+        \begin{enumerate}
+            \item 證明若$D_af$存在，則$f$在$a$上連續。
+            \item 若$f$為空集，是描述$f$的性質。
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item 求以下極限：$$\lim_{x\to 0,y\to 0}\frac{x^4+y^4}{x^2+y^2}$$
+            \item 證明以下極限發散：$$\lim_{x\to 0,y\to 0}\frac{x^2-y^2}{xy}$$
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
