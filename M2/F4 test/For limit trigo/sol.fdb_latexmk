@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1694950615 "c:/GitHub/HKDSE-ByTopicNotes/M2/F4 test/For limit trigo/sol.tex" "sol.pdf" "sol" 1694950617
+["pdflatex"] 1695112356 "c:/GitHub/HKDSE-ByTopicNotes/M2/F4 test/For limit trigo/sol.tex" "sol.pdf" "sol" 1695112360
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637656387 9767274 bfa53867e73d350431acf6a4363b13ea ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1692081626 82709 e421094887a3700bddedcd00a786f109 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
@@ -56,6 +56,7 @@
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
+  "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1636384675 146984 db794b7f9b5ed39519dc3658549c3d31 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/generic/babel/txtbabel.def" 1636384675 5233 a89961f969f72563cb59411e9dc4ae8e ""
@@ -240,9 +241,9 @@
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1588360716 5646 2609567579096c69f0472004a72489a6 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1588360716 31921 5879df709f54630647c1aa6545bcedb7 ""
   "C:/WINDOWS/Fonts/simsun.ttc" 1693632251 18008680 490583a172d4371a68d1e0526a6bca81 ""
-  "c:/GitHub/HKDSE-ByTopicNotes/M2/F4 test/For limit trigo/sol.tex" 1694950614 3331 df19ed0fa9f48d9236b66aca470a9f08 ""
-  "sol.aux" 1694950616 112 a79fe896b56b4862b346df1ebf05b16d "pdflatex"
-  "sol.tex" 1694950614 3331 df19ed0fa9f48d9236b66aca470a9f08 ""
+  "c:/GitHub/HKDSE-ByTopicNotes/M2/F4 test/For limit trigo/sol.tex" 1695112355 3483 d45cd8205679c41e2791d16a5e616ee9 ""
+  "sol.aux" 1695112360 112 a79fe896b56b4862b346df1ebf05b16d "pdflatex"
+  "sol.tex" 1695112355 3483 d45cd8205679c41e2791d16a5e616ee9 ""
   (generated)
   "sol.aux"
   "sol.log"
