@@ -433,4 +433,55 @@
             \item 設$\delta<1/K$完成極限證明。
         \end{enumerate}
     \end{proof}
+
+    \newpage
+
+    \section*{繪圖}
+
+    繪圖的目的在於一更直觀的方式理解函數的整體運作，因此有數樣東西需要在繪圖前知道：\begin{enumerate}
+        \item 軸的切點；
+        \item 最高與最低點；
+        \item 鞍點；
+        \item 漸近綫。
+    \end{enumerate}
+
+    \begin{example}
+        繪畫$y=\displaystyle\frac{\sin{x}}{x}$的圖像。
+
+        \begin{sol}
+            \begin{enumerate}
+                \item \begin{enumerate}
+                    \item $x$軸切點：令$y=0$，則$\sin{x}=0$。因此，圖像與$x$軸相交於$x=n\pi$，$n\in\mathbb{Z}$。但$x=0$未定義，因此$n\in\mathbb{Z}\setminus\{0\}$。
+                    \item $y$軸切點：$x=0$未定義，但$\displaystyle\lim_{x\to 0}\frac{\sin{x}}{x}=1$，因此$y$軸切點虛設於1。
+                \end{enumerate}
+                \item $y'=\displaystyle\frac{x\cos{x}-\sin{x}}{x^2}$。設$y'=0$則$\tan{x}=x$。欲求$\tan{x}=x$的解可視爲求$\tan{x}-x$的根，又知$\tan{x}$的周期為$(n\pi-\pi/2,n\pi+\pi/2)$，則可運用牛頓法求根。
+                
+                設$f(x):=\tan{x}-x$，則$f'(x)=\sec^2{x}-1=\tan^2{x}$。利用$$x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}=x_n-\frac{\tan{x_n}-x_n}{\tan^2{x_n}}$$可知根的集合為$$\{0,\pm 4.4934, \pm 7.2525, \dots\}$$
+
+                $y''=\displaystyle\frac{(2-x^2)\sin{x}}{x^3}$。則可檢查
+                \begin{center}
+                    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+                        \hline
+                        $x$&$\cdots$&$-7.25$&$-4.49$&$0$&$4.49$&$7.25$&$\cdots$\\
+                        \hline
+                        $y''$&$\cdots$&$-$&$+$&$\lim_{x\to 0}y''<0$&$+$&$-$&$\cdots$\\
+                        \hline
+                    \end{tabular}
+                \end{center}
+                \item 沒有鞍點。
+                \item $\displaystyle\lim_{x\to\infty}y=0$。
+            \end{enumerate}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.3]{Si(x).png}
+            \end{figure}
+        \end{sol}
+    \end{example}
+
+    \begin{example}
+        繪畫$y=\tan{x}-x$的圖像。
+        \begin{sol}
+            留做習題。
+        \end{sol}
+    \end{example}
 \end{document}
