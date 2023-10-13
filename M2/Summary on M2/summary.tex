@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+
+\graphicspath{{./img/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{測驗1:二項式定理、指數及對數}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    In this article, I will try to summarize the whole M2 syllabus in HKDSE, which can link up every chapters with some simple notation.
+
+    The very first chapter, depending on schools' syllabus, is the fundamental knowledge of Mathematics, including operations on surds, odd and even functions, and the summation notation. They are the language we use all the time to simplify writings of mathematical contents, so that repeating sentences can be duplicated easily.
+
+    Starting from the second chapter, the contents will be differed from Compulsory part a lot. It will no longer be pure computations, but a high tendency on thinking process. It shall be divided into two big topics called algebra and calculus, although it turns out to be geometry.
+
+    Mathematical Induction would be the second chapter of the whole syllabus, which provides a proving technique using the thought of continuous implication. It simply shows when the first statement is true provided with any true statement P(k) also implies the validity of the next statement P(k+1). This technique helps prove every generalization results.
+
+    Next chapters included Limit, Differentiation and Integration. While limit is quite an abstract topic existing later than the latter two names, this is a critical part of Calculus. It provides a base for learning two calculus topics with a better notation and intuition. Differentiation talks about tangent to curves at a specific point on the curve, while Integration talks about volume computation (we mean a 2-dimensional volume an area). They are referenced so well as the fundamental theorem of calculus works beautifully: $$\frac{d}{dx}\int_a^x f(t)dt = f(x)$$ This can be further generalized to Leibniz rule of calculus: $$\frac{d}{dx}\int_{a(x)}^{b(x)}f(t)dt = f(b(x)) - f(a(x)) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial t} f(t)dt$$
+
+    The final part is Linear algebra, with system of linear equation, matrices and vectors operations. This part is where we apply the concept of coordinate transformation thoroughly, so that every coordinate is managed with vectors, and every transformation is managed with system of linear equation, which is described later by matrix multiplication. To connect with calculus, we can see for polynomial function $f(x)$, $$\dfrac{d}{dx}f(x)=AF$$ where $A$ is the matrix for Differentiation and $F$ is the matrix for polynomial transformation.
+\end{document}
