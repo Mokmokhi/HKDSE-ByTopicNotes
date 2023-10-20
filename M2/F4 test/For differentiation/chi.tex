@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{{../image/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{測驗3}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \begin{enumerate}
+        \item 利用$\epsilon-\delta$定義，證明微分的乘積法則：$$(fg)'=f'g+fg'$$
+        \item 設$f(x)=\sin{\pi x}$。設$(g_n)$為函數數列使得$g_1(x)=f(x)$及$g_n(x)=f(g_{n-1}(x))$。證明對於任意正整數$n$，$g_n'(0)=\pi^n$。
+        \item 設$E(x)$為可微實函數，且$\forall x\in \mathbb{R}, E'(x)>0$。此稱爲嚴格遞增函數。\begin{enumerate}
+            \item 證明$E(x)$最多只有一個實根。
+            \item 證明嚴格遞升實函數與嚴格遞降實函數只能有最多一個相交點。
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
