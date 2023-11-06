@@ -950,6 +950,15 @@ INPUT C:\Users\Owenm\AppData\Local\MiKTeX\pdftex\config\pdftex.map
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\sfd\ttf2pk\UGBK.sfd
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\sfd\ttf2pk\Unicode.sfd
 OUTPUT eng.pdf
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT D:\Program Files (x86)\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT ..\images\\cotangent_circles.png
+INPUT ..\images\\cotangent_circles.png
+INPUT ..\images\\cotangent_circles.png
+INPUT ..\images\\cotangent_circles.png
+INPUT ..\images\\cotangent_circles.png
+INPUT ..\images\\cotangent_circles.png
+INPUT ..\images\\cotangent_circles.png
 INPUT eng.aux
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb

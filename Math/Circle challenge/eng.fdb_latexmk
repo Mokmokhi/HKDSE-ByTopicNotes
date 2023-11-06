@@ -1,5 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1693291366 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Circle challenge/eng.tex" "eng.pdf" "eng" 1693291368
+["pdflatex"] 1698419971 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Circle challenge/eng.tex" "eng.pdf" "eng" 1698419974
+  "../images//cotangent_circles.png" 1698415229 28492 5b8651e36f2547ff565b9a5dc0c9c568 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1685554408 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
@@ -52,6 +53,7 @@
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/cm/cmmi8.tfm" 1136765053 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
+  "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/cm/cmr17.tfm" 1136765053 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/cm/cmr6.tfm" 1136765053 1300 b62933e007d01cfd073f79b963c01526 ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/cm/cmr8.tfm" 1136765053 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
@@ -211,9 +213,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Circle challenge/eng.tex" 1693291365 2474 4cc7da7464f7baede1614073c7261d5c ""
-  "eng.aux" 1693291368 112 d2ca28f0a8afe573a12973a007b9ea93 "pdflatex"
-  "eng.tex" 1693291365 2474 4cc7da7464f7baede1614073c7261d5c ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Circle challenge/eng.tex" 1698419970 3418 a7d9e71810361492bc2c85b97ebbb620 ""
+  "eng.aux" 1698419973 112 a79fe896b56b4862b346df1ebf05b16d "pdflatex"
+  "eng.tex" 1698419970 3418 a7d9e71810361492bc2c85b97ebbb620 ""
   (generated)
   "eng.aux"
   "eng.log"
