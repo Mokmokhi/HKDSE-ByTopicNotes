@@ -14,7 +14,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhf[HL]{測驗1:二項式定理、指數及對數}
+\fancyhf[HL]{測驗2:導數及其應用}
 \fancyhf[CF]{\thepage}
 
 \newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
@@ -38,9 +38,9 @@
 
     \centering 
 
-    \section*{測驗1\\數學延伸單元\\單元1 (微積分與統計學)\\試題-答題簿}
+    \section*{測驗2\\數學延伸單元\\單元1 (微積分與統計學)\\試題-答題簿}
 
-    限時: 1 小時
+    限時: 1.5 小時
 
     姓名：\hrulefill \hfill 得分：\hrulefill/20
 
@@ -67,128 +67,12 @@
     \newpage
     \setcounter{page}{1}
     \begin{enumerate}
-        \item （5分）\begin{enumerate}
-            \item 依$u$的降冪次序展開$(u+\frac{1}{u})^4$。
-            \item 依$x$的升冪次序展開$(e^{ax}+e^{-ax})^4$至含$x^2$的項爲止。
-            \item 假設在(b)題的結果中$x^2$的係數為2，求$a$的所有可能值。
-        \end{enumerate}
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-        \item （6分）\begin{enumerate}
-            \item 依$x$的升冪次序展開$(1+e^{3x})^2$至含$x^2$的項爲止。
-            \item 求$(5-x)^4(1+e^{3x})^2$的展開式中$x^2$的係數的值。
-        \end{enumerate}
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-        \item （6分）已知池塘裏受某個疾病影響的魚的數量$N(t)$能以下式模擬：$$N(t)=\frac{500}{1+ae^{-kt}}$$其中$a,k$為正常數，而$t$為由疾病發生起所經歷的日數。
-        \begin{center}
-            \begin{tabular}{|c|c|c|c|c|}
-                \hline
-                $t$&5&10&15&20\\
-                \hline
-                $N(t)$&13&34&83&175\\
-                \hline
-            \end{tabular}
-        \end{center}
-        \begin{enumerate}
-            \item 將$\displaystyle\ln\biggl(\frac{500}{N(t)}-1\biggr)$表為$t$的線性函數。
-            \item 利用以下圖表，估算$a$和$k$的值。（請將答案取值至小數點後一個位）\begin{figure}[H]
-                \centering
-                \includegraphics[scale=0.75]{graph_paper.png}
-            \end{figure}
-            \item 請問受感染的魚的數量將在疾病爆發後的多少天到達270條？
+        \item （9分）已知$t=y^3+1$及$e^t=x^{x^2+1}$\begin{enumerate}
+            \item 求$\dfrac{dt}{dy}$。\hfill(1分)
+            \item 從以$x$表$t$，求$\dfrac{dt}{dx}$。\hfill(2分)
+            \item 以$x$及$y$表$\dfrac{dy}{dx}$。\hfill(2分)
+            \item 求當$x=e$時$y$的值，並求出$\dfrac{dy}{dx}\bigg|_{x=e}$的值。\hfill(2分)
+            \item 由此，求$x=e$時以上述算式在$xy$平面繪出的曲綫的切綫的$x$軸截距。\hfill(2分)
         \end{enumerate}
 
         \hrulefill
@@ -286,26 +170,266 @@
         \hrulefill
 
         \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-
-        \hrulefill
-        \item[挑戰題.] （4分）設$p$為實數且$0<p<1$。設$n$為正整數。對$k$介乎$1$與$n$之間，定義$a_k=C_k^n p^k(1-p)^{n-k}$。\begin{enumerate}
-            \item 證明$\displaystyle\sum_{k=0}^{n}a_k=1$。
-            \item 證明$k\cdot C_k^n=n\cdot C_{k-1}^{n-1}$。由此證明$\displaystyle\sum_{k=0}^{n}ka_k=np$。
+        \item （15分）某病菌在某時間點$t$(從16/4/2010早上9時起計算的天數，可正可負)的數量$p(t)$可以用下式估算$$p(t)=\frac{a}{b+e^{-t}}+c, -\infty<t<\infty$$其中$a,b,c$為正常數。定義\textit{原始數量}為無限多天之前的病菌數量，以及\textit{終極數量}為無限多天後的病菌數量。\begin{enumerate}
+            \item 試以$a,b,c$表下列各數：\begin{enumerate}
+                \item $p(t)$的增長速度最快之時;
+                \item 原始數量；
+                \item 終極數量。
+            \end{enumerate}\hfill(5分)
+            \item 某科學家通過繪畫$\ln[p(t)-c]$對$\ln(b+e^{-t})$的圖像來研究病菌數量，並發現圖像的縱軸截距為$\ln 8000$。如果16/4/2010早上9時的病菌數量及每天增長速度分別爲6000及2000，求$a,b,c$的值。\hfill(3分)
+            \item 另一名科學家認爲當病菌的增長速度達到峰值時，病菌數量將等於原始數量及終極數量的平均值。你同意嗎？試解釋你的答案。\hfill(2分)
+            \item 透過以$a,b,c$及$p(t)$表$e^{-t}$，以$\dfrac{-b}{a}[p(t)-\alpha][p(t)-\beta]$的形式表$p'(t)$，其中$\alpha<\beta$。由此以$a,b,c$表$\alpha$及$\beta$。描繪於$\alpha<p(t)<\beta$時$p'(t)$對$p(t)$的圖像並驗證(c)題的答案。\hfill(5分)
         \end{enumerate}
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+        \item 
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+
+        \hrulefill
+        \item[挑戰題.] （4分）設$f(x)=ax^3+bx^2+cx+d$，其中$a,b,c,d$為常數且$a\neq 0$。試以$a,b,c$表$f(x)$\textbf{沒有極值}的條件。
 
         \hrulefill
 
