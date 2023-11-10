@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1699600036 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" "chi.pdf" "chi" 1699600039
+["pdflatex"] 1699628178 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" "chi.pdf" "chi" 1699628181
   "C:/Users/Owenm/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1664299329 14064 d51fe1154d65350215fea1f8fca0323d ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1685554408 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
@@ -10,6 +10,7 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei54.tfm" 1247154072 1172 d48fa656debc44b54635777f72473a7c ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei58.tfm" 1247154072 1172 72bdd9760fa9bdd25369ae236dd1ab29 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei5b.tfm" 1247154072 1172 2120666fa3540653fd1185d802592022 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei5c.tfm" 1247154072 1172 bd43fa5a6a1bdc14b787de765c6df7cc ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei5e.tfm" 1247154072 1172 43d03c144e7fffa57074d64aa459c451 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei5f.tfm" 1247154072 1172 7048f0a8b693444590781debe54eecbd ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei60.tfm" 1247154072 1172 96cb70e1efefba6c98e5b547e0d33833 ""
@@ -30,6 +31,7 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai4f.tfm" 1247154072 1172 8c8dbd4c88f73fa5916173eba96c1998 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai51.tfm" 1247154072 1172 aee2246b9f8714bd699a8b93085eee26 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai52.tfm" 1247154072 1172 01099c7d9eb822eb36dc1116b3d2c157 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai53.tfm" 1247154072 1172 cf533624c8cb6f22f431984286fe9d1c ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai54.tfm" 1247154072 1172 8cb643ec9ebea0c9948345f88165981b ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai55.tfm" 1247154072 1172 4600b5d719c65633268310979d1fe663 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai59.tfm" 1247154072 1172 5c7b29a862aeaf06493e08fccc0663eb ""
@@ -56,6 +58,7 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai8b.tfm" 1247154072 1172 d65cb106123a92c5ee00b1e4fe33aea2 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai90.tfm" 1247154072 1172 3315451bb38b8ba0d03dc4fadb3f7c67 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai91.tfm" 1247154072 1172 260413ef8c46b347657d346b64c16147 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai95.tfm" 1247154072 1172 0f9119c40cb09c75e3f98aaa285451ea ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai96.tfm" 1247154072 1172 958385df735d4cfe9fa1fcdf6bb8794a ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unikai/unikaiff.tfm" 1247154072 1172 d8c52947a0b26d01fe0320bba2062d01 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong4e.tfm" 1247154072 1172 89be830028b08964827966f204abf065 ""
@@ -294,9 +297,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" 1699600033 5298 7e1d5ded6e960c821cba4d98b64b664b ""
-  "chi.aux" 1699600039 112 a79fe896b56b4862b346df1ebf05b16d "pdflatex"
-  "chi.tex" 1699600033 5298 7e1d5ded6e960c821cba4d98b64b664b ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" 1699628175 5761 53775d7817ddc87edfd213850527932e ""
+  "chi.aux" 1699628180 112 f6cc5d95503d63b65f979f595bc85309 "pdflatex"
+  "chi.tex" 1699628175 5761 53775d7817ddc87edfd213850527932e ""
   (generated)
   "chi.aux"
   "chi.log"
