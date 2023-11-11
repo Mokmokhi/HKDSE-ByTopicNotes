@@ -103,8 +103,8 @@
     \begin{proposition}[矩陣乘法定則]
         設$\mathbf{A},\mathbf{B},\mathbf{C},\mathbf{D}$為矩陣，則\begin{enumerate}
             \item 乘法結合律：$(\mathbf{A}\mathbf{B})\mathbf{C}=\mathbf{A}(\mathbf{B}\mathbf{C})$。
-            \item 分配律1：$(\mathbf{A}+\mathbf{B})\mathbf{C}=\mathbf{A}\mathbf{C}+\mathbf{B}\mathbf{C}$。
-            \item 分配律2：$\mathbf{D}(\mathbf{A}+\mathbf{B})=\mathbf{D}\mathbf{A}+\mathbf{D}\mathbf{B}$。
+            \item 分配律I：$(\mathbf{A}+\mathbf{B})\mathbf{C}=\mathbf{A}\mathbf{C}+\mathbf{B}\mathbf{C}$。
+            \item 分配律II：$\mathbf{D}(\mathbf{A}+\mathbf{B})=\mathbf{D}\mathbf{A}+\mathbf{D}\mathbf{B}$。
             \item $\alpha\mathbf{A}\mathbf{B}=(\alpha\mathbf{A})\mathbf{B}=\mathbf{A}(\alpha\mathbf{B})$。
             \item $\mathbf{A}\mathbf{I}=\mathbf{I}\mathbf{A}=\mathbf{A}$。
         \end{enumerate}
@@ -127,11 +127,24 @@
             \end{pmatrix}=3e_1+2e_2+e_1$$
     \end{example}
 
+    \begin{example}
+        設$E_n\in\mathbb{M}^{3\times 3}$，對於$1\leq n\leq 9$，$E_n=(e_{ij})_{3\times 3}$而且$$e_{ij}=\begin{cases}
+            1 & n=3(i-1)+j\\ 0 & otherwise
+        \end{cases}$$，則可寫
+            $$\begin{pmatrix}
+                1&2&3\\4&5&6\\7&8&9
+            \end{pmatrix}=\sum_{k=1}^{9}kE_k$$
+    \end{example}
+
     \begin{remark}
         以上例子便是矩陣與綫性方程組的關係。
     \end{remark}
 
     \section*{綫性方程組}
+
+    綫性方程組主要用以表達兩條或多條同時成立的綫性方程，最具代表性的可數初中的聯立方程：$$\begin{cases}
+        ax+by&=k_1\\cx+dy&=k_2
+    \end{cases}$$
 
     \section*{擴增矩陣}
 
