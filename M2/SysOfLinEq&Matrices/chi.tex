@@ -24,10 +24,10 @@
 \newtheorem*{theorem}{定理}
 \newtheorem*{corollary}{衍理}
 \newtheorem*{lemma}{引理}
-\newtheorem*{proposition}{設理}
+\newtheorem*{proposition}{命題}
 \newtheorem*{remark}{小記}
 \newtheorem*{claim}{主張}
-\newtheorem*{example}{例子}
+\newtheorem*{example}{示例}
 \newtheorem*{axiom}{公設}
 \renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
 
@@ -145,6 +145,83 @@
     綫性方程組主要用以表達兩條或多條同時成立的綫性方程，最具代表性的可數初中的聯立方程：$$\begin{cases}
         ax+by&=k_1\\cx+dy&=k_2
     \end{cases}$$
+
+    當然，綫性方程組的含義不僅是二元一次方程，更可以拓展到多元一次(綫性)方程：
+    $$\begin{cases}
+        a_{11}x_1+a_{12}x_2+\cdots+x_{1n}x_{n}&=b_1\\
+        a_{21}x_1+a_{22}x_2+\cdots+x_{2n}x_{n}&=b_2\\
+        \vdots&\vdots\\
+        a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_{n}&=b_n
+    \end{cases}$$
+
+    \begin{example}
+        以下是綫性方程組的例子：
+        \begin{enumerate}
+            \item $\begin{cases}
+                x+y&=0\\
+                2x-3y&=0
+            \end{cases}$
+            \item $\begin{cases}
+                x+y+z&=0\\
+                2x+3y+4z&=0
+            \end{cases}$
+            \item $\begin{cases}
+                x-y+z&=0\\
+                2x+4z&=0\\
+                -2x-4y&=0
+            \end{cases}$
+        \end{enumerate}
+    \end{example}
+
+    \subsection*{解綫性方程組}
+
+    欲求綫性方程組的解，我們可使\textbf{代入法}或\textbf{消元法}，其中消元法比代入法的效率更高，因此普遍數學家都會使用消元法解方程。同時此辦法也衍生出矩陣的各項命題。
+
+    \begin{example}
+        求解綫性方程組$\begin{cases}
+            2x+3y&=8\\
+            6x-2y&=9
+        \end{cases}$
+        \begin{enumerate}
+            \item 運用代入法求解：從$2x+3y=8$可得$x=\dfrac{8-3y}{2}$，代入$6x-2y=9$得\begin{align*}
+                6(\frac{8-3y}{2})-2y&=9\\
+                3(8-3y)-2y&=9\\
+                24-9y-2y&=9\\
+                11y&=15\\
+                y&=\frac{15}{11}
+            \end{align*}
+            再代$y=\dfrac{15}{11}$入$x=\dfrac{8-3y}{2}$得\begin{align*}
+                x&=\frac{8-3(\frac{15}{11})}{2}\\
+                &=\frac{43}{22}
+            \end{align*}
+            因此綫性方程組的解為$(\dfrac{43}{22},\dfrac{15}{11})$。
+            \item 運用消元法求解：從$2x+3y=8$三倍後可得$6x+9y=24$，則上式減去下式可得\begin{align*}
+                &(1)\times 3:&6x+9y&=24\\
+                -)&(2):&6x-2y&=9\\
+                \hline
+                &(1)\times 3 - (2):&11y&=15\\
+                &&y&=\frac{15}{11}\\
+                &&6x-2(\frac{15}{11})&=9\\
+                &&x&=\frac{43}{22}
+            \end{align*}
+        \end{enumerate}
+    \end{example}
+
+    \begin{example}
+        求解綫性方程組$\begin{cases}
+            2x+3y+4z&=1\\
+            3x-y+3z&=0\\
+            x+y+z&=1
+        \end{cases}$\begin{enumerate}
+            \item 運用代入法求解：先從$3x-y+3z=0$得出$y=3x+3z$，代入其餘兩式可得$$\begin{cases}
+                2x+3y+4(3x+3z)&=1\\
+                x+y+(3x+3z)&=1
+            \end{cases}\implies\begin{cases}
+                14x+15z&=1\\
+                4x+4z&=1
+            \end{cases}$$
+        \end{enumerate}
+    \end{example}
 
     \section*{擴增矩陣}
 
