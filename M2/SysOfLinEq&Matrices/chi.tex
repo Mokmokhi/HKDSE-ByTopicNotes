@@ -312,7 +312,7 @@
         a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_{n}&=b_1\\
         a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_{n}&=b_2\\
         \vdots&\vdots\\
-        a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_{n}&=b_n
+        a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_{n}&=b_m
     \end{cases}$$
     
     \begin{theorem}[綫性方程組的可解性I]
@@ -361,11 +361,98 @@
 
     下一節會解決上述問題，判斷解的唯一性。
 
+    \newpage
+
     \section*{擴增矩陣}
+
+    爲了使方程組的觀察更方便及易於處理，在此階段引入\textbf{擴增矩陣}的概念。
+
+    考慮以下綫性方程組：$$(S):\begin{cases}
+        a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_{n}&=b_1\\
+        a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_{n}&=b_2\\
+        \vdots&\vdots\\
+        a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_{n}&=b_m
+    \end{cases}$$
+    考慮$\mathbf{A}:=\begin{bmatrix}
+        a_{11}&a_{12}&\cdots&a_{1n}\\
+        a_{21}&a_{22}&\cdots&a_{2n}\\
+        \vdots&\vdots&\ddots&\vdots\\
+        a_{m1}&a_{m2}&\cdots&a_{mn}
+    \end{bmatrix}\in\mathbb{M}^{m\times n}$為\textbf{係數矩陣}及$\mathbf{b}=\begin{bmatrix}
+        b_1\\b_2\\\vdots\\b_m
+    \end{bmatrix}$為\textbf{水平向量}，則可將$(S)$作以下簡化表達：$$(S):[\mathbf{A}\vert \mathbf{b}]=\left[
+        \begin{matrix}
+            a_{11}&a_{12}&\cdots&a_{1n}\\
+            a_{21}&a_{22}&\cdots&a_{2n}\\
+            \vdots&\vdots&\ddots&\vdots\\
+            a_{m1}&a_{m2}&\cdots&a_{mn}
+        \end{matrix}
+        \left|
+          \,
+          \begin{matrix}
+            b_1\\b_2\\\vdots\\b_m
+          \end{matrix}
+        \right.
+      \right]$$
+
+    以上$[\mathbf{A}|\mathbf{b}]$稱爲\textbf{擴增矩陣}。擴增矩陣的概念在於簡化方程組的表達，因此方程組的運作均可在擴增矩陣中實現。如此引入以下概念：
+
+    \begin{definition}[列階梯形矩陣]
+        設$A\in\mathbb{M}^{m\times n}$，若$A$符合以下條件，則稱$A$為\textbf{列階梯形矩陣}:\begin{itemize}
+            \item 若某列有非零元素，則必在所有全零列之上；
+            \item 某列最左邊的非零元素稱爲\textbf{首項係數}。某列的首項係數必定比上一列的首項係數更靠右。
+        \end{itemize}
+    \end{definition}
+
+    \begin{example}
+        列階梯形矩陣的例子：
+        $$\left[
+        \begin{matrix}
+            1&a_{12}&\cdots&a_{1(n-1)}&a_{1n}\\
+            0&2&\cdots&a_{2(n-1)}&a_{2n}\\
+            0&0&\cdots&0&a_{3n}\\
+            0&0&\cdots&0&0
+        \end{matrix}
+        \left|
+          \,
+          \begin{matrix}
+            b_1\\b_2\\b_3\\0
+          \end{matrix}
+        \right.
+      \right]$$
+    \end{example}
+
+    \begin{definition}[還原列梯矩陣]
+        設$A\in\mathbb{M}^{m\times n}$，若$A$符合以下條件，則稱$A$為\textbf{還原列梯矩陣}:\begin{itemize}
+            \item $\mathbf{A}$為列階梯形矩陣，并且；
+            \item $\mathbf{A}$的所有首項係數均爲1；
+            \item $\mathbf{A}$中所有首項係數的對應行僅有一個非零數字。
+        \end{itemize}
+    \end{definition}
+
+    \begin{example}
+        還原列梯矩陣的例子：
+        $$\left[
+        \begin{matrix}
+            1&0&\cdots&a_{1(n-1)}&0\\
+            0&1&\cdots&a_{2(n-1)}&0\\
+            0&0&\cdots&0&1\\
+            0&0&\cdots&0&0
+        \end{matrix}
+        \left|
+          \,
+          \begin{matrix}
+            b_1\\b_2\\b_3\\0
+          \end{matrix}
+        \right.
+      \right]$$
+    \end{example}
 
     \section*{逆矩陣}
 
     \section*{行列式}
 
     \section*{矩陣的幾何含義}
+
+    \section*{博弈論簡介}
 \end{document}
