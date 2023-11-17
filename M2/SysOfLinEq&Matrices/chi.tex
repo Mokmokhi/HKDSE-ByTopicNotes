@@ -19,6 +19,7 @@
 
 \newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
 \newcommand{\id}{\mathtt{id}}
+\newcommand{\rref}{\mathrm{RREF}}
 
 \newtheorem{definition}{定義}
 \newtheorem*{theorem}{定理}
@@ -285,6 +286,21 @@
         任何一對歐幾里得二維直綫可有$0$,$1$或$\infty$交點。
     \end{corollary}
 
+    因此，綫性方程組可有$0$,$1$或無限多解。同時，綫性方程組若有兩個解，則會有無限多解。
+
+    \begin{theorem}
+        設$A\in\mathbb{M}^{m\times n}, \mathbf{b}\in\mathbb{M}^{m\times 1}$使得$(S):[\mathbf{A}|\mathbf{b}]$為一綫性方程組，並設$\mathbf{x},\mathbf{y}\in\mathbb{M}^{m\times 1}$為相異解，則$$I:=\{t\mathbf{x}+(1-t)\mathbf{y}:t\in\mathbb{R}\}$$為方程組的解集。
+    \end{theorem}
+    
+    \begin{proof}
+        對於任意$1\leq k\leq m$,\begin{align*}
+            &a_{k1}[tx_1+(1-t)y_1]+\cdots+a_{kn}[tx_n+(1-t)y_n]\\
+            &=t[a_{k1}x_1+\cdots+a_{kn}x_n]+(1-t)[a_{k1}y_1+\cdots+a_{kn}y_n]\\
+            &=tb_k+(1-t)b_k\\
+            &=b_k
+        \end{align*}
+    \end{proof}
+
     \begin{example}
 
         以下爲綫性方程組無限多解的例子：
@@ -363,9 +379,9 @@
 
     \newpage
 
-    \section*{擴增矩陣}
+    \section*{增廣矩陣}
 
-    爲了使方程組的觀察更方便及易於處理，在此階段引入\textbf{擴增矩陣}的概念。
+    爲了使方程組的觀察更方便及易於處理，在此階段引入\textbf{增廣矩陣}的概念。
 
     考慮以下綫性方程組：$$(S):\begin{cases}
         a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_{n}&=b_1\\
@@ -395,7 +411,7 @@
         \right.
       \right]$$
 
-    以上$[\mathbf{A}|\mathbf{b}]$稱爲\textbf{擴增矩陣}。擴增矩陣的概念在於簡化方程組的表達，因此方程組的運作均可在擴增矩陣中實現。如此引入以下概念：
+    以上$[\mathbf{A}|\mathbf{b}]$稱爲\textbf{增廣矩陣}。增廣矩陣的概念在於簡化方程組的表達，因此方程組的運作均可在擴增矩陣中實現。如此引入以下概念：
 
     \begin{definition}[列階梯形矩陣]
         設$A\in\mathbb{M}^{m\times n}$，若$A$符合以下條件，則稱$A$為\textbf{列階梯形矩陣}:\begin{itemize}
@@ -447,6 +463,15 @@
         \right.
       \right]$$
     \end{example}
+
+    已知綫性方程組能通過消元法求解，由此可見還原列梯矩陣正是消元法所形成的結果。我們給出以下定義：
+
+    \begin{definition}
+        設$\mathbf{A},\mathbf{A}'\in\mathbb{M}^{m\times n}$。
+        
+        我們稱$\mathbf{A}$和$\mathbf{A}'$是\textbf{等價}的若$\mathbf{A}$可通過列運算達成$\mathbf{A}'$，記$\mathbf{A}\sim\mathbf{A}'$；
+        若$\mathbf{A}'$為還原列階矩陣而且$\mathbf{A}\sim\mathbf{A}'$，則稱$\mathbf{A}'$為$\mathbf{A}$的還原式，記$\mathbf{A}'=\rref(\mathbf{A})$。
+    \end{definition}
 
     \section*{逆矩陣}
 
