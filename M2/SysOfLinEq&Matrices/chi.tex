@@ -466,12 +466,157 @@
 
     已知綫性方程組能通過消元法求解，由此可見還原列梯矩陣正是消元法所形成的結果。我們給出以下定義：
 
+    \begin{definition}[初等行(列)變換]
+        下列三種對矩陣的變換稱爲矩陣的\textbf{初等行（列）變換}：\begin{enumerate}
+            \item 把第$i$行（列）和第$j$行（列）互換位置，記爲$r_i\leftrightarrow r_j$（$c_i\leftrightarrow c_j$）;
+            \item 用非零數$\alpha$乘以第$i$行（列），記爲$\alpha r_i$（$\alpha c_i$）;
+            \item 把第$i$行（列）的$\alpha$倍加到第$j$行（列），記爲$\alpha r_i + r_j$（$\alpha c_i + c_j$）。
+        \end{enumerate}
+    \end{definition}
+
     \begin{definition}
         設$\mathbf{A},\mathbf{A}'\in\mathbb{M}^{m\times n}$。
         
         我們稱$\mathbf{A}$和$\mathbf{A}'$是\textbf{等價}的若$\mathbf{A}$可通過列運算達成$\mathbf{A}'$，記$\mathbf{A}\sim\mathbf{A}'$；
         若$\mathbf{A}'$為還原列階矩陣而且$\mathbf{A}\sim\mathbf{A}'$，則稱$\mathbf{A}'$為$\mathbf{A}$的還原式，記$\mathbf{A}'=\rref(\mathbf{A})$。
     \end{definition}
+
+    \begin{example}
+        設$\mathbf{A}=\left[\begin{matrix}
+            6& 9& 3& 3& 9\\
+            1& 5& 4& 0& 1\\
+            0& 7& 3& 2& 6\\
+            8& 1& 1& 2& 3\\
+            0& 2& 7& 3& 9\\
+            7& 5& 6& 0& 0
+        \end{matrix}
+        \left|
+            \,
+            \begin{matrix}
+            3\\9\\6\\4\\2\\2
+            \end{matrix}
+        \right.
+        \right]$，求$\rref(\mathbf{A})$。
+
+        \begin{align*}
+            \left[\begin{matrix}
+                6& 9& 3& 3& 9\\
+                1& 5& 4& 0& 1\\
+                0& 7& 3& 2& 6\\
+                8& 1& 1& 2& 3\\
+                0& 2& 7& 3& 9\\
+                7& 5& 6& 0& 0
+            \end{matrix}
+            \left|
+                \,
+                \begin{matrix}
+                3\\9\\6\\4\\2\\2
+                \end{matrix}
+            \right.
+            \right]&\overset{\begin{matrix}
+                \frac{1}{3}r_1\\
+                r_1\leftrightarrow r_2
+            \end{matrix}}{\sim}\left[\begin{matrix}
+                1& 5& 4& 0& 1\\
+                2& 3& 1& 1& 3\\
+                0& 7& 3& 2& 6\\
+                8& 1& 1& 2& 3\\
+                0& 2& 7& 3& 9\\
+                7& 5& 6& 0& 0
+            \end{matrix}
+            \left|
+                \,
+                \begin{matrix}
+                9\\1\\6\\4\\2\\2
+                \end{matrix}
+            \right.
+            \right]\overset{\begin{matrix}
+                -2r_1 + r_2\\ -8r_1 + r_4\\ -7r_1+r_6
+            \end{matrix}}{\sim}\left[\begin{matrix}
+                1& 5& 4& 0& 1\\
+                0& -7& -7& 1& 1\\
+                0& 7& 3& 2& 6\\
+                0& -39& -31& 2& -5\\
+                0& 2& 7& 3& 9\\
+                0& -30& -22& 0& -7
+            \end{matrix}
+            \left|
+                \,
+                \begin{matrix}
+                9\\-17\\6\\-68\\2\\-61
+                \end{matrix}
+            \right.
+            \right]\\
+            &\overset{\begin{matrix}
+                r_3+r_2\\20r_5+r_4\\15r_5+r_6
+            \end{matrix}}{\sim}\left[\begin{matrix}
+                1& 5& 4& 0& 1\\
+                0& 0& -4& 3& 7\\
+                0& 7& 3& 2& 6\\
+                0& 1& 109& 62& 175\\
+                0& 2& 7& 3& 9\\
+                0& 0& 83& 45& 128
+            \end{matrix}
+            \left|
+                \,
+                \begin{matrix}
+                9\\-11\\6\\-28\\2\\-31
+                \end{matrix}
+            \right.
+            \right]\\
+            &\overset{\begin{matrix}
+                -5r_4+r_1\\-7r_4 + r_3\\ -2r_4 + r_5
+            \end{matrix}}{\sim}\left[\begin{matrix}
+                1& 0& -541& -310& -874\\
+                0& 0& -4& 3& 7\\
+                0& 0& -760& -432& -1219\\
+                0& 1& 109& 62& 175\\
+                0& 0& -211& -121& -341\\
+                0& 0& 83& 45& 128
+            \end{matrix}
+            \left|
+                \,
+                \begin{matrix}
+                149\\-11\\174\\-28\\58\\-31
+                \end{matrix}
+            \right.
+            \right]\\
+            &\overset{\begin{matrix}
+                -r_2\\r_2\leftrightarrow r_4
+            \end{matrix}}{\sim}\left[\begin{matrix}
+                1& 0& -541& -310& -874\\
+                0& 1& 109& 62& 175\\
+                0& 0& -760& -432& -1219\\
+                0& 0& 4& -3& -7\\
+                0& 0& -211& -121& -341\\
+                0& 0& 83& 45& 128
+            \end{matrix}
+            \left|
+                \,
+                \begin{matrix}
+                149\\-28\\174\\11\\58\\-31
+                \end{matrix}
+            \right.
+            \right]\\
+            &\overset{\begin{matrix}
+                135r_4+r_1\\-27r_4+r_2\\190r_4+r_2\\53r_4+r_5\\-20r_4+r_6
+            \end{matrix}}{\sim}\left[\begin{matrix}
+                1& 0& -1& -715& -1819\\
+                0& 1& 1& 143& 364\\
+                0& 0& 0& -1002& -2549\\
+                0& 0& 4& -3& -7\\
+                0& 0& 1& -280& -712\\
+                0& 0& 3& 105& 268
+            \end{matrix}
+            \left|
+                \,
+                \begin{matrix}
+                1634\\-325\\2264\\11\\641\\-251
+                \end{matrix}
+            \right.
+            \right]
+        \end{align*}
+    \end{example}
 
     \section*{逆矩陣}
 
