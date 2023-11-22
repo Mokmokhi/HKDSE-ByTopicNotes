@@ -100,6 +100,14 @@
             \item 單位矩陣：$\mathbf{I}_{m\times n}=(\delta_{ij})_{m\times n}$，其中$\delta_{ij}=\begin{cases}
                 1 & i=j\\ 0 & i\neq j
             \end{cases}$。
+            \item 向量：\begin{itemize}
+                \item 行向量：$\mathbf{x}^T=\vec{x}^T=\begin{bmatrix}
+                    x_1&x_2&\cdots&x_n
+                \end{bmatrix}=(x_1,x_2,\dots,x_n)^T\in\mathbb{M}^{1\times n}$。
+                \item 列向量：$\mathbf{y}=\vec{y}=\begin{bmatrix}
+                    y_1\\y_2\\\vdots\\y_m
+                \end{bmatrix}=(y_1,y_2,\dots,y_m)\in\mathbb{M}^{m\times 1}$
+            \end{itemize}
         \end{itemize}
     \end{definition}
 
@@ -498,6 +506,8 @@
         \right.
         \right]$，求$\rref(\mathbf{A})$。
 
+        先將第一行的首項係數求出，由於第二行的首項係數為1，因此我們可以通過簡單的行變換造出適當的等價矩陣。
+
         \begin{align*}
             \left[\begin{matrix}
                 6& 9& 3& 3& 9\\
@@ -546,8 +556,11 @@
                 9\\-17\\6\\-68\\2\\-61
                 \end{matrix}
             \right.
-            \right]\\
-            &\overset{\begin{matrix}
+            \right]
+        \end{align*}
+        隨後將第二及其餘行的首項係數求出：
+        \begin{align*}
+            \overset{\begin{matrix}
                 r_3+r_2\\20r_5+r_4\\15r_5+r_6
             \end{matrix}}{\sim}\left[\begin{matrix}
                 1& 5& 4& 0& 1\\
@@ -563,7 +576,7 @@
                 9\\-11\\6\\-28\\2\\-31
                 \end{matrix}
             \right.
-            \right]\\
+            \right]
             &\overset{\begin{matrix}
                 -5r_4+r_1\\-7r_4 + r_3\\ -2r_4 + r_5
             \end{matrix}}{\sim}\left[\begin{matrix}
@@ -581,7 +594,7 @@
                 \end{matrix}
             \right.
             \right]\\
-            &\overset{\begin{matrix}
+            \overset{\begin{matrix}
                 -r_2\\r_2\leftrightarrow r_4
             \end{matrix}}{\sim}\left[\begin{matrix}
                 1& 0& -541& -310& -874\\
@@ -597,7 +610,7 @@
                 149\\-28\\174\\11\\58\\-31
                 \end{matrix}
             \right.
-            \right]\\
+            \right]
             &\overset{\begin{matrix}
                 135r_4+r_1\\-27r_4+r_2\\190r_4+r_2\\53r_4+r_5\\-20r_4+r_6
             \end{matrix}}{\sim}\left[\begin{matrix}
@@ -615,26 +628,39 @@
                 \end{matrix}
             \right.
             \right]\\
+            \sim\cdots
             &\overset{\begin{matrix}
                 r_5+r_1\\-r_5+r_2\\-4r_5+r_4\\-3r_5+r_6
             \end{matrix}}{\sim}\left[\begin{matrix}
-                1& 0& -1& -715& -1819\\
-                0& 1& 1& 143& 364\\
-                0& 0& 0& -1002& -2549\\
-                0& 0& 4& -3& -7\\
-                0& 0& 1& -280& -712\\
-                0& 0& 3& 105& 268
+                1& 0& 0& 0& 0\\
+                0& 1& 0& 0& 0\\
+                0& 0& 1& 0& 0\\
+                0& 0& 0& 1& 0\\
+                0& 0& 0& 0& 1\\
+                0& 0& 0& 0& 0
             \end{matrix}
             \left|
                 \,
                 \begin{matrix}
-                1634\\-325\\2264\\11\\641\\-251
+                -\frac{148}{551}\\\frac{717}{551}\\\frac{895}{551}\\\frac{3975}{551}\\-\frac{2058}{551}\\-\frac{6817}{551}
                 \end{matrix}
             \right.
             \right]
         \end{align*}
+        詳細步驟參考RREF calculator: https://www.emathhelp.net/en/calculators/linear-algebra/reduced-row-echelon-form-rref-calculator/
     \end{example}
 
+    \begin{remark}
+        上例可見最後一行的左方為零行，但右方為非零數字，得到$0=1$的結論。此情形我們稱方程組無解。
+    \end{remark}
+
+    由以上例子亦可得出下列理論：
+
+    \begin{theorem}
+        綫性方程組$S=[\mathbf{A}|\mathbf{b}]$有解當且僅當$\rref(S)$有解。
+    \end{theorem}
+
+    
     \section*{逆矩陣}
 
     \section*{行列式}
