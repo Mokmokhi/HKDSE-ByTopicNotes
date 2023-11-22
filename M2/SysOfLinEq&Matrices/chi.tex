@@ -132,6 +132,43 @@
             \item $\mathbf{A}\mathbf{I}=\mathbf{I}\mathbf{A}=\mathbf{A}$。
         \end{enumerate}
     \end{proposition}
+    \begin{definition}[矩陣的轉置]
+        設$\mathbf{A}=(a_{ij})_{m\times n}=\begin{pmatrix}
+            a_{11}&a_{12}&\cdots&a_{1n}\\
+            a_{21}&a_{22}&\cdots&a_{2n}\\
+            \vdots&\vdots&\ddots&\vdots\\
+            a_{m1}&a_{m2}&\cdots&a_{mn}
+        \end{pmatrix}$，則定義\textbf{$\mathbf{A}$的轉置}為$$\mathbf{A}^T=(a_{ji})_{n\times m}=\begin{pmatrix}
+            a_{11}&a_{21}&\cdots&a_{m1}\\
+            a_{12}&a_{22}&\cdots&a_{m2}\\
+            \vdots&\vdots&\ddots&\vdots\\
+            a_{1n}&a_{2n}&\cdots&a_{mn}
+        \end{pmatrix}$$
+    \end{definition}
+
+    \begin{example}
+        設$\mathbf{A}=\begin{pmatrix}
+            1&2&3\\4&5&6\\7&8&9
+        \end{pmatrix}$，則$\mathbf{A}^T=\begin{pmatrix}
+            1&4&7\\2&5&8\\3&6&9
+        \end{pmatrix}$。
+    \end{example}
+
+    \begin{definition}[矩陣的跡]
+        設$\mathbf{A}=\begin{pmatrix}
+            a_{11}&a_{12}&\cdots&a_{1n}\\
+            a_{21}&a_{22}&\cdots&a_{2n}\\
+            \vdots&\vdots&\ddots&\vdots\\
+            a_{m1}&a_{m2}&\cdots&a_{mn}
+        \end{pmatrix}$，則定義\textbf{$\mathbf{A}$的跡}為$$\tr(\mathbf{A})=\sum_{k}^{\min(m,n)}a_{kk}=a_{11}+a_{22}+\cdots+a_{ll}$$其中$l=\min(m,n)$。
+    \end{definition}
+
+    \begin{proposition}
+        $\tr(\mathbf{A})=\tr(\mathbf{A}^T)$。
+    \end{proposition}
+    \begin{proof}
+        留做習題。
+    \end{proof}
     
     \begin{definition}[綫性組合]
         設$c_1,c_2,\dots,c_\ell$為常數，$\mathbf{A}_1,\mathbf{A}_2,\dots,\mathbf{A}_\ell\in\mathbb{M}_{m\times n}$，則稱$$\sum_{k=1}^{\ell}c_k\mathbf{A}_k=c_1\mathbf{A}_1+c_2\mathbf{A}_2+\cdots+c_\ell\mathbf{A}_\ell$$為\textbf{綫性組合}。
@@ -162,6 +199,18 @@
     \begin{remark}
         以上例子便是矩陣與綫性方程組的關係。
     \end{remark}
+
+    \begin{proposition}
+        設$c_1,c_2,\dots,c_\ell$為常數，$\mathbf{A}_1,\mathbf{A}_2,\dots,\mathbf{A}_\ell\in\mathbb{M}_{m\times n}$，則\begin{itemize}
+            \item $\tr(\sum_{k=1}^{\ell}c_k\mathbf{A}_k)=\sum_{k=1}^{\ell}c_k\tr(\mathbf{A}_k)$；
+            \item $\left(\sum_{k=1}^{\ell}c_k\mathbf{A}_k\right)^T=\sum_{k=1}^{\ell}c_k\mathbf{A}_k^T$;
+            \item $\tr(\sum_{k=1}^{\ell}c_k\mathbf{A}_k^T)=\sum_{k=1}^{\ell}c_k\tr(\mathbf{A}_k)$。
+        \end{itemize}
+    \end{proposition}
+    
+    \begin{proof}
+        留作習題。
+    \end{proof}
     
     \newpage
 
@@ -309,6 +358,8 @@
         \end{align*}
     \end{proof}
 
+    我們稱擁有無限多解的方程組的解集為\textbf{通解}。
+
     \begin{example}
 
         以下爲綫性方程組無限多解的例子：
@@ -325,7 +376,7 @@
         以下爲綫性方程組沒有解的例子：\begin{enumerate}
             \item 考慮$\begin{cases}
                 3x+y=2\\-3x-y=0
-            \end{cases}$，由於任何符合$3x+y=2$的點均不符合$-3x-y=0$，因此此方程組有無限多解。解集為$$\emptyset$$
+            \end{cases}$，由於任何符合$3x+y=2$的點均不符合$-3x-y=0$，因此此方程組沒有解。解集為$$\emptyset$$
         \end{enumerate}
     \end{example}
 
@@ -654,16 +705,28 @@
         上例可見最後一行的左方為零行，但右方為非零數字，得到$0=1$的結論。此情形我們稱方程組無解。
     \end{remark}
 
-    由以上例子亦可得出下列理論：
+    重新考慮綫性方程組的樣式，因應矩陣乘法的特性，我們可以將$S=[\mathbf{A}|\mathbf{b}]$寫作$$\mathbf{A}\mathbf{x}=\mathbf{b}$$若存在$\mathbf{x_0}\in\mathbb{M}^{n\times 1}$使得$\mathbf{Ax_0}=\mathbf{b}$成立，則稱$\mathbf{x_0}$為$\mathbf{A}\mathbf{x}=\mathbf{b}$的一個解。
 
     \begin{theorem}
-        綫性方程組$S=[\mathbf{A}|\mathbf{b}]$有解當且僅當$\rref(S)$有解。
+        綫性方程組$S=[\mathbf{A}|\mathbf{b}]$有解當且僅當$\rref(S)=[\mathbf{A}'|\mathbf{b}']$有解；並且$S$與$\rref(S)$同解。
     \end{theorem}
 
-    
-    \section*{逆矩陣}
+    \begin{proof}
+        由於$S$與$\rref(S)$等價，故存在若干行變換及對應的變換矩陣$\mathbf{P}$使得$$\mathbf{Ax_0}=\mathbf{b}\iff \mathbf{PAx_0}=\mathbf{Pb}\iff \mathbf{A'x_0}=\mathbf{b'}$$
+    \end{proof}
+
+    故本節以下列定理總結：
+
+    \begin{theorem}[綫性方程組的可解性II]
+        對於$m$行$n$列綫性方程組$S$，若$\rref(S)$中係數矩陣的非零行數$\leq n$同時大於或等於水平向量的非零行數，則$S$有解。
+    \end{theorem}
+    \newpage
 
     \section*{行列式}
+
+    \section*{逆矩陣}
+
+    設$\mathbf{A}\in\mathbb{M}^{m\times n}, \mathbf{x},\mathbf{b}\in\mathbb{M}^{n\times 1}$，設$$\mathbf{A}\mathbf{x}=\mathbf{b}$$若$\rref(\mathbf{A})=\mathbf{I}$，則存在$\mathbf{B}\in\mathbb{M}^{m\times n}$令$$[\mathbf{A}|\mathbf{I}]\sim[\mathbf{I}|\mathbf{B}]$$對符合條件的矩陣$\mathbf{B}$，我們稱其爲\textbf{$\mathbf{A}$的逆矩陣}，記$\mathbf{B}=\mathbf{A}^{-1}$。
 
     \section*{矩陣的幾何含義}
 
