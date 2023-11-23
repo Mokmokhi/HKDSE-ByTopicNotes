@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1700680004 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" "chi.pdf" "chi" 1700680009
+["pdflatex"] 1700749157 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" "chi.pdf" "chi" 1700749161
   "C:/Users/Owenm/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1664299329 14064 d51fe1154d65350215fea1f8fca0323d ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1685554408 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
@@ -128,6 +128,7 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6b.tfm" 1247154072 1172 eec47476c8168dac40c6b0d39a32faa4 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6c.tfm" 1247154072 1172 da6dd37ba8d24cc1a36aa510c8ac56f9 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6d.tfm" 1247154072 1172 3942109a9ca7a08ec5324d8eec4093d9 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6e.tfm" 1247154072 1172 42ca517602ab12cb60a5174be463b80a ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong70.tfm" 1247154072 1172 65f78ffa41ce8b45f91f362b219db0e7 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong71.tfm" 1247154072 1172 ac9bcd3bdbf45728188f855f6ba1cf2f ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong72.tfm" 1247154072 1172 3988931ed4f7026bbecd81a5650d7854 ""
@@ -156,6 +157,7 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong90.tfm" 1247154072 1172 1dd258add692258fd748a53ff76ed075 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong91.tfm" 1247154072 1172 084e1e91aa4ae30efc415c3663943670 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong96.tfm" 1247154072 1172 97abce3faa5097f1401cb707f6f69600 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong97.tfm" 1247154072 1172 3322410a0eee91e13e02457b09378209 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong98.tfm" 1247154072 1172 0d85b1f7b78508ff1f0a5ef94e0aaca9 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong9a.tfm" 1247154072 1172 37a3cd36cf03e67f393bee80b1370d05 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong9e.tfm" 1247154072 1172 e797949130fb017e573d6826989dff50 ""
@@ -382,9 +384,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" 1700680001 30124 60d782b7a205482109fc780509f9e42e ""
-  "chi.aux" 1700680007 113 0627f4c3109f658b9e2808e22dc70854 "pdflatex"
-  "chi.tex" 1700680001 30124 60d782b7a205482109fc780509f9e42e ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" 1700749156 31409 acc8d3a4188e92f5c322e1a1af05eefc ""
+  "chi.aux" 1700749160 113 0627f4c3109f658b9e2808e22dc70854 "pdflatex"
+  "chi.tex" 1700749156 31409 acc8d3a4188e92f5c322e1a1af05eefc ""
   (generated)
   "chi.aux"
   "chi.log"

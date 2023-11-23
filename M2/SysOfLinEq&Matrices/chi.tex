@@ -724,6 +724,34 @@
 
     \section*{行列式}
 
+    行列式為矩陣運算中一種重要的工具，其概念起源於解二元一次方程組：\begin{align*}
+        \begin{cases}
+            ax+by=\alpha\\cx+dy=\beta
+        \end{cases}&\implies\begin{cases}
+            x=\frac{\alpha d-\beta b}{ad-bc}\\y=\frac{\alpha c-\beta a}{bc-ad}
+        \end{cases}
+    \end{align*}
+
+    從上可見$ad-bc$的值會完全影響方程的可解性，由此可定義係數矩陣$\mathbf{A}=\begin{bmatrix}
+        a&b\\c&d
+    \end{bmatrix}\in\mathbb{M}^{2\times 2}$時，$\mathbf{A}$的行列式$\det\mathbf{A}=|\mathbf{A}|=ad-bc$。
+
+    \begin{proposition}
+        設$\mathbf{A}=\begin{bmatrix}
+            a&b&c\\d&e&f\\g&h&i
+        \end{bmatrix}\in\mathbb{M}^{3\times 3}$，則$|A|=aei+bfg+cdh-ceg-bdi-afh$.
+    \end{proposition}
+
+    \begin{definition}[分塊矩陣]
+        任何矩陣$\mathbf{A}\in\mathbb{M}^{m\times n}$，都有$\mathbf{A}_1\in\mathbb{M}^{s\times t},\mathbf{A}_2\in\mathbb{M}^{s\times (n-t)},\mathbf{A}_3\in\mathbb{M}^{(m-s)\times t}, \mathbf{A}_4\in\mathbb{M}^{(m-s)\times (n-t)}$使得$$\mathbf{A}=\begin{bmatrix}
+            \mathbf{A}_1&\mathbf{A}_2\\\mathbf{A}_3&\mathbf{A}_4
+        \end{bmatrix}$$
+    \end{definition}
+    
+    \begin{theorem}
+        
+    \end{theorem}
+
     \section*{逆矩陣}
 
     設$\mathbf{A}\in\mathbb{M}^{m\times n}, \mathbf{x},\mathbf{b}\in\mathbb{M}^{n\times 1}$，設$$\mathbf{A}\mathbf{x}=\mathbf{b}$$若$\rref(\mathbf{A})=\mathbf{I}$，則存在$\mathbf{B}\in\mathbb{M}^{m\times n}$令$$[\mathbf{A}|\mathbf{I}]\sim[\mathbf{I}|\mathbf{B}]$$對符合條件的矩陣$\mathbf{B}$，我們稱其爲\textbf{$\mathbf{A}$的逆矩陣}，記$\mathbf{B}=\mathbf{A}^{-1}$。
