@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1700749157 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" "chi.pdf" "chi" 1700749161
+["pdflatex"] 1701354354 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" "chi.pdf" "chi" 1701354358
   "C:/Users/Owenm/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1664299329 14064 d51fe1154d65350215fea1f8fca0323d ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1685554408 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
@@ -198,9 +198,9 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1588360716 5646 2609567579096c69f0472004a72489a6 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1588360716 31921 5879df709f54630647c1aa6545bcedb7 ""
-  "C:/WINDOWS/Fonts/simhei.ttf" 1699808167 9755440 983b60188a8e5a7c29c06c674f428b3d ""
-  "C:/WINDOWS/Fonts/simkai.ttf" 1699808167 11789376 868a8b82664dfab00a95e3e30eaa705a ""
-  "C:/WINDOWS/Fonts/simsun.ttc" 1697267075 18008680 490583a172d4371a68d1e0526a6bca81 ""
+  "C:/WINDOWS/Fonts/simhei.ttf" 1696495200 9755440 983b60188a8e5a7c29c06c674f428b3d ""
+  "C:/WINDOWS/Fonts/simkai.ttf" 1696495260 11789376 868a8b82664dfab00a95e3e30eaa705a ""
+  "C:/WINDOWS/Fonts/simsun.ttc" 1699081271 18008680 490583a172d4371a68d1e0526a6bca81 ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "D:/Program Files (x86)/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -384,9 +384,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" 1700749156 31409 acc8d3a4188e92f5c322e1a1af05eefc ""
-  "chi.aux" 1700749160 113 0627f4c3109f658b9e2808e22dc70854 "pdflatex"
-  "chi.tex" 1700749156 31409 acc8d3a4188e92f5c322e1a1af05eefc ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/SysOfLinEq&Matrices/chi.tex" 1701354353 36695 9e4678bb3e8140b72ec33a75c5c28103 ""
+  "chi.aux" 1701354357 113 ea7045ce84c3b1ca04f9c6aea5341ced "pdflatex"
+  "chi.tex" 1701354353 36695 9e4678bb3e8140b72ec33a75c5c28103 ""
   (generated)
   "chi.aux"
   "chi.log"

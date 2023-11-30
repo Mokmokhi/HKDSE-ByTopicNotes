@@ -749,12 +749,149 @@
     \end{definition}
     
     \begin{theorem}
-        
+        $\left|\begin{matrix}
+            \mathbf{I}&\mathbf{0}\\\mathbf{a}&\mathbf{A}
+        \end{matrix}\right|=|\mathbf{A}|$.
     \end{theorem}
+    \begin{proof}
+        基於行變換可得出$\left|\begin{matrix}
+            \mathbf{I}&\mathbf{0}\\\mathbf{0}&\mathbf{A}
+        \end{matrix}\right|$。對任意$$\left[\begin{matrix}
+            \mathbf{I}&\mathbf{0}\\
+            \mathbf{0}&\mathbf{A}
+        \end{matrix}\left|
+        \, 
+        \begin{matrix}
+            \mathbf{b}_1\\\mathbf{b}_2
+        \end{matrix}\right. \right]$$
+        由此可見，解的存在性基於$|\mathbf{A}|$變化。
+    \end{proof}
+
+    \begin{theorem}
+        $|\mathbf{A}^T|=|\mathbf{A}|$.
+    \end{theorem}
+    \begin{proof}
+        證明太難，暫且不提。
+    \end{proof}
+
+    \begin{theorem}
+        $\left|\begin{matrix}
+            a_{11}&\cdots&a_{1n}\\\vdots&\vdots&\vdots\\a_{i1}+c_{i1}&\cdots&a_{in}+c_{in}\\\vdots&\vdots&\vdots\\a_{m1}&\cdots&a_{mn}
+        \end{matrix}\right|=\left|\begin{matrix}
+            a_{11}&\cdots&a_{1n}\\\vdots&\vdots&\vdots\\a_{i1}&\cdots&a_{in}\\\vdots&\vdots&\vdots\\a_{m1}&\cdots&a_{mn}
+        \end{matrix}\right|+\left|\begin{matrix}
+            a_{11}&\cdots&a_{1n}\\\vdots&\vdots&\vdots\\c_{i1}&\cdots&c_{in}\\\vdots&\vdots&\vdots\\a_{m1}&\cdots&a_{mn}
+        \end{matrix}\right|$.
+    \end{theorem}
+
+    \begin{theorem}
+        $\left|\begin{matrix}
+            a_{11}&\cdots&a_{1l}+c_{1l}&\cdots&a_{1n}\\\vdots&\cdots&\vdots&\cdots&\vdots\\a_{m1}&\cdots&a_{ml}+c_{ml}&\cdots&a_{mn}
+        \end{matrix}\right|\\=\left|\begin{matrix}
+            a_{11}&\cdots&a_{1l}&\cdots&a_{1n}\\\vdots&\cdots&\vdots&\cdots&\vdots\\a_{m1}&\cdots&a_{ml}&\cdots&a_{mn}
+        \end{matrix}\right|+\left|\begin{matrix}
+            a_{11}&\cdots&c_{1l}&\cdots&a_{1n}\\\vdots&\cdots&\vdots&\cdots&\vdots\\a_{m1}&\cdots&c_{ml}&\cdots&a_{mn}
+        \end{matrix}\right|$.
+    \end{theorem}
+
+    \begin{theorem}
+        $\left|\begin{matrix}
+            a_{11}&\cdots&a_{1n}\\\vdots&\vdots&\vdots\\\alpha a_{i1}&\cdots&\alpha a_{in}\\\vdots&\vdots&\vdots\\a_{m1}&\cdots&a_{mn}
+        \end{matrix}\right|=\alpha\left|\begin{matrix}
+            a_{11}&\cdots&a_{1n}\\\vdots&\vdots&\vdots\\a_{i1}&\cdots&a_{in}\\\vdots&\vdots&\vdots\\a_{m1}&\cdots&a_{mn}
+        \end{matrix}\right|$.
+    \end{theorem}
+    
+    \begin{theorem}
+        $\left|\begin{matrix}
+            a_{11}&\cdots&\alpha a_{1l}&\cdots&a_{1n}\\\vdots&\cdots&\vdots&\cdots&\vdots\\a_{m1}&\cdots&\alpha a_{ml}&\cdots&a_{mn}
+        \end{matrix}\right|=\alpha\left|\begin{matrix}
+            a_{11}&\cdots&a_{1l}&\cdots&a_{1n}\\\vdots&\cdots&\vdots&\cdots&\vdots\\a_{m1}&\cdots&a_{ml}&\cdots&a_{mn}
+        \end{matrix}\right|$.
+    \end{theorem}
+
+    行列式亦可作相應的行列變換，因此有以下定理：
+
+    \begin{theorem}
+        若行列式有兩行（或列）元素對應相等，則行列式等於0。
+    \end{theorem}
+
+    \begin{corollary}
+        若行列式有兩行（或列）元素對應成比例，則行列式等於0。
+    \end{corollary}
+
+    \begin{corollary}
+        行列式經過行列變換時，其值不變。
+    \end{corollary}
+
+    \begin{theorem}[Laplace定理]
+        $\left|\begin{matrix}
+            \mathbf{A}&\mathbf{0}\\\mathbf{a}&\mathbf{B}
+        \end{matrix}\right|=|\mathbf{A}||\mathbf{B}|$.
+    \end{theorem}
+
 
     \section*{逆矩陣}
 
-    設$\mathbf{A}\in\mathbb{M}^{m\times n}, \mathbf{x},\mathbf{b}\in\mathbb{M}^{n\times 1}$，設$$\mathbf{A}\mathbf{x}=\mathbf{b}$$若$\rref(\mathbf{A})=\mathbf{I}$，則存在$\mathbf{B}\in\mathbb{M}^{m\times n}$令$$[\mathbf{A}|\mathbf{I}]\sim[\mathbf{I}|\mathbf{B}]$$對符合條件的矩陣$\mathbf{B}$，我們稱其爲\textbf{$\mathbf{A}$的逆矩陣}，記$\mathbf{B}=\mathbf{A}^{-1}$。
+    設$\mathbf{A}\in\mathbb{M}^{m\times n}, \mathbf{x}\in\mathbb{M}^{n\times 1},\mathbf{b}\in\mathbb{M}^{m\times 1}$，設$$\mathbf{A}\mathbf{x}=\mathbf{b}$$若$\rref(\mathbf{A})=\mathbf{I}$，則存在$\mathbf{B}\in\mathbb{M}^{m\times n}$令$$[\mathbf{A}|\mathbf{I}]\sim[\mathbf{I}|\mathbf{B}]$$對符合條件的矩陣$\mathbf{B}$，我們稱其爲\textbf{$\mathbf{A}$的逆矩陣}，記$\mathbf{B}=\mathbf{A}^{-1}$。
+
+    \begin{example}
+        設$\mathbf{A}=\begin{bmatrix}
+            a&b\\c&d
+        \end{bmatrix}$，則\begin{align*}
+            [\mathbf{A}|\mathbf{I}]&=\left[\begin{matrix}
+                a&b\\
+                c&d
+            \end{matrix}\left|
+            \, 
+            \begin{matrix}
+                1&0\\0&1
+            \end{matrix}\right.\right]\\
+            &\sim \left[\begin{matrix}
+                ac&bc\\
+                ac&ad
+            \end{matrix}\left|
+            \, 
+            \begin{matrix}
+                c&0\\0&a
+            \end{matrix}\right.\right]\\
+            &\sim \left[\begin{matrix}
+                ac&bc\\
+                0&ad-bc
+            \end{matrix}\left|
+            \, 
+            \begin{matrix}
+                c&0\\-c&a
+            \end{matrix}\right.\right]\\
+            &\sim \left[\begin{matrix}
+                a&b\\
+                0&1
+            \end{matrix}\left|
+            \, 
+            \begin{matrix}
+                1&0\\\frac{-c}{ad-bc}&\frac{a}{ad-bc}
+            \end{matrix}\right.\right]\\
+            &\sim \left[\begin{matrix}
+                a&0\\
+                0&1
+            \end{matrix}\left|
+            \, 
+            \begin{matrix}
+                1+\frac{bc}{ad-bc}&\frac{-ab}{ad-bc}\\\frac{-c}{ad-bc}&\frac{a}{ad-bc}
+            \end{matrix}\right.\right]\\
+            &\sim \left[\begin{matrix}
+                1&0\\
+                0&1
+            \end{matrix}\left|
+            \, 
+            \begin{matrix}
+                \frac{d}{ad-bc}&\frac{-b}{ad-bc}\\\frac{-c}{ad-bc}&\frac{a}{ad-bc}
+            \end{matrix}\right.\right]
+        \end{align*}
+        因此，$\mathbf{A}^{-1}=\dfrac{1}{ad-bc}\begin{bmatrix}
+            d&-b\\-c&a
+        \end{bmatrix}$.
+    \end{example}
 
     \section*{矩陣的幾何含義}
 
