@@ -1131,6 +1131,9 @@ INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei52.
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei5f.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong6e.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong97.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei6c.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei52.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong99.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei90.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei76.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei4f.tfm
@@ -1143,6 +1146,7 @@ INPUT chi.aux
 INPUT C:\WINDOWS\Fonts\simhei.ttf
 INPUT C:\WINDOWS\Fonts\simsun.ttc
 INPUT C:\WINDOWS\Fonts\simsun.ttc
+INPUT C:\WINDOWS\Fonts\simsun.ttc
 INPUT C:\WINDOWS\Fonts\simhei.ttf
 INPUT C:\WINDOWS\Fonts\simhei.ttf
 INPUT C:\WINDOWS\Fonts\simsun.ttc
@@ -1307,10 +1311,14 @@ INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb

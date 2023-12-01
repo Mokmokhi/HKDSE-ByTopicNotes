@@ -20,6 +20,7 @@
 \newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
 \newcommand{\id}{\mathtt{id}}
 \newcommand{\rref}{\mathrm{RREF}}
+\newcommand{\adj}{\mathrm{adj}}
 
 \newtheorem{definition}{定義}
 \newtheorem*{theorem}{定理}
@@ -829,11 +830,75 @@
             \mathbf{A}&\mathbf{0}\\\mathbf{a}&\mathbf{B}
         \end{matrix}\right|=|\mathbf{A}||\mathbf{B}|$.
     \end{theorem}
+    
+    \subsection*{Cramer法則}
 
+    設\begin{align*}
+        \begin{cases}
+            a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n&=b_1\\
+            a_{21}x_1+a_{22}x_2+\cdots+a_{1n}x_n&=b_2\\
+            &\vdots\\
+            a_{n1}x_1+a_{n2}x_2+\cdots+a_{nn}x_n&=b_n
+        \end{cases}
+    \end{align*}
+    則稱由係數構成的行列式$$D=\left|\begin{matrix}
+        a_{11}&a_{12}&\cdots&a_{1n}\\
+        a_{21}&a_{22}&\cdots&a_{2n}\\
+        \vdots&\vdots&\ddots&\vdots\\
+        a_{n1}&a_{n2}&\cdots&a_{nn}
+    \end{matrix}\right|$$
+    為方程組的係數行列式。
 
+    \begin{theorem}[Cramer法則]
+        設綫性方程組的係數行列式$D\neq 0$，則方程組有唯一一組解$$x_1=\frac{D_1}{D},\, x_2=\frac{D_2}{D},\, \cdots,\, x_n=\frac{D_n}{D},$$
+        其中$D_k$是把$D$的第$k$列元素依次換成常數項$b_1,b_2,\dots,b_n$而得到的行列式$$D_k=\left|\begin{matrix}
+            a_{11}&\cdots&a_{1,k-1}&b_1&a_{1,k+1}&\cdots&a_{1n}\\
+            a_{21}&\cdots&a_{2,k-1}&b_2&a_{2,k+1}&\cdots&a_{2n}\\
+            \vdots&&\vdots&\vdots&\vdots&&\vdots\\
+            a_{n1}&\cdots&a_{n,k-1}&b_n&a_{n,k+1}&\cdots&a_{nn}
+        \end{matrix}\right|$$
+        其中$1\leq k\leq n$。
+    \end{theorem}
+
+    \begin{proof}
+        證明分爲兩部分。\begin{enumerate}
+            \item 先證明$x_1=\frac{D_1}{D},\, x_2=\frac{D_2}{D},\, \cdots,\, x_n=\frac{D_n}{D}$為方程解。設$1\leq i\leq n$，并有$A_{ij}$為$a_{ij}$的餘子式，\begin{align*}
+                L.H.S.&=\sum_{k=1}^{n}a_{ik}x_k=\sum_{k=1}^{n}a_{ik}\frac{D_k}{D}=\frac{1}{D}\sum_{k=1}^{n}a_{ik}D_k\\
+                &=\frac{1}{D}\sum_{k=1}^{n}a_{ik}\sum_{j=1}^{n}b_jA_{jk}=\frac{1}{D}\sum_{j=1}^{n}b_j\sum_{k=1}^{n}a_{ik}A_{jk}\\
+                &=\frac{1}{D}\sum_{j=1}^{n}b_j\delta_{ij}D\\
+                &=b_i=R.H.S.
+            \end{align*}
+            \item 再證明此乃唯一解。設$x_k=c_k$, $k=1,2,\dots$，則\begin{align*}
+                D_k&=\left|\begin{matrix}
+                    a_{11}&\cdots&a_{1,k-1}&\sum_{k=1}^{n}a_{1k}c_k&a_{1,k+1}&\cdots&a_{1n}\\
+                    a_{21}&\cdots&a_{2,k-1}&\sum_{k=1}^{n}a_{2k}c_k&a_{2,k+1}&\cdots&a_{2n}\\
+                    \vdots&&\vdots&\vdots&\vdots&&\vdots\\
+                    a_{n1}&\cdots&a_{n,k-1}&\sum_{k=1}^{n}a_{nk}c_k&a_{n,k+1}&\cdots&a_{nn}
+                \end{matrix}\right|\\&=\left|\begin{matrix}
+                    a_{11}&\cdots&a_{1,k-1}&a_{1k}c_k&a_{1,k+1}&\cdots&a_{1n}\\
+                    a_{21}&\cdots&a_{2,k-1}&a_{2k}c_k&a_{2,k+1}&\cdots&a_{2n}\\
+                    \vdots&&\vdots&\vdots&\vdots&&\vdots\\
+                    a_{n1}&\cdots&a_{n,k-1}&a_{nk}c_k&a_{n,k+1}&\cdots&a_{nn}
+                \end{matrix}\right|=c_kD
+            \end{align*}
+            因此$c_k=\dfrac{D_k}{D}$。
+        \end{enumerate}
+    \end{proof}
+
+    \newpage
     \section*{逆矩陣}
 
     設$\mathbf{A}\in\mathbb{M}^{m\times n}, \mathbf{x}\in\mathbb{M}^{n\times 1},\mathbf{b}\in\mathbb{M}^{m\times 1}$，設$$\mathbf{A}\mathbf{x}=\mathbf{b}$$若$\rref(\mathbf{A})=\mathbf{I}$，則存在$\mathbf{B}\in\mathbb{M}^{m\times n}$令$$[\mathbf{A}|\mathbf{I}]\sim[\mathbf{I}|\mathbf{B}]$$對符合條件的矩陣$\mathbf{B}$，我們稱其爲\textbf{$\mathbf{A}$的逆矩陣}，記$\mathbf{B}=\mathbf{A}^{-1}$。
+
+    \begin{theorem}[可逆矩陣]
+        若$\mathbf{A}\in\mathbb{M}^{m\times n}$符合上述情況，則稱$\mathbf{A}$為\textbf{可逆矩陣}。
+    \end{theorem}
+    \begin{corollary}
+        若$\mathbf{A}\in\mathbb{M}^{m\times n}$可逆，則必有方陣$\mathbf{B}$使得$$\mathbf{A}=\begin{bmatrix}
+            \mathbf{B}&\mathbf{0}\\
+            \mathbf{0}&\mathbf{0}
+        \end{bmatrix}$$
+    \end{corollary}
 
     \begin{example}
         設$\mathbf{A}=\begin{bmatrix}
@@ -892,6 +957,83 @@
             d&-b\\-c&a
         \end{bmatrix}$.
     \end{example}
+
+    \begin{definition}[伴隨矩陣]
+        設$\mathbf{A}=\begin{bmatrix}
+            a_{11}&\cdots&a_{1j}&\cdots&a_{1n}\\
+            \vdots&\cdots&\vdots&\cdots&\vdots\\
+            a_{i1}&\cdots&a_{ij}&\cdots&a_{in}\\
+            \vdots&\cdots&\vdots&\cdots&\vdots\\
+            a_{m1}&\cdots&a_{mj}&\cdots&a_{mn}
+        \end{bmatrix}$，則$\mathbf{A}$的\textbf{伴隨矩陣} $\adj{\mathbf{A}}$被定義爲$$\adj{\mathbf{A}}_{ij}=(-1)^{i+j}\left|\begin{matrix}
+            a_{11}&\cdots&a_{1,j-1}&a_{1,j+1}&\cdots&a_{1n}\\
+            \vdots&\cdots&\vdots&\vdots&\cdots&\vdots\\
+            a_{i-1,1}&\cdots&a_{i-1,j-1}&a_{i-1,j+1}&\cdots&a_{i-1,n}\\
+            a_{i+1,1}&\cdots&a_{i+1,j-1}&a_{i+1,j+1}&\cdots&a_{i+1,n}\\
+            \vdots&\cdots&\vdots&\vdots&\cdots&\vdots\\
+            a_{m1}&\cdots&a_{m,j-1}&a_{m,j+1}&\cdots&a_{mn}
+        \end{matrix}\right|$$
+    \end{definition}
+    
+    \begin{example}[$2\times 2$矩陣的伴隨矩陣]
+        設$\mathbf{A}=\begin{bmatrix}
+            a&b\\c&d
+        \end{bmatrix}$，則$$\adj{\mathbf{A}}=\begin{bmatrix}
+            \det[d]&-\det[c]\\-\det[b]&\det[a]
+        \end{bmatrix}=\begin{bmatrix}
+            d&-c\\-b&a
+        \end{bmatrix}$$
+        由此可見，$$\mathbf{A}^{-1}=\frac{1}{\det{\mathbf{A}}}(\adj{\mathbf{A}})^T$$
+    \end{example}
+    巧合的是，不僅二維方陣如此。
+    \begin{example}[$3\times 3$矩陣的伴隨矩陣]
+        設$\mathbf{A}=\begin{bmatrix}
+            a_{11}&a_{12}&a_{13}\\
+            a_{21}&a_{22}&a_{23}\\
+            a_{31}&a_{32}&a_{33}
+        \end{bmatrix}$，則$$\adj{\mathbf{A}}=\begin{bmatrix}
+            \det\begin{bmatrix}
+                a_{22}&a_{23}\\
+                a_{32}&a_{33}
+            \end{bmatrix}&-\det\begin{bmatrix}
+                a_{21}&a_{23}\\
+                a_{31}&a_{33}
+            \end{bmatrix}&\det\begin{bmatrix}
+                a_{21}&a_{22}\\
+                a_{31}&a_{32}
+            \end{bmatrix}\\
+            -\det\begin{bmatrix}
+                a_{12}&a_{13}\\
+                a_{32}&a_{33}
+            \end{bmatrix}&\det\begin{bmatrix}
+                a_{11}&a_{13}\\
+                a_{31}&a_{33}
+            \end{bmatrix}&-\det\begin{bmatrix}
+                a_{11}&a_{12}\\
+                a_{31}&a_{32}
+            \end{bmatrix}\\
+            \det\begin{bmatrix}
+                a_{12}&a_{13}\\
+                a_{22}&a_{23}
+            \end{bmatrix}&-\det\begin{bmatrix}
+                a_{11}&a_{13}\\
+                a_{21}&a_{23}
+            \end{bmatrix}&\det\begin{bmatrix}
+                a_{11}&a_{12}\\
+                a_{21}&a_{22}
+            \end{bmatrix}
+        \end{bmatrix}$$
+        由此可見，$$\mathbf{A}^{-1}=\frac{1}{\det{\mathbf{A}}}(\adj{\mathbf{A}})^T$$
+    \end{example}
+
+    因此，對於高維方陣而言，其中一個有效求逆矩陣的方法是伴隨矩陣法：
+
+    \begin{theorem}[伴隨矩陣法]
+        設$\mathbf{A}\in\mathbb{M}^{n\times n}$，則$$\mathbf{A}^{-1}=\frac{1}{\det{\mathbf{A}}}(\adj{\mathbf{A}})^T$$
+    \end{theorem}
+
+    根據本節提及的逆矩陣的概念，我們可以以下方法解綫性方程組：
+    已知綫性方程組$S:\mathbf{Ax}=\mathbf{b}$有唯一解，則$$\mathbf{x}=\mathbf{A}^{-1}\mathbf{b}$$
 
     \section*{矩陣的幾何含義}
 
