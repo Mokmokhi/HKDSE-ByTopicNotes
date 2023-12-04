@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1701453213 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M1/Test on differentiaation/chi.tex" "chi.pdf" "chi" 1701453217
+["pdflatex"] 1701699783 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M1/Test on differentiaation/chi.tex" "chi.pdf" "chi" 1701699787
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1685554408 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
@@ -84,6 +84,7 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong7f.tfm" 1247154072 1172 4fb15fe26ea6dad0b54285fd42fdf8b9 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong80.tfm" 1247154072 1172 bc023ebc9b121bce07974f18a4be28bc ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong81.tfm" 1247154072 1172 88aa66087396e79a2d9046555fe05ea9 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong82.tfm" 1247154072 1172 97758becb7742daa4b4c772be88e9009 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong83.tfm" 1247154072 1172 7dfd9db201c758b6a39baf9f8fe63ca3 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong88.tfm" 1247154072 1172 e80b61bcc19bffe1009dc0e70ca042e8 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong89.tfm" 1247154072 1172 8b185a44b25b68fee81f017ffd4f4c82 ""
@@ -320,9 +321,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M1/Test on differentiaation/chi.tex" 1701453209 14191 87b4030e0151ff640ec1db53e380004c ""
-  "chi.aux" 1701453216 113 ea7045ce84c3b1ca04f9c6aea5341ced "pdflatex"
-  "chi.tex" 1701453209 14191 87b4030e0151ff640ec1db53e380004c ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M1/Test on differentiaation/chi.tex" 1701699777 15591 9a69ae9ac96570574041094ab18e72d2 ""
+  "chi.aux" 1701699786 113 da540d05406fab9e0684349ca083b333 "pdflatex"
+  "chi.tex" 1701699777 15591 9a69ae9ac96570574041094ab18e72d2 ""
   (generated)
   "chi.aux"
   "chi.log"

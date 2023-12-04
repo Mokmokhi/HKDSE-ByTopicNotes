@@ -1035,7 +1035,122 @@
     根據本節提及的逆矩陣的概念，我們可以以下方法解綫性方程組：
     已知綫性方程組$S:\mathbf{Ax}=\mathbf{b}$有唯一解，則$$\mathbf{x}=\mathbf{A}^{-1}\mathbf{b}$$
 
+    \newpage
     \section*{矩陣的幾何含義}
 
+    若考慮向量空間$\mathbb{R}^n$的元素$\vec{x}=(x_1,x_2,\dots,x_n)$，則對於坐標變換，有以下看法：
+
+    \subsection*{Introduction}
+    Mathematics starts from logic and observation of the nature, and splits into many fields of study. The main streams can be thought of as pure Mathematics and applied mathematics. In this article, we will examine a useful object that usually appears in pure geometry and applied learning over physics and computer science - the Transformation Matrix. We will go through its meaning and the derivation. More exploration is recommended if you find it useful.
+    \subsection*{Complex numbers}
+    If we currently identify the complex plane $\mathbb{C}$ with the Euclidean plane $\mathbb{R}^2$, such that there is a relation $z\sim(x,y)$ by a mapping (function) $z=x+yi$, where $i$ is the number for $i^2=-1$. So we can see every complex number $z$ with its distance to 0 being equal to $|z|:=\sqrt{x^2+y^2}$ and its argument (angle raising from $x$-axis) begin equal to $\arg{z}:=\tan^{-1}(\frac{y}{x})$. Let's define $r=|z|$ and $\theta=\arg{z}$. Then by Taylor expansion centered at $z=0$, we have 
+    \begin{align*}
+        \sin{\theta}&=\sum_{n=0}^\infty\frac{(-1)^n\theta^{2n+1}}{(2n+1)!}\\
+        \cos{\theta}&=\sum_{n=0}^\infty\frac{(-1)^n\theta^{2n}}{(2n)!}\\
+        e^{i\theta}&=\sum_{n=0}^\infty\frac{(i\theta)^{n}}{(n)!}\\
+        &=\sum_{n=0}^\infty\frac{(-1)^n\theta^{2n}}{(2n)!}+i\sum_{n=0}^\infty\frac{(-1)^n\theta^{2n+1}}{(2n+1)!}\\
+        &=\cos{\theta}+i\sin{\theta}
+    \end{align*}
+    Since for each $z\in \mathbb{C}$, we can write $z=x+yi=r\cos{\theta}+ir\sin{\theta}=re^{i\theta}$, we call this the Euler's formula for complex number, infamous for its consequential equation $e^{i\pi}+1=0$.
+
+    \subsection*{The matrix for transformation}
+    Recall that if we have a $2\times 2$ matrix $A=\begin{bmatrix}
+        a&b\\c&d
+    \end{bmatrix}$, we can conclude the following equation is generating new coordinate by old coordinate $(x,y)$. $$\begin{bmatrix}
+        x'\\y'
+    \end{bmatrix}=\begin{bmatrix}
+        a&b\\c&d
+    \end{bmatrix}\begin{bmatrix}
+        x\\y
+    \end{bmatrix}$$ in which if we put the equations into a system, we will obtain $$\begin{cases}
+        x'=ax+by\\
+        y'=cx+dy
+    \end{cases}$$
+
+    We should establish that every transformation matrix can be represented by a suitable matrix, first. The converse may not be true, but that's not important to what we should do.
+
+    \subsubsection*{Translation}
+    By a translation we mean moving $(x,y)$ by a constant pair $(a,b)$, and results in $(x+a,y+b)$ as a new coordinate. To do this, we extend our system to $$\begin{bmatrix}
+        x'\\y'\\1
+    \end{bmatrix}=\begin{bmatrix}
+        1&0&a\\0&1&b\\0&0&1
+    \end{bmatrix}\begin{bmatrix}
+        x\\y\\1
+    \end{bmatrix}=\begin{bmatrix}
+        x+a\\y+b\\1
+    \end{bmatrix}$$ so that for each coordinate we directly associate with constant, and let the 1 remains itself by zeroing out $x$ and $y$. The order triple presents the same coordinate by adjoining a 1 at the end of it. We shall call it the translation factor for the third entry, as we could always replace it by any other number for doing translation.
+
+    \subsubsection*{Dilation}
+    A dilation is either enlarging the coordinate or contracting the coordinate. The meaning of enlargement and contraction should be referring to the distance between $(x,y)$ and $(0,0)$. To do this, we may simply multiply the matrix by a constant $k>0$.
+
+    However, we may want to enlarge different coordinates by different values. We will make this happen if we put things in diagonal, so that the multiplication acts on respective coordinates only once. It is interesting to see $$\begin{bmatrix}
+        x'\\y'\\1
+    \end{bmatrix}=\begin{bmatrix}
+        \alpha&0&0\\0&\beta&0\\0&0&1
+    \end{bmatrix}\begin{bmatrix}
+        x\\y\\1
+    \end{bmatrix}=\begin{bmatrix}
+        \alpha x\\\beta y\\ 1
+    \end{bmatrix}$$
+
+    \subsubsection*{Rotation}
+    To rotate the coordinate, we may refer back to the Euler's fomrula and think of changing the value of $\arg{z}$. One should see that if we rotate the complex number by $\varphi$ (we could omit the length as it should have no change), we will get the new number \begin{align*}
+        z'=e^{i(\theta+\varphi)}&=\cos(\theta+\varphi)+i\sin(\theta+\varphi)
+    \end{align*}
+
+    In this sense, we consider the real part and imaginary part respectively, which corresponds to $x$ and $y$ coordinate. Then 
+    \begin{align*}
+        x'&=\cos(\theta+\varphi)\\
+        &=\cos{\theta}\cos{\varphi}-\sin{\theta}\sin{\varphi}\\
+        &=(x,y)\cdot(\cos{\varphi},-\sin{\varphi})\\
+        y'&=\sin(\theta+\varphi)\\
+        &=\sin{\theta}\cos{\varphi}+\sin{\theta}\cos{\varphi}\\
+        &=(x,y)\cdot(\sin{\varphi},\cos{\varphi})
+    \end{align*} 
+    Then we may write $$\begin{bmatrix}
+        x'\\y'
+    \end{bmatrix}=\begin{bmatrix}
+        \cos{\varphi}&-\sin{\varphi}\\\sin{\varphi}&\cos{\varphi}
+    \end{bmatrix}\begin{bmatrix}
+        x\\y
+    \end{bmatrix}=\begin{bmatrix}
+        x\cos{\varphi}-y\sin{\varphi}\\x\sin{\varphi}+y\cos{\varphi}
+    \end{bmatrix}$$
+
+    To maintain the matrix as $3\times 3$, we may consider $$\begin{bmatrix}
+        x'\\y'\\1
+    \end{bmatrix}=\begin{bmatrix}
+        \cos{\varphi}&-\sin{\varphi}&0\\\sin{\varphi}&\cos{\varphi}&0\\0&0&1
+    \end{bmatrix}\begin{bmatrix}
+        x\\y\\1
+    \end{bmatrix}=\begin{bmatrix}
+        x\cos{\varphi}-y\sin{\varphi}\\x\sin{\varphi}+y\cos{\varphi}\\1
+    \end{bmatrix}$$
+
+    We may also identify the real part of the rotational matrix as $$\begin{bmatrix}
+        \cos{\varphi}&0\\0&\cos{\varphi}
+    \end{bmatrix}$$ 
+    and the imaginary part of the rotational matrix as $$\begin{bmatrix}
+        0&-\sin{\varphi}\\ \sin{\varphi}&0
+    \end{bmatrix}$$ 
+    You may check that $$\begin{bmatrix}
+        0&-1\\1&0
+    \end{bmatrix}^2=\begin{bmatrix}
+        -1&0\\0&-1
+    \end{bmatrix}$$
+
+    \subsection*{Caution on the order of matrix operation}
+
+    Usually, we would like to combine the use of translation, dilation and rotation as one stuff. However, their positioning means a lot to the resultant transformation. Let us define $\mathcal{T}$ the group of translation, $\mathcal{R}$ the group of rotation, and $\mathcal{D}$ the group of dilation. For $T_{a,b}\in\mathcal{T}$ we mean a translation by $a$ units in x-direction and $b$ units in y-direction; for $R_\theta\in\mathcal{R}$ we mean a rotation by $\theta$; for $D_{\alpha,\beta}\in\mathcal{D}$ we mean a dilation of scale $\alpha$ in x-direction and scale $\beta$ in y-direction. 
+
+    We shall see and check that $$T_{a,b}\circ R_\theta \neq R_\theta\circ T_{a,b}, D_{\alpha,\beta}\circ R_\theta \neq R_\theta\circ D_{\alpha,\beta}, T_{a,b}\circ D_{\alpha,\beta} \neq D_{\alpha,\beta}\circ T_{a,b}$$
+
+    In formal reading, we say the transformations are not commutative with one another. This means that whenever we are trying to apply the matrices to our calculation, we must follow the priority of transformation strictly.
+
+    \subsection*{Restriction among general geometry}
+    As we see each of the translation, dilation and rotation can be represented using matrix operation, so it is fruitful to use matrices in order to perform transformation in Euclidean geometry. However, for general purpose, since matrix is indeed linear operators, it could not perform any nonlinear operations like inversion and Möbius transformation.
+
+    It is enough to use matrix operations to describe high-school geometry, so this is a good place to stop. For who are struggling with M2 trigonometry, it is a good perspective to learn more about the Euler's formula for complex number. You will benefit a lot from using it.
+    \newpage
     \section*{博弈論簡介}
 \end{document}
