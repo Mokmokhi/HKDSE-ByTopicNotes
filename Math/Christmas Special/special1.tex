@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{{../images/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{Christmas Special}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem*{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\begin{document}
+    Let us think of a scene. Suppose the Santa Claus was coming to town but he was missing direction. By asking the Government he was given a map with four coordinates. They are city $A(3,6)$, city $B(-3,-6)$, city $C(2,-12)$ and city $D(8,0)$.
+
+    You are going to help Santa Claus to figure out some important information about his route of distribution.
+
+    \begin{enumerate}
+        \item[(F.1)] Sketch the coordinates and the polygon $ABCD$ on a coordinate plane. You may label the plane by yourself.
+        \item[(F.1)] Find the area of the polygon $ABCD$.
+        \item[(F.2)] Find the mean of the coordinates, i.e. the mean value of x-coordinates and y-coordinates.
+        \item[(F.3)] Find the length of the sides of the polygon $ABCD$.
+    \end{enumerate}
+
+    We then suppose the Santa Claus needs to distribute different cities with different weight of presents. For City A (Point A), it is 20kg; For City B (Point B), it is 30kg; For City C (Point C), it is 40kg; For City D (Point D), it is 50kg.
+
+    \begin{enumerate}
+        \item[(F.4)] Find the shortest route to reach every city.
+        \item[(F.5)] It is known that the energy required for each route ($E$) varies partly with $m$ and partly with $L^2$, where $m$ is the weight of carrying presents and $L$ is the length of the route. If the energy carrying all presents from $A$ to $B$ and carrying half of the presents from $A$ to $D$ are $1300$ and $594$ respectively. Find the energy needed for carrying all presents from $A$ straightly to $C$.
+        \item[(F.5)] Find the total number of routes to go through all cities. 
+        \item[(F.5)] Hence, find the route requiring the least energy to deliver all presents.
+    \end{enumerate}
+\end{document}
