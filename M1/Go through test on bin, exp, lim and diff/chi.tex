@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+
+\graphicspath{{../img/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{測驗3:溫習測驗}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item 按升冪求$e^{-2x}$的展開式至$x^6$。
+            \item 求$e^{-2x}(x-\frac{3}{x})^{6}$的展開式的常數項。
+        \end{enumerate}
+        \item 已知$\displaystyle \lim_{x\to 0}\frac{e^x-1}{x}=1$\begin{enumerate}
+            \item 從基本原理求$\dfrac{d}{dx}\sqrt{e^x-x^2}$，其中$x\geq 0$。
+            \item 設$f(x):=\dfrac{ln{x}}{x}$，從基本原理求$f'(1)$的值。
+        \end{enumerate}
+        \item 設$f(x)=(\dfrac{x}{2-x})^{\frac{1}{2}}$，其中$0\leq x\leq 1$。\begin{enumerate}
+            \item 求$f'(x)$及$f''(x)$。
+            \item 假定$J=\displaystyle\int_0^{0.5}f(x)dx$及$K=\displaystyle\int_{0.5}^1 f(x)dx$。\begin{enumerate}
+                \item 利用5區間梯形法則，估算$J$的值。
+                \item 利用事實$\displaystyle\int_0^1 f(x)dx=\dfrac{\pi-2}{2}$及(b)(i)的結果，估算$K$的值。
+                \item 某人宣稱$\dfrac{J}{K}<0.44$，你是否同意？試解釋你的答案。
+            \end{enumerate}
+        \end{enumerate}
+        \item 現有一水缸用以儲存雨水。在某一場大雨中，雨水流進缸中的時長為7分鐘。設缸中雨水的體積爲$V$ m$^3$。已知$$\frac{dV}{dt}=\sqrt{t+1}\sqrt{3-\sqrt{t+1}} \quad \quad (0\leq t\leq 7),$$其中$t$是雨水流進缸中的時長，以分鐘計算。在$t=0$時，水缸為中空的，并且在$t=T$時雨水體積的變率達到極大值。\begin{enumerate}
+            \item 求$T$。
+            \item 求當$t=T$時$V$的真確值。
+            \item 現知水缸為一個高為1 m及底半徑為6 m的倒立正圓錐體容器。水缸直立放置。假設水深為$h$ m，求\begin{enumerate}
+                \item 常數$Q$使得$\dfrac{dV}{dt}=Qh^2\dfrac{dh}{dt}$；
+                \item $\dfrac{dh}{dt}\bigg|_{t=T}$。
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
