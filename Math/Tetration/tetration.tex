@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{Tetration}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    The computation startegy can be upgrading to any imagination of composition of basic strategies, as what we saw in primary the composition of addition is multiplication, while the composition of multiplication is, in midle school, the integral power or call it indexing. The next move shall be the composition of indexing, which we can now define it as 
+
+    \begin{definition}[Tetration]
+        The tetration is recursively defined as $$a\uparrow\uparrow n :=\begin{cases}
+            1&,n=0\\
+            a^{a\uparrow\uparrow (n-1)}&, n\geq 1
+        \end{cases}$$
+        where the binary operator $\uparrow\uparrow$ can also be called the `tree' function.
+    \end{definition}
+
+    \begin{example}
+        $3\uparrow\uparrow 3=3^{3^3}=3^{27}=7625597484987$.
+    \end{example}
+
+    In order to solve some problem with tetration, we shalll develop a reasonable strategy to solve the following first: $$x^x=a$$
+
+    In fact, a famous Mathematician Lambert has proposed an interesting equation called Lambert's Transcendental Equation, and was solved by another famous Mathematician Euler using the product log function:
+
+    \begin{definition}
+        The product log function $W$, as known as the Lambert W function, is defined as $$xe^x=k \implies x=W(k)$$
+    \end{definition}
+
+    We will first find an approximation for the product log function.
+\end{document}

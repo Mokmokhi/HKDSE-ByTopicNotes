@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{Point Line Distance formula}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    In this article we will examine the distance between a point and a line. By definition, the distance between two points on a $\mathbb{R}^2$ plane is 
+
+    \begin{definition}[Distance between two points]
+        Let $A(x_1,y_1)$ and $B(x_2,y_2)$ be two points on $\mathbb{R}^2$-plane. The distance between $A$ and $B$ is computed by the formula $$\mathrm{dist}(A,B):=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$$
+    \end{definition}
+
+    Now let $L:ax+by+c=0$ be a straight line and $P(x_0,y_0)$ be a point on $\mathbb{R}^2$-plane. Note that with the following axiom
+
+    \begin{axiom}
+        The distance between a point $P$ and a line $L$ is defined by the shortest distance between $P$ and a point on $L$ $$\mathrm{dist}(P,L):=\inf\{\mathrm{dist}(P,Q):Q\in L\}$$
+    \end{axiom}
+
+    we can choose the perpendicular displacement of $P$ from $L$ to define the distance. Using the line $\Gamma$ perpendicular to $L$ passing through $P$, we can find such $Q$ by following computation:
+
+    \begin{align*}
+        \begin{cases}
+            L:ax+by+c=0\\
+            \Gamma:bx-ay+(ay_0-bx_0)=0
+        \end{cases}\implies Q(\frac{b^2x_0-aby_0-ac}{a^2+b^2},\frac{a^2y_0-abx_0-bc}{a^2+b^2})
+    \end{align*}
+
+    Therefore, the distance between $P$ an $Q$ is \begin{align*}
+        \mathrm{dist}(P,Q)&=\frac{1}{a^2+b^2}\sqrt{[(a^2+b^2)x_0-(b^2x_0-aby_0-ac)]^2+[(a^2+b^2)y_0-(a^2y_0-abx_0-bc)]^2}\\
+        &=\frac{1}{a^2+b^2}\sqrt{(a^2x_0+aby_0+ac)^2+(b^2y_0+abx_0+bc)^2}\\
+        &=\frac{\sqrt{a^2+b^2}\sqrt{(ax_0+by_0+c)^2}}{a^2+b^2}\\
+        &=\frac{\sqrt{(ax_0+by_0+c)^2}}{\sqrt{a^2+b^2}}\\
+        &=\left|\frac{ax_0+by_0+c}{\sqrt{a^2+b^2}}\right|
+    \end{align*}
+\end{document}
