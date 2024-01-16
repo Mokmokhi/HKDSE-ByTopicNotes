@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1703763024 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" "chi_directional.pdf" "chi_directional" 1703763027
+["pdflatex"] 1705390417 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" "chi_directional.pdf" "chi_directional" 1705390421
   "../image//Force.png" 1703054745 11092 bfa2fa17e824f12688875562189019ed ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1664299329 14064 d51fe1154d65350215fea1f8fca0323d ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
@@ -138,8 +138,10 @@
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong91.tfm" 1247154072 1172 084e1e91aa4ae30efc415c3663943670 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong95.tfm" 1247154072 1172 b83dfb32a9b8d234282a0b11898d2c55 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong96.tfm" 1247154072 1172 97abce3faa5097f1401cb707f6f69600 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong97.tfm" 1247154072 1172 3322410a0eee91e13e02457b09378209 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong98.tfm" 1247154072 1172 0d85b1f7b78508ff1f0a5ef94e0aaca9 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong99.tfm" 1247154072 1172 445e3c81b2f1f84601e454216cbde866 ""
+  "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong9a.tfm" 1247154072 1172 37a3cd36cf03e67f393bee80b1370d05 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong9e.tfm" 1247154072 1172 e797949130fb017e573d6826989dff50 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/tfm/zhmetrics/unisong/unisongff.tfm" 1247154072 1172 156175f4eaa9daea4e21b890ac9fafb8 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/tex/generic/ctex/zhmap/ctex-zhmap-windows.tex" 1624202746 5817 60ac52673f266e9f3b911e149d75100b ""
@@ -362,9 +364,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" 1703763023 9088 f380404c701f5ec74543213d1900a983 ""
-  "chi_directional.aux" 1703763026 112 c869e8664d73af3174a90402c189606e "pdflatex"
-  "chi_directional.tex" 1703763023 9088 f380404c701f5ec74543213d1900a983 ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" 1705390416 9838 c018615cf907241f0b4102ad9579a81f ""
+  "chi_directional.aux" 1705390420 112 c869e8664d73af3174a90402c189606e "pdflatex"
+  "chi_directional.tex" 1705390416 9838 c018615cf907241f0b4102ad9579a81f ""
   (generated)
   "chi_directional.aux"
   "chi_directional.log"
