@@ -172,7 +172,24 @@
         假設$\{\hat{i},\hat{j},\hat{k}\}\subset \mathbb{R}^3$為$\mathbb{R}^3$的標準正交基，則定義$\times:\mathbb{R}^3\to\mathbb{R}^3$為$$\hat{i}\times \hat{j}=\hat{k},\hat{j}\times \hat{k}=\hat{i}, \hat{k}\times \hat{i}=\hat{j}$$
     \end{definition}
 
-    外積的定義可考慮面積與體積的計算原理：考慮三個單位向量$\hat{i},\hat{j},\hat{k}$的乘積為體積及任意兩個向量的乘積為面積，基於$\hat{i}\times \hat{j}$為$i-j$平面的面積單位，而面積乘以高等於體積，故$V(\hat{i},\hat{j},\hat{k})=(\hat{i}\times \hat{j})\cdot \hat{k}$為標量，使得$\hat{i}\times\hat{j}=\hat{k}$。
+    外積的定義可考慮面積與體積的計算原理：考慮三個單位向量$\hat{i},\hat{j},\hat{k}$的乘積為體積及任意兩個向量的乘積為面積，基於$\hat{i}\times \hat{j}$為$ij$平面的面積單位，而面積乘以高等於體積，故$V(\hat{i},\hat{j},\hat{k})=(\hat{i}\times \hat{j})\cdot \hat{k}$為標量，使得$\hat{i}\times\hat{j}=\hat{k}$。
+
+    因此，我們可定義
+
+    \begin{definition}[面積與體積]
+        設$u,v,w\in\mathbb{R}^3$，則\begin{align*}
+            A(u,v)&:=|u\times v|=\left|\left|\begin{matrix}
+                \hat{i}&\hat{j}&\hat{k}\\
+                u_1&u_2&u_3\\
+                v_1&v_2&v_3
+            \end{matrix}\right|\right|\\
+            V(u,v,w)&:=(u\times v)\cdot w=\left|\begin{matrix}
+                u_1&u_2&u_3\\
+                v_1&v_2&v_3\\
+                w_1&w_2&w_3
+            \end{matrix}\right|\\
+        \end{align*}
+    \end{definition}
 
     \section*{向量函數}
 
