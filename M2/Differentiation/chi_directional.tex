@@ -191,6 +191,29 @@
         \end{align*}
     \end{definition}
 
+    事實上，外積的計算無法以向量簡單作結。Kronecker就發現基本的向量無法解釋$i\times j=k$的情況（例如，爲何面積是向量而體積不是？），因此，他提出以\textbf{雙向量}(bi-vector)為$\hat{i},\hat{j},\hat{k}$下定義：
+
+    \begin{definition}
+        定義$\hat{i}=e_1e_2,\hat{j}=e_2e_3,\hat{k}=e_1e_3$，且$e_ie_j=-e_je_i$，$e_i^2=1$由此符合\begin{align*}
+            \hat{i}\hat{j}&=e_1e_2e_2e_3=e_1e_3=\hat{k}\\
+            \hat{j}\hat{k}&=e_2e_3e_1e_3=-e_2e_3e_3e_1=-e_2e_1=e_1e_2=\hat{i}\\
+            \hat{k}\hat{i}&=e_1e_3e_1e_2=-e_3e_1e_1e_2=-e_3e_2=e_2e_3=\hat{j}
+        \end{align*}
+    \end{definition}
+
+    上述定義可引申至對軸心的旋轉：$\hat{i}$為沿$z$軸逆時針旋轉90度；$\hat{j}$為沿$x$軸逆時針旋轉90度；$\hat{k}$為沿$y$軸逆時針旋轉90度。
+
+    事實上，在更高維的空間裏，向量的外積有以下定義
+
+    \begin{definition}
+        設$u=(u_i)_{i\in I},v=(v_i)_{i\in I}$，則外積為$$u\wedge v =\begin{bmatrix}
+            u_1v_1&u_1v_2&\cdots&u_1v_n\\
+            u_2v_1&u_2v_2&\cdots&u_2v_n\\
+            \vdots&\vdots&\ddots&\vdots\\
+            u_n v_1&u_n v_2&\cdots&u_n v_n
+        \end{bmatrix}$$
+    \end{definition}
+
     \section*{向量函數}
 
     \section*{偏導數與全導數}
