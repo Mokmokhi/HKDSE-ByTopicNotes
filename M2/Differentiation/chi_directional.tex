@@ -147,7 +147,7 @@
     \end{proof}
 
     \begin{corollary}
-        設$V_S$為向量空間，$\{e_1,e_2,\dots,e_n\}$為$V_S$的標準正交基。若$v\in V_S$可寫作$v=\sum_{i=1}^{n}v_i e_i$，則$$|v|=\sqrt{\sum_{i=1}^{n}v_i^2}$$
+        設$V_S$為向量空間，$\{e_1,e_2,\dots,e_n\}$為$V_S$的標準正交基。若$v\in V_S$可寫作$v=\sum_{i=1}^{n}v_i e_i$，則$$|v|=\sqrt{\sum_{i=1}^{n}v_i^2}$$而且$$v_i=\innerprod{v}{e_i}$$
     \end{corollary}
 
     爲方便描述，接下來會稱$V_S$的標準正交基為$\mathcal{O}(V_S):= \{e_i\}_{i\in I}$，$I$為索引集。
@@ -219,8 +219,24 @@
     \end{theorem}
 
     \begin{corollary}
-        $$|u|^2|v|^2=\innerprod{u}{v}^2+|u\wedge v|^2$$
+        設$u,v\in \mathbb{R}^n$，則$$|u|^2|v|^2=\innerprod{u}{v}^2+|u\wedge v|^2$$
     \end{corollary}
+
+    外積的應用并不廣汎，因爲在高維空間其實很難定義内外，因此我們通常更集中於内積的運算。其中對於互補空間的探索可謂是將内積運用至極緻。
+    
+    \begin{definition}[維度]
+        若某向量空間$V$的標準正交基有$n$項綫性獨立元素，則稱$V$是一個$n$維空間。記$\dim{V}=n$。
+    \end{definition}
+
+    \begin{definition}[補空間]
+        設$V \subset \mathbb{R}^n$同時$\dim{V}=k< n$。若存在$V^{\perp}\subset \mathbb{R}^n$使得\begin{enumerate}
+            \item $\dim{V^{\perp}}=n-k$及；
+            \item $\forall v\in V, \forall v^{\perp}\in V^{\perp}$使得$$\innerprod{v}{v^{\perp}}=0$$
+        \end{enumerate}
+        則稱$V^{\perp}$為$V$的補空間。
+    \end{definition}
+
+    因此，$V^{\perp}$通常被定義爲$$V^{\perp}:=\{w\in\mathbb{R}^n:\innerprod{w}{v}=0, \forall v\in V\}$$
 
     \section*{向量函數}
 
