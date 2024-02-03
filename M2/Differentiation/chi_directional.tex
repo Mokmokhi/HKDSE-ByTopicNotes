@@ -238,9 +238,86 @@
 
     因此，$V^{\perp}$通常被定義爲$$V^{\perp}:=\{w\in\mathbb{R}^n:\innerprod{w}{v}=0, \forall v\in V\}$$
 
+    \begin{example}
+        在$\mathbb{R}^2$上，下列情況均為互補空間：\begin{enumerate}
+            \item $\mathbf{X}:=\{(x,0)\in\mathbb{R}^2\}$及$\mathbf{Y}:=\{(0,y)\in\mathbb{R}^2\}$;
+            \item $\forall u,v \in\mathbb{R}^2$，若$\innerprod{u}{v}=0$，則$\mathbf{U}:=\{ku:k\in\mathbb{R}\}$及$\mathbf{V}:=\{hv:h\in\mathbb{R}\}$為互補空間。
+        \end{enumerate}
+    \end{example}
+
+    考慮$u,v\in\mathbb{R}^n$使得$u\wedge v\neq 0$，令$w:=u-\frac{\innerprod{u}{v}}{|v|^2}v$則$$\innerprod{u}{w}=0$$由此，我們可得以下命題：
+
+    \begin{proposition}[正交化]
+        設$u,v\in \mathbb{R}^n$且$u\in U\subset \mathbb{R}^n$，則$u-\frac{\innerprod{u}{v}}{|v|^2}v\in U^{\perp}$。
+    \end{proposition}
+
+    \begin{proof}
+        留做習題。
+    \end{proof}
+
+    \begin{theorem}[格林-史密特正交化]
+        若$B_V=\{b_1,b_2,\dots,b_n\}$為向量空間$V$的基，并且$b_i\wedge b_j\neq 0$。令$\{\beta_1,\beta_2,\dots,\beta_n\}$為另一基集使得$$\beta_n:=b_n-\sum_{k=1}^{n-1}\frac{\innerprod{\beta_k}{b_n}}{|\beta_k|^2}\beta_k$$則$\{\beta_1,\beta_2,\dots,\beta_n\}$為$V$的正交基。
+    \end{theorem}
+
+    \begin{proof}
+        利用命題，可證明$\{\beta_1,\beta_2,\dots,\beta_n\}$為$V$的正交集；又因$\{\beta_1,\beta_2,\dots,\beta_n\}$的元素為$B_V$的綫性組合，$B_V$亦可寫成$\{\beta_1,\beta_2,\dots,\beta_n\}$的綫性組合，因此$\{\beta_1,\beta_2,\dots,\beta_n\}$為$V$的基。
+    \end{proof}
+
+    \begin{example}
+        求以$\{(1,2,3),(1,3,5),(1,0,1)\}$為基的向量空間的一組標準正交基。
+
+        \begin{align*}
+            \beta_1'&=(1,0,1)\\
+            \beta_1&=\frac{\beta_1'}{|\beta_1'|}=\frac{1}{\sqrt{2}}(1,0,1)\\
+            \beta_2'&=(1,2,3)-\frac{4}{2}(1,0,1)\\
+            &=(-1,2,1)\\
+            \beta_2&=\frac{\beta_2'}{|\beta_2'|}=\frac{1}{\sqrt{6}}(-1,2,1)\\
+            \beta_3'&=(1,3,5)-\frac{6}{2}(1,0,1)-\frac{10}{6}(-1,2,1)\\
+            &=(-\frac{1}{3},-\frac{1}{3},\frac{1}{3})\\
+            \beta_3&=\frac{\beta_3'}{|\beta_3'|}=\frac{1}{\sqrt{3}}(-1,-1,1)
+        \end{align*}
+        因此，$V$的其中一組標準正交基為$\{\frac{1}{\sqrt{2}}(1,0,1),\frac{1}{\sqrt{6}}(-1,2,1),\frac{1}{\sqrt{3}}(-1,-1,1)\}$
+    \end{example}
+
     \section*{向量函數}
 
+    向量函數顧名思義在於將函數從一個向量空間映射向另一個向量空間，其形式可以看成
+
+    \begin{definition}[向量函數]
+        給定$f:\mathbb{R}^m\to\mathbb{R}^n$，設$x=(x_1,x_2,\dots,x_m)\in\mathbb{R}^m$及$y=(y_1,y_2,\dots,y_n)\in\mathbb{R}^n$，若$$y=f(x)$$則對於所有$1\leq k\leq n$，存在獨特的$f_k:\mathbb{R}^m\to\mathbb{R}$使得$$y_k=f_k(x)$$
+    \end{definition}
+
+    \begin{example}
+        以下爲向量函數的例子：\begin{enumerate}
+            \item $f(x):=x^2+3x+1$;
+            \item $f(x,y,z):=xy+xz+3y-2z$;
+            \item $f(x):=(x,x^2,x^2+x)$;
+            \item $f(x,y):=(x^2y,xy^2,x^3-y^3)$.
+        \end{enumerate}
+    \end{example}
+
+    由於向量函數相較實函數有更多偏差發生，例如$$f(x,y):=(\frac{1}{x-y},x^2+y^2)$$并不能在$x=y$的情況下連續，因此我們又需要調出那個萬用的極限。
+
+    \begin{definition}[向量函數的極限]
+        設$y=f(x)$，其中$y\in\mathbb{R}^n$。若存在$y_0\in\mathbb{R}^n$使得對於任意$\epsilon>0$，都有$\delta>0$使得$|x-x_0|<\delta$時$|f(x)-y_0|<\epsilon$，則稱$y_0$為$f(x)$在$x_0$的極限，記$\displaystyle y_0=\lim_{x\to x_0}f(x)$。
+    \end{definition}
+
+    \begin{definition}[向量函數的連續性]
+        若$f(x_0)=\displaystyle \lim_{x\to x_0}f(x)$，則稱$f$在$x_0$上連續。
+    \end{definition}
+
     \section*{偏導數與全導數}
+
+    \begin{definition}[偏導數]
+        設$f:\mathbb{R}^m\to\mathbb{R}^n$，而$(x_1,x_2,\dots,x_m)\overset{f}{\mapsto}(y_1,y_2,\dots,y_n)$。若只求$f$對於單一變量$x_k$的變化，則$$\partialderivative{f}{x_k}=\lim_{h\to 0}\frac{f(x_1,x_2,\dots,x_k+h,\dots,x_n)-f(x_1,x_2,\dots,x_k,\dots,x_n)}{h}$$
+        考慮$f=(f^1,f^2,\dots,f^n)$的記法，可將之寫成$$(\partialderivative{f^1}{x_k},\partialderivative{f^2}{x_k},\dots,\partialderivative{f^n}{x_k})=(f^1_k,f^2_k,\dots,f^n_k)$$
+    \end{definition}
+
+    \subsection*{情況一：$\mathbb{R}^m\to\mathbb{R}$}
+
+    \subsection*{情況二：$\mathbb{R}\to\mathbb{R}^n$}
+
+    \subsection*{情況三：$\mathbb{R}^m\to\mathbb{R}^n$}
 
     \section*{方向導數}
 
