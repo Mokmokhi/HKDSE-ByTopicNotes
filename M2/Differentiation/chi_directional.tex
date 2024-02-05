@@ -308,9 +308,39 @@
 
     \section*{偏導數與全導數}
 
+    此後的函數均預設為連續函數。
+
     \begin{definition}[偏導數]
         設$f:\mathbb{R}^m\to\mathbb{R}^n$，而$(x_1,x_2,\dots,x_m)\overset{f}{\mapsto}(y_1,y_2,\dots,y_n)$。若只求$f$對於單一變量$x_k$的變化，則$$\partialderivative{f}{x_k}=\lim_{h\to 0}\frac{f(x_1,x_2,\dots,x_k+h,\dots,x_n)-f(x_1,x_2,\dots,x_k,\dots,x_n)}{h}$$
-        考慮$f=(f^1,f^2,\dots,f^n)$的記法，可將之寫成$$(\partialderivative{f^1}{x_k},\partialderivative{f^2}{x_k},\dots,\partialderivative{f^n}{x_k})=(f^1_k,f^2_k,\dots,f^n_k)$$
+
+        考慮$f=(f^1,f^2,\dots,f^n)$的記法，可將之寫成$$(\partialderivative{f^1}{x_k},\partialderivative{f^2}{x_k},\dots,\partialderivative{f^n}{x_k})$$
+    \end{definition}
+
+    \begin{remark}
+        偏導數的記法通常以$\displaystyle\partialderivative{f}{x}$表示，也有寫$\partial_x f$或$f_x$簡便記之。
+    \end{remark}
+
+    \begin{example}
+        求$f(x,y,z):=xyz$的所有偏導數。
+
+        \begin{align*}
+            \partial_x f&=\partial_x(x)yz+x\partial_x(y)z+xy\partial_x(z)=yz\\
+            \partial_y f&=\partial_y(x)yz+x\partial_y(y)z+xy\partial_y(z)=xz\\
+            \partial_z f&=\partial_z(x)yz+x\partial_z(y)z+xy\partial_z(z)=xy
+        \end{align*}
+    \end{example}
+
+    \begin{example}
+        求$f(x,y):=(x^2,xy,xy^2)$的所有偏導數。
+
+        \begin{align*}
+            \partial_x f&=(\partial_x(x^2),\partial_x(xy),\partial_x(xy^2))=(2x,y,y^2)\\
+            \partial_y f&=(\partial_y(x^2),\partial_y(xy),\partial_y(xy^2))=(0,x,2xy)
+        \end{align*}
+    \end{example}
+
+    \begin{definition}[全導數]
+        設$f:\mathbb{R}^m\to\mathbb{R}^n$，而$(x_1,x_2,\dots,x_m)\overset{f}{\mapsto}(y_1,y_2,\dots,y_n)$。則$f$的全導數為$$\derivative{f}{x}:=(\derivative{y_1}{x},\derivative{y_2}{x},\dots,\derivative{y_n}{x})$$
     \end{definition}
 
     \subsection*{情況一：$\mathbb{R}^m\to\mathbb{R}$}
