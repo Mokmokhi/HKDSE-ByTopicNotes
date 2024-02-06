@@ -1,0 +1,100 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Function and its graph}{5}{}%
+\contentsline {subsection}{\numberline {1.1}What is a Function?}{5}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Function as an input-output pair}{7}{}%
+\contentsline {subsubsection}{\numberline {1.1.4}Defining a function with variables}{7}{}%
+\contentsline {subsubsection}{\numberline {1.1.5}Domain, Codomain and Range}{7}{}%
+\contentsline {subsection}{\numberline {1.2}Graph of a function}{7}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Blobs-and-arrows diagram for discrete functions}{7}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}The pairing table and xy-coordination}{7}{}%
+\contentsline {subsection}{\numberline {1.3}Fundamental properties of a graph}{7}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}points lying on the graph}{7}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}x-intercept}{7}{}%
+\contentsline {subsubsection}{\numberline {1.3.3}y-intercept}{7}{}%
+\contentsline {subsubsection}{\numberline {1.3.4}general intersection}{7}{}%
+\contentsline {subsection}{\numberline {1.4}Solving equations using graphs of functions}{7}{}%
+\contentsline {subsection}{\numberline {1.5}Transformation of functions}{7}{}%
+\contentsline {subsubsection}{\numberline {1.5.1}Translation}{7}{}%
+\contentsline {subsubsection}{\numberline {1.5.2}Dilation}{7}{}%
+\contentsline {subsection}{\numberline {1.6}Challenging questions}{7}{}%
+\contentsline {section}{\numberline {2}Linear functions}{8}{}%
+\contentsline {subsection}{\numberline {2.1}Fundamental concepts of points}{8}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Distance between two points}{8}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Mid-point and Division points}{8}{}%
+\contentsline {subsection}{\numberline {2.2}Different forms of a linear function}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Slope of a line}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Two-point form}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}Point-slope form}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.4}Slope-intercept form}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.5}General form}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.6}Special: Intercept-form}{8}{}%
+\contentsline {subsection}{\numberline {2.3}Parallel lines and Perpendicular lines}{8}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Point of intersection}{8}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Parallel lines}{8}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}Perpendicular lines}{8}{}%
+\contentsline {subsubsection}{\numberline {2.3.4}Number of intersections}{8}{}%
+\contentsline {subsection}{\numberline {2.4}Angle of elevation and depression}{8}{}%
+\contentsline {subsection}{\numberline {2.5}Additional content: Point-line distance}{8}{}%
+\contentsline {subsection}{\numberline {2.6}Linear inequalities}{9}{}%
+\contentsline {subsubsection}{\numberline {2.6.1}One variable inequality}{9}{}%
+\contentsline {subsubsection}{\numberline {2.6.2}Two variable inequality}{9}{}%
+\contentsline {subsubsection}{\numberline {2.6.3}Linear programming}{9}{}%
+\contentsline {subsection}{\numberline {2.7}Challenging questions}{9}{}%
+\contentsline {section}{\numberline {3}Quadratic functions}{10}{}%
+\contentsline {subsection}{\numberline {3.1}Solving Quadratic Equations}{10}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}The square-root method}{10}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}General form and Completing the square method}{10}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}The quadratic formula}{10}{}%
+\contentsline {subsection}{\numberline {3.2}Solvability of Quadratic Equations}{10}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Discriminant: the factor affecting solvability}{10}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Application of solvability}{10}{}%
+\contentsline {subsection}{\numberline {3.3}Relation between coefficients and roots}{10}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}What does it mean by a root?}{10}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}The Vieta formula}{10}{}%
+\contentsline {subsubsection}{\numberline {3.3.3}Forming quadratic equations with given roots}{10}{}%
+\contentsline {subsection}{\numberline {3.4}Vertex form of a quadratic function}{10}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Obtaining vertex form using Transformation}{10}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Relation between vertex form and general form}{10}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Opening direction}{10}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}The axis of symmetry}{10}{}%
+\contentsline {subsubsection}{\numberline {3.4.5}The extremum of quadratic functions}{10}{}%
+\contentsline {subsection}{\numberline {3.5}Quadratic inequalities}{10}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Boolean algebra}{10}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Solving quadratic inequalities}{10}{}%
+\contentsline {subsection}{\numberline {3.6}Challenging questions}{10}{}%
+\contentsline {section}{\numberline {4}Polynomial functions}{11}{}%
+\contentsline {subsection}{\numberline {4.1}Arithmetic rules for polynomials}{11}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Addition, Subtraction and Multiplication}{11}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Division}{11}{}%
+\contentsline {subsection}{\numberline {4.2}Divisibility of polynomials}{11}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Division algorithm}{11}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Remainder Theorem}{11}{}%
+\contentsline {subsubsection}{\numberline {4.2.3}Factor Theorem and General Vieta formula}{11}{}%
+\contentsline {subsection}{\numberline {4.3}G.C.D. and L.C.M.}{11}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Greatest common divisor}{11}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Least common multiple}{11}{}%
+\contentsline {subsection}{\numberline {4.4}Positional notation}{11}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}Binary, Octal, Decimal and Hexadecimal}{11}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}Conversion between different bases}{11}{}%
+\contentsline {subsection}{\numberline {4.5}Challenging questions}{11}{}%
+\contentsline {section}{\numberline {5}Exponential and Logarithmic functions}{12}{}%
+\contentsline {subsection}{\numberline {5.1}Exponential functions}{12}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Law of Exponential algebra}{12}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Seeing surds as fractional exponents}{12}{}%
+\contentsline {subsubsection}{\numberline {5.1.3}Solving equations using exponetiation method}{12}{}%
+\contentsline {subsection}{\numberline {5.2}Logarithmic functions}{12}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}What is Logarithm?}{12}{}%
+\contentsline {subsubsection}{\numberline {5.2.2}Law of Logarithmic algebra}{12}{}%
+\contentsline {subsubsection}{\numberline {5.2.3}Solving equations using Logarithmic method}{12}{}%
+\contentsline {subsection}{\numberline {5.3}Challenging questions}{12}{}%
+\contentsline {section}{\numberline {6}Sequence as a function of natural numbers}{13}{}%
+\contentsline {subsection}{\numberline {6.1}What is a sequence?}{13}{}%
+\contentsline {subsection}{\numberline {6.2}Arithmetic sequence}{13}{}%
+\contentsline {subsubsection}{\numberline {6.2.1}General form}{13}{}%
+\contentsline {subsubsection}{\numberline {6.2.2}Summation of arithmetic sequence}{13}{}%
+\contentsline {subsection}{\numberline {6.3}Geometric sequence}{13}{}%
+\contentsline {subsubsection}{\numberline {6.3.1}General form}{13}{}%
+\contentsline {subsubsection}{\numberline {6.3.2}Summation on Geometric sequence}{13}{}%
+\contentsline {subsubsection}{\numberline {6.3.3}Infinite sum of Geometric sequence}{13}{}%
+\contentsline {subsection}{\numberline {6.4}Additional content: Arithmetic-Geometric sequence}{13}{}%
+\contentsline {subsection}{\numberline {6.5}Challenging questions}{13}{}%

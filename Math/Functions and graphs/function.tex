@@ -8,7 +8,7 @@
 \usepackage{graphicx,float}
 \usepackage{physics}
 \usepackage{pgfplots}
-\usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
 
 \graphicspath{ {../images/} }
 
@@ -30,62 +30,295 @@
 \newtheorem*{example}{Example}
 \newtheorem*{axiom}{Axiom}
 
+\newtheorem{exercise}[subsubsection]{Essential Practice}
+\newenvironment{solution}{\textbf{Solution.} \par}{\hfill \textit{\dots end of solution}}
+
 \begin{document}
-    \section*{Learning objectives}
-    By studying this unit, we will achieve the following goals:
-    \begin{enumerate}
-        \item Recognising the intuitive concepts of functions, domains and co-domains, independent and dependent variables
-        \item Recognising the notation of functions and use tabular, algebraic and graphical mathods to represent functions.
-        \item Understanding the features of the graphs of quadratic functions.
-        \item Finding the maximum and minimum values of quadratic functions by the algebraic method.
-    \end{enumerate}
+    \begin{abstract}
+        In this pieces of notes, we will go through the concepts related to functions and the meaning of graphs of the functions.
+    \end{abstract}
 
-    \section*{Background}
-    Nowadays, humanity rely on technology very much, and we always have to get outputs from the computers. We input something, wait for the process, and it output something. This  is called the input-process-output procedure. Throw back to a long time ago, whenever there is business, the stratgies are similar. We gave money (input) to the businessman, wait for his process, and he returned some products (output) to us. We don't know how he packed things up, but we simply accept the product and go home. This was the origination of function.
+    \tableofcontents
 
-    A function consists of input and output, with no information about the process. Of course, in mathematics, or if we want to complete the concept of function, we still need to know about the process so that we could talk about properties of a function.
+    \newpage
 
-    We usually define a function (naively) as $$f(x)=\textrm{some formulae consisting of }x$$
+    \section{Function and its graph}
 
-    For a better intuition, we may refer to the formulae we learnt before, such as 
-    \begin{itemize}
-        \item the area formula of square: $A(\ell)=\ell^2$ where $\ell$ is the side length of a square.
-        \item the perimeter formula of rectangle: $P(\ell,w)=2(\ell+w)$ where $\ell$ denotes the length and $w$ denotes the width of the rectangle.
-        \item $\sin{x},\cos{x},\tan{x}$ as trigonometric functions giving out values according to $x$.
-    \end{itemize}
+    `Functions describes the world!', one Professor in Mathematics of Massachusetts Institute of Technology (a.k.a. MIT) said that. His speech was greatly influential, as I have never heard such conclusive thinking about functions. In fact, in the past few years, whenever I was studying in schools, my thought about functions is always only about projecting elements from oen set to another set, but what he said had a big impact to my knowledge about functions.
 
-    \section*{Domain of a function}
-    We always need to know if, given a function $f$ with concrete definition, where should the input be so that the function is well functioning. By concrete we mean that the output could be determined using combinations of operations explicitly. 
-    
-    We may discuss the meaning of domain by considering some extraordinary examples.
+    What function talks about, is a subjection of one elements to one another. It can be thought of as a pointing action started from element $A$ to element $B$, which not so far away, if we could think of subjecting a lot of, a bunch of, or a list of, whatever, objects from one collection to another collection, and they can all be matched under this pointing action, then it is a so-called function.
 
-    \begin{example}
-        Let $f(x)=\sqrt{x}$. The square-root operation can only be operated when $x\geq0$. It is originated from solving the equation $y^2=x$ and results in $y=\pm\sqrt{x}$. By the origination, we could see $x\geq 0$ as long as $y^2\geq 0$. This can be proven by checking $(-1)^2=1>0$. As a result, we define the domain of $f(x)=\sqrt{x}$ as $x\geq0$.
-    \end{example}
+    For example, in an Indian factory, the production of food undergoes many different process. Those can all be called functions. Let say a raw material comes to the factory first, it then be put to a machine to chop into many small pieces. It is the chopping function inside the factory. Next, the chopped material will be put into a pool of yellowish-brownish liquid and be stirred by dirty hands. It is the Mixing function in the factory. After that, the liquid will be drained on the dirty floor and be stepped on by Indian workers so that they can be smell freshed. It is the flavouring function in the factory. Finally, it will be sold to stores, which is the selling function. 
 
-    \begin{example}
-        Let $g(x)=\frac{1}{x}$. We will define its domain as $x\neq 0$. We know that whenever $x\neq 0$, $\frac{1}{x}$ is well defined and $x\cdot\frac{1}{x}=1$. But we could not define $\frac{1}{0}$. We could think of if $\frac{1}{0}$ is well defined, then we could approximate its value from both positive and negative sides to obtain the same value. But we will see $\frac{1}{0.1}=10, \frac{1}{0.01}=100,\dots,+\infty$ and $\frac{1}{-0.1}=-10, \frac{1}{-0.01}=-100,\dots,-\infty$, which differentiate apart. Unless we have a better definition to what is infinity (in fact, in the sense of complex number, we can define $\frac{1}{0}$ explicitly, with a useful restriction and property of numbers), we should write $g(x)=\frac{1}{x}$ has domain $x\neq 0$.
-    \end{example}
+    Another example is what our body does. We eat and drink, going down the digestive system, and we sit on a toilet. Although we stupid human knows nothing about how the digestive system works, we could still name the conversion from food to poops a digestion, which means the digestive function representing the process in our body.
 
-    \begin{example}
-        Let $h(x)=\frac{1}{\sqrt{x}}$. We could see this function as a composition of two functions. First we know from $g(x)$ that we need $\sqrt{x}\neq 0$. Second, we have $\sqrt{x}\geq 0$. Combining two condition, we have to have $x>0$ as domain of $h(x)=\frac{1}{\sqrt{x}}$.
-    \end{example}
+    So we know that function as an english word represents the naming of a process of conversion, it is the time to explore how Math functions works.
 
-    As a conclusion, we shall see the definition of domain of function is to consider the largest set of numbers that making the function of sense, that we can write out the outputs properly.
+    \subsection{What is a Function?}
 
-    \section*{Co-domain of a function}
-    We had domain for a function as where the input comes and should comes from. At the same time, we need to know where the output goes in our expectation. That is what we called the \textbf{co-domain} of a function. In fact, we need to define a co-domain for each function, so that we know not only the expected output set, but also the restriction on output. This concept is relatively complicated to highschool public, so let me demonstrate it with some examples.
+    A function is defined as follow:
 
-    Before the examples, we need a few conventions on our writing. We shall write $$f:D\to C$$ to denote the function $f$ having domain $D$ and codomain $C$, in which the arrow $\to$ denotes the meaning as `goes to'. In complete sentence, it says `$f$ is a function going from domain $D$ to codomain $C$'.
+    \begin{definition}[Function]
+        Given an input $x$ and an output $y$, a \textbf{function} is a relation between $x$ and $y$ so that we can write $y=f(x)$ to represent the relationship. 
+    \end{definition}
 
-    \begin{example}
-        Let $f:(0,\infty)\to(0,\infty)$ be a function from positive real number to positive real number, defined by $f(x)=\frac{1}{\sqrt{x}}$. The notion $(0,\infty)$ denotes the interval in real number line greater than 0. In particular, we see that $f(\frac{1}{n})=\sqrt{n},f(1)=1,f(n)=\frac{1}{\sqrt{n}}$ provide an insight of how the function map the real numbers, that is, inverting the positive real line.
-    \end{example}
+    \begin{exercise}
+        Write down functions for the following input-output variables:\begin{enumerate}
+            \item $u$ as input and $v$ as output;
+            \item $b$ as input and $a$ as output;
+            \item $n$ as input and $1$ as output (which we call it a constant function);
+            \item $x^2$ as input and $y$ as output;
+            \item $xy$ as input and $z$ as output;
+            \item $2^x$ as input and $k$ as output;
+            \item $\sqrt{p}$ as input and $q$ as output;
+        \end{enumerate}
+    \end{exercise}
 
-    One can also write $f:(0,\infty)\to(-\infty,\infty)$ as long as the outputs are located inside the interval of co-domain. If one has its outputs filling up the co-domain, we will call the co-domain as \textbf{range} of $f$, denote by $\textbf{Ran}(f)$. That is, $f(D)=C$. 
+    \begin{remark}
+        It is notable that we may write functions as $y=g(x)$, $y=h(x)$, $y=d(x)$, \dots as we want. The `naming' of a function is always definitive and up to user's construction.
+    \end{remark}
 
-    \section*{Independent and dependent variable}
-    Once we know that we can write out a function by writing $$f(x)=\dots$$ which its expression depends on the value of $x$, we will say that $x$ is the \textbf{independent variable} of $f$, with the meaning of `changing its value independently'. In this case, we pronounce it as `$f$ of $x$' to specify how they relate. If the function depends on more than one variable, say $$f(x,y,z,w,\dots)=\dots$$ then we have $x,y,z,w,\dots$ all be the independent variables, as long as they are all changing independently and having effects on $f$. This case, we pronounce it as `$f$ of $x,y,z,w,\dots$'.
+    We can also apply functions after functions. To do so, we have to talk about the following:
 
-    On the other hand, we would like to denote $y=f(x)$ for simplicity when we are writing it, and we in some sense think of $y$ is given by the function $f(x)$ with given $x$. We shall call $y$ the \textbf{dependent variable}, as what we have learned in Science Lab.
+    \begin{definition}[Composite functions]
+        Let $f$ and $g$ be functions such that $f$ takes $x$ as input and $y$ as output, and $g$ takes $y$ as input and $z$ as output. Then we can say there is a function $h$ that takes $x$ as input and $z$ as output. In other words, $h$ is a \textbf{composite function} such that $z=h(x)=g(f(x))$.
+    \end{definition}
+
+    \begin{exercise}
+        Let $f$ and $g$ be functions such that $b=f(a), c=g(b)$. Write a function for $a$ as input and $c$ as output.
+    \end{exercise}
+        
+
+    \subsubsection{Function as an input-output pair}
+
+    \subsubsection{Defining a function with variables}
+
+    \subsubsection{Domain, Codomain and Range}
+
+    \subsection{Graph of a function}
+
+    \subsubsection{Blobs-and-arrows diagram for discrete functions}
+
+    \subsubsection{The pairing table and xy-coordination}
+
+    \subsection{Fundamental properties of a graph}
+
+    \subsubsection{points lying on the graph}
+
+    \subsubsection{x-intercept}
+
+    \subsubsection{y-intercept}
+
+    \subsubsection{general intersection}
+
+    \subsection{Solving equations using graphs of functions}
+
+    \subsection{Transformation of functions}
+
+    \subsubsection{Translation}
+
+    \subsubsection{Dilation}
+
+    \subsection{Challenging questions}
+
+    \newpage
+
+    \section{Linear functions}
+
+    \subsection{Fundamental concepts of points}
+
+    \subsubsection{Distance between two points}
+
+    \subsubsection{Mid-point and Division points}
+
+    \subsection{Different forms of a linear function}
+
+    \subsubsection{Slope of a line}
+
+    \subsubsection{Two-point form}
+
+    \subsubsection{Point-slope form}
+
+    \subsubsection{Slope-intercept form}
+
+    \subsubsection{General form}
+
+    \subsubsection{Special: Intercept-form}
+
+    \subsection{Parallel lines and Perpendicular lines}
+
+    \subsubsection{Point of intersection}
+
+    \subsubsection{Parallel lines}
+
+    \subsubsection{Perpendicular lines}
+
+    \subsubsection{Number of intersections}
+
+    \subsection{Angle of elevation and depression}
+
+    \subsection{Additional content: Point-line distance}
+
+    By definition, the distance between two points on a $\mathbb{R}^2$ plane is 
+
+    \begin{definition}[Distance between two points]
+        Let $A(x_1,y_1)$ and $B(x_2,y_2)$ be two points on $\mathbb{R}^2$-plane. The distance between $A$ and $B$ is computed by the formula $$\mathrm{dist}(A,B):=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$$
+    \end{definition}
+
+    Now let $L:ax+by+c=0$ be a straight line and $P(x_0,y_0)$ be a point on $\mathbb{R}^2$-plane. Note that with the following axiom
+
+    \begin{axiom}
+        The distance between a point $P$ and a line $L$ is defined by the shortest distance between $P$ and a point on $L$ $$\mathrm{dist}(P,L):=\inf\{\mathrm{dist}(P,Q):Q\in L\}$$
+    \end{axiom}
+
+    we can choose the perpendicular displacement of $P$ from $L$ to define the distance. Using the line $\Gamma$ perpendicular to $L$ passing through $P$, we can find such $Q$ by following computation:
+
+    \begin{align*}
+        \begin{cases}
+            L:ax+by+c=0\\
+            \Gamma:bx-ay+(ay_0-bx_0)=0
+        \end{cases}\implies Q(\frac{b^2x_0-aby_0-ac}{a^2+b^2},\frac{a^2y_0-abx_0-bc}{a^2+b^2})
+    \end{align*}
+
+    Therefore, the distance between $P$ an $Q$ is \begin{align*}
+        \mathrm{dist}(P,Q)&=\frac{1}{a^2+b^2}\sqrt{[(a^2+b^2)x_0-(b^2x_0-aby_0-ac)]^2+[(a^2+b^2)y_0-(a^2y_0-abx_0-bc)]^2}\\
+        &=\frac{1}{a^2+b^2}\sqrt{(a^2x_0+aby_0+ac)^2+(b^2y_0+abx_0+bc)^2}\\
+        &=\frac{\sqrt{a^2+b^2}\sqrt{(ax_0+by_0+c)^2}}{a^2+b^2}\\
+        &=\frac{\sqrt{(ax_0+by_0+c)^2}}{\sqrt{a^2+b^2}}\\
+        &=\left|\frac{ax_0+by_0+c}{\sqrt{a^2+b^2}}\right|
+    \end{align*}
+
+    \subsection{Linear inequalities}
+
+    \subsubsection{One variable inequality}
+
+    \subsubsection{Two variable inequality}
+
+    \subsubsection{Linear programming}
+
+    \subsection{Challenging questions}
+
+    \newpage
+
+    \section{Quadratic functions}
+
+    \subsection{Solving Quadratic Equations}
+
+    \subsubsection{The square-root method}
+
+    \subsubsection{General form and Completing the square method}
+
+    \subsubsection{The quadratic formula}
+
+    \subsection{Solvability of Quadratic Equations}
+
+    \subsubsection{Discriminant: the factor affecting solvability}
+
+    \subsubsection{Application of solvability}
+
+    \subsection{Relation between coefficients and roots}
+
+    \subsubsection{What does it mean by a root?}
+
+    \subsubsection{The Vieta formula}
+
+    \subsubsection{Forming quadratic equations with given roots}
+
+    \subsection{Vertex form of a quadratic function}
+
+    \subsubsection{Obtaining vertex form using Transformation}
+
+    \subsubsection{Relation between vertex form and general form}
+
+    \subsubsection{Opening direction}
+
+    \subsubsection{The axis of symmetry}
+
+    \subsubsection{The extremum of quadratic functions}
+
+    \subsection{Quadratic inequalities}
+
+    \subsubsection{Boolean algebra}
+
+    \subsubsection{Solving quadratic inequalities}
+
+    \subsection{Challenging questions}
+
+    \newpage 
+
+    \section{Polynomial functions}
+
+    \subsection{Arithmetic rules for polynomials}
+
+    \subsubsection{Addition, Subtraction and Multiplication}
+
+    \subsubsection{Division}
+
+    \subsection{Divisibility of polynomials}
+
+    \subsubsection{Division algorithm}
+
+    \subsubsection{Remainder Theorem}
+
+    \subsubsection{Factor Theorem and General Vieta formula}
+
+    \subsection{G.C.D. and L.C.M.}
+
+    \subsubsection{Greatest common divisor}
+
+    \subsubsection{Least common multiple}
+
+    \subsection{Positional notation}
+
+    \subsubsection{Binary, Octal, Decimal and Hexadecimal}
+
+    \subsubsection{Conversion between different bases}
+
+    \subsection{Challenging questions}
+
+    \newpage
+
+    \section{Exponential and Logarithmic functions}
+
+    \subsection{Exponential functions}
+
+    \subsubsection{Law of Exponential algebra}
+
+    \subsubsection{Seeing surds as fractional exponents}
+
+    \subsubsection{Solving equations using exponetiation method}
+
+    \subsection{Logarithmic functions}
+
+    \subsubsection{What is Logarithm?}
+
+    \subsubsection{Law of Logarithmic algebra}
+
+    \subsubsection{Solving equations using Logarithmic method}
+
+    \subsection{Challenging questions}
+
+    \newpage
+
+    \section{Sequence as a function of natural numbers}
+
+    \subsection{What is a sequence?}
+
+    \subsection{Arithmetic sequence}
+
+    \subsubsection{General form}
+
+    \subsubsection{Summation of arithmetic sequence}
+
+    \subsection{Geometric sequence}
+
+    \subsubsection{General form}
+
+    \subsubsection{Summation on Geometric sequence}
+
+    \subsubsection{Infinite sum of Geometric sequence}
+
+    \subsection{Additional content: Arithmetic-Geometric sequence}
+
+    \subsection{Challenging questions}
 \end{document}
