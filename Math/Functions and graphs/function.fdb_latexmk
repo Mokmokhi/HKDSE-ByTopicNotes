@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1707296233 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1707296236
+["pdflatex"] 1707329471 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1707329474
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1685554408 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
@@ -224,10 +224,10 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1707296233 18530 09c07d2ab326e3c00b7269dadcc98bf1 ""
-  "function.aux" 1707296236 12269 31c0fc062c223a1408f243b4a3c611b1 "pdflatex"
-  "function.tex" 1707296233 18530 09c07d2ab326e3c00b7269dadcc98bf1 ""
-  "function.toc" 1707296236 8120 2f3c5bbc9d8038d6ab92be816aa58d01 "pdflatex"
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1707329470 19768 8c5f86488e8108293cb10fa77b4c8502 ""
+  "function.aux" 1707329474 12269 2a1cc50c05a96a63804870be6d7b3f07 "pdflatex"
+  "function.tex" 1707329470 19768 8c5f86488e8108293cb10fa77b4c8502 ""
+  "function.toc" 1707329474 8120 ed5540b75d7955a729de8f320b1ad6f9 "pdflatex"
   (generated)
   "function.aux"
   "function.log"
