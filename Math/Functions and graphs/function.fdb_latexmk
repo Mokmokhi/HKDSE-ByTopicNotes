@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1707252858 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1707252861
+["pdflatex"] 1707296233 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1707296236
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1685554408 97209 b9ab7b842b3c771cd35ad2d356d9bb55 ""
   "C:/Users/Owenm/AppData/Roaming/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
@@ -69,9 +69,12 @@
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "D:/Program Files (x86)/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "D:/Program Files (x86)/MiKTeX/tex/generic/babel/babel.def" 1622647513 121009 d797444026f7ec580bc6c8aa432a71ab ""
@@ -221,10 +224,10 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1707252855 11476 e6d296599f77083e22f868605ab97d5c ""
-  "function.aux" 1707252861 12233 e52b048e2b5cb3c2d776fae440bc5f14 "pdflatex"
-  "function.tex" 1707252855 11476 e6d296599f77083e22f868605ab97d5c ""
-  "function.toc" 1707252861 8084 63ca1c83cf23780e248f4cf82f7d4d84 "pdflatex"
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1707296233 18530 09c07d2ab326e3c00b7269dadcc98bf1 ""
+  "function.aux" 1707296236 12269 31c0fc062c223a1408f243b4a3c611b1 "pdflatex"
+  "function.tex" 1707296233 18530 09c07d2ab326e3c00b7269dadcc98bf1 ""
+  "function.toc" 1707296236 8120 2f3c5bbc9d8038d6ab92be816aa58d01 "pdflatex"
   (generated)
   "function.aux"
   "function.log"

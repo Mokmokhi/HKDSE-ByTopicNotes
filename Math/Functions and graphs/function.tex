@@ -20,7 +20,7 @@
 \newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
 \newcommand{\id}{\mathtt{id}}
 
-\newtheorem*{definition}{Definition}
+\newtheorem{definition}{Definition}[section]
 \newtheorem*{theorem}{Theorem}
 \newtheorem*{corollary}{Corollary}
 \newtheorem*{lemma}{Lemma}
@@ -30,8 +30,9 @@
 \newtheorem*{example}{Example}
 \newtheorem*{axiom}{Axiom}
 
-\newtheorem{exercise}[subsubsection]{Essential Practice}
+\newtheorem{exercise}{Essential Practice}[subsubsection]
 \newenvironment{solution}{\textbf{Solution.} \par}{\hfill \textit{\dots end of solution}}
+
 
 \begin{document}
     \begin{abstract}
@@ -91,10 +92,99 @@
 
     \subsubsection{Function as an input-output pair}
 
+    We may now consider how functions carry things to things using arrow notations. We may use a stroked arrow $\mapsto$ to emphasis the carrying process. Let's take a look at the following examples.
+
+    \begin{example}
+        Given a function that undergoes the process of adding one to the given element. We can say $$\dots, 1\mapsto 2, 2\mapsto 3, 3\mapsto 4, \dots$$
+
+        In other words, we may write $$x\mapsto x+1$$ to generalize the process of adding one to the given element, which is how we usually write to describe any functions.
+    \end{example}
+
+    The example shows that we can generalize the process using algebraic notation, in which it is usually in the form of $$x\mapsto f(x)$$ with the function $f$. It is equivalent to say that $$\dots, 1\mapsto f(1), 2\mapsto f(2), \dots$$ but what's important is how explicit the mapping process is done. More examples could be viewed to familiarize with it.
+
+    \begin{example}
+        To describe a function undergoes the process `multiplying the element by two and add one to it', we may examine that $$\dots, 0\mapsto 1, 1\mapsto 3, 2\mapsto 5,\dots$$ so that it is equivalent to write $$x\mapsto 2x+1$$ as a generalization of the function. It is equivalent to write $f(x):=2x+1$ to emphasis that we shall call the function $f$ as a naming for the given process, as long as we can write $$x\mapsto f(x), f(x):=2x+1$$
+    \end{example}
+
+    \begin{exercise}
+        Examine the following functions from 0 to 3, and generalize the function using algebraic notation. You may either choose writing $x\mapsto \square$ directly or $x\mapsto f(x), f(x):=\square$.\begin{enumerate}
+            \item Multiply the element by 3 and then add 2 to it.
+            \item Divide the element by 10 and then Subtract 7 from it.
+            \item Multiply the element by $a$ and then add $b$ to it.
+            \item Squaring the element.
+            \item Multiply 3 to the square of the element, an then add 5 to it.
+            \item Add 1 to the element first, then multiply the square of the result by 6, and then add 1 to it.
+            \item Subtract 8 from the element first, then divide the square of the result by 2, and then add 4 to it.
+            \item Subtract $h$ from the element first, then multiply the square of the result by $a$, and then add $k$ to it.
+        \end{enumerate}
+    \end{exercise}
+
+    It is notable that a function can only gives one output for each input, which makes the next page a fruitful discussion.
+
     \subsubsection{Defining a function with variables}
 
+    So far, we have learnt how writing a generalization of a function is, and have we used algebraic nnotation to shorten the examination, one suggest we can always write algebraic notation for a function definition. In addition, we also find that a function cannot have more than one output, as we see functions as a pointing process from one element to another element. So we have the following definition:
+
+    \begin{definition}[Function]
+        A \textbf{function $f$ of $x$} defines the pointing process $x\mapsto f(x)$ is a one-to-one pointing process, which can have only one output.
+    \end{definition}
+
+    It is important to note that $f(x)$ is a function of $x$ if and only if one $x$ produce one $f(x)$. The $x$ is called a \textit{dummy variable}, which is a variable that can be changed all the time. For example, writing $f(y)$ or $g(z)$ still makes sense to say a function, but not of $x$.
+
+    From now on, we can determine whether a given relation is a function or not.
+
+    \begin{example}
+        Given the relation $y=mx+c$. Since one $x$ can produce only one $y$, $y$ is a function of $x$; on the other hand, we also see one $y$ produces only one $x$, so $x$ is also a function of $y$.
+    \end{example}
+
+    \begin{example}
+        Given the relation $y=x^2$. Since one $x$ can produce only one $y$, $y$ is a function of $x$; however,  one $y$ may produces more than one $x$, say if $y=4$ then $x$ can be $2$ or $-2$, so $x$ is not a function of $y$.
+    \end{example}
+
+    \begin{exercise}
+        Determine whether the following given relation between $x$ and $y$ is a function of one another or not. Provide counterexample if it is not a function.\begin{enumerate}
+            \item $y=-x$;
+            \item $y=4x+3$;
+            \item $y=\frac{1}{x}$;
+            \item $y=\frac{x}{6}$;
+            \item $y^2=x$;
+            \item $y^2=x^2$;
+            \item $y^3=4x^2-3$.
+        \end{enumerate}
+    \end{exercise}
     \subsubsection{Domain, Codomain and Range}
 
+    For explicit definition of a function, we need the following concepts to help with: \textit{domain}, \textit{codomain} and \textit{range}.
+
+    A \textbf{domain} is where the input comes from, which is usually half-customized and half-restricted. For example, $f(x)=\frac{1}{x}$ can have input of negative real numbers, positive real numbers, any complex numbers except 0. This means that 0 is naturally restricted by the operation of $\frac{1}{x}$, but other than 0, we can choose freely our input from all complex numbers. Thus, the largest domain of $f(x)=\frac{1}{x}$ is all complex numbers except 0. However, it is not saying that the domain of $f(x)=\frac{1}{x}$ must be all complex numbers except 0, we can still put restrictions on our own, what means by customize, like all real numbers except 0 or all positive real numbers except 0 as its domain, is still a possible choice. Hence, we shall usually talks about the \textit{greatest possible domain of a function} if we need to find the natural restrictions, and the \textit{domain of a function} if we are going to define our source of input.
+
+    \begin{exercise}
+        Find the greatest possible domain of the following functions if (i) the output is restricted to complex numbers and (ii) the output is restricted to be real numbers:\begin{enumerate}
+            \item $f(x):=x$;
+            \item $f(x):=ax+b$;
+            \item $f(x):=\frac{a}{x}$;
+            \item $f(x):=x^2$;
+            \item $f(x):=a(x-h)^2+k$;
+            \item $f(x):=\sqrt{x}$;
+            \item $f(x):=\sqrt[3]{x}$;
+            \item $f(x):=\frac{1}{\sqrt{x}}$;
+        \end{enumerate}
+    \end{exercise}
+
+    A \textbf{codomain} is where the output can go to. It is more likely a limitation of the output of the function so that we know where our target is. Similarly, we shall usually talks about the \textit{greatest possible codomain of the function} if we need to find the natural restrictions, and the \textit{domain of the function} if we are going to define our target output.
+
+    \begin{exercise}
+        Find the greatest possible codomain of the following functions if the input is unrestricted:\begin{enumerate}
+            \item $f(x):=x$;
+            \item $f(x):=ax+b$;
+            \item $f(x):=\frac{a}{x}$;
+            \item $f(x):=x^2$;
+            \item $f(x):=a(x-h)^2+k$;
+            \item $f(x):=\sqrt{x}$;
+            \item $f(x):=\sqrt[3]{x}$;
+            \item $f(x):=\frac{1}{\sqrt{x}}$;
+        \end{enumerate}
+    \end{exercise}
     \subsection{Graph of a function}
 
     \subsubsection{Blobs-and-arrows diagram for discrete functions}
