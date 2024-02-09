@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{{../images/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[LH]{Quaternion and its application}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem*{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\begin{document}
+    \section{Quaternion}
+
+    \begin{definition}[Quaternion]
+        Let $a,b,c,d\in\mathbb{R}$ and unit vectors $\mathbf{i},\mathbf{j},\mathbf{k}$ be pointing positively along 3 spatial axes such that a \textbf{quaternion} $q$ can be written in the form of $$a+b\mathbf{i}+c\mathbf{j}+d\mathbf{k}$$
+
+        The scalar part of $q$ is denoted by $\Re{q}:=a$ and the vector part of $q$ is denoted by $\Im{q}:=b\mathbf{i}+c\mathbf{j}+d\mathbf{k}$. The space of quaternion is denoted by $\mathbb{H}$, called the \textbf{Hamiltonian}.
+    \end{definition}
+
+    To type it simple, I may sometimes denote $a+b\mathbf{i}+c\mathbf{j}+d\mathbf{k}$ as $(a,b,c,d)$. For readability, it may sometimes be a column vector $\begin{pmatrix}
+        a\\b\\c\\d
+    \end{pmatrix}$.
+
+    \begin{definition}[Quaternion Arithmetic]
+        Let $p:=(p_0,p_1,p_2,p_3),q:=(q_0,q_1,q_2,q_3)\in\mathbb{H}$. Then the arithmetic of quaternion is defined by\begin{itemize}
+            \item Addition: $p+q:=(p_0+q_0,p_1+q_1,p_2+q_2,p_3+q_3)$;
+            \item Scalar multiplication: $\lambda p:=(\lambda p_0,\lambda p_1, \lambda p_2, \lambda p_3)$ for $\lambda\in\mathbb{R}$.
+            \item $\mathbf{i}\mathbf{j}=-\mathbf{j}\mathbf{i}=\mathbf{k}$, $\mathbf{j}\mathbf{k}=-\mathbf{k}\mathbf{j}=\mathbf{i}$, $\mathbf{k}\mathbf{i}=-\mathbf{i}\mathbf{k}=\mathbf{j}$, $\mathbf{i}\mathbf{j}\mathbf{k}=-1$.
+        \end{itemize}
+    \end{definition}
+
+    \begin{proposition}[Identity element]
+        $1\in\mathbb{H}$ is the only identity element.
+    \end{proposition}
+
+    \begin{proof}
+        Suppose the identity element $e\in\mathbb{H}$ is in the form of $(e_0,e_1,e_2,e_3)$. Then \begin{align*}
+            (q_0,q_1,q_2,q_3)(e_0,e_1,e_2,e_3)&=\begin{pmatrix}
+                q_0e_0-q_1e_1-q_2e_2-q_3e_3\\
+                q_0e_1+q_1e_0+q_2e_3-q_3e_2\\
+                q_0e_2+q_2e_0+q_3e_1-q_1e_3\\
+                q_0e_3+q_3e_0+q_1e_2-q_2e_1
+            \end{pmatrix}
+            =\begin{pmatrix}
+                q_0\\q_1\\q_2\\q_3
+            \end{pmatrix}
+        \end{align*}
+
+        Solving equation yields $e_0=1$ and $e_1=e_2=e_3=0$.
+    \end{proof}
+
+    \begin{definition}[Modulus]
+        The modulus of a quaternion $q=(q_0,q_1,q_2,q_3)\in\mathbb{H}$ is defined as $$|q|:=\sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$$
+    \end{definition}
+
+    \begin{proposition}[Conjugation]
+        For $q=(q_0,q_1,q_2,q_3)$, the algebraic conjugation $\bar{q}$ is $$(q_0,-q_1,-q_2,-q_3)$$
+    \end{proposition}
+
+    \begin{proof}
+        Consider $\bar{q}:=(\bar{q}_0,\bar{q}_1,\bar{q}_2,\bar{q}_3)$, we have to have \begin{align*}
+            (q_0,q_1,q_2,q_3)(\bar{q}_0,\bar{q}_1,\bar{q}_2,\bar{q}_3)&=\begin{pmatrix}
+                q_0\bar{q}_0-q_1\bar{q}_1-q_2\bar{q}_2-q_3\bar{q}_3\\
+                q_0\bar{q}_1+q_1\bar{q}_0+q_2\bar{q}_3-q_3\bar{q}_2\\
+                q_0\bar{q}_2+q_2\bar{q}_0+q_3\bar{q}_1-q_1\bar{q}_3\\
+                q_0\bar{q}_3+q_3\bar{q}_0+q_1\bar{q}_2-q_2\bar{q}_1
+            \end{pmatrix}
+            =\begin{pmatrix}
+                q_0^2+q_1^2+q_2^2+q_3^2\\0\\0\\0
+            \end{pmatrix}
+        \end{align*}
+        which yields $\bar{q_0}=q_0$, $\bar{q_1}=-q_1$, $\bar{q_2}=-q_2$, $\bar{q_3}=-q_3$.
+    \end{proof}
+
+    \section{Rubik's cube with quaternion}
+\end{document}
