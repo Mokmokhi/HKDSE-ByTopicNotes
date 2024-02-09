@@ -70,8 +70,8 @@
         Solving equation yields $e_0=1$ and $e_1=e_2=e_3=0$.
     \end{proof}
 
-    \begin{definition}[Modulus]
-        The modulus of a quaternion $q=(q_0,q_1,q_2,q_3)\in\mathbb{H}$ is defined as $$|q|:=\sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$$
+    \begin{definition}[Norm]
+        The norm of a quaternion $q=(q_0,q_1,q_2,q_3)\in\mathbb{H}$ is defined as $$\norm*{q}:=\sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$$
     \end{definition}
 
     \begin{proposition}[Conjugation]
@@ -92,6 +92,13 @@
         \end{align*}
         which yields $\bar{q_0}=q_0$, $\bar{q_1}=-q_1$, $\bar{q_2}=-q_2$, $\bar{q_3}=-q_3$.
     \end{proof}
+
+    \begin{corollary}
+        By seeing a quaternion as a scalar adjoin with a vector, we can rewrite the above in another way. Suppose $q=r+\vec{v}$, where $r\in \mathbb{R}$ and $\vec{v}\in\mathbb{R}^3$. \begin{itemize}
+            \item Norm: $\norm*{q}=\sqrt{r^2+\innerproduct{\vec{v}}{\vec{v}}}$.
+            \item Conjugation: $\bar{q}=r-\vec{v}$.
+        \end{itemize}
+    \end{corollary}
 
     \section{Rubik's cube with quaternion}
 \end{document}
