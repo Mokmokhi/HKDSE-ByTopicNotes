@@ -1,0 +1,165 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{{../image/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{引導練習題解}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{命題}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{示例}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item \begin{align*}
+                \begin{bmatrix}
+                    y_1\\y_2\\\vdots\\y_n
+                \end{bmatrix}=\begin{bmatrix}
+                    a_{11}&a_{12}&\cdots&a_{1n}\\
+                    a_{21}&a_{22}&\cdots&a_{2n}\\
+                    \vdots&\vdots&\ddots&\vdots\\
+                    a_{n1}&a_{n2}&\cdots&a_{nn}
+                \end{bmatrix}\begin{bmatrix}
+                    x_1\\x_2\\\vdots\\x_n
+                \end{bmatrix}
+            \end{align*}
+            \item 欲證明$\mathbf{y}_k=A\mathbf{x}_k$，則證明\begin{align*}
+                \begin{bmatrix}
+                    y_{1k}\\y_{2k}\\\vdots\\y_{nk}
+                \end{bmatrix}=\begin{bmatrix}
+                    a_{11}&a_{12}&\cdots&a_{1n}\\
+                    a_{21}&a_{22}&\cdots&a_{2n}\\
+                    \vdots&\vdots&\ddots&\vdots\\
+                    a_{n1}&a_{n2}&\cdots&a_{nn}
+                \end{bmatrix}\begin{bmatrix}
+                    x_{1k}\\x_{2k}\\\vdots\\x_{nk}
+                \end{bmatrix}
+            \end{align*}
+            將之簡化，則需證明$\forall i, \forall k$，$$y_{ik}=\sum_{j=1}^{n}a_{ij}x_{jk}$$
+            此為矩陣乘法定義，因此證畢。
+            \item 此矩陣按固定變換方式將$\mathbf{x}_k$映射至$\mathbf{y}_k$。視$\mathbf{x}_k$與$\mathbf{y_k}$為$n$維空間内的兩組坐標，則是$n$組坐標按同一方式進行坐標變換，可視作幾何圖形的綫性變換。
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $f(x)=g^{-1}(d(g(x)))=P^{-1}DPx=Ax$。$f$為以矩陣$A$對坐標$x$進行綫性變換。變換過程：先從$X$的基底變換至$Y$的基底，按$Y$的基底利用矩陣$D$放大縮小，再變換回$X$基底。
+            \item 若$X$的維數為$m$，$Y$的維數為$n$，設$x\in X, y\in Y$，則$$\begin{bmatrix}
+                y_1\\y_2\\\vdots\\y_n
+            \end{bmatrix}=\begin{bmatrix}
+                b_{11}&b_{12}&\cdots&b_{1m}\\
+                b_{21}&b_{22}&\cdots&b_{2m}\\
+                \vdots&\vdots&\ddots&\vdots\\
+                b_{n1}&b_{n2}&\cdots&b_{nm}
+            \end{bmatrix}\begin{bmatrix}
+                x_1\\x_2\\\vdots\\x_m
+            \end{bmatrix}$$
+            定$y=Bx$。若$m<n$，則$B=\begin{bmatrix}
+                b_{11}&b_{12}&\cdots&b_{1m}&0&\cdots&b_{1n}=0\\
+                b_{21}&b_{22}&\cdots&b_{2m}&0&\cdots&b_{2n}=0\\
+                \vdots&\vdots&\ddots&\vdots&\vdots&\cdots&\vdots\\
+                b_{n1}&b_{n2}&\cdots&b_{nm}&0&\cdots&b_{nn}=0
+            \end{bmatrix}$使得$|B|=0$，則$B$不可逆；若$m>n$，則$B=\begin{bmatrix}
+                b_{11}&b_{12}&\cdots&b_{1m}\\
+                b_{21}&b_{22}&\cdots&b_{2m}\\
+                \vdots&\vdots&\ddots&\vdots\\
+                b_{n1}&b_{n2}&\cdots&b_{nm}\\
+                0&0&\cdots&0\\
+                \vdots&\vdots&\ddots&\vdots\\
+                b_{m1}=0&b_{m2}=0&\cdots&b_{mm}=0
+            \end{bmatrix}$使得$|B|=0$，則$B$不可逆。
+            \item 不可被對角化的幾何含義為綫性變換的維數不同。
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item \begin{enumerate}
+                \item \begin{align*}
+                    \derivative{A}{t}&=\lim_{h\to 0}\frac{A-A}{h}=0
+                \end{align*}
+                \item \begin{align*}
+                    \derivative{(At^n)}{t}&=\lim_{h\to 0}\frac{A(t+h)^n-At^n}{h}\\
+                    &=A\lim_{h\to 0}\frac{(t+h)^n-t^n}{h}\\
+                    &=A\derivative{t^n}{t}\\
+                    &=A(nt^{n-1})\\
+                    &=nAt^{n-1}
+                \end{align*}
+                \item \begin{align*}
+                    \derivative{e^{At}}{t}&=\lim_{h\to 0}\frac{e^{A(t+h)}-e^{At}}{h}\\
+                    &=e^{At}\lim_{h\to 0}\frac{e^{Ah}-I}{h}\\
+                \end{align*}
+                考慮\begin{align*}
+                    \frac{e^{Ah}-I}{h}&=\frac{1}{h}(\sum_{n=0}^{\infty}\frac{(Ah)^n}{n!}-I)\\
+                    &=\frac{1}{h}(\sum_{n=1}^{\infty}\frac{(Ah)^n}{n!})\\
+                    &=\sum_{n=1}^{\infty}\frac{A^nh^{n-1}}{n!}\\
+                    &=\sum_{n=0}^{\infty}\frac{A^{n+1}h^n}{(n+1)!}\\
+                    &=A+\sum_{n=1}^{\infty}\frac{A^{n+1}h^n}{(n+1)!}
+                \end{align*}
+                因此\begin{align*}
+                    \lim_{h\to 0}\frac{e^{Ah}-I}{h}&=A\\
+                    \derivative{e^{At}}{t}&=e^{At}A\\
+                    &=\sum_{n=0}^{\infty}\frac{A^nt^n}{n!}A\\
+                    &=\sum_{n=0}^{\infty}\frac{A^{n+1}t^n}{n!}\\
+                    &=A\sum_{n=0}^{\infty}\frac{A^nt^n}{n!}\\
+                    &=Ae^{At}
+                \end{align*}
+            \end{enumerate}
+            \item \begin{enumerate}
+                \item 設$F(t):=\begin{bmatrix}
+                    f_{11}(t)&f_{12}(t)&\cdots&f_{1n}(t)\\
+                    f_{21}(t)&f_{22}(t)&\cdots&f_{2n}(t)\\
+                    \vdots&\vdots&\ddots&\vdots\\
+                    f_{m1}(t)&f_{m2}(t)&\cdots&f_{mn}(t)
+                \end{bmatrix}$，$F'(t)=\begin{bmatrix}
+                    f_{11}'(t)&f_{12}'(t)&\cdots&f_{1n}'(t)\\
+                    f_{21}'(t)&f_{22}'(t)&\cdots&f_{2n}'(t)\\
+                    \vdots&\vdots&\ddots&\vdots\\
+                    f_{m1}'(t)&f_{m2}'(t)&\cdots&f_{mn}'(t)
+                \end{bmatrix}$，$G(t):=\begin{bmatrix}
+                    g_{11}(t)&g_{12}(t)&\cdots&g_{1\ell}(t)\\
+                    g_{21}(t)&g_{22}(t)&\cdots&g_{2\ell}(t)\\
+                    \vdots&\vdots&\ddots&\vdots\\
+                    g_{n1}(t)&g_{n2}(t)&\cdots&g_{n\ell}(t)
+                \end{bmatrix}$，$G'(t)=\begin{bmatrix}
+                    g_{11}'(t)&g_{12}'(t)&\cdots&g_{1\ell}'(t)\\
+                    g_{21}'(t)&g_{22}'(t)&\cdots&g_{2\ell}'(t)\\
+                    \vdots&\vdots&\ddots&\vdots\\
+                    g_{n1}'(t)&g_{n2}'(t)&\cdots&g_{n\ell}'(t)
+                \end{bmatrix}$
+                則\begin{align*}
+                    (FG)_{ij}&=\sum_{k=1}^{n}f_{ik}(t)g_{kj}(t)\\
+                    (FG)_{ij}'&=\sum_{k=1}^{n}[f_{ik}'(t)g_{kj}(t)+f_{ik}(t)g_{kj}'(t)]\\
+                    &=\sum_{k=1}^{n}[f_{ik}'(t)g_{kj}(t)]+\sum_{k=1}^{n}[f_{ik}(t)g_{kj}'(t)]\\
+                    &=(F'G+FG')_{ij}
+                \end{align*}
+                \item 不適用。
+            \end{enumerate}
+            \item $At^{A-I}$
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item 出錯。
+            \item 設$X=e^A=P^{-1}e^KP$，則$A=P^{-1}KP=P^{-1}\log{D}P$。
+            \item 設$A(t)=\log{Xt}$，則$e^{A(t)}A'(t)=X\implies A'(t)=(Xt)^{-1}X=t^{-1}I$
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
