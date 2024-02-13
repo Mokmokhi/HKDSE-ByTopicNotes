@@ -167,11 +167,24 @@
 
     The pure quaternion defines a rotation among 3 axes in a compact way, while the real quaternion, or say the scaling in each component is describing the dilation scale in each of the rotation. The real quaternion means no rotation, which is the standard definition of a real number multiplication.
 
+    In the following passage, a vector will mean an extended 3-vector in $\mathbb{R}^4$.
+
     \begin{definition}
-        Let $q\in\mathbb{H}$ and $\vec{v}$ be an extended 3-vector. Then the left multiplication $q\vec{v}$ of quaternion is the $q$-rotation of the vector $\vec{v}$. A quaternion in such operation is called a \textbf{rotation quaternion}.
+        Let $q\in\mathbb{H}$ and $\vec{v}$ be a vector. Then the left multiplication $q\vec{v}$ of quaternion is the $q$-rotation of the vector $\vec{v}$. A quaternion in such operation is called a \textbf{rotation quaternion}.
     \end{definition}
 
     As quaternion multiplication is not commutative, a rotation quaternion has a fixed meaning.
+
+    \begin{proposition}
+        Given a vector $\vec{v}$. The following fundamental geometric operations can be presented using quaternions:\begin{itemize}
+            \item Reflection: $-\vec{v}$;
+            \item Real dilation: $\alpha\vec{v}$, where $\alpha\in\mathbb{R}$;
+            \item Rotation with dilation: $q\vec{v}$;
+            \item Conjugation by $q$: $q\vec{v}q^{-1}$.
+        \end{itemize}
+    \end{proposition}
+
+    It is trivial that all the fundamental geometric operations forms a group over quaternion.
 
     \section{Rubik's cube with quaternion}
 \end{document}
