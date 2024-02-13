@@ -33,7 +33,7 @@
     \section{Quaternion}
 
     \begin{definition}[Quaternion]
-        Let $a,b,c,d\in\mathbb{R}$ and unit vectors $\mathbf{i},\mathbf{j},\mathbf{k}$ be pointing positively along 3 spatial axes such that a \textbf{quaternion} $q$ can be written in the form of $$a+b\mathbf{i}+c\mathbf{j}+d\mathbf{k}$$
+        Let $a,b,c,d\in\mathbb{R}$ and unit \textbf{rotors} $\mathbf{i},\mathbf{j},\mathbf{k}$ be the counter-clockwise rotation along 3 spatial axes such that a \textbf{quaternion} $q$ can be written in the form of $$a+b\mathbf{i}+c\mathbf{j}+d\mathbf{k}$$
 
         The scalar part of $q$ is denoted by $\Re{q}:=a$ and the vector part of $q$ is denoted by $\Im{q}:=b\mathbf{i}+c\mathbf{j}+d\mathbf{k}$. The space of quaternion is denoted by $\mathbb{H}$, called the \textbf{Hamiltonian}.
     \end{definition}
@@ -49,6 +49,32 @@
             \item $\mathbf{i}\mathbf{j}=-\mathbf{j}\mathbf{i}=\mathbf{k}$, $\mathbf{j}\mathbf{k}=-\mathbf{k}\mathbf{j}=\mathbf{i}$, $\mathbf{k}\mathbf{i}=-\mathbf{i}\mathbf{k}=\mathbf{j}$, $\mathbf{i}\mathbf{j}\mathbf{k}=-1$.
         \end{itemize}
     \end{definition}
+
+    \begin{definition}[Quaternionic multiplication]
+        To maintain consistency with the scalar multiplication and extension of a complex number, a binary operation $\otimes$ on $\mathbb{H}$ is defined as $v\otimes w := \otimes (v,w)$ so that the following holds:\begin{enumerate}
+            \item $\mathbf{i}\mathbf{j}:=\mathbf{i}\otimes \mathbf{j}=\mathbf{k}$, $\mathbf{j}\mathbf{k}:=\mathbf{j}\otimes \mathbf{k}=\mathbf{i}$, $\mathbf{k}\mathbf{i}:=\mathbf{k}\otimes \mathbf{i}=\mathbf{j}$;
+            \item $\mathbf{i}^2=\mathbf{j}^2=\mathbf{k}^2=-1$;
+            \item $\mathbf{i}\mathbf{j}=-\mathbf{j}\mathbf{i}$, $\mathbf{j}\mathbf{k}=-\mathbf{k}\mathbf{j}$, $\mathbf{k}\mathbf{i}=-\mathbf{i}\mathbf{k}$.
+        \end{enumerate}
+    \end{definition}
+
+    As we see, it seems to be a manipulation of inner product and the outer product, but the whole concept is built upon rotation. Thinking each of which is defining a rotation about an axis together with the Work done along the axis, the tensor product can be seen as a sum of the total product of the inner product and the outer product. Following the traditional notation, we may identify $\mathbf{i}$ the rotation and scaling along the x-axis, and rest of them respectively.
+
+    \begin{proposition}
+        The following holds:\begin{enumerate}
+            \item $\mathbf{i}\mathbf{j}\mathbf{k}=-1$;
+            \item Closure: For $u,v\in \mathbb{H}$, $uv\in \mathbb{H}$;
+            \item Associativity: For $u,v,w\in \mathbb{H}$, $(uv)w=u(vw)$.
+        \end{enumerate}
+    \end{proposition}
+
+    \begin{proof}
+        \begin{enumerate}
+            \item $\mathbf{i}\mathbf{j}\mathbf{k}=\mathbf{k}\mathbf{k}=-1$;
+            \item By definition of Quaternionic multiplication, it is trivial;
+            \item Same as 2.
+        \end{enumerate}
+    \end{proof}
 
     \begin{proposition}[Identity element]
         $1\in\mathbb{H}$ is the only identity element.
@@ -72,6 +98,8 @@
 
     \begin{definition}[Norm]
         The norm of a quaternion $q=(q_0,q_1,q_2,q_3)\in\mathbb{H}$ is defined as $$\norm*{q}:=\sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$$
+
+        The geometric meaning of the norm of a quaternion is the standard dilation of the quaternion.
     \end{definition}
 
     \begin{proposition}[Conjugation]
@@ -93,12 +121,57 @@
         which yields $\bar{q_0}=q_0$, $\bar{q_1}=-q_1$, $\bar{q_2}=-q_2$, $\bar{q_3}=-q_3$.
     \end{proof}
 
+    \begin{proposition}[Inverse element]
+        For $q=(q_0,q_1,q_2,q_3)$, the algebraic conjugation $q^{-1}$ is $$\frac{1}{q_0^2+q_1^2+q_2^2+q_3^2}(q_0,-q_1,-q_2,-q_3)$$
+    \end{proposition}
+    
+    \begin{proof}
+        As long as we defined $q\bar{q}=\norm*{q}^2$, the proof is trivial.
+    \end{proof}
+
     \begin{corollary}
         By seeing a quaternion as a scalar adjoin with a vector, we can rewrite the above in another way. Suppose $q=r+\vec{v}$, where $r\in \mathbb{R}$ and $\vec{v}\in\mathbb{R}^3$. \begin{itemize}
             \item Norm: $\norm*{q}=\sqrt{r^2+\innerproduct{\vec{v}}{\vec{v}}}$.
             \item Conjugation: $\bar{q}=r-\vec{v}$.
+            \item Inverse: $q^{-1}=\frac{r}{\norm*{q}^2}-\frac{\vec{v}}{\norm*{q}^2}$.
         \end{itemize}
     \end{corollary}
+
+    We also note that $\mathbb{H}$ satisfies the properties of a group.
+
+    \begin{definition}[Group]
+        A set $S$ with an operation $\circ$ on $S$ is a \textbf{group} if $(S,\circ)$ satisfies the following properties: \begin{itemize}
+            \item Closure: if $x,y\in S$ then $x\circ y\in S$;
+            \item Associativity: if $x,y,z\in S$ then $(x\circ y)\circ z = x\circ (y\circ z)$;
+            \item Identity: There is an element $e\in S$ such that for any $x\in S$, $e\circ x=x\circ e=x$;
+            \item Inverse: For any $x\in S\setminus\{0\}$, there is an element $x^{-1}\in S$ such that $x\circ x^{-1}=x^{-1}\circ x= e$, where $e\in S$ is the identity element defined.
+        \end{itemize}
+    \end{definition}
+
+    Hence it is easy to check that the set of quaternion $\mathbf{H}$ with the operation $\otimes$, denoted by $(\mathbb{H},\otimes)$, is a group.
+
+    \section{Quaternion and Coordinate-vectors}
+
+    One convenience to discuss Quaternion is its connection with usual 3-vector. By observing the folloing: \begin{itemize}
+        \item When two units are the same, their product becomes a scalar quantity, which is similar to the inner product of a 3-vector;
+        \item When two units are different, their product becomes a vector quantity, which is similar to the outer product of a 3-vector.
+    \end{itemize}
+
+    Just one difference is that a usual 3-vector is taking the inner product of a unit to be positive, while a quaternion is taking negative. The reason behind is that usual vector product defines projection of vectors, while a quaternion product defines a rotation. For which definition we choose, the meaning changes.
+
+    \begin{definition}[Extended vector]
+        Given a 3-vector $\vec{v}:=x\mathbf{i}+y\mathbf{j}+\mathbf{k}=(x,y,z)$, an \textbf{extended vector} of $\vec{v}$ is an $n$-vector $\vec{v}'$, where $n>3$, such that $\vec{v}':=(\vec{0},\vec{v})$, with $\vec{0}$ an $(n-3)$-vector.
+    \end{definition}
+
+    In this case, we chose to extend the usual 3-vector to a 4-vector, so that it fits the definition of a quaternion. It is interesting to see that a quaternion is indeed a 4-vector with special arithmetic rules. To make sense with quaternion, we will call a quaternion with the first entry being zero a \textbf{pure quaternion}, which is the extended 3-vector. We will also call a quaternion without rotors a \textbf{real quaternion}, which follows the declaration of complex number's.
+
+    The pure quaternion defines a rotation among 3 axes in a compact way, while the real quaternion, or say the scaling in each component is describing the dilation scale in each of the rotation. The real quaternion means no rotation, which is the standard definition of a real number multiplication.
+
+    \begin{definition}
+        Let $q\in\mathbb{H}$ and $\vec{v}$ be an extended 3-vector. Then the left multiplication $q\vec{v}$ of quaternion is the $q$-rotation of the vector $\vec{v}$. A quaternion in such operation is called a \textbf{rotation quaternion}.
+    \end{definition}
+
+    As quaternion multiplication is not commutative, a rotation quaternion has a fixed meaning.
 
     \section{Rubik's cube with quaternion}
 \end{document}
