@@ -459,12 +459,24 @@
             \end{align*}
 
             因此對$(3.001)^{5.001}$作估算：\begin{align*}
-                (3.001)^{5.001}&\approx 3^5+5\cdot 3^4 (0.001)+3^5\ln{5} (0.001)\\
-                &=243.405+0.243\ln{5}\\
-                &=243.796
+                (3.001)^{5.001}&\approx 3^5+5\cdot 3^4 (0.001)+3^5\ln{3} (0.001)\\
+                &=243.405+0.243\ln{3}\\
+                &=243.672
             \end{align*}
         \end{sol}
     \end{example}
+
+    更進一步，我們可以討論二階導數：
+
+    \begin{theorem}[二階導數]
+        設$(x_1,x_2,\dots,x_m)\overset{f}{\mapsto}(y_1,y_2,\dots,y_n)$，記$$\nabla^2 f=\begin{bmatrix}
+            \frac{\partial^2 y_1}{\partial^2 x_1}&\frac{\partial^2 y_1}{\partial x_1 \partial x_2}&\cdots&\frac{\partial^2 y_1}{\partial x_1 \partial x_m}\\
+            \frac{\partial^2 y_2}{\partial x_1 \partial x_2}&\frac{\partial^2 y_2}{\partial^2 x_2}&\cdots&\frac{\partial^2 y_2}{\partial x_2 \partial x_m}\\
+            \vdots&\vdots&\ddots&\vdots\\
+            \frac{\partial^2 y_n}{\partial x_1 \partial x_m}&\frac{\partial^2 y_n}{\partial x_2 \partial x_m}&\cdots&\frac{\partial^2 y_n}{\partial^2 x_m}
+        \end{bmatrix}$$
+        則$d^2f=\nabla^2 f d^2x$。我們稱$\nabla f$為$f$的\textbf{第二階全導數}。
+    \end{theorem}
 
     \section*{方向導數}
 
