@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1708018836 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" "chi_directional.pdf" "chi_directional" 1708018840
+["pdflatex"] 1708078661 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" "chi_directional.pdf" "chi_directional" 1708078665
   "../image//Force.png" 1703054745 11092 bfa2fa17e824f12688875562189019ed ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1664299329 14064 d51fe1154d65350215fea1f8fca0323d ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
@@ -240,6 +240,7 @@
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
   "D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "D:/Program Files (x86)/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "D:/Program Files (x86)/MiKTeX/tex/generic/babel/babel.def" 1622647513 121009 d797444026f7ec580bc6c8aa432a71ab ""
@@ -389,9 +390,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" 1708018833 20709 0b1231c7ec3c83fec3a5c54f05f85bdf ""
-  "chi_directional.aux" 1708018839 113 4749f889d66ee3cc8986402620fc63a9 "pdflatex"
-  "chi_directional.tex" 1708018833 20709 0b1231c7ec3c83fec3a5c54f05f85bdf ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" 1708078657 23256 57844f4ee9f7e8b56011a678388b8abc ""
+  "chi_directional.aux" 1708078664 113 0b43d96b98165998d8f92c054ee9ecad "pdflatex"
+  "chi_directional.tex" 1708078657 23256 57844f4ee9f7e8b56011a678388b8abc ""
   (generated)
   "chi_directional.aux"
   "chi_directional.log"
