@@ -444,8 +444,7 @@
 
     \begin{example}
         考慮$\vec{f}(t)=(t,t^2,t^3)$，\begin{align*}
-            d\vec{f}&=\sum_{k=1}^{3}\partial_{x_k}f dx_k\\
-            &=\partial_x f dt\\
+            d\vec{f}&=\partial_t f dt\\
             &=(1,2t,3t^2)dt\\
             &=\vec{f}_t dt
         \end{align*}
@@ -479,6 +478,10 @@
         則$df=\nabla f dx$。我們稱$\nabla f$為$f$的\textbf{第一階全導數}。
     \end{definition}
 
+    \begin{remark}
+        由於$df=\nabla f dx$，故$$\nabla f = \derivative{f}{x}=\lim_{\vec{h}\to\vec{0}}\frac{f(x+\vec{h})-f(x)}{\norm*{\vec{h}}}$$
+    \end{remark}
+
     \begin{example}
         估算$(3.001)^{5.001}$的值。
 
@@ -505,15 +508,94 @@
 
     \begin{theorem}[二階導數]
         設$(x_1,x_2,\dots,x_m)\overset{f}{\mapsto}(y_1,y_2,\dots,y_n)$，記$$\nabla^2 f=\begin{bmatrix}
-            \frac{\partial^2 y_1}{\partial^2 x_1}&\frac{\partial^2 y_1}{\partial x_1 \partial x_2}&\cdots&\frac{\partial^2 y_1}{\partial x_1 \partial x_m}\\
-            \frac{\partial^2 y_2}{\partial x_1 \partial x_2}&\frac{\partial^2 y_2}{\partial^2 x_2}&\cdots&\frac{\partial^2 y_2}{\partial x_2 \partial x_m}\\
+            \frac{\partial^2 f}{\partial x_1^2}&\frac{\partial^2 f}{\partial x_1 \partial x_2}&\cdots&\frac{\partial^2 f}{\partial x_1 \partial x_m}\\
+            \frac{\partial^2 f}{\partial x_1 \partial x_2}&\frac{\partial^2 f}{\partial x_2^2}&\cdots&\frac{\partial^2 f}{\partial x_2 \partial x_m}\\
             \vdots&\vdots&\ddots&\vdots\\
-            \frac{\partial^2 y_n}{\partial x_1 \partial x_m}&\frac{\partial^2 y_n}{\partial x_2 \partial x_m}&\cdots&\frac{\partial^2 y_n}{\partial^2 x_m}
+            \frac{\partial^2 f}{\partial x_1 \partial x_m}&\frac{\partial^2 f}{\partial x_2 \partial x_m}&\cdots&\frac{\partial^2 f}{\partial x_m^2}
         \end{bmatrix}$$
-        則$d^2f=\nabla^2 f d^2x$。我們稱$\nabla f$為$f$的\textbf{第二階全導數}。
+        則$d^2f=\nabla^2 f dx^2$。我們稱$\nabla f$為$f$的\textbf{第二階全導數}。
     \end{theorem}
 
+    \begin{proof}
+        根據第一階全導數，\begin{align*}
+            df&=\sum_{i=1}^{m}f_{x_i} dx_i\\
+            d^2f&=\sum_{i=1}^{m}(df_{x_i})dx_i\\
+            &=\sum_{i=1}^{m}(\sum_{j=1}^{m}f_{x_i x_j}dx_j) dx_i\\
+            &=\sum_{i=1}^{m}\sum_{j=1}^{m}f_{x_i x_j}dx_i dx_j\\
+            &=\begin{bmatrix}
+                dx_1&dx_2&\cdots&dx_m
+            \end{bmatrix}\begin{bmatrix}
+                \frac{\partial^2 f}{\partial x_1^2}&\frac{\partial^2 f}{\partial x_1 \partial x_2}&\cdots&\frac{\partial^2 f}{\partial x_1 \partial x_m}\\
+                \frac{\partial^2 f}{\partial x_1 \partial x_2}&\frac{\partial^2 f}{\partial x_2^2}&\cdots&\frac{\partial^2 f}{\partial x_2 \partial x_m}\\
+                \vdots&\vdots&\ddots&\vdots\\
+                \frac{\partial^2 f}{\partial x_1 \partial x_m}&\frac{\partial^2 f}{\partial x_2 \partial x_m}&\cdots&\frac{\partial^2 f}{\partial x_m^2}
+            \end{bmatrix}\begin{bmatrix}
+                dx_1\\dx_2\\\vdots\\dx_m
+            \end{bmatrix}\\
+            &=(dx)^T(\nabla^2 f)(dx)
+        \end{align*}
+    \end{proof}
+    
+    \begin{example}
+        設$f:\mathbb{R}^3\setminus\{(0,0,z):z\in\mathbb{R}\}\to\mathbb{R}$並定義$f(x,y,z)=\frac{z}{x^2+y^2}$，求$\nabla^2 f$。
+
+        \begin{sol}
+            \begin{align*}
+                \nabla^2 f&=\begin{bmatrix}
+                    \frac{\partial^2 f}{\partial x^2}&\frac{\partial^2 f}{\partial x \partial y}&\frac{\partial^2 f}{\partial x \partial z}\\
+                    \frac{\partial^2 f}{\partial x \partial y}&\frac{\partial^2 f}{\partial y^2}&\frac{\partial^2 f}{\partial y \partial z}\\
+                    \frac{\partial^2 f}{\partial x \partial z}&\frac{\partial^2 f}{\partial y \partial z}&\frac{\partial^2 f}{\partial z^2}
+                \end{bmatrix}\\
+                &=\begin{bmatrix}
+                    \frac{8x^2z}{(x^2+y^2)^3}&\frac{8xyz}{(x^2+y^2)^3}&\frac{-2x}{(x^2+y^2)^2}\\
+                    \frac{8xyz}{(x^2+y^2)^3}&\frac{8y^2z}{(x^2+y^2)^3}&\frac{-2y}{(x^2+y^2)^2}\\
+                    \frac{-2x}{(x^2+y^2)^2}&\frac{-2y}{(x^2+y^2)^2}&0
+                \end{bmatrix}
+            \end{align*}
+        \end{sol}
+    \end{example}
+
     \section*{方向導數}
+
+    方向導數屬於偏導數的普適版，但其存在對於微分幾何影響重大。
+
+    \begin{definition}[方向導數]
+        設$f:\mathbb{R}^m\to\mathbb{R}^n$，而$x\overset{f}{\mapsto}y$。則$f$在$x$上向$\vec{v}$的方向導數為\begin{align*}
+            \nabla_{\vec{v}}f:=\lim_{h\to 0}\frac{f(\vec{x}+h\vec{v})-f(\vec{x})}{\norm*{h\vec{v}}}
+        \end{align*}
+    \end{definition}
+
+    \begin{theorem}
+        設$f:\mathbb{R}^m\to\mathbb{R}^n$，而$x\overset{f}{\mapsto}y$。則\begin{align*}
+            \nabla_{\vec{v}}f=\frac{1}{\norm*{\vec{v}}}\innerproduct{\nabla f}{\vec{v}}
+        \end{align*}
+    \end{theorem}
+
+    \begin{proof}
+        從定義，\begin{align*}
+            \nabla_{\vec{v}}f:&=\lim_{h\to 0}\frac{f(\vec{x}+h\vec{v})-f(\vec{x})}{\norm*{h\vec{v}}}\\
+            &=\frac{1}{\norm*{\vec{v}}}\lim_{h\to 0}\frac{f(\vec{x}+h\vec{v})-f(\vec{x})}{h}\\
+            &=\frac{1}{\norm*{\vec{v}}}\sum_{i=1}^{m}\lim_{h\to 0}\frac{f(x_1,\dots,x_i+hv_i,\dots,x_m)-f(x_1,\dots,x_i,\dots,x_m)}{h}\\
+            &=\frac{1}{\norm*{\vec{v}}}\sum_{i=1}^{m}\lim_{h\to 0}\frac{f(x_1,\dots,x_i+hv_i,\dots,x_m)-f(x_1,\dots,x_i,\dots,x_m)}{hv_i}v_i\\
+            &=\frac{1}{\norm*{\vec{v}}}\sum_{i=1}^{m}f_{x_i}v_i\\
+            &=\frac{1}{\norm*{\vec{v}}}\innerproduct{\nabla f}{\vec{v}}\\
+        \end{align*}
+    \end{proof}
+
+    \begin{remark}
+        當$\vec{v}\in B(\mathbb{R}^m)$時，$\norm*{\vec{v}}=1$，則與偏導數相同。
+    \end{remark}
+
+    \begin{proposition}[方向導數的性質]
+        設$f,g:\mathbb{R}^m\to\mathbb{R}^n$，$\alpha,\beta,\lambda,\mu\in\mathbb{R}$，$u,v\in\mathbb{R}^m$，則\begin{itemize}
+            \item 函數綫性性：$\nabla_{\vec{v}}(\lambda f+\mu g)=\lambda\nabla_{\vec{v}}f+\mu\nabla_{\vec{v}}g$；
+            \item 乘積法則：\begin{enumerate}
+                \item $\nabla_{\vec{v}}\innerproduct{f}{g}=\innerproduct{\nabla_{\vec{v}}f}{g} +\innerproduct{f}{\nabla_{\vec{v}}g}$；
+                \item $\nabla_{\vec{v}}(f\wedge g)=(\nabla_{\vec{v}}f)\wedge g +f\wedge (\nabla_{\vec{v}}g)$；
+            \end{enumerate}
+            \item 鎖鏈法則：設$h:\mathbb{R}^n\to\mathbb{R}^r$，$\nabla_{\vec{v}}(h\circ g)=(\nabla_{\nabla_{\vec{v}}g}h\circ g)\otimes \nabla_{\vec{v}}g$。
+        \end{itemize}
+    \end{proposition}
 
     \section*{切面與法綫}
 
