@@ -102,6 +102,14 @@
         The geometric meaning of the norm of a quaternion is the standard dilation of the quaternion.
     \end{definition}
 
+    \begin{remark}
+        If $\norm*{q}=1$, we say it is a unit quaternion.
+    \end{remark}
+
+    \begin{definition}[Algebraic Conjugate]
+        For $q=(q_0,q_1,q_2,q_3)$, the algebraic conjugation is the element $\bar{q}$ such that $q\bar{q}=\norm*{q}^2$
+    \end{definition}
+
     \begin{proposition}[Conjugation]
         For $q=(q_0,q_1,q_2,q_3)$, the algebraic conjugation $\bar{q}$ is $$(q_0,-q_1,-q_2,-q_3)$$
     \end{proposition}
@@ -137,6 +145,18 @@
         \end{itemize}
     \end{corollary}
 
+    \begin{proposition}
+        Given $p,q\in\mathbf{H}$, then $\norm*{p\otimes q}=\norm*{p}\norm*{q}$.
+    \end{proposition}
+
+    \begin{proof}
+        It is equivalent to proving $\norm*{p\otimes q}^2=\norm*{p}^2\norm*{q}^2$. Indeed, \begin{align*}
+            \norm*{pq}^2&=pq\overline{pq}=pq\bar{q}\bar{p}\\
+            &=p\norm*{q}^2\bar{p}\\
+            &=\norm*{p}^2\norm*{q}^2
+        \end{align*}
+    \end{proof}
+
     We also note that $\mathbb{H}$ satisfies the properties of a group.
 
     \begin{definition}[Group]
@@ -170,7 +190,7 @@
     In the following passage, a vector will mean an extended 3-vector in $\mathbb{R}^4$.
 
     \begin{definition}
-        Let $q\in\mathbb{H}$ and $\vec{v}$ be a vector. Then the left multiplication $q\vec{v}$ of quaternion is the $q$-rotation of the vector $\vec{v}$. A quaternion in such operation is called a \textbf{rotation quaternion}.
+        Let $q\in\mathbf{H}$ and $\vec{v}$ be a vector. Then the left multiplication $q\otimes \vec{v}$ of quaternion is the $q$-rotation of the vector $\vec{v}$. A quaternion in such operation is called a \textbf{rotation quaternion}.
     \end{definition}
 
     As quaternion multiplication is not commutative, a rotation quaternion has a fixed meaning.
@@ -185,6 +205,8 @@
     \end{proposition}
 
     It is trivial that all the fundamental geometric operations forms a group over quaternion.
+
+
 
     \section{Rubik's cube with quaternion}
 \end{document}

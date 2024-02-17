@@ -319,6 +319,41 @@
         設$y=f(x)$，其中$y\in\mathbb{R}^n$。若存在$y_0\in\mathbb{R}^n$使得對於任意$\epsilon>0$，都有$\delta>0$使得$|x-x_0|<\delta$時$|f(x)-y_0|<\epsilon$，則稱$y_0$為$f(x)$在$x_0$的極限，記$\displaystyle y_0=\lim_{x\to x_0}f(x)$。
     \end{definition}
 
+    \begin{example}
+        求$\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2-y^2}{x-y}$。
+
+        \begin{sol}
+            0
+
+            \begin{proof}
+                設$\varepsilon>0$, $\delta = \varepsilon/2$, 若$|(x,y)-(0,0)|<\delta$, 則\begin{align*}
+                    |\frac{x^2-y^2}{x-y}|&=|x+y|\\
+                    &\leq 2\sqrt{x^2+y^2}\\
+                    &<2\delta\\
+                    &=\varepsilon
+                \end{align*}
+            \end{proof}
+
+            因此可見，$\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2-y^2}{x-y}=0$。
+        \end{sol}
+
+    \end{example}
+
+    若考慮極坐標系統，則對於任意$n$維空間的向量$\vec{v}$，均可定義$r:=|\vec{v}|,\vec{\theta}=\arg{\vec{v}}$。
+
+    \begin{theorem}[有理函數極限的存在]
+        設$f,g:\mathbb{R}^m\to\mathbb{R}$為多項式函數，則存在$r$的多項式函數$p,q:\mathbb{R}\times [0,2\pi]^{m-1}$使得\begin{align*}
+            \lim_{x\to a}\frac{f(x)}{g(x)}=\lim_{x\to a}\frac{p(r;\theta)}{q(r;\theta)}
+        \end{align*}
+        并且稱$p_0:=p(a;\theta),q_0:=q(a;\theta)$\begin{align*}
+            \lim_{x\to a}\frac{p(r;\theta)}{q(r;\theta)}=\begin{cases}
+                0&,\deg_r{p}>\deg_r{q}\\
+                \frac{p_0}{q_0}&,\deg_r{p}=\deg_r{q}
+            \end{cases}
+        \end{align*}
+        若$\frac{p_0}{q_0}$獨立於$\theta$，則稱爲極限收斂；反之發散。
+    \end{theorem}
+
     \begin{definition}[向量函數的連續性]
         若$f(x_0)=\displaystyle \lim_{x\to x_0}f(x)$，則稱$f$在$x_0$上連續。
     \end{definition}
