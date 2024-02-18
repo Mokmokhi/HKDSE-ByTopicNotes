@@ -599,5 +599,28 @@
 
     \section*{切面與法綫}
 
+    考慮平面上的曲綫的切綫，為$\displaystyle y-f(x_0)=\derivative{y}{x}|_{x=x_0} \cdot (x-x_0)$；若考慮向量表達式，由於$y=f(x)$，得任何圖上坐標為$(x,f(x))$，則$\vec{v}:=(1,f'(x))$為其導向量，則切綫為以下集合$$T(x):=\{(x,f(x))+\alpha(1,f'(x)):\alpha\in\mathbb{R}\}$$
+
+    \begin{definition}[綫性生成空間]
+        設$\{\vec{v}_1, \vec{v}_2,\dots,\vec{v}_m\}$ 為$\mathbb{R}^n$内的一組綫性獨立向量，則稱$$\{\sum_{k=1}^{m}\alpha_k \vec{v}_k: \forall k \in \{1,2,\dots,m\},\alpha_k\in\mathbb{R}\}$$
+        為\textbf{由$\{\vec{v}_1, \vec{v}_2,\dots,\vec{v}_m\}$構成的綫性生成空間}，記作$\mathrm{span}\{\vec{v}_1, \vec{v}_2,\dots, \vec{v}_m\}$。
+    \end{definition}
+
+    \begin{example}
+        $\mathbb{R}=\mathrm{span}\{1\}$.
+    \end{example}
+
+    \begin{example}
+        $\mathbb{R}^2=\mathrm{span}\{(0,1),(1,0)\}$.
+    \end{example}
+
+    \begin{example}
+        $\mathbb{R}^2=\mathrm{span}\{(\sin{\theta},\cos{\theta}),(\cos{\theta},-\sin{\theta}):\theta\in\mathbb{R}\}$.
+    \end{example}
+
+    \begin{theorem}
+        設$$
+    \end{theorem}
+
     \section*{二維極值與鞍點}
 \end{document}

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1708191682 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" "chi_directional.pdf" "chi_directional" 1708191686
+["pdflatex"] 1708278591 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" "chi_directional.pdf" "chi_directional" 1708278591
   "../image//Force.png" 1703054745 11092 bfa2fa17e824f12688875562189019ed ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1664299329 14064 d51fe1154d65350215fea1f8fca0323d ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637687807 9735821 66f7ab5e63bde789c8db6e62cd9c2162 ""
@@ -391,9 +391,9 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/indentfirst.sty" 1622550326 1618 786b14c5a3e144c3a51452d08232d18b ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" 1708191676 30274 645e704f6b5e8326b0be6d6a8777d30b ""
-  "chi_directional.aux" 1708191685 113 0627f4c3109f658b9e2808e22dc70854 "pdflatex"
-  "chi_directional.tex" 1708191676 30274 645e704f6b5e8326b0be6d6a8777d30b ""
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" 1708278591 31420 a2af3fefbef67ba68750dc199be3e882 ""
+  "chi_directional.aux" 0 -1 0 "pdflatex"
+  "chi_directional.tex" 1708278591 31420 a2af3fefbef67ba68750dc199be3e882 ""
   (generated)
   "chi_directional.aux"
   "chi_directional.log"

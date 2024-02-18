@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  18 FEB 2024 01:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.24)  19 FEB 2024 01:49
 entering extended mode
 **c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex
 (c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex
@@ -613,7 +613,8 @@ File: UTF8.bdg 2021/10/16 4.8.5
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\Owenm\AppData\Roaming\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) (chi_directional.aux)
+)
+No file chi_directional.aux.
 \openout1 = `chi_directional.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -694,7 +695,7 @@ LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
- (D:\Program Files (x86)\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(D:\Program Files (x86)\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count334
 \scratchdimen=\dimen282
@@ -907,19 +908,82 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15] (chi_directional.aux) ) 
+[15]
+
+c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex:623: LaTeX Error: Command \end{theorem} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.623     \end{theorem}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex:623: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.623     \end{theorem}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex:623: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.623     \end{theorem}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex:623: Missing $ inserted.
+<inserted text> 
+                $
+l.623     \end{theorem}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex:623: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.623     \end{theorem}
+                       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16] (chi_directional.aux) ) 
 Here is how much of TeX's memory you used:
- 30602 strings out of 478864
- 721636 string characters out of 2855690
+ 30619 strings out of 478864
+ 721884 string characters out of 2855690
  1166704 words of memory out of 3000000
- 47604 multiletter control sequences out of 15000+600000
+ 47618 multiletter control sequences out of 15000+600000
  459836 words of font info for 233 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,16n,106p,830b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf> <C:\Users\Owenm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on chi_directional.pdf (15 pages, 931410 bytes).
+Output written on chi_directional.pdf (16 pages, 935874 bytes).
 PDF statistics:
- 834 PDF objects out of 1000 (max. 8388607)
+ 837 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  294 words of extra memory for PDF output out of 10000 (max. 10000000)
 
