@@ -203,7 +203,27 @@
         Let $A$ and $B$ be sets. The \textbf{union} of $A$ and $B$ is defined as $$A\cup B:= \{x:x\in A \textrm{ or } x\in B\}$$ while the \textbf{intersection} of $A$ and $B$ is defined as $$A\cap B:= \{x:x\in A \textrm{ and } x\in B\}$$
     \end{definition}
 
-    We may represent the two definitions by shading regions in a Venn-diagram.
+    In fact, we say union is the collection of the objects which are either in set $A$ or set $B$, or simply say it is the joined set of two sets. We can take a look at the following examples:
+
+    \begin{example}
+        Let $A=\{1,2,3,4\}, B=\{3,4,5\}$, then $$A\cup B = \{1,2,3,4,5\}$$
+    \end{example}
+
+    \begin{example}
+        Let $A=\{1,3,5,7,9,\dots\}$ be the set of all positive odd numbers, $B=\{2,4,6,8,10,\dots\}$ be the set of positive even numbers, then $$A\cup B = \{1,2,3,4,5,6\dots\}$$ which is the set of all positive numbers. Sometimes, we may write the set by specifying the property of the elements as following: $$A\cup B=\{x: x \textrm{ is a positive integer}\}$$
+    \end{example}
+
+    For intersection, it is generally speaking the collection of repeated elements in both sets, or we can say the sharing elements. We can take a look at the following examples:
+
+    \begin{example}
+        Let $A=\{1,2,3,4\}, B=\{3,4,5\}$, then $$A\cap B = \{3,4\}$$
+    \end{example}
+
+    \begin{example}
+        Let $A=\{1,3,5,7,9,\dots\}$ be the set of all positive odd numbers, $B=\{2,4,6,8,10,\dots\}$ be the set of positive even numbers, then $$A\cap B = \emptyset$$ which is the set with no element, an empty set.
+    \end{example}
+
+    We may represent the two definitions by shading regions in a Venn-diagram. Suppose we are calling a set by enclosing the region by a circle, then we have the following representation.
 
     \begin{figure}[H]
         \centering
@@ -211,11 +231,27 @@
         \caption{Union(Left) and Interesection(Right) of two sets}
     \end{figure}
 
+    \begin{exercise}
+        Let $A=\{1,3,4, 6, 7\}, B=\{3,4,5,7,8\}$, then find $A\cup B$ and $A\cap B$.
+    \end{exercise}
+
     \begin{definition}[Range]
         The \textbf{range} of a function $f:D\to R$, denoted by $\mathbf{Ran}(f)$, is the set $f(D)\cap R$, where $f(D):=\{f(x):x\in D\}$.
     \end{definition}
 
     Usually, a teacher in highschool aims to discuss the range of a function rather than the codomain of a function, as what he shall teach is the size of the output, but not where the output shall be in. However, the difference between the codomain of a function and the range of a function is we can further define the concept of a well-defined function with the concept of range.
+
+    \begin{example}
+        For a function $f$ defined as $$f:\mathbb{N}\to \mathbb{N}, n\mapsto 2^n$$ The range of $f$, denoted by $\mathrm{Ran}(f)$, is the set of all possible outcomes of $f(n)$ with natural numbers $n$. That is, the set $$\{2^n: n\in\mathbb{N}\}=\{2,4,8,16,32,\dots\}$$
+    \end{example}
+
+    \begin{example}
+        For a function $f$ defined as $$f:\mathbb{Z}\to \mathbb{Q}, n\mapsto 2^n$$ $\mathrm{Ran}(f)$ is the set of all possible outcomes of $f(n)$ with integers $n$. That is, the set $$\{2^n: n\in\mathbb{Z}\}=\{\dots,\frac{1}{4},\frac{1}{2},1,2,4,\dots\}$$
+    \end{example}
+
+    We must observe that the two ranges of the same function process $f$ are different when their co-domains are different. This shows the importance of discussion of co-domain when we are defining ranges of functions.
+
+    We can also observe that the range of the first example is equal to $\mathbb{N}\cap \{\dots,\frac{1}{4},\frac{1}{2},1,2,4,\dots\}$.
     \subsection{Graph of a function}
 
     \subsubsection{Blobs-and-arrows diagram for discrete functions}
@@ -226,13 +262,17 @@
 
     \subsubsection{points lying on the graph}
 
-    \subsubsection{x-intercept}
-
-    \subsubsection{y-intercept}
+    \subsubsection{Special intersections: x-intercept and x-intercepts}
 
     \subsubsection{general intersection}
 
     \subsection{Solving equations using graphs of functions}
+
+    \subsubsection{Homogeneous equations}
+
+    \subsubsection{Non-homogeneous equations}
+
+    \subsubsection{Simultaneous equations}
 
     \subsection{Transformation of functions}
 
