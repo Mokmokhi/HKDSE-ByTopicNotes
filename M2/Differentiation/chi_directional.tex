@@ -183,13 +183,13 @@
         \end{align*}
     \end{proof}
 
-    在三維空間中，存在外積：
+    在三維空間中，存在叉積：
 
-    \begin{definition}[外積]
+    \begin{definition}[叉積]
         假設$\{\hat{i},\hat{j},\hat{k}\}\subset \mathbb{R}^3$為$\mathbb{R}^3$的標準正交基，則定義$\times:\mathbb{R}^3\to\mathbb{R}^3$為$$\hat{i}\times \hat{j}=\hat{k},\hat{j}\times \hat{k}=\hat{i}, \hat{k}\times \hat{i}=\hat{j}$$
     \end{definition}
 
-    外積的定義可考慮面積與體積的計算原理：考慮三個單位向量$\hat{i},\hat{j},\hat{k}$的乘積為體積及任意兩個向量的乘積為面積，基於$\hat{i}\times \hat{j}$為$ij$平面的面積單位，而面積乘以高等於體積，故$V(\hat{i},\hat{j},\hat{k})=(\hat{i}\times \hat{j})\cdot \hat{k}$為標量，使得$\hat{i}\times\hat{j}=\hat{k}$。
+    叉積的定義可考慮面積與體積的計算原理：考慮三個單位向量$\hat{i},\hat{j},\hat{k}$的乘積為體積及任意兩個向量的乘積為面積，基於$\hat{i}\times \hat{j}$為$ij$平面的面積單位，而面積乘以高等於體積，故$V(\hat{i},\hat{j},\hat{k})=(\hat{i}\times \hat{j})\cdot \hat{k}$為標量，使得$\hat{i}\times\hat{j}=\hat{k}$。
 
     因此，我們可定義
 
@@ -208,7 +208,7 @@
         \end{align*}
     \end{definition}
 
-    事實上，外積的計算無法以向量簡單作結。Kronecker就發現基本的向量無法解釋$i\times j=k$的情況（例如，爲何面積是向量而體積不是？），因此，他提出以\textbf{雙向量}(bi-vector)為$\hat{i},\hat{j},\hat{k}$下定義：
+    事實上，叉積的計算無法以向量簡單作結。Kronecker就發現基本的向量無法解釋$i\times j=k$的情況（例如，爲何面積是向量而體積不是？），因此，他提出以\textbf{雙向量}(bi-vector)為$\hat{i},\hat{j},\hat{k}$下定義：
 
     \begin{definition}
         定義$\hat{i}=e_1e_2,\hat{j}=e_2e_3,\hat{k}=e_1e_3$，且$e_ie_j=-e_je_i$，$e_i^2=1$由此符合\begin{align*}
@@ -220,9 +220,29 @@
 
     上述定義可引申至對軸心的旋轉：$\hat{i}$為沿$z$軸逆時針旋轉90度；$\hat{j}$為沿$x$軸逆時針旋轉90度；$\hat{k}$為沿$y$軸逆時針旋轉90度。
 
+    而我對於向量積的理解，可作以下判斷：\begin{enumerate}
+        \item 其實向量乘法無需分辨點積與叉積：當所有討論都建基於向量時，我們可以進一步討論單向量、雙向量，甚至三向量的關係。設$\hat{i},\hat{j},\hat{k}$分別代表互相垂直的三軸單位向量，則可視單向量$\hat{i},\hat{j},\hat{k}$為\textbf{尺度向量}，代表該軸的長度單位（如$m$）；而雙向量$\hat{i}\hat{j},\hat{j}\hat{k},\hat{k}\hat{i}$則為\textbf{面積向量}，代表互相垂直的方向所得的長度單位乘積（如$m^2$）；至於三向量$\hat{i}\hat{j}\hat{k}$則爲\textbf{體積向量}，代表三個方向長度單位相乘的結果（如$m^3$）。
+        \item $\hat{i}^2,\hat{j}^2,\hat{k}^2$作爲相同方向的乘積，不存在面積向量。考慮歐幾里得長度算法$|\hat{i}+\hat{j}|:=\sqrt{\hat{i}^2+\hat{j}^2}$為標量，可認定$\hat{i}^2,\hat{j}^2$（及$\hat{k}^2$）同爲標量，即無視方向而得比較量。因此$\hat{i}^2=\hat{j}^2=\hat{k}^2=1$。
+        \item 考慮面積向量的等效性，我們需要$|\hat{i}\hat{j}|=|\hat{j}\hat{i}|$，但$\hat{i}\hat{j}$是否等價於$\hat{j}\hat{i}$則值得探究：事實上，考慮$\hat{i}+\hat{j}$及$\hat{i}-\hat{j}$為平面上互相垂直的向量，則$(\hat{i}+\hat{j})(\hat{i}-\hat{j})=\hat{j}\hat{i}-\hat{i}\hat{j}>0\hat{i}\hat{j}$。此則説明$\hat{i}\hat{j}\neq\hat{j}\hat{i}$，因此$\hat{i}\hat{j}=-\hat{j}\hat{i}$（同理可得$\hat{j}\hat{k}=-\hat{k}\hat{j}$及$\hat{k}\hat{i}=-\hat{i}\hat{k}$）。
+        \item 由此衍生關係式：$\hat{i}\hat{j}\hat{k}=-\hat{j}\hat{i}\hat{k}=\hat{j}\hat{k}\hat{i}=-\hat{k}\hat{j}\hat{i}=\hat{k}\hat{i}\hat{j}=-\hat{i}\hat{k}\hat{j}$。
+        \item 因此在我的理解下，任意向量相乘會衍生多重向量，并且同時符合内積與外積的存在性：\begin{enumerate}
+            \item 若$x:=(x_1,x_2,x_3)$及$y:=(y_1,y_2,y_3)$相乘，可得\begin{align*}
+                xy&=W(x,y)+A_1(x,y)\hat{i}\hat{j}+A_2(x,y)\hat{j}\hat{k}+A_3(x,y)\hat{k}\hat{i}\\
+                &=: \innerprod{x}{y}+(x\cross y)
+            \end{align*}
+            其中$x,y$所組成的平行四邊形的面積爲$$A(x,y):=|x\cross y|=\sqrt{A_1^2+A_2^2+A_3^2}$$
+            \item 若$x:=(x_1,x_2,x_3)$、$y:=(y_1,y_2,y_3)$及$z=(z_1,z_2,z_3)$相乘，可得\begin{align*}
+                xyz&=\innerprod{x}{y}z+(x\cross y)z\\
+                &=\innerprod{x}{y}z+(x\cross y)\cross z + \innerprod{x\cross y}{z}
+            \end{align*}
+            其中$x,y,z$所組成的六面體的面積爲$$V(x,y,z):=\innerprod{x\cross y}{z}$$
+        \end{enumerate}
+        至於餘向量會代表其他物理量，此處暫時不提。此稱爲\textbf{幾何代數}。
+    \end{enumerate}
+
     事實上，在更高維的空間裏，向量的外積有以下定義
 
-    \begin{definition}
+    \begin{definition}[外積（Outer product）]
         設$u=(u_i)_{i\in I},v=(v_i)_{i\in I}$，則外積為$$u\wedge v =\begin{bmatrix}
             u_1v_1&u_1v_2&\cdots&u_1v_n\\
             u_2v_1&u_2v_2&\cdots&u_2v_n\\
@@ -230,6 +250,17 @@
             u_n v_1&u_n v_2&\cdots&u_n v_n
         \end{bmatrix}$$
     \end{definition}
+
+    \begin{definition}[外代數（Exterior product）]
+        設$u=(u_i)_{i\in I},v=(v_i)_{i\in I}$，則外代數為$$u\wedge v =\begin{bmatrix}
+            0&u_1v_2&\cdots&u_1v_n\\
+            u_2v_1&0&\cdots&u_2v_n\\
+            \vdots&\vdots&\ddots&\vdots\\
+            u_n v_1&u_n v_2&\cdots&0
+        \end{bmatrix}$$
+    \end{definition}
+
+    外代數則對應一般幾何上的叉積。
 
     \begin{theorem}
         設$u,v\in \mathbb{R}^n$，則平行四邊形面積爲$$A(u,v)=|u||v|\sin{\theta}$$其中$\theta$為$u$和$v$的夾角。因此$$|u\wedge v|=|u||v|\sin{\theta}$$
@@ -391,6 +422,28 @@
         \end{align*}
     \end{example}
 
+    \begin{definition}[二階偏導數]
+        若$f$為二階可偏導，則對於$x$及$y$的偏導數，可寫$$\partial_{xy}:=\partial_x \partial_y f$$
+    \end{definition}
+
+    \begin{example}
+        設$(x,y,z) \overset{f}{\mapsto}xyz$，則\begin{align*}
+            f_x&=yz\\
+            f_{yx}&=z\\
+            f_y&=xz\\
+            f_{xy}&=z\\
+        \end{align*}
+    \end{example}
+
+    \begin{example}
+        設$(x,y) \overset{f}{\mapsto}yx^y$，則\begin{align*}
+            f_x&=y^2x^{y-1}\\
+            f_{yx}&=2yx^{y-1}+y^2x^y\ln{x}\\
+            f_y&=x^y+yx^y\ln{x}\\
+            f_{xy}&=yx^{y-1}+y^2x^{y-1}\ln{x}+yx^{y-1}
+        \end{align*}
+    \end{example}
+
     \begin{definition}[導數法]
         設$f:\mathbb{R}^m\to\mathbb{R}^n$，而$(x_1,x_2,\dots,x_m)\overset{f}{\mapsto}(y_1,y_2,\dots,y_n)$。則\begin{align*}
             \derivative{f}{x}:=\lim_{\vec{h}\to\vec{0}}\frac{f(x_1+h_1,x_2+h_2,\dots,x_m+h_m)-f(x_1,x_2,\dots,x_m)}{\norm*{\vec{h}}}
@@ -421,6 +474,14 @@
             \end{bmatrix}d(x_1,x_2,\dots,x_m)
         \end{align*}
     \end{proof}
+
+    \begin{corollary}
+        若$f$可導，則對於任意$k$，$\partial_{x_k} f$均存在。
+    \end{corollary}
+
+    \begin{corollary}
+        若$f$二階可導，則對於任意$i,j$，$\partial_{x_i x_j} f$均存在。
+    \end{corollary}
 
     \subsection*{情況一：$\mathbb{R}^3\to\mathbb{R}$}
 
@@ -599,11 +660,11 @@
 
     \section*{切面與法綫}
 
-    考慮平面上的曲綫的切綫，為$\displaystyle y-f(x_0)=\derivative{y}{x}|_{x=x_0} \cdot (x-x_0)$；若考慮向量表達式，由於$y=f(x)$，得任何圖上坐標為$(x,f(x))$，則$\vec{v}:=(1,f'(x))$為其導向量，則切綫為以下集合$$T(x):=\{(x,f(x))+\alpha(1,f'(x)):\alpha\in\mathbb{R}\}$$
+    考慮平面上的曲綫的切綫，為$\displaystyle y-f(x_0)=\derivative{y}{x}|_{x=x_0} \cdot (x-x_0)$；若考慮向量表達式，由於$y=f(x)$，得任何圖上坐標為$(x,f(x))$，則$\vec{v}:=(1,f'(x))$為其導向量，則切綫為以下集合$$T(f):=\{(x,f(x))+\alpha(1,f'(x)):\alpha\in\mathbb{R}\}$$
 
     \begin{definition}[綫性生成空間]
         設$\{\vec{v}_1, \vec{v}_2,\dots,\vec{v}_m\}$ 為$\mathbb{R}^n$内的一組綫性獨立向量，則稱$$\{\sum_{k=1}^{m}\alpha_k \vec{v}_k: \forall k \in \{1,2,\dots,m\},\alpha_k\in\mathbb{R}\}$$
-        為\textbf{由$\{\vec{v}_1, \vec{v}_2,\dots,\vec{v}_m\}$構成的綫性生成空間}，記作$\mathrm{span}\{\vec{v}_1, \vec{v}_2,\dots, \vec{v}_m\}$。
+        為\textbf{由$\{\vec{v}_1, \vec{v}_2,\dots,\vec{v}_m\}$生成的綫性空間}，記作$\mathrm{span}\{\vec{v}_1, \vec{v}_2,\dots, \vec{v}_m\}$。
     \end{definition}
 
     \begin{example}
@@ -619,8 +680,50 @@
     \end{example}
 
     \begin{theorem}
-        設$$
+        設$G(f):=\{(x,f(x)):x\in\mathbb{R}\}$為$y=f(x)$的圖像。若$T_p(f)$為$G$在$p=(x_0,y_0)$的切綫，則$$T_p(f)=\begin{bmatrix}
+            x_0\\y_0
+        \end{bmatrix}+\mathrm{span}(\begin{bmatrix}
+            1\\f'(x_0)
+        \end{bmatrix})$$
     \end{theorem}
+
+    \begin{corollary}
+        設$G(f):=\{(x,f(x)):x\in\mathbb{R}\}$為$y=f(x)$的圖像。則$T(f)$為$G$在任意點$(x,y)$的切綫集合，則$$T(f)=\{\begin{bmatrix}
+            x\\y
+        \end{bmatrix}+\mathrm{span}(\begin{bmatrix}
+            1\\f'(x)
+        \end{bmatrix}): (x,y)\in G\}$$
+        我們稱$T(f)$為切綫叢。
+    \end{corollary}
+
+    相似地，若在二維函數討論導數，則該點所產生的切綫集合，我們稱其爲\textbf{切面}。
+
+    \begin{theorem}
+        設$G(f):=\{(x,y,f(x,y)):x\in\mathbb{R}\}$為$z=f(x,y)$的圖像。若$T_p(f)$為$G$在$p=(x_0,y_0,z_0)$的切面，則$$T_p(f)=\begin{bmatrix}
+            x_0\\y_0\\z_0
+        \end{bmatrix}+\mathrm{span}(\begin{bmatrix}
+            1\\0\\f_x(x_0,y_0)
+        \end{bmatrix},\begin{bmatrix}
+            0\\1\\f_y(x_0,y_0)
+        \end{bmatrix})$$
+    \end{theorem}
+
+    \begin{corollary}
+        設$G(f):=\{(x,y,f(x,y)):x\in\mathbb{R}\}$為$z=f(x,y)$的圖像。若$T(f)$為$G$在任意點$(x,y,z)$的切面集合，則$$T(f)=\{\begin{bmatrix}
+            x\\y\\z
+        \end{bmatrix}+\mathrm{span}(\begin{bmatrix}
+            1\\0\\f_x(x,y)
+        \end{bmatrix},\begin{bmatrix}
+            0\\1\\f_y(x,y)
+        \end{bmatrix}): (x,y,z)\in G\}$$
+        我們稱$T(f)$為切面叢。
+    \end{corollary}
+
+    對於高維空間的切空間的集合，簡稱爲切叢。
+
+    \begin{proposition}
+        設$T_p(f)$為$G(f)$在$p$的切面，則對任意$\vec{v}:=(v_1,v_2,v_3)$且$|\vec{v}|=1$，以下成立：$$\nabla_{\vec{v}}f(p)\in T_p(f)$$
+    \end{proposition}
 
     \section*{二維極值與鞍點}
 \end{document}
