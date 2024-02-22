@@ -643,10 +643,6 @@
         \end{align*}
     \end{proof}
 
-    \begin{remark}
-        當$\vec{v}\in B(\mathbb{R}^m)$時，$\norm*{\vec{v}}=1$，則與偏導數相同。
-    \end{remark}
-
     \begin{proposition}[方向導數的性質]
         設$f,g:\mathbb{R}^m\to\mathbb{R}^n$，$\alpha,\beta,\lambda,\mu\in\mathbb{R}$，$u,v\in\mathbb{R}^m$，則\begin{itemize}
             \item 函數綫性性：$\nabla_{\vec{v}}(\lambda f+\mu g)=\lambda\nabla_{\vec{v}}f+\mu\nabla_{\vec{v}}g$；
@@ -664,19 +660,19 @@
 
     \begin{definition}[綫性生成空間]
         設$\{\vec{v}_1, \vec{v}_2,\dots,\vec{v}_m\}$ 為$\mathbb{R}^n$内的一組綫性獨立向量，則稱$$\{\sum_{k=1}^{m}\alpha_k \vec{v}_k: \forall k \in \{1,2,\dots,m\},\alpha_k\in\mathbb{R}\}$$
-        為\textbf{由$\{\vec{v}_1, \vec{v}_2,\dots,\vec{v}_m\}$生成的綫性空間}，記作$\mathrm{span}\{\vec{v}_1, \vec{v}_2,\dots, \vec{v}_m\}$。
+        為\textbf{由$\{\vec{v}_1, \vec{v}_2,\dots,\vec{v}_m\}$生成的綫性空間}，記作$\mathrm{span}(\vec{v}_1, \vec{v}_2,\dots, \vec{v}_m)$。
     \end{definition}
 
     \begin{example}
-        $\mathbb{R}=\mathrm{span}\{1\}$.
+        $\mathbb{R}=\mathrm{span}(1)$.
     \end{example}
 
     \begin{example}
-        $\mathbb{R}^2=\mathrm{span}\{(0,1),(1,0)\}$.
+        $\mathbb{R}^2=\mathrm{span}(\{(0,1),(1,0)\})$.
     \end{example}
 
     \begin{example}
-        $\mathbb{R}^2=\mathrm{span}\{(\sin{\theta},\cos{\theta}),(\cos{\theta},-\sin{\theta}):\theta\in\mathbb{R}\}$.
+        $\mathbb{R}^2=\mathrm{span}(\{(\sin{\theta},\cos{\theta}),(\cos{\theta},-\sin{\theta}):\theta\in\mathbb{R}\})$.
     \end{example}
 
     \begin{theorem}
@@ -708,6 +704,10 @@
         \end{bmatrix})$$
     \end{theorem}
 
+    \begin{remark}
+        切面亦可視爲在$p$點的切綫空間。
+    \end{remark}
+
     \begin{corollary}
         設$G(f):=\{(x,y,f(x,y)):x\in\mathbb{R}\}$為$z=f(x,y)$的圖像。若$T(f)$為$G$在任意點$(x,y,z)$的切面集合，則$$T(f)=\{\begin{bmatrix}
             x\\y\\z
@@ -721,9 +721,43 @@
 
     對於高維空間的切空間的集合，簡稱爲切叢。
 
-    \begin{proposition}
-        設$T_p(f)$為$G(f)$在$p$的切面，則對任意$\vec{v}:=(v_1,v_2,v_3)$且$|\vec{v}|=1$，以下成立：$$\nabla_{\vec{v}}f(p)\in T_p(f)$$
-    \end{proposition}
+    \begin{definition}[法綫]
+        設$G(f):=\{(x,y,f(x,y)):x,y\in\mathbb{R}\}$為$z=f(x,y)$的圖像。若$N_p(f)$為$G$在$p=(x_0,y_0,z_0)$的法綫，則$$N_p(f):=\{\vec{n}\in\mathbb{R}^3:\innerprod{\vec{n}}{\vec{t}}=0, \vec{t}\in T_p(f), p\in G(f)\}$$
+    \end{definition}
+
+    \begin{remark}
+        $N_p(f)$可視爲$T_p(f)$的補空間。
+    \end{remark}
+
+    \begin{theorem}
+        設$G(f):=\{(x,y,f(x,y)):x,y\in\mathbb{R}\}$為$z=f(x,y)$的圖像。若$N_p(f)$為$G$在$p=(x_0,y_0,z_0)$的法綫，則$$N_p(f)=\{\begin{bmatrix}
+            x_0\\y_0\\z_0
+        \end{bmatrix}+\mathrm{span}(\begin{bmatrix}
+            -f_x(x_0,y_0)\\
+            -f_y(x_0,y_0)\\
+            1
+        \end{bmatrix})\}$$
+    \end{theorem}
+    
+    \begin{proof}
+        設$\vec{t}:=\begin{bmatrix}
+            x_0+\alpha\\y_0+\beta\\z_0+\alpha f_x(x_0,y_0)+\beta f_y(x_0,y_0)
+        \end{bmatrix}$，則\begin{align*}
+            \innerprod{\vec{n}-p}{\vec{t}-p}&=0\\
+            \vec{n}-p&=k\begin{bmatrix}
+                -f_x(x_0,y_0)\\
+                -f_y(x_0,y_0)\\
+                1
+            \end{bmatrix}&k\in\mathbb{R}
+        \end{align*}
+        因此$$N_p(f)=\{\begin{bmatrix}
+            x_0\\y_0\\z_0
+        \end{bmatrix}+\mathrm{span}(\begin{bmatrix}
+            -f_x(x_0,y_0)\\
+            -f_y(x_0,y_0)\\
+            1
+        \end{bmatrix})\}$$
+    \end{proof}
 
     \section*{二維極值與鞍點}
 \end{document}
