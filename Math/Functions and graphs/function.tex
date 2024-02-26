@@ -310,13 +310,39 @@
 
     \begin{example}
         Recall the function in previous example, we could draw the blobs-and-arrows diagram as shown. 
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.6]{blobs-and-arrows diagram.png}
+        \end{figure}
+
+        In the figure above, the name of the function is hung over the main diagram, while the left ellipse denote the set of elements of domain $D$ and the right ellipse denote the range of elements of codomain $R$. The letter $R$ could also be interpreted as the range of $f$.
     \end{example}
 
     For a discrete function with finitely many inputs, where we will take them as a sequence, it can also be used to represent it efficiently. We just need to have some modification.
 
-    \begin{example}
-        
-    \end{example}
+    \begin{axiom}
+        Let $f:D\to R$ be a function. Let $a_1,a_2,a_3,\dots,a_n$ be a sequence of numbers in $D$ and $b_1,b_2,b_3,\dots, b_n$ be a sequence of numbers in $R$. Suppose $b_1=f(a_1), b_2=f(a_2), \dots , b_n=f(a_n)$ defines the one-to-one correspodence from $D$ to $R$. Then the following blobs-and-arrows diagram describes $f$ formally:
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.6]{blobs-and-arrows diagram sequence.png}
+        \end{figure}
+    \end{axiom}
+
+    \begin{exercise}
+        Draw the blobs-and-arrows diagram for the following discrete functions:\begin{enumerate}
+            \item $f(1)=3, f(2)=6, f(3)=7, f(4)=2, f(5)=3$.
+            \item $f(x):=\begin{cases}
+                1 &,x=1,2,3,4,5\\
+                2 &,x=6,7\\
+                3 &,x=8,9,10\\
+                4 &,x=11,12,13,14,15\\
+                5 &,x=16,17,18,19\\
+                6 &,x=20
+            \end{cases}$
+        \end{enumerate}
+    \end{exercise}
 
     \subsubsection{The pairing table and xy-coordination}
 

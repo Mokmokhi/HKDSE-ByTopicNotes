@@ -1,4 +1,4 @@
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {section}{\numberline {1}Function and its graph}{5}{}%
 \contentsline {subsection}{\numberline {1.1}What is a Function?}{5}{}%
 \contentsline {subsubsection}{\numberline {1.1.1}Function as an input-output pair}{6}{}%
@@ -6,97 +6,97 @@
 \contentsline {subsubsection}{\numberline {1.1.3}Domain, Co-domain and Range}{9}{}%
 \contentsline {subsection}{\numberline {1.2}Graph of a function}{13}{}%
 \contentsline {subsubsection}{\numberline {1.2.1}Blobs-and-arrows diagram for discrete functions}{13}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}The pairing table and xy-coordination}{15}{}%
-\contentsline {subsection}{\numberline {1.3}Fundamental properties of a graph}{15}{}%
-\contentsline {subsubsection}{\numberline {1.3.1}points lying on the graph}{15}{}%
-\contentsline {subsubsection}{\numberline {1.3.2}Special intersections: x-intercept and x-intercepts}{15}{}%
-\contentsline {subsubsection}{\numberline {1.3.3}general intersection}{15}{}%
-\contentsline {subsection}{\numberline {1.4}Solving equations using graphs of functions}{15}{}%
-\contentsline {subsubsection}{\numberline {1.4.1}Homogeneous equations}{15}{}%
-\contentsline {subsubsection}{\numberline {1.4.2}Non-homogeneous equations}{15}{}%
-\contentsline {subsubsection}{\numberline {1.4.3}Simultaneous equations}{15}{}%
-\contentsline {subsection}{\numberline {1.5}Transformation of functions}{15}{}%
-\contentsline {subsubsection}{\numberline {1.5.1}Translation}{15}{}%
-\contentsline {subsubsection}{\numberline {1.5.2}Dilation}{15}{}%
-\contentsline {subsection}{\numberline {1.6}Challenging questions}{15}{}%
-\contentsline {section}{\numberline {2}Linear functions}{16}{}%
-\contentsline {subsection}{\numberline {2.1}Fundamental concepts of points}{16}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}Distance between two points}{16}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}Mid-point and Division points}{16}{}%
-\contentsline {subsection}{\numberline {2.2}Different forms of a linear function}{16}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Slope of a line}{16}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Two-point form}{16}{}%
-\contentsline {subsubsection}{\numberline {2.2.3}Point-slope form}{16}{}%
-\contentsline {subsubsection}{\numberline {2.2.4}Slope-intercept form}{16}{}%
-\contentsline {subsubsection}{\numberline {2.2.5}General form}{16}{}%
-\contentsline {subsubsection}{\numberline {2.2.6}Special: Intercept-form}{16}{}%
-\contentsline {subsection}{\numberline {2.3}Parallel lines and Perpendicular lines}{16}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Point of intersection}{16}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}Parallel lines}{16}{}%
-\contentsline {subsubsection}{\numberline {2.3.3}Perpendicular lines}{16}{}%
-\contentsline {subsubsection}{\numberline {2.3.4}Number of intersections}{16}{}%
-\contentsline {subsection}{\numberline {2.4}Angle of elevation and depression}{16}{}%
-\contentsline {subsection}{\numberline {2.5}Additional content: Point-line distance}{16}{}%
-\contentsline {subsection}{\numberline {2.6}Linear inequalities}{17}{}%
-\contentsline {subsubsection}{\numberline {2.6.1}One variable inequality}{17}{}%
-\contentsline {subsubsection}{\numberline {2.6.2}Two variable inequality}{17}{}%
-\contentsline {subsubsection}{\numberline {2.6.3}Linear programming}{17}{}%
-\contentsline {subsection}{\numberline {2.7}Challenging questions}{17}{}%
-\contentsline {section}{\numberline {3}Quadratic functions}{18}{}%
-\contentsline {subsection}{\numberline {3.1}Solving Quadratic Equations}{18}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}The square-root method}{18}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}General form and Completing the square method}{18}{}%
-\contentsline {subsubsection}{\numberline {3.1.3}The quadratic formula}{18}{}%
-\contentsline {subsection}{\numberline {3.2}Solvability of Quadratic Equations}{18}{}%
-\contentsline {subsubsection}{\numberline {3.2.1}Discriminant: the factor affecting solvability}{18}{}%
-\contentsline {subsubsection}{\numberline {3.2.2}Application of solvability}{18}{}%
-\contentsline {subsection}{\numberline {3.3}Relation between coefficients and roots}{18}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}What does it mean by a root?}{18}{}%
-\contentsline {subsubsection}{\numberline {3.3.2}The Vieta formula}{18}{}%
-\contentsline {subsubsection}{\numberline {3.3.3}Forming quadratic equations with given roots}{18}{}%
-\contentsline {subsection}{\numberline {3.4}Vertex form of a quadratic function}{18}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Obtaining vertex form using Transformation}{18}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Relation between vertex form and general form}{18}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Opening direction}{18}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}The axis of symmetry}{18}{}%
-\contentsline {subsubsection}{\numberline {3.4.5}The extremum of quadratic functions}{18}{}%
-\contentsline {subsection}{\numberline {3.5}Quadratic inequalities}{18}{}%
-\contentsline {subsubsection}{\numberline {3.5.1}Boolean algebra}{18}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Solving quadratic inequalities}{18}{}%
-\contentsline {subsection}{\numberline {3.6}Challenging questions}{18}{}%
-\contentsline {section}{\numberline {4}Polynomial functions}{19}{}%
-\contentsline {subsection}{\numberline {4.1}Arithmetic rules for polynomials}{19}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Addition, Subtraction and Multiplication}{19}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}Division}{19}{}%
-\contentsline {subsection}{\numberline {4.2}Divisibility of polynomials}{19}{}%
-\contentsline {subsubsection}{\numberline {4.2.1}Division algorithm}{19}{}%
-\contentsline {subsubsection}{\numberline {4.2.2}Remainder Theorem}{19}{}%
-\contentsline {subsubsection}{\numberline {4.2.3}Factor Theorem and General Vieta formula}{19}{}%
-\contentsline {subsection}{\numberline {4.3}G.C.D. and L.C.M.}{19}{}%
-\contentsline {subsubsection}{\numberline {4.3.1}Greatest common divisor}{19}{}%
-\contentsline {subsubsection}{\numberline {4.3.2}Least common multiple}{19}{}%
-\contentsline {subsection}{\numberline {4.4}Positional notation}{19}{}%
-\contentsline {subsubsection}{\numberline {4.4.1}Binary, Octal, Decimal and Hexadecimal}{19}{}%
-\contentsline {subsubsection}{\numberline {4.4.2}Conversion between different bases}{19}{}%
-\contentsline {subsection}{\numberline {4.5}Challenging questions}{19}{}%
-\contentsline {section}{\numberline {5}Exponential and Logarithmic functions}{20}{}%
-\contentsline {subsection}{\numberline {5.1}Exponential functions}{20}{}%
-\contentsline {subsubsection}{\numberline {5.1.1}Law of Exponential algebra}{20}{}%
-\contentsline {subsubsection}{\numberline {5.1.2}Seeing surds as fractional exponents}{20}{}%
-\contentsline {subsubsection}{\numberline {5.1.3}Solving equations using exponetiation method}{20}{}%
-\contentsline {subsection}{\numberline {5.2}Logarithmic functions}{20}{}%
-\contentsline {subsubsection}{\numberline {5.2.1}What is Logarithm?}{20}{}%
-\contentsline {subsubsection}{\numberline {5.2.2}Law of Logarithmic algebra}{20}{}%
-\contentsline {subsubsection}{\numberline {5.2.3}Solving equations using Logarithmic method}{20}{}%
-\contentsline {subsection}{\numberline {5.3}Challenging questions}{20}{}%
-\contentsline {section}{\numberline {6}Sequence as a function of natural numbers}{21}{}%
-\contentsline {subsection}{\numberline {6.1}What is a sequence?}{21}{}%
-\contentsline {subsection}{\numberline {6.2}Arithmetic sequence}{21}{}%
-\contentsline {subsubsection}{\numberline {6.2.1}General form}{21}{}%
-\contentsline {subsubsection}{\numberline {6.2.2}Summation of arithmetic sequence}{21}{}%
-\contentsline {subsection}{\numberline {6.3}Geometric sequence}{21}{}%
-\contentsline {subsubsection}{\numberline {6.3.1}General form}{21}{}%
-\contentsline {subsubsection}{\numberline {6.3.2}Summation on Geometric sequence}{21}{}%
-\contentsline {subsubsection}{\numberline {6.3.3}Infinite sum of Geometric sequence}{21}{}%
-\contentsline {subsection}{\numberline {6.4}Additional content: Arithmetic-Geometric sequence}{21}{}%
-\contentsline {subsection}{\numberline {6.5}Challenging questions}{21}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}The pairing table and xy-coordination}{16}{}%
+\contentsline {subsection}{\numberline {1.3}Fundamental properties of a graph}{16}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}points lying on the graph}{16}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}Special intersections: x-intercept and x-intercepts}{16}{}%
+\contentsline {subsubsection}{\numberline {1.3.3}general intersection}{16}{}%
+\contentsline {subsection}{\numberline {1.4}Solving equations using graphs of functions}{16}{}%
+\contentsline {subsubsection}{\numberline {1.4.1}Homogeneous equations}{16}{}%
+\contentsline {subsubsection}{\numberline {1.4.2}Non-homogeneous equations}{16}{}%
+\contentsline {subsubsection}{\numberline {1.4.3}Simultaneous equations}{16}{}%
+\contentsline {subsection}{\numberline {1.5}Transformation of functions}{16}{}%
+\contentsline {subsubsection}{\numberline {1.5.1}Translation}{16}{}%
+\contentsline {subsubsection}{\numberline {1.5.2}Dilation}{16}{}%
+\contentsline {subsection}{\numberline {1.6}Challenging questions}{16}{}%
+\contentsline {section}{\numberline {2}Linear functions}{17}{}%
+\contentsline {subsection}{\numberline {2.1}Fundamental concepts of points}{17}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Distance between two points}{17}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Mid-point and Division points}{17}{}%
+\contentsline {subsection}{\numberline {2.2}Different forms of a linear function}{17}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Slope of a line}{17}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Two-point form}{17}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}Point-slope form}{17}{}%
+\contentsline {subsubsection}{\numberline {2.2.4}Slope-intercept form}{17}{}%
+\contentsline {subsubsection}{\numberline {2.2.5}General form}{17}{}%
+\contentsline {subsubsection}{\numberline {2.2.6}Special: Intercept-form}{17}{}%
+\contentsline {subsection}{\numberline {2.3}Parallel lines and Perpendicular lines}{17}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Point of intersection}{17}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Parallel lines}{17}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}Perpendicular lines}{17}{}%
+\contentsline {subsubsection}{\numberline {2.3.4}Number of intersections}{17}{}%
+\contentsline {subsection}{\numberline {2.4}Angle of elevation and depression}{17}{}%
+\contentsline {subsection}{\numberline {2.5}Additional content: Point-line distance}{17}{}%
+\contentsline {subsection}{\numberline {2.6}Linear inequalities}{18}{}%
+\contentsline {subsubsection}{\numberline {2.6.1}One variable inequality}{18}{}%
+\contentsline {subsubsection}{\numberline {2.6.2}Two variable inequality}{18}{}%
+\contentsline {subsubsection}{\numberline {2.6.3}Linear programming}{18}{}%
+\contentsline {subsection}{\numberline {2.7}Challenging questions}{18}{}%
+\contentsline {section}{\numberline {3}Quadratic functions}{19}{}%
+\contentsline {subsection}{\numberline {3.1}Solving Quadratic Equations}{19}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}The square-root method}{19}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}General form and Completing the square method}{19}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}The quadratic formula}{19}{}%
+\contentsline {subsection}{\numberline {3.2}Solvability of Quadratic Equations}{19}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Discriminant: the factor affecting solvability}{19}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Application of solvability}{19}{}%
+\contentsline {subsection}{\numberline {3.3}Relation between coefficients and roots}{19}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}What does it mean by a root?}{19}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}The Vieta formula}{19}{}%
+\contentsline {subsubsection}{\numberline {3.3.3}Forming quadratic equations with given roots}{19}{}%
+\contentsline {subsection}{\numberline {3.4}Vertex form of a quadratic function}{19}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Obtaining vertex form using Transformation}{19}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Relation between vertex form and general form}{19}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Opening direction}{19}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}The axis of symmetry}{19}{}%
+\contentsline {subsubsection}{\numberline {3.4.5}The extremum of quadratic functions}{19}{}%
+\contentsline {subsection}{\numberline {3.5}Quadratic inequalities}{19}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Boolean algebra}{19}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Solving quadratic inequalities}{19}{}%
+\contentsline {subsection}{\numberline {3.6}Challenging questions}{19}{}%
+\contentsline {section}{\numberline {4}Polynomial functions}{20}{}%
+\contentsline {subsection}{\numberline {4.1}Arithmetic rules for polynomials}{20}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Addition, Subtraction and Multiplication}{20}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Division}{20}{}%
+\contentsline {subsection}{\numberline {4.2}Divisibility of polynomials}{20}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Division algorithm}{20}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Remainder Theorem}{20}{}%
+\contentsline {subsubsection}{\numberline {4.2.3}Factor Theorem and General Vieta formula}{20}{}%
+\contentsline {subsection}{\numberline {4.3}G.C.D. and L.C.M.}{20}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Greatest common divisor}{20}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Least common multiple}{20}{}%
+\contentsline {subsection}{\numberline {4.4}Positional notation}{20}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}Binary, Octal, Decimal and Hexadecimal}{20}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}Conversion between different bases}{20}{}%
+\contentsline {subsection}{\numberline {4.5}Challenging questions}{20}{}%
+\contentsline {section}{\numberline {5}Exponential and Logarithmic functions}{21}{}%
+\contentsline {subsection}{\numberline {5.1}Exponential functions}{21}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Law of Exponential algebra}{21}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Seeing surds as fractional exponents}{21}{}%
+\contentsline {subsubsection}{\numberline {5.1.3}Solving equations using exponetiation method}{21}{}%
+\contentsline {subsection}{\numberline {5.2}Logarithmic functions}{21}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}What is Logarithm?}{21}{}%
+\contentsline {subsubsection}{\numberline {5.2.2}Law of Logarithmic algebra}{21}{}%
+\contentsline {subsubsection}{\numberline {5.2.3}Solving equations using Logarithmic method}{21}{}%
+\contentsline {subsection}{\numberline {5.3}Challenging questions}{21}{}%
+\contentsline {section}{\numberline {6}Sequence as a function of natural numbers}{22}{}%
+\contentsline {subsection}{\numberline {6.1}What is a sequence?}{22}{}%
+\contentsline {subsection}{\numberline {6.2}Arithmetic sequence}{22}{}%
+\contentsline {subsubsection}{\numberline {6.2.1}General form}{22}{}%
+\contentsline {subsubsection}{\numberline {6.2.2}Summation of arithmetic sequence}{22}{}%
+\contentsline {subsection}{\numberline {6.3}Geometric sequence}{22}{}%
+\contentsline {subsubsection}{\numberline {6.3.1}General form}{22}{}%
+\contentsline {subsubsection}{\numberline {6.3.2}Summation on Geometric sequence}{22}{}%
+\contentsline {subsubsection}{\numberline {6.3.3}Infinite sum of Geometric sequence}{22}{}%
+\contentsline {subsection}{\numberline {6.4}Additional content: Arithmetic-Geometric sequence}{22}{}%
+\contentsline {subsection}{\numberline {6.5}Challenging questions}{22}{}%
