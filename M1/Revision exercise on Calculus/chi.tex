@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+
+\graphicspath{{../img/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{測驗4:溫習測驗}
+\fancyhf[CF]{\thepage}
+
+\begin{document}
+    \begin{enumerate}
+        \item 考慮一個隨機樣本集合$X_n$，其概率算法如下：$$P(X_n=x)=C^n_x p^x (1-p)^x$$ 其中$0<p<1$為實數，$n>0$為整數。\begin{enumerate}
+            \item 證明$X_n$為概率空間，即證明$\displaystyle\sum_{k=0}^{n}P(X=x)=1$。
+            \item 設$E(X_n)$為$X_n$的期望值。已知期望值的算法為$\displaystyle\sum_{x=0}^{n}[x\cdot P(X=x)]$。\begin{enumerate}
+                \item 證明對於任意整數$n$及$k<n$，$$k\cdot C_k^n \equiv n\cdot C_{k-1}^{n-1}$$
+                \item 化簡$$x\cdot P(X=x)$$
+                \item 由此，以$p$及$n$表$E(X_n)$。
+            \end{enumerate}
+            \item 已知$A=\{x\, |\, 0\leq x \leq 2\}$及$B=\{x\, |\, x\textrm{為0至5以内的單數}\}$為$X_5$内的事件。設$A'$及$B'$分別爲對應的互補事件。\begin{enumerate}
+                \item $A$及$B$是否互相獨立？
+                \item 求$P(A|B)$的值。
+                \item 求$P(A'|B')$的值。
+            \end{enumerate}
+        \end{enumerate}
+        \item 考慮一個隨機樣本集合$X_{\lambda}$，其概率算法如下：$$P(X_{\lambda}=x)=\frac{e^{-\lambda} \lambda^x}{x!}$$其中$\lambda>0$為實數。\begin{enumerate}
+            \item 證明$X_\lambda$為概率空間，即證明$\displaystyle\sum_{x=0}^{\infty}P(X_{\lambda}=x)=1$。
+            \item \begin{enumerate}
+                \item 求$\displaystyle \derivative{\lambda}P(X_{\lambda}=x)$。
+                \item 設$\Delta x = P(X_{\lambda}=x) - P(X_{\lambda}=x-1)$。求$$\int_{0}^{1} \Delta x d\lambda$$
+            \end{enumerate}
+            \item 若$x$為實數，則$P(X_{\lambda}=x)$屬於連續函數。如使用梯形法則計算$\displaystyle \int_1^2 P(X_{\lambda}=x) dx$，問計算結果屬於過高估算還是過低估算？試加以解釋。
+        \end{enumerate}
+        \item 設某車輛的行駛速度$v(t)$在不同時間點$t>0$可以用以下函式估算：$$v(t)=\frac{kt}{e^{at}+4}$$ 其中$k$和$a$為常數。已知在行車記錄儀内有以下不同時間的數據：\begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|}
+                \hline
+                $t$&5&10&15&20&25\\
+                \hline
+                $v(t)$&30.90&6.56&0.83&0.09&0.01\\
+                \hline
+            \end{tabular}
+        \end{center}\begin{enumerate}
+            \item 繪畫$\displaystyle\ln(\frac{kt}{v(t)}-4)$對$t$的圖像，並求出$a$和$k$的值。
+            \item 求$v'(t)$及$v''(t)$，並求$v(t)$的極大值。
+            \item $v(t)$會否小於0.0001？
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
