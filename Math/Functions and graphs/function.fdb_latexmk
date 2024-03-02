@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1709301109 "c:/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1709301115
+["pdflatex"] 1709373946 "c:/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1709373948
   "../images//blobs-and-arrows diagram sequence.png" 1709026035 12755 640c195bf330fdff88680d695178266e ""
   "../images//blobs-and-arrows diagram.png" 1709026035 13341 58184d3ea4e3c6569ffaefb6c2fdcfe6 ""
   "../images//union and intersection.png" 1708138700 15562 9b59fbbaefc69f6fe837aaa43797e9b0 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637656387 9767274 bfa53867e73d350431acf6a4363b13ea ""
-  "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1692081626 82709 e421094887a3700bddedcd00a786f109 ""
+  "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1709372271 82709 e421094887a3700bddedcd00a786f109 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/sfd/ttf2pk/Unicode.sfd" 1458473944 107591 c249c63d38b8b55408aee52d643b0c18 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -226,14 +226,15 @@
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/physics/physics.sty" 1356002062 29610 a9597219b282d9c78b02393dcd7d4322 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/tools/indentfirst.sty" 1636710260 1618 786b14c5a3e144c3a51452d08232d18b ""
+  "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1636710260 32262 2bb622a0aa56c4a7a5cbdfe9d122c15a ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1636710260 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1588360716 5646 2609567579096c69f0472004a72489a6 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1588360716 31921 5879df709f54630647c1aa6545bcedb7 ""
-  "c:/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1709301105 31746 d9edd9d05336434e54be3b8f58798fef ""
-  "function.aux" 1709301114 12716 9dfc9223b7e7632cad9aac222e14624a "pdflatex"
-  "function.tex" 1709301105 31746 d9edd9d05336434e54be3b8f58798fef ""
-  "function.toc" 1709301114 8341 42251fb0405e9a7e28f8c0f8d2d467d4 "pdflatex"
+  "c:/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1709373790 31867 72b3ec65e6b154c1140c7ac03a217c09 ""
+  "function.aux" 1709373948 12716 9dfc9223b7e7632cad9aac222e14624a "pdflatex"
+  "function.tex" 1709373790 31867 72b3ec65e6b154c1140c7ac03a217c09 ""
+  "function.toc" 1709373948 8341 42251fb0405e9a7e28f8c0f8d2d467d4 "pdflatex"
   (generated)
   "function.aux"
   "function.log"

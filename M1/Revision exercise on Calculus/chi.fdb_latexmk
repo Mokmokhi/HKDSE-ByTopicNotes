@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1709368405 "c:/GitHub/HKDSE-ByTopicNotes/M1/Revision exercise on Calculus/chi.tex" "chi.pdf" "chi" 1709368407
+["pdflatex"] 1709372034 "c:/GitHub/HKDSE-ByTopicNotes/M1/Revision exercise on Calculus/chi.tex" "chi.pdf" "chi" 1709372036
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637656387 9767274 bfa53867e73d350431acf6a4363b13ea ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1692081626 82709 e421094887a3700bddedcd00a786f109 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
@@ -38,6 +38,7 @@
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong5e.tfm" 1247154072 1172 19d2fe591b31a07314df704f4d4d5035 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong5f.tfm" 1247154072 1172 e4d92bc2f617835508003ad811702c49 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong61.tfm" 1247154072 1172 0c54aba04f6eca94b3b31a372d096e93 ""
+  "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong62.tfm" 1247154072 1172 9ffac14c72fbc4879502782835fb1e0a ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong64.tfm" 1247154072 1172 9123bc1a52f39fa754022a43a1394244 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong65.tfm" 1247154072 1172 2873dd6228ece5c9b075cfdc580febae ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong66.tfm" 1247154072 1172 f300cf9aac35a61638796e3d2ecc0e47 ""
@@ -74,6 +75,7 @@
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong93.tfm" 1247154072 1172 37b6942a1c52844fdd03bddbf5994322 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong95.tfm" 1247154072 1172 b83dfb32a9b8d234282a0b11898d2c55 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong96.tfm" 1247154072 1172 97abce3faa5097f1401cb707f6f69600 ""
+  "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong97.tfm" 1247154072 1172 3322410a0eee91e13e02457b09378209 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong99.tfm" 1247154072 1172 445e3c81b2f1f84601e454216cbde866 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong9a.tfm" 1247154072 1172 37a3cd36cf03e67f393bee80b1370d05 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong9e.tfm" 1247154072 1172 e797949130fb017e573d6826989dff50 ""
@@ -269,9 +271,9 @@
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1588360716 5646 2609567579096c69f0472004a72489a6 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1588360716 31921 5879df709f54630647c1aa6545bcedb7 ""
   "C:/WINDOWS/Fonts/simsun.ttc" 1708151074 18008680 490583a172d4371a68d1e0526a6bca81 ""
-  "c:/GitHub/HKDSE-ByTopicNotes/M1/Revision exercise on Calculus/chi.tex" 1709368405 3128 ddc5868b8d6e64dbdf6e894628b7e26c ""
-  "chi.aux" 1709368407 112 a79fe896b56b4862b346df1ebf05b16d "pdflatex"
-  "chi.tex" 1709368405 3128 ddc5868b8d6e64dbdf6e894628b7e26c ""
+  "c:/GitHub/HKDSE-ByTopicNotes/M1/Revision exercise on Calculus/chi.tex" 1709372033 3259 2d91b1c351b3212b6b5211af9bfaefa8 ""
+  "chi.aux" 1709372036 112 a79fe896b56b4862b346df1ebf05b16d "pdflatex"
+  "chi.tex" 1709372033 3259 2d91b1c351b3212b6b5211af9bfaefa8 ""
   (generated)
   "chi.aux"
   "chi.log"
