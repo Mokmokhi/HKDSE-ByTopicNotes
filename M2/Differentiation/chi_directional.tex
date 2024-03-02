@@ -773,7 +773,9 @@
         由此，若需證明某參數化曲綫簡單，則考慮當$\vec{r}(t_1)=\vec{r}(t_2)$時，必須有$t_1=t_2$。
     \end{remark}
 
-    對於參數化曲綫，因應$\vec{r}(t)$可作爲位置向量（坐標），因此$\displaystyle \derivative{\vec{r}(t)}{t}$可作爲速度向量，記作$\vec{v}(t)=\vec{r}'(t)$；同時，可視$\vec{v}(t)$為與切綫平行的向量，故取$T(t):=\frac{\vec{v}}{\norm*{\vec{v}}}$作切向量。
+    對於參數化曲綫，因應$\vec{r}(t)$可作爲位置向量（坐標），因此$\displaystyle \derivative{\vec{r}(t)}{t}$可作爲速度向量，記作$\vec{v}(t)=\vec{r}'(t)$；同時，可視$\vec{v}(t)$為與切綫平行的向量，故取$T(t):=\frac{\vec{v}}{\norm*{\vec{v}}}$作切向量。而法綫一詞從此不足以定論垂直方向，因爲與$T(t)$正交的并非向量，而是平面，因而需要更精確定義法平面上的向量。依舊取$N(t):=\frac{T'(t)}{\norm*{T'(t)}}$使得$\innerprod{N(t)}{T(t)}=0$，令$B(t):=\frac{T(t)\cross N(t)}{\norm*{T(t)\cross N(t)}}$使得$B(t)$為第三個標準正交基。
+
+    然而，上述定義方式並不穩定，即$T(t),N(t),B(t)$并非
 
     \section*{二維極值與鞍點}
 \end{document}

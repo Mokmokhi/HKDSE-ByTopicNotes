@@ -1158,12 +1158,16 @@ INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unikai\unikai8e.
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unikai\unikai8d.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unikai\unikai81.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unikai\unikai5d.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong8d.tfm
+INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong78.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei4e.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei69.tfm
 INPUT C:\Users\Owenm\AppData\Roaming\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei9e.tfm
 INPUT chi_directional.aux
 INPUT C:\WINDOWS\Fonts\simhei.ttf
 INPUT C:\WINDOWS\Fonts\simhei.ttf
+INPUT C:\WINDOWS\Fonts\simsun.ttc
+INPUT C:\WINDOWS\Fonts\simsun.ttc
 INPUT C:\WINDOWS\Fonts\simkai.ttf
 INPUT C:\WINDOWS\Fonts\simkai.ttf
 INPUT C:\WINDOWS\Fonts\simkai.ttf
@@ -1352,6 +1356,8 @@ INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT D:\Program Files (x86)\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
