@@ -759,5 +759,21 @@
         \end{bmatrix})\}$$
     \end{proof}
 
+    在三維空間内，除了曲面，還可以討論曲綫。不過三維内的曲綫比曲面其實還要複雜。
+
+    \begin{definition}[參數化曲綫]
+        若對於軌跡$(x,y,z)$有參數$t$使得$x=x(t),y=y(t),z=z(t)$均可參數化，則稱$\vec{r}(t):=(x(t),y(t),z(t))$為參數化曲綫。
+    \end{definition}
+
+    \begin{definition}[簡單曲綫]
+        若一條曲綫不會在非終點與自己相交，則稱之爲\textbf{簡單曲綫}。
+    \end{definition}
+
+    \begin{remark}
+        由此，若需證明某參數化曲綫簡單，則考慮當$\vec{r}(t_1)=\vec{r}(t_2)$時，必須有$t_1=t_2$。
+    \end{remark}
+
+    對於參數化曲綫，因應$\vec{r}(t)$可作爲位置向量（坐標），因此$\displaystyle \derivative{\vec{r}(t)}{t}$可作爲速度向量，記作$\vec{v}(t)=\vec{r}'(t)$；同時，可視$\vec{v}(t)$為與切綫平行的向量，故取$T(t):=\frac{\vec{v}}{\norm*{\vec{v}}}$作切向量。
+
     \section*{二維極值與鞍點}
 \end{document}
