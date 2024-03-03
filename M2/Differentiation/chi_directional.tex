@@ -704,6 +704,10 @@
         \end{bmatrix})$$
     \end{theorem}
 
+    \begin{proposition}
+        一般而言，若$z=f(x,y)$，則切面爲$$z=z_0 + \nabla f \cdot \vec{v}= z_0 + \nabla_{\vec{v}}f$$
+    \end{proposition}
+
     \begin{remark}
         切面亦可視爲在$p$點的切綫空間。
     \end{remark}
@@ -775,7 +779,21 @@
 
     對於參數化曲綫，因應$\vec{r}(t)$可作爲位置向量（坐標），因此$\displaystyle \derivative{\vec{r}(t)}{t}$可作爲速度向量，記作$\vec{v}(t)=\vec{r}'(t)$；同時，可視$\vec{v}(t)$為與切綫平行的向量，故取$T(t):=\frac{\vec{v}}{\norm*{\vec{v}}}$作切向量。而法綫一詞從此不足以定論垂直方向，因爲與$T(t)$正交的并非向量，而是平面，因而需要更精確定義法平面上的向量。依舊取$N(t):=\frac{T'(t)}{\norm*{T'(t)}}$使得$\innerprod{N(t)}{T(t)}=0$，令$B(t):=\frac{T(t)\cross N(t)}{\norm*{T(t)\cross N(t)}}$使得$B(t)$為第三個標準正交基。
 
-    然而，上述定義方式並不穩定，即$T(t),N(t),B(t)$并非
+    然而，上述定義方式並不理想，因爲對於相同形狀，即軌跡一樣的曲綫，依然有著因不同的時間變率而有不同的參數化方式。對此，我們將會在未來討論曲綫的周長以解決標準參數化的問題。
 
     \section*{二維極值與鞍點}
+
+    利用曲面的切面，我們可以討論極值：
+
+    \begin{theorem}[二維極值]
+        若於$p$點的切面與xy平面沒有相交，則$p$可為頂點；若$p$為頂點，則於$p$點的切面與xy平面沒有相交。
+    \end{theorem}
+
+    \begin{proposition}
+        設$p$為頂點，則$f_x(p)=f_y(p)=0$。
+    \end{proposition}
+
+    \begin{proposition}
+        設$p$為頂點，則$\nabla^2 f(p)$。
+    \end{proposition}
 \end{document}
