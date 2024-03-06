@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1709442124 "c:/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" "chi_directional.pdf" "chi_directional" 1709442127
+["pdflatex"] 1709632730 "c:/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" "chi_directional.pdf" "chi_directional" 1709632736
   "../image//Force.png" 1703229219 11092 bfa2fa17e824f12688875562189019ed ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1659550239 14064 b2c253ebc0c6432d05e403ad6df92f4d ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637656387 9767274 bfa53867e73d350431acf6a4363b13ea ""
@@ -107,6 +107,7 @@
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai74.tfm" 1247154072 1172 c670d72203116e6bbe95f2bcd0cb910c ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai75.tfm" 1247154072 1172 2f7a4b0c52102520d004395339c53006 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai76.tfm" 1247154072 1172 59ccc09a32bc1065dcb7437925eb1275 ""
+  "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai77.tfm" 1247154072 1172 cb20f7ee877b58ab75550c6704380f58 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai79.tfm" 1247154072 1172 90a02f27587d447d01e4fecff89d81dc ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai7a.tfm" 1247154072 1172 ca94f7a1b0ba9893add120d3d76e106f ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai7b.tfm" 1247154072 1172 24787e626a4658aa0badf81d8fb205c2 ""
@@ -121,6 +122,7 @@
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai89.tfm" 1247154072 1172 b917488d56ef9924ada92698c5c12a00 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai8a.tfm" 1247154072 1172 a4995465ad502a3ad16c94bd2e1dab29 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai8b.tfm" 1247154072 1172 d65cb106123a92c5ee00b1e4fe33aea2 ""
+  "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai8c.tfm" 1247154072 1172 b96858acf2c20389c5af6287cf150d38 ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai8d.tfm" 1247154072 1172 e6018378825d1ef17d762352d6fd052e ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai8e.tfm" 1247154072 1172 3a5ce0987c2682883bf6072aeb7733ab ""
   "C:/Users/Owenm/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai90.tfm" 1247154072 1172 3315451bb38b8ba0d03dc4fadb3f7c67 ""
@@ -405,9 +407,9 @@
   "C:/WINDOWS/Fonts/simhei.ttf" 1707407640 9755440 983b60188a8e5a7c29c06c674f428b3d ""
   "C:/WINDOWS/Fonts/simkai.ttf" 1707407640 11789376 868a8b82664dfab00a95e3e30eaa705a ""
   "C:/WINDOWS/Fonts/simsun.ttc" 1708151074 18008680 490583a172d4371a68d1e0526a6bca81 ""
-  "c:/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" 1709442123 40878 59acb09975ea42dac6db97cf06356001 ""
-  "chi_directional.aux" 1709442126 113 da540d05406fab9e0684349ca083b333 "pdflatex"
-  "chi_directional.tex" 1709442123 40878 59acb09975ea42dac6db97cf06356001 ""
+  "c:/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/chi_directional.tex" 1709632729 41266 aa5d993fbde9ce86ecc04293f1df1543 ""
+  "chi_directional.aux" 1709632734 113 71f7124abc1a16b697cac2496eba4a6a "pdflatex"
+  "chi_directional.tex" 1709632729 41266 aa5d993fbde9ce86ecc04293f1df1543 ""
   (generated)
   "chi_directional.aux"
   "chi_directional.log"

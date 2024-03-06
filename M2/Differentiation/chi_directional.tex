@@ -793,7 +793,16 @@
         設$p$為頂點，則$f_x(p)=f_y(p)=0$。
     \end{proposition}
 
+    \begin{proof}
+        設$p$為頂點，令$\vec{n}\in N_p(f)$使得對任意$\vec{v}\in\{(x,y,0):x,y\in\mathbb{R}\}$，$\innerprod{\vec{n}-p}{\vec{v}}=0$，則\begin{align*}
+            f_x(p)x+f_y(p)y&=0
+        \end{align*}
+        因$x,y$互相獨立，$\begin{cases}
+            f_x(p)=0\\f_y(p)=0
+        \end{cases}$。
+    \end{proof}
+
     \begin{proposition}
-        設$p$為頂點，則$\nabla^2 f(p)$。
+        設$p$為頂點，則$\nabla^2 f(p)$為正定矩陣或負定矩陣。
     \end{proposition}
 \end{document}
