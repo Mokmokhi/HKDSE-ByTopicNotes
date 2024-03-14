@@ -56,4 +56,47 @@
     
     \section*{積分的含義}
     從以上簡介可以看出，積分的目的在於加法；更明確的説法是定積分在於計算面積。與中學教程不同，我們會先觀察定積分，再闡述不定積分（實際上他們只差一步）。
+
+    \subsection*{黎曼積分法}
+    黎曼對於曲綫下的面積有著相當扎實的幾何見解，他認爲每一條連續曲綫都可以用分割法的方式進行求積，而且\textbf{無論分割的方法如何隨機，若分割數量趨向無限，其結果都是恆定的}。
+
+    藉著以上見解，黎曼將某區間$[a,b]$拆分爲$n$個區間，使得$a=a_0<a_1<a_2<\cdots<a_n=b$並記第$k$個區間為$$P_k:=[a_{k-1},a_k]$$因應$P_k$的有限性及函數$f$的連續性，隨機於$P_k$内抽取變量$t_k\in P_k=[a_{k-1},a_k]$，可得對於$P_k$上的曲綫面積的估算$$f(t_k)\norm*{P_k}$$其中$\norm*{P_k}$代表區間$P_k$的寬度。因此，黎曼給出的積分方法為
+
+    \begin{definition}[黎曼積分]
+        設$f$為$[a,b]$上的連續函數，令存在$a_1,a_2,\dots,a_{n-1}$使得$a=:a_0<a_1<a_2<\cdots<a_n:=b$，並設$P:=\{(t_k,P_k):1\leq k\leq n\}$為\textbf{標識區間集}使得$t_k\in P_k=[a_{k-1},a_k]$，則定義$f$在$[a,b]$上的\textbf{$P$-估算面積}為$$S(f;P):=\sum_{k=1}^{n}f(t_k)\norm*{P_k}$$
+        而精確面積為$$\int_{a}^{b}f=S(f):=\lim_{n\to \infty}S(f;P)$$
+    \end{definition}
+
+    黎曼積分屬於概念上的積分，實際情況還需要確定一種$t_k$的取值方法。我們先論證黎曼積分的存在性和唯一性，再討論實際應用會如何處理。
+
+    \begin{theorem}
+        若$f$為有限區間内的連續函數，則$f$的黎曼積分有界且唯一。
+    \end{theorem}
+    \begin{proof}
+        由於\begin{align*}
+            \min\{\sum_{k=1}^{n}f(t_k)\norm*{P_k}\}\leq \sum_{k=1}^{n}f(t_k)\norm*{P_k}\leq \max\{\sum_{k=1}^{n}f(t_k)\norm*{P_k}\}\\
+            \sum_{k=1}^{n}\min\{f(t_k)\}\norm*{P_k}\leq \sum_{k=1}^{n}f(t_k)\norm*{P_k}\leq \sum_{k=1}^{n}\max\{f(t_k)\}\norm*{P_k}
+        \end{align*}
+        因此\begin{align*}
+            \lim_{n\to\infty}\sum_{k=1}^{n}\min\{f(t_k)\}\norm*{P_k}\leq \lim_{n\to\infty}\sum_{k=1}^{n}f(t_k)\norm*{P_k}\leq \lim_{n\to\infty}\sum_{k=1}^{n}\max\{f(t_k)\}\norm*{P_k}
+        \end{align*}
+        對於$\norm*{P_k}\to 0$，可視$\min\{f(t_k)\}=\max\{f(t_k)\}$，因此$\int_{a}^{b}f$唯一存在。
+    \end{proof}
+    \subsection*{勒貝格積分法}
+    \subsection*{萊布尼茨法則}
+    \section*{積分方法}
+    \subsection*{基本積分定則}
+    \subsection*{換元代入法}
+    \subsection*{參數化代入法}
+    \subsection*{部分積分法}
+    \subsection*{費曼積分法}
+    \section*{體積運算}
+    \subsection*{圓盤法}
+    \subsection*{外殼法}
+    \section*{多元積分}
+    \subsection*{雙重積分}
+    \subsection*{三重積分}
+    \section*{向量函數積分}
+    \subsection*{綫積分}
+    \subsection*{曲面積分}
 \end{document}
