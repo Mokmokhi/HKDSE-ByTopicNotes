@@ -1,0 +1,56 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{dsenotes}[2024-3-15 v1.0 Customized Notes Typing]
+
+%% Requires following packages
+\RequirePackage{ctex}
+\RequirePackage[english]{babel}
+\RequirePackage{blindtext}
+\RequirePackage{nameref}
+\RequirePackage{fancyhdr}
+\RequirePackage{amsmath,amssymb,amsthm}
+\RequirePackage{graphicx,float}
+\RequirePackage{physics}
+\RequirePackage{pgfplots}
+\RequirePackage[a4paper, total={6in, 9in}]{geometry}
+
+\DeclareOption{chinese}{
+    %% Theorem
+    \newtheorem{definition}{定義}
+    \newtheorem*{theorem}{定理}
+    \newtheorem*{corollary}{衍理}
+    \newtheorem*{lemma}{引理}
+    \newtheorem*{proposition}{命題}
+    \newtheorem*{remark}{小記}
+    \newtheorem*{claim}{主張}
+    \newtheorem*{example}{示例}
+    \newtheorem*{axiom}{公設}
+    \newtheorem*{exercise}{即時練習}
+    \renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+    \newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+}
+
+\DeclareOption{english}{
+    %% Theorem
+    \newtheorem{definition}{Definition}
+    \newtheorem*{theorem}{Theorem}
+    \newtheorem*{corollary}{Corollary}
+    \newtheorem*{lemma}{Lemma}
+    \newtheorem*{proposition}{Proposition}
+    \newtheorem*{remark}{Remark}
+    \newtheorem*{claim}{Claim}
+    \newtheorem*{example}{Example}
+    \newtheorem*{axiom}{Axiom}
+    \newtheorem*{exercise}{Essential Practice}
+    \renewenvironment*{proof}{\textit{Proof.}}{\hfill$\qed$}
+
+    \newenvironment*{sol}{\par \textbf{Solution}.}{\hfill$\blacksquare$}
+}
+
+%% Page Style Preset
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
