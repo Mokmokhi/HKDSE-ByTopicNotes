@@ -396,14 +396,175 @@
     In order to draw the graph of a function, we need to figure out the valid pairs of $x$ and $y$ first, so that the points could be addressed correctly for the function. We will make use of a \textbf{pairing table} so that each value of $x$ in the domain is paired with a unique value of $y$ in the co-domain. We will show its use with some examples.
 
     \begin{example}
-        Let $G$ be the graph of $y=x+1$. Then we have 
+        Let $G$ be the graph of $y=x+1$. Then we have the table of testing xy-pair 
+        \begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|}
+                \hline
+                $x$&0&1&2&3&4\\
+                \hline
+                $y=x+1$&1&2&3&4&5\\
+                \hline
+            \end{tabular}
+        \end{center}
+        and thus the graph of $G$ be like
+
+        by linking up the points with straight lines.
     \end{example}
+
+    \begin{example}
+        Let $G$ be the graph of $y=x^2$. Then we have the table of testing xy-pair 
+        \begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|}
+                \hline
+                $x$&-2&-1&0&1&2\\
+                \hline
+                $y=x^2$&4&1&0&1&4\\
+                \hline
+            \end{tabular}
+        \end{center}
+        and thus the graph of $G$ be like
+
+        by linking up the points with straight lines. Moreover, by increasing the points of testing value to, say, 100 or 1000, a see-smoothing curve can be drawn by computer.
+        
+        It is the continuation of the curve under testing value control.
+    \end{example}
+
+    Even higher power polynomial functions can be drawn using this strategy.
+    \begin{example}
+        Let $G$ be the graph of $y=x^3+2x^2+x-1$. Then we have the table of testing xy-pair 
+        \begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|}
+                \hline
+                $x$&0&1&2&3&4\\
+                \hline
+                $y=x^3+2x^2+x-1$&-1&3&17&47&99\\
+                \hline
+            \end{tabular}
+        \end{center}
+        and thus the graph of $G$ be like, with many enough testing points, 
+
+        with the continuation.
+    \end{example}
+
+    \begin{exercise}
+        Configure the xy-table with testing values in between -3 to 3 and draw a suitable graph for the following functions.\begin{enumerate}
+            \item $y=x-3$;
+            \item $y=x^2+x+1$;
+            \item $y=(x-3)^3+2$.
+        \end{enumerate}
+        You may also check the graph using WolframAlpha desktop to convince yourself with the plot. Try to conclude the difference between large amount and small amount of points of testing.
+    \end{exercise}
+
+    With the xy-coordination of a graph, many features and prediction could be done. We will try to analyze the properties that we could make use of in the next subsection.
 
     \subsection{Fundamental properties of a graph}
 
+    A graph shows the relationship between two variables, namely the vertical component (in this case, it is the value of $y$) and the horizontal component (respectively, the value of $x$). We will make use of this relationship and consider different situations.
+
     \subsubsection{points lying on the graph}
 
-    \subsubsection{Special intersections: x-intercept and x-intercepts}
+    Let us reverse the sight of plotting a graph of a function. We plot the graph by linking up the points we get from inputting $x$ into the function to get the corresponding value of $y$, so that each point $(x,y)$ describes when the function has the input $x$. We could now see that if a point $(x,y)$ is passed through by a curve then it is the same as the point lies on that curve. We shall say the point $(x,y)$ \textbf{satisfies} the equation $y=f(x)$, since this is the definition of a graph.
+
+    \begin{theorem}
+        For any real-valued continuous functions $f$, any coordinates $(x,y)$ lies on the graph $y=f(x)$ if and only if the xy-pair satisfies the equation $y=f(x)$.
+    \end{theorem}
+
+    \begin{example}
+        For a given function $f(x)=3x+1$, the following are true:\begin{enumerate}
+            \item The point $(0,1)$ lies on $y=f(x)$;
+            \item The point $(3,10)$ lies on $y=f(x)$;
+            \item The point $(-2,1)$ does not lay on $y=f(x)$;
+            \item The point $(-10,2)$ does not lay on $y=f(x)$.
+        \end{enumerate} 
+    \end{example}
+
+    \begin{example}
+        For a given function $f(x)=3x^3+2x^2+x+1$, the following are true:\begin{enumerate}
+            \item The point $(0,1)$ lies on $y=f(x)$;
+            \item The point $(-1,-1)$ lies on $y=f(x)$;
+            \item The point $(-2,0)$ does not lay on $y=f(x)$;
+            \item The point $(-10,2)$ does not lay on $y=f(x)$.
+        \end{enumerate} 
+    \end{example}
+
+    \begin{exercise}
+        For a given function $f(x)=x^2-1$, show whether the following points are lying on the graph of $y=f(x)$:\begin{enumerate}
+            \item The point $(0,1)$;
+            \item The point $(-1,0)$;
+            \item The point $(-2,3)$;
+            \item The set of points $(-t,t^2-1)$ parametrized by the variable $t$.
+        \end{enumerate} 
+    \end{exercise}
+
+    We may now examine another feature of a graph, namely \textbf{the region of inequality}. In the previous paragraph we find a point satisfying the equation $y=f(x)$ has the same meaning as the point lies on the curve. If we make a small translation of the $y$ coordinate to the upper region separate by the curve, it becomes that all the points have a larger value of $y$ than we could calculate by the function. For that region we will call it the region for $y>f(x)$; Similarly, if we make a small translation of the $y$ coordinate to the lower region, it becomes that all the points in that region have a smaller value of $y$ than we could calculate by the function. For that region, we will call it the region for $y<f(x)$.
+
+    \begin{example}
+        For a given function $f(x)=3x+1$, the following are true:\begin{enumerate}
+            \item The point $(0,2)$ lies above $y=f(x)$;
+            \item The point $(3,9)$ lies below $y=f(x)$;
+            \item The point $(-2,1)$ lies above $y=f(x)$;
+            \item The point $(-10,-120)$ lies below $y=f(x)$.
+        \end{enumerate} 
+    \end{example}
+
+    \begin{example}
+        For a given function $f(x)=3x^3+2x^2+x+1$, the following are true:\begin{enumerate}
+            \item The point $(0,3)$ lies above $y=f(x)$;
+            \item The point $(-1,-2)$ lies below $y=f(x)$;
+            \item The point $(-2,0)$ lies above $y=f(x)$;
+            \item The point $(10,2)$ lies below $y=f(x)$.
+        \end{enumerate} 
+    \end{example}
+
+    \begin{exercise}
+        For a given function $f(x)=x^2-1$, determine the position of the following points with respect to the graph of $y=f(x)$:\begin{enumerate}
+            \item The point $(0,9)$;
+            \item The point $(-1,-1)$;
+            \item The point $(-2,20)$;
+            \item The point $(10,10)$.
+        \end{enumerate} 
+    \end{exercise}
+
+    \subsubsection{Special intersections: axis intercepts}
+
+    Usually the most important element of a graph is whether it cuts the coordinating axis, namely the y-axis and the x-axis. For practical reason we value them so much and we may give them special names: the y-intercept and the x-intercept.
+
+    \begin{definition}[y-intercept of a graph]
+        Given a function $f$, the function has its \textbf{y-intercept} when its cuts the y-axis. In other words, the y-intercept is defined as $$y_0:=f(0)$$ whenever the function is well-defined at $x=0$.
+    \end{definition}
+
+    Similarly, we may want the same definition for x-intercept of a graph, however, we do not know whether the inverse function exists or not. This comes to some kind of difficulties to say directly the x-intercept. But still, we can give the possible condition for the discussion.
+
+    \begin{definition}[x-intercept of a graph]
+        Given a function $f$, the function has its \textbf{x-intercept} when its cuts the x-axis. In other words, the x-intercept is defined as the roots of $$0=f(x)$$ whenever the given equation is solvable.
+    \end{definition}
+
+    We will be familiar with them with some valid examples.
+
+    \begin{example}
+        For the graph of the function $f(x):=x+1$, we have:\begin{itemize}
+            \item y-intercept: $y_0=0+1=1$;
+            \item x-intercept: Set $0=x+1$, then $x_0=-1$ is the root to the given equation, which is the x-intercept of the function.
+        \end{itemize}
+    \end{example}
+
+    \begin{example}
+        For the graph of the function $f(x):=x^2-1$, we have:\begin{itemize}
+            \item y-intercept: $y_0=0^2-1=-1$;
+            \item x-intercept: Set $0=x^2-1$, then $x_1=-1$ or $x_2=1$ are the roots to the given equation, which are the x-intercepts of the function.
+        \end{itemize}
+    \end{example}
+
+    \begin{example}
+        For the graph of the function $f(x):=x^2+1$, we have:\begin{itemize}
+            \item y-intercept: $y_0=0^2+1=1$;
+            \item x-intercept: Set $0=x^2+1$, which has no real solution. Then the graph of the function has no x-intercepts.
+        \end{itemize}
+    \end{example}
+
+    We see a function has its y-intercept most of the time, but not the same case for x-intercepts. It could have either no x-intercepts, only 1 x-intercept, or more than one x-intercept. It is a consequence of the fundamental theorem of algebra, but we will dig deeper in the future to discuss simple cases we could.
+
+    As long as we could plot not only the xy-coordinate but we could pair up something weird, where they could be different functions say $v(y)$ and $u(x)$, the graphs could no longer talked about y-intercept or x-intercept - they are not exactly about x and y! Hence, we turned the naming into something general: we plot the graph by vertical axis and horizontal axis, so let us call them the \textbf{vertical intercept} and the \textbf{horizontal intercept} respectively.
 
     \subsubsection{general intersection}
 
