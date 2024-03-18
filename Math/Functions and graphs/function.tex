@@ -602,11 +602,205 @@
         Let $A(x_1,y_1)$ and $B(x_2,y_2)$ be two points on $\mathbb{R}^2$-plane. The distance between $A$ and $B$ is computed by the formula $$\mathrm{dist}(A,B):=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$$
     \end{definition}
 
+    We may think of the following construction for distance between two points:
+
+    Taking the right-angled triangle as distance reference, the vertical displacement becomes $|y_1-y_2|$ and the horizontal displacement becomes $|x_1-x_2|$. Putting the oblique displacement $\mathrm{dist}(A,B)$ gives the Pythagorean relation, and we could get the desired formula.
+
+    \begin{example}
+        Let $A(1,2)$ and $B(4,-2)$ be two points on the rectangular coordinate plane, i.e. the xy-plane. Then, $$\mathrm{dist}(A,B)=\sqrt{(1-4)^2+(2-(-2))^2}=\sqrt{3^2+4^2}=\sqrt{25}=5$$
+    \end{example}
+
+    \begin{example}
+        Let $A(1,2)$ and $B(k,k-1)$ be two points on the rectangular coordinate plane such that $\mathrm{dist}(A,B)=2$. Then, \begin{align*}
+            \sqrt{(k-1)^2+(k-3)^2}&=2\\
+            (k-1)^2+(k-3)^2&=4\\
+            k^2-2k+1+k^2-6k+9&=4\\
+            2k^2-8k+6&=0\\
+            k^2-4k+3&=0\\
+            (k-1)(k-3)&=0\\
+        \end{align*}
+        Then $k=1$ or $k=3$, i.e. the possible coordinates of $B$ are $(1,0)$ or $(3,2)$.
+    \end{example}
+
+    \begin{example}
+        Given two trajectories $T_1:(x_1(t),y_1(t))$ and $T_2:(x_2(t),y_2(t))$, we say the distance between $T_1$ and $T_2$ is $$\mathrm{dist}(T_1,T_2):=\min_{t>0}\sqrt{(x_1(t)-x_2(t))^2+(y_1(t)-y_2(t))^2}$$
+    \end{example}
+
+    It is quite abstract to talk about the distance between two trajectories in this stage. Just keep in mind that this is a truth, or say you may believe in it.
+
+    \begin{exercise}
+        Compute the distance between following pair of points:\begin{enumerate}
+            \item $(1,0)$ and $(0,1)$;
+            \item $(1,-1)$ and $(-1,1)$;
+            \item $(3,4)$ and $(12,-13)$;
+            \item $(7,-8)$ and $(-3,0)$;
+        \end{enumerate}
+    \end{exercise}
+
+    \begin{exercise}
+        Given the distance between two points, find the possible value(s) of the unknowns:\begin{enumerate}
+            \item $A(0,0), B(3,k)$; $\mathrm{dist}(A,B)=3$.
+            \item $A(2,0), B(3,k)$; $\mathrm{dist}(A,B)=1$.
+            \item $A(k,0), B(0,k)$; $\mathrm{dist}(A,B)=5$.
+            \item $A(3+k,1-k), B(3,-3)$; $\mathrm{dist}(A,B)=8$.
+        \end{enumerate}
+    \end{exercise}
+
     \subsubsection{Mid-point and Division points}
+
+    \begin{definition}[Mid-way of a trajectory]
+        Given a trajectory defined by $(x(t),y(t))$ where $t\in [0,r]$ with $r>0$ a real number, the \textbf{midway} (or \textbf{half-way}) of the trajectory is given by the point $M$ such that $$\mathrm{arclength}((x(0),y(0)),M)=\mathrm{arclength}(M,(x(r),y(r)))$$
+    \end{definition}
+
+    In particular, if we are talking about a mid-point, we usually pick the shortest trajectory between the two points. This is due to the uniqueness of the shortest trajectory if our distance is well-defined. In the Euclidean space, the shortest trajectory is usually the straight line between the two points.
+
+    \begin{theorem}[Mid-point of two points]
+        Given $A(x_1,y_1)$ and $B(x_2,y_2)$ be two points on the Euclidean space, the \textbf{mid-point} $M$ of $A$ and $B$ is defined by $$(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2})$$
+    \end{theorem}
+
+    \begin{proof}
+        Let $L$ be the straight line connecting $A$ and $B$. Assume that $M:=(\dfrac{x_1+x_2}{2},\dfrac{y_1+y_2}{2})$, then\begin{align*}
+            \mathrm{dist}(A,M)&=\sqrt{(x_1-\frac{x_1+x_2}{2})^2+(y_1-\frac{y_1+y_2}{2})^2}\\
+            &=\frac{1}{2}\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}\\
+            &=\frac{1}{2}\mathrm{dist}(A,B)\\
+            \mathrm{dist}(M,B)&=\sqrt{(\frac{x_1+x_2}{2}-x_2)^2+(\frac{y_1+y_2}{2}-x_2)^2}\\
+            &=\frac{1}{2}\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}\\
+            &=\frac{1}{2}\mathrm{dist}(A,B)\\
+        \end{align*}
+        In particular, $$\mathrm{dist}(A,M)+\mathrm{dist}(M,B)=\mathrm{dist}(A,B)$$
+        Thus $M$ preserve a point on the straight line connecting $A$ and $B$ and in fact the mid-point of $A$ and $B$.
+    \end{proof}
+
+    \begin{example}
+        Given $A(100,20)$ and $B(30,70)$, their mid-point is the point $M(65,45)$.
+    \end{example}
+
+    \begin{exercise}
+        For the following given pairs of points, find their mid-points:\begin{enumerate}
+            \item $(2,2)$ and $(0,0)$;
+            \item $(2,1)$ and $(-2,-1)$.
+        \end{enumerate}
+    \end{exercise}
+
+    Other than the mid-point, we also consider the general version of line separation, which is the point of division.
+
+    \begin{definition}[Point of division]
+        Given two points $A$ and $B$, any point $P$ lies in between $A$ and $B$ is called \textbf{the point of division with ratio $\mathrm{dist}(A,P):\mathrm{dist}(P,B)$}.
+    \end{definition}
+
+    \begin{theorem}[Formula for point of division]
+        Let $A(x_1,y_1)$ and $B(x_2,y_2)$ be a point on the Euclidean space. Let $P$ be the point of division of $A$ and $B$ with ratio $r:s$. Then the coordinates of $P$ is given by $$\frac{sA+rB}{r+s}=(\frac{sx_1+rx_2}{r+s},\frac{sy_1+ry_2}{r+s})$$ In particular, the mid-point of $A$ and $B$ is given by setting $s=r=1$.
+    \end{theorem}
+
+    \begin{proof}
+        Similar to the proof of mid-point. Let $P:=(\dfrac{sx_1+rx_2}{r+s},\dfrac{sy_1+ry_2}{r+s})$, then\begin{align*}
+            \mathrm{dist}(A,P)&=\sqrt{(x_1-\frac{sx_1+rx_2}{r+s})^2+(y_1-\frac{sy_1+ry_2}{r+s})^2}\\
+            &=\frac{1}{r+s}\sqrt{(rx_1-rx_2)^2+(ry_1-ry_2)^2}\\
+            &=\frac{r}{r+s}\mathrm{dist}(A,B)\\
+            \mathrm{dist}(P,B)&=\sqrt{(\frac{sx_1+rx_2}{r+s}-x_2)^2+(\frac{sy_1+ry_2}{r+s}-x_2)^2}\\
+            &=\frac{1}{r+s}\sqrt{(sx_1-sx_2)^2+(sy_1-sy_2)^2}\\
+            &=\frac{s}{r+s}\mathrm{dist}(A,B)\\
+        \end{align*}
+        In particular, $$\mathrm{dist}(A,P)+\mathrm{dist}(P,B)=\mathrm{dist}(A,B)$$
+        Thus $P$ preserve a point on the straight line connecting $A$ and $B$ and satisfies $\mathrm{dist}(A,P):\mathrm{dist}(P,B)=\dfrac{r}{r+s}:\dfrac{s}{r+s}=r:s$.
+    \end{proof}
+
+    \begin{example}
+        Let $A(2,4)$ and $B(-4,7)$. To trisect the line connecting $A$ and $B$, we need two points on the line where they divide the straight line in the ratio of $1:1:1$. In particular, let the point closer to $A$ be $X$ and the other be $Y$, we have $X$ the division point of ratio $1:2$ and $Y$ the division point of ratio $2:1$. Therefore,\begin{align*}
+            X:&=(\frac{2(2)+1(-4)}{1+2}, \frac{2(4)+1(7)}{1+2})=(0,5)\\
+            Y:&=(\frac{1(2)+2(-4)}{1+2}, \frac{1(4)+2(7)}{1+2})=(-2,6)\\
+        \end{align*}
+    \end{example}
+
+    \begin{exercise}
+        Given $A(-100,-10)$ and $B(100,100)$. Find the point of division for the following given ratio $r:s$ :\begin{enumerate}
+            \item $r:s=1:1$;
+            \item $r:s=1:3$;
+            \item $r:s=3:7$;
+            \item $r:s=19:91$.
+        \end{enumerate}
+    \end{exercise}
 
     \subsubsection{Slope of two points}
 
+    For two points, we want to know not only how far away they are, but also how steep they see each other, i.e. the direction of proceeding. We call it the slope of the two points.
+
+    To be professional, we say a slope of the two points is how line goes from the left point to the right point; that is, whether $y$ increase with $x$ or $y$ decrease with $x$.
+
+    \begin{definition}[Slope]
+        Let $A(x_1,y_1)$ and $B(x_2,y_2)$ be two points on the Euclidean space. Then the \textbf{slope} of $A$ and $B$, denoted by $\mathfrak{M}_{AB}$, is given by $$\mathfrak{M}_{AB}:=\frac{y_2-y_1}{x_2-x_1}$$
+    \end{definition}
+
+    \begin{example}
+        The slope of $A(1,2)$ and $B(4,1)$ is $\mathfrak{M}_{AB}=\dfrac{1-2}{4-1}=-\dfrac{1}{3}$.
+    \end{example}
+
+    We could observe the following fact. For if two points are aligned horizontally on the plane, then their slope is computed equal to 0; if the right point is higher than the left, then the slope is positive, meaning the corresponding line is increasing with $x$; otherwise the slope is negative, meaning the corresponding line is decreasing with $x$. For if two points are aligned vertically on the plane, then the slope is undefined, since we could not explicitly tell whether the corresponding line is increasing or decreasing - it could be both. Due to the uncertainty, we identify it as undefined slope. However, we can still define the slope of vertical lines for consistent usage, but that's another page of discussion.
+
+    \begin{exercise}
+        Compute the slope of the following pairs of points:\begin{enumerate}
+            \item $(1,0)$ and $(0,1)$;
+            \item $(1,-1)$ and $(-1,1)$;
+            \item $(3,4)$ and $(12,-13)$;
+            \item $(7,-8)$ and $(-3,0)$;
+        \end{enumerate}
+    \end{exercise}
+
+    \begin{definition}[Collinear]
+        3 points are called \textbf{collinear} if there is a straight line passes through 3 points at the same time.
+    \end{definition}
+
+    In fact, collinearity is somehow the converse of computing points of division, by the definition of point of division. We will make use of the equivalence in proving the following theorem:
+
+    \begin{theorem}
+        3 points on the plane are collinear if and only if the slope of any two of the three points are the same.
+    \end{theorem}
+
+    \begin{proof}
+        For the direction from collinear to slope equality, we have if 3 points are collinear, then they can be written as $$A(x_1,x_2), B(\frac{sx_1+rx_2}{r+s}, \frac{sy_1+ry_2}{r+s}), C(x_2,y_2)$$
+        We then have \begin{align*}
+            \mathfrak{M}_{AB}&=\frac{\frac{sy_1+ry_2}{r+s}-y_1}{\frac{sx_1+rx_2}{r+s}-x_1}\\
+            &=\frac{sy_1+ry_2-(r+s)y_1}{sx_1+rx_2-(r+s)x_1}\\
+            &=\frac{ry_2-ry_1}{rx_2-rx_1}\\
+            &=\frac{y_2-y_1}{x_2-x_1}\\
+            \mathfrak{M}_{BC}&=\frac{y_2-\frac{sy_1+ry_2}{r+s}}{x_2-\frac{sx_1+rx_2}{r+s}}\\
+            &=\frac{(r+s)y_2-sy_1+ry_2}{(r+s)x_2-sx_1+rx_2}\\
+            &=\frac{sy_2-sy_1}{sx_2-sx_1}\\
+            &=\frac{y_2-y_1}{x_2-x_1}\\
+            \mathfrak{M}_{AC}&=\frac{y_2-y_1}{x_2-x_1}
+        \end{align*}
+        Then collinear implies the equality of the slopes.
+
+        Conversely, suppose 3 points $A,B,C$ such that $\mathfrak{M}_{AB}=\mathfrak{M}_{BC}=\mathfrak{M}_{AC}=m$. We may compute that \begin{align*}
+            \mathrm{dist}(A,B)&=\sqrt{(x_A-x_B)^2+(y_A-y_B)^2}\\
+            &=|x_A-x_B|\sqrt{1+\mathfrak{M}_{AB}^2}
+        \end{align*}
+        Similarly, we have \begin{align*}
+            \mathrm{dist}(B,C)&=|x_B-x_C|\sqrt{1+\mathfrak{M}_{BC}^2}\\
+            \mathrm{dist}(A,C)&=|x_A-x_C|\sqrt{1+\mathfrak{M}_{AC}^2}
+        \end{align*}
+        Without loss of generality, we may assume their x-coordinates are in fixed order, where I will set $x_A<x_B<x_C$. Then \begin{align*}
+            \mathrm{dist}(A,B)+\mathrm{dist}(B,C)&=(|x_A-x_B|+|x_B-x_C|)\sqrt{1+m^2}\\
+            &=(x_B-x_A+x_C-x_B)\sqrt{1+m^2}\\
+            &=|x_A-x_C|\sqrt{1+\mathfrak{M}_{AC}^2}\\
+            &=\mathrm{dist}(A,C)
+        \end{align*}
+        This shows that $B$ is a point of division of $A$ and $C$, and hence $A,B,C$ are collinear.
+    \end{proof}
+
+    This measurement provides another way of line construction. In fact, by one of its powerful property, there is a generalized version of slope with various application in higher mathematics and other fields including computer science.
+
+    \begin{theorem}[Invariant properties of slope of two points]
+        Let $A$ and $B$ be two points on the Euclidean space, and $\mathfrak{M}_{AB}$ be the slope of $A$ and $B$. Under any simultaneous translation to $A$ and $B$, $\mathfrak{M}_{AB}$ remains unchanged.
+    \end{theorem}
+
+    \begin{proof}
+        Let $A(x_1,y_1)$ and $B(x_2,y_2)$ be two points. Suppose $A'$ and $B'$ be the resulting coordinates after simultaneously translating $A$ and $B$, we may write $A'(x_1+\Delta x, y_1+\Delta y)$ and $B'(x_2+\Delta x, y_2+\Delta y)$. Then the slope after simultaneous translation is $$\mathfrak{M}_{A'B'}=\frac{(y_2+\Delta y)-(y_1+\Delta y)}{(x_2+\Delta x)-(x_1+\Delta x)}=\frac{y_2-y_1}{x_2-x_1}=\mathfrak{M}_{AB}$$
+    \end{proof}
+
     \subsection{Different forms of a linear function}
+
+    \subsubsection{Fundamental construction of a line}
 
     \subsubsection{Two-point form}
 
