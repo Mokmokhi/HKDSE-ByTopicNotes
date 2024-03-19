@@ -857,9 +857,32 @@
     We have established that a segment can be represented by the equation $$y=y_1+\mathfrak{M}_{AB}(x-x_1)$$
     where it is interesting to see the equation involves no variable $t$. In fact, it is independent of $t$ and could be extended to out of the segment. We call this extension a \textbf{straight line} passes through $A$ and $B$.
 
-    \subsubsection{Two-point form}
+    The above equation looks simple, but let us confirm that the derived equation is indeed satisfying the extension of a segment. We shall return to the fundamental form of a segment but revising the domain of $t$: $$((1-t)x_1+tx_2, (1-t)y_1+ty_2)$$ where $-\infty<t<\infty$. In fact, a line should be proven to be this form rigorously. Let us dive into it.
+
+    \begin{theorem}
+        A straight line passes through $(x_1,y_1)$ and $(x_2, y_2)$ is in the form of $$((1-t)x_1+tx_2, (1-t)y_1+ty_2)$$ where $-\infty<t<\infty$.
+    \end{theorem}
+
+    \begin{proof}
+        The major discussion is the domain of $t$ diverges to infinity. Let us prove first that for every real value $t$, the point $((1-t)x_1+tx_2, (1-t)y_1+ty_2)$ is collinear with $A(x_1,y_1)$ and $B(x_2,y_2)$. In fact, $$\mathfrak{M}=\frac{(1-t)y_1+ty_2-y_1}{(1-t)x_1+tx_2-x_1}=\frac{y_2-y_1}{x_2-x_1}$$ is true for all $t\neq 0$. At the same time, the case $t=0$ is just considering $(x_1,y_1)$, which is immediately true. Hence, every point in that form is collinear with $A$ and $B$.
+
+        Next, we shall show that $t$ diverges at both ends. Suppose on contrary that $t$ is bounded above by $M$, then the longest segment ends at $V_M((1-M)x_1+Mx_2, (1-M)y_1+My_2)$, but letting $V_{M+1}((-M)x_1+(M+1)x_2, (-M)y_1+(M+1)y_2)$\begin{align*}
+            \mathrm{dist}(A,V_{M+1})=(M+1)\mathrm{dist}(A,B)>M\mathrm{dist}(A,B)=\mathrm{dist}(A,V_M)
+        \end{align*}
+        This contradicts that $AV_M$ is the longest segment we have. Thus $t$ is unbounded. The argument is similar for $t$'s lower bound and hence $-\infty<t<\infty$.
+    \end{proof}
 
     \subsubsection{Point-slope form}
+
+    Observe that $$y=y_1+\mathfrak{M}_{AB}(x-x_1) \iff y-y_1=\mathfrak{M}_{AB}(x-x_1) \iff \frac{y-y_1}{x-x_1}=\mathfrak{M}_{AB}$$ for given points $A(x_1,y_1)$ and slope $\mathfrak{M}_{AB}$, we may give the following result.
+
+    \begin{theorem}
+        If a line $L$ passes through point $A(x_1,y_1)$ and having slope $\mathfrak{M}$, then $L$ can be constructed from writing $$\frac{y-y_1}{x-x_1}=\mathfrak{M}$$
+    \end{theorem}
+
+    The meaning of this form can be thought of as: Given any point $(x,y)$ on the line $L$, its slope with $A$ is the same as the given slope $\mathfrak{M}$.
+
+    \subsubsection{Two-point form}
 
     \subsubsection{Slope-intercept form}
 
