@@ -788,6 +788,38 @@
         This shows that $B$ is a point of division of $A$ and $C$, and hence $A,B,C$ are collinear.
     \end{proof}
 
+    \begin{corollary}
+        3 points on the plane are not collinear if and only if the slope of any two of the three points are not the same.
+    \end{corollary}
+
+    By the theorem, we could easily show the collinearity of any 3 points, and of course we may push a little forward from it.
+    
+    \begin{example}
+        Determine the collinearity of following sets of points:\begin{enumerate}
+            \item $(0,0), (1,2), (2,4)$.\\
+            \textit{ Sol. } Denote $(0,0), (1,2), (2,4)$ by $A,B,C$ respectively. Then \begin{align*}
+                \mathfrak{M}_{AB}&=\frac{2-0}{1-0}=2\\
+                \mathfrak{M}_{BC}&=\frac{4-2}{2-1}=2
+            \end{align*}
+            Then, by the previous theorem, $A,B,C$ are collinear.
+            \item $(0,1), (1,2), (2,2)$.\\
+            \textit{ Sol. } Denote $(0,0), (1,2), (2,4)$ by $A,B,C$ respectively. Then \begin{align*}
+                \mathfrak{M}_{AB}&=\frac{2-1}{1-0}=2\\
+                \mathfrak{M}_{BC}&=\frac{2-2}{2-1}=0
+            \end{align*}
+            Then, by the previous theorem, $A,B,C$ are not collinear.
+        \end{enumerate}
+    \end{example}
+
+    \begin{exercise}
+        Determine the collinearity of the following sets of points:\begin{enumerate}
+            \item $(0,0), (1,3), (2,6)$.
+            \item $(1,0), (0,-1), (-1,-2)$.
+            \item $(0,2), (1,-3), (-2,6)$.
+            \item $(k,4), (4+k,4+k), (4,k)$.
+        \end{enumerate}
+    \end{exercise}
+
     This measurement provides another way of line construction. In fact, by one of its powerful property, there is a generalized version of slope with various application in higher mathematics and other fields including computer science.
 
     \begin{theorem}[Invariant properties of slope of two points]
@@ -800,7 +832,30 @@
 
     \subsection{Different forms of a linear function}
 
-    \subsubsection{Fundamental construction of a line}
+    Following the concepts of distance, point of division and slope, we can now discuss the form of a linear function.
+
+    \subsubsection{Segment}
+
+    We may first consider a segment in the plane, which is the straight line connecting any two points in the Euclidean plane, ends at that two points.
+
+    \begin{definition}[Segment]
+        A \textbf{segment} with two endpoints $A$ and $B$ is the collection of all division points between $A$ and $B$. In other words, it is a straight line with endpoints $A$ and $B$.
+    \end{definition}
+
+    By the definition of division point, we may let $A(x_1,y_1)$ and $B(x_2,y_2)$ be two points, and two numbers $r$ and $s$ such that every division point of ratio $r:s$ could be represented in the following form $$(\frac{sx_1+rx_2}{r+s},\frac{sy_1+ry_2}{r+s})$$
+
+    By simple algebra, we can see that $\dfrac{s}{r+s}=1-\dfrac{r}{r+s}$, so we may let $t:=\dfrac{r}{r+s}$ be a number in between 0 and 1 such that every division point can be written as $$((1-t)x_1+tx_2, (1-t)y_1+ty_2)=(x_1+t(x_2-x_1),y_1+t(y_2-y_1))$$ with $0\leq t\leq 1$. Now, we could see the relationship between x- and y- coordinates in the following derivation:\begin{align*}
+        y:&=(1-t)y_1+ty_2\\
+        &=y_1+t(y_2-y_1)\\
+        &=y_1+t\frac{y_2-y_1}{x_2-x_1}(x_2-x_1)\\
+        &=y_1+t\mathfrak{M}_{AB}(x_2-x_1)\\
+        &=y_1+\mathfrak{M}_{AB}(x-x_1)
+    \end{align*}
+
+    \subsubsection{Line as extension of a segment}
+
+    We have established that a segment can be represented by the equation $$y=y_1+\mathfrak{M}_{AB}(x-x_1)$$
+    where it is interesting to see the equation involves no variable $t$. In fact, it is independent of $t$ and could be extended to out of the segment. We call this extension a \textbf{straight line} passes through $A$ and $B$.
 
     \subsubsection{Two-point form}
 
