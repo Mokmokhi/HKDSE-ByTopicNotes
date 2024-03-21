@@ -877,20 +877,142 @@
     Observe that $$y=y_1+\mathfrak{M}_{AB}(x-x_1) \iff y-y_1=\mathfrak{M}_{AB}(x-x_1) \iff \frac{y-y_1}{x-x_1}=\mathfrak{M}_{AB}$$ for given points $A(x_1,y_1)$ and slope $\mathfrak{M}_{AB}$, we may give the following result.
 
     \begin{theorem}
-        If a line $L$ passes through point $A(x_1,y_1)$ and having slope $\mathfrak{M}$, then $L$ can be constructed from writing $$\frac{y-y_1}{x-x_1}=\mathfrak{M}$$
+        If a line $L$ passes through point $A(x_1,y_1)$ and having slope $\mathfrak{M}$, then $L$ can be constructed from writing $$L:\frac{y-y_1}{x-x_1}=\mathfrak{M}$$
     \end{theorem}
 
     The meaning of this form can be thought of as: Given any point $(x,y)$ on the line $L$, its slope with $A$ is the same as the given slope $\mathfrak{M}$.
 
+    \begin{example}
+        Suppose $L$ is a straight line passes through $(0,0)$ with slope being equal to $3$. Then $L$ could be modified as $$L:\frac{y-0}{x-0}=3\iff y=3x$$
+    \end{example}
+    
+    \begin{example}
+        Suppose $L$ is a straight line passes through $(1,2)$ with slope being equal to $4$. Then $L$ could be modified as $$L:\frac{y-2}{x-1}=4\iff y=4x-2$$
+    \end{example}
+
     \subsubsection{Two-point form}
+
+    With any two given points on the Euclidean plane, we could rewrite the slope $\mathfrak{M}$ into $\dfrac{y_2-y_1}{x_2-x_1}$. This means the line passes through any two given points could be modelled by 
+
+    \begin{theorem}
+        If a line $L$ passes through point $A(x_1,y_1)$ and $B(x_2,y_2)$, then $L$ can be constructed from writing $$L:\frac{y-y_1}{x-x_1}=\frac{y_2-y_1}{x_2-x_1}$$
+    \end{theorem}
+
+    \begin{example}
+        Suppose $L$ is a straight line passes through $(0,0)$ and $(1,2)$. Then $L$ could be modified as $$L:\frac{y-0}{x-0}=\frac{2-0}{1-0}\iff y=2x$$
+    \end{example}
+    
+    \begin{example}
+        Suppose $L$ is a straight line passes through $(1,2)$ and $(10,3)$. Then $L$ could be modified as $$L:\frac{y-2}{x-1}=\frac{3-1}{10-2}\iff y=\frac{1}{4}x+\frac{7}{4}$$
+    \end{example}
 
     \subsubsection{Slope-intercept form}
 
+    Given the slope $\mathfrak{M}$ and the y-intercept $c$, we could take the y-intercept as one particular coordinate $(0,c)$. This means the line with given information is 
+
+    \begin{theorem}
+        If a line $L$ has slope $\mathfrak{M}$ and y-intercept $c$, then $L$ can be constructed from writing $$L:\frac{y-c}{x-0}=\mathfrak{M}$$
+    \end{theorem}
+
+    \begin{example}
+        Suppose $L$ is a straight line with slope $5$ and y-intercept $0$. Then $L$ could be modified as $$L:\frac{y-0}{x-0}=5\iff y=5x$$
+    \end{example}
+    
+    \begin{example}
+        Suppose $L$ is a straight line with slope $\frac{1}{10}$ and y-intercept $5$. Then $L$ could be modified as $$L:\frac{y-5}{x-0}=\frac{1}{10}\iff y=\frac{1}{10}x+5$$
+    \end{example}
+
+    \subsubsection{Intercepts form}
+
+    Except the previous forms, an intercepts form is a form purely taken from the two intercepts. Let $a$ be the x-intercept and $b$ be the y-intercept of a line $L$. We see from the view of division point, the line shall be formed by writing $$((1-t)a, tb)$$ for all the points on $L$, where $-\infty<t<\infty$. We could derive that $$\frac{x}{a}+\frac{y}{b}=1$$ for any value of $t$.
+
+    \begin{theorem}
+        Let $L$ be having x-intercept $a$ and y-intercept $b$. Then $L$ could be modelled by $$L:\frac{x}{a}+\frac{y}{b}=1$$
+    \end{theorem}
+
+    \begin{example}
+        Suppose $L$ has x-intercept $5$ and y-intercept $5$. Then $L$ could be modified as $$L:\frac{x}{5}+\frac{y}{5}=1\iff y=5-x$$
+    \end{example}
+    
+    \begin{example}
+        Suppose $L$ is a straight line with x-intercept $k$ and no y-intercept. Then $L$ could be modified as $$L:\frac{x}{k}=1\iff x=k$$
+    \end{example}
+    
+    \begin{example}
+        Suppose $L$ is a straight line with y-intercept $k$ and no x-intercept. Then $L$ could be modified as $$L:\frac{y}{k}=1\iff y=k$$
+    \end{example}
+    
+    \begin{example}
+        Suppose $L$ is a straight line completely lies on x-axis. This means x-intercept is undefined. Then $L$ could be modified as $$L:y=0$$
+    \end{example}
+    
+    \begin{example}
+        Suppose $L$ is a straight line completely lies on y-axis. This means y-intercept is undefined. Then $L$ could be modified as $$L:x=0$$
+    \end{example}
+
     \subsubsection{General form}
 
-    \subsubsection{Special: Intercept-form}
+    In convenience to solving linear equations, we aim to set a form that is always constructive. We put our attention to what a general form is.
 
-    \subsection{Parallel lines and Perpendicular lines}
+    Recall that a straight line could be either a vertical line, an oblique line, or a horizontal line. We shall introduce a form that is generally true to write a straight line. This thought should eliminate the presence of slope. Perhaps the intercepts form provides a good start to write a general form. Indeed, $$\frac{x}{a}+\frac{y}{b}=1 \iff bx+ay=ab$$ gives us the form purely by multiplication and addition. This can so be rearranged such that $$bx+ay=ab\iff Ax+By+C=0$$ with $A=b$, $B=a$ and $C=-ab$. Of its elimination of slope, this is the desired form of a straight line.
+
+    \begin{theorem}
+        Any straight line $L$ can be written in the form of $$Ax+By+C=0$$ where $A,B,C$ are constants. Furthermore, the slope of $L$ is determined $-\frac{A}{B}$, the x-intercept $-\frac{C}{A}$ and y-intercept $-\frac{C}{B}$.
+    \end{theorem}
+
+    \begin{proof}
+        The first part of the proof is to determine the connection between different forms of equation of straight line. Indeed, the point-slope form connects with two-point form, while the point-slope form also connects with slope intercept form. The general form comes form intercepts form, so it remains to show the connection between slope intercept form and general form. In fact, \begin{align*}
+            y=\mathfrak{M}x+c &\iff \mathfrak{M}x-y+c=0\\
+            &\iff Ax+By+C=0
+        \end{align*}
+        shows the connection between slope-intercept form and general form. This completes the first part.
+
+        The second part of the proof should show the "furthermore" implication. Consider the definitions of x-intercept and y-intercept, we will see if $x_0$ denotes the x-intercept, then $Ax_0+B(0)+C=0$ implies $x_0=-\frac{C}{A}$; Similarly, denoting $y_0$ the y-intercept, we have $y_0=-\frac{C}{B}$. For the slope we take the provided intercepts and write $$\mathfrak{M}=\frac{y_0-0}{0-x_0}=-\frac{A}{B}$$ concludes the proof.
+    \end{proof}
+
+    It is the best to write the general form with integers instead of fractions or decimal numbers, since it is more convenient and intuitive to solve equations using integers. In general, if we have to handle irrational numbers, we prefer to write everything without quotient and shall be simplest.
+
+    \begin{example}
+        It is better to write $x+2y+3=0$ instead of $\frac{1}{2}x+y+\frac{3}{2}=0$.
+    \end{example}
+
+    \begin{example}
+        If we need to handle irrationals, say $\frac{\sqrt{3}}{2}+\sqrt{5}y+\frac{3}{\sqrt{7}}=0$, it is more desired to write $\sqrt{21}x+2\sqrt{35}y+6=0$.
+    \end{example}
+
+    \begin{exercise}
+        Find the straight line in general form with given conditions. \begin{enumerate}
+            \item Of slope $2$ and passes through $(1,2)$.
+            \item Of slope $-\frac{2}{3}$ and passes through $(1,-1)$.
+            \item Passes through $(1,3)$ and $(-2,9)$.
+            \item Passes through $(1,0)$ and $(-2,0)$.
+            \item Of slope $1$ and y-intercept $3$.
+            \item Of slope $\frac{5}{7}$ and y-intercept $\frac{2}{3}$.
+            \item x-intercept $1$ and y-intercept $-2$.
+            \item x-intercept $-\frac{1}{2}$ and y-intercept $\frac{1}{3}$.
+        \end{enumerate}
+    \end{exercise}
+
+    \begin{exercise}
+        Determine the slope, the x-intercept and the y-intercept for the following straight lines.\begin{enumerate}
+            \item $x+y+1=0$.
+            \item $3x+4y+9=0$.
+            \item $2x=4$.
+            \item $7y=1$.
+        \end{enumerate}
+    \end{exercise}
+
+    \subsection{Rotational geometry}
+
+    \subsubsection{Angle of elevation from horizon}
+
+    \subsubsection{Angle of depression from horizon}
+
+    \subsubsection{Angle between two arbitrary lines}
+
+    \subsubsection{Rotation of points and lines}
+
+    \subsection{Relation between lines}
 
     \subsubsection{Point of intersection}
 
@@ -900,7 +1022,7 @@
 
     \subsubsection{Number of intersections}
 
-    \subsection{Angle of elevation and depression}
+    \subsubsection{Angle bisector}
 
     \subsection{Additional content: Point-line distance}
 
