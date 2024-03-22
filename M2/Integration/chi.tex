@@ -60,12 +60,14 @@
     \subsection*{黎曼積分法}
     黎曼對於曲綫下的面積有著相當扎實的幾何見解，他認爲每一條連續曲綫都可以用分割法的方式進行求積，而且\textbf{無論分割的方法如何隨機，若分割數量趨向無限，其結果都是恆定的}。
 
-    藉著以上見解，黎曼將某區間$[a,b]$拆分爲$n$個區間，使得$a=a_0<a_1<a_2<\cdots<a_n=b$並記第$k$個區間為$$P_k:=[a_{k-1},a_k]$$因應$P_k$的有限性及函數$f$的連續性，隨機於$P_k$内抽取變量$t_k\in P_k=[a_{k-1},a_k]$，可得對於$P_k$上的曲綫面積的估算$$f(t_k)\norm*{P_k}$$其中$\norm*{P_k}$代表區間$P_k$的寬度。因此，黎曼給出的積分方法為
+    藉著以上見解，黎曼將某區間$[a,b]$拆分爲$n$個區間，使得$a=a_0<a_1<a_2<\cdots<a_n=b$並記第$k$個區間為$$P_k:=[a_{k-1},a_k]$$因應$P_k$的有限性及函數$f$的連續性，隨機於$P_k$内抽取變量$t_k\in P_k=[a_{k-1},a_k]$，可得對於$P_k$上的曲綫面積的估算$$f(t_k)\norm*{P_k}$$其中$\norm*{P_k}$代表區間$P_k$的寬度。更進一步可定義$$\norm*{P}:=\max{\norm*{P_k}}$$因此，黎曼給出的積分方法如下
 
     \begin{definition}[黎曼積分]
         設$f$為$[a,b]$上的連續函數，令存在$a_1,a_2,\dots,a_{n-1}$使得$a=:a_0<a_1<a_2<\cdots<a_n:=b$，並設$P:=\{(t_k,P_k):1\leq k\leq n\}$為\textbf{標識區間集}使得$t_k\in P_k=[a_{k-1},a_k]$，則定義$f$在$[a,b]$上的\textbf{$P$-估算面積}為$$S(f;P):=\sum_{k=1}^{n}f(t_k)\norm*{P_k}$$
         而精確面積為$$\int_{a}^{b}f=S(f):=\lim_{n\to \infty}S(f;P)$$
     \end{definition}
+
+    另外，若存在$L\in \mathbb{R}$使得對於$\varepsilon>0$，$|\int_a^b f - L| < \varepsilon$，則稱$f$為\textbf{黎曼可積}的函數，記爲$f\in\mathcal{R}[a,b]$。
 
     黎曼積分屬於概念上的積分，實際情況還需要確定一種$t_k$的取值方法。我們先論證黎曼積分的存在性和唯一性，再討論實際應用會如何處理。
 
@@ -81,6 +83,31 @@
             \lim_{n\to\infty}\sum_{k=1}^{n}\min\{f(t_k)\}\norm*{P_k}\leq \lim_{n\to\infty}\sum_{k=1}^{n}f(t_k)\norm*{P_k}\leq \lim_{n\to\infty}\sum_{k=1}^{n}\max\{f(t_k)\}\norm*{P_k}
         \end{align*}
         對於$\norm*{P_k}\to 0$，可視$\min\{f(t_k)\}=\max\{f(t_k)\}$，因此$\int_{a}^{b}f$唯一存在。
+    \end{proof}
+
+    由於黎曼積分的定義基於幾何分割而定，因此初始的黎曼積分存在許多不確定性。后經過一系列修訂，終於發展一些可用理論。
+
+    \begin{theorem}
+        若$g\in\mathcal{R}[a,b]$且除了有限點以外$f=g$成立，則$f\in\mathcal{R}[a,b]$而且$\int_a^b f = \int_a^b g$。
+    \end{theorem}
+
+    \begin{proof}
+        證明可拆分爲兩部分，先證明對於一個不等點理論成立，隨後以歸納法論證。
+
+        設$c\in(a,b)$並設$L=\int_a^b g$。設當$x\neq c$時$f(x)=g(x)$。對於任意標識區間集，$S(f;P)=S(f;P)$除了至多兩項，即$$[\cdot,c], [c,\cdot]$$因此\begin{align*}
+            |S(f;P)-S(g;P)|&=|\sum (f(x_i)-g(x_i))(x_i-x_{i-1})|\\
+            &=|(f(c)-g(c))(c-x_{k-1})+(f(c)-g(c))(x_{k+1}-c)|\\
+            &<2(|f(c)|+|g(c)|)\norm*{P}
+        \end{align*}
+
+        由此設$\varepsilon>0$，$\delta_1<\frac{\varepsilon}{4(f(|c|)+|g(c)|)}$，以及$\norm*{P}<\delta_2$使得$|S(g;P)-L|<\frac{\varepsilon}{2}$。由此設$\delta<\min\{\delta_1,\delta_2\}$可得\begin{align*}
+            |S(f;P)-L|&<|S(f;P)-S(g;P)|+|S(g;P)-L|\\
+            &<\frac{\varepsilon}{2}+\frac{\varepsilon}{2}\\
+            &=\varepsilon
+        \end{align*}
+        因此，$f\in\mathcal{R}[a,b]$。
+
+        利用歸納法，不難得出對於有$n$個不等點的情況，把$[a,b]$拆分爲$[a,c]$及$[c,b]$使得$[a,c]$上有$n-1$個不等點，由此證畢。
     \end{proof}
     \subsection*{勒貝格積分法}
     \subsection*{萊布尼茨法則}
