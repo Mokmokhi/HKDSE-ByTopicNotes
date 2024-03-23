@@ -63,7 +63,7 @@
     藉著以上見解，黎曼將某區間$[a,b]$拆分爲$n$個區間，使得$a=a_0<a_1<a_2<\cdots<a_n=b$並記第$k$個區間為$$P_k:=[a_{k-1},a_k]$$因應$P_k$的有限性及函數$f$的連續性，隨機於$P_k$内抽取變量$t_k\in P_k=[a_{k-1},a_k]$，可得對於$P_k$上的曲綫面積的估算$$f(t_k)\norm*{P_k}$$其中$\norm*{P_k}$代表區間$P_k$的寬度。更進一步可定義$$\norm*{P}:=\max{\norm*{P_k}}$$因此，黎曼給出的積分方法如下
 
     \begin{definition}[黎曼積分]
-        設$f$為$[a,b]$上的連續函數，令存在$a_1,a_2,\dots,a_{n-1}$使得$a=:a_0<a_1<a_2<\cdots<a_n:=b$，並設$P:=\{(t_k,P_k):1\leq k\leq n\}$為\textbf{標識區間集}使得$t_k\in P_k=[a_{k-1},a_k]$，則定義$f$在$[a,b]$上的\textbf{$P$-估算面積}為$$S(f;P):=\sum_{k=1}^{n}f(t_k)\norm*{P_k}$$
+        設$f$為$[a,b]$上的連續函數，令存在$a_1,a_2,\dots,a_{n-1}$使得$a=:a_0<a_1<a_2<\cdots<a_n:=b$，並設$P:=\{(t_k,P_k):1\leq k\leq n\}$為\textbf{標識區間集}使得$t_k\in P_k=[a_{k-1},a_k]$，則定義$f$在$[a,b]$上的\textbf{$P$-估算面積}為$$S(f;P):=\sum_{k=1}^{n}f(t_k)\norm*{P}$$
         而精確面積為$$\int_{a}^{b}f=S(f):=\lim_{n\to \infty}S(f;P)$$
     \end{definition}
 
@@ -76,13 +76,13 @@
     \end{theorem}
     \begin{proof}
         由於\begin{align*}
-            \min\{\sum_{k=1}^{n}f(t_k)\norm*{P_k}\}\leq \sum_{k=1}^{n}f(t_k)\norm*{P_k}\leq \max\{\sum_{k=1}^{n}f(t_k)\norm*{P_k}\}\\
-            \sum_{k=1}^{n}\min\{f(t_k)\}\norm*{P_k}\leq \sum_{k=1}^{n}f(t_k)\norm*{P_k}\leq \sum_{k=1}^{n}\max\{f(t_k)\}\norm*{P_k}
+            \min\{\sum_{k=1}^{n}f(t_k)\norm*{P}\}\leq \sum_{k=1}^{n}f(t_k)\norm*{P}\leq \max\{\sum_{k=1}^{n}f(t_k)\norm*{P}\}\\
+            \sum_{k=1}^{n}\min\{f(t_k)\}\norm*{P}\leq \sum_{k=1}^{n}f(t_k)\norm*{P}\leq \sum_{k=1}^{n}\max\{f(t_k)\}\norm*{P}
         \end{align*}
         因此\begin{align*}
-            \lim_{n\to\infty}\sum_{k=1}^{n}\min\{f(t_k)\}\norm*{P_k}\leq \lim_{n\to\infty}\sum_{k=1}^{n}f(t_k)\norm*{P_k}\leq \lim_{n\to\infty}\sum_{k=1}^{n}\max\{f(t_k)\}\norm*{P_k}
+            \lim_{n\to\infty}\sum_{k=1}^{n}\min\{f(t_k)\}\norm*{P}\leq \lim_{n\to\infty}\sum_{k=1}^{n}f(t_k)\norm*{P}\leq \lim_{n\to\infty}\sum_{k=1}^{n}\max\{f(t_k)\}\norm*{P}
         \end{align*}
-        對於$\norm*{P_k}\to 0$，可視$\min\{f(t_k)\}=\max\{f(t_k)\}$，因此$\int_{a}^{b}f$唯一存在。
+        對於$\norm*{P}\to 0$，可視$\min\{f(t_k)\}=\max\{f(t_k)\}$，因此$\int_{a}^{b}f$唯一存在。
     \end{proof}
 
     由於黎曼積分的定義基於幾何分割而定，因此初始的黎曼積分存在許多不確定性。后經過一系列修訂，終於發展一些可用理論。
@@ -109,6 +109,71 @@
 
         利用歸納法，不難得出對於有$n$個不等點的情況，把$[a,b]$拆分爲$[a,c]$及$[c,b]$使得$[a,c]$上有$n-1$個不等點，由此證畢。
     \end{proof}
+
+    既然黎曼積分肯定有唯一值，那麽如何計算就成爲了一大問題，畢竟黎曼所提出的概念本就相當抽象，隨機取值雖然可以概括算法，但人類不能將之有效計算。我們給出下列普遍算法，以確定黎曼積分的值。
+
+    以下考慮函數$y=x^2$在$[-1,1]$區間的值。
+
+    \subsubsection*{左取值法}
+
+    對於每一個分區間$[x_i,x_{i+1}]$，取$f(x_i)$作計算值，則寫$$\int_a^b f=\sum f(x_i)\norm*{P}$$
+
+    \begin{example}
+        設$f(x)=x^2$，則\begin{align*}
+            S(f;P)&=\sum_{i=0}^{2n-1} (x_i^2) \frac{1}{n}\\
+            &=\frac{1}{n}[(-1)^2+(\frac{1-n}{n})^2+\cdots+(\frac{n-1}{n})^2]\\
+            &=\frac{1}{n}[0^2+2\cdot (\frac{1}{n})^2+\cdots+2\cdot 1^2 - 1^2]\\
+            &=\frac{1}{n^3}[2(1^2+2^2+\cdots +n^2)-n^2]\\
+            &=\frac{1}{n^3}[2\cdot \frac{1}{6}(n)(n+1)(2n+1)-n^2]\\
+            &=\frac{2}{3}+\mathcal{O}(\frac{1}{n})
+        \end{align*}
+        因此，$\displaystyle\int_{-1}^1 f = \lim_{n\to \infty}S(f;P)=\frac{2}{3}$.
+    \end{example}
+
+    \subsubsection*{右取值法}
+
+    對於每一個分區間$[x_i,x_{i+1}]$，取$f(x_{i+1})$作計算值，則寫$$\int_a^b f=\sum f(x_{i+1})\norm*{P}$$
+
+    \begin{example}
+        設$f(x)=x^2$，則\begin{align*}
+            S(f;P)&=\sum_{i=0}^{2n-1} (x_{i+1}^2) \frac{1}{n}\\
+            &=\frac{1}{n}[(\frac{1-n}{n})^2+\cdots+(\frac{n-1}{n})^2+1^2]\\
+            &=\frac{1}{n}[0^2+2\cdot (\frac{1}{n})^2+\cdots+2\cdot 1^2 - 1^2]\\
+            &=\frac{1}{n^3}[2(1^2+2^2+\cdots +n^2)-n^2]\\
+            &=\frac{1}{n^3}[2\cdot \frac{1}{6}(n)(n+1)(2n+1)-n^2]\\
+            &=\frac{2}{3}+\mathcal{O}(\frac{1}{n})
+        \end{align*}
+        因此，$\displaystyle\int_{-1}^1 f = \lim_{n\to \infty}S(f;P)=\frac{2}{3}$.
+    \end{example}
+    \subsubsection*{中取值法}
+
+    對於每一個分區間$[x_i,x_{i+1}]$，取$f(\frac{x_i+x_{i+1}}{2})$作計算值，則寫$$\int_a^b f=\sum f(\frac{x_i+x_{i+1}}{2})\norm*{P}$$
+
+    \begin{example}
+        設$f(x)=x^2$，則\begin{align*}
+            S(f;P)&=\sum_{i=0}^{2n-1} (\frac{x_i+x_{i+1}}{2})^2 \frac{1}{n}\\
+            &=\frac{1}{n}[(\frac{1-2n}{2n})^2+(\frac{3-2n}{2n})^2+\cdots+(\frac{2n-1}{2n})^2]\\
+            &=\frac{1}{n}[2\cdot (\frac{1}{2n})^2+\cdots+2\cdot (\frac{2n-1}{2n})^2]\\
+            &=\frac{1}{2n^3}[(1^2+3^2+\cdots +(2n-1)^2)]\\
+            &=\frac{1}{2n^3}[\frac{1}{6}(2n)(2n+1)(4n+1)-4\cdot\frac{1}{6}(n)(n+1)(2n+1)]\\
+            &=\frac{1}{12n^3}(2n+1)[(2n)(4n+1)-4(n)(n+1)]\\
+            &=\frac{1}{6n^3}(2n+1)(2n-1)(n)\\
+            &=\frac{2}{3}+\mathcal{O}(\frac{1}{n})
+        \end{align*}
+        因此，$\displaystyle\int_{-1}^1 f = \lim_{n\to \infty}S(f;P)=\frac{2}{3}$.
+    \end{example}
+    \subsubsection*{梯形法則}
+    對於每一個分區間$[x_i,x_{i+1}]$，取$\frac{f(x_i)+f(x_{i+1})}{2}$作計算值，則寫$$\int_a^b f=\sum \frac{f(x_i)+f(x_{i+1})}{2}\norm*{P}$$
+
+    \begin{example}
+        設$f(x)=x^2$，則\begin{align*}
+            S(f;P)&=\sum_{i=0}^{2n-1} \frac{x_i^2+x_{i+1}^2}{2} \frac{1}{n}\\
+            &=\frac{1}{2}(\textrm{左和}+\textrm{右和})\\
+            &=\frac{1}{2}(\frac{2}{3}+\frac{2}{3}+\mathcal{O}(\frac{1}{n}))\\
+            &=\frac{2}{3}+\mathcal{O}(\frac{1}{n})
+        \end{align*}
+        因此，$\displaystyle\int_{-1}^1 f = \lim_{n\to \infty}S(f;P)=\frac{2}{3}$.
+    \end{example}
     \subsection*{勒貝格積分法}
     \subsection*{萊布尼茨法則}
     \section*{積分方法}
