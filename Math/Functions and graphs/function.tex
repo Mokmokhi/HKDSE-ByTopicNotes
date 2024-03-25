@@ -588,6 +588,10 @@
 
     A right-angled triangle is usually a pure triangle we want to study the beauty of geometry. In this section, we are going to examine the usage of trigonometric functions as far as we could.
 
+    \subsection{Why are we calling it `trigonometry' ?}
+
+    The word 'trigonometry' can be divided into two parts - `trigono-' and `-metry'. The word `trigono-' comes from the word `trigonal', meaning `the things of trigon'. What trigon means is a triangle: in English, the word `tri-' means the number 3, and what counts to 3 can be named `tri-' things, like tripoid, triangle, tricycle, trisep, etc. So a trigon is equal to a triangle, just a difference in perspective: one tries to describe the number of vertices in a polygon, while one makes a point to number of angles in it. Another word `-metry' comes from the word `metric', which means `the method of comparison'. In complete word, `trigonometry' means `the method of comparison of triangle'. Therefore, when we learn trigonometry, we will compare many attributes: the length of sides in one triangle, the shapes and sizes of different triangles.
+
     \subsection{The relation of sides of triangle}
 
     We shall first declare what is a triangle, how it forms and what is special about it.
@@ -619,7 +623,7 @@
     \end{theorem}
 
     \begin{corollary}
-        The following holds.
+        The following holds for a right-angled triangle with adjacent sides $a,b$ and hypotenuse $c$.
         \begin{itemize}
             \item $a<c$;
             \item $b<c$.
@@ -689,6 +693,22 @@
     \subsubsection{Fundamental identities for trigonometric functions}
 
     \begin{theorem}
+        $\sin(90^\circ - \theta)=\cos{\theta}$
+    \end{theorem}
+
+    \begin{proof}
+        Suppose $a,b,c$ be the opposite side, the adjecent side and the hypotenuse to the acute angle $\theta$ in a right-angled triangle respectively. Note that by the law of angle sum of triangle, if we denote the remaining angle other than $\theta$ and $90^\circ$ by $\phi$, we get $\phi = 90^\circ - \theta$. Then \begin{align*}
+            \sin(90^\circ - \theta) &= \sin{\phi}\\
+            &= \frac{b}{c}\\
+            &= \cos{\theta}
+        \end{align*}
+    \end{proof}
+
+    \begin{corollary}
+        $\cos(90^\circ - \theta)=\cos{\theta}$
+    \end{corollary}
+
+    \begin{theorem}
         $\sin^2{\theta}+\cos^2{\theta}=1$.
     \end{theorem}
 
@@ -716,10 +736,19 @@
     \end{proof}
 
     \begin{example}
-        
+        Simplify the expression $\dfrac{[\sin(90^\circ - \theta) - \cos(90^\circ - \theta)]^2}{1-(\tan{\theta})(2\cos^2{\theta})}$.
+
+        \textit{ Sol. }By proved theorem, we have \begin{align*}
+            \frac{[\sin(90^\circ - \theta) - \cos(90^\circ - \theta)]^2}{1-(\tan{\theta})(2\cos^2{\theta})} &= \frac{(\cos{\theta}-\sin{\theta})^2}{1-(\frac{\sin{\theta}}{\cos{\theta}})(\cos^2{\theta})}\\
+            &= \frac{\cos^2{\theta}-2\sin{\theta}\cos{\theta}+\sin^2{\theta}}{1-2\sin{\theta}\cos{\theta}}\\
+            &= \frac{1-2\sin{\theta}\cos{\theta}}{1-2\sin{\theta}\cos{\theta}}\\
+            &= 1
+        \end{align*}
     \end{example}
 
     \subsection{Extending trigonometric functions to describing circles}
+
+    Trigonometric functions are not bounded by a triangle. In fact, if we want to, and trust to, extend trigonometric functions to any degree, we could still give a definition.
 
     \subsubsection{The relation between rectangular coordinates and polar coordinates}
 
