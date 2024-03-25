@@ -592,7 +592,7 @@
 
     We shall first declare what is a triangle, how it forms and what is special about it.
 
-    \subsubsection{Triangle inequality}
+    \subsubsection{Triangle inequality and Pythagoras theorem}
 
     Given a triangle, if we could draw it on a plane, we must have it with following axiomatic structures:\begin{itemize}
         \item There are 3 vertices in a triangle.
@@ -614,9 +614,21 @@
 
     We shall take them as axioms, since we do not need to dig too deep to the roots of such geometric constructions. We shall take it to be true with our intuition.
 
+    \begin{theorem}[Pythagoras theorem]
+        Let $a,b,c$ be positive numbers. Let $a,b$ be the adjacent sides of a right-angled triangle and $c$ be the hypotenuse of the right-angled triangle. Then $$a^2+b^2=c^2$$
+    \end{theorem}
+
+    \begin{corollary}
+        The following holds.
+        \begin{itemize}
+            \item $a<c$;
+            \item $b<c$.
+        \end{itemize}
+    \end{corollary}
+
     \subsubsection{The Sine function}
 
-    Historically, the sine function is defined for the relation between the opposite sides of a given acute angle in a triangle and the hypotenuse of the triangle.
+    Historically, the sine function is defined for the relation between the opposite side of a given acute angle in a triangle and the hypotenuse of the triangle.
 
     \begin{definition}[The Sine function]
         Let $a,b,c$ be sides of a given right-angled triangle and $\theta$ be an acute angle inside the triangle as shown.
@@ -626,11 +638,86 @@
 
     In some sense, we call the side $a$ the opposite side of $\theta$ and $c$ the hypotenuse. We so shorthand opposite side by 'o' and hypotenuse by 'h'. This produces a well known memorization technique of the relation described by sine function, read as 'soh' relation.
 
-    \subsubsection{The cosine function}
+    \begin{theorem}
+        The range of the sine function in a right-angled triangle is constrained to be $$0<\sin{\theta}<1$$
+    \end{theorem}
+
+    \begin{proof}
+        By definition, $a<c$, so $\frac{a}{c}<1$; at the same time, $a>0$ and $c>0$, hence $\frac{a}{c}>0$.
+    \end{proof}
+
+    \subsubsection{The Cosine function}
+
+    The cosine function is defined for the relation between the adjacent side of a given acute angle in a triangle and the hypotenuse of the triangle.
+
+    \begin{definition}[The Cosine function]
+        Let $a,b,c$ be sides of a given right-angled triangle and $\theta$ be an acute angle inside the triangle as shown.
+
+        Then the \textbf{cosine function of $\theta$}, $\cos{\theta}$, is defined by $$\cos{\theta}:=\frac{b}{c}$$
+    \end{definition}
+
+    In some sense, we call the side $b$ the adjacent side of $\theta$ and $c$ the hypotenuse. We so shorthand adjacent side by 'a' and hypotenuse by 'h'. This produces a well known memorization technique of the relation described by cosine function, read as 'cah' relation.
+
+    \begin{theorem}
+        The range of the sine function in a right-angled triangle is constrained to be $$0<\cos{\theta}<1$$
+    \end{theorem}
+
+    \begin{proof}
+        By definition, $b<c$, so $\frac{b}{c}<1$; at the same time, $b>0$ and $c>0$, hence $\frac{b}{c}>0$.
+    \end{proof}
 
     \subsubsection{The tangent function}
 
+    The tangent function is defined for the relation between the opposite side and the adjacent side of a given acute angle in a triangle.
+
+    \begin{definition}[The Tangent function]
+        Let $a,b,c$ be sides of a given right-angled triangle and $\theta$ be an acute angle inside the triangle as shown.
+
+        Then the \textbf{tangent function of $\theta$}, $\tan{\theta}$, is defined by $$\tan{\theta}:=\frac{a}{b}$$
+    \end{definition}
+
+    In some sense, we call the side $a$ the opposite side of $\theta$ and $b$ the opposite side of $\theta$. We so shorthand opposite side by 'o' and adjacent side by 'a'. This produces a well known memorization technique of the relation described by tangent function, read as 'toa' relation.
+
+    \begin{theorem}
+        The range of the sine function in a right-angled triangle is constrained to be $$0<\sin{\theta}$$
+    \end{theorem}
+
+    \begin{proof}
+        By definition, $a>0$ and $b>0$, hence $\frac{a}{b}>0$.
+    \end{proof}
+
     \subsubsection{Fundamental identities for trigonometric functions}
+
+    \begin{theorem}
+        $\sin^2{\theta}+\cos^2{\theta}=1$.
+    \end{theorem}
+
+    \begin{proof}
+        Suppose $a,b,c$ be the opposite side, the adjecent side and the hypotenuse to the acute angle $\theta$ in a right-angled triangle respectively. Then \begin{align*}
+            \sin^2{\theta}+\cos^2{\theta}&=(\frac{a}{c})^2+(\frac{b}{c})^2\\
+            &=\frac{a^2}{c^2}+\frac{b^2}{c^2}\\
+            &=\frac{a^2+b^2}{c^2}\\
+            &=\frac{c^2}{c^2}=1
+        \end{align*}
+    \end{proof}
+
+    \begin{theorem}
+        $\tan{\theta}=\dfrac{\sin{\theta}}{\cos{\theta}}$.
+    \end{theorem}
+
+    \begin{proof}
+        Suppose $a,b,c$ be the opposite side, the adjecent side and the hypotenuse to the acute angle $\theta$ in a right-angled triangle respectively. Then \begin{align*}
+            \frac{\sin{\theta}}{\cos{\theta}}&=\sin{\theta}/ \cos{\theta}\\
+            &=\frac{a}{c}/ \frac{b}{c}\\
+            &=\frac{a}{c}\cdot \frac{c}{b}\\
+            &=\frac{a}{b}\\
+            &=\tan{\theta}
+        \end{align*}
+    \end{proof}
+
+    \begin{example}
+        
+    \end{example}
 
     \subsection{Extending trigonometric functions to describing circles}
 
@@ -647,8 +734,6 @@
     \subsubsection{The area formula of a triangle}
 
     \subsubsection{The Sine Law}
-
-    \subsubsection{The Pythagorean theorem}
 
     \subsubsection{The Cosine Law}
 

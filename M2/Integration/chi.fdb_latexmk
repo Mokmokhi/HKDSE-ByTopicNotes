@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1711188542 "c:/GitHub/HKDSE-ByTopicNotes/M2/Integration/chi.tex" "chi.pdf" "chi" 1711188545
+["pdflatex"] 1711251405 "c:/GitHub/HKDSE-ByTopicNotes/M2/Integration/chi.tex" "chi.pdf" "chi" 1711251411
   "../image//partition s-t.png" 1697869352 24960 fb3455093f64a1113141e3a8dfaf6c28 ""
   "../image//s-t graph.png" 1697869352 24494 7b8500ac9a9a1075079a9f27c1b1e5d2 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637656387 9767274 bfa53867e73d350431acf6a4363b13ea ""
@@ -381,9 +381,9 @@
   "C:/WINDOWS/Fonts/simhei.ttf" 1707407640 9755440 983b60188a8e5a7c29c06c674f428b3d ""
   "C:/WINDOWS/Fonts/simkai.ttf" 1707407640 11789376 868a8b82664dfab00a95e3e30eaa705a ""
   "C:/WINDOWS/Fonts/simsun.ttc" 1708151074 18008680 490583a172d4371a68d1e0526a6bca81 ""
-  "c:/GitHub/HKDSE-ByTopicNotes/M2/Integration/chi.tex" 1711188541 10552 24cc12dc0d9a055e6c07cfe985c3cfbc ""
-  "chi.aux" 1711188544 112 55aaa85c68d70b2ec4d72a0d2542ed5e "pdflatex"
-  "chi.tex" 1711188541 10552 24cc12dc0d9a055e6c07cfe985c3cfbc ""
+  "c:/GitHub/HKDSE-ByTopicNotes/M2/Integration/chi.tex" 1711251402 10756 9ca081d76d5f73a462ccf264455be508 ""
+  "chi.aux" 1711251409 112 55aaa85c68d70b2ec4d72a0d2542ed5e "pdflatex"
+  "chi.tex" 1711251402 10756 9ca081d76d5f73a462ccf264455be508 ""
   (generated)
   "chi.aux"
   "chi.log"
