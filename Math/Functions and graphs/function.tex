@@ -746,17 +746,150 @@
         \end{align*}
     \end{example}
 
-    \subsection{Extending trigonometric functions to describing circles}
+    \subsection{The compound angle formulae}
 
-    Trigonometric functions are not bounded by a triangle. In fact, if we want to, and trust to, extend trigonometric functions to any degree, we could still give a definition.
+    Someone might be interested in computing compound angle formulae, which are important in developing different results of trigonometric relations. We will assume that $\alpha$ and $\beta$ are both acute angles, so that all the results could be applied to whenever $0<\alpha+\beta<180^\circ$.
+
+    Consider the following sector with radius 1:
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{ab.png}
+    \end{figure}
+
+    \begin{theorem}
+        $\sin(\alpha+\beta)=\sin{\alpha}\cos{\beta}+\sin{\beta}\cos{\alpha}$.
+    \end{theorem}
+
+    \begin{proof}
+        Referring to the figure, we have $\sin(\alpha+\beta)=x+y$.
+        
+        On the other hand, we have $$\begin{cases}
+            x=\sin{\beta}\cos{\alpha}\\y=\cos{\beta}\sin{\alpha}
+        \end{cases}$$ Therefore, $\sin(\alpha+\beta)=\sin{\alpha}\cos{\beta}+\sin{\beta}\cos{\alpha}$.
+    \end{proof}
+
+    For now we have the result for $\sin(\alpha+\beta)$. Then the remaining results could be proven under substitution of variables:
+    
+    \begin{theorem}
+        $\sin(\alpha-\beta)=\sin{\alpha}\cos{\beta}-\sin{\beta}\cos{\alpha}$.
+    \end{theorem}
+
+    \begin{proof}
+        \begin{align*}
+            \sin(\alpha-\beta)&=\sin(\alpha+(-\beta))\\&=\sin{\alpha}\cos(-\beta)+\sin(-\beta)\cos{\alpha}\\&=\sin{\alpha}\cos{\beta}-\sin{\beta}\cos{\alpha}
+        \end{align*}
+    \end{proof}
+
+    \begin{theorem}
+        $\cos(\alpha+\beta)=\cos{\alpha}\cos{\beta}-\sin{\alpha}\sin{\beta}$.
+    \end{theorem}
+
+    \begin{proof}
+        \begin{align*}
+            \cos(\alpha+\beta)&=\sin(\frac{\pi}{2}-(\alpha+\beta))\\&=\sin(\frac{\pi}{2}-\alpha)\cos(-\beta)+\sin(-\beta)\cos(\frac{\pi}{2}-\alpha)\\&=\cos{\alpha}\cos{\beta}-\sin{\alpha}\sin{\beta}
+        \end{align*}
+    \end{proof}
+
+    \begin{theorem}
+        $\cos(\alpha-\beta)=\cos{\alpha}\cos{\beta}+\sin{\alpha}\sin{\beta}$.
+    \end{theorem}
+
+    \begin{proof}
+        \begin{align*}
+            \cos(\alpha-\beta)&=\cos(\alpha+(-\beta))\\&=\cos{\alpha}\cos(-\beta)-\sin{\alpha}\sin(-\beta)\\&=\cos{\alpha}\cos{\beta}+\sin{\alpha}\sin{\beta}
+        \end{align*}
+    \end{proof}
+
+    \begin{theorem}
+        $\tan(\alpha+\beta)=\frac{\tan{\alpha}+\tan{\beta}}{1-\tan{\alpha}\tan{\beta}}$.
+    \end{theorem}
+
+    \begin{proof}
+        \begin{align*}
+            \tan(\alpha+\beta)&=\frac{\sin(\alpha+\beta)}{\cos(\alpha+\beta)}\\&=\frac{\sin{\alpha}\cos{\beta}+\sin{\beta}\cos{\alpha}}{\cos{\alpha}\cos{\beta}-\sin{\alpha}\sin{\beta}}\\&=\frac{\frac{\sin{\alpha}}{\cos{\alpha}}+\frac{\sin{\beta}}{\cos{\beta}}}{1-\frac{\sin{\alpha}}{\cos{\alpha}}\frac{\sin{\beta}}{\cos{\beta}}}\\&=\frac{\tan{\alpha}+\tan{\beta}}{1-\tan{\alpha}\tan{\beta}}
+        \end{align*}
+    \end{proof}
+
+    \begin{theorem}
+        $\tan(\alpha-\beta)=\frac{\tan{\alpha}-\tan{\beta}}{1+\tan{\alpha}\tan{\beta}}$
+    \end{theorem}
+
+    \begin{proof}
+        \begin{align*}
+            \tan(\alpha-\beta)&=\frac{\tan{\alpha}+\tan(-\beta)}{1-\tan{\alpha}\tan(-\beta)}\\
+            &=\frac{\tan{\alpha}-\tan{\beta}}{1+\tan{\alpha}\tan{\beta}}
+        \end{align*}
+    \end{proof}
+
+    All the results shown are based on $\alpha+\beta<90^\circ$, so the case where $\alpha+\beta>90^\circ$ are left to students.
+
+    \subsection{The trigonometric laws}
+
+    To understand the trigonometric functions better, we will try to extend the meaning of the trigonometric functions. The first step is to construct some laws with them so that the meaning could be seen.
+
+    In our discussion, we will look at two different triangles: one with acute angles only, while another with one obtuse angle. We will refer to the following triangles by $T_1$ and $T_2$ at anytime.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{triangles.png}
+        \caption{$T_1$ (left) and $T_2$ (right)}
+    \end{figure}
+
+    In convenience, we will denote the angle opposite to $c_i$ to be $\gamma_i$. $\alpha$ to $a$ and $\beta$ to $b$.
 
     \subsubsection{The area formula of a triangle}
 
-    Let us consider the area of a triangle first. Suppose we are given $a,b,c$ as three sides of a triangle and $\alpha,\beta,\gamma$ be the angle opposite to $a,b,c$ respectively.
+    Consider the area of $T_1$ and $T_2$, if we are taken their height to be the same, we will have the following interesting results:
 
-    Let us consider the area of succh triangle with $b$ as its base first. We have the following two situations: if $\gamma>90^\circ$ or $\gamma<90^\circ$.
+    Consider the area of $T_2$, we have $h=a\sin(\gamma_2)$, so its area is $$\frac{1}{2}ab\sin(\gamma_2)$$
 
-    If $\gamma<90^\circ$, we see that the height of the triangle is indeed equal to $a\sin{\gamma}$, so the area is $\frac{1}{2}ab\sin{\gamma}$; for if $\gamma>90^\circ$, the height is $a\sin(180^\circ - \gamma)$, so the area becomes $\frac{1}{2}ab\sin(180^\circ - \gamma)$. One interesting result is that when we set up the relation 
+    Consider the area of $T_1$, we have $h=a\sin(180^\circ - \gamma_1)$. The value of $\sin(180^\circ - \gamma_1)$ can be obtained by consiering \begin{align*}
+        \gamma_1 &= 180^\circ - \alpha - \beta\\
+        \sin{\gamma_1}&=\sin(180^\circ - \alpha - \beta)\\
+        &=\sin((90^\circ - \alpha) + (90^\circ - \beta))\\
+        &=\sin(90^\circ - \alpha)\cos(90^\circ - \beta)+ \cos(90^\circ - \alpha)\sin(90^\circ - \beta)\\
+        &=\cos{\alpha}\sin{\beta}+\sin{\alpha}\cos{\beta}\\
+        &=\sin(\alpha+\beta)\\
+        &=\sin(180^\circ - \gamma_1)
+    \end{align*}
+
+    Hence, we have its area to be \begin{align*}
+        \frac{1}{2}ab\sin(180^\circ - \gamma_1)&=\frac{1}{2}ab\sin(\gamma_1)
+    \end{align*}
+
+    \subsubsection{The Sine Law}
+
+    Our first law in discussion of trigonometric function is the \textbf{sine law} - the law inheriting the charateristics of sine function.
+
+    \begin{theorem}[Sine Law]
+        $\displaystyle \frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}=\frac{c_i}{\sin{\gamma_i}}$.
+    \end{theorem}
+
+    \begin{proof}
+        We first complete the case in $T_2$. It is not hard to see that \begin{align*}
+            c_2\sin{\alpha}&=a\sin{\gamma_2}\\
+            \frac{c_2}{\sin{\gamma_2}}&=\frac{a}{\sin{\alpha}}
+        \end{align*}
+        By rotation, similar results can be proven for other equality. We are done in the case of $T_2$.
+
+        We then look at the case of $T_1$. As in area computation, we shall see that \begin{align*}
+            \sin{\gamma_1}&=\sin(180^\circ - \gamma_1)
+        \end{align*}
+        Then \begin{align*}
+            c_1\sin{\alpha}&=a\sin(180^\circ - \gamma_1)\\
+            \frac{c_1}{\sin{\gamma_1}}&=\frac{a}{\sin{\alpha}}
+        \end{align*}
+    \end{proof}
+
+    \subsubsection{The Cosine Law}
+
+    \subsubsection{The Tangent Law}
+
+    \subsubsection{Heron's formula}
+
+    \subsection{Extending trigonometric functions to describing circles}
+
+    Trigonometric functions are not bounded by a triangle. In fact, if we want to, and trust to, extend trigonometric functions to any degree, we could still give a definition.
 
     \subsubsection{The relation between rectangular coordinates and polar coordinates}
 
@@ -765,16 +898,6 @@
     \subsubsection{Reduction formula for trigonometric functions}
 
     \subsubsection{The C-A-S-T graph and reduction strategy}
-
-    \subsection{The trigonometric laws}
-
-    \subsubsection{The Sine Law}
-
-    \subsubsection{The Cosine Law}
-
-    \subsubsection{The Tangent Law}
-
-    \subsubsection{Heron's formula}
 
     \subsection{Challenging Questions}
 
