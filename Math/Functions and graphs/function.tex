@@ -902,13 +902,13 @@
     \begin{example}
         Suppose a triangle $\triangle ABC$ with $AB=3, AC=5, \angle B = 60^\circ$. Then it is not hard to see \begin{align*}
             \frac{AC}{\sin{\angle B}}&=\frac{AB}{\sin{\angle C}}=\frac{BC}{\sin{\angle A}}\\
-            \sin{\angle C}&=\frac{3}{5\sin{60^\circ}}\\
-            &=\frac{2\sqrt{3}}{5}\\
+            \sin{\angle C}&=\frac{3\sin{60^\circ}}{5}\\
+            &=\frac{3\sqrt{3}}{10}\\
             \sin{\angle A}&=\sin{\angle B}\cos{\angle C}+\sin{\angle C}\cos{\angle B}\\
-            &=\frac{\sqrt{3}}{2}\cdot \frac{\sqrt{13}}{5}+\frac{2\sqrt{3}}{5}\cdot \frac{1}{2}\\
-            &=\frac{\sqrt{39}+2\sqrt{3}}{10}\\
-            BC&=\frac{10\sqrt{3}}{3}\cdot\frac{\sqrt{39}+2\sqrt{3}}{10}\\
-            &=2+\sqrt{13}
+            &=\frac{\sqrt{3}}{2}\cdot \frac{\sqrt{73}}{10}+\frac{3\sqrt{3}}{10}\cdot \frac{1}{2}\\
+            &=\frac{\sqrt{219}+3\sqrt{3}}{20}\\
+            BC&=\frac{10\sqrt{3}}{3}\cdot\frac{\sqrt{219}+3\sqrt{3}}{20}\\
+            &=\frac{3+\sqrt{73}}{2}
         \end{align*}
     \end{example}
 
@@ -959,6 +959,20 @@
         \end{align*}
         This concludes that in any case, the cosine law holds.
     \end{proof}
+
+    The best part of cosine law is that it generalizes the Pythagoras theorem to aritrary triangles. It is also more applicable than Sine law to different situations.
+
+    \begin{example}
+        Refer to the same example in sine law. We can now directly find the length of $BC$.
+
+        \begin{align*}
+            AC^2 &= AB^2 + BC^2 - 2\cdot AB\cdot BC\cos{\angle B}\\
+            5^2 &= 3^2 + BC^2 - 2\cdot 3\cdot BC\cos{60^\circ}\\
+            0 &= BC^2 - 3BC - 16
+        \end{align*}
+
+        Shall we learn to solve quadratic equations, the solution to the equation is $\dfrac{3\pm \sqrt{3^2-4(-16)}}{2}=\dfrac{3\pm \sqrt{73}}{2}$. Since $\sqrt{73}>3$, we need $BC>0$, so $BC=\dfrac{3+\sqrt{73}}{2}$.
+    \end{example}
 
     \subsubsection{The Tangent Law}
 
