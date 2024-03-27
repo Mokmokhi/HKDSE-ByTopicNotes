@@ -857,6 +857,12 @@
         \frac{1}{2}ab\sin(180^\circ - \gamma_1)&=\frac{1}{2}ab\sin(\gamma_1)
     \end{align*}
 
+    In conclusion, the area of a triangle with given angle $\theta$ and adjacent sides can be computed as 
+
+    \begin{theorem}
+        Given a triangle with a given angle $\theta$ in which $0\leq \theta\leq 180^\circ$ and corresponding adjacent sides of length $a$ and $b$, the area of the triangle is $$\frac{1}{2}ab\sin{\theta}$$
+    \end{theorem}
+
     \subsubsection{The Sine Law}
 
     Our first law in discussion of trigonometric function is the \textbf{sine law} - the law inheriting the charateristics of sine function.
@@ -865,7 +871,7 @@
         $\displaystyle \frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}=\frac{c_i}{\sin{\gamma_i}}$.
     \end{theorem}
 
-    \begin{proof}
+    \begin{proof}[Proof by extended right-angle triangle]
         We first complete the case in $T_2$. It is not hard to see that \begin{align*}
             c_2\sin{\alpha}&=a\sin{\gamma_2}\\
             \frac{c_2}{\sin{\gamma_2}}&=\frac{a}{\sin{\alpha}}
@@ -881,9 +887,94 @@
         \end{align*}
     \end{proof}
 
+    \begin{proof}[Proof by area formula]
+        Consider the area of the triangle, we obtain the following equality:
+
+        $$\frac{1}{2}ab\sin{\gamma}=\frac{1}{2}bc\sin{\alpha}=\frac{1}{2}ac\sin{\beta}$$
+
+        which yields the following result when dividing each expression by $\dfrac{abc}{2}$:
+
+        $$\frac{\sin{\gamma}}{c}=\frac{\sin{\alpha}}{a}=\frac{\sin{\beta}}{b}$$
+    \end{proof}
+
+    The law connects an angle with its opposite sides by the ratio of sine function. This is a good perspective to apply the formula to solve any triangle with given two sides and an angle.
+
+    \begin{example}
+        Suppose a triangle $\triangle ABC$ with $AB=3, AC=5, \angle B = 60^\circ$. Then it is not hard to see \begin{align*}
+            \frac{AC}{\sin{\angle B}}&=\frac{AB}{\sin{\angle C}}=\frac{BC}{\sin{\angle A}}\\
+            \sin{\angle C}&=\frac{3}{5\sin{60^\circ}}\\
+            &=\frac{2\sqrt{3}}{5}\\
+            \sin{\angle A}&=\sin{\angle B}\cos{\angle C}+\sin{\angle C}\cos{\angle B}\\
+            &=\frac{\sqrt{3}}{2}\cdot \frac{\sqrt{13}}{5}+\frac{2\sqrt{3}}{5}\cdot \frac{1}{2}\\
+            &=\frac{\sqrt{39}+2\sqrt{3}}{10}\\
+            BC&=\frac{10\sqrt{3}}{3}\cdot\frac{\sqrt{39}+2\sqrt{3}}{10}\\
+            &=2+\sqrt{13}
+        \end{align*}
+    \end{example}
+
+    \begin{remark}
+        It is the usual sine function when one of the angle becomes $90^\circ$.
+    \end{remark}
+
     \subsubsection{The Cosine Law}
 
+    The second law in trigonometry to be discussed will be the \textbf{cosine law} - the law inheriting cosine function.
+
+    \begin{theorem}[Cosine Law]
+        The following formulae holds:\begin{itemize}
+            \item $c^2=a^2+b^2-2ab\cos{\gamma} \iff \cos{\gamma}=\dfrac{a^2+b^2-c^2}{2ab}$.
+            \item $b^2=a^2+c^2-2ac\cos{\beta} \iff \cos{\beta}=\dfrac{a^2+c^2-b^2}{2ac}$.
+            \item $a^2=b^2+c^2-2bc\cos{\alpha} \iff \cos{\alpha}=\dfrac{b^2+c^2-a^2}{2bc}$.
+        \end{itemize}
+    \end{theorem}
+
+    \begin{proof}[Standard proof]
+        We first see the case in $T_2$. It is not hard to see if we partition $b$ into $x+y$ according to their order, we could construct the relations \begin{align*}
+            \begin{cases}
+                x+y&=b\\
+                a^2-x^2&=h^2=c_2^2-y^2\\
+                x&=a\cos{\gamma_2}
+            \end{cases}
+            &\implies \begin{cases}
+                a^2-x^2&=c_2^2-(b-x)^2\\
+                x&=a\cos{\gamma_2}
+            \end{cases}\\
+            &\implies \begin{cases}
+                a^2+b^2-2bx&=c_2^2\\
+                x&=a\cos{\gamma_2}
+            \end{cases}\\
+            &\implies c_2^2=a^2+b^2-2ab\cos{\gamma_2}
+        \end{align*}
+
+        On the other hand, for $T_1$, we have to tackle particularly the obtused angle case. Note that if $T_1$ is divided into two right-angled triangle, then $\gamma_1$ can be divided into $\theta_1+\theta_2$. It is equivalent to say \begin{align*}
+            \cos{\gamma_1}&=\cos{\theta_1}\cos{\theta_2}-\sin{\theta_1}\sin{\theta_2}\\
+            &=\sin(90^\circ - \theta_1)\sin(90^\circ - \theta_2) - \cos(90^\circ - \theta_1)\cos(90^\circ - \theta_2)\\
+            &=-\cos(180^\circ -\gamma_1)
+        \end{align*}
+        Therefore, we pick to consider $x=a\cos(180^\circ - \gamma_1)$, then \begin{align*}
+            c_1^2 - (b+x)^2 &= a^2-x^2\\
+            c_1^2 - b^2 - 2bx &= a^2\\
+            c_1^2 &= a^2 + b^2 + 2ab\cos(180^\circ - \gamma_1)\\
+            c_1^2 &= a^2 + b^2 - 2ab\cos{\gamma_1}
+        \end{align*}
+        This concludes that in any case, the cosine law holds.
+    \end{proof}
+
     \subsubsection{The Tangent Law}
+
+    It is the third law in trigonometry, which uses less but still understandable to write down. It is the \textbf{tangent law} - a law inheriting tangent function as its argument.
+
+    \begin{theorem}[Tangent Law]
+        The following formulae holds:\begin{itemize}
+            \item $\dfrac{a-b}{a+b}=\dfrac{\tan{\frac{\alpha-\beta}{2}}}{\tan{\frac{\alpha+\beta}{2}}}$.
+            \item $\dfrac{b-c}{b+c}=\dfrac{\tan{\frac{\beta-\gamma}{2}}}{\tan{\frac{\beta+\gamma}{2}}}$.
+            \item $\dfrac{c-a}{c+a}=\dfrac{\tan{\frac{\gamma-\alpha}{2}}}{\tan{\frac{\gamma+\alpha}{2}}}$.
+        \end{itemize}
+    \end{theorem}
+
+    \begin{proof}
+        Since we have done the proofs in sine and cosine law, we could directly apply them to any case.
+    \end{proof}
 
     \subsubsection{Heron's formula}
 
