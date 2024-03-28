@@ -32,8 +32,8 @@
 \contentsline {subsubsection}{\numberline {2.4.2}The Sine Law}{30}{}%
 \contentsline {subsubsection}{\numberline {2.4.3}The Cosine Law}{32}{}%
 \contentsline {subsubsection}{\numberline {2.4.4}The Tangent Law}{33}{}%
-\contentsline {subsubsection}{\numberline {2.4.5}Heron's formula}{33}{}%
-\contentsline {subsection}{\numberline {2.5}Extending trigonometric functions to describing circles}{33}{}%
+\contentsline {subsubsection}{\numberline {2.4.5}Heron's formula}{34}{}%
+\contentsline {subsection}{\numberline {2.5}Extending trigonometric functions to describing circles}{34}{}%
 \contentsline {subsubsection}{\numberline {2.5.1}The relation between rectangular coordinates and polar coordinates}{34}{}%
 \contentsline {subsubsection}{\numberline {2.5.2}Defining trigonometry as coordinate function}{34}{}%
 \contentsline {subsubsection}{\numberline {2.5.3}Reduction formula for trigonometric functions}{34}{}%

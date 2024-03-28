@@ -986,8 +986,18 @@
         \end{itemize}
     \end{theorem}
 
-    \begin{proof}
-        Since we have done the proofs in sine and cosine law, we could directly apply them to any case.
+    \begin{proof}[Algebraic proof]
+        Consider $\dfrac{\tan{\frac{\alpha-\beta}{2}}}{\tan{\frac{\alpha+\beta}{2}}}$. Denote $t_\alpha = \tan{\frac{\alpha}{2}}$ and $t_\beta = \tan{\frac{\beta}{2}}$.
+
+        \begin{align*}
+            \frac{\tan{\frac{\alpha-\beta}{2}}}{\tan{\frac{\alpha+\beta}{2}}}&=\frac{\tan{\frac{\alpha}{2}}-\tan{\frac{\beta}{2}}}{1+\tan{\frac{\alpha}{2}}\tan{\frac{\beta}{2}}}\frac{1-\tan{\frac{\alpha}{2}}\tan{\frac{\beta}{2}}}{\tan{\frac{\alpha}{2}}+\tan{\frac{\beta}{2}}}\\
+            &=\frac{t_\alpha - t_\beta - t_\alpha^2t_\beta+t_\alpha t_\beta^2}{t_\alpha + t_\beta + t_\alpha^2t_\beta+t_\alpha t_\beta^2}\\
+            &=\frac{t_\alpha(\sec^2{\frac{\beta}{2}})-t_\beta(\sec^2{\frac{\alpha}{2}})}{t_\alpha(\sec^2{\frac{\beta}{2}})+t_\beta(\sec^2{\frac{\alpha}{2}})}\\
+            &=\frac{t_\alpha(\cos^2{\frac{\alpha}{2}})-t_\beta(\cos^2{\frac{\beta}{2}})}{t_\alpha(\cos^2{\frac{\alpha}{2}})+t_\beta(\cos^2{\frac{\beta}{2}})}\\
+            &=\frac{\sin{\alpha}-\sin{\beta}}{\sin{\alpha}+\sin{\beta}}\\
+            &=\frac{ab\sin{\alpha}-ab\sin{\beta}}{ab\sin{\alpha}+ab\sin{\beta}}\\
+            &=\frac{a-b}{a+b}
+        \end{align*}
     \end{proof}
 
     \subsubsection{Heron's formula}
