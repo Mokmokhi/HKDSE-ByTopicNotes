@@ -32,101 +32,101 @@
 \contentsline {subsubsection}{\numberline {2.4.2}The Sine Law}{30}{}%
 \contentsline {subsubsection}{\numberline {2.4.3}The Cosine Law}{32}{}%
 \contentsline {subsubsection}{\numberline {2.4.4}The Tangent Law}{33}{}%
-\contentsline {subsubsection}{\numberline {2.4.5}Heron's formula}{34}{}%
-\contentsline {subsection}{\numberline {2.5}Extending trigonometric functions to describing circles}{34}{}%
-\contentsline {subsubsection}{\numberline {2.5.1}The relation between rectangular coordinates and polar coordinates}{35}{}%
-\contentsline {subsubsection}{\numberline {2.5.2}Defining trigonometry as coordinate function}{35}{}%
-\contentsline {subsubsection}{\numberline {2.5.3}Reduction formula for trigonometric functions}{35}{}%
-\contentsline {subsubsection}{\numberline {2.5.4}The C-A-S-T graph and reduction strategy}{35}{}%
-\contentsline {subsection}{\numberline {2.6}Challenging Questions}{35}{}%
-\contentsline {section}{\numberline {3}Linear functions}{36}{}%
-\contentsline {subsection}{\numberline {3.1}Fundamental concepts of points}{36}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Distance between two points}{36}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}Mid-point and Division points}{38}{}%
-\contentsline {subsubsection}{\numberline {3.1.3}Slope of two points}{40}{}%
-\contentsline {subsection}{\numberline {3.2}Different forms of a linear function}{43}{}%
-\contentsline {subsubsection}{\numberline {3.2.1}Segment}{44}{}%
-\contentsline {subsubsection}{\numberline {3.2.2}Line as extension of a segment}{44}{}%
-\contentsline {subsubsection}{\numberline {3.2.3}Point-slope form}{45}{}%
-\contentsline {subsubsection}{\numberline {3.2.4}Two-point form}{46}{}%
-\contentsline {subsubsection}{\numberline {3.2.5}Slope-intercept form}{46}{}%
-\contentsline {subsubsection}{\numberline {3.2.6}Intercepts form}{47}{}%
-\contentsline {subsubsection}{\numberline {3.2.7}General form}{48}{}%
-\contentsline {subsection}{\numberline {3.3}Rotational geometry}{49}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}Angle of elevation from horizon}{50}{}%
-\contentsline {subsubsection}{\numberline {3.3.2}Angle of depression from horizon}{50}{}%
-\contentsline {subsubsection}{\numberline {3.3.3}Angle between two arbitrary lines}{50}{}%
-\contentsline {subsubsection}{\numberline {3.3.4}Rotation of points and lines}{50}{}%
-\contentsline {subsection}{\numberline {3.4}Relation between lines}{50}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Point of intersection}{50}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Parallel lines}{50}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Perpendicular lines}{50}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}Number of intersections}{50}{}%
-\contentsline {subsubsection}{\numberline {3.4.5}Angle bisector}{50}{}%
-\contentsline {subsection}{\numberline {3.5}Additional content: Point-line distance}{50}{}%
-\contentsline {subsection}{\numberline {3.6}Linear inequalities}{51}{}%
-\contentsline {subsubsection}{\numberline {3.6.1}One variable inequality}{51}{}%
-\contentsline {subsubsection}{\numberline {3.6.2}Two variable inequality}{51}{}%
-\contentsline {subsubsection}{\numberline {3.6.3}Linear programming}{51}{}%
-\contentsline {subsection}{\numberline {3.7}Challenging questions}{51}{}%
-\contentsline {section}{\numberline {4}Quadratic functions}{52}{}%
-\contentsline {subsection}{\numberline {4.1}Solving Quadratic Equations}{52}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}The square-root method}{52}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}General form and Completing the square method}{52}{}%
-\contentsline {subsubsection}{\numberline {4.1.3}The quadratic formula}{52}{}%
-\contentsline {subsection}{\numberline {4.2}Solvability of Quadratic Equations}{52}{}%
-\contentsline {subsubsection}{\numberline {4.2.1}Discriminant: the factor affecting solvability}{52}{}%
-\contentsline {subsubsection}{\numberline {4.2.2}Application of solvability}{52}{}%
-\contentsline {subsection}{\numberline {4.3}Relation between coefficients and roots}{52}{}%
-\contentsline {subsubsection}{\numberline {4.3.1}What does it mean by a root?}{52}{}%
-\contentsline {subsubsection}{\numberline {4.3.2}The Vieta formula}{52}{}%
-\contentsline {subsubsection}{\numberline {4.3.3}Forming quadratic equations with given roots}{52}{}%
-\contentsline {subsection}{\numberline {4.4}Vertex form of a quadratic function}{52}{}%
-\contentsline {subsubsection}{\numberline {4.4.1}Obtaining vertex form using Transformation}{52}{}%
-\contentsline {subsubsection}{\numberline {4.4.2}Relation between vertex form and general form}{52}{}%
-\contentsline {subsubsection}{\numberline {4.4.3}Opening direction}{52}{}%
-\contentsline {subsubsection}{\numberline {4.4.4}The axis of symmetry}{52}{}%
-\contentsline {subsubsection}{\numberline {4.4.5}The extremum of quadratic functions}{52}{}%
-\contentsline {subsection}{\numberline {4.5}Quadratic inequalities}{52}{}%
-\contentsline {subsubsection}{\numberline {4.5.1}Boolean algebra}{52}{}%
-\contentsline {subsubsection}{\numberline {4.5.2}Solving quadratic inequalities}{52}{}%
-\contentsline {subsection}{\numberline {4.6}Challenging questions}{52}{}%
-\contentsline {section}{\numberline {5}Polynomial functions}{53}{}%
-\contentsline {subsection}{\numberline {5.1}Arithmetic rules for polynomials}{53}{}%
-\contentsline {subsubsection}{\numberline {5.1.1}Addition, Subtraction and Multiplication}{53}{}%
-\contentsline {subsubsection}{\numberline {5.1.2}Division}{53}{}%
-\contentsline {subsection}{\numberline {5.2}Divisibility of polynomials}{53}{}%
-\contentsline {subsubsection}{\numberline {5.2.1}Division algorithm}{53}{}%
-\contentsline {subsubsection}{\numberline {5.2.2}Remainder Theorem}{53}{}%
-\contentsline {subsubsection}{\numberline {5.2.3}Factor Theorem and General Vieta formula}{53}{}%
-\contentsline {subsection}{\numberline {5.3}G.C.D. and L.C.M.}{53}{}%
-\contentsline {subsubsection}{\numberline {5.3.1}Greatest Common Divisor}{53}{}%
-\contentsline {subsubsection}{\numberline {5.3.2}Least Common Multiple}{53}{}%
-\contentsline {subsection}{\numberline {5.4}Rational Function}{53}{}%
-\contentsline {subsubsection}{\numberline {5.4.1}Simplification of Rational Functions}{53}{}%
-\contentsline {subsubsection}{\numberline {5.4.2}Extended: Partial Fractions}{53}{}%
-\contentsline {subsection}{\numberline {5.5}Positional notation}{53}{}%
-\contentsline {subsubsection}{\numberline {5.5.1}Binary, Octal, Decimal and Hexadecimal}{53}{}%
-\contentsline {subsubsection}{\numberline {5.5.2}Conversion between different bases}{53}{}%
-\contentsline {subsection}{\numberline {5.6}Challenging questions}{53}{}%
-\contentsline {section}{\numberline {6}Exponential and Logarithmic functions}{54}{}%
-\contentsline {subsection}{\numberline {6.1}Exponential functions}{54}{}%
-\contentsline {subsubsection}{\numberline {6.1.1}Law of Exponential algebra}{54}{}%
-\contentsline {subsubsection}{\numberline {6.1.2}Seeing surds as fractional exponents}{54}{}%
-\contentsline {subsubsection}{\numberline {6.1.3}Solving equations using exponetiation method}{54}{}%
-\contentsline {subsection}{\numberline {6.2}Logarithmic functions}{54}{}%
-\contentsline {subsubsection}{\numberline {6.2.1}What is Logarithm?}{54}{}%
-\contentsline {subsubsection}{\numberline {6.2.2}Law of Logarithmic algebra}{54}{}%
-\contentsline {subsubsection}{\numberline {6.2.3}Solving equations using Logarithmic method}{54}{}%
-\contentsline {subsection}{\numberline {6.3}Challenging questions}{54}{}%
-\contentsline {section}{\numberline {7}Sequence as a function of natural numbers}{55}{}%
-\contentsline {subsection}{\numberline {7.1}What is a sequence?}{55}{}%
-\contentsline {subsection}{\numberline {7.2}Arithmetic sequence}{55}{}%
-\contentsline {subsubsection}{\numberline {7.2.1}General form}{55}{}%
-\contentsline {subsubsection}{\numberline {7.2.2}Summation of arithmetic sequence}{55}{}%
-\contentsline {subsection}{\numberline {7.3}Geometric sequence}{55}{}%
-\contentsline {subsubsection}{\numberline {7.3.1}General form}{55}{}%
-\contentsline {subsubsection}{\numberline {7.3.2}Summation on Geometric sequence}{55}{}%
-\contentsline {subsubsection}{\numberline {7.3.3}Infinite sum of Geometric sequence}{55}{}%
-\contentsline {subsection}{\numberline {7.4}Additional content: Arithmetic-Geometric sequence}{55}{}%
-\contentsline {subsection}{\numberline {7.5}Challenging questions}{55}{}%
+\contentsline {subsubsection}{\numberline {2.4.5}Heron's formula}{35}{}%
+\contentsline {subsection}{\numberline {2.5}Extending trigonometric functions to describing circles}{36}{}%
+\contentsline {subsubsection}{\numberline {2.5.1}The relation between rectangular coordinates and polar coordinates}{36}{}%
+\contentsline {subsubsection}{\numberline {2.5.2}Defining trigonometry as coordinate function}{36}{}%
+\contentsline {subsubsection}{\numberline {2.5.3}Reduction formula for trigonometric functions}{36}{}%
+\contentsline {subsubsection}{\numberline {2.5.4}The C-A-S-T graph and reduction strategy}{36}{}%
+\contentsline {subsection}{\numberline {2.6}Challenging Questions}{36}{}%
+\contentsline {section}{\numberline {3}Linear functions}{37}{}%
+\contentsline {subsection}{\numberline {3.1}Fundamental concepts of points}{37}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Distance between two points}{37}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Mid-point and Division points}{39}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}Slope of two points}{41}{}%
+\contentsline {subsection}{\numberline {3.2}Different forms of a linear function}{44}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Segment}{45}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Line as extension of a segment}{45}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}Point-slope form}{46}{}%
+\contentsline {subsubsection}{\numberline {3.2.4}Two-point form}{47}{}%
+\contentsline {subsubsection}{\numberline {3.2.5}Slope-intercept form}{47}{}%
+\contentsline {subsubsection}{\numberline {3.2.6}Intercepts form}{48}{}%
+\contentsline {subsubsection}{\numberline {3.2.7}General form}{49}{}%
+\contentsline {subsection}{\numberline {3.3}Rotational geometry}{50}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Angle of elevation from horizon}{51}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Angle of depression from horizon}{51}{}%
+\contentsline {subsubsection}{\numberline {3.3.3}Angle between two arbitrary lines}{51}{}%
+\contentsline {subsubsection}{\numberline {3.3.4}Rotation of points and lines}{51}{}%
+\contentsline {subsection}{\numberline {3.4}Relation between lines}{51}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Point of intersection}{51}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Parallel lines}{51}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Perpendicular lines}{51}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Number of intersections}{51}{}%
+\contentsline {subsubsection}{\numberline {3.4.5}Angle bisector}{51}{}%
+\contentsline {subsection}{\numberline {3.5}Additional content: Point-line distance}{51}{}%
+\contentsline {subsection}{\numberline {3.6}Linear inequalities}{52}{}%
+\contentsline {subsubsection}{\numberline {3.6.1}One variable inequality}{52}{}%
+\contentsline {subsubsection}{\numberline {3.6.2}Two variable inequality}{52}{}%
+\contentsline {subsubsection}{\numberline {3.6.3}Linear programming}{52}{}%
+\contentsline {subsection}{\numberline {3.7}Challenging questions}{52}{}%
+\contentsline {section}{\numberline {4}Quadratic functions}{53}{}%
+\contentsline {subsection}{\numberline {4.1}Solving Quadratic Equations}{53}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}The square-root method}{53}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}General form and Completing the square method}{53}{}%
+\contentsline {subsubsection}{\numberline {4.1.3}The quadratic formula}{53}{}%
+\contentsline {subsection}{\numberline {4.2}Solvability of Quadratic Equations}{53}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Discriminant: the factor affecting solvability}{53}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Application of solvability}{53}{}%
+\contentsline {subsection}{\numberline {4.3}Relation between coefficients and roots}{53}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}What does it mean by a root?}{53}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}The Vieta formula}{53}{}%
+\contentsline {subsubsection}{\numberline {4.3.3}Forming quadratic equations with given roots}{53}{}%
+\contentsline {subsection}{\numberline {4.4}Vertex form of a quadratic function}{53}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}Obtaining vertex form using Transformation}{53}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}Relation between vertex form and general form}{53}{}%
+\contentsline {subsubsection}{\numberline {4.4.3}Opening direction}{53}{}%
+\contentsline {subsubsection}{\numberline {4.4.4}The axis of symmetry}{53}{}%
+\contentsline {subsubsection}{\numberline {4.4.5}The extremum of quadratic functions}{53}{}%
+\contentsline {subsection}{\numberline {4.5}Quadratic inequalities}{53}{}%
+\contentsline {subsubsection}{\numberline {4.5.1}Boolean algebra}{53}{}%
+\contentsline {subsubsection}{\numberline {4.5.2}Solving quadratic inequalities}{53}{}%
+\contentsline {subsection}{\numberline {4.6}Challenging questions}{53}{}%
+\contentsline {section}{\numberline {5}Polynomial functions}{54}{}%
+\contentsline {subsection}{\numberline {5.1}Arithmetic rules for polynomials}{54}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Addition, Subtraction and Multiplication}{54}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Division}{54}{}%
+\contentsline {subsection}{\numberline {5.2}Divisibility of polynomials}{54}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}Division algorithm}{54}{}%
+\contentsline {subsubsection}{\numberline {5.2.2}Remainder Theorem}{54}{}%
+\contentsline {subsubsection}{\numberline {5.2.3}Factor Theorem and General Vieta formula}{54}{}%
+\contentsline {subsection}{\numberline {5.3}G.C.D. and L.C.M.}{54}{}%
+\contentsline {subsubsection}{\numberline {5.3.1}Greatest Common Divisor}{54}{}%
+\contentsline {subsubsection}{\numberline {5.3.2}Least Common Multiple}{54}{}%
+\contentsline {subsection}{\numberline {5.4}Rational Function}{54}{}%
+\contentsline {subsubsection}{\numberline {5.4.1}Simplification of Rational Functions}{54}{}%
+\contentsline {subsubsection}{\numberline {5.4.2}Extended: Partial Fractions}{54}{}%
+\contentsline {subsection}{\numberline {5.5}Positional notation}{54}{}%
+\contentsline {subsubsection}{\numberline {5.5.1}Binary, Octal, Decimal and Hexadecimal}{54}{}%
+\contentsline {subsubsection}{\numberline {5.5.2}Conversion between different bases}{54}{}%
+\contentsline {subsection}{\numberline {5.6}Challenging questions}{54}{}%
+\contentsline {section}{\numberline {6}Exponential and Logarithmic functions}{55}{}%
+\contentsline {subsection}{\numberline {6.1}Exponential functions}{55}{}%
+\contentsline {subsubsection}{\numberline {6.1.1}Law of Exponential algebra}{55}{}%
+\contentsline {subsubsection}{\numberline {6.1.2}Seeing surds as fractional exponents}{55}{}%
+\contentsline {subsubsection}{\numberline {6.1.3}Solving equations using exponetiation method}{55}{}%
+\contentsline {subsection}{\numberline {6.2}Logarithmic functions}{55}{}%
+\contentsline {subsubsection}{\numberline {6.2.1}What is Logarithm?}{55}{}%
+\contentsline {subsubsection}{\numberline {6.2.2}Law of Logarithmic algebra}{55}{}%
+\contentsline {subsubsection}{\numberline {6.2.3}Solving equations using Logarithmic method}{55}{}%
+\contentsline {subsection}{\numberline {6.3}Challenging questions}{55}{}%
+\contentsline {section}{\numberline {7}Sequence as a function of natural numbers}{56}{}%
+\contentsline {subsection}{\numberline {7.1}What is a sequence?}{56}{}%
+\contentsline {subsection}{\numberline {7.2}Arithmetic sequence}{56}{}%
+\contentsline {subsubsection}{\numberline {7.2.1}General form}{56}{}%
+\contentsline {subsubsection}{\numberline {7.2.2}Summation of arithmetic sequence}{56}{}%
+\contentsline {subsection}{\numberline {7.3}Geometric sequence}{56}{}%
+\contentsline {subsubsection}{\numberline {7.3.1}General form}{56}{}%
+\contentsline {subsubsection}{\numberline {7.3.2}Summation on Geometric sequence}{56}{}%
+\contentsline {subsubsection}{\numberline {7.3.3}Infinite sum of Geometric sequence}{56}{}%
+\contentsline {subsection}{\numberline {7.4}Additional content: Arithmetic-Geometric sequence}{56}{}%
+\contentsline {subsection}{\numberline {7.5}Challenging questions}{56}{}%

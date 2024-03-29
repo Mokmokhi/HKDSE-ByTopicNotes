@@ -1000,9 +1000,9 @@
         \end{align*}
     \end{proof}
 
-    The tangent law relates two angles with two corresponing opposite sides. The application makes an agreement with the sine law, however, without advantages to apply the tangent law of its complexity. We just do it a favor to learn a complete view to all three trigonometric functions.
+    The tangent law relates two angles with two corresponing opposite sides. The application makes an agreement with the sine law, however, without advantages to apply the tangent law because of its complexity. We just do it a favor to learn a complete view to all three trigonometric functions.
 
-    In advance, let's introduce one result related to the tangent law to close this extra section.
+    In advance, let's introduce one more result related to the tangent law to close this extra section.
 
     \begin{theorem}[Mollweide's Equations]
         The following holds:\begin{align}
@@ -1011,8 +1011,44 @@
         \end{align}
     \end{theorem}
 
+    \begin{proof}
+        As $\alpha,\beta,\gamma$ represents 3 angles in a triangle, their sum agrees with $\alpha+\beta+\gamma=180^\circ$, therefore $\frac{\gamma}{2}=90^\circ - \frac{\alpha+\beta}{2}$. We have the equality \begin{align*}
+            \tan{\frac{\alpha+\beta}{2}}&=\frac{1}{\tan{\frac{\gamma}{2}}}
+        \end{align*}
+        By proved result on the Tangent Law:\begin{align*}
+            \frac{a-b}{a+b}&=\frac{\tan{\frac{\alpha-\beta}{2}}}{\tan{\frac{\alpha+\beta}{2}}}\\
+            &=\frac{\sin{\frac{\alpha-\beta}{2}}}{\sin{\frac{\alpha+\beta}{2}}}\frac{\cos{\frac{\alpha+\beta}{2}}}{\cos{\frac{\alpha-\beta}{2}}}\\
+            &=\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}\frac{\sin{\frac{\gamma}{2}}}{\cos{\frac{\alpha-\beta}{2}}}\\
+            &=\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}\frac{2\sin{\frac{\gamma}{2}}\cos{\frac{\gamma}{2}}}{2\cos{\frac{\alpha-\beta}{2}}\cos{\frac{\gamma}{2}}}\\
+            &=\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}\frac{\sin{\gamma}}{\sin{\alpha}+\sin{\beta}}\\
+            &=\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}\frac{c}{a+b}\\
+            \frac{a-b}{c}&=\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}
+        \end{align*}
+        This proves the first equation.
+
+        For the second equation, consider \begin{align*}
+            \frac{a+b}{c}&=\frac{a+b}{a-b}\cdot \frac{a-b}{c}\\
+            &=\frac{\tan{\frac{\alpha+\beta}{2}}}{\tan{\frac{\alpha-\beta}{2}}}\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}\\
+            &=\frac{\cos{\frac{\alpha-\beta}{2}}}{\sin{\frac{\gamma}{2}}}
+        \end{align*}
+        Then the Mollweide's equations are proved.
+    \end{proof}
+
     \subsubsection{Heron's formula}
 
+    In order to compute formula from all perspective, we now look at a well-known formula for computing area of an aritrary triangle using side length only. This is the Heron's formula.
+
+    \begin{theorem}[Heron's formula]
+        Let $a,b,c$ be the side length of 3 sides of a triangle. Then the area of the triangle is computed by $$\sqrt{s(s-a)(s-b)(s-c)}$$where $s=\dfrac{a+b+c}{2}$.
+    \end{theorem}
+
+    \begin{proof}[Geometric proof of Heron's formula]
+        Let $r$ be the radius of the inscribe circle. Then the area of the triangle can be computed by $$\frac{ra+rb+rc}{2}=rs$$ where $s=\frac{a+b+c}{2}$.
+    \end{proof}
+
+    \begin{proof}[Algebraic proof of Heron's formula]
+        
+    \end{proof}
     \subsection{Extending trigonometric functions to describing circles}
 
     Trigonometric functions are not bounded by a triangle. In fact, if we want to, and trust to, extend trigonometric functions to any degree, we could still give a definition.
