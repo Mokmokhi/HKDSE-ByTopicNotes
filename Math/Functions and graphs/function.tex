@@ -1036,19 +1036,67 @@
 
     \subsubsection{Heron's formula}
 
-    In order to compute formula from all perspective, we now look at a well-known formula for computing area of an aritrary triangle using side length only. This is the Heron's formula.
+    In order to compute formula from all perspective, we now look at a well-known formula for computing area of an arbitrary triangle using side length only. This is the Heron's formula.
 
     \begin{theorem}[Heron's formula]
         Let $a,b,c$ be the side length of 3 sides of a triangle. Then the area of the triangle is computed by $$\sqrt{s(s-a)(s-b)(s-c)}$$where $s=\dfrac{a+b+c}{2}$.
     \end{theorem}
 
     \begin{proof}[Geometric proof of Heron's formula]
-        Let $r$ be the radius of the inscribe circle. Then the area of the triangle can be computed by $$\frac{ra+rb+rc}{2}=rs$$ where $s=\frac{a+b+c}{2}$.
+        Let $r$ be the radius of the inscribe circle. Then the area of the triangle can be computed by $$\frac{ra+rb+rc}{2}=rs$$ where $s=\frac{a+b+c}{2}$. 
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.8]{heron.png}
+            \caption{Reference: http://jwilson.coe.uga.edu/EMT668/EMAT6680.2000/Umberger/\\MATH7200/HeronFormulaProject/GeometricProof/geoproof.html}
+        \end{figure}
+
+        The following steps will try to resolve $rs$ from other perspective. Here we orientate the side $AC$ to be the base of the triangle (parallel to horizon), and extend the segment to $G$ as in the figure. The area becomes $r\cdot AG$.
+
+        Next we adjoin the figure with a line from $I$ so that $\angle AIJ = 90^\circ$ as follows.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.8]{heron_circle.png}
+            \caption{Reference: http://jwilson.coe.uga.edu/EMT668/EMAT6680.2000/Umberger/\\MATH7200/HeronFormulaProject/GeometricProof/geoproof.html}
+        \end{figure}
+
+        We try to figure out some similar triangles.\begin{align*}
+            \angle AHC + \angle AIC &= 180^\circ &(concyclic, \angle \, supp.)\\
+            \angle BIE + \angle AIC &= 180^\circ &(\angle s\, at\, a\, pt.)\\
+            \therefore \angle AHC &= \angle BIE
+        \end{align*}
     \end{proof}
 
+    We have also the algebraic proof of heron's formula which is much sensible.
+
     \begin{proof}[Algebraic proof of Heron's formula]
-        
+        Consider the sine law and cosine law where we have proven to be true in any case. We have the area formula $$A=\frac{1}{2}ab\sin{\gamma}$$ and thus if we do a little trick, square it, we have \begin{align*}
+            A^2&=\frac{1}{4}a^2b^2\sin^2{\gamma}\\
+            &=\frac{1}{4}a^2b^2(1-\cos^2{\gamma})\\
+            &=\frac{1}{4}a^2b^2(1-(\frac{a^2+b^2-c^2}{2ab})^2)\\
+            &=\frac{1}{4}a^2b^2(1+\frac{a^2+b^2-c^2}{2ab})(1-\frac{a^2+b^2-c^2}{2ab})\\
+            &=\frac{1}{16}(a^2+2ab+b^2-c^2)(c^2-a^2+2ab-b^2)\\
+            &=\frac{1}{16}[(a+b)^2-c^2][c^2-(a-b)^2]\\
+            &=\frac{1}{16}(a+b+c)(a+b-c)(-a+b+c)(a-b+c)\\
+            &=s(s-a)(s-b)(s-c)
+        \end{align*}
+        Thus, by the positivity of area, we have $$A=\sqrt{s(s-a)(s-b)(s-c)}$$ where $s=\dfrac{a+b+c}{2}$
     \end{proof}
+
+    \begin{example}
+        Let $\triangle ABC$ be with sides $7,10,13$. Define $s=\dfrac{7+10+13}{2}=15$. Then the area of the triangle is $$S_{\triangle ABC}=\sqrt{15(15-7)(15-10)(15-13)}=\sqrt{1200}=20\sqrt{3}$$
+    \end{example}
+
+    \begin{exercise}
+        Compute the area of $\triangle ABC$ if the side lengths are:\begin{enumerate}
+            \item 1,2,3.
+            \item 3,4,5.
+            \item 2,6,7.
+            \item 13,15,17.
+            \item 9,9,6.
+        \end{enumerate}
+    \end{exercise}
     \subsection{Extending trigonometric functions to describing circles}
 
     Trigonometric functions are not bounded by a triangle. In fact, if we want to, and trust to, extend trigonometric functions to any degree, we could still give a definition.
