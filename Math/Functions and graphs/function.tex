@@ -1064,8 +1064,27 @@
         We try to figure out some similar triangles.\begin{align*}
             \angle AHC + \angle AIC &= 180^\circ &(concyclic, \angle \, supp.)\\
             \angle BIE + \angle AIC &= 180^\circ &(\angle s\, at\, a\, pt.)\\
-            \therefore \angle AHC &= \angle BIE
+            \therefore \angle AHC &= \angle BIE\\
+            \angle BEI = \angle ACH &= 90^\circ &(By \, construction)\\
+            \therefore \triangle ACH &\sim \triangle BEI
         \end{align*}
+
+        On the other hand, it is not hard to see that \begin{align*}
+            \triangle IDJ &\sim \triangle HCJ
+        \end{align*}
+
+        Then the following relation holds:\begin{align*}
+            \frac{AC}{CH}&=\frac{BE}{IE}&(\triangle ACH \sim \triangle BEI)\\
+            \frac{AC}{CG}&=\frac{CH}{ID}&(BE=CG,IE=ID)\\
+            &=\frac{CJ}{DJ}&(\triangle IDJ \sim \triangle HCJ)\\
+            \frac{AG}{CG}&=\frac{CD}{DJ}&(+1\, on\, both\, sides)\\
+            AG\cdot ID&=\frac{CD}{DJ}CG\cdot ID\\
+            &=CD\cdot CG\cdot \frac{AD}{ID}&(\frac{ID}{DJ}=\frac{AD}{ID},\triangle ADI\sim\triangle IDJ)\\
+            &=CD\cdot CG\cdot \frac{AD\cdot AG}{ID\cdot AG}\\
+            AG\cdot ID&=\sqrt{AD\cdot DC\cdot CG\cdot AG}&(rearrangement)
+        \end{align*}
+
+        Which, the area of $\triangle ABC$ is exactly $$AG\cdot ID=\sqrt{AD\cdot DC\cdot CG\cdot AG}$$ and the proof is done.
     \end{proof}
 
     We have also the algebraic proof of heron's formula which is much sensible.
