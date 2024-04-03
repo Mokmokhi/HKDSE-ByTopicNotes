@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Function and its graph}{6}{}%
 \contentsline {subsection}{\numberline {1.1}What is a Function?}{6}{}%
 \contentsline {subsubsection}{\numberline {1.1.1}Function as an input-output pair}{7}{}%
@@ -130,3 +130,27 @@
 \contentsline {subsubsection}{\numberline {7.3.3}Infinite sum of Geometric sequence}{59}{}%
 \contentsline {subsection}{\numberline {7.4}Additional content: Arithmetic-Geometric sequence}{59}{}%
 \contentsline {subsection}{\numberline {7.5}Challenging questions}{59}{}%
+\contentsline {section}{\numberline {8}Probability functions}{60}{}%
+\contentsline {subsection}{\numberline {8.1}Counting Principle}{60}{}%
+\contentsline {subsubsection}{\numberline {8.1.1}Addition rule}{60}{}%
+\contentsline {subsubsection}{\numberline {8.1.2}Multiplication rule}{60}{}%
+\contentsline {subsection}{\numberline {8.2}Pigeonhole Principle}{60}{}%
+\contentsline {subsubsection}{\numberline {8.2.1}Fundamental version}{60}{}%
+\contentsline {subsubsection}{\numberline {8.2.2}General version}{60}{}%
+\contentsline {subsection}{\numberline {8.3}Counting functions}{60}{}%
+\contentsline {subsubsection}{\numberline {8.3.1}Factorial}{60}{}%
+\contentsline {subsubsection}{\numberline {8.3.2}Permutation}{60}{}%
+\contentsline {subsubsection}{\numberline {8.3.3}Combination}{60}{}%
+\contentsline {subsection}{\numberline {8.4}Fundamental Probability}{60}{}%
+\contentsline {subsubsection}{\numberline {8.4.1}Fair dice intuition}{60}{}%
+\contentsline {subsubsection}{\numberline {8.4.2}Outcomes/Events as sets}{60}{}%
+\contentsline {subsubsection}{\numberline {8.4.3}Probability in terms of outcomes}{60}{}%
+\contentsline {subsection}{\numberline {8.5}Probability of independent events}{60}{}%
+\contentsline {subsubsection}{\numberline {8.5.1}Independent events}{60}{}%
+\contentsline {subsubsection}{\numberline {8.5.2}Venn-diagram}{60}{}%
+\contentsline {subsubsection}{\numberline {8.5.3}Supplementary event}{60}{}%
+\contentsline {subsubsection}{\numberline {8.5.4}Rules of coherence}{60}{}%
+\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{60}{}%
+\contentsline {subsubsection}{\numberline {8.6.1}Independence decomposition}{60}{}%
+\contentsline {subsubsection}{\numberline {8.6.2}Conditional probability}{60}{}%
+\contentsline {subsection}{\numberline {8.7}Challenging questions}{60}{}%
