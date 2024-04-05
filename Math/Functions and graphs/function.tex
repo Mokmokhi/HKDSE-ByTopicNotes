@@ -16,7 +16,9 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhf[HL]{Function and graphs}
+\fancyhf[HR]{\rightmark}
 \fancyhf[CF]{\thepage}
+\fancyhf[FL]{Copyright $@$MokOwen, \today}
 
 \newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
 \newcommand{\id}{\mathtt{id}}
@@ -1703,6 +1705,28 @@
 
     \section{Exponential and Logarithmic functions}
 
+    The evolution of computational concepts comes from shortening the notation of recursive action. One has the `+' notation for shortening process of counting, and `$\times$' notation for shortening the process of adding. Here we have a new notation, call it \textbf{exponentiation} for shortening the process of multiplying.
+
+    \subsection{Index notation}
+
+    We first revisit the concept of self-multiplication.
+
+    \subsubsection{From multiplication to power}
+
+
+
+    \subsubsection{negative integral power}
+
+    \subsubsection{Law of integral index}
+
+    \subsection{Rational power}
+
+    \subsubsection{The n-th root notation}
+
+    \subsubsection{Fractional power}
+
+    \subsubsection{Law of fractional index}
+
     \subsection{Exponential functions}
 
     \subsubsection{Law of Exponential algebra}
@@ -1751,13 +1775,134 @@
 
     \subsection{Counting Principle}
 
+    Let's introduce one notation for sum and one notation for product. We will see their convenience during conceptualisation.
+
+    \begin{definition}[Summation notation]
+        We use the symbol sigma $\Sigma$ to emphasis the process of addition. Usually we define the addition process using indexing format. The notation $$\sum_{i=1}^{n}x_i$$ means adding up from $x_1$ to $x_n$. In other words, it is saying $$\sum_{i=1}^{n}x_i = x_1+x_2+\cdots+x_n$$
+    \end{definition}
+
+    \begin{example}
+        $\displaystyle\sum_{i=1}^{3}1 = 1+1+1 = 3$. 
+    \end{example}
+
+    \begin{example}
+        $\displaystyle\sum_{i=1}^{4}i=1+2+3+4=10$.
+    \end{example}
+
+    \begin{example}
+        $\displaystyle\sum_{i=2}^{5}\frac{i^2}{2}=27$.
+    \end{example}
+
+    \begin{example}
+        $\displaystyle\sum_{i=2}^{5}\frac{i^2}{2}+2=29$.
+    \end{example}
+
+    \begin{example}
+        $\displaystyle\sum_{i=2}^{5}(\frac{i^2}{2}+2)=35$.
+    \end{example}
+
+    \begin{remark}
+        The summation notation can usually be a misconception to many students, but bear in mind that the sum is computed by adding up terms.
+    \end{remark}
+
+    \begin{theorem}[Properties of summation notation]
+        The following properties holds for summation notation:\begin{enumerate}
+            \item $\displaystyle\sum_{i=1}^{n}a_i+\sum_{i=1}^{n}b_i=\sum_{i=1}^{n}(a_i+b_i)$;
+            \item $\displaystyle c\sum_{i=1}^{n}a_i=\sum_{i=1}^{n}ca_i$;
+            \item $\displaystyle (\sum_{i=1}^{n}a_i)(\sum_{j=1}^{m}b_j)=\sum_{i=1}^{n}\sum_{j=1}^{m}a_ib_j$;
+            \item $\displaystyle \sum_{i=1}^{n}\sum_{j=1}^{m}a_ib_j=\sum_{j=1}^{m}\sum_{i=1}^{n}a_ib_j$.
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{definition}[Product notation]
+        We use the symbol pi $\Pi$ to emphasis the process of multiplication. Usually we define the multiplication process using indexing format. The notation $$\prod_{i=1}^{n}x_i$$ means multiplying up from $x_1$ to $x_n$. In other words, it is saying $$\prod_{i=1}^{n}x_i = x_1 x_2 \cdots x_n$$
+    \end{definition}
+
+    \begin{example}
+        $\displaystyle\prod_{i=1}^{3}1 = 1\cdot 1\cdot 1 = 1$. 
+    \end{example}
+    
+    \begin{example}
+        $\displaystyle\prod_{i=1}^{4}2 = 2\cdot 2\cdot 2\cdot 2 = 16$. 
+    \end{example}
+
+    \begin{example}
+        $\displaystyle\prod_{i=1}^{4}i=1\cdot 2\cdot 3\cdot 4=24$.
+    \end{example}
+
     \subsubsection{Addition rule}
+
+    The addition rule starts by finding the total number of things. We count by doing adding values.
+
+    \begin{definition}[Addition rule]
+        Let $A$ and $B$ be two collections with $m$ and $n$ objects respectively. Then the total number of objects in $A$ and in $B$ is $m+n$.
+    \end{definition}
+
+    \begin{example}
+        Let Alice has 3 apples and Bob has 4 apples. Then they have a total of 7 apples.
+    \end{example}
+
+    \begin{definition}[General version of addition rule]
+        Let $A_1,A_2,\dots,A_n$ be n collections with $x_1,x_2,\dots,x_n$ objects respectively. Then the total number of objects among all these collections is $\displaystyle \sum_{i=1}^{n}x_i$. 
+    \end{definition}
+
+    \begin{example}
+        Let Alice has 2 apples, Bob has 5 apples and Chris has 7 apples. Then they have a total of 14 apples.
+    \end{example}
 
     \subsubsection{Multiplication rule}
 
+    The multiplication rule comes from finding the total number of combinations. We count by spanning a table.
+
+    \begin{definition}[Multiplication rule]
+        Let $A$ and $B$ be two collections with $m$ and $n$ objects respectively. Then the total number of combining objects in $A$ and in $B$ is $mn$.
+    \end{definition}
+
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            &1&2&$\cdots$&$m$\\
+            \hline
+            1&(1,1)&(2,1)&$\cdots$&($m$,1)\\
+            \hline
+            2&(1,2)&(2,2)&$\cdots$&($m$,2)\\
+            \hline
+            $\vdots$&$\vdots$&$\vdots$&$\ddots$&$\vdots$\\
+            \hline
+            $n$&(1,$n$)&(2,$n$)&$\cdots$&($m$,$n$)\\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    \begin{example}
+        Let Alice has 3 different T-shirts and Bob has 4 different pants. Then the number of costume combination is $12$.
+    \end{example}
+    
+    \begin{example}
+        Suppose there are 15 boys and 18 girls in a class. Then the number of possible couples in this class is 270.
+    \end{example}
+
+    \begin{definition}[General version of multiplication rule]
+        Let $A_1,A_2,\dots,A_n$ be n collections with $x_1,x_2,\dots,x_n$ objects respectively. Then the total number of n-tuples among all these collections is $\displaystyle \prod_{i=1}^{n}x_i$. 
+    \end{definition}
+
+    \begin{example}
+        Let class A has 2 class members, class A has 5 class members and class C has 7 class members. To form a committee by selecting one students from each class, 70 different committee can be formed.
+    \end{example}
+
     \subsection{Pigeonhole Principle}
 
+    One should identify the constraints to manage how distributions are formed, and so does probability. We will see one question to facilitate the mind on distribution.
+
+    Let us see we have for instance 4 pigeonholes. If we have 1 pigeon to choose where to live in, it will fill one of the 4 holes; if we have 2 pigeons, 2 out of 4 will be filled; if 3, then 3 out of 4 will be filled; and 4 out of 4 for the case of 4. However, what happened when 5 pigeons are there?
+    
+    Assume they do not fight to each other so that no dead bodies are there, and they agreed to live together in some pigeonhole. Alright, no extra space for building new holes either. Then we could see when 4 holes are all filled with 1 pigeon, 1 is left behind to choose which pigeonhole to live in. In this stage, we observe no matter which hole it chose, \textbf{at least one of the 4 holes have to be with 2 or more pigeons}. We then extend this concept to a general case of $n+1$ pigeons with $n$ pigeonholes. This is called the \textbf{Pigeonhole principle}.
+
     \subsubsection{Fundamental version}
+
+    \begin{theorem}[Baby pigeon]
+        If there are $n$ containers with $n+1$ objects, then at least one of the containers must have 2 or more objects in it.
+    \end{theorem}
 
     \subsubsection{General version}
 
@@ -1792,6 +1937,32 @@
     \subsubsection{Independence decomposition}
 
     \subsubsection{Conditional probability}
+
+    \subsection{Discrete random variables}
+
+    \subsubsection{Finite domain and infinite domain}
+
+    \subsubsection{Mean and expected value}
+
+    \subsubsection{Standard deviation and variance}
+
+    \subsection{Distributions}
+
+    \subsubsection{Binomial distribution}
+
+    \subsubsection{Geometric distribution}
+
+    \subsubsection{Poisson distribution}
+
+    \subsubsection{Normal distribution and Standard distribution}
+
+    \subsection{Sampling}
+
+    \subsubsection{Point sampling}
+
+    \subsubsection{Central limit theorem}
+
+    \subsubsection{Confidence interval}
 
     \subsection{Challenging questions}
 
