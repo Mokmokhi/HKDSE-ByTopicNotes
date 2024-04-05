@@ -1904,13 +1904,94 @@
         If there are $n$ containers with $n+1$ objects, then at least one of the containers must have 2 or more objects in it.
     \end{theorem}
 
+    \begin{example}
+        Consider 31 books are going to be distributed to 30 students, then at least one of the students has 2 or more books.
+    \end{example}
+
+    \begin{exercise}
+        To ensure 10 children are all having at least 1 slice of pizza, at least how many slices should the pizza be sliced into?
+    \end{exercise}
+
     \subsubsection{General version}
+
+    A general version of pigeonhole principle can be introduced from the perspective of division.
+
+    \begin{theorem}[Adult pigeon]
+        If there are $n$ containers with $mn+1$ objects, then at least one of the containers must have $m+1$ or more objects in it.
+    \end{theorem}
+
+    \begin{proof}
+        We may consider $mn+1$ as division algorithm and decide the worst situation. Indeed, it is the worst when every container is containing the least amount of objects in it. This is equivalent to saying the distribution is uniform, i.e. averagely distributed. We then conclude after the worst case, every container is containing $m$ objects with 1 left behind. The principle is deduced.
+    \end{proof}
+
+    \begin{corollary}[Pigeonhole principle]
+        Suppose $t$ objects are going to be distributed to $n$ containers, where $mn+1\leq t\leq (m+1)n$. Then at least one of the containers must be having $m+1$ objects.
+    \end{corollary}
+
+    \begin{example}
+        Suppose 99 balls are stored in the storage room. If there are 5 basket ball players, then at least one of the players could have 20 balls.
+    \end{example}
+
+    This is why we usually use division to measure the worst case of distribution.
 
     \subsection{Counting functions}
 
+    Based on the rules of counting, we establish the following method of counting measure. Our perspective of counting starts from permutation.
+
     \subsubsection{Factorial}
 
+    Suppose we are arranging some people in a queue. Let say there are 5 people to be arranged. Then how many different queues could be formed?
+
+    Assume 5 placement should be filled by 5 people, then we have no duplicated choice for 2 different placement. We call the selection be without replacement.
+
+    For the first placement, we have 5 choice; for the second placement, as we have already select 1 person out of 5, we can only choose from the remaining 4 person, so the secnod placement has 4 choices; for the third placement, we have a remaining of 3 person, so 3 choices for the third placement; so on and so forth, the fourth and the fifth placement has 2 and 1 choice respectively. As long as a queue can be seen as an ordered combination, we shall apply multiplication rule to compute the number of permutation: $$5\times 4\times 3\times 2\times 1 = 120$$
+
+    To shorten the multiplication (Yes, we are lazy), we define the following notation:
+
+    \begin{definition}[Factorial]
+        Let $n$ be a non-negative integer, then the \textbf{factorial} notation is defined as recursive definition: $$n!=n(n-1)!, \, 0!=1$$
+    \end{definition}
+
+    In some sense, if we see the factorial notation as some function, we have $$n!:=\prod_{i=1}^n i$$
+
+    However, how was $0!$ be defined?
+
+    Let's consider the reverse view of factorial. We note that factorial is built from multiplication, and so can be extended using division. Consider the definition $$n!=n(n-1)! \implies (n-1)!=\frac{n!}{n}$$
+    which means $0!$ can be computed as $$0!=\frac{1!}{1}=1$$
+
+    \begin{example}
+        For a queue of 7 people, we have $7!=5040$ different permutations.
+    \end{example}
+
+    \begin{example}
+        For a queue of 0 people, we have $0!=1$ permutation only. That is, arranging nothing. It is so defined because this is also a valid situation to be counted!
+    \end{example}
+
+    \begin{exercise}
+        Compute the number of distinct queues can be formed if there are (a)6 people; (b)9 people; (c)12 people.
+    \end{exercise}
+
     \subsubsection{Permutation}
+
+    Somehow, we have another problem of arranging not all people but part of them. We shall now consider if \textbf{not all people are selected in the arrangement}.
+
+    Suppose now we have 6 people in the selection zone, and we need to arrange any 3 of them in order. It would be easier to think of counting championships, but never mind. Similar to the part of factorial, we just need to reduce the outstanding arrangement. Therefore, we have in total $$6\times 5 \times 4 = 120$$ numbers of arrangement for 3 out of 6 people. It is interesting to do an algebra trick: we complete the factorials by filling up the gaps so that $$6\times 5 \times 4 = \frac{6\times 5\times 4\times 3\times 2\times 1}{3\times 2\times 1}=\frac{6!}{3!}=\frac{6!}{(6-3)!}$$
+
+    The reason to write the last equality is we shall observe and fulfill the generality of the writings. Consider we need to arrange 4 out of 6, the computation becomes $$6\times 5 \times 4 \times 3= \frac{6\times 5\times 4\times 3\times 2\times 1}{2\times 1}=\frac{6!}{2!}=\frac{6!}{(6-4)!}$$
+
+    Therefore, in general, we find the permutation of $r$ out of $n$ objects is equal to $\dfrac{n!}{(n-r)!}$, and one denote the concept by taking $P$ as the notation standing for permutation. The formal definition says:
+
+    \begin{definition}[Permutation]
+        The amount of permutation for arranging $r$ objects out of $n$ objects is defined as $$P_r^n:=\frac{n!}{(n-r)!}$$
+    \end{definition}
+
+    \begin{example}
+        There are $9\times P_4^9$ 5-digit numbers without repeated digits.
+    \end{example}
+
+    \begin{exercise}
+        How many strings (alphabet permutations) of length 6 can be formed if no alphabet is used repeatedly?
+    \end{exercise}
 
     \subsubsection{Combination}
 
