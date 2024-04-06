@@ -1995,6 +1995,45 @@
 
     \subsubsection{Combination}
 
+    We may now consider another case of counting. For who focus on only the category of selection but not the difference in order, we name the method of finding combinations.
+
+    To find the number of combinations, we have to look at permutation first. Should we compute the number of combinations by dividing the number of global permutations by local permutation. We shall identify what should be considered as global permutations and local permutations.
+
+    Let there be 5 objects, name them $A,B,C,D,E$, and we are going to permute them in different orders. The whole set of possible arrangement of any 3 objects can be concluded by row and column format:
+
+    \begin{center}
+        \begin{tabular}{c c c c c c c c c c}
+            ABC&ABD&ABE&ACD&ACE&ADE&BCD&BCE&BDE&CDE\\
+            ACB&ADB&AEB&ADC&AEC&AED&BDC&BEC&BED&CED\\
+            BAC&BAD&BAE&CAD&CAE&DAE&CBD&CBE&DBE&DCE\\
+            BCA&BDA&BEA&CDA&CEA&DEA&CDB&CEB&DEB&DEC\\
+            CAB&DAB&EAB&DAC&EAC&EAD&DBC&EBC&EBD&ECD\\
+            CBA&DBA&EBA&DCA&ECA&EDA&DCB&ECB&EDB&EDC
+        \end{tabular}
+    \end{center}
+
+    If we consider the table column-by-column, we found that each column are of the same set of objects, which are what we called the same combination for one column. To express them explicitly, we can write them into
+
+    \begin{center}
+        \begin{tabular}{c c}
+            $\{A,B,C\}$&$\{A,B,D\}$\\
+            $\{A,B,E\}$&$\{A,C,D\}$\\
+            $\{A,C,E\}$&$\{A,D,E\}$\\
+            $\{B,C,D\}$&$\{B,C,E\}$\\
+            $\{B,D,E\}$&$\{C,D,E\}$
+        \end{tabular}
+    \end{center}
+
+    That means, there are in total 10 combinations for if we choose 3 objects out of 5 objects. By observation, we found the total number of permutations involves all objects in the set we considered. We call it the \textbf{global permutation}. Meanwhile, for each column, the permutations are involving the same objects chosen from the set. We shall call it \textbf{local permutation}. Therefore, the mechanism can be expressed by the name defined: Dividing the number of global permutation by the number of local permutation, we will get the number of combination.
+
+    So the final judgement to the number of combination is the formula $$\frac{P_3^5}{3!}=10$$ and the general formula shall be $$\frac{P_r^n}{r!}=\frac{n!}{(n-r)!r!}$$
+
+    We will denote the combination symbol using the first alphabet $C$. Definition as follows:
+
+    \begin{definition}[Combination]
+        The amount of combination for collecting $r$ objects out of $n$ objects is defined as $$C_r^n:=\frac{n!}{(n-r)!r!}$$
+    \end{definition}
+
     \subsection{Fundamental Probability}
 
     \subsubsection{Fair dice intuition}

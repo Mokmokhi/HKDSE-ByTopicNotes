@@ -148,30 +148,30 @@
 \contentsline {subsection}{\numberline {8.3}Counting functions}{64}{}%
 \contentsline {subsubsection}{\numberline {8.3.1}Factorial}{65}{}%
 \contentsline {subsubsection}{\numberline {8.3.2}Permutation}{66}{}%
-\contentsline {subsubsection}{\numberline {8.3.3}Combination}{67}{}%
-\contentsline {subsection}{\numberline {8.4}Fundamental Probability}{67}{}%
-\contentsline {subsubsection}{\numberline {8.4.1}Fair dice intuition}{67}{}%
-\contentsline {subsubsection}{\numberline {8.4.2}Outcomes/Events as sets}{67}{}%
-\contentsline {subsubsection}{\numberline {8.4.3}Probability in terms of outcomes}{67}{}%
-\contentsline {subsection}{\numberline {8.5}Probability of independent events}{67}{}%
-\contentsline {subsubsection}{\numberline {8.5.1}Independent events}{67}{}%
-\contentsline {subsubsection}{\numberline {8.5.2}Venn-diagram}{67}{}%
-\contentsline {subsubsection}{\numberline {8.5.3}Supplementary event}{67}{}%
-\contentsline {subsubsection}{\numberline {8.5.4}Rules of coherence}{67}{}%
-\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{67}{}%
-\contentsline {subsubsection}{\numberline {8.6.1}Independence decomposition}{67}{}%
-\contentsline {subsubsection}{\numberline {8.6.2}Conditional probability}{67}{}%
-\contentsline {subsection}{\numberline {8.7}Discrete random variables}{67}{}%
-\contentsline {subsubsection}{\numberline {8.7.1}Finite domain and infinite domain}{67}{}%
-\contentsline {subsubsection}{\numberline {8.7.2}Mean and expected value}{67}{}%
-\contentsline {subsubsection}{\numberline {8.7.3}Standard deviation and variance}{67}{}%
-\contentsline {subsection}{\numberline {8.8}Distributions}{67}{}%
-\contentsline {subsubsection}{\numberline {8.8.1}Binomial distribution}{67}{}%
-\contentsline {subsubsection}{\numberline {8.8.2}Geometric distribution}{67}{}%
-\contentsline {subsubsection}{\numberline {8.8.3}Poisson distribution}{67}{}%
-\contentsline {subsubsection}{\numberline {8.8.4}Normal distribution and Standard distribution}{67}{}%
-\contentsline {subsection}{\numberline {8.9}Sampling}{67}{}%
-\contentsline {subsubsection}{\numberline {8.9.1}Point sampling}{67}{}%
-\contentsline {subsubsection}{\numberline {8.9.2}Central limit theorem}{67}{}%
-\contentsline {subsubsection}{\numberline {8.9.3}Confidence interval}{67}{}%
-\contentsline {subsection}{\numberline {8.10}Challenging questions}{67}{}%
+\contentsline {subsubsection}{\numberline {8.3.3}Combination}{66}{}%
+\contentsline {subsection}{\numberline {8.4}Fundamental Probability}{68}{}%
+\contentsline {subsubsection}{\numberline {8.4.1}Fair dice intuition}{68}{}%
+\contentsline {subsubsection}{\numberline {8.4.2}Outcomes/Events as sets}{68}{}%
+\contentsline {subsubsection}{\numberline {8.4.3}Probability in terms of outcomes}{68}{}%
+\contentsline {subsection}{\numberline {8.5}Probability of independent events}{68}{}%
+\contentsline {subsubsection}{\numberline {8.5.1}Independent events}{68}{}%
+\contentsline {subsubsection}{\numberline {8.5.2}Venn-diagram}{68}{}%
+\contentsline {subsubsection}{\numberline {8.5.3}Supplementary event}{68}{}%
+\contentsline {subsubsection}{\numberline {8.5.4}Rules of coherence}{68}{}%
+\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{68}{}%
+\contentsline {subsubsection}{\numberline {8.6.1}Independence decomposition}{68}{}%
+\contentsline {subsubsection}{\numberline {8.6.2}Conditional probability}{68}{}%
+\contentsline {subsection}{\numberline {8.7}Discrete random variables}{68}{}%
+\contentsline {subsubsection}{\numberline {8.7.1}Finite domain and infinite domain}{68}{}%
+\contentsline {subsubsection}{\numberline {8.7.2}Mean and expected value}{68}{}%
+\contentsline {subsubsection}{\numberline {8.7.3}Standard deviation and variance}{68}{}%
+\contentsline {subsection}{\numberline {8.8}Distributions}{68}{}%
+\contentsline {subsubsection}{\numberline {8.8.1}Binomial distribution}{68}{}%
+\contentsline {subsubsection}{\numberline {8.8.2}Geometric distribution}{68}{}%
+\contentsline {subsubsection}{\numberline {8.8.3}Poisson distribution}{68}{}%
+\contentsline {subsubsection}{\numberline {8.8.4}Normal distribution and Standard distribution}{68}{}%
+\contentsline {subsection}{\numberline {8.9}Sampling}{68}{}%
+\contentsline {subsubsection}{\numberline {8.9.1}Point sampling}{68}{}%
+\contentsline {subsubsection}{\numberline {8.9.2}Central limit theorem}{68}{}%
+\contentsline {subsubsection}{\numberline {8.9.3}Confidence interval}{68}{}%
+\contentsline {subsection}{\numberline {8.10}Challenging questions}{68}{}%
