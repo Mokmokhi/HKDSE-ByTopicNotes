@@ -1,4 +1,4 @@
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {section}{\numberline {1}Function and its graph}{4}{}%
 \contentsline {subsection}{\numberline {1.1}What is a Function?}{4}{}%
 \contentsline {subsection}{\numberline {1.2}Graph of a function}{12}{}%
@@ -51,11 +51,11 @@
 \contentsline {section}{\numberline {8}Probability functions}{60}{}%
 \contentsline {subsection}{\numberline {8.1}Counting Principle}{60}{}%
 \contentsline {subsection}{\numberline {8.2}Pigeonhole Principle}{62}{}%
-\contentsline {subsection}{\numberline {8.3}Counting functions}{63}{}%
+\contentsline {subsection}{\numberline {8.3}Counting functions}{64}{}%
 \contentsline {subsection}{\numberline {8.4}Fundamental Probability}{67}{}%
-\contentsline {subsection}{\numberline {8.5}Probability of independent events}{69}{}%
-\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{69}{}%
-\contentsline {subsection}{\numberline {8.7}Discrete random variables}{69}{}%
-\contentsline {subsection}{\numberline {8.8}Distributions}{69}{}%
-\contentsline {subsection}{\numberline {8.9}Sampling}{69}{}%
-\contentsline {subsection}{\numberline {8.10}Challenging questions}{69}{}%
+\contentsline {subsection}{\numberline {8.5}Probability of independent events}{70}{}%
+\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{70}{}%
+\contentsline {subsection}{\numberline {8.7}Discrete random variables}{70}{}%
+\contentsline {subsection}{\numberline {8.8}Distributions}{70}{}%
+\contentsline {subsection}{\numberline {8.9}Sampling}{70}{}%
+\contentsline {subsection}{\numberline {8.10}Challenging questions}{70}{}%

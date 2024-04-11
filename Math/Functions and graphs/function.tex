@@ -1918,12 +1918,18 @@
         Let $A$ and $B$ be two collections with $m$ and $n$ objects respectively. Then the total number of objects in $A$ and in $B$ is $m+n$.
     \end{definition}
 
+    Let us introduce the notation $|\cdot|$ to present the menaing of counts: If $A$ represents a collection of $n$ objects, then $|A|=n$.
+
+    \begin{definition}[Rewriting Addition rule]
+        Let $A$ and $B$ be two distinct collections. Then the total number of objects among them is $|A|+|B|$.
+    \end{definition}
+
     \begin{example}
         Let Alice has 3 apples and Bob has 4 apples. Then they have a total of 7 apples.
     \end{example}
 
     \begin{definition}[General version of addition rule]
-        Let $A_1,A_2,\dots,A_n$ be n collections with $x_1,x_2,\dots,x_n$ objects respectively. Then the total number of objects among all these collections is $\displaystyle \sum_{i=1}^{n}x_i$. 
+        Let $A_1,A_2,\dots,A_n$ be n collections. Then the total number of objects among all these collections is $\displaystyle \sum_{i=1}^{n}|A_i|$. 
     \end{definition}
 
     \begin{example}
@@ -1935,7 +1941,7 @@
     The multiplication rule comes from finding the total number of combinations. We count by spanning a table.
 
     \begin{definition}[Multiplication rule]
-        Let $A$ and $B$ be two collections with $m$ and $n$ objects respectively. Then the total number of combining objects in $A$ and in $B$ is $mn$.
+        Let $A$ and $B$ be two collections. Then the total number of combining objects in $A$ and in $B$ is $|A|\cdot |B|$.
     \end{definition}
 
     \begin{center}
@@ -2183,6 +2189,24 @@
     Since probability follows the counting of faces on a die, all computation should be following the computation in counting functions.
 
     \subsubsection*{Outcomes/Events as sets}
+
+    Seeing the type of faces on a die as an event, and generalize the concept of a face on a die as an event in a situation, we may now write down the definition of general probability.
+
+    \begin{definition}[Probability]
+        Suppose $U$ be the universal set of events and $X$ be the targetted set of events within $U$. Let $P$ be the probability function on $U$ so that $P:U\to [0,1]$. Then we shall write $$P(X|U):=\frac{|X|}{|U|}$$
+
+        If $U$ is explicitly defined and well-understood for all situations throughout the discussion, then we can write $P(X)$ instead of $P(X|U)$.
+    \end{definition}
+
+    \begin{example}
+        If it is understood the discussion is based on a fair die, we claim that $P(getting\, even-point\, face)=\dfrac{1}{2}$.
+    \end{example}
+
+    \begin{example}
+        If it is understood the discussion is not based on a fair die, and each face occurs the number of times equal to their point over 21 rolls, we claim that $P(getting\, even-point\, face)=\dfrac{12}{21}=\dfrac{4}{7}$.
+    \end{example}
+
+    To distinguish the above examples, we shall write $P(getting\, even-point\, face|fair\, die)=\dfrac{1}{2}$ and $P(getting\, even-point\, face|times\, equal\, to\, point)=\dfrac{4}{7}$ so that no ambiguities should be done.
 
     \subsubsection*{Probability in terms of outcomes}
 
