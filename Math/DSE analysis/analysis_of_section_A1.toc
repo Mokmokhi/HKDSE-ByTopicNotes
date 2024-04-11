@@ -1,0 +1,11 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Index Law}{7}{}%
+\contentsline {chapter}{\numberline {2}Subject arrangement}{9}{}%
+\contentsline {chapter}{\numberline {3}Expansion \& Factorization}{11}{}%
+\contentsline {chapter}{\numberline {4}Identity}{13}{}%
+\contentsline {chapter}{\numberline {5}Percentage}{15}{}%
+\contentsline {chapter}{\numberline {6}Polar Coordinates}{17}{}%
+\contentsline {chapter}{\numberline {7}Congruent and similar triangle}{19}{}%
+\contentsline {chapter}{\numberline {8}Properties of circle}{21}{}%
+\contentsline {chapter}{\numberline {9}Measure of Dispersion}{23}{}%
+\contentsline {chapter}{\numberline {10}Challenging revision}{25}{}%

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1712400101.55909 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M2/Integration/chi.tex" "chi.pdf" "chi" 1712400104.22931 0
+["pdflatex"] 1712839079.20311 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M2/Integration/chi.tex" "chi.pdf" "chi" 1712839081.87863 0
   "../image/partition s-t.png" 1712136332 24960 fb3455093f64a1113141e3a8dfaf6c28 ""
   "../image/s-t graph.png" 1712136332 24494 7b8500ac9a9a1075079a9f27c1b1e5d2 ""
   "C:/Users/admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1712384679 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
@@ -112,6 +112,7 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai97.tfm" 1247154072 1172 93cd33f95ad4b5bd2eb5c7d3c85fbdda ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikai9e.tfm" 1247154072 1172 98f3b661bff43639b3922be614da0532 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unikai/unikaiff.tfm" 1247154072 1172 d8c52947a0b26d01fe0320bba2062d01 ""
+  "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong20.tfm" 1247154072 1172 c443622f792d7e5350ad5382dd8aebb3 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong30.tfm" 1247154072 1172 87d6ba1aff8b955258f6ef7a5d8e86e5 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong4e.tfm" 1247154072 1172 89be830028b08964827966f204abf065 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong4f.tfm" 1247154072 1172 dd7ec0fe171ece0b66015cb8929849f0 ""
@@ -123,6 +124,7 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong55.tfm" 1247154072 1172 3c2677828bb3b2231f72896b373b851c ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong56.tfm" 1247154072 1172 483bbebc510ee17933c3af062965b6d4 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong57.tfm" 1247154072 1172 eb821bcbfd385c0d470afef6ff6ac95b ""
+  "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong58.tfm" 1247154072 1172 9097e54d4337c7af2506271a2618d1d8 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong59.tfm" 1247154072 1172 2aa8dc9bdcfa6684a19d81e71fa8a3e1 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong5b.tfm" 1247154072 1172 449ef25f4dcd447addb8325f7bf12b2a ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong5c.tfm" 1247154072 1172 bbe7d94072c5d308e673fac2512329ac ""
@@ -141,6 +143,7 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6a.tfm" 1247154072 1172 00f8a00771908df2108694cbd69134d7 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6b.tfm" 1247154072 1172 eec47476c8168dac40c6b0d39a32faa4 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6c.tfm" 1247154072 1172 da6dd37ba8d24cc1a36aa510c8ac56f9 ""
+  "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6d.tfm" 1247154072 1172 3942109a9ca7a08ec5324d8eec4093d9 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6e.tfm" 1247154072 1172 42ca517602ab12cb60a5174be463b80a ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong6f.tfm" 1247154072 1172 c8e0b675a1ae3514b60e0bbed9ef993a ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong70.tfm" 1247154072 1172 65f78ffa41ce8b45f91f362b219db0e7 ""
@@ -385,9 +388,9 @@
   "C:/Windows/Fonts/simhei.ttf" 1651871400 9753388 6abc0fcfbaa40600f9cecca3afeb3aa7 ""
   "C:/Windows/Fonts/simkai.ttf" 1651871400 11787328 76179557c160634a761c845ea111c893 ""
   "C:/Windows/Fonts/simsun.ttc" 1712143540 18008680 490583a172d4371a68d1e0526a6bca81 ""
-  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M2/Integration/chi.tex" 1712400100 11182 1db904981f8c96c51086f335d0cf423c ""
-  "chi.aux" 1712400103 112 fe7fd453c4c5d52a361b94ce88c2142c "pdflatex"
-  "chi.tex" 1712400100 11182 1db904981f8c96c51086f335d0cf423c ""
+  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M2/Integration/chi.tex" 1712839079 12222 3164fe3748fab84c87477dd2772a02ca ""
+  "chi.aux" 1712839080 112 fe7fd453c4c5d52a361b94ce88c2142c "pdflatex"
+  "chi.tex" 1712839079 12222 3164fe3748fab84c87477dd2772a02ca ""
   (generated)
   "chi.aux"
   "chi.log"

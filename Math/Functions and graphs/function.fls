@@ -357,6 +357,7 @@ INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
 INPUT C:\Users\admin\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
@@ -390,7 +391,6 @@ INPUT ..\images\blobs-and-arrows diagram sequence.png
 INPUT ..\images\blobs-and-arrows diagram sequence.png
 INPUT ..\images\blobs-and-arrows diagram sequence.png
 INPUT ..\images\blobs-and-arrows diagram sequence.png
-INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT ..\images\ab.png
 INPUT ..\images\ab.png
 INPUT ..\images\ab.png

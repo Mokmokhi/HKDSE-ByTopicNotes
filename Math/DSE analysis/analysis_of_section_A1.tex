@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt]{book}
 \usepackage{ctex}
 \usepackage[english]{babel}
 \usepackage{blindtext}
@@ -15,10 +15,14 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhf[HL]{Function and graphs}
+\fancyhf[HL]{HKDSE Section A(1) analysis}
 \fancyhf[HR]{\rightmark}
 \fancyhf[CF]{\thepage}
-\fancyhf[FL]{Copyright $@$MokOwen, \today}
+\fancyhf[FL]{\copyright Mok Owen 2024}
+
+\title{HKDSE Section A(1) analysis}
+\author{Mok Owen}
+\date{\today}
 
 \newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
 \newcommand{\id}{\mathtt{id}}
@@ -34,8 +38,101 @@
 \newtheorem*{axiom}{Axiom}
 
 \newtheorem{exercise}{Essential Practice}[subsubsection]
-\newenvironment{solution}{\textbf{Solution.} \par}{\hfill \textit{\dots end of solution}}
+\newenvironment{solution}{\textbf{Solution.} \par}{\hfill \textit{\dots end of solution.}}
 
 \begin{document}
+    \maketitle
     
+    \tableofcontents
+
+    \newpage
+
+    \chapter*{Introduction}
+
+    \chapter{Index Law}
+
+    The problems of index laws requires the following knowledge:
+
+    Given $a,b$ be real numbers and $m,n$ be positive integers. Then
+    \begin{enumerate}
+        \item $a^m\cdot a^n=a^{m+n}$.
+        \item $\frac{a^m}{a^n}=a^{m-n}$.
+        \item $(a^m)^n=a^{mn}$.
+        \item $a^0=1$.
+        \item $a^{-n}=\frac{1}{a^n}$.
+        \item $(ab)^n=a^n b^n$.
+        \item $(\frac{a}{b})^n=\frac{a^n}{b^n}$.
+    \end{enumerate}
+
+    \begin{example}[2012-PAPER-1 Q1]
+        Simplify $\dfrac{m^{-12}n^8}{n^3}$ and express your answer with positive indices.
+
+        \begin{solution}
+            Following the law of index, we deduce
+            \begin{align*}
+                \frac{m^{-12}n^8}{n^3}&=m^{-12}n^{8-3} &(by\, 2)\\
+                &=m^{-12}n^5\\
+                &=\frac{n^5}{m^{12}}&(by\, 5)
+            \end{align*}
+
+            As the problem requires positive indices, we have to apply the fifth law to remove all negative powers.
+        \end{solution}
+    \end{example}
+    
+    \chapter{Subject arrangement}
+
+    Subject arrangement is one of the pure algebraic action. Its concept of arrangement is similar to solving equations with one variable.
+
+    Let's consider Solving $4x+2=6x-3$. We have \begin{align*}
+        4x+2&=6x-3\\
+        4x+2-2&=6x-3-2\\
+        4x&=6x-5\\
+        4x-6x&=6x-5-6x\\
+        -2x&=-5\\
+        x&=\frac{-5}{-2}\\
+        &=\frac{5}{2}
+    \end{align*}
+
+    Of the same course, we could solve $4x+k=6x+\ell$ by the same procedure:\begin{align*}
+        4x+k&=6x+\ell\\
+        -2x&=\ell-k\\
+        x&=\frac{k-\ell}{2}
+    \end{align*}
+
+    Therefore, we could solve for even more variables:\begin{align*}
+        ax+k&=bx+\ell\\
+        (a-b)x&=\ell-k\\
+        x&=\frac{\ell-k}{a-b}
+    \end{align*}
+
+    This is called making $x$ to be the subject of an equation, where making subject is equivalent to solving equation by seeing the required variable as the only unknown.
+
+    \begin{example}[2012-PAPER-1 Q1]
+        Make $a$ the subject of the formula $\dfrac{3a+b}{8}=b-1$.
+
+        \begin{solution}
+            To make $a$ the subject of the formula, we see $a$ as the only variable of the equation.\begin{align*}
+                \frac{3a+b}{8}&=b-1\\
+                3a+b&=8b-8&(multiply\, both\, sides\, by\, 8)\\
+                3a&=7b-8&(isolate\, a)\\
+                a&=\frac{7b-8}{3}&(divide\, sides\, by\, 3)
+            \end{align*}
+        \end{solution}
+    \end{example}
+
+    \chapter{Expansion \& Factorization}
+
+    \chapter{Identity}
+
+    \chapter{Percentage}
+
+    \chapter{Polar Coordinates}
+
+    \chapter{Congruent and similar triangle}
+
+    \chapter{Properties of circle}
+
+    \chapter{Measure of Dispersion}
+
+    \chapter{Challenging revision}
 \end{document}

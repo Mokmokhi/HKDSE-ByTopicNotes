@@ -541,6 +541,9 @@ INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\un
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong99.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei6e.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei5e.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong6d.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong20.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong58.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei84.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei5e.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei5c.tfm
@@ -579,6 +582,9 @@ INPUT C:\Windows\Fonts\simhei.ttf
 INPUT C:\Windows\Fonts\simhei.ttf
 INPUT C:\Windows\Fonts\simhei.ttf
 INPUT C:\Windows\Fonts\simhei.ttf
+INPUT C:\Windows\Fonts\simsun.ttc
+INPUT C:\Windows\Fonts\simsun.ttc
+INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simhei.ttf
 INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simhei.ttf
