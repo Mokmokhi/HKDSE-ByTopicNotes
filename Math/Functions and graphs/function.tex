@@ -1795,13 +1795,105 @@
         $10^2=100$.
     \end{example}
 
+    From the definition, we can write when $n=1$, the definition exploit that $$a=a\cdot a^0$$
+
+    In order to survive from all possible conclusion, we need to define $a^0=1$ for any positive integer $a$. This extends our thought on exponentiation.
+
     \subsubsection*{negative integral power}
 
+    We will then try to extend the index notation to include all possible computation with multiplication. Observe the connection between multiplication and quotient: they are the inverse relation to each other! We so can define the following:
+
+    Given a positive integer $r$, following the definition of exponentiation, if $r\cdot r^{-1} = r^0 = 1$, we shall write $r^{-1}=\dfrac{1}{r}$ to survive the condition.
+
+    \begin{definition}[Multiplicative inverse]
+        Let $a, n$ be positive integers, the negative power is defined as $$a^{-n} := \frac{1}{a^n}$$
+    \end{definition}
+
+    \begin{example}
+        $1^{-1}=1$.
+    \end{example}
+
+    \begin{example}
+        $2^{-3}=\frac{1}{8}$.
+    \end{example}
+
+    \begin{example}
+        $10^{-2}=\frac{1}{100}$.
+    \end{example}
+
+    We have to pay attention to the condition of negative powers. The meaning of negative powers is to extend the power notation to covering the law of quotient, but when 0 is involved in the calculation, one should be careful that the experssion $$0^n$$ can only be well-defined when $n>0$. We have no clues for computing $\dfrac{1}{0}$.
+
     \subsubsection*{Law of integral index}
+
+    So far, we invented the basic action by exponentiation from the definition of multiplication. We shall see more rules about index notations.
+
+    Recall the definition of power indices, we can observe the first law of index \begin{align*}
+        a^{m+n}&=a^m \cdot a^n
+    \end{align*} which can be proven by basically repeating the process of addition. We immediately have the second law of index:\begin{align*}
+        a^{m-n}&=a^m\cdot a^{-n}\\
+        &=\frac{a^m}{a^n}
+    \end{align*}
+
+    The third law is a bit tricky. Recall the definition of multiplication is repeated addition, we could write \begin{align*}
+        (a^m)^n&=a^m\cdot a^m\cdots a^m\\
+        &=a^{m+m+\cdot+m}\\
+        &=a^{mn}
+    \end{align*}
+
+    Therefore, we have for one base $a$, the law of multiplication and division, with the law of repeated power developed. Consider also the negative power index, we conclude 5 basic laws of exponentials.
+
+    \begin{theorem}[Monobased]
+        Let $a, m, n$ be positive integers. Then\begin{enumerate}
+            \item $a^{m+n}=a^m\cdot a^n$;
+            \item $a^{m-n}=\dfrac{a^m}{a^n}$;
+            \item $(a^m)^n=a^{mn}$;
+            \item $a^0=1$ for $a\neq 0$;
+            \item $a^{-n}=\dfrac{1}{a^n}$ for $a\neq 0$.
+        \end{enumerate}
+    \end{theorem}
+
+    In order to manipulate with different bases, we need the law of distribution. That is, when we have a product $ab$ as the base of exponents, we shall consider \begin{align*}
+        (ab)^n&=ab\cdot ab\cdots ab\\
+        &=(aa\cdots a)(bb\cdots b)\\
+        &=a^n b^n
+    \end{align*}
+    by the commutativity of multiplication. Similarly, the version for fractions does hold:\begin{align*}
+        (\frac{a}{b})^n&=\frac{aa\cdots a}{bb\cdots b}\\
+        &=\frac{a^n}{b^n}
+    \end{align*}
+
+    This allows us to discuss further for even fractional bases. Since fractions are quotient of integral divisions.
+
+    This then complete the integral index laws.
+
+    \begin{theorem}[Multibased]
+        Let $a, b$ be rational numbers and $m, n$ be positive integers. Then\begin{enumerate}
+            \item $a^{m+n}=a^m\cdot a^n$;
+            \item $a^{m-n}=\dfrac{a^m}{a^n}$;
+            \item $(a^m)^n=a^{mn}$;
+            \item $a^0=1$ for $a\neq 0$;
+            \item $a^{-n}=\dfrac{1}{a^n}$ for $a\neq 0$;
+            \item $(ab)^n=a^n b^n$;
+            \item $(\dfrac{a}{b})^n=\dfrac{a^n}{b^n}$.
+        \end{enumerate}
+    \end{theorem}
 
     \subsection{Rational power}
 
     \subsubsection*{The n-th root notation}
+
+    To solve quadratic eqaution (equation of power 2), we used to have the sqaure-root notation $\sqrt{}$ to write down exact solutions. How about higher powers like $x^3=a$ or $x^5=a$?
+
+    We could introduce a small number on the top-left-corner of the surd symbol so that the corresponding eqautions are successful to be solved. It looks like \begin{align*}
+        x^2=a &\implies x=\pm\sqrt{a}\\
+        x^3=a &\implies x=\sqrt[3]{a}\\
+        x^4=a &\implies x=\pm\sqrt[4]{a}\\
+        x^5=a &\implies x=\sqrt[5]{a}\\ 
+        &\vdots\\
+        x^{2n}=a &\implies x=\pm\sqrt[2n]{a}\\
+        x^{2n+1}=a &\implies x=\sqrt[2n+1]{a}\\
+        &\vdots 
+    \end{align*}
 
     \subsubsection*{Fractional power}
 
@@ -1809,9 +1901,9 @@
 
     \subsection{Exponential functions}
 
-    \subsubsection*{Law of Exponential algebra}
+    \subsubsection*{Extending to real powers}
 
-    \subsubsection*{Seeing surds as fractional exponents}
+    \subsubsection*{Law of Exponential algebra}
 
     \subsubsection*{Solving equations using exponetiation method}
 

@@ -202,8 +202,34 @@
     \begin{theorem}[微積分基本定理]
         設$f$為區間$[a,b]$上連續函數。設$x\in[a,b]$，則$$\derivative{x}\int_{a}^{x} f(t) dt = f(x)$$
     \end{theorem}
+
+    \begin{proof}
+        令$F'=f$，則\begin{align*}
+            \derivative{x}\int_{a}^{x} f(t) dt = f(x)=\derivative{x}[F(x)-F(a)]=F'(x)=f(x)
+        \end{align*}
+    \end{proof}
+
+    \begin{theorem}
+       設$f$為$\mathbb{R}$上的連續函數。設$[a(x),b(x)]\subset\mathbb{R}$則$$\derivative{x} \int_{a(x)}^{b(x)} f(t) dt = f(b(x))b'(x)-f(a(x))a'(x)$$
+    \end{theorem}
+
     \section*{積分方法}
     \subsection*{基本積分定則}
+    \begin{proposition}
+        \begin{enumerate}
+            \item $\int x^n dx = \frac{1}{n+1}x^{n+1} + C$ 儅$n\neq -1$;
+            \item $\int x^-1 dx = \ln{|kx|} + C$;
+            \item $\int e^x dx = e^x + C$;
+            \item $\int \sin{x} dx = -\cos{x} + C$;
+            \item $\int \cos{x} dx = \sin{x} + C$;
+            \item $\int \tan{x} dx = \ln(|\sec{x}|) + C$;
+            \item $\int \sec{x} dx = \ln(|\sec{x}+\tan{x}|) + C$;
+            \item $\int \csc{x} dx = -\ln(|\csc{x}+\cot{x}|) + C$;
+            \item $\int \cot{x} dx = \ln(|\sin{x}|) + C$;
+            \item $\int \sec^2{x} dx = \tan{x} + C$;
+            \item $\int \csc^2{x} dx = -\cot{x} + C$.
+        \end{enumerate}
+    \end{proposition}
     \subsection*{換元代入法}
     \subsection*{參數化代入法}
     \subsection*{部分積分法}
