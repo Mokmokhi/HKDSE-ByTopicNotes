@@ -39,23 +39,23 @@
 \contentsline {section}{\numberline {6}Exponential and Logarithmic functions}{56}{}%
 \contentsline {subsection}{\numberline {6.1}Index notation}{56}{}%
 \contentsline {subsection}{\numberline {6.2}Rational power}{60}{}%
-\contentsline {subsection}{\numberline {6.3}Exponential functions}{61}{}%
-\contentsline {subsection}{\numberline {6.4}Logarithmic functions}{61}{}%
-\contentsline {subsection}{\numberline {6.5}Challenging questions}{61}{}%
-\contentsline {section}{\numberline {7}Sequence as a function of natural numbers}{62}{}%
-\contentsline {subsection}{\numberline {7.1}What is a sequence?}{62}{}%
-\contentsline {subsection}{\numberline {7.2}Arithmetic sequence}{62}{}%
-\contentsline {subsection}{\numberline {7.3}Geometric sequence}{62}{}%
-\contentsline {subsection}{\numberline {7.4}Additional content: Arithmetic-Geometric sequence}{62}{}%
-\contentsline {subsection}{\numberline {7.5}Challenging questions}{62}{}%
-\contentsline {section}{\numberline {8}Probability functions}{63}{}%
-\contentsline {subsection}{\numberline {8.1}Counting Principle}{63}{}%
-\contentsline {subsection}{\numberline {8.2}Pigeonhole Principle}{65}{}%
-\contentsline {subsection}{\numberline {8.3}Counting functions}{67}{}%
-\contentsline {subsection}{\numberline {8.4}Fundamental Probability}{70}{}%
-\contentsline {subsection}{\numberline {8.5}Probability of independent events}{73}{}%
-\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{73}{}%
-\contentsline {subsection}{\numberline {8.7}Discrete random variables}{73}{}%
-\contentsline {subsection}{\numberline {8.8}Distributions}{73}{}%
-\contentsline {subsection}{\numberline {8.9}Sampling}{73}{}%
-\contentsline {subsection}{\numberline {8.10}Challenging questions}{73}{}%
+\contentsline {subsection}{\numberline {6.3}Exponential functions}{63}{}%
+\contentsline {subsection}{\numberline {6.4}Logarithmic functions}{63}{}%
+\contentsline {subsection}{\numberline {6.5}Challenging questions}{63}{}%
+\contentsline {section}{\numberline {7}Sequence as a function of natural numbers}{64}{}%
+\contentsline {subsection}{\numberline {7.1}What is a sequence?}{64}{}%
+\contentsline {subsection}{\numberline {7.2}Arithmetic sequence}{64}{}%
+\contentsline {subsection}{\numberline {7.3}Geometric sequence}{64}{}%
+\contentsline {subsection}{\numberline {7.4}Additional content: Arithmetic-Geometric sequence}{64}{}%
+\contentsline {subsection}{\numberline {7.5}Challenging questions}{64}{}%
+\contentsline {section}{\numberline {8}Probability functions}{65}{}%
+\contentsline {subsection}{\numberline {8.1}Counting Principle}{65}{}%
+\contentsline {subsection}{\numberline {8.2}Pigeonhole Principle}{67}{}%
+\contentsline {subsection}{\numberline {8.3}Counting functions}{69}{}%
+\contentsline {subsection}{\numberline {8.4}Fundamental Probability}{72}{}%
+\contentsline {subsection}{\numberline {8.5}Probability of independent events}{75}{}%
+\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{75}{}%
+\contentsline {subsection}{\numberline {8.7}Discrete random variables}{75}{}%
+\contentsline {subsection}{\numberline {8.8}Distributions}{75}{}%
+\contentsline {subsection}{\numberline {8.9}Sampling}{75}{}%
+\contentsline {subsection}{\numberline {8.10}Challenging questions}{75}{}%

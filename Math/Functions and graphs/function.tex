@@ -1895,7 +1895,68 @@
         &\vdots 
     \end{align*}
 
+    To understand surds in terms of index notation, one could observe that following the index law, we have $$(x^2)^{\frac{1}{2}}=x$$ which turns out the result of applying square-root is nearly the half power. However, we should carefully differentiate two methods.
+
+    For $\sqrt{x}$, we mean to care about the positive real solution only. That is, no matter which domain we are seeing, we need and only need to take care of positive real number solution. For instance, $x^2=1\implies x=\pm 1$. The functional notation can be written $\sqrt{}:D\to\mathbb{R}_{\geq 0}$.
+
+    \begin{definition}[Surds]
+        The \textbf{n-th root of $a$}, written $\sqrt[n]{a}$, denotes the positive real solution to the equation $x^n=a$, where $a$ is a positive real number.
+    \end{definition}
+
+    It is noticeable that the number inside the n-th root notation \textbf{must be} a positive real number: it could not be well-written if the content is negative since $x^2=-1$ has no real solution, while $x^3=-1$ has only negative solution, so on and so forth.
+
+    On the other hand, for $x^{\frac{1}{2}}$, we mean to care all solution to the equation $x^2=1$. This helps us generalize the notation to any higher dimension in mathematics, and is unrestricted to any particular domain. Hence, $1^{\frac{1}{2}}=\pm 1$ if the codomain is not specified, while $1^{\frac{1}{4}}=\{\pm 1. \pm i\}$.
+
+    \begin{definition}[Power of reciprocal]
+        The \textbf{$\dfrac{1}{n}$ power of $a$} denotes the set of \textbf{all} solutions to the equation $x^n=a$ in all fields, when no other specifications.
+    \end{definition}
+
+    \begin{remark}
+        While mathematicians and other scientific subjects needs the usage of fractional power, one will always abuse notations of power of reciprocals to denote the result in the simplest form. The order of simplicity is usually $\mathbb{Z} \to \mathbb{Q} \to \mathbb{R} \to \mathbb{C} \to \cdots$ following the historic investigation and positive argument first.
+    \end{remark}
+
+    \begin{example}
+        Let $x^2=1$, then $x\in 1^{\frac{1}{2}}=\{1,-1\}$. By abusing notation, we usually denote $1^{\frac{1}{2}}=1$ to simplify computation.
+    \end{example}
+
+    \begin{example}
+        Let $x^3=-1$, then $x\in (-1)^{\frac{1}{3}}=\{-1,\frac{1}{2}-\frac{\sqrt{3}}{2}i,\frac{1}{2}+\frac{\sqrt{3}}{2}i\}$. By abusing notation, we usually denote $(-1)^{\frac{1}{3}}=1$ to simplify computation.
+    \end{example}
+
+    \begin{example}
+        Let $x^2=-1$, then $x\in (-1)^{\frac{1}{2}}=\{i,-i\}$. By abusing notation, we usually denote $(-1)^{\frac{1}{2}}=i$ to simplify computation.
+    \end{example}
+
+    Of course, we shall discuss only the positive real solution with respect to the syllabus. We so restrict our codomain to positive real numbers only, so that $\sqrt[n]{x}$ is equivalent to $x^{\frac{1}{n}}$ without any ambiguities.
+
+    \begin{definition}
+        Let $n$ be a positive integer and $x$ be a positive real number. Then $$x^{\frac{1}{n}}=\sqrt[n]{x}$$ when the codomain is restricted to be positve real numbers.
+    \end{definition}
+
     \subsubsection*{Fractional power}
+
+    From the discussed definition of fractional index with surds, we can now determine the expression $$x^{\frac{m}{n}}$$
+
+    By extending the index law to fractional power, as we did in defining $x^{\frac{1}{n}}$, we have $$x^{\frac{m}{n}}=\sqrt[n]{x^m}$$
+    However, we could also define the root first such that $$x^{\frac{m}{n}}=(\sqrt[n]{x})^m$$
+
+    The question is, is there any differences with different order of computation? Indeed, for positive number $x$, it doesn't; for negative $x$, it does. For if $m$ and $n$ are both even numbers, the order of computation is problematic.\begin{enumerate}
+        \item If the exponential goes first, we have $x^m$ being a positive number. Of course, the result $\sqrt[n]{x^m}$ must be positive, by the definition of the root notation.
+        \item If, however, the root goes first, we have $\sqrt[n]{x}$ possibly complex. Then $(\sqrt[n]{x})^m$ may or may not be positive.
+    \end{enumerate}
+
+    The cure to the problem should be a simplification on the fractional index. Let us dive into it.
+
+    \begin{proposition}
+        Let $m,n$ be positive integers and $x$ be a real number. Suppose $m$ and $n$ is not coprime, i.e. $HCF(m,n)=\ell$. Then $$x^{\frac{m}{n}}=x^{\frac{h}{k}}$$ where $m=h\ell$, $n=k\ell$ and $h$ coprime with $k$, i.e. $HCF(h,k)=1$.
+    \end{proposition}
+
+    \begin{proof}
+        The part of simplification is trivial. We will prove the representing solution set are indeed equivalent.
+
+        Suppose $x^{\frac{1}{n}}$ defines a set of $n$ complex values $$\{r,rz,rz^2,\dots,rz^{n-1}\}$$ such that all numbers in the set are solution to the equation $x^n=r^n$ with $r$ a constant. It is easy to check no other complex numbers are in the set except those in the form of $rz^d$. Hence, $$(x^{\frac{1}{n}})^m=\{r^m, r^m z^m, r^m z^{2m}, \dots, r^m z^{m(n-1)}\}$$
+        Similarly, the required equivalence is the set $$(x^{\frac{1}{k}})^h=\{r^h, r^h y^h, r^h y^{2h}, \dots, r^h y^{h(k-1)}\}$$
+    \end{proof}
 
     \subsubsection*{Law of fractional index}
 
