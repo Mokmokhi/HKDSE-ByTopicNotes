@@ -1954,11 +1954,36 @@
     \begin{proof}
         The part of simplification is trivial. We will prove the representing solution set are indeed equivalent.
 
-        Suppose $x^{\frac{1}{n}}$ defines a set of $n$ complex values $$\{r,rz,rz^2,\dots,rz^{n-1}\}$$ such that all numbers in the set are solution to the equation $x^n=r^n$ with $r$ a constant. It is easy to check no other complex numbers are in the set except those in the form of $rz^d$. Hence, $$(x^{\frac{1}{n}})^m=\{r^m, r^m z^m, r^m z^{2m}, \dots, r^m z^{m(n-1)}\}$$
-        Similarly, the required equivalence is the set $$(x^{\frac{1}{k}})^h=\{r^h, r^h y^h, r^h y^{2h}, \dots, r^h y^{h(k-1)}\}$$
+        Suppose $x^{\frac{1}{n}}$ defines a set of $n$ complex values $$\{r,rz,rz^2,\dots,rz^{n-1}\}$$ such that all numbers in the set are solution to the equation $x^n=r^n$ with $r$ a real constant and $z=e^{i\theta}$ being a rotation factor in the complex plane. It is easy to check no other complex numbers are in the set except those in the form of $rz^d$. Hence, $$(x^{\frac{1}{n}})^m=\{r^m, r^m z^m, r^m z^{2m}, \dots, r^m z^{m(n-1)}\}$$
+        Similarly, the required equivalence is the set $$(x^{\frac{1}{k}})^h=\{s^h, s^h y^h, s^h y^{2h}, \dots, s^h y^{h(k-1)}\}$$
+        It suffices to show the surjection from $(x^{\frac{1}{n}})^m$ to $(x^{\frac{1}{k}})^h$. For each $s^h y^{h\kappa}$, defining $s=r^\ell$ satisfy the equality $s^h=r^m$; For $y^{h\kappa}$ we can choose $y=z^{\gamma\ell}$ such that $y^h=z^{\gamma m}$. We now have $\gamma\kappa \equiv i \mod n$. As $\kappa < k < n$, the relation $\gamma \equiv i \kappa^{-1} \mod n$ is bijective.
+
+        Alternatively, suppose it is the case of $(x^m)^{\frac{1}{n}}$, we have the solution set $$\{r, rz, rz^2, \dots, rz^{n-1}\}$$ for the equation $x^m=r^n$. Since $m=h\ell$ and $n=k\ell$, we have the set satisfies also the equation $x^h=r^k$ where $r=s^\ell$ and $z=y^\ell$ constructs the required set in the form of $sy^c$. As in previous case, the set are bijective.
+        
+        Therefore, reduction formula $x^{\frac{m}{n}}=x^{\frac{h}{k}}$ holds in any case.
     \end{proof}
 
+    As the equality is bi-directional, we can perform fractional operation for index, i.e. $$x^{\frac{m}{n}+\frac{p}{q}}=x^{\frac{mq+pn}{nq}}$$
+
+    \begin{corollary}
+        Let $m,n$ be positive integers such that $HCF(m,n)=\ell$ and $x$ be a real number.  Then $$x^{\frac{m}{n}}=\sqrt[k]{x^h}=(\sqrt[k]{x})^h$$ where $m=h\ell$, $n=k\ell$ and $h$ coprime with $k$, i.e. $HCF(h,k)=1$.
+    \end{corollary}
+
     \subsubsection*{Law of fractional index}
+
+    Following the proved result in previous part, we have the following laws of fractional index. They are similar to that for integral powers, but their condition are much stronger than that of integer case.
+
+    \begin{theorem}[Fractional index law]
+        Let $a,b,p,q$ be non-zero rational numbers. Then\begin{enumerate}
+            \item $a^{p+q}=a^p\cdot a^q$;
+            \item $a^{p-q}=\dfrac{a^p}{a^q}$;
+            \item $(a^p)^q=a^{pq}$;
+            \item $a^0=1$ for $a\neq 0$;
+            \item $a^{-p}=\dfrac{1}{a^p}$ for $a\neq 0$;
+            \item $(ab)^p=a^p b^p$;
+            \item $(\dfrac{a}{b})^p=\dfrac{a^p}{b^p}$.
+        \end{enumerate}
+    \end{theorem}
 
     \subsection{Exponential functions}
 
