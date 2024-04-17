@@ -1629,8 +1629,85 @@
 
     \section{Quadratic functions}
 
+    In ancient times, someone asked about `solving the side length of a square for which area equals 2'. Recall the formula for computing area of a square is: given the side length of a square to be $\ell$, then the area $A$ of the square is \[A=\ell^2\]
+
+    To tackle such problem, the ancient greeks tries the process of reversing the square - the square root of some numbers. They created a symbol \(\Gamma\) for halving the square multiplication, as the meaning of a square root. They first observed for integers \begin{align*}
+        1^2=1 &\implies \sqrt{1} = 1\\
+        2^2=4 &\implies \sqrt{4} = 2\\
+        3^2=9 &\implies \sqrt{9} = 3\\
+        &\vdots
+    \end{align*}
+    And for the rest of the integral square they call them \textbf{perfect sqaures}. However, 2 is not a perfect square, and they struggled for years which number can be used to represent the value of \(\sqrt{2}\). For historical and religous reason, they could only think of rational numbers to tryout. By many trials, decimal values can be approximated for \(\sqrt{2}\), like 1.41, 1.4142, etc. But the first one who claimed \(\sqrt{2}\) is irrational, he slept silently in the ground by many nice faith.
+
+    Today, we know that there are many numbers that could not be expressed by a fraction, which are called irrational numbers.
+
     \subsection{Solving Quadratic Equations}
 
+    Let us once again introduce the concept of taking sqaure root formally.
+
+    \begin{definition}[Surds]
+        The \textbf{radical sign} \(\sqrt{}\) is a function that helps defines the positive solution to sqaure equation. If \[x^2=a\] then \(x=\sqrt{a}\) is a positive solution to the equation.
+    \end{definition}
+
+    \begin{example}
+        If $x^2=6$, then $x=\sqrt{6}$ is a solution to the equation.
+    \end{example}
+
+    \begin{example}
+        If $y^2=11$, then $y=\sqrt{11}$ is a solution to the equation.
+    \end{example}
+
+    We shall notice the definition only talks about it is a solution, but not the only solution. In fact, we have to take care of the negatives. We notice by some fundamental result in Algebra, $(-1)(-1)=1$. This means $-1$ is also a solution to the equation $x^2=1$.
+
+    Therefore, it is needed to say when $x^2=a>0$, the solutions can be $x=\sqrt{a}$ or $x=-\sqrt{a}$. The equation contains at least two results. But is it possible to have more?
+
+    \begin{proposition}
+        For the equation $x^2=a>0$, we have at most 2 distinct solutions to the equation. 
+    \end{proposition}
+
+    \begin{proof}
+        Assume $\alpha,\beta,\gamma$ are all distinct solutions to the equation $x^2=a$. Then $\alpha^2=\beta^2=\gamma^2$. By their distinction and the completeness of real numbers, we can write without loss of generality that $\alpha<\beta<\gamma$.
+
+        When $0<\alpha<\beta<\gamma$, $\alpha^2<\alpha\beta<\beta^2$ leads to contradiction of the equality.
+
+        When $\alpha<0<\beta<\gamma$, the relation between $\beta$ and $\gamma$ contradicts the equality as in previous case.
+
+        When $\alpha<\beta<0<\gamma$, the relation between $\beta$ and $\alpha$ contradicts the equality as in previous case.
+
+        When $\alpha<\beta<\gamma<0$, the relation between $\beta$ and $\gamma$ contradicts the equality as in previous case.
+
+        Therefore, it is solid to conclude by contradiction, that $x^2=a>0$ cannot have 3 distinct solutions, and it restricts to at most 2 distinct solutions.
+    \end{proof}
+
+    To conclude, we could now say for the equation $x^2=a>0$, either $x=\sqrt{a}$ or $x=-\sqrt{a}$. Moreover, the stated solutions are the only possibilities.
+
+    We write for convenience concatenating plus sign $+$ and minus sign $-$ to become the plus-or-minus sign $\pm$, so that we can shoerten our writings:
+
+    If $x^2=a>0$, then $x=\pm \sqrt{a}$.
+    
+    \begin{example}
+        If $x^2=16$, then $x=\pm 4$.
+    \end{example}
+
+    \begin{example}
+        If $y^2=11$, then $x=\pm \sqrt{11}$.
+    \end{example}
+
+    We also deserve simplicity in writing surds so that computation can be simpler. We return to its meaning, that $\sqrt{a}$ means it is the positive solution to the equation $x^2=a$. If $a$ is a composite number so that part of its factor is a perfect square, then we may observe the following: $$x^2=k^2 p$$
+
+    Let's take a look at $x^2=ab$ first. Note that by commutativity of multiplication $(\sqrt{a}\sqrt{b})^2=\sqrt{a}\sqrt{b}\sqrt{a}\sqrt{b}=ab$. Then $\pm\sqrt{a}\sqrt{b}$ are two possible solutions to the equation; on the other hand, the direct square root $\pm\sqrt{ab}$ also satisfies. We have proved earlier that the equation must have at most 2 distinct solutions, so these 4 solutions must be pairwise identical. Note that partial square-root ($\sqrt{a}\sqrt{b}$) and direct square-root ($\sqrt{ab}$) are different strategies, but both provide 2 solutions following the plus-or-minus distinction. By the positivity of radical sign, we need to have the following idetification: \[\sqrt{ab}=\sqrt{a}\sqrt{b}\]
+
+    Returning to the original problem, when a number is composite and part of its factor is a perfect square, we can choose to factor out the perfect square part and complete the simplification as \[\sqrt{k^2 p}=\sqrt{k^2}\sqrt{p}=k\sqrt{p}\]
+
+    \begin{example}
+        $\sqrt{12}=\sqrt{4}\sqrt{3}=2\sqrt{3}$.
+    \end{example}
+
+    \begin{example}
+        $\sqrt{18}=\sqrt{9}\sqrt{2}=3\sqrt{2}$
+    \end{example}
+
+    The main reason is to facilitate the simplicity in computation. Consider \[\sqrt{75}+\sqrt{12}=5\sqrt{3}+2\sqrt{3}=7\sqrt{3}=\sqrt{147}\] and \[\sqrt{75}\cdot \sqrt{12}=5\sqrt{3}\cdot 2\sqrt{3}=30\] which are seemingly impossible but indeed true, the result are amazing with this methodology. It turns out simplification is always the required steps to clean things up.
     \subsubsection*{The square-root method}
 
     \subsubsection*{General form and Completing the square method}
@@ -1985,11 +2062,53 @@
         \end{enumerate}
     \end{theorem}
 
+    The major evolution of the theorem is where we successfully observe the same properties from integral case to fractional case. One may notice that rational number covers almost real numbers, so the next question is, could we advance the result to that level.
+
     \subsection{Exponential functions}
+
+    From here we will investigate a cool result for power index. That is, we can always write real functions using exponents in the form $$f(x)=a^x$$ where $a$ is a positive real constant and $x$ a real variable.
 
     \subsubsection*{Extending to real powers}
 
+    It is not hard to extend the base to irrational number. The main reason is even the base is irrational number, the process of self-nultiplication and the concept of solving equation still holds. That means, we have no reason to reject the expression $$a^p$$ with real number $a$ and rational number $p$.
+    
+    However, the concept becomes unclear when the index becomes irrational. We need to show that some values could be uniquely determined for irrational power. In fact, if we define irrational power only on codomain of real numbers, by the completion from rational number to real number, we can always find for any irrational number $s$, there exist two rational numbers $p<q$ that are close enough to $s$, say $q-s<\dfrac{1}{n}$ and $s-p<\frac{1}{n}$ so that $$s-\frac{1}{n}<p<s<q<s+\frac{1}{n}$$
+    Raising such numbers to the power index of a positive real base $a$, we have the inequality follows $$a^{s-\frac{1}{n}}<a^p<a^s<a^q<a^{s+\frac{1}{n}}$$
+    As $n$ approaches infinity, the approximated approaching value becomes unique, which we see the error of approximation is small enough in the presentation. This shows the concept of irrational number is solid under restriction.
+
+    \begin{definition}[Exponential function of real numbers]
+        Define a function $f:\mathbb{R}\to\mathbb{R}_{>0}$ by $x\mapsto a^x$ with $a>0$ a real number. The function $f$ is called \textbf{exponential function of base $a$}.
+    \end{definition}
+
+    \begin{example}
+        The function $f(x)=\pi^x$ is an exponential function of base $\pi$. $f(0)=\pi^0=1$.
+    \end{example}
+
+    \begin{example}
+        The function $f(x)=2^x$ is an exponential function of base $2$. $f(\pi)=2^\pi\approx 8.825$.
+    \end{example}
+
+    \begin{example}
+        The function $f(x)=e^x$ is an exponential function of base $e$. $f(-\pi)=e^{-\pi}\approx 0.0432$.
+    \end{example}
+
+    \subsubsection*{Graph of exponential functions}
+
     \subsubsection*{Law of Exponential algebra}
+
+    Similar to that of fractional index, when we restrict the codomain to real numbers only, the laws are well-defined.
+
+    \begin{theorem}[Law of exponential algebra]
+        Let $a,b$ be positive real numbers and $x,y$ be non-zero real numbers. Then\begin{enumerate}
+            \item $a^{x+y}=a^x\cdot a^y$;
+            \item $a^{x-y}=\dfrac{a^x}{a^y}$;
+            \item $(a^x)^y=a^{xy}$;
+            \item $a^0=1$ for $a\neq 0$;
+            \item $a^{-x}=\dfrac{1}{a^x}$ for $a\neq 0$;
+            \item $(ab)^x=a^x b^x$;
+            \item $(\dfrac{a}{b})^x=\dfrac{a^x}{b^x}$.
+        \end{enumerate}
+    \end{theorem}
 
     \subsubsection*{Solving equations using exponetiation method}
 
@@ -2366,9 +2485,17 @@
 
     Since probability follows the counting of faces on a die, all computation should be following the computation in counting functions.
 
-    \subsubsection*{Outcomes/Events as sets}
+    \subsubsection*{Events and probability}
 
     Seeing the type of faces on a die as an event, and generalize the concept of a face on a die as an event in a situation, we may now write down the definition of general probability.
+
+    \begin{definition}[Events]
+        An \textbf{event} is a collection of objects that satisfying some conditions.
+    \end{definition}
+
+    \begin{example}
+        Let say we have a fair die. Then \textbf{getting even number of dots after rolling the die} is an event, which objects to be collected are faces with dots on the die, and condition for the collection is when the number of dots on that face is an even number.
+    \end{example}
 
     \begin{definition}[Probability]
         Suppose $U$ be the universal set of events and $X$ be the targetted set of events within $U$. Let $P$ be the probability function on $U$ so that $P:U\to [0,1]$. Then we shall write $$P(X|U):=\frac{|X|}{|U|}$$
@@ -2385,8 +2512,6 @@
     \end{example}
 
     To distinguish the above examples, we shall write $P(getting\, even-point\, face|fair\, die)=\dfrac{1}{2}$ and $P(getting\, even-point\, face|times\, equal\, to\, point)=\dfrac{4}{7}$ so that no ambiguities should be done.
-
-    \subsubsection*{Probability in terms of outcomes}
 
     \subsection{Probability of independent events}
 
