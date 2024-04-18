@@ -1766,9 +1766,95 @@
     Of course, in nowadays mathematics, many fields of research requires polynomial functions as a model for observations. We shall now dive into the knowledge.
     \subsubsection*{Algebraic expressions}
 
-    \subsubsection*{Monomial, binomial, trinomial and polynomials}
+    What algebra means is the art of symbolic representation of some astract concepts, or we may think of the abstraction itself as algebra. Given a concept $A$ and another concept $B$, if we want to put a relation between $A$ and $B$ we say there is a relation $R$ relating $A$ and $B$ such that we write $ARB$ to abstractize the saying.
+    
+    Make it simple, we do abstraction on number first. We call a number that can be control by us to be a \textbf{variable}, and for those cannot be a variable we call them \textbf{constant}. If a variable is being multiplied by a constant, to differentiate such constant from the usual-defined constant, we call such number a \textbf{coefficient}.
 
-    \subsubsection*{Multinomial}
+    \begin{example}
+        Given an algebraic expression $3x+4$, the variable in this expression is $x$, while the constant is $4$ and the coefficient is $3$.
+    \end{example}
+
+    \begin{example}
+        Given a number $8$, we can say this is also an algebraic expression with no variable, coefficient being equal to $0$, and constant is $8$.
+    \end{example}
+
+    \begin{example}
+        Given an algebraic expression $3x+5y$, there are two variables in this expression, namely $x$ and $y$, and to differentiate the coefficients of different variables, we call $3$ to be the \textbf{coefficient of $x$} and $5$ to be the \textbf{coefficient of $y$}.
+    \end{example}
+
+    \begin{example}
+        Given an algebraic expression $x^2+3x+4$, there are one variable of two forms in this expression, namely $x^2$ and $x$. Similar to previous example, we need to differentiate the coefficients of different forms of variables, so we call $1$ to be the \textbf{coefficient of $x^2$} and $3$ to be the \textbf{coefficient of $x$}.
+    \end{example}
+
+    \subsubsection*{Monomial, binomial, trinomial and multinomials}
+
+    In order to clarify different situations, we have different names for different number of terms - terms mean to be the block combined by multiplication.
+
+    \begin{example}
+        The expression $3x+4$ has two terms. The first term is $3x$ and the second term is $4$.
+    \end{example}
+
+    \begin{example}
+        The expression $8$ has one term only.
+    \end{example}
+
+    \begin{example}
+        The expression $x^2+3x+4$ has three terms.
+    \end{example}
+
+    \begin{example}
+        The expression $x+2y+3z+4$ has four terms.
+    \end{example}
+
+    By different number of terms, we have different names for them. If an expression has only one term, we call it a \textbf{monomial}; for an expression having two terms, we call it a \textbf{binomial}; for an expression having three terms, we call it a \textbf{trinomial}; and for an expression having four or more terms, we call it a \textbf{multinomial}.
+
+    \begin{example}
+        The following expressions are all monomials: $1$, $x$, $2x$, $3x^2$, $7y$, etc.
+    \end{example}
+
+    \begin{example}
+        The following expressions are all binomials: $x+1$, $x+y$, $2x-3x^2$, $3x^2+5y^2$, $7y^3-1$, etc.
+    \end{example}
+
+    \begin{example}
+        The following expressions are all trinomials: $x^2+x+1$, $x+y+z$, $y^2-2yx-3x^2$, $3x^2+5y^2+7z^2$, etc.
+    \end{example}
+
+    \begin{example}
+        The following expressions are all multinomials: $x^3+x^2+x+1$, $x^2+x+y^2+y+z^2+z$, $y^2-2y-3x-z$, $3x^2+5y^2+7z^2+1+2x^3+3xy$, etc.
+    \end{example}
+
+    \subsubsection*{Polynomial and multinomial}
+
+    A smaller group of multinomial plays a fundamental role in structural modelling. That category of multinomial is called \textbf{ploynomial}, which are multinomials with less than or only one variable.
+
+    \begin{definition}[Polynomial]
+        Let $n$ be a non-negative integer. Suppose $a_n$ is a non-zero real number and $a_0, a_1, a_2, \dots, a_{n-1}$ be any real numbers. If any algebraic expression satisfy the form \[a_0+a_1 x+a_2 x^2 + \cdots + a_n x^n\] then such algeraic expression is called a \textbf{polynomial of degree $n$}.
+    \end{definition}
+
+    The \textbf{degree} of a polynomial is determined by the leading term of the plynomial after \textit{rearrangement of terms in decending order}, which we can say is the highest power of a polynomial.
+
+    \begin{example}
+        The following expressions are all polynomials with different degrees:
+        \begin{enumerate}
+            \item $1$ is a polynomial of degree $0$.
+            \item $x$ and $2x+1$ are polynomials of degree $1$.
+            \item $3x^2$ and $x^2+2x+1$ are polynomials of degree $2$.
+            \item $x^3$ and $x^3-x+1$ are polynomials of degree $3$.
+        \end{enumerate}
+        So on and so forth.
+    \end{example}
+
+    Following polynomials, we might also determine the `degree' of a multinomial. One way to generalize the concept of a degree is to determine, similar to polynomial, the leading term of a multinomial in decending order. The problem is, what does it mean by `larger power' when more than one variable is being discussed.
+
+    Consider the following monomial: \[x^2 y^3 z^4\]
+    To determine the degree of this multinomial, we ask a question: how does it grows `on average'? The problem becomes a statistical measurement, and what mathematicians see the solution to the problem is to identify every variables in the multinomial to be the same - in other words, focusing on the monomial we are discussing, it becomes the situation when $x=y=z$. Letting another variable $t$ so that $x=y=z=t$ gives us the identification \[x^2 y^3 z^4 = t^9\] and we are now able to determine the degree of any multinomial fairly under this strategy. As exmaplified, the degree of $x^2 y^3 z^4$ is equal to $9$. For the sake of presentation, we may write $\deg(x^2 y^3 z^4)=9$ for simplicity.
+
+    Hence, we may conclude the degree of any multinomial by the following:
+
+    \begin{definition}[Degree of multinomial]
+        Let $n$ be a positive integer and $x_1,x_2,\dots,x_n$ be distinct variables. The degree of a multinomial in the form of \[\sum x_1^{p_1} x_2^{p_2}\cdots x_n^{p_n}\] is equal to the maximum of the sum of the powers in one term, i.e. $\max(p_1+p_2+\cdots+p_n)$.
+    \end{definition}
 
     \subsection{Arithmetic rules for polynomials}
 
