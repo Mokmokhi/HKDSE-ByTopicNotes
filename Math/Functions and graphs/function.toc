@@ -1,4 +1,4 @@
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {section}{\numberline {1}Function and its graph}{4}{}%
 \contentsline {subsection}{\numberline {1.1}What is a Function?}{4}{}%
 \contentsline {subsection}{\numberline {1.2}Graph of a function}{12}{}%
@@ -30,32 +30,33 @@
 \contentsline {subsection}{\numberline {4.5}Quadratic inequalities}{57}{}%
 \contentsline {subsection}{\numberline {4.6}Challenging questions}{57}{}%
 \contentsline {section}{\numberline {5}Polynomial functions}{58}{}%
-\contentsline {subsection}{\numberline {5.1}Arithmetic rules for polynomials}{58}{}%
-\contentsline {subsection}{\numberline {5.2}Divisibility of polynomials}{58}{}%
-\contentsline {subsection}{\numberline {5.3}G.C.D. and L.C.M.}{58}{}%
-\contentsline {subsection}{\numberline {5.4}Rational Function}{58}{}%
-\contentsline {subsection}{\numberline {5.5}Positional notation}{58}{}%
-\contentsline {subsection}{\numberline {5.6}Challenging questions}{58}{}%
-\contentsline {section}{\numberline {6}Exponential and Logarithmic functions}{59}{}%
-\contentsline {subsection}{\numberline {6.1}Index notation}{59}{}%
-\contentsline {subsection}{\numberline {6.2}Rational power}{63}{}%
-\contentsline {subsection}{\numberline {6.3}Exponential functions}{67}{}%
-\contentsline {subsection}{\numberline {6.4}Logarithmic functions}{68}{}%
-\contentsline {subsection}{\numberline {6.5}Challenging questions}{68}{}%
-\contentsline {section}{\numberline {7}Sequence as a function of natural numbers}{69}{}%
-\contentsline {subsection}{\numberline {7.1}What is a sequence?}{69}{}%
-\contentsline {subsection}{\numberline {7.2}Arithmetic sequence}{69}{}%
-\contentsline {subsection}{\numberline {7.3}Geometric sequence}{69}{}%
-\contentsline {subsection}{\numberline {7.4}Additional content: Arithmetic-Geometric sequence}{69}{}%
-\contentsline {subsection}{\numberline {7.5}Challenging questions}{69}{}%
-\contentsline {section}{\numberline {8}Probability functions}{70}{}%
-\contentsline {subsection}{\numberline {8.1}Counting Principle}{70}{}%
-\contentsline {subsection}{\numberline {8.2}Pigeonhole Principle}{72}{}%
-\contentsline {subsection}{\numberline {8.3}Counting functions}{74}{}%
-\contentsline {subsection}{\numberline {8.4}Fundamental Probability}{77}{}%
-\contentsline {subsection}{\numberline {8.5}Probability of independent events}{80}{}%
-\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{80}{}%
-\contentsline {subsection}{\numberline {8.7}Discrete random variables}{80}{}%
-\contentsline {subsection}{\numberline {8.8}Distributions}{80}{}%
-\contentsline {subsection}{\numberline {8.9}Sampling}{80}{}%
-\contentsline {subsection}{\numberline {8.10}Challenging questions}{80}{}%
+\contentsline {subsection}{\numberline {5.1}Polynomials}{58}{}%
+\contentsline {subsection}{\numberline {5.2}Arithmetic rules for polynomials}{59}{}%
+\contentsline {subsection}{\numberline {5.3}Divisibility of polynomials}{59}{}%
+\contentsline {subsection}{\numberline {5.4}G.C.D. and L.C.M.}{59}{}%
+\contentsline {subsection}{\numberline {5.5}Rational Function}{59}{}%
+\contentsline {subsection}{\numberline {5.6}Positional notation}{59}{}%
+\contentsline {subsection}{\numberline {5.7}Challenging questions}{59}{}%
+\contentsline {section}{\numberline {6}Exponential and Logarithmic functions}{60}{}%
+\contentsline {subsection}{\numberline {6.1}Index notation}{60}{}%
+\contentsline {subsection}{\numberline {6.2}Rational power}{64}{}%
+\contentsline {subsection}{\numberline {6.3}Exponential functions}{68}{}%
+\contentsline {subsection}{\numberline {6.4}Logarithmic functions}{69}{}%
+\contentsline {subsection}{\numberline {6.5}Challenging questions}{69}{}%
+\contentsline {section}{\numberline {7}Sequence as a function of natural numbers}{70}{}%
+\contentsline {subsection}{\numberline {7.1}What is a sequence?}{70}{}%
+\contentsline {subsection}{\numberline {7.2}Arithmetic sequence}{70}{}%
+\contentsline {subsection}{\numberline {7.3}Geometric sequence}{70}{}%
+\contentsline {subsection}{\numberline {7.4}Additional content: Arithmetic-Geometric sequence}{70}{}%
+\contentsline {subsection}{\numberline {7.5}Challenging questions}{70}{}%
+\contentsline {section}{\numberline {8}Probability functions}{71}{}%
+\contentsline {subsection}{\numberline {8.1}Counting Principle}{71}{}%
+\contentsline {subsection}{\numberline {8.2}Pigeonhole Principle}{73}{}%
+\contentsline {subsection}{\numberline {8.3}Counting functions}{75}{}%
+\contentsline {subsection}{\numberline {8.4}Fundamental Probability}{78}{}%
+\contentsline {subsection}{\numberline {8.5}Probability of independent events}{81}{}%
+\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{81}{}%
+\contentsline {subsection}{\numberline {8.7}Discrete random variables}{81}{}%
+\contentsline {subsection}{\numberline {8.8}Distributions}{81}{}%
+\contentsline {subsection}{\numberline {8.9}Sampling}{81}{}%
+\contentsline {subsection}{\numberline {8.10}Challenging questions}{81}{}%
