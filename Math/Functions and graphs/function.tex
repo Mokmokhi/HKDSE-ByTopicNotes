@@ -1708,7 +1708,98 @@
     \end{example}
 
     The main reason is to facilitate the simplicity in computation. Consider \[\sqrt{75}+\sqrt{12}=5\sqrt{3}+2\sqrt{3}=7\sqrt{3}=\sqrt{147}\] and \[\sqrt{75}\cdot \sqrt{12}=5\sqrt{3}\cdot 2\sqrt{3}=30\] which are seemingly impossible but indeed true, the result are amazing with this methodology. It turns out simplification is always the required steps to clean things up.
+
+    Notice it is unclear to read a fraction when the denominator is not an integer, or say it is hard to compare the values between two fractions when the situation was like that. Instead, we aim to write every fraction with integral denominator, so that the comparison is more convenient and direct to intuition.
+
+    We shall here introduce a method of fraction modification called \textbf{rationalization}.
+
+    \begin{definition}[Rationalization]
+        A category of method to modify fractions with non-integral denominator.
+    \end{definition}
+
+    There should be at least 3 situations to consider rationalization.
+
+    When the denominator includes only a surd, the rationalization be like
+
+    \begin{example}
+        Rationalize $\frac{1}{\sqrt{2}}$.
+
+        \begin{solution}
+            \begin{align*}
+                \frac{1}{\sqrt{2}}&=\frac{1}{\sqrt{2}}\cdot \frac{\sqrt{2}}{\sqrt{2}}\\
+                &=\frac{\sqrt{2}}{2}
+            \end{align*}
+        \end{solution}
+    \end{example}
+
+    When the denominator includes two terms, we need to recall the identity \[a^2-b^2\equiv (a-b)(a+b)\] where it turns each terms into terms of sqaure. The application be like
+
+    \begin{example}
+        Rationalize $\frac{\sqrt{2}}{\sqrt{3}-1}$.
+
+        \begin{solution}
+            \begin{align*}
+                \frac{\sqrt{2}}{\sqrt{3}-1}&=\frac{\sqrt{2}}{\sqrt{3}-1}\cdot \frac{\sqrt{3}+1}{\sqrt{3}+1}\\
+                &=\frac{\sqrt{6}+\sqrt{2}}{2}
+            \end{align*}
+        \end{solution}
+    \end{example}
+
+    \begin{example}
+        Rationalize $\frac{1+\sqrt{2}}{\sqrt{3}+\sqrt{2}-1}$.
+
+        \begin{solution}
+            \begin{align*}
+                \frac{1+\sqrt{2}}{\sqrt{3}+\sqrt{2}-1}&=\frac{1+\sqrt{2}}{\sqrt{3}+\sqrt{2}-1}\cdot \frac{\sqrt{3}-(\sqrt{2}-1)}{\sqrt{3}-(\sqrt{2}-1)}\\
+                &=\frac{\sqrt{6}+\sqrt{3}-1}{2\sqrt{2}}\\
+                &=\frac{\sqrt{6}+\sqrt{3}-1}{2\sqrt{2}}\cdot \frac{\sqrt{2}}{\sqrt{2}}\\
+                &=\frac{\sqrt{6}+2\sqrt{3}-\sqrt{2}}{4}
+            \end{align*}
+        \end{solution}
+    \end{example}
     \subsubsection*{The square-root method}
+
+    From hereon we try to investigate some critical example step by step to broaden the view on the square root method.
+
+    \begin{example}
+        Solve $x^4=16$.
+
+        \begin{solution}
+            Observe $(x^2)^2=x^4$. Then \begin{align*}
+                (x^2)^2&=16\\
+                x^2&=4,-4
+            \end{align*}
+            Since $x^2\geq 0$, $x^2\neq -4$. Thus,\begin{align*}
+                x^2&=4\\
+                x&=2,-2
+            \end{align*}
+        \end{solution}
+    \end{example}
+
+    \begin{example}
+        Solve $(x-3)^2=1$.
+
+        \begin{solution}
+            \begin{align*}
+                (x-3)^2&=1\\
+                x-3&=1, -1\\
+                x&=4, 2
+            \end{align*}
+        \end{solution}
+    \end{example}
+
+    \begin{example}
+        Solve $2(x-5)^2-7=0$.
+
+        \begin{solution}
+            \begin{align*}
+                2(x-5)^2&=7\\
+                (x-5)^2&=\frac{7}{2}\\
+                x-5&=\pm\frac{\sqrt{14}}{2}\\
+                x&=5\pm\frac{\sqrt{14}}{2}
+            \end{align*}
+        \end{solution}
+    \end{example}
 
     \subsubsection*{General form and Completing the square method}
 
@@ -2620,6 +2711,8 @@
     \subsection{Probability of independent events}
 
     \subsubsection*{Independent events}
+
+    When the discussion becomes complex and uniting different events in one situation, we have to perform distinction of events: some events are not affecting one another. For example, the probability of giving shits to this notes in the morning does not affect the probability of taking a shower in the evening, or the probability of buying a Mathematics book does not affect the probability in winning a Jackpot. We then say if events $A$ and $B$ does not affect each other, $A$ is independent from $B$ and $B$ is independent from $A$, we call $A$ and $B$ are independent from each other and they are \textbf{independent events} in the situation.
     
     \subsubsection*{Venn-diagram}
 
