@@ -1949,7 +1949,13 @@
 
     \subsection{Arithmetic rules for polynomials}
 
+    Polynomial plays a fundamental role in Mathematics investiagtion, and similar to numbers, it satisfies the basic rules of arithmetic.
+
     \subsubsection*{Addition, Subtraction and Multiplication}
+
+    As numbers, polynomials can be added according to the terms. Some might misunderstand the rules of addition and subtraction.
+
+    
 
     \subsubsection*{Division}
 
@@ -2713,6 +2719,20 @@
     \subsubsection*{Independent events}
 
     When the discussion becomes complex and uniting different events in one situation, we have to perform distinction of events: some events are not affecting one another. For example, the probability of giving shits to this notes in the morning does not affect the probability of taking a shower in the evening, or the probability of buying a Mathematics book does not affect the probability in winning a Jackpot. We then say if events $A$ and $B$ does not affect each other, $A$ is independent from $B$ and $B$ is independent from $A$, we call $A$ and $B$ are independent from each other and they are \textbf{independent events} in the situation.
+
+    \begin{definition}[Independent Events]
+        Let $A$ and $B$ be two events in the universal set $U$. If $P(A|B)=P(A)$ and $P(B|A)=P(B)$, then $A$ and $B$ are called independent to each other.
+    \end{definition}
+
+    We will derive suitable formula for independent events.
+
+    Consider the `must go on' events, that is, no matter what is happening, the probability of such event being happened will never be changed due to any situation, and we will call that event stable. One stable event commits to any situation, its probability of happening will not be changed, meaning a stable event must be independent from everything. Thus we will have the following relation:
+
+    Given a stable event $A$ and a stable event $B$, When $A$ happens, $B$'s probability of happening is still $P(B)$. By the rules of counting, we have the probability for both $A$ and $B$ happening at the same time is $P(A)P(B)$.
+
+    \begin{theorem}
+        Given $A$ and $B$ are independent from each other, the following holds:\[P(A\cap B)=P(A)P(B)\]
+    \end{theorem}
     
     \subsubsection*{Venn-diagram}
 

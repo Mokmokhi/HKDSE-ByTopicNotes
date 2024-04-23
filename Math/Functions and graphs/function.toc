@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {4.6}Challenging questions}{59}{}%
 \contentsline {section}{\numberline {5}Polynomial functions}{60}{}%
 \contentsline {subsection}{\numberline {5.1}Polynomials}{60}{}%
-\contentsline {subsection}{\numberline {5.2}Arithmetic rules for polynomials}{64}{}%
+\contentsline {subsection}{\numberline {5.2}Arithmetic rules for polynomials}{63}{}%
 \contentsline {subsection}{\numberline {5.3}Divisibility of polynomials}{64}{}%
 \contentsline {subsection}{\numberline {5.4}G.C.D. and L.C.M.}{64}{}%
 \contentsline {subsection}{\numberline {5.5}Rational Function}{64}{}%
@@ -55,8 +55,8 @@
 \contentsline {subsection}{\numberline {8.3}Counting functions}{80}{}%
 \contentsline {subsection}{\numberline {8.4}Fundamental Probability}{83}{}%
 \contentsline {subsection}{\numberline {8.5}Probability of independent events}{85}{}%
-\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{86}{}%
-\contentsline {subsection}{\numberline {8.7}Discrete random variables}{86}{}%
-\contentsline {subsection}{\numberline {8.8}Distributions}{86}{}%
-\contentsline {subsection}{\numberline {8.9}Sampling}{86}{}%
-\contentsline {subsection}{\numberline {8.10}Challenging questions}{86}{}%
+\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{87}{}%
+\contentsline {subsection}{\numberline {8.7}Discrete random variables}{87}{}%
+\contentsline {subsection}{\numberline {8.8}Distributions}{87}{}%
+\contentsline {subsection}{\numberline {8.9}Sampling}{87}{}%
+\contentsline {subsection}{\numberline {8.10}Challenging questions}{87}{}%
