@@ -1,4 +1,4 @@
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {section}{\numberline {1}Function and its graph}{4}{}%
 \contentsline {subsection}{\numberline {1.1}What is a Function?}{4}{}%
 \contentsline {subsection}{\numberline {1.2}Graph of a function}{12}{}%
