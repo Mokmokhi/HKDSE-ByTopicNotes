@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\graphicspath{{../image/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{二項分佈：功課}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    已知HKDSE數學科卷二共有題目45道，每道題目均爲4選1的選擇題。下列三道題目均以此爲前提。\begin{enumerate}
+        \item 假設A君是一個學渣，每次考試都是靠純運氣的。假設他在每一題的答對的概率都是\(\dfrac{1}{4}\)。\begin{enumerate}
+            \item 求A君在數學科卷二的期望值以及分數分佈方差。
+            \item 已知A君答對了至少1道題，求A君答對23道題的概率。
+        \end{enumerate}
+        \item 假設B君是一個勤奮書生，有70\%的概率發奮圖强。若他發奮圖强，他有能力排除大部分的錯誤答案，使每一道題答對的概率變爲\(\dfrac{1}{2}\)。若他沒有發奮圖强，則和A君一樣，僅有$\dfrac{1}{4}$的概率答對。\begin{enumerate}
+            \item 求B君在數學科卷二的期望值以及分數分佈方差。
+            \item 已知B君沒拿滿分，求他答對40道題的概率。
+        \end{enumerate}
+        \item 假設C君是一名學神，從不溫習。在他看來，45道題中，頭15道比較簡單，有90\%的概率想得到解題思路，必然答對，否則仍能去掉必然錯誤的答案，有$\dfrac{1}{2}$的概率答對；中間15道題比較一般，有70\%的概率想得到解題思路，必然答對，否則仍能去掉必然錯誤的答案，有$\dfrac{1}{3}$的概率答對；最後15道是他的樂子，僅有50\%的概率能解成有$\dfrac{1}{2}$的概率答對；否則僅有$\dfrac{1}{4}$的概率答對。\begin{enumerate}
+            \item 求C君的期望值。
+            \item 若C君改了死性，終於肯溫習，他必然能獲得期望值或以上的分數，求他此時滿分的概率。
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
