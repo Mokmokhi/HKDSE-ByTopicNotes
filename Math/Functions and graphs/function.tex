@@ -2760,11 +2760,36 @@
 
     The case of independent events has been discussed, and we will move to the case of dependent events. What dependent events brought us is the simplification of complex cases, so that we can always extract useful information for complex probability.
 
-    \subsubsection*{Independence decomposition}
+    \subsubsection*{Conditional proability}
 
     We should acknowledge that we are unable to handle dependent events directly, say if the probability of $A$ being happened depends on $B$, we should see the difference between when and when not $B$ is happened. 
 
-    \subsubsection*{Conditional probability}
+    Let say we have a complex situation inheriting the existence of event $A$ and event $B$. Given the probability of $A$ being happened equals $p$. If $A$ is happened, the probability of $B$ being happened is $x$, else the probability of $B$ being happened is $y$. The graph describing the above situation can be illustrated as follows:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{independence.png}
+    \end{figure}
+
+    We define the paths of the graph as the independence decomposition of a complex events, providing a focus on particular situations. The probability value $x$ and $y$ are called conditional proability, which is a particular probaility of a given condition. We denote $P(B|A)=x$ to be the probability of $B$ when $A$ is given happening. Similarly, $P(B'|A)=1-x$ to be the probability of B does not happen when $A$ is given happening. $P(B|A')=y$ and $P(B'|A')=1-y$ for similar reasoning.
+
+    In particular, we may observe that $px=P(A\cap B)$, and that becomes one of the formula defining conditional proability:
+
+    \begin{theorem}
+        Given $A$ and $B$ be two events, the conditional probability of $B$ given $A$ is happened is \[P(B|A)=\frac{P(A\cap B)}{P(A)}\]
+    \end{theorem}
+
+    The formula provides an interesting connection for the bi-directional conditional probability formula:
+
+    \begin{corollary}
+        Given $A$ and $B$ be two events, the following holds: \[P(A)P(B|A)=P(B)P(A|B)\]
+    \end{corollary}
+
+    To resolve the proability of $B$, we shall see the collection of all event $B$ is from both $A$ happens or not, hence it is natural to write $P(B)=px+(1-p)y$, which is in other words the total probability formula.
+
+    \begin{theorem}
+        The total probability of event $B$ is given by, when $A$ and $B$ are dependent on each other, \[P(B)=\sum P(A_n\cap B)=\sum P(A_n)P(B|A_n)\] where $A=\bigcup A_n$.
+    \end{theorem}
 
     \subsection{Discrete random variables}
 

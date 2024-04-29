@@ -1,10 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1714319830 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1714319833
+["pdflatex"] 1714414753 "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1714414756
   "../images//ab.png" 1685451587 11813 d9cbe6b5dbb2f8e0cb1fdf8ef722dd12 ""
   "../images//blobs-and-arrows diagram sequence.png" 1708975232 12755 640c195bf330fdff88680d695178266e ""
   "../images//blobs-and-arrows diagram.png" 1708972610 13341 58184d3ea4e3c6569ffaefb6c2fdcfe6 ""
   "../images//heron.png" 1712078830 26439 6325434fec5d0a5608be68a6652f4038 ""
   "../images//heron_circle.png" 1712078830 41612 d19115fdc4bc2a4f92d393ac1d09cb5f ""
+  "../images//independence.png" 1714412680 9060 e40ff3860a6ec035626474756b69a938 ""
   "../images//triangles.png" 1711475156 6715 ca1bb59252c846bb49fd815873f3fce0 ""
   "../images//union and intersection.png" 1707574231 15562 9b59fbbaefc69f6fe837aaa43797e9b0 ""
   "C:/Users/Owenm/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1664299329 14064 d51fe1154d65350215fea1f8fca0323d ""
@@ -244,10 +245,10 @@
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/multicol.sty" 1622550326 31530 f9ba11d1c179e918d577463ebdb887ca ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "D:/Program Files (x86)/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623005660 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1714319827 158201 2ec9b85ed53923cf8efc83d474e44232 ""
-  "function.aux" 1714319833 8083 fa1266ea291ba0d76b2dd17a100c7353 "pdflatex"
-  "function.tex" 1714319827 158201 2ec9b85ed53923cf8efc83d474e44232 ""
-  "function.toc" 1714319833 4745 2d5d2475d866f5984f20438d881b0409 "pdflatex"
+  "c:/Users/Owenm/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1714414752 160089 6cb92319ed25f7f2a0e0e6b5a23f857c ""
+  "function.aux" 1714414756 8083 a1e74e6ae67802a65791dc1822f549d1 "pdflatex"
+  "function.tex" 1714414752 160089 6cb92319ed25f7f2a0e0e6b5a23f857c ""
+  "function.toc" 1714414756 4745 d61ff00a43af6a6c12cd2152ce983691 "pdflatex"
   (generated)
   "function.aux"
   "function.log"
