@@ -1124,7 +1124,145 @@
 
     \subsubsection*{The relation between rectangular coordinates and polar coordinates}
 
+    Let us recall the definitions of coordinate systems and their notations.
+
+    \begin{definition}[Rectangular coordinates]
+        A rectangular coordinates is a pair of numbers determining the position with respect to a pair of orthogonal axes, which is also called the rectangular coordinates plane.
+    \end{definition}
+
+    \begin{example}
+        The positions $(1,2), (3,-2), (-4,0)$ are shown in the following rectangular coordinates plane.
+        
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.8]{rectangular coordinates.png}
+        \end{figure}
+
+        The coordinates are written in an ordered pair with horizontal position first then followed by vertical position.
+    \end{example}
+
+    It is important to note and remember that coordinates must be written in a certain order - horzontal position first, then vertical position. Otherwise, it lost its meaning in comparison.
+
+    The point $(0,0)$ is usually denoted by $O$ and named the \textbf{origin} of the plane. An origin is usually the respective `center' of a plane although the plane could be infinitely extensive, so that comparison maintain its stability. From this point of view, we may think of the coordinates $(x,y)$ as the unital displacement from the center in horizontal and vertical position respectively. This is a concept of component-wise thinking.
+
+    \begin{definition}[Polar coordinates]
+        A polar coordinates is a pair of numbers determining the position with magnitude and direction. 
+    \end{definition}
+
+    We usually define the magnitude by the shortest displacement from origin, again, the center of the plane, the position $(0,0)$. But this time, $(0,0)$ is just a convention to write down the position of center, since we cannot determine its direction of pointing. 
+
+    \begin{example}
+        The positions $(1,30^\circ), (3,150^\circ), (4,270^\circ)$ are shown in the following polar coordinates plane.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.8]{polar.png}
+        \end{figure}
+    \end{example}
+
+    Therefore, we shall ask a question: could we interpolate the rectangular coordinates and polar coordinates with suitable functions?
+
+    To answer the above quesiton, we need to clarify what our desired interpolate strategy does and so we could choose a suitable set of functions to complete the interpolation.
+
+    \subsubsection*{The interpolation}
+
+    Let us declare the relation between rectangular plane and polar coordinates by merging them together. Observe they both have an origin (which is important to show they both have a point of respect) and thus we can stash them into one picture. We will see the following result:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{rectpolar.png}
+    \end{figure}
+
+    Placing a unit circle (a circle of radius 1) on the rectangular plane, we could see that if we identify the positive x-direction as the direction of $0^\circ$ in polar coordinates, we can clearly merge two plane together. For each particular angle, we can draw a straight line to an intersection on the unit circle. Such point can be represented by a pair of rectangular coordinates, at the same time it can also be represented by a pair of polar coordinates by construction. We shall see the one-to-one correspondence between $(x,y)$ and $(r,\theta)$ if we call the angle $\theta$ and restrict its domain to $0\leq \theta < 360^\circ$. We restrict the domain to be less than $360^\circ$ because of the duplication at $0^\circ$.
+
+    We can conclude what we need for such interpolation: some functions that relates the following pair of numbers $$(x,y)\sim (r,\theta)$$ and indeed, we can further write $$x=f_1(r,\theta), \, y=f_2(r,\theta)$$ for some functions $f_1$ and $f_2$.
+
     \subsubsection*{Defining trigonometry as coordinate function}
+
+    We come to the part of configuring trigonometric functions as coordinate functions. Let us not use the notation of sine and cosine too early, since I will convince you that trigonometric functions will no longer be about triangle only with some reason behind.
+
+    Let the discussed $f_1$ and $f_2$ be replaced by $C$ and $S$ for convenience. Then, we have to write \[x=C(r,\theta), \, y=S(r,\theta)\]
+
+    One property of $C$ and $S$ that can easily be observed from similar triangle is that \begin{align*}
+        C(r,\theta)&=rC(1,\theta)\\
+        S(r,\theta)&=rS(1,\theta)
+    \end{align*}
+    and so we return to the unit circle for simpler observations.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{rectpolar.png}
+    \end{figure}
+
+    As $C(1,\theta)$ defines the $x$-coordinate at a certain degree in a unit circle, we observe the following:\begin{itemize}
+        \item When $\theta=0^\circ$, $C(1,\theta)=1$;
+        \item When $\theta=90^\circ$, $C(1,\theta)=0$;
+        \item When $\theta=180^\circ$, $C(1,\theta)=-1$;
+        \item When $\theta=270^\circ$, $C(1,\theta)=0$.
+    \end{itemize}
+
+    In particular, if we observe for $0^\circ \leq \theta \leq 90^\circ$, the values of $C(1,\theta)$ is equivalent to seeing the length of adjeacent side of a right-angled triangle with hypotenuse 1, by definition of trigonometric functions, is exactly the value of $\cos{\theta}$. Hence, when $0^\circ\leq \theta\leq 90^\circ$, we can write $C(1,\theta)=\cos{\theta}$.
+
+    We then say the function $C$ defined for coordinates is an extension of the standard cosine function, and we will write $\cos{\theta}$ to simplify the writings, at the same time admit the meaning of $\cos{\theta}$ when $\theta>90^\circ$ is about the $x$-coordinate on a unit circle. Hence, we will write the following $$x=r\cos{\theta}$$ for $0^\circ\leq \theta < 360^\circ$.
+
+    Similarly, we also observe that, as $S(1,\theta)$ defines the $y$-coordinate at a certain degree in a unit circle, we have the following:\begin{itemize}
+        \item When $\theta=0^\circ$, $S(1,\theta)=0$;
+        \item When $\theta=90^\circ$, $S(1,\theta)=1$;
+        \item When $\theta=180^\circ$, $S(1,\theta)=0$;
+        \item When $\theta=270^\circ$, $S(1,\theta)=-1$.
+    \end{itemize}
+
+    In particular, if we observe for $0^\circ \leq \theta \leq 90^\circ$, the values of $S(1,\theta)$ is equivalent to seeing the length of opposite side of a right-angled triangle with hypotenuse 1, by definition of trigonometric functions, is exactly the value of $\sin{\theta}$. Hence, when $0^\circ\leq \theta\leq 90^\circ$, we can write $S(1,\theta)=\sin{\theta}$.
+
+    We then say the function $S$ defined for coordinates is an extension of the standard sine function, and we will write $\sin{\theta}$ to simplify the writings, at the same time admit the meaning of $\sin{\theta}$ is about the $y$-coordinate on a unit circle. Hence, we will write the following $$y=r\sin{\theta}$$ for $0^\circ\leq \theta < 360^\circ$.
+
+    Conclude the one-way implication of coordinates functions by the following relation: 
+
+    \begin{proposition}
+        Let $(r,\theta)$ be a pair of polar coordinates, with $r>0$ and $0^\circ\leq \theta<360^\circ$. We can compute the corresponding rectangular coordinates by the formula \[(x,y)=(r\cos{\theta},r\sin{\theta})\]
+    \end{proposition}
+
+    Then, how about the reverse side of implication? We shall consider the reverse side of relation \[(r,\theta)\sim (x,y)\] which can be explicitly written as \[r=g_1(x,y), \, \theta=g_2(x,y)\] for some functions $g_1$ and $g_2$.
+
+    Let again write $g_1$ and $g_2$ into $R$ and $T$ for convenience. From the plot, it is easy to see for every pair of $x$ and $y$, we can consider the distance between the circum-point and the center of the unit circle (the origin) to be $\sqrt{(x-0)^2+(y-0)^2}=\sqrt{x^2+y^2}$. From the formula it is easy to check that $R(x,y)=\sqrt{x^2+y^2}\leq 0$ for any $(x,y)$ in the plane. We so defined \[r=R(x,y)=\sqrt{x^2+y^2}\]
+
+    For the function $T$, it is a bit tricky. Let us consider the geometric meaning of the angle $\theta$ so that we could find a way to define the function $T$. One critical observation is the slope of the line connecting the origin and the coordinates $(x,y)$. Let the slope be $\mathfrak{M}$. Then we can write \[\mathfrak{M}=\frac{y-0}{x-0}=\frac{y}{x}\]
+
+    Therefore, the function $T$ should be defined by another fucntion $Q$ so that $\theta=T(x,y)=Q(\frac{y}{x})$, and if there is a function $P$ such that $P\circ Q = \id$, the identity function, we can write $$P(\theta)=\frac{y}{x}$$ to observe the relation between $\theta$ and $x,y$.
+
+    Once again, when $0^\circ \leq \theta < 90^\circ$, the value of $P(\theta)$ is exactly describing the ratio of the length of opposite side over the length of adjacent side of a right-angled triangle, which by definition is $\tan{\theta}$. Hence, we conclude when $0^\circ \leq \theta < 90^\circ$, $P(\theta)=\tan{\theta}$. As in previous deduction, we will take the extension of $\tan{\theta}$ to be describing the slope to origin on rectangular plane. Hence, we conclude the relation by taking the inverse of tangent function: \[\theta=\arctan(\frac{y}{x})\]
+
+    Therefore, the implication from rectangular plane to polar plane, call it \textbf{polarization}, is concluded by 
+
+    \begin{proposition}[Polarization]
+        Let $(x,y)$ be a pair of rectangular coordinates. We can compute the corresponding polar coordinates by the formula \[(r,\theta)=(\sqrt{x^2+y^2},\arctan(\frac{y}{x}))\]
+    \end{proposition}
+
+    One more hint to condense the name trigonometry to describing coordinates is the consistency of trigonometric identity:
+
+    \begin{proposition}
+        Let $(x,y)\sim(r,\theta)$ be a pair of coordinate relation with discussed relating functions. The following identity holds well: \begin{enumerate}
+            \item $\sin^2{\theta}+\cos^2{\theta}\equiv 1$;
+            \item $\tan{\theta}\equiv\dfrac{\sin{\theta}}{\cos{\theta}}$.
+        \end{enumerate}
+    \end{proposition}
+    
+    \begin{proof}
+        \begin{enumerate}
+            \item Since $x=r\cos{\theta}$ and $y=r\sin{\theta}$, following the definition of $r$, \begin{align*}
+                x^2+y^2&=r^2\\
+                (\frac{x}{r})^2+(\frac{y}{r})^2&=1\\
+                \cos^2{\theta}+\sin^2{\theta}&=1
+            \end{align*}
+            \item It is not hard to follow the equation deduced:\begin{align*}
+                RHS&=\frac{\sin{\theta}}{\cos{\theta}}\\
+                &=\frac{y/r}{x/r}\\
+                &=\frac{y}{x}\\
+                &=\tan{\theta}\\
+                &=LHS
+            \end{align*}
+        \end{enumerate}
+    \end{proof}
 
     \subsubsection*{Reduction formula for trigonometric functions}
 

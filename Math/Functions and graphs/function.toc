@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Function and its graph}{4}{}%
 \contentsline {subsection}{\numberline {1.1}What is a Function?}{4}{}%
 \contentsline {subsection}{\numberline {1.2}Graph of a function}{12}{}%
@@ -12,51 +12,51 @@
 \contentsline {subsection}{\numberline {2.3}The compound angle formulae}{25}{}%
 \contentsline {subsection}{\numberline {2.4}The trigonometric laws}{27}{}%
 \contentsline {subsection}{\numberline {2.5}Extending trigonometric functions to describing circles}{36}{}%
-\contentsline {subsection}{\numberline {2.6}Extending trigonometry to real numbers}{37}{}%
-\contentsline {subsection}{\numberline {2.7}Challenging Questions}{37}{}%
-\contentsline {section}{\numberline {3}Linear functions}{38}{}%
-\contentsline {subsection}{\numberline {3.1}Fundamental concepts of points}{38}{}%
-\contentsline {subsection}{\numberline {3.2}Different forms of a linear function}{45}{}%
-\contentsline {subsection}{\numberline {3.3}Rotational geometry}{51}{}%
-\contentsline {subsection}{\numberline {3.4}Relation between lines}{52}{}%
-\contentsline {subsection}{\numberline {3.5}Additional content: Point-line distance}{52}{}%
-\contentsline {subsection}{\numberline {3.6}Linear inequalities}{53}{}%
-\contentsline {subsection}{\numberline {3.7}Challenging questions}{53}{}%
-\contentsline {section}{\numberline {4}Quadratic functions}{54}{}%
-\contentsline {subsection}{\numberline {4.1}Solving Quadratic Equations}{54}{}%
-\contentsline {subsection}{\numberline {4.2}Solvability of Quadratic Equations}{59}{}%
-\contentsline {subsection}{\numberline {4.3}Relation between coefficients and roots}{59}{}%
-\contentsline {subsection}{\numberline {4.4}Vertex form of a quadratic function}{59}{}%
-\contentsline {subsection}{\numberline {4.5}Quadratic inequalities}{59}{}%
-\contentsline {subsection}{\numberline {4.6}Challenging questions}{59}{}%
-\contentsline {section}{\numberline {5}Polynomial functions}{60}{}%
-\contentsline {subsection}{\numberline {5.1}Polynomials}{60}{}%
-\contentsline {subsection}{\numberline {5.2}Arithmetic rules for polynomials}{63}{}%
-\contentsline {subsection}{\numberline {5.3}Divisibility of polynomials}{64}{}%
-\contentsline {subsection}{\numberline {5.4}G.C.D. and L.C.M.}{64}{}%
-\contentsline {subsection}{\numberline {5.5}Rational Function}{64}{}%
-\contentsline {subsection}{\numberline {5.6}Positional notation}{64}{}%
-\contentsline {subsection}{\numberline {5.7}Challenging questions}{64}{}%
-\contentsline {section}{\numberline {6}Exponential and Logarithmic functions}{65}{}%
-\contentsline {subsection}{\numberline {6.1}Index notation}{65}{}%
-\contentsline {subsection}{\numberline {6.2}Rational power}{69}{}%
-\contentsline {subsection}{\numberline {6.3}Exponential functions}{73}{}%
-\contentsline {subsection}{\numberline {6.4}Logarithmic functions}{74}{}%
-\contentsline {subsection}{\numberline {6.5}Challenging questions}{74}{}%
-\contentsline {section}{\numberline {7}Sequence as a function of natural numbers}{75}{}%
-\contentsline {subsection}{\numberline {7.1}What is a sequence?}{75}{}%
-\contentsline {subsection}{\numberline {7.2}Arithmetic sequence}{75}{}%
-\contentsline {subsection}{\numberline {7.3}Geometric sequence}{75}{}%
-\contentsline {subsection}{\numberline {7.4}Additional content: Arithmetic-Geometric sequence}{75}{}%
-\contentsline {subsection}{\numberline {7.5}Challenging questions}{75}{}%
-\contentsline {section}{\numberline {8}Probability functions}{76}{}%
-\contentsline {subsection}{\numberline {8.1}Counting Principle}{76}{}%
-\contentsline {subsection}{\numberline {8.2}Pigeonhole Principle}{78}{}%
-\contentsline {subsection}{\numberline {8.3}Counting functions}{80}{}%
-\contentsline {subsection}{\numberline {8.4}Fundamental Probability}{83}{}%
-\contentsline {subsection}{\numberline {8.5}Probability of independent events}{85}{}%
-\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{87}{}%
-\contentsline {subsection}{\numberline {8.7}Discrete random variables}{88}{}%
-\contentsline {subsection}{\numberline {8.8}Distributions}{88}{}%
-\contentsline {subsection}{\numberline {8.9}Sampling}{88}{}%
-\contentsline {subsection}{\numberline {8.10}Challenging questions}{88}{}%
+\contentsline {subsection}{\numberline {2.6}Extending trigonometry to real numbers}{44}{}%
+\contentsline {subsection}{\numberline {2.7}Challenging Questions}{44}{}%
+\contentsline {section}{\numberline {3}Linear functions}{45}{}%
+\contentsline {subsection}{\numberline {3.1}Fundamental concepts of points}{45}{}%
+\contentsline {subsection}{\numberline {3.2}Different forms of a linear function}{52}{}%
+\contentsline {subsection}{\numberline {3.3}Rotational geometry}{58}{}%
+\contentsline {subsection}{\numberline {3.4}Relation between lines}{59}{}%
+\contentsline {subsection}{\numberline {3.5}Additional content: Point-line distance}{59}{}%
+\contentsline {subsection}{\numberline {3.6}Linear inequalities}{60}{}%
+\contentsline {subsection}{\numberline {3.7}Challenging questions}{60}{}%
+\contentsline {section}{\numberline {4}Quadratic functions}{61}{}%
+\contentsline {subsection}{\numberline {4.1}Solving Quadratic Equations}{61}{}%
+\contentsline {subsection}{\numberline {4.2}Solvability of Quadratic Equations}{66}{}%
+\contentsline {subsection}{\numberline {4.3}Relation between coefficients and roots}{66}{}%
+\contentsline {subsection}{\numberline {4.4}Vertex form of a quadratic function}{66}{}%
+\contentsline {subsection}{\numberline {4.5}Quadratic inequalities}{66}{}%
+\contentsline {subsection}{\numberline {4.6}Challenging questions}{66}{}%
+\contentsline {section}{\numberline {5}Polynomial functions}{67}{}%
+\contentsline {subsection}{\numberline {5.1}Polynomials}{67}{}%
+\contentsline {subsection}{\numberline {5.2}Arithmetic rules for polynomials}{70}{}%
+\contentsline {subsection}{\numberline {5.3}Divisibility of polynomials}{71}{}%
+\contentsline {subsection}{\numberline {5.4}G.C.D. and L.C.M.}{71}{}%
+\contentsline {subsection}{\numberline {5.5}Rational Function}{71}{}%
+\contentsline {subsection}{\numberline {5.6}Positional notation}{71}{}%
+\contentsline {subsection}{\numberline {5.7}Challenging questions}{71}{}%
+\contentsline {section}{\numberline {6}Exponential and Logarithmic functions}{72}{}%
+\contentsline {subsection}{\numberline {6.1}Index notation}{72}{}%
+\contentsline {subsection}{\numberline {6.2}Rational power}{76}{}%
+\contentsline {subsection}{\numberline {6.3}Exponential functions}{80}{}%
+\contentsline {subsection}{\numberline {6.4}Logarithmic functions}{81}{}%
+\contentsline {subsection}{\numberline {6.5}Challenging questions}{81}{}%
+\contentsline {section}{\numberline {7}Sequence as a function of natural numbers}{82}{}%
+\contentsline {subsection}{\numberline {7.1}What is a sequence?}{82}{}%
+\contentsline {subsection}{\numberline {7.2}Arithmetic sequence}{82}{}%
+\contentsline {subsection}{\numberline {7.3}Geometric sequence}{82}{}%
+\contentsline {subsection}{\numberline {7.4}Additional content: Arithmetic-Geometric sequence}{82}{}%
+\contentsline {subsection}{\numberline {7.5}Challenging questions}{82}{}%
+\contentsline {section}{\numberline {8}Probability functions}{83}{}%
+\contentsline {subsection}{\numberline {8.1}Counting Principle}{83}{}%
+\contentsline {subsection}{\numberline {8.2}Pigeonhole Principle}{85}{}%
+\contentsline {subsection}{\numberline {8.3}Counting functions}{87}{}%
+\contentsline {subsection}{\numberline {8.4}Fundamental Probability}{90}{}%
+\contentsline {subsection}{\numberline {8.5}Probability of independent events}{92}{}%
+\contentsline {subsection}{\numberline {8.6}Probability of dependent events}{94}{}%
+\contentsline {subsection}{\numberline {8.7}Discrete random variables}{95}{}%
+\contentsline {subsection}{\numberline {8.8}Distributions}{95}{}%
+\contentsline {subsection}{\numberline {8.9}Sampling}{95}{}%
+\contentsline {subsection}{\numberline {8.10}Challenging questions}{95}{}%
