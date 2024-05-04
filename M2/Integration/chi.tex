@@ -218,7 +218,7 @@
     \begin{proposition}
         \begin{enumerate}
             \item $\int x^n dx = \frac{1}{n+1}x^{n+1} + C$ 儅$n\neq -1$;
-            \item $\int x^-1 dx = \ln{|kx|} + C$;
+            \item $\int x^{-1} dx = \ln{|x|} + C$;
             \item $\int e^x dx = e^x + C$;
             \item $\int \sin{x} dx = -\cos{x} + C$;
             \item $\int \cos{x} dx = \sin{x} + C$;
@@ -231,8 +231,36 @@
         \end{enumerate}
     \end{proposition}
     \subsection*{換元代入法}
+    \begin{example}
+        設$I(x)=\int \frac{2x+1}{x^2+x+2} dx$，代$u=x^2+x+2$ 可得 $du = (2x+1) dx$， 則\begin{align*}
+            I(x)&=\int \frac{2x+1}{x^2+x+2} dx\\
+            &=\int \frac{1}{u} du\\
+            &=\ln|u|+C\\
+            &=\ln|x^2+x+2|+C
+        \end{align*}
+    \end{example}
     \subsection*{參數化代入法}
+    \begin{example}
+        設$I(x)=\int \frac{1}{x^2+a^2} dx$，代$x=a\tan{\theta}$ 可得 $dx = a\sec^2{\theta} d\theta$， 則\begin{align*}
+            I(x)&=\int \frac{1}{x^2+a^2} dx\\
+            &=\int \frac{a\sec^2{\theta}}{a^2\tan^2{\theta}+a^2} d\theta\\
+            &=\int \frac{1}{a} d\theta\\
+            &=\frac{1}{a}\theta + C\\
+            &=\frac{1}{a}\arctan{\frac{x}{a}} + C
+        \end{align*}
+    \end{example}
+    \subsection*{部分分數法}
+    對於有理函數，我們不妨通過部分分數法完成積分：
+    \begin{example}
+        設$I(x)=\int \frac{1}{(x-1)^2(x-2)} dx$，考慮\[\frac{1}{(x-1)^2(x-2)}\equiv\frac{A}{x-1}+\frac{B}{(x-1)^2}+\frac{C}{x-2}\]其中$A,B,C$為未知常數。求之則得\[A=-1,B=-1,C=1\]
+        由此，\begin{align*}
+            I(x)&=\int \frac{1}{(x-1)^2(x-2)} dx\\
+            &=\int \frac{-1}{x-1}+\frac{-1}{(x-1)^2}+\frac{1}{x-2} dx\\
+            &=-\ln|x-1|+\frac{1}{x-1}+\ln|x-2|+C
+        \end{align*}
+    \end{example}
     \subsection*{部分積分法}
+    
     \subsection*{費曼積分法}
     \section*{體積運算}
     \subsection*{圓盤法}

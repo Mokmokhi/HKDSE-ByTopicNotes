@@ -1,5 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1714656161.94199 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1714656164.13498 0
+["pdflatex"] 1714820730.48521 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1714820732.69582 0
+  "../images/C-A-S-T.png" 1714818949 9030 b5468451e5eff58cc02f0e93d610a03a ""
   "../images/ab.png" 1712136333 11813 d9cbe6b5dbb2f8e0cb1fdf8ef722dd12 ""
   "../images/blobs-and-arrows diagram sequence.png" 1712136333 12755 640c195bf330fdff88680d695178266e ""
   "../images/blobs-and-arrows diagram.png" 1712136333 13341 58184d3ea4e3c6569ffaefb6c2fdcfe6 ""
@@ -10,6 +11,7 @@
   "../images/rectangular coordinates.png" 1714646752 10516 8e9cbe30a45f9ebe9739ba70e5deeda4 ""
   "../images/rectpolar.png" 1714650474 13649 5bd11984ff898ae32bb581c62dd18e17 ""
   "../images/triangles.png" 1712136333 6715 ca1bb59252c846bb49fd815873f3fce0 ""
+  "../images/trigo_on_circle.png" 1714788508 18150 f331ed53d2f1220654d23f60bdd6b97d ""
   "../images/union and intersection.png" 1712136333 15562 9b59fbbaefc69f6fe837aaa43797e9b0 ""
   "C:/Users/admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1713295035 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/admin/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1712144655 14064 8db67c0b6819e47ef462d86d143e7cb0 ""
@@ -253,10 +255,10 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1657817710 5700 603e2f09dad175efabc8594730623a0b ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1657817710 38160 aafa8d740e4f21b62a4acd4835e54359 ""
   "C:/Windows/Fonts/msyh.ttc" 1712143540 19701556 07c864a5b15e68fa47639738197fae38 ""
-  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1714656161 170789 c2f15d382d39079713a44e4fcdb34a32 ""
-  "function.aux" 1714656163 8083 3f7baea75f101a41009f85265ed05e44 "pdflatex"
-  "function.tex" 1714656161 170789 c2f15d382d39079713a44e4fcdb34a32 ""
-  "function.toc" 1714656163 4752 4c50e91ee46b5c44baff424325910181 "pdflatex"
+  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1714820730 177941 fbca27c5c2353d1f8207d4b448e90c81 ""
+  "function.aux" 1714820732 8083 d11ca1afd07334ece710e6ba01fe3a8a "pdflatex"
+  "function.tex" 1714820730 177941 fbca27c5c2353d1f8207d4b448e90c81 ""
+  "function.toc" 1714820732 4752 a030db580fa28c472159e79d53aa4556 "pdflatex"
   (generated)
   "function.aux"
   "function.log"

@@ -1264,9 +1264,112 @@
         \end{enumerate}
     \end{proof}
 
+    But there's a lot more to discuss about the name `tangent' - it is not a simple discussion to explain why we call the slope of the line connecting the point and the origin by tangent function, in fact, more intuition is needed to explain that naming.
+
+    For if any clear explanation is required, one popular saying is using the unit circle centered at origin.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{trigo_on_circle.png}
+    \end{figure}
+
+    Let us revise the meaning of $\tan{\theta}$. We usually call the straight line touches the circle at point $(x,y)$ to be the \textbf{tangent line} to the circle at $(x,y)$. Note that if we would like to find the \textbf{length of tangent captured by $\theta$}, we would see the mentioned tangent as in the figure. With respect to the drawn unit circle, we could see a pair of similar triangle, which stands $$\frac{\sin{\theta}}{\cos{\theta}}=\frac{tan{\theta}}{1}$$ and such that we have the relation $\tan{\theta}=\dfrac{\sin{\theta}}{\cos{\theta}}$ same as in trigonometry. The relation accidentally computes the same result as the slope of the radius, so we take in advance the slope equals to $\tan{\theta}$.
+
+    Using the concept of slope, we can easily describe the geometric meaning of negativity of tangent - negative slope. Therefore, this part of configuration is done.
+
     \subsubsection*{Reduction formula for trigonometric functions}
 
+    According to the defined `brand new' trigonometry (coordinating functions), we may now observe the symmetric properties over those trigonometric functions. We first read the symmetry of the sine function.
+
+    \begin{theorem}
+        $\sin{(90^\circ - \theta)}=\sin{(90^\circ + \theta)}$ and $\sin{(270^\circ - \theta)}=\sin{(270^\circ + \theta)}$ for $0^\circ \leq \theta \leq 90^\circ$.
+    \end{theorem}
+
+    \begin{proof}
+        For each part of the theorem, note that we may place the y-axis the common side of the triangle drawn with both radius. The congruence is trivial and hence the equality holds.
+    \end{proof}
+
+    \begin{corollary}
+        $\sin{(180^\circ - \theta)}=\sin{\theta}$.
+    \end{corollary}
+
+    \begin{theorem}
+        $\cos{(360^\circ - \theta)}=\cos{\theta}$ and $\cos{(180^\circ - \theta)}=\cos{(180^\circ + \theta)}$ for $0^\circ \leq \theta \leq 90^\circ$.
+    \end{theorem}
+
+    \begin{proof}
+        For each part of the theorem, note that we may place the x-axis the common side of the triangle drawn with both radius. The congruence is trivial and hence the equality holds.
+    \end{proof}
+
+    With the collection from fundamental trigonometry, we have the following collection of Reduction formulae:
+
+    \begin{theorem}
+        Let $\theta$ be such that $0^\circ\leq \theta\leq 90^\circ$, the following holds: \begin{align*}
+            &\sin(90^\circ\pm\theta)=\cos{\theta},&&\cos(90^\circ\pm\theta)=\mp\sin{\theta},&&\tan(90^\circ\pm\theta)=\mp\frac{1}{\tan{\theta}}\\
+            &\sin(180^\circ\pm\theta)=\mp\sin{\theta},&&\cos(180^\circ\pm\theta)=-\cos{\theta},&&\tan(180^\circ\pm\theta)=\pm\tan{\theta}\\
+            &\sin(270^\circ\pm\theta)=-\cos{\theta},&&\cos(270^\circ\pm\theta)=\pm\sin{\theta},&&\tan(270^\circ\pm\theta)=\mp\frac{1}{\tan{\theta}}\\
+            &\sin(360^\circ - \theta)=-\sin{\theta},&&\cos(360^\circ - \theta)=\cos{\theta},&&\tan(360^\circ - \theta)=-\tan{\theta}
+        \end{align*}
+    \end{theorem}
+
+    However, it was too terrifying if we need to remember all the above equalities. Is there any quick method to do with?
+
     \subsubsection*{The C-A-S-T graph and reduction strategy}
+
+    Let us conclude the positivity of trigonomertric functions and see whether we can generate a useful memorization technique in order to remember the discussed reduction formulae.
+
+    By categorizing the domain of $\theta$ into different quadrant, we could see the following picture:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{C-A-S-T.png}
+    \end{figure}
+
+    From the point of view of polar coordinates, we count for the first 90 degree as quadrant I; the second 90 degree as quadrant II; the third 90 degree as quadrant III; the fourth 90 degree as quadrant IV. 
+
+    The discussion on different quadrant provides different sign of axis. We concludes the following.
+
+    Quadrant I is where both $x$ and $y$ coordinates being positive, and we can observe that for every trigonometric function in quadrant I, they are all positive. That is, for $0^\circ<\theta<90^\circ$, \begin{align*}
+        \sin{\theta} &> 0\\
+        \cos{\theta} &> 0\\
+        \tan{\theta} &> 0
+    \end{align*}
+    Hence, the results show that ALL trigonometric functions are positive, and we name quadrant I by `A' to amplify the phenomenon.
+
+    Quadrant II is where only $y$ coordinates being positive, and we can observe that for trigonometric functions in quadrant I, only sine function is positive. That is, for $90^\circ<\theta<180^\circ$, \begin{align*}
+        \sin{\theta} &> 0\\
+        \cos{\theta} &< 0\\
+        \tan{\theta} &< 0
+    \end{align*}
+    Hence, the results show that only Sine is positive, and we name quadrant II by `S' to amplify the phenomenon.
+
+    Quadrant III is where no coordinate is positive, and we can observe that for trigonometric functions in quadrant III, only tangent function is positive. That is, for $180^\circ<\theta<270^\circ$, \begin{align*}
+        \sin{\theta} &< 0\\
+        \cos{\theta} &< 0\\
+        \tan{\theta} &> 0
+    \end{align*}
+    Hence, the results show that only Tangent is positive, and we name quadrant III by `T' to amplify the phenomenon.
+
+    Quadrant IV is where only $x$ coordinates being positive, and we can observe that for trigonometric functions in quadrant IV, only cosine function is positive. That is, for $270^\circ<\theta<360^\circ$, \begin{align*}
+        \sin{\theta} &< 0\\
+        \cos{\theta} &> 0\\
+        \tan{\theta} &< 0
+    \end{align*}
+    Hence, the results show that only Cosine is positive, and we name quadrant IV by `C' to amplify the phenomenon.
+
+    What's special about this naming technique is that we can memorize the quadrants of positivity by spelling C-A-S-T, the CAST graph, to simply guess the required sign of reduction.
+
+    Another important observation to fast-guess the reduction formula is paying attention to previous theorem, which, said \begin{align*}
+        &\sin(180^\circ\pm\theta)=\mp\sin{\theta},&&\cos(180^\circ\pm\theta)=-\cos{\theta},&&\tan(180^\circ\pm\theta)=\pm\tan{\theta}\\
+        &\sin(360^\circ - \theta)=-\sin{\theta},&&\cos(360^\circ - \theta)=\cos{\theta},&&\tan(360^\circ - \theta)=-\tan{\theta}
+    \end{align*}
+
+    It is important to notice that we don't need to change the functions into another functions when the leading angle is $180^\circ$ or $360^\circ$. On the other hand, the not a multiple of 180, the conversion behave like \[\sin \mapsto \cos, \cos \mapsto \sin, \tan \mapsto \frac{1}{\tan}\]
+
+    Therefore, the strategy of reduction can be summarized by following: \begin{enumerate}
+        \item Sign-deduction: by CAST;
+        \item Function-deduction: by multiple of $180^\circ$.
+    \end{enumerate}
 
     \subsection{Extending trigonometry to real numbers}
 
