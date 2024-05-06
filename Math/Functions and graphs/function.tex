@@ -1014,24 +1014,21 @@
     \end{theorem}
 
     \begin{proof}
-        As $\alpha,\beta,\gamma$ represents 3 angles in a triangle, their sum agrees with $\alpha+\beta+\gamma=180^\circ$, therefore $\frac{\gamma}{2}=90^\circ - \frac{\alpha+\beta}{2}$. We have the equality \begin{align*}
-            \tan{\frac{\alpha+\beta}{2}}&=\frac{1}{\tan{\frac{\gamma}{2}}}
-        \end{align*}
-        By proved result on the Tangent Law:\begin{align*}
-            \frac{a-b}{a+b}&=\frac{\tan{\frac{\alpha-\beta}{2}}}{\tan{\frac{\alpha+\beta}{2}}}\\
-            &=\frac{\sin{\frac{\alpha-\beta}{2}}}{\sin{\frac{\alpha+\beta}{2}}}\frac{\cos{\frac{\alpha+\beta}{2}}}{\cos{\frac{\alpha-\beta}{2}}}\\
-            &=\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}\frac{\sin{\frac{\gamma}{2}}}{\cos{\frac{\alpha-\beta}{2}}}\\
-            &=\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}\frac{2\sin{\frac{\gamma}{2}}\cos{\frac{\gamma}{2}}}{2\cos{\frac{\alpha-\beta}{2}}\cos{\frac{\gamma}{2}}}\\
-            &=\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}\frac{\sin{\gamma}}{\sin{\alpha}+\sin{\beta}}\\
-            &=\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}\frac{c}{a+b}\\
-            \frac{a-b}{c}&=\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}
+        As $\alpha,\beta,\gamma$ represents 3 angles in a triangle, their sum agrees with $\alpha+\beta+\gamma=180^\circ$, therefore $\frac{\gamma}{2}=90^\circ - \frac{\alpha+\beta}{2}$. We have the equality 
+        
+        \begin{align*}
+            \frac{\sin{\frac{\gamma}{2}}}{\cos{\frac{\alpha-\beta}{2}}}&=\frac{2\sin{\frac{\gamma}{2}}\cos{\frac{\gamma}{2}}}{2\cos{\frac{\alpha-\beta}{2}}\cos{\frac{\gamma}{2}}}&&(multiply\, by\, \frac{2\cos{\frac{\gamma}{2}}}{2\cos{\frac{\gamma}{2}}})\\
+            &=\frac{\sin{\gamma}}{\sin{\alpha}+\sin{\beta}}&&(compound\, angle\, formula)\\
+            &=\frac{abc\sin{\gamma}}{abc\sin{\alpha}+abc\sin{\beta}}&&(multiply\, by\, \frac{abc}{abc})\\
+            &=\frac{c(ab\sin{\gamma})}{a(bc\sin{\alpha})+b(ac\sin{\beta})}\\
+            &=\frac{c}{a+b}&&(Sine\, Law)\\
         \end{align*}
         This proves the first equation.
 
         For the second equation, consider \begin{align*}
-            \frac{a+b}{c}&=\frac{a+b}{a-b}\cdot \frac{a-b}{c}\\
-            &=\frac{\tan{\frac{\alpha+\beta}{2}}}{\tan{\frac{\alpha-\beta}{2}}}\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}\\
-            &=\frac{\cos{\frac{\alpha-\beta}{2}}}{\sin{\frac{\gamma}{2}}}
+            \frac{a-b}{c}&=\frac{a-b}{a+b}\cdot \frac{a+b}{c}\\
+            &=\frac{\tan{\frac{\alpha-\beta}{2}}}{\tan{\frac{\alpha+\beta}{2}}}\frac{\cos{\frac{\alpha+\beta}{2}}}{\sin{\frac{\gamma}{2}}}\\
+            &=\frac{\sin{\frac{\alpha-\beta}{2}}}{\cos{\frac{\gamma}{2}}}
         \end{align*}
         Then the Mollweide's equations are proved.
     \end{proof}
@@ -1364,7 +1361,7 @@
         &\sin(360^\circ - \theta)=-\sin{\theta},&&\cos(360^\circ - \theta)=\cos{\theta},&&\tan(360^\circ - \theta)=-\tan{\theta}
     \end{align*}
 
-    It is important to notice that we don't need to change the functions into another functions when the leading angle is $180^\circ$ or $360^\circ$. On the other hand, the not a multiple of 180, the conversion behave like \[\sin \mapsto \cos, \cos \mapsto \sin, \tan \mapsto \frac{1}{\tan}\]
+    It is important to notice that we don't need to change the functions into another functions when the leading angle is $180^\circ$ or $360^\circ$. On the other hand, when the angle is not a multiple of 180, the conversion behave like \[\sin \mapsto \cos, \cos \mapsto \sin, \tan \mapsto \frac{1}{\tan}\]
 
     Therefore, the strategy of reduction can be summarized by following: \begin{enumerate}
         \item Sign-deduction: by CAST;
@@ -1397,18 +1394,18 @@
         \begin{center}
             \begin{tikzpicture}
                 \begin{axis}[
-                axis y line = left,
+                axis y line = middle,
                 axis x line = middle,
                 xlabel = \(x\),
                 ylabel = {\(sin(x)\)},
-                xmin=0, xmax=810,
+                xmin=-270, xmax=450,
                 ymin=-2, ymax=2,
-                xtick={90,180,270,360,450,540,630,720},
+                xtick={-270,-180, -90, 0, 90, 180, 270, 360},
                 ytick={-1,0,1}
                 ]
                 \addplot [
-                    domain=0:720, 
-                    samples=120, 
+                    domain=-270:450, 
+                    samples=721, 
                     color=red,
                 ]
                 {sin(x)};
@@ -1416,7 +1413,7 @@
             \end{tikzpicture}            
         \end{center}
 
-        We shall observe that the sine function starts at 0, maximized and minimized at $1$ and $-1$ respectively. The value of $\sin{x}$ at $x=0^\circ$ is equal to at $x=360^\circ$, that at $x=90^\circ$ is equal to at $x=450^\circ$, etc. It looks like a copt-and-paste action to draw the curve after $360^\circ$.
+        We shall observe that the sine function starts at 0, maximized and minimized at $1$ and $-1$ respectively. The value of $\sin{x}$ at $x=0^\circ$ is equal to at $x=360^\circ$, that at $x=90^\circ$ is equal to at $x=450^\circ$, etc. It looks like a copy-and-paste action to draw the curve after $360^\circ$.
     \end{example}
 
     \begin{example}
@@ -1425,18 +1422,18 @@
         \begin{center}
             \begin{tikzpicture}
                 \begin{axis}[
-                axis y line = left,
+                axis y line = middle,
                 axis x line = middle,
                 xlabel = \(x\),
                 ylabel = {\(cos(x)\)},
-                xmin=0, xmax=810,
+                xmin=-270, xmax=450,
                 ymin=-2, ymax=2,
-                xtick={90,180,270,360,450,540,630,720},
+                xtick={-270,-180, -90, 0, 90, 180, 270, 360},
                 ytick={-1,0,1}
                 ]
                 \addplot [
-                    domain=0:720, 
-                    samples=120, 
+                    domain=-270:450, 
+                    samples=721, 
                     color=red,
                 ]
                 {cos(x)};
@@ -1444,7 +1441,7 @@
             \end{tikzpicture}            
         \end{center}
 
-        We shall observe that the cosine function starts at 1, maximized and minimized at $1$ and $-1$ respectively. The value of $\cos{x}$ at $x=0^\circ$ is equal to at $x=360^\circ$, that at $x=90^\circ$ is equal to at $x=450^\circ$, etc. It looks like a copt-and-paste action to draw the curve after $360^\circ$.
+        We shall observe that the cosine function starts at 1, maximized and minimized at $1$ and $-1$ respectively. The value of $\cos{x}$ at $x=0^\circ$ is equal to at $x=360^\circ$, that at $x=90^\circ$ is equal to at $x=450^\circ$, etc. It looks like a copy-and-paste action to draw the curve after $360^\circ$.
     \end{example}
 
     \begin{example}
@@ -1453,18 +1450,36 @@
         \begin{center}
             \begin{tikzpicture}
                 \begin{axis}[
-                axis y line = left,
+                axis y line = middle,
                 axis x line = middle,
                 xlabel = \(x\),
                 ylabel = {\(tan(x)\)},
-                xmin=0, xmax=810,
+                xmin=-270, xmax=450,
                 ymin=-2, ymax=2,
-                xtick={90,180,270,360,450,540,630,720},
+                xtick={-270,-180, -90, 0, 90, 180, 270, 360},
                 ytick={-1,0,1}
                 ]
                 \addplot [
-                    domain=0:720, 
-                    samples=120, 
+                    domain=-248:-112, 
+                    samples=273, 
+                    color=red,
+                ]
+                {tan(x)};
+                \addplot [
+                    domain=-68:68, 
+                    samples=273, 
+                    color=red,
+                ]
+                {tan(x)};
+                \addplot [
+                    domain=112:248, 
+                    samples=273, 
+                    color=red,
+                ]
+                {tan(x)};
+                \addplot [
+                    domain=292:428, 
+                    samples=273, 
                     color=red,
                 ]
                 {tan(x)};
@@ -1472,10 +1487,55 @@
             \end{tikzpicture}            
         \end{center}
 
-        We shall observe that the tangent function starts at 0, increasing all the time. It has no maxima or minima, however, still periodic. The value of $\tan{x}$ at $x=0^\circ$ is equal to at $x=360^\circ$, that at $x=90^\circ$ is equal to at $x=450^\circ$, etc. It looks like a copt-and-paste action to draw the curve after $360^\circ$.
+        We shall observe that the tangent function starts at 0, increasing all the time. It has no maxima or minima, however, still periodic. The value of $\tan{x}$ at $x=0^\circ$ is equal to at $x=180^\circ$, and to at $x=360^\circ$, etc. Moreover, the periodicity of tangent function can be written $180^\circ$ instead of $360^\circ$, as it looks like a copy-and-paste action to draw the curve after $180^\circ$.
     \end{example}
 
     \subsubsection*{Extending domain and bounded range}
+
+    So far, we have periodicity of trigonometric functions, and therefore, we want to discuss one more property of sine and cosine - its boundedness.
+
+    Let us do an abstract proof for boundedness first, and read the geometric interpretation of such boundedness.
+
+    \begin{definition}[Norm]
+        Let $f$ be a function. Define the norm $\norm*{\cdot}:C(\mathbb{R})\to\mathbb{R}$ by the maximal absolute value of the real-valued function among its domain, i.e. \[\norm*{f}:=\max\{|f(x)|:x\in D\}\] 
+    \end{definition}
+
+    \begin{definition}[Bounded function]
+        A function $f$ is called a bounded function if its norm is finite, i.e. \[\norm*{f}\leq M\] for some number $M>0$.
+    \end{definition}
+
+    \begin{theorem}
+        Let $f:D\to\mathbb{R}$ be a periodic function with period $T$. Let $f$ be bounded on some interval $a\leq x < b$ of $D$ with $b-a=T$. Then $f$ is a bounded function on $D$.
+    \end{theorem}
+
+    \begin{proof}
+        If $f$ is a periodic function with period $T$, then the following equality holds for any $x\in D$: \[f(x+T)=f(x)\]
+
+        Since $f$ is bounded on the interval $a\leq x < b$, we can write \[\norm*{f}_{a\leq x< b}\leq M\] for some constant $M>0$.
+
+        Let $x\in D$, by division algorithm, we can always write $x=nT+y$ for some $n\in \mathbb{Z}$ and $a\leq y< b$, such that \[|f(x)|=|f(y+nT)|=|f(y)|\leq \norm*{f}_{a\leq x< b}\leq M\] for any $x\in D$.
+
+        Hence, $f$ is bounded on $D$.
+    \end{proof}
+
+    The theorem shows a nice generalization for boundedness of periodic functions. By the theorem, if we would like to say any periodic function is unbounded, we can check if there exist an interval $I$ such that $f$ is unbounded on $I$.
+
+    Hence we may see the boundedness of sine and cosine function:
+
+    \begin{example}
+        The periodicity of sine function is by $360^\circ$, so if we let $f(x):=\sin{x}$, we can see that \[\norm*{f}=\norm*{f}_{0^\circ \leq x< 360^\circ}=1\]
+    \end{example}
+
+    \begin{example}
+        The periodicity of cosine function is by $360^\circ$, so if we let $f(x):=\sin{x}$, we can see that \[\norm*{f}=\norm*{f}_{0^\circ \leq x< 360^\circ}=1\]
+    \end{example}
+
+    The above conclusions can be by graphical observation, or if we take from advantage of gepmetric interpretation, we can perform the following deduction:\begin{enumerate}
+        \item Both sine and cosine functions are deduced to be the representation of coordinates of a unit circle for any given angle $\theta$;
+        \item By definition of a unit circle, its radius is 1;
+        \item That means the greatest distance in both coordinates are bounded by the value 1;
+        \item Hence sine and cosine function must be bounded by 1 for any given angles.
+    \end{enumerate}
 
     \subsection{Challenging Questions}
 
