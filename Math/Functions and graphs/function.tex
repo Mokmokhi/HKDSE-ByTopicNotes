@@ -1371,11 +1371,109 @@
         \item Function-deduction: by multiple of $180^\circ$.
     \end{enumerate}
 
-    \subsection{Extending trigonometry to real numbers}
+    \subsection{Extending trigonometry to any degree}
 
-    \subsubsection*{Circulation of degree}
+    We known from definition of polar coordinates that we can reduce angle over $360^\circ$ to less than it. The rotation deforms by subtracting or adding whole circles to the angle according to its positivity and magnitudes. We therefore access to any degree with trigonometric functions.
 
     \subsubsection*{periodic function}
+
+    Taking advantages from polar plane, we can write down an equivalence class of angle: \[360^\circ + \theta \equiv \theta\] and so we can write the following extension of angle formulae:\begin{align*}
+        \sin{(360^\circ + \theta)}&=\sin{\theta}\\
+        \cos{(360^\circ + \theta)}&=\cos{\theta}\\
+        \tan{(360^\circ + \theta)}&=\tan{\theta}
+    \end{align*}
+
+    For the above situation, we name the $360^\circ$ as the \textbf{period} of polar coordinates, and also the period of trigonometric functions $\sin, \cos$ and $\tan$. Alternatively, we say those trigonometric functions are \textbf{periodic functions} with period $360^\circ$, with following definition of periodic functions.
+    
+    \begin{definition}[periodic function]
+        Let $T$ be a number and $f$ be a function. If for any real number $x$, the function $f$ always satisfy the equation \[f(x+T)=f(x)\] then we call $f$ a periodic function with period $T$.
+    \end{definition}
+
+    To visualize the periodicity of trigonometric functions, we plot the graphs out.
+
+    \begin{example}
+        Graph of sine function:
+
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}[
+                axis y line = left,
+                axis x line = middle,
+                xlabel = \(x\),
+                ylabel = {\(sin(x)\)},
+                xmin=0, xmax=810,
+                ymin=-2, ymax=2,
+                xtick={90,180,270,360,450,540,630,720},
+                ytick={-1,0,1}
+                ]
+                \addplot [
+                    domain=0:720, 
+                    samples=120, 
+                    color=red,
+                ]
+                {sin(x)};
+                \end{axis}
+            \end{tikzpicture}            
+        \end{center}
+
+        We shall observe that the sine function starts at 0, maximized and minimized at $1$ and $-1$ respectively. The value of $\sin{x}$ at $x=0^\circ$ is equal to at $x=360^\circ$, that at $x=90^\circ$ is equal to at $x=450^\circ$, etc. It looks like a copt-and-paste action to draw the curve after $360^\circ$.
+    \end{example}
+
+    \begin{example}
+        Graph of cosine function:
+
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}[
+                axis y line = left,
+                axis x line = middle,
+                xlabel = \(x\),
+                ylabel = {\(cos(x)\)},
+                xmin=0, xmax=810,
+                ymin=-2, ymax=2,
+                xtick={90,180,270,360,450,540,630,720},
+                ytick={-1,0,1}
+                ]
+                \addplot [
+                    domain=0:720, 
+                    samples=120, 
+                    color=red,
+                ]
+                {cos(x)};
+                \end{axis}
+            \end{tikzpicture}            
+        \end{center}
+
+        We shall observe that the cosine function starts at 1, maximized and minimized at $1$ and $-1$ respectively. The value of $\cos{x}$ at $x=0^\circ$ is equal to at $x=360^\circ$, that at $x=90^\circ$ is equal to at $x=450^\circ$, etc. It looks like a copt-and-paste action to draw the curve after $360^\circ$.
+    \end{example}
+
+    \begin{example}
+        Graph of tangent function:
+
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}[
+                axis y line = left,
+                axis x line = middle,
+                xlabel = \(x\),
+                ylabel = {\(tan(x)\)},
+                xmin=0, xmax=810,
+                ymin=-2, ymax=2,
+                xtick={90,180,270,360,450,540,630,720},
+                ytick={-1,0,1}
+                ]
+                \addplot [
+                    domain=0:720, 
+                    samples=120, 
+                    color=red,
+                ]
+                {tan(x)};
+                \end{axis}
+            \end{tikzpicture}            
+        \end{center}
+
+        We shall observe that the tangent function starts at 0, increasing all the time. It has no maxima or minima, however, still periodic. The value of $\tan{x}$ at $x=0^\circ$ is equal to at $x=360^\circ$, that at $x=90^\circ$ is equal to at $x=450^\circ$, etc. It looks like a copt-and-paste action to draw the curve after $360^\circ$.
+    \end{example}
 
     \subsubsection*{Extending domain and bounded range}
 
