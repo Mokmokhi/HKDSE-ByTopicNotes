@@ -1046,17 +1046,25 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[scale=0.8]{heron.png}
+            \includegraphics[scale=1.8]{heron.png}
             \caption{Reference: http://jwilson.coe.uga.edu/EMT668/EMAT6680.2000/Umberger/\\MATH7200/HeronFormulaProject/GeometricProof/geoproof.html}
         \end{figure}
 
-        The following steps will try to resolve $rs$ from other perspective. Here we orientate the side $AC$ to be the base of the triangle (parallel to horizon), and extend the segment to $G$ as in the figure. The area becomes $r\cdot AG$.
+        The following steps will try to resolve $rs$ from other perspective. Here we orientate the side $AC$ to be the base of the triangle (parallel to horizon), and extend the segment to $G$ as in the figure, where the extended part $CG$ is equal to $BF$.
+        
+        Note that by construction, our line segments $AB,BC,CA$ are all tangent to the inscribed circle, which are all perpendicular to the radius of touch to each of themselves. It is easy to check the following fact:\begin{align*}
+            \triangle IFB &\cong \triangle IEB &&(RHS)\\
+            \triangle IFA &\cong \triangle IDA &&(RHS)\\
+            \triangle IDC &\cong \triangle IEC &&(RHS)
+        \end{align*}
+        
+        That means $AG=\dfrac{a+b+c}{2}=s$ The area becomes $r\cdot AG$.
 
         Next we adjoin the figure with a line from $I$ so that $\angle AIJ = 90^\circ$ as follows.
 
         \begin{figure}[H]
             \centering
-            \includegraphics[scale=0.8]{heron_circle.png}
+            \includegraphics[scale=1.5]{heron_circle.png}
             \caption{Reference: http://jwilson.coe.uga.edu/EMT668/EMAT6680.2000/Umberger/\\MATH7200/HeronFormulaProject/GeometricProof/geoproof.html}
         \end{figure}
 
@@ -1530,7 +1538,7 @@
         The periodicity of cosine function is by $360^\circ$, so if we let $f(x):=\sin{x}$, we can see that \[\norm*{f}=\norm*{f}_{0^\circ \leq x< 360^\circ}=1\]
     \end{example}
 
-    The above conclusions can be by graphical observation, or if we take from advantage of gepmetric interpretation, we can perform the following deduction:\begin{enumerate}
+    The above conclusion can be drawn by graphical observation, or if we take from advantage of geometric interpretation, we can perform the following deduction:\begin{enumerate}
         \item Both sine and cosine functions are deduced to be the representation of coordinates of a unit circle for any given angle $\theta$;
         \item By definition of a unit circle, its radius is 1;
         \item That means the greatest distance in both coordinates are bounded by the value 1;
@@ -2201,6 +2209,10 @@
     \end{example}
 
     \subsubsection*{General form and Completing the square method}
+
+    From previous examples, we have developed a useful skill for solving simple quadratic formula. Let us consider one form of quadratic functions that usually shows up in writing equations.
+
+    Let $a,b,c$ be constants and $a\neq 0$, the \textbf{general form of a quadratic equation} in $x$ is written in the form of $$ax^2+bx+c=0$$
 
     \subsubsection*{The quadratic formula}
 
