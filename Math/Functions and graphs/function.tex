@@ -22,6 +22,7 @@
 
 \newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
 \newcommand{\id}{\mathtt{id}}
+\newcommand{\cis}[1]{\mathrm{cis}({#1})}
 
 \newtheorem{definition}{Definition}[section]
 \newtheorem*{theorem}{Theorem}
@@ -1563,7 +1564,13 @@
                 \item Does there exist a positive integer $n$ such that the equation $a_n^2-c_n^2=b_n$? Justify your answer.
                 \item Simplify $\dfrac{a_1+a_2+\cdots+a_n}{c_1+c_2+\cdots+c_n}$.
             \end{enumerate}
-            
+        \end{enumerate}
+        \item Define $i\notin \mathbb{R}$ in which $i^2=-1$. Let $\cis{x}:=\cos{x}+i\sin{x}:\mathbb{R}\to C$ be a function composed by sine, cosine and $i$. $\mathbb{R}$ denotes the real number set and $C$ denotes the range of $\cis{x}$ \begin{enumerate}
+            \item In rigorous mathematics, a function should be indeed satisfying existence and uniqueness. Check $\cis{x}$ satisfies the mentioned properties with provided definitions:\begin{itemize}
+                \item Existence: For every $x$ in the domain, there is a $y$ in the codomain defined such that $x\mapsto y$.
+                \item Uniqueness: For any $x$ in the domain, there is only one $y$ in the codomain such that $x\mapsto y$, i.e. if $x\mapsto y_1$ and $x\mapsto y_2$ simultaneously, then $y_1=y_2$. 
+            \end{itemize}
+            \item Prove that $\cis{x+y}=\cis{x}\cis{y}$. Hence, prove $(\cis{x})^n=\cis{nx}$.
         \end{enumerate}
     \end{enumerate}
 
@@ -1637,10 +1644,10 @@
         Given a trajectory defined by $(x(t),y(t))$ where $t\in [0,r]$ with $r>0$ a real number, the \textbf{midway} (or \textbf{half-way}) of the trajectory is given by the point $M$ such that $$\mathrm{arclength}((x(0),y(0)),M)=\mathrm{arclength}(M,(x(r),y(r)))$$
     \end{definition}
 
-    In particular, if we are talking about a mid-point, we usually pick the shortest trajectory between the two points. This is due to the uniqueness of the shortest trajectory if our distance is well-defined. In the Euclidean space, the shortest trajectory is usually the straight line between the two points.
+    In particular, if we are talking about a mid-point, we usually pick the shortest trajectory between the two points. This is due to the uniqueness of the shortest trajectory if our distance is well-defined. In the Euclidean space, the shortest trajectory is usually the straight line segment connecting the two points.
 
     \begin{theorem}[Mid-point of two points]
-        Given $A(x_1,y_1)$ and $B(x_2,y_2)$ be two points on the Euclidean space, the \textbf{mid-point} $M$ of $A$ and $B$ is defined by $$(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2})$$
+        Given $A(x_1,y_1)$ and $B(x_2,y_2)$ be two points on the Euclidean space, the \textbf{mid-point} $M$ of $A$ and $B$ is defined by $$M:=(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2})$$
     \end{theorem}
 
     \begin{proof}
@@ -1655,6 +1662,10 @@
         In particular, $$\mathrm{dist}(A,M)+\mathrm{dist}(M,B)=\mathrm{dist}(A,B)$$
         Thus $M$ preserve a point on the straight line connecting $A$ and $B$ and in fact the mid-point of $A$ and $B$.
     \end{proof}
+
+    \begin{remark}
+        The memorization of the computation can be written as $M=\frac{A+B}{2}$ to abstractize the similarity in both coordinates.
+    \end{remark}
 
     \begin{example}
         Given $A(100,20)$ and $B(30,70)$, their mid-point is the point $M(65,45)$.
