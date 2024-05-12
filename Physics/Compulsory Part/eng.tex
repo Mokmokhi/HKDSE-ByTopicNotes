@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage{multicol}
+
+\graphicspath{ {../images/} }
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{HKDSE Physics}
+\fancyhf[HR]{\rightmark}
+\fancyhf[CF]{\thepage}
+\fancyhf[FL]{\copyright Mok Owen 2024}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+\newcommand{\cis}[1]{\mathrm{cis}({#1})}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\newtheorem{exercise}{Essential Practice}[subsection]
+\newenvironment{solution}{\textbf{Solution.} \par}{\hfill \textit{\dots end of solution}}
+
+\begin{document}
+    \begin{abstract}
+        Physics, as a newly introduced subject apart from junior secondary, its concepts are relatively complicated when there is a lost of mathematical tools and insufficient explanations. In this set of notes, we will go through the concepts in Highschool physics with more mathematical tools.
+    \end{abstract}
+
+    \tableofcontents
+
+    \section{Preliminaries}
+
+    \section{Heat and Gases}
+
+    \section{Newtonian Mechanics}
+
+    \section{Electricity and Magnetism}
+
+    \section{Waves}
+
+    \section{Nuclear Power}
+
+    \section{Extended Part I: Astronomy}
+
+    \section{Extended Part II: Atomic World}
+
+    \section{Extended Part III: Domestic Electrical Appliances}
+
+    \section{Extended Part IV: Medical Physics}
+
+\end{document}
