@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.4.3)  11 MAY 2024 13:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.4.3)  15 MAY 2024 01:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1061,10 +1061,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24]
-<../images/ab.png, id=103, 232.87pt x 222.8325pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26]
+<../images/ab.png, id=110, 232.87pt x 222.8325pt>
 File: ../images/ab.png Graphic file (type png)
 <use ../images/ab.png>
-Package pdftex.def Info: ../images/ab.png  used on input line 759.
+Package pdftex.def Info: ../images/ab.png  used on input line 785.
 (pdftex.def)             Requested size: 186.29623pt x 178.26624pt.
 
 
@@ -1074,7 +1090,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25 <../images/ab.png>]
+[27 <../images/ab.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1082,11 +1098,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26]
-<../images/triangles.png, id=112, 543.02875pt x 151.56625pt>
+[28]
+<../images/triangles.png, id=118, 543.02875pt x 151.56625pt>
 File: ../images/triangles.png Graphic file (type png)
 <use ../images/triangles.png>
-Package pdftex.def Info: ../images/triangles.png  used on input line 837.
+Package pdftex.def Info: ../images/triangles.png  used on input line 863.
 (pdftex.def)             Requested size: 434.42357pt x 121.25316pt.
 
 
@@ -1096,23 +1112,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27 <../images/triangles.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[28]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[29]
+[29 <../images/triangles.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1137,10 +1137,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [32]
-<../images/heron.png, id=133, 256.45813pt x 155.07938pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34]
+<../images/heron.png, id=139, 256.45813pt x 155.07938pt>
 File: ../images/heron.png Graphic file (type png)
 <use ../images/heron.png>
-Package pdftex.def Info: ../images/heron.png  used on input line 1050.
+Package pdftex.def Info: ../images/heron.png  used on input line 1076.
 (pdftex.def)             Requested size: 461.62425pt x 279.14262pt.
 
 
@@ -1150,11 +1166,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33]
-<../images/heron_circle.png, id=137, 272.51813pt x 263.48438pt>
+[35]
+<../images/heron_circle.png, id=143, 272.51813pt x 263.48438pt>
 File: ../images/heron_circle.png Graphic file (type png)
 <use ../images/heron_circle.png>
-Package pdftex.def Info: ../images/heron_circle.png  used on input line 1068.
+Package pdftex.def Info: ../images/heron_circle.png  used on input line 1094.
 (pdftex.def)             Requested size: 408.77618pt x 395.22557pt.
 
 
@@ -1164,7 +1180,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34 <../images/heron.png>]
+[36 <../images/heron.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1172,7 +1188,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35 <../images/heron_circle.png>]
+[37 <../images/heron_circle.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1180,11 +1196,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36]
-<../images/rectangular coordinates.png, id=149, 417.56pt x 417.56pt>
+[38]
+<../images/rectangular coordinates.png, id=156, 417.56pt x 417.56pt>
 File: ../images/rectangular coordinates.png Graphic file (type png)
 <use ../images/rectangular coordinates.png>
-Package pdftex.def Info: ../images/rectangular coordinates.png  used on input line 1144.
+Package pdftex.def Info: ../images/rectangular coordinates.png  used on input line 1170.
 (pdftex.def)             Requested size: 334.04843pt x 334.04843pt.
 
 
@@ -1194,11 +1210,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37]
-<../images/polar.png, id=154, 592.2125pt x 537.00626pt>
+[39]
+<../images/polar.png, id=160, 592.2125pt x 537.00626pt>
 File: ../images/polar.png Graphic file (type png)
 <use ../images/polar.png>
-Package pdftex.def Info: ../images/polar.png  used on input line 1165.
+Package pdftex.def Info: ../images/polar.png  used on input line 1191.
 (pdftex.def)             Requested size: 473.77063pt x 429.60559pt.
 
 
@@ -1208,11 +1224,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38 <../images/rectangular coordinates.png>]
-<../images/rectpolar.png, id=159, 379.4175pt x 359.3425pt>
+[40 <../images/rectangular coordinates.png>]
+<../images/rectpolar.png, id=165, 379.4175pt x 359.3425pt>
 File: ../images/rectpolar.png Graphic file (type png)
 <use ../images/rectpolar.png>
-Package pdftex.def Info: ../images/rectpolar.png  used on input line 1179.
+Package pdftex.def Info: ../images/rectpolar.png  used on input line 1205.
 (pdftex.def)             Requested size: 303.53441pt x 287.47438pt.
 
 
@@ -1222,7 +1238,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39 <../images/polar.png>]
+[41 <../images/polar.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1230,10 +1246,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40 <../images/rectpolar.png>]
+[42 <../images/rectpolar.png>]
 File: ../images/rectpolar.png Graphic file (type png)
 <use ../images/rectpolar.png>
-Package pdftex.def Info: ../images/rectpolar.png  used on input line 1200.
+Package pdftex.def Info: ../images/rectpolar.png  used on input line 1226.
 (pdftex.def)             Requested size: 303.53441pt x 287.47438pt.
 
 
@@ -1243,7 +1259,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[41]
+[43]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1251,8 +1267,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 1235.
+[44]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 1261.
  (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
@@ -1263,34 +1279,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[43]
-<../images/trigo_on_circle.png, id=180, 497.86pt x 497.86pt>
+[45]
+<../images/trigo_on_circle.png, id=186, 497.86pt x 497.86pt>
 File: ../images/trigo_on_circle.png Graphic file (type png)
 <use ../images/trigo_on_circle.png>
-Package pdftex.def Info: ../images/trigo_on_circle.png  used on input line 1279.
+Package pdftex.def Info: ../images/trigo_on_circle.png  used on input line 1305.
 (pdftex.def)             Requested size: 398.28853pt x 398.28853pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[44]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[45 <../images/trigo_on_circle.png>]
-<../images/C-A-S-T.png, id=188, 361.35pt x 337.26pt>
-File: ../images/C-A-S-T.png Graphic file (type png)
-<use ../images/C-A-S-T.png>
-Package pdftex.def Info: ../images/C-A-S-T.png  used on input line 1331.
-(pdftex.def)             Requested size: 289.0804pt x 269.80836pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1307,7 +1301,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[47 <../images/C-A-S-T.png>]
+[47 <../images/trigo_on_circle.png>]
+<../images/C-A-S-T.png, id=194, 361.35pt x 337.26pt>
+File: ../images/C-A-S-T.png Graphic file (type png)
+<use ../images/C-A-S-T.png>
+Package pdftex.def Info: ../images/C-A-S-T.png  used on input line 1357.
+(pdftex.def)             Requested size: 289.0804pt x 269.80836pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1323,7 +1323,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[49]
+[49 <../images/C-A-S-T.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1380,10 +1380,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [56]
-Overfull \hbox (4.41031pt too wide) in paragraph at lines 1700--1702
-\OT1/cmr/m/n/12 Thus $\OML/cmm/m/it/12 P$ \OT1/cmr/m/n/12 pre-serve a point on the straight line con-nect-ing $\OML/cmm/m/it/12 A$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 B$ \OT1/cmr/m/n/12 and sat-is-fies $[](\OML/cmm/m/it/12 A; P\OT1/cmr/m/n/12 ) : [](\OML/cmm/m/it/12 P; B\OT1/cmr/m/n/12 ) =
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1400,6 +1396,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [58]
+Overfull \hbox (4.41031pt too wide) in paragraph at lines 1726--1728
+\OT1/cmr/m/n/12 Thus $\OML/cmm/m/it/12 P$ \OT1/cmr/m/n/12 pre-serve a point on the straight line con-nect-ing $\OML/cmm/m/it/12 A$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 B$ \OT1/cmr/m/n/12 and sat-is-fies $[](\OML/cmm/m/it/12 A; P\OT1/cmr/m/n/12 ) : [](\OML/cmm/m/it/12 P; B\OT1/cmr/m/n/12 ) =
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1472,11 +1472,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [67]
-File: ../images/rectpolar.png Graphic file (type png)
-<use ../images/rectpolar.png>
-Package pdftex.def Info: ../images/rectpolar.png  used on input line 2009.
-(pdftex.def)             Requested size: 303.53441pt x 287.47438pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1493,6 +1488,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [69]
+File: ../images/rectpolar.png Graphic file (type png)
+<use ../images/rectpolar.png>
+Package pdftex.def Info: ../images/rectpolar.png  used on input line 2035.
+(pdftex.def)             Requested size: 303.53441pt x 287.47438pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1765,10 +1765,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [103]
-<../images/independence.png, id=376, 432.61626pt x 201.75375pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[104]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[105]
+<../images/independence.png, id=382, 432.61626pt x 201.75375pt>
 File: ../images/independence.png Graphic file (type png)
 <use ../images/independence.png>
-Package pdftex.def Info: ../images/independence.png  used on input line 3224.
+Package pdftex.def Info: ../images/independence.png  used on input line 3250.
 (pdftex.def)             Requested size: 346.09348pt x 161.40321pt.
 
 
@@ -1778,7 +1794,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[104 <../images/independence.png>]
+[106 <../images/independence.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1786,7 +1802,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[105] (function.aux)
+[107] (function.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
@@ -1801,9 +1817,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  103i,14n,107p,1084b,2017s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on function.pdf (105 pages, 644773 bytes).
+Output written on function.pdf (107 pages, 648632 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
+ 476 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

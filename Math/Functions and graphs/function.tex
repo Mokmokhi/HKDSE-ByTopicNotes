@@ -579,9 +579,35 @@
 
     \subsection{Transformation of functions}
 
-    \subsubsection*{Translation}
+    Let us revisit the fundamental of transformation, pointwise trannsformation, so that we have the solid foundation for what transformation of function does.
 
-    \subsubsection*{Dilation}
+    \subsubsection*{Point Translation}
+
+    Pick a point $(a,b)$ on the rectangular coordinate plane, we want to perform different kinds of movement as a simplified information of a map. We call a movement a \textbf{translation} if it is a directed displacement. Moreover, if a translation is parallel to the vertical axis of the plane, i.e. \[(a,b)\to (a, b+k)\] for some constant $k$, we say that such translation is a \textbf{vertical translation}; while the one parallel to the horizontal line is a \textbf{horizontal translation}, i.e. \[(a,b)\to (a+h, b)\] for some constant $h$. They are just some specified names for certain types of fundamental intuition.
+
+    \begin{example}
+        Let a point $(1,2)$ on the rectangular plane. If we first translate the point vertically upward by 5 units, then horizontally rightward by 2 units, the resulting coordinates will be $(3,7)$; if we further translate the point vertically downward by 2 units, then horizontally leftward by 4 units, then vertically downward by 3 units, and finally horizontally rightward by 2 units, the resulting coordinates will be at $(1,2)$, which is the starting point.
+    \end{example}
+
+    The example shows that translation is invertible, and an useful observation on translation can be drawn:
+
+    \begin{theorem}
+        The order of translation is neglegible. In formal words, translation is commutative.
+    \end{theorem}
+
+    We see that the order of translation does not affect the resulting coordinates of translation, that means it is essential to combine many steps of ranslation into one step. We call such technique a \textbf{vector operation}.
+    
+    \begin{definition}[Vector]
+        The ordered pair $(x,y)$ defines a pair of translation horizontally by $x$ units and vertically by $y$ units respectively. Such pair is called a vector and vector addition defines the manipulation of translation along both axes.
+    \end{definition}
+
+    It is easy to check that moving along x-axis (resp. y-axis) by $h$ units (resp. $k$ units) is equivalent to writing $+(h,0)$ (resp. $+(0,k)$). The addition \[+(h,0)+(0,k)=+(h,k)\] shows the commutativity of translation. Moreover, a vector can be an extended coordination method by its format: we may see the notation of vector as the traslation from origin, so that coordinates agrees with vector. We define vector addition by \[(a,b)+(h,k)=(a+h,b+k)\] which is a bi-linear operation.
+
+    \subsubsection*{Point Rotation}
+
+    \subsubsection*{Function Translation}
+
+    \subsubsection*{Function Dilation}
 
     \subsection{Challenging questions}
 
