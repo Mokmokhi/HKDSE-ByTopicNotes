@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+
+\graphicspath{{../img/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{測驗}
+\fancyhf[CF]{\thepage}
+
+
+
+\begin{document}
+    根據某非正式統計，任何一個港鐵站於早高峰時段（6:00A.M.-8:00A.M.）可湧現平均每分鐘每個閘門增長6人的人流。港鐵公司安排以固定每三分鐘一班次運載乘客，每班列車有8卡，每卡車有5個閘門。假設列車正從車廠開往首站，需時三分鐘，且車上空無一人。
+    \begin{enumerate}
+        \item 求首站的一個閘門於列車到站時聚集多於6人的概率。
+        \item 求首站的一卡車至少兩個閘門聚集多於6人的概率。
+        \item 求首站各卡列車都有至少兩個閘門聚集多於6人的概率。
+        \item 已知某沿綫列車途徑共13個車站（包括首站與尾站），每站相距三分鐘車程，求\begin{enumerate}
+            \item 該綫於早高峰期間上車人數的期望值及方差；
+            \item 其中7站各卡列車都有至少兩個閘門聚集多於6人的概率。
+        \end{enumerate}
+    \end{enumerate}
+\end{document}

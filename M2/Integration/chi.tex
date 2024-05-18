@@ -188,7 +188,7 @@
 
     \subsubsection*{測度理論引論}
 
-    `不是因爲算得到才需要，而是因爲有需要才計算' - 勒貝格。
+    `把該算的算進去，而非隨機尋找哪裏可算'
 
     對於積分問題，勒貝格與黎曼持有相反的看法。勒貝格認爲，積分并不是幾何原理的產物，而是如同概率一般，屬於純粹算術的產物。
 
@@ -261,7 +261,31 @@
     \end{example}
     \subsection*{部分積分法}
     
+    \[\int u dv=uv - \int v du\]
+
+    \begin{example}
+        設$I(x)=\int e^x\sin{x} dx$
+        \begin{align*}
+            I(x)&=\int \sin{x} d(e^x)\\
+            &=e^x\sin{x} - \int e^x\cos{x} dx\\
+            &=e^x(\sin{x} - \cos{x}) - \int e^x\sin{x} dx\\
+            2I(x)&=e^x(\sin{x} - \cos{x})\\
+            I(x)&=\frac{e^x(\sin{x} - \cos{x})}{2}
+        \end{align*}
+    \end{example}
     \subsection*{費曼積分法}
+    通常費曼法會用在定積分上：\[\int f(x) dx \mapsto \int F(x,t) dx = \int \int \partial_t F(x,t) dx dt\]
+
+    \begin{example}
+        設$I:=\int_{0}^{\infty} \frac{\sin{x}}{x} dx$，通過令$I(t):=\int_{0}^{\infty}\frac{e^{-tx}\sin{x}}{x}dx$，求\begin{align*}
+            I'(t)&=\int_{0}^{\infty} -e^{-tx}\sin{x} dx\\
+            &=e^{-tx}\cos{x}\bigg]_0^{\infty} - t\int_{0}^{\infty}e^{-tx}\cos{x}dx\\
+            &=-\frac{1}{1+t^2}\\
+            I(t)&=-\arctan{t}+C\\
+            I(\infty)=0&\implies C=\frac{\pi}{2}\\
+            I=I(0)&=\arctan{0}+\frac{\pi}{2}=\frac{\pi}{2}
+        \end{align*}
+    \end{example}
     \section*{體積運算}
     \subsection*{圓盤法}
     \subsection*{外殼法}
