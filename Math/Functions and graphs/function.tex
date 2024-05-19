@@ -607,9 +607,142 @@
 
     A point rotation is usually defined by a planar rotation about the origin anti-clockwisely. Why is it so? It is due to a convention to polar coordinates.
 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{polar.png}
+        \caption{Polar plane with coordinates $(r,\theta)$}
+    \end{figure}
+
+    As in the figure, a pair of polar coordinates consists of two parts, the length and the degree of rotation. The degree of rotation is accounted anti-clockwisely. Therefore, we made the convention in this way.
+
+    So, for a rotation of 90 degrees about origin anti-clockwisely, we see the following:\begin{enumerate}
+        \item the positive $x$-axis part are rotated and moved to the positive $y$-axis part;
+        \item the positive $y$-axis part are rotated and moved to the negative $x$-axis part;
+        \item the negative $x$-axis part are rotated and moved to the negative $y$-axis part, while;
+        \item the negative $y$-axis part are rotated and moved to the positive $x$-axis part.
+    \end{enumerate}
+    Our recitation on anti-clockwise rotation can be done by observing the general pattern: \[(x,y)\mapsto(-y,x)\] for every 90 degree anti-clockwise rotation. Define the rotation function $\mathcal{R}$ such that $\mathcal{R}(x,y)=(-y,x)$, we shall call $\mathcal{R}$ a \textbf{rotor}.
+
+    On the other hand, considering a clockwise rotation by 90 degrees about origin as an anti-clockwise rotation by 270 degrees about origin, we can write \[(x,y)\mapsto (y,-x)\] to be a clockwise rotation by 90 degrees.
+
+    Not only rotation of specific angles can be done. If you wish, a rotation with any degrees can be represented by a specific operation. We now observe that for any rotation, the length between the rotated coordinates and the origin is exactly the same as that before the rotation, which is due to the definition of rotation. It follows the discussion on trigonometry that we can generalize the condition as below:
+
+    Let $(x,y)$ be the original coordinates and assume the coordinates is equivalent to $(r,\theta)$ in polar coordinates. A \textbf{$\varphi$-rotation} is defined by applying $\mathcal{R}_{\varphi}:(r,\theta)\mapsto(r,\theta+\varphi)$ and we can write the rotation result as follows:\begin{align*}
+        \mathcal{R}_{\varphi}(x,y)&=\mathcal{R}_{\varphi}(r\cos{\theta},r\sin{\theta})\\
+        &=(r\cos(\theta+\varphi),r\sin(\theta+\varphi))\\
+        &=(r\cos{\theta}\cos{\varphi}-r\sin{\theta}\sin{\varphi},r\sin{\theta}\cos{\varphi}+r\cos{\theta}\sin{\varphi})\\
+        &=(x\cos{\varphi}-y\sin{\varphi},x\sin{\varphi}+y\cos{\varphi})
+    \end{align*}
+    Such $\mathcal{R}_{\varphi}$ is called a $\varphi$-rotor. It should have no ambiguities that a rotor means an operator of rotation, while a rotation is a noun for such performance.
+    For some pure mathematicians, they had a tastier version of revision through matrix \[\begin{bmatrix}
+        x'\\y'
+    \end{bmatrix}=\begin{bmatrix}
+        \cos{\varphi}&-\sin{\varphi}\\
+        \sin{\varphi}&\cos{\varphi}
+    \end{bmatrix}\begin{bmatrix}
+        x\\y
+    \end{bmatrix}\]
+
     \subsubsection*{Function Translation}
 
+    We comes to the place of functions. Defining function with a graph seems abstract, but the representation makes sense and behave well during discussions. Let us consider the graph $G$ stands for the picture of the function $y=f(x)$, so whenever we need to discuss the properties of the graph, we can write the definition as \[G:=\{y=f(x):x\in\mathbb{R}\}\]
+
+    For convenience, we translate our words using coordinates so that the application of transformation of graphs can be analyze through coordinates. Redefining $G$ by the following set: \[G:=\{(x,y):y=f(x),x\in\mathbb{R}\}\] It seems wasting logic, but the underlying concept of such definition is stronger than writing an equivalence. We will see that every point on the graph shares similarities.
+
+    To construct a useful theorem for translation operation, we start by looking at every coordinates on the graph. We put our definition of translation down here.
+
+    \begin{definition}[Function graph translation]
+        Let $G$ be a graph of the function $y=f(x)$. A \textbf{function graph translation} means a general point translation on all points in the graph.
+    \end{definition}
+
+    This means that, if we have to move the graph around, it is equivalent to saying moving each point on the graph around.
+
+    Consider a horizontal translation first, as in point translation. A horizontal translation of the function graph by $h$ units is preformed as \[(x,y)\mapsto (x+h,y).\] Since we have $y=f(x)$ to define the graph, each coordinates can be rewritten as \[(x+h,f(x))=(x_0,f(x_0-h))\] by substituting $x_0=x+h$. It follows that a horizontal translation by $h$ units is by transforming $y=f(x)$ into $y=f(x-h)$.
+
+    Similarly, a horizontal translation of the function graph by $k$ units is preformed as \[(x,y)\mapsto (x,y+k).\] Since, again, we have $y=f(x)$ to define the graph, each coordinates can be rewritten as \[(x,f(x)+k).\] It follows that a vertical translation by $k$ units is by transforming $y=f(x)$ into $y=f(x)+k$.
+
+    Now we draw a partial conclusion to summarize translation of graphs.
+
+    \begin{theorem}
+        Given $G:=\{(x,y):y=f(x),x\in\mathbb{R}\}$ be a function graph.\begin{itemize}
+            \item A horizontal translation by $h$ units is performed by $y=f(x)\mapsto f(x-h)$;
+            \item A vertical translation by $k$ units is performed by $y=f(x)\mapsto f(x)+k$.
+        \end{itemize}
+        Furthermore, translation is commutative and compositive. A composite translation by $(h,k)$ defines the simultaneous translation in both direction is performed by \[y=f(x)\mapsto f(x-h)+k\]
+    \end{theorem}
+
     \subsubsection*{Function Dilation}
+
+    A dilation means we can enlarge or diminish the graph, at the same time perform rotation if needed. It is important to notice that dilation and translation are not commutative to each other, so we separate their section of discussion here.
+
+    Let us focus on the cases centered at origin first. Again, we will define the graph $G$ of the function $f$ using the set \[G:=\{(x,y):y=f(x),x\in\mathbb{R}\}\]
+
+    \begin{definition}[Vertical dilation centered at origin]
+        A vertical dilation is a dilation along $y$-axis. Given the dilation factor $a$ of vertical dilation, we have \[(x,y)\mapsto(x,ay)\]
+    \end{definition}
+
+    The main idea here is to rescale the vertical displacement between the point $(x,y)$ and the origin. We then apply $y=f(x)$ to the presentation to yield \[y=f(x)\mapsto af(x)\]
+    
+    Similarly, we have the version for horizontal dilation.
+    
+    \begin{definition}[Horizontal dilation centered at origin]
+        A horizontal dilation is a dilation along $x$-axis. Given the dilation factor $b$ of vertical dilation, we have \[(x,y)\mapsto(bx,y)\]
+    \end{definition}
+
+    With the same strategy of modification, we have \[y=f(x)\mapsto f(\frac{x}{b})\]
+
+    And what's the purpose to call it `about origin'? If we apply vertical and horozontal dilation simultaneously, it is natural to ask to questions:\begin{enumerate}
+        \item How about when we do not scale the graph about origin? and;
+        \item What is the total scaling?
+    \end{enumerate}
+
+    We shall answer the first question first. Recall in previous part we have been discussing translation thoroughly. Let us define translation operator $T_{(h,k)}$ to perform the action `translating by $(h,k)$' and its inverse $T_{(h,k)}^{-1}$ to return the original position. It is not hard to see $T_{(h,k)}^{-1}=T_{-(h,k)}$. On the other hand, pick $D_x^b$ to be the dilation operator by factor $b$ along $x$-axis, and $D_y^a$ for that of $y$-axis. 
+
+    Observe that a dilation centered at some point $(h,k)$ is difficult to imagine when no clues can be drawn in terms of direction (assuming we need to understand the process without vectors). We shall translate the thought to centering at origin first so that we can apply what we have investigate for the case centered at origin. Then we translate back to $(h,k)$. Follow the thought, we have the following idea.
+
+    \begin{theorem}[Vertical dilation centered at $(h,k)$]
+        Given the dilation factor $a$ of vertical dilation, for a vertical dilation centered at $(h,k)$, we perform \[T_{(h,k)}\circ D_y^a \circ T_{-(h,k)}(x,y)\]
+    \end{theorem}
+
+    Following the idea of composition of translation and dilation, we can write down the conclusion without operators.
+    
+    \begin{align*}
+        T_{(h,k)}\circ D_y^a \circ T_{-(h,k)}(x,y)&=T_{(h,k)}\circ D_y^a(x-h,y-k)\\
+        &=T_{(h,k)}(x-h,a(y-k))\\
+        &=(x,ay-ak+k)
+    \end{align*}
+
+    In terms of function, it is equivalent to \[y=f(x)\mapsto af(x)-ak+k\]
+
+    Similarly, we construct the Horizontal dilation centered at $(h,k)$ by the following composition.
+
+    \begin{theorem}[Horizontal dilation centered at $(h,k)$]
+        Given the horizontal factor $b$ of vertical dilation, for a horizontal dilation centered at $(h,k)$, we perform \[T_{(h,k)}\circ D_x^b \circ T_{-(h,k)}(x,y)\]
+    \end{theorem}
+
+    \begin{align*}
+        T_{(h,k)}\circ D_x^b \circ T_{-(h,k)}(x,y)&=T_{(h,k)}\circ D_x^b(x-h,y-k)\\
+        &=T_{(h,k)}(b(x-h),y-k)\\
+        &=(bx-bh+h,y)
+    \end{align*}
+
+    Now that we can rewrite in terms of function \[y=f(x)\mapsto f(\frac{1}{b}x+\frac{bh-h}{b})\]
+
+    In order to simplify the theory, let us combine all situations to close the file of dilation in highschool level.
+
+    \begin{theorem}
+        Let $f$ be a function and $G$ be the graph of $f$. If the graph is dilated horizontally by $b$ centered at $(x_1,y_1)$ and vertically by $a$ centered at $(x_2,y_2)$, the function is transformed as follows: \[y=f(x)\mapsto af(\frac{1}{b}x+\frac{bx_2-x_2}{b})-ay_1+y_1\]
+    \end{theorem}
+
+    We stop here for highschool part. We are going to answer the second question with some view points in higher Mathematics.
+
+    Let us define the \textbf{total scaling} by observing that under the dilation centered at origin, the displacement from origin will be (i) multiplied by $b$ horizontally with $D_x^b$ and (ii) multiplied by $a$ vertically with $D_y^a$. We define the operator norm $\norm*{f}$ to be the maximal scaling factor of applying the function $f$, i.e. there exists an integer $M$ such that \[M=\norm*{f}=\sup\{|f(x)|:|x|=1\}\] Then a total scaling is exactly the norm of a dilation operator. To compute, we have\begin{align*}
+        \norm*{D_y^a\circ D_x^b}&=\norm*{(x,y)\mapsto(bx,ay)}\\
+        &=\sup{\sqrt{a^2+b^2}}\\
+        &=\sqrt{a^2+b^2}
+    \end{align*}
+
+    It is complicated to check that any dilation follows the above total scaling under Euclidean gemetry. We shall believe it, otherwise, more nuclear tools are needed to prove the result rigorously.
 
     \subsection{Challenging questions}
 
