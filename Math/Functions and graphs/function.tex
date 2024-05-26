@@ -578,8 +578,87 @@
     Let us consider a simple case first. We define the term \textbf{Homogeneous} for the situation of \textbf{zero equality}, i.e. Let $f$ be a function and $G:=\{(x,y):y=f(x),x\in\mathbb{R}\}$, the homogeneous equation of $f$ is the equation $f(x)=0$.
 
     To solve a homogeneous equation, we consider the graph $G$ in which it states the equality from where $y$ values. We shall put $y=0$ to see where the equality holds. In fact, we see the solution at the $x$-axis - they are the roots of $G$.
+    
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+            axis y line = middle,
+            axis x line = middle,
+            xlabel = \(x\),
+            ylabel = {\(f(x)\)},
+            xmin=-5, xmax=5,
+            ymin=-50, ymax=100
+            ]
+            \addplot [
+                domain=-5:5, 
+                samples=100, 
+                color=blue,
+            ]
+            {(x+3)*(x+1)*(x-2)*(x-4)};
+
+            \addplot+ [nodes near coords,only marks,
+            point meta=explicit symbolic]
+            table [meta=label] {
+            x y label
+            -3 0 (-3,0)
+            -1 0 (-1,0)
+            2 0 (2,0)
+            4 0 (4,0)
+            };
+            \end{axis}
+        \end{tikzpicture}            
+    \end{center}
+
+    In the above example, the roots of the graph of the function $f(x)$ are the coordinates $$\{(-3,0), (-1,0), (2,0), (4,0)\},$$ which we shall see their y-coordinates are all zero. This satisfies and due to the method we chose on the graph observation - adding the line $y=0$, which is in fact the x-axis.
 
     \subsubsection*{Non-homogeneous equations}
+
+    For the case of non-homogeneous equations, we have two ways to solve the problem. One is by using the homogeneous case, another is by graph directly.
+
+    Now set the problem to be $f(x)=k$, where $f$ is a function of $x$ and $k$ is a constant independent from $x$. The mechanism behind the nonzero equality is the manipulation of equation. We can move $k$ to the left side so that \[f(x)-k=0\] and we reach the homogeneous condition for \[h(x)=0\] if we let $h(x)=f(x)-k$. This gives us a critical view that we can always rearrange terms to construct homogeneous problems for solving.
+
+    However, we are assumed to know nothing about transformation of graphs, that hold us back from this approach. Let us think of adding a line to complete the equality. For $f(x)=k$ we shall add the line $y=k$ to observe its intersection with $y=f(x)$. The graph shows the condition is in fact similar to that of homogeneous one.
+
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+            axis y line = middle,
+            axis x line = middle,
+            xlabel = \(x\),
+            ylabel = {\(f(x)\)},
+            xmin=-5, xmax=5,
+            ymin=-50, ymax=100
+            ]
+            \addplot [
+                domain=-5:5, 
+                samples=100, 
+                color=blue,
+            ]
+            {(x+3)*(x+1)*(x-2)*(x-4)};
+
+            \addplot [
+                domain=-5:5,
+                samples=100,
+                color=green,
+            ]
+            {51.5625};
+
+            \addplot+ [nodes near coords,only marks,
+            point meta=explicit symbolic]
+            table [meta=label] {
+            x y label
+            -3.5 51.5625 (-3.5,$k$)
+            4.5 51.5625 (4.5,$k$)
+            };
+            \end{axis}
+        \end{tikzpicture}            
+    \end{center}
+
+    In fact, we choose to add a line rather than move the whole graph to another position as we cannot explicitly draw a new graph representing the resultant graph. We can have a new plot, but it is usually implicit due to the computation of roots.
+
+    What's more in non-homogeneous case, the homogeneity can be tuned as described above, although it can be time-consuming, the concept worth dive into. That will be a case in the next part. Now we do something more to familiarize with graphical inception.
+
+    Suppose we have another equation $f(x)=mx+c$, where $m$ defines the slope of the straight line and $c$ is its $y$-intercept. Could we still follow the graphical inception to complete the 
 
     \subsubsection*{Simultaneous equations}
 
