@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+
+\graphicspath{{../img/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{測驗4:溫習測驗}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \subsection*{甲部}
+    \begin{enumerate}
+        \item 設$\dfrac{(2x-a)^6}{e^{kx}}$的$x$變量展開式中$x^2$及$x$的係數分別爲$38$及$10$，求$a$及$k$的值。
+        \item 假設$X\sim Po(r)$，其中$r>0$為實變數。\begin{enumerate}
+            \item 以$r$表示$P(X=x)$.
+            \item 求$\dfrac{dP}{dr}$及$\dfrac{d^2P}{dr^2}$.
+            \item 若以梯形法則估算$\int_{0}^{t}P(X=x) dr$的值，其結果為過高估算還是過低估算？試解釋。
+        \end{enumerate}
+        \item 已知在一場射箭比賽中，A選手在$\ell$米射程的命中率（$10\leq \ell \leq 50$）如下\begin{center}
+            \begin{tabular}{|c||c|c|c|c|c|c|c|}
+                \hline
+                命中得分區&靶外（0分）&5分&6分&7分&8分&9分&10分\\
+                \hline
+                過往概率&$0.001\ell$&0.1&$3p$&0.4&$p$&$0.00005(1000-2\ell)$&$0.05-0.0009\ell$\\
+                \hline
+            \end{tabular}
+        \end{center}
+        其中$p(\ell)$為$\ell$的函數。
+        而B選手的命中率從靶外到10分區呈二項分佈。現記A選手的命中概率分佈為$Z_A$，B選手的命中概率分佈為$Z_B$。\begin{enumerate}
+            \item 求$p$的值。
+            \item 以$\ell$表示$E[Z_A]$及$E[Z_B]$的值。
+            \item 根據香港射箭總會本地賽事守則（戶外定距靶）2017年11月修訂版内容1.13新秀組計分賽的描述，每個選手需要在25米及18米各射程射出36箭以完成比賽，得分較高者獲勝。\begin{enumerate}
+                \item 求選手A射出的箭全部命中靶面的概率。
+                \item 求選手B的箭無法全部命中靶面的概率。
+                \item 已知選手A及B在經歷70箭後暫時平分，而兩人均未嘗射出靶外。兩人現餘下最後兩回18米射程的機會，并且按照兩人的狀態而言，可知選手A在餘下兩箭不會射出靶外，而選手B至少會失手一箭。求A獲勝的概率。
+            \end{enumerate}
+        \end{enumerate}
+        \item 假設某人的作畫速度為平均每小時4頁原稿，其作畫頁數跟從泊松分佈。記連續整點（例如12:00-13:00、14:00-15:00）為一個時段。該人每個工作天作畫4個時段。\begin{enumerate}
+            \item 求該人於一個時段内作出多於6頁原稿的概率。
+            \item 求該人於一個工作天内最多僅有一個時段作出多於6頁原稿的概率。
+            \item 若該人能於一個時段内作出多於6頁原稿，便稱之爲心流時段。若該人能在一個工作天内達成兩個或以上心流時段，便稱之爲高效率工作天，否則為一般工作天。目前距離截稿日尚餘4個工作天。\begin{enumerate}
+                \item 求這四個工作天中至少有一天為高效率工作天的概率。
+                \item 已知四天中至少有一天為高效率工作天，求四天均爲高效率工作天的概率。
+                \item 求一般工作天的產出期望值，由此求高效工作天的產出期望值。
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
