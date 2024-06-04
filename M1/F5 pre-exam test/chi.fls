@@ -324,15 +324,11 @@ INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstop
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\latex\ctex\fd\c70rm.fd
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\latex\ctex\fd\c70rm.fd
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\latex\ctex\fd\c70rm.fd
-INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei75.tfm
-OUTPUT chi.pdf
-INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei90.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong8a.tfm
+OUTPUT chi.pdf
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -488,8 +484,6 @@ INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simsun.ttc
-INPUT C:\Windows\Fonts\simhei.ttf
-INPUT C:\Windows\Fonts\simhei.ttf
 INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simsun.ttc

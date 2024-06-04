@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1717448371.44357 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M1/F5 pre-exam test/chi.tex" "chi.pdf" "chi" 1717448373.32872 0
+["pdflatex"] 1717508817.36253 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M1/F5 pre-exam test/chi.tex" "chi.pdf" "chi" 1717508819.98203 0
   "C:/Users/admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1713295035 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/admin/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1712144605 24236005 c88e7c424cf89ae31096ea9949e90ec2 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
@@ -10,7 +10,6 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233951854 928 2dc8d444221b7a635bb58038579b861a ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1233951854 908 2921f8a10601f252058503cc6570e581 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1233951854 940 228d6584342e91276bf566bcf9716b83 ""
-  "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136765053 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -22,8 +21,6 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
-  "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei75.tfm" 1247154072 1172 a25bf5894dd20c7f5582ee012df9c39f ""
-  "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unihei/unihei90.tfm" 1247154072 1172 bf3a9ea28c06174042dcd642737f0ad2 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong30.tfm" 1247154072 1172 87d6ba1aff8b955258f6ef7a5d8e86e5 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong4e.tfm" 1247154072 1172 89be830028b08964827966f204abf065 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong4f.tfm" 1247154072 1172 dd7ec0fe171ece0b66015cb8929849f0 ""
@@ -281,11 +278,10 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1657817710 5700 603e2f09dad175efabc8594730623a0b ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1657817710 38160 aafa8d740e4f21b62a4acd4835e54359 ""
   "C:/Windows/Fonts/msyh.ttc" 1712143540 19701556 07c864a5b15e68fa47639738197fae38 ""
-  "C:/Windows/Fonts/simhei.ttf" 1651871400 9753388 6abc0fcfbaa40600f9cecca3afeb3aa7 ""
   "C:/Windows/Fonts/simsun.ttc" 1712143540 18008680 490583a172d4371a68d1e0526a6bca81 ""
-  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M1/F5 pre-exam test/chi.tex" 1717448370 4164 f7e0a13eefe3352a334799dcb94a780a ""
-  "chi.aux" 1717448372 112 a79fe896b56b4862b346df1ebf05b16d "pdflatex"
-  "chi.tex" 1717448370 4164 f7e0a13eefe3352a334799dcb94a780a ""
+  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M1/F5 pre-exam test/chi.tex" 1717508815 4388 8ab211e372560744211e74733fcb490f ""
+  "chi.aux" 1717508819 112 a79fe896b56b4862b346df1ebf05b16d "pdflatex"
+  "chi.tex" 1717508815 4388 8ab211e372560744211e74733fcb490f ""
   (generated)
   "chi.aux"
   "chi.log"
