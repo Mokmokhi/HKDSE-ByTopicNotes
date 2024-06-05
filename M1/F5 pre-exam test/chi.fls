@@ -398,7 +398,6 @@ INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\u
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong97.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong69.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong80.tfm
-INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong98.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong64.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong99.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong6e.tfm
@@ -412,15 +411,16 @@ INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\u
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong61.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong81.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong75.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong98.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong9e.tfm
-INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong6d.tfm
-INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong96.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong7f.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\tex\generic\ctex\zhmap\ctex-zhmap-windows.tex
 INPUT C:\Users\admin\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\sfd\ttf2pk\UGBK.sfd
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\sfd\ttf2pk\Unicode.sfd
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong6d.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong96.tfm
 INPUT chi.aux
 INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simsun.ttc

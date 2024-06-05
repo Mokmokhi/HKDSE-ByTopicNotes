@@ -43,7 +43,7 @@
         \item 假設$X\sim Po(r)$，其中$r>0$為實變數。\begin{enumerate}
             \item 以$r$表示$P(X=x)$.
             \item 求$\dfrac{dP}{dr}$及$\dfrac{d^2P}{dr^2}$.
-            \item 若以梯形法則估算$\int_{0}^{t}P(X=x) dr$的值，其結果為過高估算還是過低估算？試解釋。
+            \item 若$t>2x$，以梯形法則估算$\int_{2x}^{t}P(X=x) dr$的值，其結果為過高估算還是過低估算？試解釋。
         \end{enumerate}
         \item 已知在一場射箭比賽中，A選手在$\ell$米射程的命中率（$10\leq \ell \leq 50$）如下\begin{center}
             \begin{tabular}{|c||c|c|c|c|c|c|c|}
@@ -54,7 +54,15 @@
                 \hline
             \end{tabular}
         \end{center}
-        而B選手的命中率從靶外到10分區呈二項分佈。現記A選手的命中概率分佈為$Z_A$，B選手的命中概率分佈為$Z_B$。\begin{enumerate}
+        而B選手的命中率從靶外到10分區的概率如下\begin{center}
+            \begin{tabular}{|c||c|c|c|c|c|c|c|}
+                \hline
+                命中得分區&靶外（0分）&5分&6分&7分&8分&9分&10分\\
+                \hline
+                過往概率&$\dfrac{C_0^6}{2^6}$&$\dfrac{C_1^6}{2^6}$&$\dfrac{C_2^6}{2^6}$&$\dfrac{C_3^6}{2^6}$&$\dfrac{C_4^6}{2^6}$&$\dfrac{C_5^6}{2^6}$&$\dfrac{C_6^6}{2^6}$\\
+                \hline
+            \end{tabular}
+        \end{center}現記A選手的命中概率分佈為$Z_A$，B選手的命中概率分佈為$Z_B$。\begin{enumerate}
             \item 求$p$的值。
             \item 以$\ell$表示$E[Z_A]$及$E[Z_B]$的值。
             \item 根據香港射箭總會本地賽事守則（戶外定距靶）2017年11月修訂版内容1.13新秀組計分賽的描述，每個選手需要在25米及18米各射程射出36箭以完成比賽，得分較高者獲勝。\begin{enumerate}
