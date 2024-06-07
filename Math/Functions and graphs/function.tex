@@ -4,14 +4,18 @@
 \usepackage{blindtext}
 \usepackage{nameref}
 \usepackage{fancyhdr}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{color,amsmath,amssymb,amsthm,physics}
 \usepackage{graphicx,float}
 \usepackage{physics}
 \usepackage{pgfplots}
 \usepackage[a4paper, total={7in, 9in}]{geometry}
 \usepackage{multicol}
+\usepackage{framed}
+\usepackage{xcolor}
 
 \graphicspath{ {../images/} }
+
+\definecolor{shadecolor}{RGB}{220,220,220}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -36,6 +40,7 @@
 
 \newtheorem{exercise}{Essential Practice}[subsection]
 \newenvironment{solution}{\textbf{Solution.} \par}{\hfill \textit{\dots end of solution}}
+\renewenvironment{proof}[1][Proof]{\begin{snugshade*} \textit{{#1}.}\\}{\hfill \qedsymbol \end{snugshade*}}
 
 
 \begin{document}
@@ -610,6 +615,21 @@
     \end{center}
 
     In the above example, the roots of the graph of the function $f(x)$ are the coordinates $$\{(-3,0), (-1,0), (2,0), (4,0)\},$$ which we shall see their y-coordinates are all zero. This satisfies and due to the method we chose on the graph observation - adding the line $y=0$, which is in fact the x-axis.
+
+    Let us proceed to higher dimension, in order to generalize the concept of homogeneity. Here we will introduce \textbf{multivariated function} $f:\mathbb{R}^n\to \mathbb{R}$ so that we have the following equation \[f(x_1,x_2,\dots ,x_n)=0\]
+
+    In 2-dimensional sense, we have to consider \[f(x,y)=0\] which is quite confusing for newbies. One question about this type of homogeneous equation is that how to compute it solution, since most of our concepts are related to visualization. In fact, we have no simple clue to solve such abtract equation, but we should think of how can it be solved.
+
+    Let $f(x,y):=x^2+y^2$, then the problem \[f(x,y)=0\] becomes \[x^2+y^2=0\] which has only one real solution pair $(x,y)=(0,0)$. To show this guess is true we can do a two-step verification.
+
+    \begin{proof}[Proof of $(0,0)$ is the only real solution to the equation $x^2+y^2=0$]
+        We first claim for the existence of the solution. It is simple, as we need only to substitute the pair into the equation:\begin{align*}
+            LHS &= 0^2+0^2=0\\
+            RHS &= 0
+        \end{align*}
+
+        Then we have to show the uniqueness of the solution. By rearranging terms of the equation, we have \[y^2=-x^2\] which is critical for determination. We have $x^2\geq 0$ by real solution requirement, so as $y^2\geq 0$. From the rearranged equation, we have also $y^2\leq 0$. The only interception of the condition is where $y^2=0$, so as $x^2$. The result follows.
+    \end{proof}
 
     \subsubsection*{Non-homogeneous equations}
 
