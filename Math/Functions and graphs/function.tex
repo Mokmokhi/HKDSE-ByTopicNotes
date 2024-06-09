@@ -631,6 +631,8 @@
         Then we have to show the uniqueness of the solution. By rearranging terms of the equation, we have \[y^2=-x^2\] which is critical for determination. We have $x^2\geq 0$ by real solution requirement, so as $y^2\geq 0$. From the rearranged equation, we have also $y^2\leq 0$. The only interception of the condition is where $y^2=0$, so as $x^2$. The result follows.
     \end{proof}
 
+    In the example, we have let $f$ to be equal to zero. Such solution is called a \textbf{zero level set} of $f$. For any other constant $k$ such that $f(x,y)=k$, the solution to the equation will be called a $k$-level set of $f$. We will see more about it in the next part.
+
     \subsubsection*{Non-homogeneous equations}
 
     For the case of non-homogeneous equations, we have two ways to solve the problem. One is by using the homogeneous case, another is by graph directly.
@@ -678,7 +680,95 @@
 
     What's more in non-homogeneous case, the homogeneity can be tuned as described above, although it can be time-consuming, the concept worth dive into. That will be a case in the next part. Now we do something more to familiarize with graphical inception.
 
-    Suppose we have another equation $f(x)=mx+c$, where $m$ defines the slope of the straight line and $c$ is its $y$-intercept. Could we still follow the graphical inception to complete the 
+    Suppose we have another equation $f(x)=mx+c$, where $m$ defines the slope of the straight line and $c$ is its $y$-intercept. Could we still follow the graphical inception to find a solution set? The answer should be positive. Indeed, we may draw the oblique line on the graph as previous work.
+
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+            axis y line = middle,
+            axis x line = middle,
+            xlabel = \(x\),
+            ylabel = {\(f(x)\)},
+            xmin=-5, xmax=5,
+            ymin=-50, ymax=100
+            ]
+            \addplot [
+                domain=-5:5, 
+                samples=100, 
+                color=blue,
+            ]
+            {(x+3)*(x+1)*(x-2)*(x-4)};
+
+            \addplot [
+                domain=-5:5,
+                samples=100,
+                color=green,
+            ]
+            {20.625*x-41.25};
+
+            \addplot+ [nodes near coords,only marks,
+            point meta=explicit symbolic]
+            table [meta=label] {
+            x y label
+            2 0 (2,0)
+            4.5 51.5625 (4.5,$4.5m+c$)
+            };
+            \end{axis}
+        \end{tikzpicture}            
+    \end{center}
+
+    For any functions $f$ and $g$, if we need to find their equation, it is obvious to follow the graphing method as we have done above.
+
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+            axis y line = middle,
+            axis x line = middle,
+            xlabel = \(x\),
+            ylabel = {\(f(x)\)},
+            xmin=-5, xmax=5,
+            ymin=-50, ymax=100
+            ]
+            \addplot [
+                domain=-5:5, 
+                samples=100, 
+                color=blue,
+            ]
+            {(x+3)*(x+1)*(x-2)*(x-4)};
+
+            \addplot [
+                domain=-5:5,
+                samples=100,
+                color=green,
+            ]
+            {3.75*(x+1)*(x-2)};
+
+            \addplot+ [nodes near coords,only marks,
+            point meta=explicit symbolic]
+            table [meta=label] {
+            x y label
+            -3.5 51.5625 (-3.5,$f(-3.5)$)
+            -1 0 (-1,$f(-1)$) 
+            2 0 (2,$f(2)$)
+            4.5 51.5625 (4.5,$f(4.5)$)
+            };
+            \end{axis}
+        \end{tikzpicture}            
+    \end{center}
+
+    In order to extend to higher dimensional problems, we recall the concept of level sets, which we used it for homogeneous condition. In fact, if any non-homogeneous condition can be converted to homogeneous condition, the methodology holds trivially.
+
+    Consider a simple case $f(x)=k$, we know that by subtracting $k$ on both sides, we have $f(x)-k=0$. Let $h(x):=f(x)-k$, then the condition becomes solving \[h(x)=0\]
+
+    The conversion means that we may see the $k$-level set of $f$ as a zero level set of $h$ with suitable substitution. This provides a huge intuition for general situation.
+
+    Let us think of the last discussed non-homogeneous equation. Suppose $f(x)$ and $g(x)$ are functions of $x$ and we are going to consider $f(x)=g(x)$. We rearrange them into \[h(x):=f(x)-g(x)=0\] so that again a homogeneous equation appears. Note that we didn't resrtict $f$ and $g$ to be any fixed type function, that means the methodology is widely applicable.
+
+    Moreover, if we are giong to higher dimensional problem, where we have to solve for at least two-dimensional homogeneous equation $f(x,y)=0$, a powerful tool can be imagined by reversing the thought we discussed.
+    
+    \begin{theorem}[Implicit function theorem]
+        Let $f:\mathbb{R}^n\to\mathbb{R}$ be an $n$-dimensional function and suppose $f(\mathbf{x}_0,y)=0$. Consider a smooth neighbourhood $N_{\varepsilon}(\mathbf{x}_0)$ with $\varepsilon>0$ such that $\forall \mathbf{x} \in N_{\varepsilon}(\mathbf{x}_0)$, $|\mathbf{x}-\mathbf{x}_0|<\varepsilon$. Then $\exists \varphi:N_{\varepsilon}(\mathbf{x}_0)\to\mathbb{R}$ such that $y=\varphi(\mathbf{x})$ for $\mathbf{x}\in N_{\varepsilon}(\mathbf{x}_0)$.
+    \end{theorem}
 
     \subsubsection*{Simultaneous equations}
 
