@@ -770,6 +770,19 @@
         Let $f:\mathbb{R}^n\to\mathbb{R}$ be an $n$-dimensional function and suppose $f(\mathbf{x}_0,y)=0$. Consider a smooth neighbourhood $N_{\varepsilon}(\mathbf{x}_0)$ with $\varepsilon>0$ such that $\forall \mathbf{x} \in N_{\varepsilon}(\mathbf{x}_0)$, $|\mathbf{x}-\mathbf{x}_0|<\varepsilon$. Then $\exists \varphi:N_{\varepsilon}(\mathbf{x}_0)\to\mathbb{R}$ such that $y=\varphi(\mathbf{x})$ for $\mathbf{x}\in N_{\varepsilon}(\mathbf{x}_0)$.
     \end{theorem}
 
+    The proof requires higher level mathematics that inherits the concepts of differentiability. Let me write it down as understandable as I could for interested readers. You may also believe in it without knowing the proof, since it is the level of pure mathematcian.
+
+    \begin{proof}
+        Define $\displaystyle \partialderivative{x_i}$ to be the partial derivative operator with respect to $x_i$ only, i.e. Any other variables that is not equivalent to $x_i$ is seen constant. From this if we let $\{x_1,x_2,\dots,x_n\}$ be a set of orthogonal basis, we may see \begin{align*}
+            \partialderivative{x_j}{x_i}=\delta_{ij}
+        \end{align*} and by $f(\mathrm{x}_0,y)=0$ such that \begin{align*}
+            0=\mathrm{d}f&=(\sum \partialderivative{f}{x_i}\mathrm{d}x_i) + \partialderivative{f}{y}\mathrm{d}y\\
+            \derivative{y}{x_i}&\neq 0&\forall i
+        \end{align*}
+        Then There is a linearization for $y$ in terms of $x_i$ within $N_{\varepsilon}(\mathbf{x}_0)$ such that \[\varphi(\mathbf{x})=\sum \derivative{y}{x_i}x_i\]
+        For a small enough $\varepsilon$, such function $\varphi(\mathbf{x})$ can be computed that \[|f(\mathbf{x},y)-f(\mathbf{x},\varphi(\mathbf{x}))|\approx 0\]
+    \end{proof}
+
     \subsubsection*{Simultaneous equations}
 
     \subsection{Transformation of functions}
