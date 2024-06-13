@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1718027645.58303 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1718027649.36317 0
+["pdflatex"] 1718296631.13484 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1718296636.57308 0
   "../images/C-A-S-T.png" 1714818949 9030 b5468451e5eff58cc02f0e93d610a03a ""
   "../images/ab.png" 1712136333 11813 d9cbe6b5dbb2f8e0cb1fdf8ef722dd12 ""
   "../images/blobs-and-arrows diagram sequence.png" 1712136333 12755 640c195bf330fdff88680d695178266e ""
@@ -257,10 +257,10 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1657817710 5700 603e2f09dad175efabc8594730623a0b ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1657817710 38160 aafa8d740e4f21b62a4acd4835e54359 ""
   "C:/Windows/Fonts/msyh.ttc" 1712143540 19701556 07c864a5b15e68fa47639738197fae38 ""
-  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1718027643 214964 e18365bf71cdbc417ee1eafddfaca33e ""
-  "function.aux" 1718027648 8249 2ecb3458c257f4ec613fa6755847498e "pdflatex"
-  "function.tex" 1718027643 214964 e18365bf71cdbc417ee1eafddfaca33e ""
-  "function.toc" 1718027648 4771 0a3d6e34a3792eecba3ae09fbeb974ce "pdflatex"
+  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1718296628 217030 0a98e7f726611437c12b69f98077b5f9 ""
+  "function.aux" 1718296636 8249 3a7953e85ced27929fa55ee3e50d6c3d "pdflatex"
+  "function.tex" 1718296628 217030 0a98e7f726611437c12b69f98077b5f9 ""
+  "function.toc" 1718296636 4771 a249559726403151eae0f5d0953bd69f "pdflatex"
   (generated)
   "function.aux"
   "function.log"

@@ -775,7 +775,7 @@
     \begin{proof}
         Define $\displaystyle \partialderivative{x_i}$ to be the partial derivative operator with respect to $x_i$ only, i.e. Any other variables that is not equivalent to $x_i$ is seen constant. From this if we let $\{x_1,x_2,\dots,x_n\}$ be a set of orthogonal basis, we may see \begin{align*}
             \partialderivative{x_j}{x_i}=\delta_{ij}
-        \end{align*} and by $f(\mathrm{x}_0,y)=0$ such that \begin{align*}
+        \end{align*} and by $f(\mathbf{x}_0,y)=0$ such that \begin{align*}
             0=\mathrm{d}f&=(\sum \partialderivative{f}{x_i}\mathrm{d}x_i) + \partialderivative{f}{y}\mathrm{d}y\\
             \derivative{y}{x_i}&\neq 0&\forall i
         \end{align*}
@@ -783,11 +783,32 @@
         For a small enough $\varepsilon$, such function $\varphi(\mathbf{x})$ can be computed that \[|f(\mathbf{x},y)-f(\mathbf{x},\varphi(\mathbf{x}))|\approx 0\]
     \end{proof}
 
+    The implicit function theorem (where I stated a simpllified version) provides us a convincing basis of giving a `good approximation' on a local region of a surface. That means whenever we need to consider higher dimensional eqiuations, we have another view for solving level sets with partial coordinates. It also provides a valid transformation between geometric problem and algebraic problems.
+
     \subsubsection*{Simultaneous equations}
+
+    The most general case of equation is usually called a system of equations. A system is usually identified when there are correlation between equations, i.e. they are required to be solved at the same time. A textbf{simultaneous equation} is a specific form of a system that inherits only a pair of equations, and that provided a fundamental case for the development of solving skills.
+
+    Let us review a first degree duo variable simultaneous equation that we have learnt in junior secondary.
+
+    Let $a,b,c,d,m,n$ be some known constants and $x,y$ be unknown variables. The first degree duo variable simultaneous equations is in the form of \[\begin{cases}
+        ax+by&=m\\
+        cx+dy&=n
+    \end{cases}\]
+    and indeed with solutions \[\begin{cases}
+        x&=\displaystyle \frac{dm-bn}{ad-bc}\\
+        y&=\displaystyle \frac{cm-an}{bc-ad}
+    \end{cases}\]
+
+    If we generalize the situation to any degree of duo variables, we may consider \[\begin{cases}
+        f(x,y)&=m\\
+        g(x,y)&=n
+    \end{cases}\]
+    where $f,g$ are functions of $x$ adn $y$, and $m,n$ are constants.
 
     \subsection{Transformation of functions}
 
-    Let us revisit the fundamental of transformation, pointwise trannsformation, so that we have the solid foundation for what transformation of function does.
+    Let us revisit the fundamental of transformation, pointwise transformation, so that we have the solid foundation for what transformation of function does.
 
     \subsubsection*{Point Translation}
 
@@ -2371,14 +2392,18 @@
 
     So far, we have determined the slope of a straight line which relates to the direction of prosession very much, and we aim to discuss more about the real-world application of slope of straight line. We will take inspiration from polar coordinate and circular trigonometry.
 
-    Any straight line has a unique $x$-intercept, and we will make use of the angle at that point. Recall from trigonometry, the value of the tangent function at some point agrees with the slope from origin to that point. Let $\mathfrak{M}$ be the slope of the line \textit{passes through origin}. Then it is not hard to see \[\tan{\theta}=\mathfrak{M}=\frac{y}{x}\]
+    Any straight line has a unique $x$-intercept, and we will make use of the angle at that point. Recall from trigonometry, the value of the tangent function at some point agrees with the slope from origin to that point. Let $\mathfrak{M}$ be the slope of the line $L$ which \textit{passes through origin}. Then it is not hard to see \[\tan{\theta}=\mathfrak{M}=\frac{y}{x}\]
 
     \begin{figure}[H]
         \centering
         \includegraphics[scale=0.8]{rectpolar.png}
     \end{figure}
 
-    If we see $\tan{\theta}$ as a function of $x$ and $y$, let us write $\theta(x,y)=\tan^{-1}(\dfrac{y}{x})$ to define the method of finding 
+    If we see $\tan{\theta}$ as a function of $x$ and $y$, let us write $\theta(x,y)=\tan^{-1}(\dfrac{y}{x})$ to define the method of finding the angle between the horizontal line and $L$. If we need to consider any line on the plane, we may simply do a shift on $L$ to find the required angle, but the slope function of a line is in fact invariant under translation, i.e. does not change its value when translation is done. Hence, it is satisfying to see the following result
+
+    \begin{theorem}
+        The angle between the line $L$ passes through any two points $(a_1,b_1)$ and $(a_2,b_2)$ is given by \[\theta=|\arctan{\frac{b_1-b_2}{a_1-a_2}}|\]
+    \end{theorem}
 
     \subsubsection*{Angle of elevation from horizon}
 
