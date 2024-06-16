@@ -2717,11 +2717,62 @@
         \end{itemize}
     \end{example}
 
-    The equation derived in this part helps the intropduction to next session.
+    The equation derived in this part helps the introduction to next session.
 
     \subsubsection*{The quadratic formula}
 
-    The quadratic formula $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$ is used to solve the quadratic equation directly when the equation has solution.
+    The quadratic formula $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$ is used to solve the quadratic equation directly when the equation has solution. However, we might need to consider the domain of $x$ as real roots and complex roots exists with different conditions.
+
+    We expect every quadratic polynomial is solvable, in fact, by letting $i^2=-1$, the roots can always be represented in the form of $a+bi$.
+
+    \begin{example}[One real root]
+        Suppose $f(x):=x^2+2x+1$, the roots to $f(x)$ are the solution of $f(x)=0$, and \[x=\frac{-2\pm\sqrt{(2)^2-4(1)(1)}}{2(1)}=-1\]
+    \end{example}
+
+    \begin{example}[Distinct real root]
+        Suppose $p(x):=x^2+2x-3$, the roots to $p(x)$ are  \[x=\frac{-2\pm\sqrt{(2)^2-4(1)(-3)}}{2(1)}=-3 \mathrm{ or } 1\]
+    \end{example}
+
+    \begin{example}[No real root a.k.a. complex root with real coefficients]
+        If $g(x):=3x^2+2x+1$, then $g(x)=0$ gives us \[x=\frac{-2\pm\sqrt{2^2-4(3)(1)}}{2(3)}=-\frac{1}{3}\pm\frac{\sqrt{2}}{3}i\]
+    \end{example}
+
+    In advance to complex quadratic equation, for whom interest in, let us write down the arithmetic of complex numbers.
+
+    \begin{definition}[Complex number]
+        Define $i\notin\mathbb{R}$ such that $i^2=-1$. A complex number is a form of number constructed by real number and $i$. In particular, a number in the form of $a+bi$, where $a,b$ are real constants, is said to be in the standard form of a complex number. The set of complex number is denoted by $\mathbb{C}$.
+    \end{definition}
+
+    \begin{definition}[Real and imaginary part]
+        For any complex number $z\in\mathbb{C}$, if there is $a,b\in\mathbb{R}$ such that $z=a+bi,$ we may call $a$ the \textbf{real part of $z$}, denoted by $\Re{z}$, and $b$ the \textbf{imaginary part of $z$}, denoted by $\Im{z}$.
+    \end{definition}
+
+    \begin{theorem}
+        Let $z,w\in\mathbb{C}$, then the arithmetic performs:\begin{itemize}
+            \item $z\pm w=(\Re{z}\pm \Re{w})+(\Im{z}\pm \Im{w})$;
+            \item $zw = (\Re{z}\Re{w}-\Im{z}\Im{w})+(\Re{z}\Im{w}+\Im{z}\Re{w})i$.
+        \end{itemize}
+    \end{theorem}
+
+    \begin{definition}[Complex conjugate]
+        Let $z\in\mathbb{C}$, then its \textbf{complex conjugate} $z^*$ is defined by $\Re{z}-\Im{z}i$
+    \end{definition}
+    
+    \begin{definition}[Modulus]
+        The \textbf{modulus} of a complex number $z$ is defined by \[|z|=\sqrt{\Re{z}^2+\Im{z}^2}\]
+    \end{definition}
+
+    \begin{proposition}
+        The following holds for any non-zero complex number $z$:\[z z^* = |z|^2\]
+    \end{proposition}
+
+    \begin{theorem}
+        There is no division in complex number, but a generalized inverse of complex numbers can be written \[z^{-1}=\frac{1}{|z|^2}(z^*)\]
+    \end{theorem}
+
+    \begin{example}[Complex roots with complex coefficients]
+        Let $c(x):=(1+2i)z^2+(7-i)z+(2+3i)$, then \[z=\frac{-(7-i)\pm\sqrt{(7-i)^2-4(1+2i)(2+3i)}}{2(1+2i)}=\frac{-7+i\pm\sqrt{64-42i}}{2(1+2i)}=\]
+    \end{example}
 
     \subsection{Solvability of Quadratic Equations}
 
