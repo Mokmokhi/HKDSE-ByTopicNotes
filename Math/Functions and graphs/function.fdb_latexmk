@@ -1,7 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1718533668.67232 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1718533674.68904 0
+["pdflatex"] 1718651393.3991 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" "function.pdf" "function" 1718651399.12783 0
   "../images/C-A-S-T.png" 1714818949 9030 b5468451e5eff58cc02f0e93d610a03a ""
   "../images/ab.png" 1712136333 11813 d9cbe6b5dbb2f8e0cb1fdf8ef722dd12 ""
+  "../images/argand.jpg" 1712136333 7646 fa339ac58a5efb54452a395a71712fb5 ""
   "../images/blobs-and-arrows diagram sequence.png" 1712136333 12755 640c195bf330fdff88680d695178266e ""
   "../images/blobs-and-arrows diagram.png" 1712136333 13341 58184d3ea4e3c6569ffaefb6c2fdcfe6 ""
   "../images/heron.png" 1712136333 26439 6325434fec5d0a5608be68a6652f4038 ""
@@ -257,10 +258,10 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1657817710 5700 603e2f09dad175efabc8594730623a0b ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1657817710 38160 aafa8d740e4f21b62a4acd4835e54359 ""
   "C:/Windows/Fonts/msyh.ttc" 1712143540 19701556 07c864a5b15e68fa47639738197fae38 ""
-  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1718533653 224955 83fe0583c73b9afc45f0fad9f2aa6baf ""
-  "function.aux" 1718533674 8257 e9b5cd872931eecdb320d72aee541e57 "pdflatex"
-  "function.tex" 1718533653 224955 83fe0583c73b9afc45f0fad9f2aa6baf ""
-  "function.toc" 1718533674 4779 d59eaa25f8bc3bb46545b5631b05402f "pdflatex"
+  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Functions and graphs/function.tex" 1718651391 230535 bcf199e0675129aa797dec8989134ff0 ""
+  "function.aux" 1718651398 8264 bd917ff711139ab02beada4517c4efdd "pdflatex"
+  "function.tex" 1718651391 230535 bcf199e0675129aa797dec8989134ff0 ""
+  "function.toc" 1718651398 4786 56acde0d85d80dcd76a3fa1fde65ca86 "pdflatex"
   (generated)
   "function.aux"
   "function.log"

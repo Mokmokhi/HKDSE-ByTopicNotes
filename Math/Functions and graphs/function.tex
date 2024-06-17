@@ -2737,6 +2737,12 @@
         If $g(x):=3x^2+2x+1$, then $g(x)=0$ gives us \[x=\frac{-2\pm\sqrt{2^2-4(3)(1)}}{2(3)}=-\frac{1}{3}\pm\frac{\sqrt{2}}{3}i\]
     \end{example}
 
+    The real-solvability will be discussed later. In order to investigate quadratic equation with a full picture, let us pay some attention to complex numbers.
+
+    \subsubsection*{Additional: Complex numbers and complex quadratic polynomial}
+
+    As long as we saw complex roots in solving quadratic equations, which was a death debate in some old days of great religious country, it is natural to ask a question: Do we allow complex coefficients in a quadratic equation? Could the field of solution remains capable of writing all solution to that kind of newly defined quadratic equations? The answer is positive, but we need to take care of how it works.
+
     In advance to complex quadratic equation, for whom interest in, let us write down the arithmetic of complex numbers.
 
     \begin{definition}[Complex number]
@@ -2754,29 +2760,112 @@
         \end{itemize}
     \end{theorem}
 
+    May I introduce a view of complex number here. We usually visualize complex numbers using a plane comparable to the rectangular plane, called \textbf{Argand plane} - a two dimensional sheet with perpendicular axes representing real part and imaginary part of a complex number.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{argand.jpg}
+    \end{figure}
+
+    The accessibility is equivalent to that of rectangular plane, however, placing each complex numbers in a suitable position without overlapping. The working logic behind the scenes is that the real part and imaginary part of a complex number does not collide when arithmetic is done. Moreover, multiplication of $i$ provides well-captured geometric meaning, which is another story for geometry topics.
+
     \begin{definition}[Complex conjugate]
         Let $z\in\mathbb{C}$, then its \textbf{complex conjugate} $z^*$ is defined by $\Re{z}-\Im{z}i$
     \end{definition}
+
+    We shall see the complex conjugate of a complex number is a reflection over the real line.
     
     \begin{definition}[Modulus]
         The \textbf{modulus} of a complex number $z$ is defined by \[|z|=\sqrt{\Re{z}^2+\Im{z}^2}\]
     \end{definition}
 
+    The modulus of a complex number can be thought of as its distance from 0 on the argand plane.
+
     \begin{proposition}
         The following holds for any non-zero complex number $z$:\[z z^* = |z|^2\]
     \end{proposition}
 
+    \begin{proof}
+        By simple computation, we shall obtain \begin{align*}
+            z z^* &= (\Re{z}+\Im{z}i)(\Re{z}-\Im{z}i)\\
+            &=\Re{z}^2+\Im{z}^2\\
+            &=|z|^2
+        \end{align*}
+    \end{proof}
+
     \begin{theorem}
-        There is no division in complex number, but a generalized inverse of complex numbers can be written \[z^{-1}=\frac{1}{|z|^2}(z^*)\]
+        There is no division in complex number, but a generalized multiplicative inverse of complex numbers can be written \[z^{-1}=\frac{1}{|z|^2}(z^*)\]
     \end{theorem}
 
+    \begin{proof}
+        A multiplicative inverse $z^{-1}$ of a complex number $z$ satisfies the rule that $z z^{-1}=z^{-1}z=1$. We shall have \[z\frac{z^*}{|z|^2}=1\] by the proposition, and thus we can identify the inverse of $z$.
+    \end{proof}
+
+    \begin{definition}[Complex quotient]
+        The \textbf{quotient of $z$ by $w$}, denoted by $\frac{z}{w}$, is given by \[\frac{z}{w}:=zw^{-1}\] when $w\neq 0$.
+    \end{definition}
+
+    From the view point of argand plane, we will try to simplify a complex number in the following context:
+
+    \begin{theorem}
+        For any $z\in\mathbb{C}$, there is an $r\in\mathbb{R}$ and $\theta \in [0,2\pi)$ such that $$z=r(\cos{\theta}+i\sin{\theta})$$
+    \end{theorem}
+
+    \begin{proof}
+        Left as an exercise.
+    \end{proof}
+
+    Such $r$ in the theorem can be easily checked to be $|z|$, and we shall call $\theta$ the \textbf{principle argument of $z$}, denoted by $\arg{z}$.
+
+    \begin{theorem}[DeMoivre's Theorem]
+        Let $z,w\in\mathbb{C}$, and write $z=r(\cos{\theta}+i\sin{\theta}),w=s(\cos{\phi}+i\sin{\phi})$. Then $$zw=rs(\cos(\theta+\phi)+i\sin(\theta+\phi))$$
+    \end{theorem}
+
+    \begin{proof}
+        Through direct computation\begin{align*}
+            zw&=r(\cos{\theta}+i\sin{\theta})s(\cos{\phi}+i\sin{\phi})\\
+            &=rs(\cos{\theta}+i\sin{\theta})(\cos{\phi}+i\sin{\phi})\\
+            &=rs(\cos{\theta}\cos{\phi}-\sin{\theta}\sin{\phi}+i(\cos{\theta}\sin{\phi}+\sin{\theta}\cos{\phi}))\\
+            &=rs(\cos(\theta+\phi)+i\sin(\theta+\phi))
+        \end{align*}
+    \end{proof}
+
+    \begin{proposition}[Complex base exponentiation]
+        For any $z\in\mathbb{C}$, write $z=r(\cos{\theta}+i\sin{\theta})$ and suppose $n\in\mathbb{N}$, the integral exponentiation of a complex number is $$z^n=r^n(\cos(n\theta)+i\sin(n\theta))$$
+    \end{proposition}
+
+    \begin{proof}
+        Left as an exercise.
+    \end{proof}
+
+    \begin{corollary}
+        For any $z\in\mathbb{C}$, write $z=r(\cos{\theta}+i\sin{\theta})$ and suppose $x\in\mathbb{R}$, the real exponentiation of a complex number is $$z^x=r^x(\cos(x\theta)+i\sin(x\theta))$$
+    \end{corollary}
+
+    In fact, we can define a new function, call it the \textbf{cis}-function and define $\cis:x\mapsto \cos{x}+i\sin{x}$ with respect to previous discussion, we could observe that \[\cis{x+y}=\cis{x}\cis{y}\] which is taking up good properties. We shall review the properties of complex numbers in terms of the cis-function.
+
+    \begin{definition}[The polar form of complex number]
+        A number in the form of $r\cis{\theta}$, where $r,\theta$ are real constants, is said to be in the polar form of a complex number.
+    \end{definition}
+
+    \begin{definition}[Complex conjugate]
+        Let $r\cis{\theta}=:z\in\mathbb{C}$, then its \textbf{complex conjugate} $z^*$ is defined by $r\cis{-\theta}$.
+    \end{definition}
+
+    \begin{definition}[Complex multiplication and quotient]
+        Let $z=r\cis{\theta}$ and $w=s\cis{\phi}$. The \textbf{product of $z$ by $w$} is defined as \[zw:=rs\cis{\theta+\phi}\] The \textbf{quotient of $z$ by $w$} is defined by \[\frac{z}{w}:=zw^{-1}=\frac{r}{s}\cis{\theta-\phi}\] when $w\neq 0$.
+    \end{definition}
+
+    According to the polar form of complex number, we can now easily solve the complex version quadratic equation.
+
     \begin{example}[Complex roots with complex coefficients]
-        Let $c(x):=(1+2i)z^2+(7-i)z+(2+3i)$, then \[z=\frac{-(7-i)\pm\sqrt{(7-i)^2-4(1+2i)(2+3i)}}{2(1+2i)}=\frac{-7+i\pm\sqrt{64-42i}}{2(1+2i)}=\]
+        Let $c(x):=\alpha z^2+\beta z+\gamma$, where $\alpha,\beta,\gamma\in\mathbb{C}$, then \[z=\frac{-\beta \pm\sqrt{\beta^2-4\alpha\gamma}}{2\alpha}\]
+        Put $\Delta:=\beta^2-4\alpha\gamma$, then the formula reduces to \[z=\frac{1}{2}(\alpha^{-1}\beta\pm\alpha^{-1}\Delta^{1/2})=\frac{1}{2}(|\alpha^{-1}\beta|\cis{\arg{\beta}-\arg{\alpha}}\pm|\alpha^{-1}\Delta^{1/2}|\cis{\frac{1}{2}\arg{\Delta}-\arg{\alpha}})\]
     \end{example}
 
     \subsection{Solvability of Quadratic Equations}
 
-    \subsubsection*{Discriminant: the factor affecting solvability}
+    \subsubsection*{Discriminant: the factor affecting real-solvability}
 
     \subsubsection*{Application of solvability}
 
