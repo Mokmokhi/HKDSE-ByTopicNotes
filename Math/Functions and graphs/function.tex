@@ -3022,8 +3022,18 @@
     \end{theorem}
 
     \begin{proof}
-        The proof will be done through Mathematical Induction.
+        The proof will be done through Mathematical Induction. For the base case we pick $n=0$ so that \[(x+y)^0=1=C_0^0 x^0 y^0\] is a desired result. Next, we shall see if there is a positive integer $m\in\mathbb{Z}_{\geq 0}$ satisfying the $m$-th proposition \[(x+y)^m=\sum_{r=0}^{m}C_r^m x^{m-r} y^{r}\] then the $(m+1)$-th proposition can be induced as follows:\begin{align*}
+            (x+y)^{m+1}&=(x+y)(x+y)^m\\
+            &=(x+y)\sum_{r=0}^{m}C_r^m x^{m-r} y^{r}\\
+            &=\sum_{r=0}^{m}C_r^m x^{m-r+1} y^{r} + \sum_{r=0}^{m}C_r^m x^{m-r} y^{r+1}\\
+            &=\sum_{r=0}^{m}C_r^m x^{m-r+1} y^{r} + \sum_{r=1}^{m+1}C_{r-1}^m x^{m-r+1} y^{r}\\
+            &=\sum_{r=0}^{m+1}C_r^{m+1} x^{m-r+1} y^{r} &\because C_r^n+C_{r-1}^n=C_r^{n+1}
+        \end{align*}
     \end{proof}
+
+    \begin{corollary}[Multinomial theorem]
+        Let $x_1,x_2,\dots,x_k\in\mathbb{R}$ and $n\in\mathbb{N}$. Then \[(x_1+x_2+\cdots+x_k)^n=\sum_{r_1+r_2+\cdots+r_k=n}C_{r_1}^n C_{r_2}^{n-r_1}\cdots C_{r_{k-1}}^{n-r_1-r_2-\cdots-r_{k-2}} x_1^{r_1}x_2^{r_2}\cdots x_k^{r_k} \] where $C_r^n$ is defined by combination discussed in the section of counting functions.
+    \end{corollary}
 
     \subsubsection*{Division}
 
