@@ -39,8 +39,8 @@
 \newtheorem*{axiom}{Axiom}
 
 \newtheorem{exercise}{Essential Practice}[subsection]
-\newenvironment{solution}{\begin{snugshade*} \textbf{Solution.} \par}{\hfill \textit{\dots end of solution} \end{snugshade*}}
-\renewenvironment{proof}[1][Proof]{\begin{snugshade*} \textit{{#1}.}\\}{\hfill \qedsymbol \end{snugshade*}}
+\newenvironment{solution}{\begin{snugshade*} \underline{\textbf{Solution.}} \par}{\hfill \textit{\dots end of solution} \end{snugshade*}}
+\renewenvironment{proof}[1][Proof]{\begin{snugshade*} \underline{\textit{{#1}.}}\\}{\hfill \qedsymbol \end{snugshade*}}
 
 
 \begin{document}
@@ -3036,6 +3036,14 @@
     \end{corollary}
 
     \subsubsection*{Division}
+
+    We had a concept of division if we refer to the natural number set $\mathbb{N}$. However, the way we did in primary school that quotient and remainder are considered shall be called a residual division, meaning we have to take care of integral quotient and positive remainder smaller than the divisor only. Shall we rewrite the representation \[a \divisionsymbol b = q \dots r\] into \textbf{Division Algorithm} \[a= bq + r\] so that every division can be rewritten as a composition of addition and multiplication.
+
+    We may consider the above concept in polynomial sense. Replacing the integers $a,b,q,r$ by $a(x),b(x),q(x),r(x)$ respectively tells us there is some similarities between integral division and polynomial division, but be careful on how we define the concept of $larger$ in the sense of polynomial.
+
+    \begin{definition}[Order]
+        An order of a polynomial is a general name for degree of a polynomial, defined by the maximal power in the polynomial. We usually abuse the notation $\deg{f}$ to denote the degree of a polynomial $f$ at the same time its order, for which is a greater number. 
+    \end{definition}
 
     \subsection{Divisibility of polynomials}
 

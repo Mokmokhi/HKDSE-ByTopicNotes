@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{color,amsmath,amssymb,amsthm,physics}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{xcolor}
+
+\graphicspath{ {../images/} }
+
+\definecolor{shadecolor}{RGB}{220,220,220}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{A discussion on straight line}
+\fancyhf[HR]{\rightmark}
+\fancyhf[CF]{\thepage}
+\fancyhf[FL]{\copyright Mok Owen 2024}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+\newcommand{\cis}[1]{\mathrm{cis}({#1})}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\newtheorem{exercise}{Essential Practice}[subsection]
+\newenvironment{solution}{\begin{snugshade*} \underline{\textbf{Solution.}} \par}{\hfill \textit{\dots end of solution} \end{snugshade*}}
+\renewenvironment{proof}[1][Proof]{\begin{snugshade*} \underline{\textit{{#1}.}}\\}{\hfill \qedsymbol \end{snugshade*}}
+
+
+\begin{document}
+    \begin{abstract}
+        It is quite straight forward to think about straight line and it seems unnecessary to discuss what does it mean by a straight line, as what we could relate when the word `straight forward' appears, however, a straight line is not as trivial as a word phrase did in the study of Mathematics. I will introduce some interesting pure mathematical concepts in relation to straight line. It might sounds like a word game to realize such meaning and their importance to the discussion, but it worths defining such words to unsieze the mystery of Geometry.
+    \end{abstract}
+
+    \section{Topological Space}
+
+    A \textbf{topological space} is a basic setup for discussion in pure mathematics. For this discussion I hope we all have included the knowledge about Mathematical sets; otherwise, it is too young to debate.
+
+    \begin{definition}[Topology]
+        A \textbf{topology} $\mathcal{T}_X$ on a set $X$ is a collection of subsets that satisfies the following properties:\begin{itemize}
+            \item $\emptyset, X\in \mathcal{T}_X$;
+            \item $\bigcup_{\alpha\in I} A_{\alpha}\in \mathcal{T}_X$ if $A_{\alpha}\in\mathcal{T}_X$ with arbitrary index set $I$;
+            \item $\bigcap_{\alpha\in I} A_\alpha \in \mathcal{T}_X$ for $A_\alpha\in\mathcal{T}_X$ with a finite index set $I$.
+        \end{itemize}
+    \end{definition}
+
+    A topology can be thought of as a structure presetting what sets are observable. The word `topology' is a composite word formed by `top' and `logic', what I would like to interpret as `a logic of topping sets up'. Therefore we have many works on sets. 
+
+    If $A\in \mathcal{T}_X$ we shall call $A$ an \textbf{open set} of the topology; and if $B\subset X$ and $B^c\in\mathcal{T}_X$, we shall call $B$ a \textbf{closed set} of the topology. It is quite absurd to name the sets open in a topology as there is a similar term called open interval in usual discussion, which was puzzling when I first heard the term. We shall understand it in the following way: An \textbf{open set} of a topology is a set that is \textit{directly observable} through the topology, and a closed set is \textit{indirectly observable} through the topology, in which you can observe it by flipping it (e.g. taking its complement). If a set cannot be observed using any strategies, i.e. not related to the topology, we shall call it \textbf{neither open nor closed}; and if both the set and the complement of the set are able to be observed through the topology directly, we shall call it \textbf{both open and closed}.
+
+    To be simple, it is like if the set is opened to you, then it is an open set, vice versa.
+
+    \begin{definition}[Topological Space]
+        A \textbf{topological space} is a pair $(X,\mathcal{T}_X)$ consisting of a set $X$ and a topology $\mathcal{T}_X$ on $X$.
+    \end{definition}
+
+    \begin{example}[Trivial topological space]
+        Let $X$ be a non-empty set and define $\mathcal{T}_X=\{\emptyset, X\}$. This is a minimal topology on $X$.
+    \end{example}
+
+    \begin{proof}[Prove that trivial topology is indeed a topology]
+        To prove the case we need to verify all requirements. It is clear that $\emptyset, X\in\mathcal{T}_X$ by definition. We also find $\emptyset\cap X=\emptyset\in\mathcal{T}_X$ and $\emptyset\cup X = X\in\mathcal{T}_X$. The requirement is then satisfied.
+    \end{proof}
+
+    The achievement here is we have built a basic space contains only a structure, describing the containment of sets and objects. Could we consider any lines here? Not yet. We shall have no idea on lines if we are not describing geometrical objects.
+
+    \section{Metric Space}
+
+    \section{Euclidean and Non-Euclidean Geometry}
+
+    \section{Curves}
+
+    \section{Curvature}
+
+    \section{Straight line}
+    
+\end{document}
