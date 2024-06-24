@@ -85,12 +85,48 @@
     \begin{proof}[Prove that $P(X)$ is a topology on $X$]
         Since $\emptyset\subset X$ and $X\subset X$, we have $\emptyset, X\in P(X)$. Let $A,B\subset X$, then by definition $A\cap B, A\cup B\subset X$. Hence, $A\cap B, A\cup B\in P(X)$. It remains to show $\bigcup_{\alpha\in I}A_{\alpha}\in P(X)$.
 
-        The arbitrary union under $X$ is a consequence of Zorn's lemma. Let $\forall x_k\in X$ we can assign an increasing chain $C(x_k)$ such that for any $A,B\in C(x_k)$ the statement $A\subset B$ or $B\subset A$ is true, and $\forall A\in C(x_k)$ they are subsets of $X$. As long as that increasing chain is collected from $X$, \[\bigcup_{A\in C(x_k)}A\subset X\] and thus \[\bigcup_k \bigcup_{A\in C(x_k)}A\subset X.\] Since any subset $S$ of $X$ satisfies $S\in C(x_k)$ for some positive integer $k\leq N$, We have the arbitrary union $\bigcup_{\alpha\in I} A_{\alpha}$ is a subset of $\bigcup_k C(x_k)$ and thus the arbitrary union is a subset of $X$.
+        The arbitrary union under $X$ is a consequence of Zorn's lemma. Let $\forall x_k\in X$ we can assign an increasing chain $C(x_k)$ such that for any $A,B\in C(x_k)$ the statement $A\subset B$ or $B\subset A$ is true, and $\forall A\in C(x_k)$ they are subsets of $X$. As long as that increasing chain is collected from $X$, \[\bigcup_{A\in C(x_k)}A\subset X\] and thus \[\bigcup_k \bigcup_{A\in C(x_k)}A\subset X.\] Since any subset $S$ of $X$ satisfies $S\in C(x_k)$ for some positive integer $k\leq N$, We have the arbitrary union $\bigcup_{\alpha\in I} A_{\alpha}$ is a member of $\bigcup_k C(x_k)$ and thus the arbitrary union is a subset of $X$.
     \end{proof}
+
+    \begin{example}[Real standard topological space]
+        The \textbf{standard topology} on $\mathbb{R}$ is the topology $T:=\{U\subset \mathbb{R}: \forall x\in U, \exists a,b\in\mathbb{R}, x\in (a,b)\}$. The pair $(\mathbb{R},T)$ is called \textbf{real standard topological space}.
+    \end{example}
+
+    \begin{example}[Complex standard topological space]
+        Define $B_r^{\times}(x_0):=\{x\in\mathbb{C}:0< |x-x_0| < r\}$ for $r\in\mathbb{R}$, call it \textbf{punctured open r-disc centered at $z_0$}. The \textbf{standard topology} on $\mathbb{C}$ is defined by $T:=\{U\subset\mathbb{C}:\forall z\in U, \exists r>0, \exists z_0\in\mathbb{C}, z\in B_r^{\times}(z_0)\}$. The pair $(\mathbb{C},T)$ is called a \textbf{complex standard topological space}.
+    \end{example}
+
+    In the sense of $\mathbb{R}^n$, we usually define a \textbf{usual topology} to cope with standard topology. Such topology is defined similar to the one described in complex case, and call $B_r^{\times}(x_0)$ a \textit{punctured open ball with radius $r$ centered at $x_0$}. I will leave the exploration on it to interested readers.
 
     The achievement here is we have built a basic space contains only a structure, describing the containment of sets and objects. Could we consider any lines here? Not yet. We shall have no idea on lines if we are not describing geometrical objects.
 
-    In order to proceed to geometrical objects, we need to define
+    In order to proceed to geometrical objects, we need to define the terms \textbf{connectedness}, \textbf{compactness} and \textbf{continuity}.
+
+    \begin{definition}[Connectedness]
+        A topological space $(X,T)$ is \textbf{connected} if $X$ cannot be a union of any two open sets, i.e. $\forall A,B \in T$ such that $A\cap B=\emptyset$, $A\cup B\neq X$.
+    \end{definition}
+
+    The definition looks abstract nonsense, but bear in mind that our open sets are depends on the topology. Take the following examples for the determination.
+
+    \begin{example}
+        The real standard topological space is connected.
+    \end{example}
+
+    \begin{proof}
+        The complete proof shall be left as an exercise. It is not hard to observe that any open interval $(a,b)\subset \mathbb{R}$ cannot be a disjoint union of two open sets. Hence the whole space.
+    \end{proof}
+
+    \begin{example}
+        Let $T$ be the \textbf{lower limit topology} on $\mathbb{R}$, i.e. $T:=\{[a,b)\subset \mathbb{R}: a,b\in\mathbb{R}\}$. Then $(\mathbb{R},T)$ is disconnected.
+    \end{example}
+
+    \begin{proof}
+        It is easy to see that $\mathbb{R}=\displaystyle \lim_{n\to \infty}\bigcup_{k=-n}^n [k,k+1)$ and we are done.
+    \end{proof}
+
+    \begin{definition}[Compactness]
+        
+    \end{definition}
 
     \section{Metric Space}
 
