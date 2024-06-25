@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1719252069.67356 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Straight line/SL.tex" "SL.pdf" "SL" 1719252074.85738 0
+["pdflatex"] 1719338016.39206 "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Straight line/SL.tex" "SL.pdf" "SL" 1719338017.87776 0
   "C:/Users/admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1717906461 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/admin/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1712144655 14064 8db67c0b6819e47ef462d86d143e7cb0 ""
   "C:/Users/admin/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1712144605 24236005 c88e7c424cf89ae31096ea9949e90ec2 ""
@@ -28,6 +28,8 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti12.tfm" 1136765053 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
+  "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti7.tfm" 1136765053 1492 86331993fe614793f5e7e755835c31c5 ""
+  "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti8.tfm" 1136765053 1504 1747189e0441d1c18f3ea56fafc1c480 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1247596667 36554 b67dc2cfa451409e100b3fcf5f506509 ""
@@ -41,6 +43,7 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb" 1247596666 35660 fb24af7afbadb71801619f1415838111 ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1707324350 146276 10a40dabec03ce18494af0c3a51bcbdc ""
@@ -230,9 +233,9 @@
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1657817710 5700 603e2f09dad175efabc8594730623a0b ""
   "C:/Users/admin/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1657817710 38160 aafa8d740e4f21b62a4acd4835e54359 ""
   "C:/Windows/Fonts/msyh.ttc" 1712143540 19701556 07c864a5b15e68fa47639738197fae38 ""
-  "SL.aux" 1719252074 733 ce565929c59e47adeb8ae187dbd527ec "pdflatex"
-  "SL.tex" 1719252069 9125 37f07b24be4290b933822e9c530dd218 ""
-  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Straight line/SL.tex" 1719252069 9125 37f07b24be4290b933822e9c530dd218 ""
+  "SL.aux" 1719338017 733 ce565929c59e47adeb8ae187dbd527ec "pdflatex"
+  "SL.tex" 1719338015 10843 4fb0038f58c85a50490526fdf0c8bf39 ""
+  "c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/Straight line/SL.tex" 1719338015 10843 4fb0038f58c85a50490526fdf0c8bf39 ""
   (generated)
   "SL.aux"
   "SL.log"

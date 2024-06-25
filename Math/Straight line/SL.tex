@@ -124,9 +124,31 @@
         It is easy to see that $\mathbb{R}=\displaystyle \lim_{n\to \infty}\bigcup_{k=-n}^n [k,k+1)$ and we are done.
     \end{proof}
 
-    \begin{definition}[Compactness]
-        
+    Next, we are going to define the term \textbf{compactness}. We geenralize the `feel' of compact, that is, there is boundary included inside the set. We will do some relations on boundary with open sets, refer to any particular topology, and thus to generalize the concept of a bound. We start with a geometrically topological object called \textbf{cover}.
+
+    \begin{definition}[Open cover]
+        Let $(X,T)$ be a topological space. Suppose $U\subset X$ and there is a collection of open sets $A_\alpha \in T$ with $\alpha\in I$, and \[U\subset \bigcup_{\alpha\in I}A_\alpha,\] then we call $\{A_\alpha\in T: \alpha\in I\}$ an \textbf{open cover} of $U$; some textbook may simply call it a \textbf{cover} of $U$ as it is obvious to refer to open sets.
     \end{definition}
+
+    \begin{definition}[Subcover]
+        For a given topological space $(X,T)$, Suppose $U$ and $V$ be open covers of $A\subset X$. If $U\subset V$, then $U$ is said to be a \textbf{subcover} of $A$ under $V$.
+    \end{definition}
+
+    Of course, we can reverse the definition of subcover to write a supercover, but that is useless.
+
+    \begin{definition}[Compactness]
+        A topological space $(X,T)$ is said to be \textbf{compact} if every open cover of $X$ has a finite subcover.
+    \end{definition}
+
+    \begin{example}
+        The interval $(0,1)$ is not a compact set in $((0,1),T_{\textrm{usual}})$, where $T_{\textrm{usual}}$ is the usual topology on the open interval $(0,1)$ induced from that in $\mathbb{R}$.
+    \end{example}
+
+    \begin{example}
+        The interval $[0,1]$ is a compact set in $([0,1],T_{\textrm{usual}})$.
+    \end{example}
+
+    Could we argue for any difference between a straight line and a curved line under certain condition? No, we can't.
 
     \section{Metric Space}
 
