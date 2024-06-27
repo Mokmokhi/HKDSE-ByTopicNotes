@@ -2808,7 +2808,7 @@
     From the view point of argand plane, we will try to simplify a complex number in the following context:
 
     \begin{theorem}
-        For any $z\in\mathbb{C}$, there is an $r\in\mathbb{R}$ and $\theta \in [0,2\pi)$ such that $$z=r(\cos{\theta}+i\sin{\theta})$$
+        For any $z\in\mathbb{C}$, there is an $r\in\mathbb{R}$ and $\theta \in \left[0,2\pi\right)$ such that $$z=r(\cos{\theta}+i\sin{\theta})$$
     \end{theorem}
 
     \begin{proof}
@@ -2865,13 +2865,83 @@
 
     \subsection{Solvability of Quadratic Equations}
 
+    As we have discussed in previous subsection that any quadratic equation has its solvaility by the quadratic formula, we now focus on the real-solvability of the quadratic equation, which plays around particularly with the formula inside the square-root notation of the formula. We will denote the formula by a symbol $\Delta$ - as what we did in the last example. Such formula will be named \textbf{discriminant} of a quadratic equation.
+
     \subsubsection*{Discriminant: the factor affecting real-solvability}
+
+    Shall we define the discriminant of any quadratic equation in the general form $ax^2+bx+c=0$ with $a\neq 0$ to be \[\Delta=b^2-4ac\] so that the characteristics of the roots of the equation can be deduced solely dependent on one such formula. It is satisfying to see if $\Delta$ is computed to be greter than $0$, there are two distinct real roots in total; if it is equal to $0$, the number of roots become $1$; or else there should be no real root but two complex roots. And I should adhere claim the following table of discrimination works only for quadratic equations of real coefficients; otherwise, the number of roots may not be uniquely determined.
+
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            $\Delta$&Number of real roots&Nature of roots\\
+            \hline
+            $>0$&2&2 distinct real roots\\
+            \hline
+            $=0$&1&Double real roots / Equal roots / 1 real root\\
+            \hline
+            $<0$&0&No real roots / 2 distinct complex roots\\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    You should be so careful on the word `real', as we discussed before, the counting does not work for complex roots.
+
+    \begin{example}
+        Determine the nature of roots of the following. If it has real root(s), Solve for it.\begin{enumerate}
+            \item[(a)] $7x^2+5x-10=0$.
+            \item[(b)] $81x^2-18x+1=0$.
+            \item[(c)] $20x^2+19x+10=0$.
+        \end{enumerate}
+    \end{example}
+
+    \begin{solution}
+        \begin{enumerate}
+            \item[(a)] Checking the discriminant $\Delta=b^2-4ac=5^2-4(7)(-10)=305>0$, so it has 2 distinct real roots. By substituting the $\Delta$ back to the quadratic formula, we have \begin{align*}
+                x=\frac{-b\pm\sqrt{\Delta}}{2a}=\frac{-5\pm\sqrt{305}}{14}
+            \end{align*}
+            \item[(b)] Checking the discriminant $\Delta=b^2-4ac=(-18)^2-4(81)(1)=0$, so it has 1 double real root. By substituting the $\Delta$ back to the quadratic formula, we have \begin{align*}
+                x=\frac{-b}{2a}=\frac{18}{162}=\frac{1}{9}
+            \end{align*}
+            \item[(c)] Checking the discriminant $\Delta=b^2-4ac=19^2-4(20)(10)=-439<0$, so it has no real roots. 
+        \end{enumerate}
+    \end{solution}
 
     \subsubsection*{Application of solvability}
 
+    The application of solvability is a beautiful intersection between theory and practice. Let us consider one practical example in Physics, which is called the `Attack helicopter and the Cannon' (Yes, this is a hollow example created by myself in writing this section).
+
+    Consider a connon is placed on the ground with the angle of elevation being equal to $\theta\in(0,\pi/2)$. To simplify the problem we just configure the initial speed of projection of the cannon ball to be $v$ ms$^{-1}$. Assume there is no air resistance acting on the cannon ball and the gravitational acceleration is $g$ ms$^{-2}$, acting towards the ground.
+
+    It is also given that the height of the connon ball with respect to the horizontal position can be computed by the formula \[H=-\frac{g}{2v^2\cos^2{\theta}}x^2+(tan{\theta})x\] where we identify the position of the cannon as $x=0$.
+
+    From the given information, we can compute that if an attack helicopter is flying horizontally over the sky and it is just above the locus of the cannon ball, we need for safety reason to caculate the least height of the flying attack helicopter so that no damage is caused by unwanted intersection. Put $H=H_0$ to be the height of the attack helicopter, we are required to find \[H_0=-\frac{g}{2v^2\cos^2{\theta}}x^2+(tan{\theta})x\] with no real roots, so that no intersection is found for the roots. With the help of discriminant, it is reduced to solve the inequality \[(\tan{\theta})^2-4(-\frac{g}{2v^2\cos^2{\theta}})(-H_0)<0\] and that yields \[H_0>\frac{v^2\sin^2{\theta}}{2g}\]
+
+    Let's look at some simple examples in order to understand the presentation above.
+
+    \begin{example}
+        It is known that the quadratic equation $kx^2-4x+k=0$ has only one real root, with real number $k$. Solve the equation.
+    \end{example}
+
+    \begin{solution}
+        By checking the discriminant, we obtain the following:\begin{align*}
+            (-4)^2-4\cdot k\cdot k&=0\\
+            k&=\pm 2
+        \end{align*}
+        Therefore, the equation should be either $2x^2-4x+2=0$ or $-2x^2-4x-2=0$, and correspondingly having $x=2$ and $x=-2$ as root respectively.
+    \end{solution}
+
+    It is always important to think about `can it be done' rather than `how can it be done'. In higher mathematics, we call it the existence statement. It is a solid checking before any deep diving.
+
     \subsection{Relation between coefficients and roots}
 
+    So long and so forth, we have paid attention on how to compute the roots of an equation from given coefficients. It is equivalent to saying that `there is some relation between roots and the coefficients of an equation, possibly a bi-directional implication'. We shall now revisit the meaning of roots.
+
     \subsubsection*{What does it mean by a root?}
+
+    \begin{definition}[Root]
+        A \textbf{root} to the function $f:D\to \mathbb{R}$ is an element $x\in D$ such that $f(x)=0$. The collection of roots to $f$ is called the \textbf{kernel} of $f$, denoted by $\ker{f}$.
+    \end{definition}
 
     \subsubsection*{The Vieta formula}
 
