@@ -2943,11 +2943,73 @@
         A \textbf{root} to the function $f:D\to \mathbb{R}$ is an element $x\in D$ such that $f(x)=0$. The collection of roots to $f$ is called the \textbf{kernel} of $f$, denoted by $\ker{f}$.
     \end{definition}
 
-    \subsubsection*{The Vieta formula}
+    Forgive the complicated writing of the definition, but it is important to emphasize the concept of a root, so that we may capture the meaning of a root with the meaning of horizontal intercept of a graph. Another critical point for a root is that it can be substitute back into the function to yield any other important relationship.
+
+    \begin{example}
+        Let $f(x):=ax^2+bx+c$ be the function and that $\alpha,\beta$ are roots of $f(x)$. Then $\ker{f}=\{\alpha,\beta\}$.
+    \end{example}
+
+    As long as we are discussing quadratic polynomial, let us focus on the case of finite root set. We define a family of polynomials sharing the same set of roots. 
+
+    \begin{definition}[characteristic polynomial]
+        Let $S=\{s_1,s_2,\dots,s_N\}$ be a finite set of numbers and $F=\{f: f(x)=0, x\in S\}$. Then $F$ is called \textbf{the family of characteristic polynomial of $S$} and denote it by $F=\mathrm{charf}(S)$.
+    \end{definition}
+
+    \begin{proposition}
+        Given any finite set $S$, $\mathrm{charf}(S)$ forms a vector space.
+    \end{proposition}
+
+    \begin{proof}
+        As $\mathrm{charf}(S)\subset C(S)\subset C(\mathbb{K})$ where $\mathbb{K}$ is any field of numbers, it turns out if $\mathbf{charf}(S)$ is a subspace of $C(\mathbb{K})$ then it is immediately a vector space. It is obvious to see $0\in \mathrm{charf}(S)$ and; if $f,g\in\mathrm{charf}(S)$ then for any $\alpha,\beta\in\mathbb{K}$ and $x\in S$, \begin{align*}
+            (\alpha f + \beta g)(x)=\alpha f(x)+\beta g(x)=0
+        \end{align*}
+        Hence, $\mathrm{charf}(S)$ is a vector space.
+    \end{proof}
+
+    It is also interesting to see that if $S_1,S_2$ are two finite sets of numbers, then their union $S_1\cup S_2$ is equipped with the \textit{product space} of $\mathrm{charf}(S_1)$ and $\mathrm{charf}(S_2)$, such that \[\mathrm{charf}(S_1\cup S_2)=\{f\cdot g:f\in\mathrm{charf}(S_1),g\in\mathrm{charf}(S_2)\}=:\mathrm{charf}(S_1)\times \mathrm{charf}(S_2)\] if product of sets is defined by elementary product.
+
+    \subsubsection*{The Vieta's formula}
+
+    For we have computed the root of a quadratic polynomial in terms of its coefficients, we can consider the relation between them. Let us consider the quadratic equation $ax^2+bx+c=0$ with roots $x_1,x_2$ so that \[x_1=\frac{-b+\sqrt{b^2-4ac}}{2a}, x_2=\frac{-b-\sqrt{b^2-4ac}}{2a},\] then we may observe the following: \[\begin{cases}
+        x_1+x_2&=\frac{-b}{a}\\
+        x_1x_2&=\frac{c}{a}
+    \end{cases}\]
+
+    It is not so strange to connect roots and coefficient in this way as we could think of the characteristic function that inherits above roots; in fact, if we ignore the quadratic formula and see the roots independently, we may obtain the following.
+
+    Let $S_1:=\{x_1\}$ and $S_2:=\{x_2\}$, if $f\in\mathrm{charf}(S_1)$, then $f(x)=r(x-x_1)$ for some $r$; similarly, if $g\in\mathrm{charf}(S_2)$, then $g(x)=s(x-x_2)$ for some $s$. Then by the previous observation, one should see that $(ax^2+bx+c)\in\mathrm{charf}(S_1\cup S_2)$ implies that $ax^2+bx+c=rs(x-x_1)(x-x_2)$. Consider $rs=a$, then \begin{align*}
+        x^2+\frac{b}{a}x+\frac{c}{a}&=x^2-(x_1+x_2)x+x_1x_2
+    \end{align*}and by comparing like terms, the formula is deduced.
+
+    Now, we may call $p_0(x_1,x_2):=x_1x_2$ and $p_1(x_1,x_2):=x_1+x_2$ the \textbf{symmetric polynomials}, as they are symmetric when the order of variables is changed. This provides an interesting application of factorization to some harder problem.
+
+    \begin{definition}[Symmetric polynomial]
+        A \textbf{symmetric polynomial of order $(n,k)$}, denoted by $s_k^n$, is defined by the coefficient polynomial of the $x^k$-term in the expansion of $(x-x_1)(x-x_2)\cdots(x-x_n)$.
+    \end{definition}
+
+    We may observe for the $n=3$ case, the symmetric polynomials $s_0^3$, $s_1^3$ and $s_2^3$ are $x_1x_2x_3$, $x_1x_2+x_2x_3+x_3x_1$, $x_1+x_2+x_3$ respectively.
+
+    \begin{example}
+        Factorize $abc-(a+b+c)(ab+bc+ca)$.
+
+        \begin{solution}
+            It is not hard to observe the expression is indeed $s_0^3-s_1^3s_2^3$. If we put \[f(x)=s_0^3-s_1^3 x+s_2^3 x^2- x^3\] it is surprising to see \[f(x)=(a-x)(b-x)(c-x)\] and that becomes \[s_0^3-s_1^3s_2^3=f(s_2^3)=(-b-c)(-a-c)(-a-b)=-(a+b)(b+c)(c+a)\]
+        \end{solution}
+    \end{example}
+
+    In case we need to solve higher order polynomial expressions, let me write down the general Vieta's formula for reader to discuss.
+
+    \begin{theorem}[Vieta's theorem]
+        Let $P_n(x)$ be the $n$-th degree polynomial and by the fundamental theorem of algebra, there exists $n$ roots to the polynomial, denoted $r_1,r_2,\dots,r_n$. Then \[\sum_{1\leq i_1< i_2<\cdots<i_k\leq n}(\prod_{j=1}^kr_{i_j})=(-1)^k\frac{a_{n-k}}{a_n}\]
+    \end{theorem}
 
     \subsubsection*{Forming quadratic equations with given roots}
 
-    \subsection{Vertex form of a quadratic function}
+    This section will be a waste of time if you've read the previous section. Select roots $\alpha,\beta$, the corresponding quadratic equation will be \[x-(\alpha+\beta)+\alpha\beta=0\]
+
+    However, if we would like to discuss the polynomial in the integral polynomial ring $\mathbb{Z}[x]$, where it is a set containing all the polynomials with integral coeficients, and we are forced to have rational roots, then the discussion will be meaningful.
+
+    Let us constraint the situation to be discussing only $p(x)\in \mathbb{Z}[x]$ and roots in $\mathbb{Q}$. 
 
     \subsubsection*{Obtaining vertex form using Transformation}
 
