@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+
+\graphicspath{{../img/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{暑期練習:挑戰題}
+\fancyhf[CF]{\thepage}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+
+\newtheorem{definition}{定義}
+\newtheorem*{theorem}{定理}
+\newtheorem*{corollary}{衍理}
+\newtheorem*{lemma}{引理}
+\newtheorem*{proposition}{設理}
+\newtheorem*{remark}{小記}
+\newtheorem*{claim}{主張}
+\newtheorem*{example}{例子}
+\newtheorem*{axiom}{公設}
+\renewenvironment*{proof}{\textit{證明.}}{\hfill$\qed$}
+
+\newenvironment*{sol}{\par \textbf{解}.}{\hfill$\blacksquare$}
+
+\begin{document}
+    \tableofcontents
+
+    \newpage
+
+    \section{二項式定理}
+
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item \begin{enumerate}
+                \item 展開$(x+y+z)^2$。
+                \item 求$(x+y+z)^4$的展開式中$x^3y$，$x^3z$，$xy^3$，$y^3z$，$xz^3$，$yz^3$的係數。
+            \end{enumerate}
+            \item 若從一個裝有紅色杯子、藍色杯子及綠色杯子的箱子中隨機抽取一個杯子，則抽到紅色杯子、藍色杯子及綠色杯子的概率分別爲$p,q$及$r$。若從中抽取4個杯子，每次抽取後均可把杯子放回箱子内，試以$p,q,r$表示\begin{enumerate}
+                \item 抽到至少2個不同顏色的杯子的概率；
+                \item 抽到剛好3個相同顔色的杯子的概率。
+            \end{enumerate}
+        \end{enumerate}
+        \item 假設$(1+x)^{\frac{1}{2}}=1+ax+bx^2+cx^3+$更高次冪的項。\begin{enumerate}
+            \item 藉考慮$(1+x)=[(1+x)^{\frac{1}{2}}]^2$，求$a$及$b$的值。
+            \item 按$x$的升冪展開$e^{-2x}$至$x^3$的項。
+            \item 由此，按$x$的升冪展開$\dfrac{(1+x)^{\frac{1}{2}}}{e^{2x}}$至$x^3$的項。
+        \end{enumerate}
+        \item 設$(1+ax)^8=\sum_{k=0}^{8}\lambda_k x^k$及$(b+x)^9=\sum_{k=0}^{9}\mu_k x^k$，其中$a,b$為實常數。已知$\lambda_2:\mu_7=7:4$及$\lambda_1+\mu_8+6=0$。求$a$的值。
+    \end{enumerate}
+
+    \section{指數函數與對數函數}
+    \begin{enumerate}
+        \item 按$x$的升冪展開$e^{e^x}$至$x^2$的項。
+        \item 設$y=\dfrac{1-e^{4x}}{1+e^{8x}}$。\begin{enumerate}
+            \item 求$\dfrac{dy}{dx}\bigg|_{x=0}$的值。
+            \item 設$(z^2+1)e^{3z}=e^{\alpha+\beta x}$，其中$\alpha,\beta$為常數。\begin{enumerate}
+                \item 試表$\ln(z^2+1)+3z$為$x$的綫性函數。
+                \item 已知(b)(i)的函數圖像通過原點并且斜率為2。求$\alpha$和$\beta$的值。
+                \item 利用(b)(ii)所得的$\alpha$和$\beta$的值，求$\dfrac{dy}{dz}\bigg|_{z=0}$。
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
