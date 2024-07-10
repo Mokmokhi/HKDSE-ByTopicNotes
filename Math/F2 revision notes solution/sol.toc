@@ -1,0 +1,13 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Approximation and Errors}{3}{}%
+\contentsline {section}{\numberline {2}Manipulations and Factorization of Polynomials}{5}{}%
+\contentsline {section}{\numberline {3}Identities}{6}{}%
+\contentsline {section}{\numberline {4}Formulae}{7}{}%
+\contentsline {section}{\numberline {5}Linear Equations in Two Unknowns}{8}{}%
+\contentsline {section}{\numberline {6}More about Data Handling}{10}{}%
+\contentsline {section}{\numberline {7}Rate and Ratio}{11}{}%
+\contentsline {section}{\numberline {8}Angles in Triangles and Polygons}{12}{}%
+\contentsline {section}{\numberline {9}Introduction to Deductive Geometry}{13}{}%
+\contentsline {section}{\numberline {10}Pythagoras' Theorem}{14}{}%
+\contentsline {section}{\numberline {11}Trigonometric relation}{15}{}%
+\contentsline {section}{\numberline {12}Area and Volume}{16}{}%

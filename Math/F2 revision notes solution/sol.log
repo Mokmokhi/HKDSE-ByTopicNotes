@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.4.3)  7 JUL 2024 11:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.4.3)  10 JUL 2024 18:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M1/ASL comprehension/chi.tex"
-(c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M1/ASL comprehension/chi.tex
+**"c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/F2 revision notes solution/sol.tex"
+(c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/Math/F2 revision notes solution/sol.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
 (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -256,7 +256,15 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@erf=\skip57
 \f@nch@O@olf=\skip58
 \f@nch@O@orf=\skip59
-) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+ (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+ (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip60
 
@@ -340,7 +348,11 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip64
 \thm@headsep=\skip65
 \dth@everypar=\toks30
-) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/physics\physics.sty
+Package: physics 
+ (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2024-03-14 L3 Experimental document command parser
+)) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
@@ -350,9 +362,7 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-))
+)
 \Gin@req@height=\dimen154
 \Gin@req@width=\dimen155
 ) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
@@ -362,11 +372,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box56
 \@float@everytoks=\toks32
 \@floatcapt=\box57
-) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/physics\physics.sty
-Package: physics 
- (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
-Package: xparse 2024-03-14 L3 Experimental document command parser
-)) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
  (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks33
@@ -426,6 +432,7 @@ Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 758.
  (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
@@ -620,105 +627,182 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen282
 \Gm@layoutvoffset=\dimen283
 \Gm@dimlist=\toks52
- (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-\c@definition=\count338
+ (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count338
+\mult@box=\box70
+\multicol@leftmargin=\dimen284
+\c@unbalance=\count339
+\c@collectmore=\count340
+\doublecol@number=\count341
+\multicoltolerance=\count342
+\multicolpretolerance=\count343
+\full@width=\dimen285
+\page@free=\dimen286
+\premulticols=\dimen287
+\postmulticols=\dimen288
+\multicolsep=\skip66
+\multicolbaselineskip=\skip67
+\partial@page=\box71
+\last@line=\box72
+\mc@boxedresult=\box73
+\maxbalancingoverflow=\dimen289
+\mult@rightbox=\box74
+\mult@grightbox=\box75
+\mult@firstbox=\box76
+\mult@gfirstbox=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\c@minrows=\count344
+\c@columnbadness=\count345
+\c@finalcolumnbadness=\count346
+\last@try=\dimen290
+\multicolovershoot=\dimen291
+\multicolundershoot=\dimen292
+\mult@nat@firstbox=\box114
+\colbreak@box=\box115
+\mc@col@check@num=\count347
+) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip68
+\fb@frw=\dimen293
+\fb@frh=\dimen294
+\FrameRule=\dimen295
+\FrameSep=\dimen296
+)
+\c@definition=\count348
+\c@exercise=\count349
  (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) (chi.aux)
-\openout1 = `chi.aux'.
+) (sol.aux)
+\openout1 = `sol.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
  (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count339
-\scratchdimen=\dimen284
-\scratchbox=\box70
-\nofMPsegments=\count340
-\nofMParguments=\count341
+\scratchcounter=\count350
+\scratchdimen=\dimen297
+\scratchbox=\box116
+\nofMPsegments=\count351
+\nofMParguments=\count352
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count342
-\MPscratchDim=\dimen285
-\MPnumerator=\count343
-\makeMPintoPDFobject=\count344
+\MPscratchCnt=\count353
+\MPscratchDim=\dimen298
+\MPnumerator=\count354
+\makeMPintoPDFobject=\count355
 \everyMPtoPDFconversion=\toks54
 ) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -728,7 +812,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 36.
+ on input line 48.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -764,36 +848,21 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(chi.toc
-LaTeX Font Info:    Trying to load font information for C70+rm on input line 2.
- (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/ctex/fd\c70rm.fd
-File: c70rm.fd 2022/07/14 v2.5.10 Chinese font definition (CTEX)
-))
-\tf@toc=\write4
-\openout4 = `chi.toc'.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-(C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/generic/ctex/zhmap\ctex-zhmap-windows.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+(C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+ (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/generic/ctex/zhmap\ctex-zhmap-windows.tex
 File: ctex-zhmap-windows.tex 2022/07/14 v2.5.10 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
 {C:/Users/admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
 
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
- (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
- (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 46.
+] (sol.toc)
+\tf@toc=\write4
+\openout4 = `sol.toc'.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -818,24 +887,120 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4] (chi.aux)
+[4]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[15]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16] (sol.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 30476 strings out of 474424
- 740860 string characters out of 5741740
- 1949496 words of memory out of 5000000
- 52100 multiletter control sequences out of 15000+600000
- 591467 words of font info for 157 fonts, out of 8000000 for 9000
+ 29904 strings out of 474424
+ 730303 string characters out of 5741740
+ 1944496 words of memory out of 5000000
+ 51699 multiletter control sequences out of 15000+600000
+ 568512 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,11n,107p,821b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on chi.pdf (4 pages, 583310 bytes).
+ 103i,14n,107p,1024b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on sol.pdf (16 pages, 170381 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

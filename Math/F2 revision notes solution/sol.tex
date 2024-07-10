@@ -1,0 +1,408 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{color,amsmath,amssymb,amsthm,physics}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{xcolor}
+
+\graphicspath{ {../images/} }
+
+\title{F.2 Challenging Exercise\\Suggested Solution}
+\author{Mok Owen, BSc Mathematics, CUHK}
+
+\definecolor{shadecolor}{RGB}{220,220,220}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{F.2 Revision}
+\fancyhf[HR]{\rightmark}
+\fancyhf[CF]{\thepage}
+\fancyhf[FL]{\copyright Mok Owen 2024}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+\newcommand{\cis}[1]{\mathrm{cis}({#1})}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\newtheorem{exercise}{Essential Practice}[subsection]
+\newenvironment{solution}{\begin{snugshade*} \underline{\textbf{Solution.}} \par}{\hfill \textit{\dots end of solution} \end{snugshade*}}
+\renewenvironment{proof}[1][Proof]{\begin{snugshade*} \underline{\textit{{#1}.}}\\}{\hfill \qedsymbol \end{snugshade*}}
+
+\begin{document}
+    \maketitle
+
+    \newpage
+
+    \tableofcontents
+
+    \newpage
+
+    \section{Approximation and Errors}
+
+    \begin{enumerate}
+        \item Let John's age be $J$ and Peter's be $P$, where $J$ and $P$ are integers, we know from given facts that \begin{align}
+            895\leq 28J < 905\\
+            3575\leq 28JP < 3585
+        \end{align}
+        From (1), by dividing the inequality by 28, we obtain \[31.96\leq J< 32.32\] and $J=32$ is the only possible integer satisfying the inequality. Thus, John is of age 32. Similarly, dividing (2) by 28 and 32 simultaneously, we have \[3.990\leq P< 4.001\] and Peter is of age 4.
+        \item The challenge here is that we have 2 rulers with different scales. This means that to find the possible range we need to find where two rulers are having same results of approximation. Consider the first ruler, it gives the absolute error $0.5$ cm, so the measured value $M_1$ should be \[M_1 = 0.5 \divisionsymbol \frac{1}{40} = 20  \, \mathrm{cm}\] and finds the range of actual value $A$ to be \[19.5 \, \mathrm{cm} \leq A < 20.5\, \mathrm{cm}\]Similarly, the absolute error of the second ruler is $0.125$ cm, thus \[M_2 = 0.125\divisionsymbol \frac{1}{164} = 20.5 \, \mathrm{cm}\] and the corresponding range of actual value is \[20.375 \, \mathrm{cm}\leq A < 20.625 \, \mathrm{cm}\] We finally combine both ranges and deduce their intersection to be the possible actual range: \[20.375\, \mathrm{cm}\leq A < 20.5 \, \mathrm{cm}\]Hence, (a) is impossible but (b) is possible.
+        \item A 7-digit number crounded off to 2 sig. fig. is equivalent to rounding off to its hundred thousand digit (corr. to nearest 100000). The maximum absolute error is 50000. And the greatest percentage error is given by \[\frac{50000}{1000000} = 5\%\] which cannot be greater than itself of course.
+        \item To deal with the range of speed we are required to maximize and minimize the fraction $\dfrac{d}{t}:=\dfrac{distance}{time}$ at both ends. Since we have their ranges \begin{align}
+            82 \,\mathrm{mm} \leq d < 83\,\mathrm{mm}\\
+            4\, \mathrm{s} \leq t < 5\, \mathrm{s}
+        \end{align} the moving speed $u=\dfrac{d}{t}$ is of the range \[16.4 \,\mathrm{mm/s}\leq u < 20.75\,\mathrm{mm/s}.\] That means the possible intergal values for $u$ are 17, 18, 19 ,and 20.
+        \item The problem is to maximize the volume. Observe the volume is proportional to the base area, so we maximize the base area by \[A = 8.25^2 - 3.75^2 - 1.75^2 = 50.9375 \,\mathrm{cm}^2\] and thus the greatest volume is \[V = 50.9375 \times 8.25 = 420.234375 < 425.\] As the maximum is less than 425, it is impossible for the statement to be true.
+        \item \begin{enumerate}
+            \item For Bob's measurement, Error $= 0.5/20 = 0.025 \,\mathrm{cm}^3$. For Mary's measurement, Error $= 0.05/1.6 = 0.03125\,\mathrm{cm}^3$. So Bob's error is smaller, he is then more accurate.
+            \item No, the intersection of ranges follows Bob's.
+        \end{enumerate}
+    \end{enumerate}
+
+    \newpage
+
+    \section{Manipulations and Factorization of Polynomials}
+    \begin{enumerate}
+        \item 64.
+        \item $3^{90}>2^{126}>5^{54}$.
+        \item $(x+2)^2(x+8) - x^2(4-3x) = 4x^3+8x^2+36x+32$.
+        \item \begin{enumerate}
+            \item $2n-1$.
+            \item $1+3+\cdots+[2(1000)-1] = 1000^2 - 999^2 + 999^2 - 998^2 +\cdots + 2^2 - 1^2 + 1^2 - 0^2 = 1000000$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $21y^2-2y-3x^2$.
+            \item $(x+3y)(3y+x+2)$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $(4p-3)(3q+2)$.
+            \item We need to check all possible cases to condense the result. As \begin{align*}
+                77&=1\times 77\\&=7\times 11\\&=11\times 7\\&=77\times 1
+            \end{align*} we need to verify all pairs of integers. Note that $\begin{cases}
+                4p-3&=1\\3p+2&=77
+            \end{cases}$ is the only possible case, then the statement is possible.
+        \end{enumerate}
+        \item By simplifying, \begin{align*}
+            &3\times 10(3p-4)(p+1) + 5\times 40p(p+1) + 2\times (600-120p)\\
+            =&(90p-120)(p+1)+200p(p+1)+240(5-p)\\
+            =&(290p-120)(p+1)+240(5-p)\\
+            =&290p^2+290p-120p-120+1200-240p\\
+            =&290p^2-50p+1080
+        \end{align*} Hence, claim is not correct.
+    \end{enumerate}
+    \newpage
+
+    \section{Identities}
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item $u^4+16u^2+64$.
+            \item $(u^2+5u+8)(u^2-5u+8)$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $x^4-9x^2-12x-4$.
+            \item See $x=10$, we find $10000-900-120-4=8976$ is the answer.
+        \end{enumerate}
+        \item $u^2-3uv+4v^2 = (u^2-4uv+4v^2)+uv = (u-2v)^2+uv = 7^2+(-4)=45$.
+        \item Expand the left side we get \[4Px^2+12Pxy+9Py^2+16Qx^2-8Qxy+Qy^2\equiv Ax^2+By^2\] and comparing like terms we have \[12P-8Q = 0.\] Choose $P=2, Q=3$, we have $A=56, B=21$ completes the relation. Any other reasonable answer is acceptable.
+        \item Let the smaller odd number be $2n-1$, then the larger odd will be $2n+1$. We find \[(2n+1)^2-(2n-1)^2=4n\cdot 2 = 8n\] which is immediately a multiple of 8.
+        \item \begin{enumerate}
+            \item $a=3$.
+            \item $n(n+1)(n+2)(n+3)+1 = n^4+6n^3+11n^2+6n+1 = (n^2+3n+1)^2$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $\pi r^2 - \pi (r-1)^2 = (2r-1)\pi$.
+            \item It follows that all even numbers are to be the $r$ in (a), and of course is $n$. Write $n=2k$, the sum becomes \begin{align*}
+                &\pi[(2k)^2 - (2k-1)^2 + (2k-2)^2 - (2k-3)^2 + \cdots + 2^2 - 1^1]\\
+                =&\pi[(2(2k)-1) + (2(2k-2)-1) + \cdots + (2(2)-1)]\\
+                =&\pi[4(k+(k-1)+\cdots+1) - k\cdot 1]\\
+                =&\pi(2k(k+1)-k)\\
+                =&\pi(2k^2+k)\\
+                =&\frac{\pi(n^2+n)}{2}
+            \end{align*}
+        \end{enumerate}
+    \end{enumerate}
+    \newpage
+
+    \section{Formulae}
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item $\dfrac{ab^3}{c^2}$.
+            \item $-\dfrac{5(2m-n)^2}{6mn}$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $\dfrac{1}{3x^2-27}$.
+            \item $\dfrac{(1-k)(1+k)}{2k(3k+2)}$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $(1^3+2^3+\cdots+20^3)-(1^3+2^3+\cdots+10^3) = \dfrac{20^2\cdot 21^2}{4} - \dfrac{10^2\cdot 11^2}{4} = 41075$.
+            \item $(1^3+2^3+\cdots+20^3)-(2^3+4^3+\cdots+20^3) = \dfrac{20^2\cdot 21^2}{4}-8\cdot \dfrac{10^2\cdot 11^2}{4} = 19900$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $y=\frac{9x}{5}+32$.
+            \item $-40 ^\circ\mathrm{C}$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $z=\dfrac{y(x-y)}{x+y}$.
+            \item Substitute $z=r, y=-q, x=p$ into (1), we have $r=\dfrac{q(p+q)}{q-p}$.
+        \end{enumerate}
+        \item Consider the area and perimeter of each triangle:\begin{align*}
+            S_{\triangle DEF}&=\dfrac{3\cdot 4}{2} = 6\\
+            DN &= 2.4 &&(S_{\triangle DEF}\implies \dfrac{5\cdot DN}{2}=6)\\
+            EN &= 1.8 &&(\mathrm{Pyth.\, Thm.\, of}\, \triangle DEN)\\
+            FN &= 3.2 &&(EF - EN)\\
+            S_{\triangle DEN} &= \dfrac{54}{25}\\
+            S_{\triangle DFN} &= \dfrac{96}{25}\\
+            P_{\triangle DEF} &= 12\\
+            P_{\triangle DEN} &= 7.2\\
+            P_{\triangle DFN} &= 9.6
+        \end{align*}Therefore, $r=1, r_1=0.6, r_2=0.8$, so they satisfies the equality. In fact, this kind of relation always hold due to trigonometry. It suffices to show $r_1=r\cos{\theta}$ and $r_2=r\sin{\theta}$ for some $\theta$ if the great triangle is right-angled.
+    \end{enumerate}
+
+    \newpage
+
+    \section{Linear Equations in Two Unknowns}
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item \begin{align*}
+                \begin{cases}
+                    5p+6q&=2q-p+4\\
+                    -11p-2q&=2q-p+4
+                \end{cases}\implies\begin{cases}
+                    3p+2q&=2\\
+                    5p+2q&=-2
+                \end{cases}\implies\begin{cases}
+                    p&=-2\\
+                    q&=4
+                \end{cases}
+            \end{align*}
+            \item The equation of straight line is $x-2y-2=0$. And $3-2(5)-2\neq 0$, the points are not collinear.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $x=4, y=1$.
+            \item By multiplying everything by $rs$, we find $x=s, y=r$ works.
+        \end{enumerate}
+        \item Put $r=\dfrac{x}{y}$ we obtain \begin{align*}
+            A(3r-2)(r+1)+B(2r+1)(r-2)&\equiv -(2r-1)(r+3)\\
+            (3A+2B)r^2+(A-3B)r+(-2A-2B)&\equiv -2r^2-5r+3\\
+            \implies\begin{cases}
+                3A+2B=-2\\
+                A-3B=-5\\
+                -2A-2B=3
+            \end{cases}&\implies\begin{cases}
+                A=1\\
+                B=2&(A=1\to (2))\\
+                B=-\frac{5}{2}&(A=1\to (1))
+            \end{cases}
+        \end{align*} And there is contradiction between equations required. No solution exists.
+        \item Let $p$ be peanit oil volume, $\ell$ be olive oil volume, \begin{align*}
+            \begin{cases}
+                p=\ell+400\\
+                \frac{1}{3}p+\frac{4}{5}\ell=700
+            \end{cases}\implies\begin{cases}
+                p=900\\
+                \ell=500
+            \end{cases}
+        \end{align*}Therefore, original total volume is 1400 mL.
+        \item Let $T,B,N$ be their respective ages. The skill is to eleminate one of the variables first. The second equation is useful, by applying it to both other equations.\begin{align*}
+            \begin{cases}
+                T+B=3N\\
+                T=B+2\\
+                T-1=2(N-1)
+            \end{cases}\implies\begin{cases}
+                T=7\\
+                B=5\\
+                N=4
+            \end{cases}
+        \end{align*}
+        \item $GE=CD+13\implies \sqrt{(y-9)^2+15^2}=\sqrt{(y-14)^2-9^2}+13\implies y=29$. Then $AB + AC = 15 + 25 - 12 = 28$. Again, Set $AB^2+14^2=AC^2 \implies AC - AB = 7$. Hence, $AB = 10.5$ cm.
+        \item It is easy to notice $X=1200$ units and $Y=1800$ units. Let $x_A,x_B,y_A,y_B$ be products produced by machine $A$ and $B$ respectively. Then \begin{align*}
+            \begin{cases}
+                x_A+x_B = 1200\\
+                y_A+y_B = 1800\\
+                x_A+y_A = x_B+y_B&(\mathrm{Product\, Count})\\
+                (50x_A+25y_A)(1+6\%) = 30x_B+40y_B&(\mathrm{Production\, Time})
+            \end{cases}\implies\begin{cases}
+                x_A = 500\\
+                y_A = 1000\\
+                x_B = 700\\
+                y_B = 800
+            \end{cases}
+        \end{align*} So machine $B$ makes 200 more units of $X$ than $A$.
+    \end{enumerate}
+
+    \newpage
+
+    \section{More about Data Handling}
+    \begin{enumerate}
+        \item $m=20$.
+        \item -.
+        \item \begin{enumerate}
+            \item Lower Quartile below 27000. So impossible.
+            \item The 6-th highest is about 37000. So it is possible.
+        \end{enumerate}
+        \item There are 60 students in total. The worst case is that intersecting part are fixed portion, i.e. they have no growth. The fix part counts 19 students. This means at least 41 students improved. The statement is true.
+        \item \begin{enumerate}
+            \item $M(1-40\%)-\frac{M}{1+220\%}$.
+            \item $M=376800$, then profit becomes $108330$ which covers the renovation cost.
+        \end{enumerate}
+        \item $n=56$.
+    \end{enumerate}
+
+    \newpage
+
+    \section{Rate and Ratio}
+    \begin{enumerate}
+        \item $\#toys = \#machine \times Time$. So 20000 toys in total.
+        \item See $\dfrac{x-\frac{1}{3}}{y+\frac{1}{3}}=\frac{2}{3}$, then $x:y = 3:2$.
+        \item As the total amount does not change, we can compare the fractions of each person before and after the redistribution. It is easy to observe that only Andy has gaining. It turns out his gaining fraction is $\frac{1}{60}$ corresponding to 50000, which finds the total amount is 3000000.
+        \item Let $S_{\triangle XQR} = 5$, then $S_{\triangle PXR} = 3$, and $S_{\triangle PQR} = 8$. So $S_{\triangle PRS} = 12$, and $S_{\triangle XQR}:S_{PXRS} = 5:15 = 1:3$.
+        \item By similar properties, $AN = 7.5$ and thus $BN = 6$, $CD = 4$. The ratio of small to large trapezium is $4:5$, so $DN = 3.2$ and $NE = 4$. Finally the whole figure counts 41.
+        \item Observe 8 minutes of cold tap converts 12 minutes of hot tap. So within 2 minutes of simultaneous dripping, it fills the amount of water equivalent to 5 minutes of hot tap only. so 10 minutes in total.
+        \item \begin{enumerate}
+            \item 1:4
+            \item \begin{enumerate}
+                \item $2x+4y:3x+y$
+                \item Let $1:4 = 2x+4y:3x+y \implies x:y = -3:1$. Impossible.
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+
+    \newpage
+
+    \section{Angles in Triangles and Polygons}
+    \begin{enumerate}
+        \item By symmetry, $2(a+b+c+d+e)=\dfrac{(12-2)180^\circ}{12}\implies a+b+c+d+e = 75^\circ$.
+        \item $\angle EDK = \dfrac{(8-2)180^\circ}{8} = 135^\circ$. Then $\angle EDQ = 180^\circ - \dfrac{(5-2)180^\circ}{5} = 72^\circ$ yields $\angle QDK = 135^\circ - 72^\circ = 63^\circ$. So $z+270^\circ+63^\circ = 360^\circ \implies z=27^\circ$.
+        \item By equilateral triangle properties, $
+        angle BAP = 60^\circ \implies \angle ABP = 50^\circ \implies \angle PBC = 10^\circ$. Since $\triangle ABC \cong \triangle CDE$ are equilateral, $BC=CD$ and hence $\angle BDC = 10^\circ$, turns out $\angle PCD = 100^\circ$ and again $AC=CD$ finds $x=\dfrac{180^\circ - 100^\circ}{2}=40^\circ$.
+        \item \begin{enumerate}
+            \item $\angle BCH = 360^\circ - 90^\circ - 120^\circ = 150^\circ$. Then $\dfrac{(n-2)180^\circ}{n}=150^\circ$ finds $n=12$.
+            \item No, just a simple calculation on closing points.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $90^\circ$.
+            \item Disagree. By (a) it must be $90^\circ$. We call it angle in semi-circle.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item -.
+            \item \begin{enumerate}
+                \item Consider isosceles $\triangle ANB$, $\angle ABC = \dfrac{180^\circ -\theta}{2}$, and that by $AD//BC$, $\dfrac{180^\circ -\theta}{2} + 3\theta = 180^\circ \implies \theta = 36^\circ \implies \angle ABC = 72^\circ$.
+                \item Yes, $\angle ABC = \angle CAB$.
+            \end{enumerate}
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item By compass, you can draw a great circle, call it $C$.
+            \item Select a random point on $C$, call it $X$, and connect it with the center of circle, call it $I$. Extend until it intersect at $C$, denote the intersection by $K$.
+            \item draw the perp bisector of $IK$, intersection with $C$ at $A$ and $B$. Connect $IA$ and $IB$. You now have $IX$, $IA$ and $IB$ trisecting the circle.
+            \item On each radius, bisect to find each midpoint, and draw the suitable semi-circle.
+            \item You are done by removing all unnecessary lines.
+        \end{enumerate}
+    \end{enumerate}
+
+    \newpage
+
+    \section{Introduction to Deductive Geometry}
+    \begin{enumerate}
+        \item By I and II, at least one of Patrick and Nancy comes from S2A. By III and previous, Owen got higher score than S2A students. By IV and previous, Owen is not in S2C. So Owen is from S2B.
+        \item \begin{enumerate}
+            \item Assume a line L passes through R parallel to TS, then it is easy to show L also parallel to PQ.
+            \item Join PT, it is trivial to show the result.
+        \end{enumerate}
+        \item Compute $\angle UGE$ and $\angle VFE$. Then $\angle QEF$ and $\angle PEG$. Finally compare the sum.
+        \item -.
+    \end{enumerate}
+
+    \newpage
+
+    \section{Pythagoras' Theorem}
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item $\dfrac{-\sqrt{10}}{5}$.
+            \item $24-12\sqrt{3}$.
+        \end{enumerate}
+        \item Consider $x+y=\sqrt{a}$ and $x-y=\sqrt{b}$ is with $a,b$ be arbitrary integers. This shows Jerry is correct as $xy=\dfrac{a-b}{4}$ is rational.
+        \item Consider ratio of sides. Then it is easy to find the rectangle is in ratio $l:w=5:3$. Hence w = 6 cm.
+        \item Consider area to find the height of diagram to be 15 cm. And by pythagoras theorem, TU = 8+10 = 18 cm.
+        \item 780 m.
+        \item No.
+        \item \begin{enumerate}
+            \item By pytahgoras it is easy to see $AY=2$, then by similar triangle, the length of ladder is 3.5 m.
+            \item It is required to compute that $BX = 0.9$ originally. Now $BY = 1.2\sqrt{2}$, and the remaining part of the ladder cannot touch the wall.
+        \end{enumerate}
+    \end{enumerate}
+
+    \newpage
+
+    \section{Trigonometric relation}
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item 1
+            \item $-2\sin{\theta}$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $\sqrt{2}+\sqrt{11}$.
+            \item $\dfrac{85}{22}$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $30^\circ$.
+            \item $2+\sqrt{3}$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $33.2$ cm$^2$.
+            \item $38.1$ cm$^2$.
+        \end{enumerate}
+        \item Actual length of shadow will be $18.8$ m. SO Exceed.
+        \item \begin{enumerate}
+            \item As $\angle DBC = \dfrac{\theta}{2}$, \[\tan{\frac{\theta}{2}}=\frac{CD}{BD}=\frac{1-\cos{\theta}}{\sin{\theta}}\]
+            \item \begin{align*}
+                \frac{1}{2}\tan{\theta}-\tan{\frac{\theta}{2}}&=\frac{\sin{\theta}}{2\cos{\theta}}-\frac{1-\cos{\theta}}{\sin{\theta}}\\
+                &=\frac{\sin^2{\theta}-2\cos{\theta}+2\cos^2{\theta}}{2\sin{\theta}\cos{\theta}}\\
+                &=\frac{(1-\cos{\theta})^2}{2\sin{\theta}\cos{\theta}}
+            \end{align*} and $\tan{\frac{\theta}{2}}=\frac{1}{2}\tan{\theta}$ cannot be true.
+        \end{enumerate}
+    \end{enumerate}
+
+    \newpage
+
+    \section{Area and Volume}
+    \begin{enumerate}
+        \item $9\sqrt{3}-18\pi$.
+        \item Consider the largest circle to be the circle with radius equal to half of EF. Area is $\pi(4-2\sqrt{2})^2=\pi(24-8\sqrt{2})$ cm.
+        \item \begin{enumerate}
+            \item Consider $7(200+2\pi (r+8))=8(200+2\pi r) \implies 2\pi r = 112\pi -200$ m. This implies the perimeter of the field is $2\pi r + 200 = 112\pi$ m.
+            \item $100(112-\frac{200}{\pi})+\pi(56-\frac{100}{\pi})^2$ m$^2$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item $1408\pi$ cm$^3$.
+            \item $704\pi$ cm$^2$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item For $X$, its volume is proportional to $BC^2\cdot AB = 12$ unit volumes; for $Y$ its volume is proportional to $AB^2\cdot BC = 18$ unit volumes. Then $Y$ is relatively larger in volume.
+            \item Consider $AB=3k$ andn $BC=2k$ for some $k$,\begin{align*}
+                \pi(\frac{3k}{2\pi})^2\cdot 2k -\pi (\frac{2k}{2\pi})^2\cdot 3k &= \frac{96}{\pi}\\
+                k&= 4
+            \end{align*}Then the dimension is $12 cm \times 8 cm$.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item Water pumped $= 125$ m$^3$. Tank capacity $= 127$ m$^3$. So it will not overflow.
+            \item Fully-filled time $= 66122$ s, then 1120 minutes for fully filled, 556 minutes for half-filled.
+            \item $3.5^2\pi\times 50\times 60^2 \divisionsymbol (300)^2\pi = 24.5$ cm.
+        \end{enumerate}
+    \end{enumerate}
+\end{document}

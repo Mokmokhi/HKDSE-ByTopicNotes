@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{color,amsmath,amssymb,amsthm,physics}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{xcolor}
+
+\graphicspath{ {../images/} }
+
+\definecolor{shadecolor}{RGB}{220,220,220}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{Function and graphs}
+\fancyhf[HR]{\rightmark}
+\fancyhf[CF]{\thepage}
+\fancyhf[FL]{\copyright Mok Owen 2024}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+\newcommand{\cis}[1]{\mathrm{cis}({#1})}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\newtheorem{exercise}{Essential Practice}[subsection]
+\newenvironment{solution}{\begin{snugshade*} \underline{\textbf{Solution.}} \par}{\hfill \textit{\dots end of solution} \end{snugshade*}}
+\renewenvironment{proof}[1][Proof]{\begin{snugshade*} \underline{\textit{{#1}.}}\\}{\hfill \qedsymbol \end{snugshade*}}
+
+\begin{document}
+    Let $\triangle ABC$ be an arbitrary valid triangle such that $AB,BC,CA$ satisfies the triangle inequality. Define $D$, $E$ and $F$ to be the midpoint of $BC$, $AC$, and $AB$ respectively.
+\end{document}
