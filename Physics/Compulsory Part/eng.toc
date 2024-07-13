@@ -1,11 +1,13 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Preliminaries}{2}{}%
-\contentsline {section}{\numberline {2}Heat and Gases}{2}{}%
-\contentsline {section}{\numberline {3}Newtonian Mechanics}{2}{}%
-\contentsline {section}{\numberline {4}Electricity and Magnetism}{2}{}%
-\contentsline {section}{\numberline {5}Waves}{2}{}%
-\contentsline {section}{\numberline {6}Nuclear Power}{2}{}%
-\contentsline {section}{\numberline {7}Extended Part I: Astronomy}{2}{}%
-\contentsline {section}{\numberline {8}Extended Part II: Atomic World}{2}{}%
-\contentsline {section}{\numberline {9}Extended Part III: Domestic Electrical Appliances}{2}{}%
-\contentsline {section}{\numberline {10}Extended Part IV: Medical Physics}{2}{}%
+\contentsline {section}{\numberline {2}Heat and Gases}{6}{}%
+\contentsline {section}{\numberline {3}Newtonian Mechanics}{7}{}%
+\contentsline {subsection}{\numberline {3.1}Considering quantities in Newtonian mechanics}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Newton's law of motion}{7}{}%
+\contentsline {section}{\numberline {4}Electricity and Magnetism}{10}{}%
+\contentsline {section}{\numberline {5}Waves}{11}{}%
+\contentsline {section}{\numberline {6}Nuclear Power}{12}{}%
+\contentsline {section}{\numberline {7}Extended Part I: Astronomy}{13}{}%
+\contentsline {section}{\numberline {8}Extended Part II: Atomic World}{14}{}%
+\contentsline {section}{\numberline {9}Extended Part III: Domestic Electrical Appliances}{15}{}%
+\contentsline {section}{\numberline {10}Extended Part IV: Medical Physics}{16}{}%
