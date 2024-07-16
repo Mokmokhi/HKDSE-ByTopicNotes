@@ -3014,10 +3014,20 @@
     Consider $r\in\mathbb{Q}$. The monic polynomial in $\mathbb{Z}[x]$ that takes $r$ as root will no longer be $x-r$, since $r\notin \mathbb{Z}$. In fact, by writing $r=\frac{q}{p}$ where $p,q\in\mathbb{Z}$ and $\mathrm{H.C.F.}(p,q)=1$, we obtain $px-q$ the characteristic polynomial of $r$ in $\mathbb{Z}[x]$. This motivates the following definition:
 
     \begin{definition}[Irreducible polynomial]
-        An \textbf{irreducible polynomial} is a polynomial that cannot be factorized in some field. 
+        An \textbf{irreducible polynomial in $\mathbb{Z}[x]$} is a polynomial that cannot be factorized in $\mathbb{Z}[x]$. 
     \end{definition}
 
-    For instance, we talk about irreducible polynomials in $\mathbb{Z}[x]$ means that one such polynomial in the form of $ax+b$ has no integral factorization, or $ax^2+bx+c$ has no possible factorization into $(ax+b)(cx+d)$
+    For instance, we talk about irreducible polynomials in $\mathbb{Z}[x]$ means that one such polynomial in the form of $ax+b$ has no integral factorization, or $ax^2+bx+c$ has no possible factorization into $(ax+b)(cx+d)$.
+
+    \begin{example}
+        $x+1$ is an irreducible. $x^2+x+1$ is an irreducible. $x^2+2x+1$ is not an irreducible as $x^2+2x+1=(x+1)^2$. And $kx+k$ is reducible since it can be factorized into $k(x+1)$.
+    \end{example}
+
+    We can observe that every rational number $r$ has a family of polynomials $k(px-q)$ where $\frac{p}{q}=r$. For if we have the concept of irreducible, one could define a unique formalization of equation with particular root.
+
+    For each rational number $r$ there is a unique representation $\frac{p}{q}$ with $\gcd(p,q)=1$. Then $px-q$ is an irreducible characteristic polynomial of $r$.
+
+    Hence, we can now build equations with rational roots $\alpha,\beta$ by writing \[acx^2-(ad+bc)x+bd=0\] where $\alpha=\frac{b}{a}, \beta=\frac{d}{c}$ and $\gcd(a,b)=\gcd(c,d)=1$.
 
     \subsection{Quadratic Graph}
 
