@@ -303,7 +303,7 @@
     It is not the most accurate description of our world as there will never be a truly closed system in our observable universe. However, it is enough for us to do calculation in a short period for a specific collision.
 
     \begin{example}
-        Consider two objects $A$ and $B$ are collided with each other with initial speed $u_A$ and $u_B$ respectively. Assume the collision is elastic, i.e.\ energy is totally conserved between $A$ and $B$ without any loss. Then we may set up the system of equations \begin{align*}
+        Consider two objects $A$ and $B$ are collided on a horizontal smooth plane with each other with initial speed $u_A$ and $u_B$ respectively. Assume the collision is elastic, i.e.\ energy is totally conserved between $A$ and $B$ without any loss. Then we may set up the system of equations \begin{align*}
             \begin{cases}
                 \Delta \mathbf{p} = 0\\
                 \Delta E_K = 0
@@ -312,12 +312,44 @@
                 \frac{1}{2}m_A u_A^2+\frac{1}{2}m_B u_B^2=\frac{1}{2}m_A v_A^2+\frac{1}{2}m_B v_B^2
             \end{cases}\\
             &\implies \begin{cases}
-                v_A=\dfrac{(m_A-m_B)u_A+2m_B v_B}{m_A+m_B}\\
-                v_B=\dfrac{(m_B-m_A)u_B+2m_A v_A}{m_A+m_B}
+                v_A=\dfrac{(m_A-m_B)u_A+2m_B u_B}{m_A+m_B}\\
+                v_B=\dfrac{(m_B-m_A)u_B+2m_A u_A}{m_A+m_B}
             \end{cases}
         \end{align*}
         The result of $v_A$ and $v_B$ means the instantaneous velocity of $A$ and $B$ just after the collision, as energy is conserved in a short period closed system. We may also notice that the resultant velocities are symmetric to each other, i.e.\ they interchanged the position of $A$ and $B$, which is a calculation surprise but realistically matched in the view point of relative motion.
     \end{example}
+
+    When our collision system contains energy loss, we will then say the collision is \textbf{inelastic}. There should be other format of source that carries part of the initial energy away. We will identify the source of energy after the calculation.
+
+    A table can be drawn to conclude the types of collision:
+
+    \begin{center}
+        \begin{tabular}{|c|c|}
+            \hline
+            Energy conversion&Types of collision\\
+            \hline
+            totally conserved&elastic\\
+            \hline
+            not totally conserved&inelastic\\
+            \hline
+            attains minimal after collision&completely inelastic\\
+            \hline
+            outranged the original total energy&superelastic\\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    For a completely inelastic collision, we can deduce that
+
+    \begin{example}
+        With the same setup as the previous example, but now energy is minimally conserved, we consider \[\derivative{\Delta E_K}{t}=m_A v_A a_A+m_B v_B a_B = F_A v_A + F_B v_B = 0,\] with Newton's third law we can say \[F_A = -F_B\] and that means \[v_A = v_B\]
+    \end{example}
+
+    \subsection{Center of Mass}
+
+    \subsubsection*{The turning effect}
+
+    \subsubsection*{Moment}
 
     \newpage
     \section{Electricity and Magnetism}
