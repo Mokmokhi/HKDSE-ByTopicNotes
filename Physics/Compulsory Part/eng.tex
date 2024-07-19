@@ -351,6 +351,18 @@
 
     \subsubsection*{The turning effect}
 
+    For a rigid body, we may describe it naively as follows:
+
+    \begin{center}
+        \textit{A rigidbody maintains its shape in any movement in a certain space. In other words, the deformation of a rigid body is neglegible in Newtonian motions.}
+    \end{center}
+
+    For example, a ball keeps a spherical shape in any position unless any force is acted on it. For hard metals and steel-made objects, we can never easily change its shape, and we call them rigidbodies.
+
+    It is of course not the best description of real world objects. But it is enough to declare the phenomenon of rotation.
+
+    To be simple, we may examine a straight rod with uniform mass, rotating in constant angular speed $\omega$. We also consider the arclength of a small sector by \[s=r\theta\] where $\theta$ is the angle of rotation in radian, $r$ is the radius of rotation, and $s$ is the arclength. By differentiation we get \[\mathbf{v}=r\omega\] where $\mathbf{v}$ denotes the speed of rotation. We may now examine the conserved quantity, angular momentum, as in usual description, by taking \[\d{\mathbf{p}}=\mathbf{v}\d{m}\] such that \[\mathbf{p}=\int \mathbf{v} \d{m} = \omega \int r\d{m}=\omega \int r \derivative{m}{r} \d{r}=\frac{\rho}{2}r^2\omega\] where $\rho$ defines the density per unit length of the rod. Then \[\mathbf{F}=\rho r \omega \]
+
     \subsubsection*{Moment}
 
     \newpage

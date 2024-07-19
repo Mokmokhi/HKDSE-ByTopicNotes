@@ -6,10 +6,10 @@
 \contentsline {subsection}{\numberline {3.2}Newton's law of motion}{7}{}%
 \contentsline {subsection}{\numberline {3.3}Work, Energy and Potential}{10}{}%
 \contentsline {subsection}{\numberline {3.4}Center of Mass}{14}{}%
-\contentsline {section}{\numberline {4}Electricity and Magnetism}{15}{}%
-\contentsline {section}{\numberline {5}Waves}{16}{}%
-\contentsline {section}{\numberline {6}Nuclear Power}{17}{}%
-\contentsline {section}{\numberline {7}Extended Part I: Astronomy}{18}{}%
-\contentsline {section}{\numberline {8}Extended Part II: Atomic World}{19}{}%
-\contentsline {section}{\numberline {9}Extended Part III: Domestic Electrical Appliances}{20}{}%
-\contentsline {section}{\numberline {10}Extended Part IV: Medical Physics}{21}{}%
+\contentsline {section}{\numberline {4}Electricity and Magnetism}{16}{}%
+\contentsline {section}{\numberline {5}Waves}{17}{}%
+\contentsline {section}{\numberline {6}Nuclear Power}{18}{}%
+\contentsline {section}{\numberline {7}Extended Part I: Astronomy}{19}{}%
+\contentsline {section}{\numberline {8}Extended Part II: Atomic World}{20}{}%
+\contentsline {section}{\numberline {9}Extended Part III: Domestic Electrical Appliances}{21}{}%
+\contentsline {section}{\numberline {10}Extended Part IV: Medical Physics}{22}{}%
