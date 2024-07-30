@@ -3037,6 +3037,66 @@
 
     Let's start with the simplest quadratic graph. We have $y=x^2$ as follows.
 
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+            axis y line = middle,
+            axis x line = middle,
+            xlabel = \(x\),
+            ylabel = {\(f(x)\)},
+            xmin=-5, xmax=5,
+            ymin=-5, ymax=5
+            ]
+            \addplot [
+                domain=-5:5, 
+                samples=100, 
+                color=red,
+            ]
+            {x^2};
+
+            \addplot+ [nodes near coords,only marks,
+            point meta=explicit symbolic]
+            table [meta=label] {
+            x y label
+            0 0 (0,0)
+            };
+            \end{axis}
+        \end{tikzpicture}            
+    \end{center}
+
+    From the information in the section of transformation of graphs of function, we may now move the whole graph upward by $k$ units and rightward by $h$ units. It is the same as transforming \[f(x)\mapsto f(x-h)+k\] and therefore we can conclude the graph opening upward with vertex $(h,k)$ is given by the relation $y=(x-h)^2+k$, drawn as follows.
+
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+            axis y line = middle,
+            axis x line = middle,
+            xlabel = \(x\),
+            ylabel = {\(f(x)\)},
+            xmin=-5, xmax=13,
+            ymin=-10, ymax=100
+            ]
+            \addplot [
+                domain=-5:13, 
+                samples=100, 
+                color=blue,
+            ]
+            {(x-4)^2+9};
+
+            \addplot+ [nodes near coords,only marks,
+            point meta=explicit symbolic]
+            table [meta=label] {
+            x y label
+            4 9 (h,k)
+            };
+            \end{axis}
+        \end{tikzpicture}            
+    \end{center}
+
+    Moreover, it is compatible with reflection and dilation. For if every $y$-coordinates of the graph is reflected along $x$-axis, the whole graph becomes opening downward. It means every function $f(x)=a(x-h)^2+k$ with $a<0$ is opening downward, and opening upward with $a>0$.
+
+    We now conclude this form of quadratic equation to be the \textbf{vertex form} of quadratic equation \[f(x)=a(x-h)^2+k\] with $a\neq 0$, $h,k\in\mathbb{R}$.
+
     \subsubsection*{Relation between vertex form and general form}
 
     \subsubsection*{Opening direction}
