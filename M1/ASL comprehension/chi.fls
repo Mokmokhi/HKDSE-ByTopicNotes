@@ -346,6 +346,9 @@ INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\un
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei5c.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei7a.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei52.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei69.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei73.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei4f.tfm
 OUTPUT chi.toc
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong66.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong67.tfm
@@ -460,7 +463,14 @@ INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\u
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong84.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong99.tfm
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong89.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei69.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei73.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong8c.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei4f.tfm
 INPUT chi.aux
+INPUT C:\Users\admin\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\admin\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simsun.ttc
@@ -527,6 +537,10 @@ INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simsun.ttc
 INPUT C:\Windows\Fonts\simsun.ttc
+INPUT C:\Windows\Fonts\simsun.ttc
+INPUT C:\Windows\Fonts\simhei.ttf
+INPUT C:\Windows\Fonts\simhei.ttf
+INPUT C:\Windows\Fonts\simhei.ttf
 INPUT C:\Windows\Fonts\simhei.ttf
 INPUT C:\Windows\Fonts\simhei.ttf
 INPUT C:\Windows\Fonts\simhei.ttf

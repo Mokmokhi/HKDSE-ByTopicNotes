@@ -2,3 +2,5 @@
 \contentsline {section}{\numberline {1}二項式定理}{2}{}%
 \contentsline {section}{\numberline {2}指數函數與對數函數}{2}{}%
 \contentsline {section}{\numberline {3}微積分}{3}{}%
+\contentsline {section}{\numberline {4}概率}{5}{}%
+\contentsline {section}{\numberline {5}分佈}{6}{}%
