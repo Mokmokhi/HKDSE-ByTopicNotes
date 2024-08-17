@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{color,amsmath,amssymb,amsthm,physics}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{xcolor}
+
+\graphicspath{ {../images/} }
+
+\definecolor{shadecolor}{RGB}{220,220,220}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{A short course on Limit}
+\fancyhf[HR]{\rightmark}
+\fancyhf[CF]{\thepage}
+\fancyhf[FL]{\copyright Mok Owen 2024}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+\newcommand{\cis}[1]{\mathrm{cis}({#1})}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\newtheorem{exercise}{Essential Practice}[subsection]
+\newenvironment{solution}{\begin{snugshade*} \underline{\textbf{Solution.}} \par}{\hfill \textit{\dots end of solution} \end{snugshade*}}
+\renewenvironment{proof}[1][Proof]{\begin{snugshade*} \underline{\textit{{#1}.}}\\}{\hfill \qedsymbol \end{snugshade*}}
+
+\begin{document}
+    \begin{abstract}
+        To understand the concept of calculus well, it is indeed not a compulsory to learn the theory of limit. However, the consolidation and confirmation of the knowledge in both differentiation and integration depends on limit application heavily, so it worths learning the sense behind. We all know that Newton found caculus a.k.a. dynamic flow without limit thoery, but the mystery of calculus makes sense until the explanation by limit.
+    \end{abstract}
+
+    \section{Sense of approximation}
+
+    What comes first is the sense of approximation. We need to approximate \textit{almost everything} in the real world, such as taking values on a ruler, the water level in a beaker, making a 3-point shot in a basketball game. Not everything can be controlled exactly, even that writing a figure or an alphabet can be so different in every trial. That means we are living in a world of approximation.
+
+    Now, imagine if we have two slices of thin bread and a thin slice of cheese, we placed one thin bread on the plate first, then the thin slice of cheese on top of the placed bread, then the other thin bread on top of the placed cheese. For instance, we have no information about the coordinates of the objects. How should we describe the places of the slice of \textbf{thin cheese}?
+
+    It is natural to answer `between the slices of bread'. The step to understand limit is to think more about the case when the slices are thin enough to say `of zero length'. In such cases, are the places of cheese and bread `the same'?
+
+    It turns out that they are nearly \textit{the same} place.
+
+    \section{Limit definition}
+
+    Therefore, we ought to write down the meaning of `close enough' in a logical way. Define a function to represent distance:
+
+    \begin{definition}[Absolute value function]
+        The function $|\cdot|:\mathbb{R}\to\mathbb{R}_{\geq 0}$ is defined by \[x\mapsto \sqrt{x^2}\] or in separation form \[x\mapsto \begin{cases}
+            x&,\textrm{if }x\geq 0,\\
+            -x&,\textrm{if }x< 0
+        \end{cases}\]
+    \end{definition}
+
+    \begin{example}
+        \begin{enumerate}
+            \item $|1|=|-1|=1$.
+            \item $|2|=|-2|=2$.
+            \item $|3|=|-3|=3$.
+        \end{enumerate}
+    \end{example}
+
+    For the distance between any two numbers $x$ and $y$, where they are not necessary be distinct, can be defined as \[\mathrm{dist}(x,y)=|x-y|.\]
+
+    From this definition, we can now write the following:
+
+    \begin{definition}[Formal definition of limit of a function]
+        Suppose $f:\mathbb{R}\to\mathbb{R}$ be a function defined on real number domain, and not necessary be defined on $x=x_0$. Let $\varepsilon>0$ be an arbitrary number. If for such $\varepsilon$ there always exists a number $\delta>0$ depends on it, write $\delta:=\delta(\varepsilon)$ as a function depends on $\varepsilon$, such that whenever $|x-x_0|<\delta$, there is always a number $L$ such that $|f(x)-L|<\varepsilon$, then we will say $L$ to be the \textbf{limit of $f$ at $x_0$}, written as \[\lim_{x\to x_0}f(x)=L.\]
+    \end{definition}
+
+    For a limit, we can consider without knowing the value of the function at the limit point. It is because every discussion of limit is the discussion of approximated value. Let us analyze the writing in the definition.\begin{itemize}
+        \item A function should be defined to discuss limit of a function, but \textit{not necessary} be defined on the point we want to have limit. The point is that approximation need no information about the actual value, as we did for looking at a ruler, we could never say any words about the exact length. For who couldn't understand the meaning of it, let me ask a question: do you know the exact length of a pencil if it is measured by a centimetre-ruler?
+        \item The number $\varepsilon$ is set to be arbitrary to keep the variation of boundary. This variable acts as an upper limit for the distance between the limit $L$ of $f$ at $x_0$.
+        \item The number $\delta=\delta(\varepsilon)$ defines an upper bound for the distance between $x$ and $x_0$. The function-like presentation is to clarify that $\delta$ is dependent on $\varepsilon$.
+    \end{itemize}
+
+    The question is whether the number $L$ exists and unique. We will take care of it in short and dive into the application and theorems of limit.
+\end{document}
