@@ -81,7 +81,7 @@
     From this definition, we can now write the following:
 
     \begin{definition}[Formal definition of limit of a function]
-        Suppose $f:\mathbb{R}\to\mathbb{R}$ be a function defined on real number domain, and not necessary be defined on $x=x_0$. Let $\varepsilon>0$ be an arbitrary number. If for such $\varepsilon$ there always exists a number $\delta>0$ depends on it, write $\delta:=\delta(\varepsilon)$ as a function depends on $\varepsilon$, such that whenever $|x-x_0|<\delta$, there is always a number $L$ such that $|f(x)-L|<\varepsilon$, then we will say $L$ to be the \textbf{limit of $f$ at $x_0$}, written as \[\lim_{x\to x_0}f(x)=L.\]
+        Suppose $f:\mathbb{R}\to\mathbb{R}$ be a function defined on real number domain, and not necessary be defined on $x=x_0$. Let $\varepsilon>0$ be an arbitrary number. If for such $\varepsilon$ there always exists a number $\delta>0$ depends on it, write $\delta:=\delta(\varepsilon)$ as a function depends on $\varepsilon$, such that whenever $0<|x-x_0|<\delta$, there is always a number $L$ such that $|f(x)-L|<\varepsilon$, then we will say $L$ to be the \textbf{limit of $f$ at $x_0$}, written as \[\lim_{x\to x_0}f(x)=L.\]
     \end{definition}
 
     For a limit, we can consider without knowing the value of the function at the limit point. It is because every discussion of limit is the discussion of approximated value. Let us analyze the writing in the definition.\begin{itemize}
@@ -90,5 +90,20 @@
         \item The number $\delta=\delta(\varepsilon)$ defines an upper bound for the distance between $x$ and $x_0$. The function-like presentation is to clarify that $\delta$ is dependent on $\varepsilon$.
     \end{itemize}
 
-    The question is whether the number $L$ exists and unique. We will take care of it in short and dive into the application and theorems of limit.
+    The question is whether the number $L$ unique. We will take care of it in short and dive into the application and theorems of limit.
+
+    \begin{proof}[Proof of the uniqueness of limit of a function]
+        Suppose the limit situation holds for two numbers $L$ and $L'$: \[\forall \varepsilon > 0, \exists \delta > 0, (0<|x-x_0|<\delta)\implies (|f(x)-L|<\varepsilon)\] and \[\forall \varepsilon' > 0, \exists \delta' > 0, (0<|x-x_0|<\delta')\implies (|f(x)-L'|<\varepsilon')\]
+        Pick for an arbitrary $\varepsilon''>0$, then we may choose $\delta'':=\min\{\delta,\delta'\}$ such that \[(0<|x-x_0|<\delta'')\implies (|f(x)-L|<\varepsilon''), (|f(x)-L'|<\varepsilon'')\]
+        Then \begin{align*}
+            |L-L'|&=|L-f(x)+f(x)-L'|\\
+            &\leq |L-f(x)|+|f(x)-L'|\\
+            &<2\varepsilon''
+        \end{align*}
+        Since $\varepsilon$ is arbitrarily chosen, it turns out only $L=L'$ makes sense in any situation.
+    \end{proof}
+
+    \begin{remark}
+        Since limit of a function is unique, we will call $\lim_{x\to x_0}f(x)$ to be \textbf{the limit of $f$ at $x_0$}.
+    \end{remark}
 \end{document}
