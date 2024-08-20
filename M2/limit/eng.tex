@@ -38,7 +38,7 @@
 \newtheorem*{example}{Example}
 \newtheorem*{axiom}{Axiom}
 
-\newtheorem{exercise}{Essential Practice}[subsection]
+\newtheorem{exercise}{Essential Practice}[section]
 \newenvironment{solution}{\begin{snugshade*} \underline{\textbf{Solution.}} \par}{\hfill \textit{\dots end of solution} \end{snugshade*}}
 \renewenvironment{proof}[1][Proof]{\begin{snugshade*} \underline{\textit{{#1}.}}\\}{\hfill \qedsymbol \end{snugshade*}}
 
@@ -116,11 +116,11 @@
 
         Notice that \begin{align*}
             (|x|+|y|)^2-|x+y|^2&=|x|^2+2|x||y|+|y|^2-x^2-2xy-y^2\\
-            &=2|x||y|-xy\\
+            &=2(|x||y|-xy)\\
             &\geq 0
         \end{align*}
 
-        Therefore, by rearrangement of terms, the proven is done.
+        Therefore, by rearrangement of terms, the proof is done.
     \end{proof}
 
     For the distance between any two numbers $x$ and $y$, where they are not necessary be distinct, can be defined as \[\mathrm{dist}(x,y)=|x-y|.\]
@@ -164,4 +164,107 @@
     \begin{remark}
         Since limit of a function is unique, we will call $\lim_{x\to x_0}f(x)$ to be \textbf{the limit of $f$ at $x_0$}.
     \end{remark}
+
+    \section{Evaluation of simple limits}
+
+    We will see the techniques of evaluating a limit in this section, provided with some useful theorems.
+
+    \begin{theorem}
+        If $f(x)$ is well-defined at $x_0$, and continuous near $x_0$, then \[\lim_{x\to x_0}f(x)=f(x_0).\]
+    \end{theorem}
+
+    \begin{example}
+        The following examples shows continuous function's limit.
+        \begin{enumerate}
+            \item $\lim_{x\to 0}x=0$, $\lim_{x\to 1}x=1$, $\lim_{x\to 2}x=2$, $\dots$;
+            \item $\lim_{x\to 0}x^2=0$, $\lim_{x\to 1}x^2=1$, $\lim_{x\to 2}x^2=4$, $\dots$.
+        \end{enumerate}
+    \end{example}
+
+    In order to manage polynomial functions, we have some rules of arithmetic of limit.
+
+    \begin{theorem}[Arithmetic on limit]
+        Let $f,g$ be functions having limit at $x_0$. Then\begin{enumerate}
+            \item $\displaystyle\lim_{x\to x_0}(f\pm g)=\lim_{x\to x_0}f \pm \lim_{x\to x_0}g$;
+            \item $\displaystyle\lim_{x\to x_0}fg = (\lim_{x\to x_0}f)(\lim_{x\to x_0}g)$;
+            \item If $\displaystyle\lim_{x\to x_0}g(x)\neq 0$, then $\displaystyle\lim_{x\to x_0}\frac{f}{g}=\frac{\lim_{x\to x_0}f}{\lim_{x\to x_0}g}$.
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}
+        The proofs for the three statement will be done by the definition of limit. Let $\varepsilon>0$ be an arbitrary number, with $\delta:=\delta(\varepsilon)$ be chosen according to that in definition, such that $0<|x-x_0|<\delta$ implies both $|f(x)-F|<\varepsilon$ and $|g(x)-G|<\varepsilon$. It is clear that $\displaystyle\lim_{x\to x_0}f(x)=F$ and $\displaystyle\lim_{x\to x_0}g(x)=G$ in this construction. Each deduction part will be given as follows.
+        \begin{enumerate}
+            \item We need to show $\big|[f(x)\pm g(x)]-[F\pm G]\big|<\varepsilon$:\begin{align*}
+                \big|[f(x)\pm g(x)]-[F\pm G]\big|&=\big|[f(x)-F]\pm[g(x)-G]\big|\\
+                &\leq |f(x)-F|+|g(x)-G|\\
+                &<2\varepsilon
+            \end{align*}
+            Since $\varepsilon>0$ is arbitrarily chosen, the result follows.
+            \item We need to show $|f(x)g(x)-FG|<\varepsilon$:\begin{align*}
+                |f(x)g(x)-FG|&=|f(x)g(x)-Fg(x)+Fg(x)-FG|\\
+                &\leq |f(x)g(x)-Fg(x)|+|Fg(x)-FG|\\
+                &=|g(x)||f(x)-F|+|F||g(x)-G|
+            \end{align*}
+            The odd part in the deduction is the value of $|g(x)|$, but remember the properties of absolute value function leads us to the conclusion \[|g(x)-G|<\varepsilon \implies G-\varepsilon<g(x)<G+\varepsilon.\]
+            Then the finiteness of $G$ and $\varepsilon$ tells there exists another finite number $G_0$ such that \[|g(x)|<G_0\] and that \begin{align*}
+                |f(x)g(x)-FG|&\leq |g(x)||f(x)-F|+|F||g(x)-G|\\
+                &<(G_0+|F|)\varepsilon
+            \end{align*}
+            Since $\varepsilon>0$ is arbitrarily chosen, the result follows.
+            \item Similar to previous proofs, we aim to show that $|\frac{f(x)}{g(x)}-\frac{F}{G}|<\varepsilon$:\begin{align*}
+                |\frac{f(x)}{g(x)}-\frac{F}{G}|&=|\frac{Gf(x)-Fg(x)}{Gg(x)}|\\
+                &=|\frac{Gf(x)-FG+FG-Fg(x)}{Gg(x)}|\\
+                &\leq \frac{1}{|G||g(x)|}(|G||f(x)-F|+|F||G-g(x)|)\\
+                &<\frac{|G|+|F|}{|G||g(x)|}\varepsilon
+            \end{align*}
+            For this time, the tricky part is to bound the value of $\frac{1}{|g(x)|}$. In fact, from previous proof we know that \[G-\varepsilon<g(x)<G+\varepsilon \implies \frac{1}{G+\varepsilon}<\frac{1}{g(x)}<\frac{1}{G-\varepsilon}\] which, by the arbitrariness of $\varepsilon$, there is always a $g_0>0$ such that $\frac{1}{|g(x)|}<g_0$. The result then follows from writing \[|\frac{f(x)}{g(x)}-\frac{F}{G}|<\frac{|G|+|F|}{|G|}g_0\varepsilon.\]
+        \end{enumerate}
+    \end{proof}
+
+    We will examine the rules by checking some basic examples using polynomial functions.
+
+    \begin{example}
+        Check the following limits:\begin{enumerate}
+            \item $\displaystyle\lim_{x\to 0}(x^2+2x-1)=0^2+0-1=-1$;
+            \item $\displaystyle\lim_{x\to 3}[4(x^2-2)(x+3)]=4(3^2-2)(3+3)=168$;
+            \item $\displaystyle\lim_{x\to -1}\frac{x-1}{x-2}=\frac{-1-1}{-1-2}=\frac{2}{3}$.
+        \end{enumerate}
+    \end{example}
+
+    \begin{exercise}
+        Compute the following limits with the help of rules provided:\begin{enumerate}
+            \item $\displaystyle\lim_{x\to 1}(3x^2-2x+4)$;
+            \item $\displaystyle\lim_{x\to 2}[x(x+1)(x+2)]$;
+            \item $\displaystyle\lim_{x\to 0}\frac{x+2}{(x+1)^2}$.
+        \end{enumerate}
+    \end{exercise}
+
+    More than direct substitution, one may bump into the situation of $\frac{0}{0}$, which is undefined in usual sense. For if we are doing limits, we know that $x\to x_0$ means $x$ is approaching $x_0$, but they can never be equal. We hence introduce a concept of identification on limit results.
+
+    \begin{proposition}
+        Let $f,g:\mathbb{R}\to\mathbb{R}$ be functions. If $f(x)=(x-a)g(x)$, and both $\lim_{x\to a} f(x)$ and $\lim_{x\to a}g(x)$ exists, then \[\lim_{x\to a}\frac{f(x)}{x-a}=\lim_{x\to a}g(x).\]
+    \end{proposition}
+
+    \begin{proof}
+        By definition of limit, when $0<|x-a|<\delta$, \[|\frac{f(x)}{x-a}-L|=|\frac{(x-a)g(x)}{x-a}-L|=|g(x)-L|.\] Therefore, the result follows.
+    \end{proof}
+
+    \begin{corollary}
+        Let $f,g,p,q:\mathbb{R}\to\mathbb{R}$ be functions. If $f(x)=(x-a)p(x)$ and $g(x)=(x-a)q(x)$, and all limit exists with $q(x)\neq 0$, then \[\lim_{x\to a}\frac{f(x)}{g(x)}=\lim_{x\to a}\frac{p(x)}{q(x)}.\]
+    \end{corollary}
+
+    \begin{remark}
+        The above proposition can be named as the \textbf{removable discontinuity}. It's application can be seen in extending functions with finite discontinuities to continuous functions.
+    \end{remark}
+
+    Here are some applications of the properties when evaluating limits.
+
+    \begin{example}
+        Check the following limit:
+        \begin{enumerate}
+            \item $\displaystyle \lim_{x\to 0}\frac{x(x+1)}{x}=\lim_{x\to 0}(x+1)=1$;
+            \item $\displaystyle \lim_{x\to 1}\frac{x(x-1)}{(x-1)(x-2)}=\lim_{x\to 1}\frac{x}{x-2}=-1$;
+            \item $\displaystyle \lim_{x\to -1}\frac{x^2-3x-4}{x^2+3x+2}=\lim_{x\to -1}\frac{(x+1)(x-4)}{(x+1)(x+2)}=\lim_{x\to -1}\frac{x-4}{x+2}=-5$;
+        \end{enumerate}
+    \end{example}
 \end{document}
