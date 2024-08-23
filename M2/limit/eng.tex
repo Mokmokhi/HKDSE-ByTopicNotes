@@ -279,6 +279,48 @@
 
     \section{Limits to infinity}
 
+    When the limit tends to a finite number, it is easy to show the convergence when discontinuities are removed. However, we have less idea on how it works when limit goes nowhere finite.
+    
+    We observe one divengence to extend the logic of limit. Consider the counting on integers increased from $1,2,3,\dots$ to nowhere terminate. If we let any integer $M$ as a virtual boundary of the counting, one could see $M+1$ can again be an integer such that $M+1>M$ and $M$ will no longer be an upper bound. This facilitate a sense of `unlimited' and we use the symbol $\infty$ to denote the meaning.
+
+    \begin{definition}[Infinity]
+        Define a symbol $\infty$ such that for any integer $N$, $N$ is always less than $\infty$.
+    \end{definition}
+
+    \begin{proposition}
+        Any real number $x\in\mathbb{R}$ is less than $\infty$.
+    \end{proposition}
+
+    \begin{proof}
+        For all $x\in \mathbb{R}$, there is always some integer $M$ such that \[M\leq x< M+1.\] Since $M+1\in\mathbb{N}$, it follows $x<M+1<\infty$.
+    \end{proof}
+
+    \begin{remark}
+        In the proof, such $M$ is called the \textbf{integral part of $x$}, and we can define the \textbf{floor function} $\lfloor \cdot \rfloor:\mathbb{R}\to\mathbb{N}$ such that \[\lfloor x \rfloor = M.\] In addition, the \textbf{fractional part}, follows the meaning in mixed fraction ($a\frac{b}{c}$), can be defined by $[\cdot]:\mathbb{R}\to (0,1)$ as \[[x]=x-\lfloor x \rfloor,\] and the \textbf{ceiling function} $\lceil \cdot \rceil:\mathbb{R}\to\mathbb{N}$ to be \[\lceil x \rceil=\lfloor x \rfloor + 1.\]
+    \end{remark}
+
+    Observe the function $f(x):=\frac{1}{x}$, we may check that \begin{enumerate}
+        \item $\displaystyle \lim_{x\to 0^+}f(x)=\infty$;
+        \item $\displaystyle \lim_{x\to 0^-}f(x)=-\infty$;
+        \item $\displaystyle \lim_{x\to \infty}f(x)=0$.
+    \end{enumerate}
+    The above results provides a foundation on defining a bounded version of real numbers, call it the \textbf{extended real number set}.
+
+    \begin{definition}[Extended real number set]
+        The set $\overline{\mathbb{R}}:=\mathbb{R}\cup\{-\infty,\infty\}$ is called an \textbf{extended real number set}. We usually simply write $\mathbb{R}$ to mean the extended one.
+    \end{definition}
+
+    Such definition transform the usage of $\infty$ from a simple concept to a `number', though it is not rigorous to say it is a number, but it founds the properties of $\mathbb{R}$ useful.
+
+    \begin{theorem}
+        For any finite real numbers $a>0,b<0$, the following holds:\begin{enumerate}
+            \item $a+\infty=b+\infty=\infty+a=\infty+b=\infty$;
+            \item $a-\infty=b-\infty=-\infty$;
+            \item $a\infty=\infty$;
+            \item $b\infty=-\infty$;
+            \item $a/\infty=b/\infty=0$.
+        \end{enumerate}
+    \end{theorem}
     \section{Limits with special functions}
 
     We will see many ideas floats from the definition of limit. The popular one will be the exponential function $\exp$.
