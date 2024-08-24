@@ -304,6 +304,11 @@
         \item $\displaystyle \lim_{x\to 0^-}f(x)=-\infty$;
         \item $\displaystyle \lim_{x\to \infty}f(x)=0$.
     \end{enumerate}
+
+    \begin{proof}
+        For each $x\in\mathbb{R}$, there is always an integer $N$ such that $0<\frac{1}{N}<x$.
+    \end{proof}
+
     The above results provides a foundation on defining a bounded version of real numbers, call it the \textbf{extended real number set}.
 
     \begin{definition}[Extended real number set]
@@ -350,10 +355,78 @@
             \item $\displaystyle\lim_{x\to \infty}(3x+2)$;
             \item $\displaystyle\lim_{x\to -\infty}(4x^2+3)$;
             \item $\displaystyle\lim_{x\to -\infty}(-4x+3)$;
-            \item $\displaystyle\lim_{x\to \infty}(a/x^2+b)=b$.
+            \item $\displaystyle\lim_{x\to \infty}(a/x^2+b)$.
         \end{enumerate}
     \end{exercise}
+
+    The discussion on determinate form is easy to handle, however, not the same picture for if it is the indeterminate form. We identify the following forms as indeterminate forms: \[\frac{0}{0}, \frac{\infty}{\infty}, 0\cdot \infty, 0^0, 0^\infty, \infty^0, 1^\infty\]
+
+    Since the limit value of the above forms are very unstable, according to their defining functions, resulting in many variations. However, one of the above forms is quite interesting to discuss with, was the form $1^\infty$.
     \section{Limits with special functions}
 
-    We will see many ideas floats from the definition of limit. The popular one will be the exponential function $\exp$.
+    In dealing with the form $1^\infty$, we obtain a popular function, called \textbf{the exponential function} $\exp$. To find its importance in mathematics, we shall take account into its origination.
+
+    Let us start by investigating the natural growth function, i.e. the compound interest progression, stated as \[f_n(x,t):=A_0(1+\frac{x}{n})^{nt}.\] It is noticeable that $f_n(0,t)=f_n(x,0)=A_0$, as $A_0$ is a conditional constant. Let us set $A_0=1$ to simplify the condition first. We are interested in the convergence when $n\to \infty$: The situation for `naturality', random growth occurrence with a statistical mean growth.
+
+    We first claim that the sequence $f_n$ is an increasing sequence. We shall further divide this into different cases.
+    
+    \begin{claim}
+        $f_n(1,1)$ is an increasing sequence according to $n$.
+    \end{claim}
+
+    \begin{proof}
+        Consider the difference between $f_n(1,1)$ and $f_{n+1}(1,1)$.
+        \begin{align*}
+            f_{n+1}(1,1)-f_n(1,1)&=(1+\frac{1}{n+1})^{n+1}-(1+\frac{1}{n})^n.
+        \end{align*}
+        
+        Note that \begin{align*}
+            C_k^{n+1}(\frac{1}{n+1})^k&=\frac{(n+1)!}{k!(n+1-k)!(n+1)^k}\\
+            &=\frac{n^k}{(n+1-k)(n+1)^{k-1}}C_k^n\\
+            &\geq C_k^n(\frac{1}{n})^k
+        \end{align*}
+
+        Therefore, \[(1+\frac{1}{n+1})^{n+1}-(1+\frac{1}{n})^n\geq 0,\] and \[f_{n+1}(1,1)\geq f_n(1,1)\,\forall n\in\mathbb{N}.\]
+    \end{proof}
+
+    \begin{claim}
+        $f_{n+1}(x,1)\geq f_n(x,1)$; $f_n(x,t)=(f_n(x,1))^t$; and thus $f_{n+1}(x,t)\geq f_n(x,t)$.
+    \end{claim}
+
+    \begin{proof}
+        Similar to previous claim, note that \begin{align*}
+            C_k^{n+1}(\frac{x}{n+1})^k&=\frac{(n+1)!x^k}{k!(n+1-k)!(n+1)^k}\\
+            &=\frac{n^k x^k}{(n+1-k)(n+1)^{k-1}}C_k^n\\
+            &\geq C_k^n(\frac{x}{n})^k
+        \end{align*}
+
+        Also, \begin{align*}
+            f_n(x,t)&=(1+\frac{x}{n})^{nt}\\
+            &=[(1+\frac{x}{n})^n]^t\\
+            &=(f_n(x,1))^t
+        \end{align*}
+
+        Therefore, \begin{align*}
+            f_{n+1}(x,t)&=[f_{n+1}(x,1)]^t\\
+            &\geq [f_n(x,1)]^t\\
+            &=f_n(x,t)
+        \end{align*}
+    \end{proof}
+
+    The second claim to build the limit is the boundedness of the sequence.
+
+    \begin{claim}
+        $f_n(1,1)$ is bounded above, so does $f_n(x,t)$.
+    \end{claim}
+
+    \begin{proof}
+        Consider the formula \begin{align*}
+            (1+\frac{1}{n})^n&=\sum_{k=0}^{n}C_k^n(\frac{1}{n})^k\\
+            &\leq \sum_{k=0}^{n}\frac{1}{k!}\\
+            &\leq \sum_{k=0}^{n}\frac{1}{2^{k-1}}\\
+            &<4
+        \end{align*}
+
+        Hence, it is natural to conclude that $f_n(x,t)\leq \frac{2((\frac{xt}{2})^{n+1} - 1)}{\frac{xt}{2}-1}=\frac{4(x^{n+1} t^{n+1}-2^{n+1})}{2^{n+1}(xt-2)}$.
+    \end{proof}
 \end{document}
