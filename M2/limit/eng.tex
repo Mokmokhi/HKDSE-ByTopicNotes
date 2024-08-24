@@ -321,6 +321,38 @@
             \item $a/\infty=b/\infty=0$.
         \end{enumerate}
     \end{theorem}
+
+    \begin{example}
+        The following results obey the rules defined. For $a>0,b$ be finite real numbers,
+        \begin{enumerate}
+            \item $\displaystyle\lim_{x\to \infty}(ax+b)=\infty$;
+            \item $\displaystyle\lim_{x\to -\infty}(ax+b)=-\infty$;
+            \item $\displaystyle\lim_{x\to \infty}(-ax+b)=-\infty$;
+            \item $\displaystyle\lim_{x\to -\infty}(-ax+b)=\infty$;
+            \item $\displaystyle\lim_{x\to \infty}(a/x+b)=b$;
+            \item $\displaystyle\lim_{x\to -\infty}(a/x+b)=b$.
+        \end{enumerate}
+    \end{example}
+
+    \begin{exercise}
+        Prove the results stated in the example. For application result, try to perform calculations with limit rules; for verification, show the limit is true using formal definition.
+    \end{exercise}
+
+    And if we take care of some higher degree cases, one would observe \[\lim_{x\to \infty}x^n = \infty,\] and \[\lim_{x\to -\infty}x^n = \begin{cases}
+        \infty, &n\textrm{ is even,}\\
+        -\infty, &n\textrm{ is odd.}
+    \end{cases}\]
+
+    Combining with the arithmetic rules of limit, we can now check the results of polynomials.
+
+    \begin{exercise}
+        Compute the following limits:\begin{enumerate}
+            \item $\displaystyle\lim_{x\to \infty}(3x+2)$;
+            \item $\displaystyle\lim_{x\to -\infty}(4x^2+3)$;
+            \item $\displaystyle\lim_{x\to -\infty}(-4x+3)$;
+            \item $\displaystyle\lim_{x\to \infty}(a/x^2+b)=b$.
+        \end{enumerate}
+    \end{exercise}
     \section{Limits with special functions}
 
     We will see many ideas floats from the definition of limit. The popular one will be the exponential function $\exp$.
