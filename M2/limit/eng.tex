@@ -430,6 +430,9 @@
         Next, to take care of $f_n(x,t)$, we need to show that $\exists K>0$ such that $f_n(x,1)\leq Kf_n(1,1)$ for all $n\in\mathbb{N}$.\begin{align*}
             f_n(x,1)&\leq \sum_{k=0}^{n}\frac{x^k}{k!}
         \end{align*} 
-        
+        For if $n$ is large enough such that $n>\lceil x\rceil$, we can write \begin{align*}
+            f_n(x,1)&\leq \sum_{k=0}^{\lfloor x \rfloor}\frac{x^k}{k!}+\sum_{k=\lceil x\rceil}^{n}\frac{x^k}{k!}\\
+            &\leq \sum_{k=0}^{\lfloor x \rfloor}\frac{x^k}{k!}+x^{\lceil x \rceil}\sum_{k=\lceil x\rceil}^{n}\frac{x^k}{k!}\\
+        \end{align*}
     \end{proof}
 \end{document}
