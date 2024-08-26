@@ -222,12 +222,16 @@
     \end{proof}
 
     \begin{theorem}[Limit of composite function]
-        Let $f,g$ be continuous functions. Then \[\lim_{x\to x_0}f(g(x))=f(\lim_{x\to x_0}g(x))\]
+        Let $f$ be continuous everywhere,$g$ be continuous near $x=x_0$. Then \[\lim_{x\to x_0}f(g(x))=f(\lim_{x\to x_0}g(x))\]
     \end{theorem}
 
     \begin{proof}
-        Let $G:=\displaystyle\lim_{x\to x_0}g(x)$, we need to show that $|f(g(x))-f(G)|<\varepsilon$ for the limit condition.
+        Let $G:=\displaystyle\lim_{x\to x_0}g(x)$, we need to show that $|f(g(x))-f(G)|<\varepsilon$ for the limit condition. In fact, since $f$ is continuous everywhere, we can write \[\forall \varepsilon_f > 0, \exists \delta_f > 0, |y-G|<\delta_f \implies |f(y)-f(G)|<\varepsilon_f.\]
+        Also, \[\forall \varepsilon_g > 0, \exists \delta_g > 0, 0<|x-x_0|<\delta_g \implies |g(x)-G|<\varepsilon_g.\]
+        By setting $\delta_f = \varepsilon_g$ conditionally, the proof is done.
     \end{proof}
+
+    The most sensitive example for the composite limit will be the function $f(x)=x^2$. It is clear to write \[\lim_{x\to x_0} x^2 = (\lim_{x\to x_0} x)^2 = x_0^2\] without any ambiguity.
 
     We will examine the rules by checking some basic examples using polynomial functions.
 
@@ -369,6 +373,22 @@
 
     The discussion on determinate form is easy to handle, however, not the same picture for if it is the indeterminate form. We identify the following forms as indeterminate forms: \[\frac{0}{0}, \frac{\infty}{\infty}, 0\cdot \infty, 0^0, 0^\infty, \infty^0, 1^\infty\]
 
+    The form $\frac{0}{0}$ has been discussed in previous session, by removable discontinuity, and the results followed from the observation that if the simplified fraction converges or not.
+
+    For if $\frac{\infty}{\infty}$ exists, by the definition of $\frac{a}{\infty}=0$, it is comparable to $\frac{0}{0}$. This provides us the thought of computing $\frac{\infty}{\infty}$ as if we are managing the case of $\frac{0}{0}$. Let us establish the following fact:
+
+    \begin{theorem}
+        Let $f,g$ be polynomial functions, and suppose $m=\deg{f}$, $n=\deg{g}$. The existence of the limit $\displaystyle\lim_{x\to \infty}\frac{f(x)}{g(x)}$ depends on the value of $m$ and $n$. In particular, it is the case that \[\lim_{x\to\infty}\frac{f(x)}{g(x)}=\begin{cases}
+            0,&\textrm{if }m<n,\\
+            \frac{a}{b},&\textrm{if }m=n,\\
+            \pm\infty,&\textrm{if }m>n
+        \end{cases}\] where $a$ and $b$ are the leading coefficients of $f$ and $g$ respectively.
+    \end{theorem}
+
+    \begin{proof}
+        
+    \end{proof}
+
     Since the limit value of the above forms are very unstable, according to their defining functions, resulting in many variations. However, one of the above forms is quite interesting to discuss with, was the form $1^\infty$.
     \section{Limits with special functions}
 
@@ -457,16 +477,29 @@
     By the stated theorem, we can conclude that $f_n(x,t)$ will converge to some limit as $n\to \infty$. Examine the limit of $f_n(1,1)$, we found that \[\lim_{n\to \infty}f_n(1,1) = 2.718\dots\] which we denote the number as $e$, named \textbf{Euler's number}.
 
     \begin{definition}
-        The Euler's number $e$ is defined by the limit \[e:=\lim_{n\to \infty}(1+\frac{1}{n})^n.\]
+        The Euler's number $e$ is defined by the limit \[e:=\lim_{n\to \infty}(1+\frac{1}{n})^n.\] And the exponential function $\exp$ is defined according to $f_n$ that \[\exp(x):=\lim_{n\to \infty}(1+\frac{x}{n})^n.\]
     \end{definition}
 
     We are now going to establish the usage of Euler's number, in fact the exponential function. We shall establish the following relation first.
 
     \begin{proposition}
-        Let $x,t\in\mathbb{R}$, the following holds: \[\lim_{n\to \infty}f_n(x,t)=e^{xt}.\]
+        Let $x\in\mathbb{R}$, the following holds: \[\exp(x)=e^{x}.\]
     \end{proposition}
 
     \begin{proof}
-        
+        The first step of the proof is to show that for $x\in\mathbb{N}$. In fact, \begin{align*}
+            \lim_{n\to \infty}[(1+\frac{x}{n})^n-(1+\frac{1}{n})^{xn}]&=\lim_{n\to \infty}[\sum_{k=0}^{n}C_k^n \frac{x^k}{n^k}-\sum_{k=0}^{n}C_k^{xn}\frac{1}{n^k}]\\
+            &=\lim_{n\to\infty}\sum_{k=0}^{n}[\frac{x^k(n)\cdots(n-k+1)}{k!n^k}-\frac{xn(xn-1)\cdots (xn-k+1)}{k!n^k}]\\
+            &\leq \sum_{k=0}^{\infty}\frac{1}{k!}[\lim_{n\to \infty}\frac{O(n^{k-1})}{n^k}]\\
+            &=\sum_{k=0}^{\infty}\frac{1}{k!}(0)\\
+            &=0
+        \end{align*}
+        Therefore, $\exp(x)=e^{x}$ for $x\in\mathbb{N}$.
+
+        The next step is to show for $x\in\mathbb{Q}$. Indeed, by checking the factorization \[a-b=(a^{\frac{1}{n}}-b^{\frac{1}{n}})\sum_{k=0}^{n-1}a^{\frac{k}{n}}b^{\frac{n-1-k}{n}},\] the proof can be done easily. I will leave it to those who are interested in dealing with analysis.
+
+        The final step is to extend the equivalence to all real numbers. It suffices to show that for $x\notin \mathbb{Q}$. Pick $r<x<s$ with $r,s\in\mathbb{Q}$, we can write \[\exp(r)-e^s < \exp(x)-e^x < \exp(s)-e^r,\] which can help us deduce that when $|r-s|<\delta$, the inequality turns into \[-\varepsilon< \exp(x)-e^x < \varepsilon,\] so that the conclusion $\exp(x)=e^x$ is true for all $x\in\mathbb{R}$.
     \end{proof}
+
+    From now on, we will simply write $e^x$ to handle with $\exp(x)$.
 \end{document}
