@@ -221,6 +221,14 @@
         \end{enumerate}
     \end{proof}
 
+    \begin{theorem}[Limit of composite function]
+        Let $f,g$ be continuous functions. Then \[\lim_{x\to x_0}f(g(x))=f(\lim_{x\to x_0}g(x))\]
+    \end{theorem}
+
+    \begin{proof}
+        Let $G:=\displaystyle\lim_{x\to x_0}g(x)$, we need to show that $|f(g(x))-f(G)|<\varepsilon$ for the limit condition.
+    \end{proof}
+
     We will examine the rules by checking some basic examples using polynomial functions.
 
     \begin{example}
@@ -427,12 +435,38 @@
             &<4
         \end{align*}
 
-        Next, to take care of $f_n(x,t)$, we need to show that $\exists K>0$ such that $f_n(x,1)\leq Kf_n(1,1)$ for all $n\in\mathbb{N}$.\begin{align*}
+        Next, we need to show that $\exists K>0$ such that $f_n(x,1)\leq K$ for all $n\in\mathbb{N}$.\begin{align*}
             f_n(x,1)&\leq \sum_{k=0}^{n}\frac{x^k}{k!}
         \end{align*} 
-        For if $n$ is large enough such that $n>\lceil x\rceil$, we can write \begin{align*}
-            f_n(x,1)&\leq \sum_{k=0}^{\lfloor x \rfloor}\frac{x^k}{k!}+\sum_{k=\lceil x\rceil}^{n}\frac{x^k}{k!}\\
-            &\leq \sum_{k=0}^{\lfloor x \rfloor}\frac{x^k}{k!}+x^{\lceil x \rceil}\sum_{k=\lceil x\rceil}^{n}\frac{x^k}{k!}\\
+
+        For if $n$ is large enough such that $n>2\lceil x\rceil$, we can write \begin{align*}
+            f_n(x,1)&\leq \sum_{k=0}^{2\lceil x \rceil-1}\frac{x^k}{k!}+\sum_{k=2\lceil x\rceil}^{n}\frac{x^k}{k!}\\
+            &\leq \sum_{k=0}^{2\lceil x \rceil-1}\frac{x^k}{k!}+x^{2\lceil x \rceil}\sum_{k=2\lceil x\rceil}^{n}\frac{x^{k-\lceil x \rceil}}{k!}\\
+            &\leq \sum_{k=0}^{\lfloor x \rfloor}\frac{x^k}{k!}+\frac{x^{2\lceil x \rceil}}{(2\lceil x \rceil-1)!}
         \end{align*}
+
+        The final sum is fixed and thus $f_n(x,1)$ is bounded above.
+    \end{proof}
+
+    Hence, the convergence of $f_n(x,t)$ can be concluded by the following theorem.
+
+    \begin{theorem}[Monotone convergence theorem]
+        If $a_n$ is an increasing (resp. decreasing) sequence that is bounded above (resp. below), then $a_n$ is a converging sequence, i.e. limit exists.
+    \end{theorem}
+
+    By the stated theorem, we can conclude that $f_n(x,t)$ will converge to some limit as $n\to \infty$. Examine the limit of $f_n(1,1)$, we found that \[\lim_{n\to \infty}f_n(1,1) = 2.718\dots\] which we denote the number as $e$, named \textbf{Euler's number}.
+
+    \begin{definition}
+        The Euler's number $e$ is defined by the limit \[e:=\lim_{n\to \infty}(1+\frac{1}{n})^n.\]
+    \end{definition}
+
+    We are now going to establish the usage of Euler's number, in fact the exponential function. We shall establish the following relation first.
+
+    \begin{proposition}
+        Let $x,t\in\mathbb{R}$, the following holds: \[\lim_{n\to \infty}f_n(x,t)=e^{xt}.\]
+    \end{proposition}
+
+    \begin{proof}
+        
     \end{proof}
 \end{document}
