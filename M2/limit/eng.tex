@@ -44,7 +44,7 @@
 
 \begin{document}
     \begin{abstract}
-        To understand the concept of calculus well, it is indeed not a compulsory to learn the theory of limit. However, the consolidation and confirmation of the knowledge in both differentiation and integration depends on limit application heavily, so it worths learning the sense behind. We all know that Newton found caculus a.k.a. dynamic flow without limit thoery, but the mystery of calculus makes sense until the explanation by limit.
+        To understand the concept of calculus well, it is indeed not a compulsory to learn the theory of limit. However, the consolidation and confirmation of the knowledge in both differentiation and integration depends on limit application heavily, so it worths learning the sense behind. We all know that Newton found caculus a.k.a. fluxion without limit thoery, but the mystery of calculus makes sense until the explanation by limit.
     \end{abstract}
 
     \section{Sense of approximation}
@@ -382,12 +382,40 @@
             0,&\textrm{if }m<n,\\
             \frac{a}{b},&\textrm{if }m=n,\\
             \pm\infty,&\textrm{if }m>n
-        \end{cases}\] where $a$ and $b$ are the leading coefficients of $f$ and $g$ respectively.
+        \end{cases}\] where $a$ and $b$ are the non-zero leading coefficients of $f$ and $g$ respectively.
     \end{theorem}
 
     \begin{proof}
-        
+        Consider $f(x)=ax^m+\cdots+f_0$ and $g(x)=bx^n+\cdots+g_0$, the cases becomes \begin{align*}
+            \lim_{x\to\infty}\frac{f(x)}{g(x)}&=\lim_{x\to\infty}\frac{ax^m+\cdots+f_0}{bx^n+\cdots+g_0}
+        \end{align*}
+        By substituting $u=\frac{1}{x}$, following the definition of extended real number, that $\frac{1}{\infty}=0$, we will have $u\to 0$, and $x=\frac{1}{u}$, such that \begin{align*}
+            \lim_{x\to\infty}\frac{ax^m+\cdots+f_0}{bx^n+\cdots+g_0}&=\lim_{u\to\infty}\frac{a(\frac{1}{u})^m+\cdots f_0}{b(\frac{1}{x})^n+\cdots+g_0}\\
+            &=\lim_{u\to 0}\frac{a+\cdots+f_0 u^m}{b+\cdots+g_0 u^n}\cdot u^{n-m}\\
+            &=\frac{a}{b}\lim_{u\to 0}u^{n-m}
+        \end{align*}
+        Then the limit turns into \[\lim_{x\to\infty}\frac{f(x)}{g(x)}=\begin{cases}
+            0,&\textrm{if }m<n,\\
+            \frac{a}{b},&\textrm{if }m=n,\\
+            \pm\infty,&\textrm{if }m>n
+        \end{cases}.\]
     \end{proof}
+
+    \begin{example}
+        Evaluation of limits:\begin{enumerate}
+            \item $\displaystyle\lim_{x\to\infty}\frac{3x^2-2x+1}{4x^3+2x-1}=0$;
+            \item $\displaystyle\lim_{x\to\infty}\frac{3x^2-2x+1}{4x^2+2x-1}=\frac{3}{4}$;
+            \item $\displaystyle\lim_{x\to\infty}\frac{3x^2+1}{2x-1}=\infty$.
+        \end{enumerate}
+    \end{example}
+
+    \begin{exercise}
+        Evaluate the following limits:\begin{enumerate}
+            \item $\displaystyle\lim_{x\to\infty}\frac{5x^4-2x+1}{4x^8-1}$;
+            \item $\displaystyle\lim_{x\to\infty}\frac{3x^5-2x^2+1}{4x^5+2x^3-1}$;
+            \item $\displaystyle\lim_{x\to\infty}\frac{3x^{10}+1}{x^7-1}$.
+        \end{enumerate}
+    \end{exercise}
 
     Since the limit value of the above forms are very unstable, according to their defining functions, resulting in many variations. However, one of the above forms is quite interesting to discuss with, was the form $1^\infty$.
     \section{Limits with special functions}
@@ -396,7 +424,7 @@
 
     Let us start by investigating the natural growth function, i.e. the compound interest progression, stated as \[f_n(x,t):=A_0(1+\frac{x}{n})^{nt}.\] It is noticeable that $f_n(0,t)=f_n(x,0)=A_0$, as $A_0$ is a conditional constant. Let us set $A_0=1$ to simplify the condition first. We are interested in the convergence when $n\to \infty$: The situation for `naturality', random growth occurrence with a statistical mean growth.
 
-    We first claim that the sequence $f_n$ is an increasing sequence. We shall further divide this into different cases.
+    We first claim that the sequence $f_n$ is an increasing sequence.
     
     \begin{claim}
         $f_n(1,1)$ is an increasing sequence according to $n$.
@@ -501,5 +529,5 @@
         The final step is to extend the equivalence to all real numbers. It suffices to show that for $x\notin \mathbb{Q}$. Pick $r<x<s$ with $r,s\in\mathbb{Q}$, we can write \[\exp(r)-e^s < \exp(x)-e^x < \exp(s)-e^r,\] which can help us deduce that when $|r-s|<\delta$, the inequality turns into \[-\varepsilon< \exp(x)-e^x < \varepsilon,\] so that the conclusion $\exp(x)=e^x$ is true for all $x\in\mathbb{R}$.
     \end{proof}
 
-    From now on, we will simply write $e^x$ to handle with $\exp(x)$.
+    From now on, we will simply write $e^x$ to handle with $\exp(x)$. Let us recall the problem in the beginning of this session. We want to find the natural growth function for if $n\to\infty$. It turns out that \[f(x,t)=\lim_{n\to\infty}f_n(x,t)=A_0\lim_{n\to\infty}(1+\frac{x}{n})^{nt}=A_0 e^{xt}\] is the desired function.
 \end{document}
