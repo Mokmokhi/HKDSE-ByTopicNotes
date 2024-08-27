@@ -418,7 +418,7 @@
     \end{exercise}
 
     Since the limit value of the above forms are very unstable, according to their defining functions, resulting in many variations. However, one of the above forms is quite interesting to discuss with, was the form $1^\infty$.
-    \section{Limits with special functions}
+    \section{The Euler's number and exponential function}
 
     In dealing with the form $1^\infty$, we obtain a popular function, called \textbf{the exponential function} $\exp$. To find its importance in mathematics, we shall take account into its origination.
 
@@ -530,4 +530,40 @@
     \end{proof}
 
     From now on, we will simply write $e^x$ to handle with $\exp(x)$. Let us recall the problem in the beginning of this session. We want to find the natural growth function for if $n\to\infty$. It turns out that \[f(x,t)=\lim_{n\to\infty}f_n(x,t)=A_0\lim_{n\to\infty}(1+\frac{x}{n})^{nt}=A_0 e^{xt}\] is the desired function.
+
+    We now establish another form of representation for the exponential function.
+
+    \begin{proposition}
+        For any $x\in\mathbb{R}$, the exponential function can be represented using series: \[e^x=\sum_{k=0}^{\infty}\frac{x^k}{k!}\]
+    \end{proposition}
+
+    \begin{proof}
+        We will proof both of the following inequalities hold:\[e^x \geq \sum_{k=0}^{\infty}\frac{x^k}{k!}, e^x\leq \sum_{k=0}^{\infty}\frac{x^k}{k!}.\]
+
+        The second inequality was deduced in the proof of existence of the exponential function, namely \[(1+\frac{x}{n})^n\leq \sum_{k=0}^{n}\frac{x^k}{k!}\] and the inequality follows by taking $n\to \infty$. It suffices to show the first inequality.
+
+        The first inequality could be proven as follows. Consider \begin{align*}
+            (1+\frac{x}{n})^{n+1}&=\sum_{k=0}^{n+1}C_k^{n+1}\frac{x^k}{n^k}\\
+            &>\sum_{k=0}^{\lfloor n/2 \rfloor}\frac{x^k}{k!}
+        \end{align*} 
+        Then taking $n\to\infty$ yields the desired inequality.
+    \end{proof}
+
+    \begin{exercise}
+        Expand the following in series expansion up to the term of $x^3$: (a) $e^x$; (b) $e^{-x}$; (c) $e^{3x}$; (d) $e^{px}$; (e) $e^{px^2}$.
+    \end{exercise}
+
+    Following the series expansion, we obtain an interesting limit result.
+
+    \begin{proposition}
+        The following limit holds: \[\lim_{x\to 0}\frac{e^x-1}{x}=1.\]
+    \end{proposition}
+
+    \begin{proof}
+        The proof will be left as an exercise. [Hints: Substitute $e^x$ with its series expansion, and simplify the limit.]
+    \end{proof}
+
+    \begin{corollary}
+        For $a,b\in\mathbb{R}$, we have \[\lim_{x\to 0}\frac{e^{ax}-1}{e^{bx}-1}=\frac{a}{b}.\]
+    \end{corollary}
 \end{document}
