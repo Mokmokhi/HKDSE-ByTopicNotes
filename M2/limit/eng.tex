@@ -531,6 +531,25 @@
 
     From now on, we will simply write $e^x$ to handle with $\exp(x)$. Let us recall the problem in the beginning of this session. We want to find the natural growth function for if $n\to\infty$. It turns out that \[f(x,t)=\lim_{n\to\infty}f_n(x,t)=A_0\lim_{n\to\infty}(1+\frac{x}{n})^{nt}=A_0 e^{xt}\] is the desired function.
 
+    For the exponential function, we have the following properties:
+
+    \begin{theorem}
+        The exponential function $\exp$ satisfies the following properties: For $x,y\in\mathbb{R}$, \begin{enumerate}
+            \item $\exp(x+y)=\exp(x)\exp(y)$;
+            \item $\exp(0)=1$;
+            \item $\displaystyle \exp(-x)=\frac{1}{\exp(x)}$;
+            \item $\exp(x)>0$.
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}
+        The first and second equality are trivial: Note that \[\exp(x+y)=e^{x+y}=e^x e^y=\exp(x)\exp(y),\] and the limit writes \[\lim_{n\to \infty}1^n=1\] when $x=0$.
+
+        The third equality comes from (1) and (2): Note that \[1=\exp(0)=\exp(x-x)=\exp(x)\exp(-x)\] for all $x\in\mathbb{R}$. By rearranging terms, we obtain \[\exp(-x)=\frac{1}{\exp(x)}.\]
+
+        The last equality finds by the positivity of $e^x$ when $x>0$, and by (3), it is true for $e^{-x}$ also. The theorem then is proven.
+    \end{proof}
+
     We now establish another form of representation for the exponential function.
 
     \begin{proposition}
@@ -566,4 +585,151 @@
     \begin{corollary}
         For $a,b\in\mathbb{R}$, we have \[\lim_{x\to 0}\frac{e^{ax}-1}{e^{bx}-1}=\frac{a}{b}.\]
     \end{corollary}
+
+    \begin{example}
+        The following limits exist:\begin{enumerate}
+            \item $\displaystyle\lim_{x\to 0}\frac{e^{2x}-1}{x}=2$;
+            \item $\displaystyle\lim_{x\to 0}\frac{e^{-3x}-1}{5x}=-\frac{3}{5}$;
+            \item $\displaystyle\lim_{x\to 0}\frac{7x}{e^{x}-1}=7$;
+            \item $\displaystyle\lim_{x\to 0}\frac{e^{-2x}-1}{e^{5x}-1}=-\frac{2}{5}$.
+        \end{enumerate}
+    \end{example}
+
+    \begin{exercise}
+        Prove the above limits using (a) Series expansion of $e$ and; (b) the formal definition of limit.
+    \end{exercise}
+
+    \begin{exercise}
+        Evaluate the following limits:\begin{enumerate}
+            \item $\displaystyle\lim_{x\to 0}\frac{e^{11x}-1}{3x}$;
+            \item $\displaystyle\lim_{x\to 0}\frac{e^{k^2 x}-1}{x}$;
+            \item $\displaystyle\lim_{x\to 0}\frac{9x}{e^{2x}-1}$;
+            \item $\displaystyle\lim_{x\to 0}\frac{e^{f(x)}-1}{e^{g(x)}-1}$ provided that $f(0)=g(0)=0$, and $\displaystyle\lim_{x\to 0}\frac{f(x)}{g(x)}=a$.
+        \end{enumerate}
+    \end{exercise}
+
+    Let us put the exponential function into real-world application, and round up the session with the meaning of approximation.
+
+    \begin{example}
+        Suppose a bank provides an interest rate of $r\%$ per annum for live savings. The amount stored in the account in $t$ years could be approximated by the following formula: \[\lim_{n\to\infty} P(1+\frac{r\%}{n})^{nt}=Pe^{0.01rt}.\]
+
+        For if the bank uses the different strategies of increment, we have the following results:\begin{enumerate}
+            \item Annual interest: it means the actual amount is $P(1+r\%)^t$. The percentage error can be computed as \begin{align*}
+                Error\% &=\frac{Pe^{0.01rt}-P(1+0.01r)^t}{P(1+0.01r)^t}\\
+                &=\frac{e^{0.01rt}}{(1+0.01r)^t}-1\\
+                &\approx (\frac{1+0.01r+0.005r^2}{1+0.01r})^t-1&&\because e^x \approx 1+x+\frac{x^2}{2}\\
+                &\approx \frac{0.005r^2 t}{1+0.01r}&&\because(1+x)^n\approx 1+nx
+            \end{align*}
+            \item Semi-annual interest: it means the actual amount is $P(1+\frac{r}{2}\%)^{2t}$. The percentage error can be computed as \begin{align*}
+                Error\% &=\frac{Pe^{0.01rt}-P(1+0.005r)^{2t}}{P(1+0.005r)^{2t}}\\
+                & \dots \textrm{similar deduction as previous case}\\
+                &\approx \frac{0.0025r^2 t}{1+0.005r}&&r\mapsto r/2, t\mapsto 2t
+            \end{align*}
+            \item Seasonal interest: it means the actual amount is $P(1+\frac{r}{4}\%)^{4t}$. The percentage error can be computed as \begin{align*}
+                Error\% &=\frac{Pe^{0.01rt}-P(1+\frac{0.01r}{4})^{4t}}{P(1+\frac{0.01r}{4})^{4t}}\\
+                & \dots \textrm{similar deduction as previous case}\\
+                &\approx \frac{0.00125r^2 t}{1+0.0025r}&&r\mapsto r/4, t\mapsto 4t
+            \end{align*}
+            \item Bi-monthly interest: it means the actual amount is $P(1+\frac{r}{6}\%)^{6t}$. The percentage error can be computed as \begin{align*}
+                Error\% &=\frac{Pe^{0.01rt}-P(1+\frac{0.01r}{6})^{6t}}{P(1+\frac{0.01r}{6})^{6t}}\\
+                & \dots \textrm{similar deduction as previous case}\\
+                &\approx \frac{\frac{1}{600}r^2 t}{1+\frac{1}{600}r}&&r\mapsto r/6, t\mapsto 6t
+            \end{align*}
+            \item Monthly interest: it means the actual amount is $P(1+\frac{r}{12}\%)^{12t}$. The percentage error can be computed as \begin{align*}
+                Error\% &=\frac{Pe^{0.01rt}-P(1+\frac{0.01r}{12})^{12t}}{P(1+\frac{0.01r}{12})^{12t}}\\
+                & \dots \textrm{similar deduction as previous case}\\
+                &\approx \frac{\frac{1}{1200}r^2 t}{1+\frac{1}{1200}r}&&r\mapsto r/6, t\mapsto 6t
+            \end{align*}
+            \item Daily interest: it means the actual amount is $P(1+\frac{r}{365}\%)^{12t}$. The percentage error can be computed as \begin{align*}
+                Error\% &=\frac{Pe^{0.01rt}-P(1+\frac{0.01r}{365})^{365t}}{P(1+\frac{0.01r}{365})^{365t}}\\
+                & \dots \textrm{similar deduction as previous case}\\
+                &\approx \frac{\frac{1}{36500}r^2 t}{1+\frac{1}{36500}r}&&r\mapsto r/365, t\mapsto 365t
+            \end{align*}
+        \end{enumerate}
+
+        Students may verify the above cases of natural growth approximation with particular $r$ and $t$.
+    \end{example}
+
+    \begin{exercise}
+        Suppose bank A provides an interest rate of $6\%$ per annum for fixed savings, while bank B provides an interest rate of $5\%$ per annum for it. They release the following plans in the market:
+        \begin{center}
+            \begin{tabular}{|c|c|c|}
+                \hline
+                &Bank A&Bank B\\
+                \hline
+                Period&1.5 years&2 years\\
+                \hline
+                Strategy&Compunded seasonally&compunded half-yearly\\
+                \hline
+                Penalty for early withdrawal&10\% of plan principal&5\% of plan amount at withdrawal\\
+                \hline
+            \end{tabular}
+        \end{center}
+        \begin{enumerate}
+            \item Without computing the exact returns, determine the bank of higher return according to their default period.
+            \item Without computing the exact returns, determine the bank of higher average return.
+            \item Someone would like to save a certain amount of money for 3 years. What combination of saving should he make for the greatest return? Assume that he will put all of his money into one plan at once only.
+        \end{enumerate}
+    \end{exercise}
+
+    \section{The logarithmic function and its use}
+
+    The Euler's number and the exponential function plays an important role in either applied field of mathematics or pure mathematics, according to its functionality and positivity. Meanwhile, we are curious about any inverse functions can be derived for the exponential function. Let us construct the condition as follows: we would like to have a function $L:(0,\infty)\to \mathbb{R}$ such that \[L(e^x)=x, e^{L(x)}=x\] for all $x>0$. Such function would be called the \textbf{logarithmic function with base $e$}.
+
+    Therefore, we have to show the existence and unqiueness of such function. In fact, the existence of the logarithmic function can be ensured by the bijectivity of the exponential function. I will leave the proof right here for those interested students.
+
+    \begin{proof}[Proof of the bijectivity of exponential function]
+        For the injectivity of $e^x$, suppose $e^{x_1}=e^{x_2}$, then by series expansion of exponential function, we have \begin{align*}
+            \sum_{k=0}^{\infty}\frac{x_1^k}{k!}&=\sum_{k=0}^{\infty}\frac{x_2^k}{k!}\\
+            \sum_{k=0}^{\infty}\frac{x_1^k}{k!}-\sum_{k=0}^{\infty}\frac{x_2^k}{k!}&=0\\
+            (x_1-x_2)\sum_{k=1}^{\infty}\frac{\sum_{i=0}^{k-1}x_1^{k-1-i}x_2^i}{k!}&=0
+        \end{align*}
+        If $x_1\neq x_2$, then we must have \begin{align*}
+            \sum_{k=1}^{\infty}\frac{\sum_{i=0}^{k-1}x_1^{k-1-i}x_2^i}{k!}&=0
+        \end{align*} for all pairs of $(x_1,x_2)$, but it can be easily shown that $(1,2)$ does not satisfy the case. Therefore, $x_1=x_2$.
+
+        For the surjectivity of $e^x$, we shall write for $y>0$, there is an $x\in\mathbb{R}$ such that \[e^x=y.\] Note that $e^0=1$. If $y>1$, then $e^\infty=\infty$ and continuity of the exponential function ensures there exists an $x_0\in(0,\infty)$ such that $e^{x_0}=y$; if $0<y<1$, then $1<\frac{1}{y}<\infty$. Therefore, there is an $x_0\in(0,\infty)$ such that $e^{x_0}=\frac{1}{y} \implies e^{-x_0}=y$.
+    \end{proof}
+
+    To show the uniqueness of $L$, we let $L(x)=L(y)$ for $x,y\in(0,\infty)$. By exponentiation, we have \begin{align*}
+        e^{L(x)}&=e^{L(y)}\\
+        x&=y
+    \end{align*} and the uniqueness part is proven.
+
+    Hence, we define such function as follows:
+
+    \begin{definition}[The natural logarithm]
+        Define $\ln:(0,\infty)\to\mathbb{R}$ to be a function such that \[e^x=y\iff \ln{y}=x.\]
+    \end{definition}
+
+    \begin{example}
+        We accept the writing of $\ln$ in representing numbers.\begin{enumerate}
+            \item If $e^x=2$, then $x=\ln{2}$ is a solution to the equation.
+            \item If $3e^x+4=5$, then $x=\ln{\frac{1}{3}}$ is a solution to the equation.
+        \end{enumerate}
+    \end{example}
+
+    Some properties of $\ln$ can be deduced according to the properties of $e^x$.
+
+    \begin{theorem}
+        It is obvious to reverse the properties of $e^x$ as:\begin{enumerate}
+            \item $\ln(xy)=\ln(x)+\ln(y)$;
+            \item $\ln(1)=0$;
+            \item $\ln(\frac{1}{x})=-\ln(x)$.
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}
+        For the first equality, consider $x=e^M$ and $y=e^N$. Then \[\ln(xy)=\ln(e^M e^N)=\ln(e^{M+N})=M+N=\ln(x)+\ln(y).\]
+
+        For the second equality, it is obvious to see that \[e^0=1 \implies 0=\ln(1).\]
+
+        For the third equality, by (1) and (2), we have \[\ln(x)+\ln(\frac{1}{x})=0 \implies \ln(\frac{1}{x})=-\ln(x).\]
+    \end{proof}
+
+    The theoretic part of logarithmic is done, but it worths to find a working formula to approximate the value of $\ln(a)$ with a sufficiently small error. Recall that \[e^x=y \iff x=\ln(y),\] we can make the following consideration:
+
+    \begin{proposition}[Secondary knowledge useful approximation]
+        The approximation of the value of $\ln(a)$ for any $a>1$ can be done by the formula 
+    \end{proposition}
 \end{document}
