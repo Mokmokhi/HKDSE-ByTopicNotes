@@ -668,7 +668,7 @@
         \begin{enumerate}
             \item Without computing the exact returns, determine the bank of higher return according to their default period.
             \item Without computing the exact returns, determine the bank of higher average return.
-            \item Someone would like to save a certain amount of money for 3 years. What combination of saving should he make for the greatest return? Assume that he will put all of his money into one plan at once only.
+            \item Someone would like to save a certain amount of money for 3 years. What combination of saving should he make for the greatest return? Assume that he will put all of his budget into one plan at once only.
         \end{enumerate}
     \end{exercise}
 
@@ -729,7 +729,167 @@
 
     The theoretic part of logarithmic is done, but it worths to find a working formula to approximate the value of $\ln(a)$ with a sufficiently small error. Recall that \[e^x=y \iff x=\ln(y),\] we can make the following consideration:
 
-    \begin{proposition}[Secondary knowledge useful approximation]
-        The approximation of the value of $\ln(a)$ for any $a>1$ can be done by the formula 
+    \begin{proposition}[Method of bisection]
+        The approximation of the value of $\ln(a)$ for any $a>1$ can be done by the following strategy:\begin{enumerate}
+            \item find $x_1,x_2\in\mathbb{Z}$ such that $e^{x_1}\leq a\leq e^{x_2}$;
+            \item if equality holds for $x_1$ or $x_2$, then we are done; else we pick $x_3:=\frac{x_1+x_2}{2}$ and compare $e^{x_3}$ to $a$:\begin{enumerate}
+                \item if $e^{x_3} = a$ then it is done;
+                \item if $e^{x_3} < a$ then put $x_4:=\frac{x_1+x_3}{2}$;
+                \item if $e^{x_3} > a$ then put $x_4:=\frac{x_3+x_2}{2}$;
+            \end{enumerate}
+            \item repeat (2) until it's error is sufficiently small.
+        \end{enumerate}
+        The mentioned strategy gaurunteed to be error-negligible within finite steps.
     \end{proposition}
+
+    \begin{proof}
+        We only need to show the last statement is true. In fact, in the n-th step of bisection, we have the error term $\epsilon<\frac{|x_1-x_2|}{2^n}$ and it is a converging sequence. For if $\frac{\epsilon}{|\ln{a}|}<0.001$, we can deduce that \begin{align*}
+            \frac{|x_1-x_2|}{2^n |\ln{a}|}&<0.001\\
+            2^n&>\frac{1000|x_1-x_2|}{|\ln{a}|}
+        \end{align*}
+        For usual practice, our $x_1,x_2$ should be consecutive at first, such that $|x_1-x_2|=1$. Then the practical estimation can be computed \begin{align*}
+            2^n&>\frac{1000}{|\ln{a}|}\\
+            n&>10-\ln{|\ln{a}|}
+        \end{align*}
+        
+        On the other hand, we may find $\frac{\epsilon}{|\ln{a}|}>0.0001$ provides an upper bound of $n$ by \begin{align*}
+            2^n&<\frac{10000|x_1-x_2|}{|\ln{a}|}\\
+            n&<14+\ln{|\ln{a}|}
+        \end{align*}
+        Therefore, we have proved our claim of finite steps of estimation.
+    \end{proof}
+
+    In order to understand how precise the estimation is, we can look at the term $\ln|\ln{a}|$ at where it achieve 1. It is not hard to see $a=e^{e}$ does the job. However, if it needs to achieve 2, we required $a=e^{e^2}> 1600$; if $\ln{\ln{a}}=3$, then $a>5\times 10^8$ is large enough.
+
+    \begin{example}
+        Approximate the value of $\ln{2}$ in precision to 3 significant figures.
+
+        \begin{solution}
+            We have $1<2<e$, so we may pick $x_1=0$ and $x_2=1$. Then we construct the bisection sequence:\begin{align*}
+                x_3=\frac{1}{2} &\implies e^{x_3}\approx 1.64 < 2\\
+                x_4=\frac{3}{4} &\implies e^{x_4}\approx 2.12 > 2\\
+                x_5=\frac{5}{8} &\implies e^{x_5}\approx 1.87 < 2\\
+                x_6=\frac{11}{16} &\implies e^{x_6}\approx 1.99 < 2\\
+                x_7=\frac{23}{32} &\implies e^{x_7}\approx 2.05 > 2\\
+                x_8=\frac{45}{64} &\implies e^{x_8}\approx 2.02 > 2\\
+                x_9=\frac{89}{128} &\implies e^{x_9}\approx 2.004 > 2\\
+                x_{10}=\frac{177}{256} &\implies e^{x_{10}}\approx 1.997 < 2\\
+                x_{11}=\frac{355}{512} &\implies e^{x_{11}}\approx 2.0004 > 2\\
+                x_{12}=\frac{709}{1024} &\implies e^{x_{12}}\approx 1.9984 < 2\\
+                x_{13}=\frac{1419}{2048} &\implies e^{x_{13}}\approx 1.9994 < 2
+            \end{align*}
+            The approximation is closed enough for now, we have $\dfrac{355}{512}\approx 0.69336$ and $\dfrac{1419}{2048}\approx 0.69238$. This means it is reasonable to estimate $\ln{2}$ by $0.6928$ by bisecting the nearest pair once more.
+        \end{solution}
+    \end{example}
+
+    \begin{exercise}
+        Approximate $\ln{3}, \ln{5}$ and $\ln{7}$ using bisection method correct to the nearest 2 decimal places.
+    \end{exercise}
+
+    Our developed machine - the calculator - help us manage with the approximation of $\ln{x}$, and that means we can use freely the value of $\ln{x}$ as numbers. We can now proceed to more properties of the function $\ln$.
+
+    \begin{proposition}
+        The following holds for the natural logarithm:\begin{enumerate}
+            \item Change of base: For any $b\in\mathbb{R}_{>0}$, $b=e^{\ln{b}}$, thus $b^x=e^{x\ln{b}}$.
+            \item Define $\log_{b}$ to be the \textbf{logarithm to the base $b$}, i.e. $\log_{b}(b^x)=x$. Then \[\log_{b}(a)=\frac{\log_{c}(a)}{\log_{c}(b)}\] for $c\in\mathbb{R}_{>0}$.
+        \end{enumerate}
+    \end{proposition}
+
+    \begin{proof}
+        The change of base rule follows immediately from the definition of $\ln$; for the second rule, we derived as follows: \begin{align*}
+            a&=c^{\log_{c}(a)}\\
+            &=(c^{\log_{c}(b)})^{\frac{\log_{c}(a)}{\log_{c}(b)}}\\
+            &=(b)^{\frac{\log_{c}(a)}{\log_{c}(b)}}\\
+            \log_{b}(a)&=\frac{\log_{c}(a)}{\log_{c}(b)}
+        \end{align*}
+    \end{proof}
+
+    The use of logarithmic function has its place in estimating growth time, due to its meaning as an inverse function of the exponential function. We will examine one of the economic rule called the 72-rule.
+
+    \begin{example}
+        The time for doubling the amount of principal can be computed as follows: Suppose the time required to be $t$ years, with principal $P$ and mean growth rate $r\%$,\begin{align*}
+            Pe^{0.01rt}&=2P\\
+            0.01rt&=\ln{2}\\
+            rt&=69.31
+        \end{align*}
+        In order to satisfy the computing strategy of banking, we may find the least multiple of 12 that is greater than or equal to 69.31. We admit that 72 is the one we need. Therefore, the 72-rule provided us an approximation of time to doubling the pricipal according to the following table:
+        \begin{center}
+            \begin{tabular}{|c|c|}
+                \hline
+                Periodic Rate&Time for doubling\\
+                \hline
+                12\% &6 periods\\
+                \hline
+                6\% &12 periods\\
+                \hline
+                4\% &18 periods\\
+                \hline
+                3\% &24 periods\\
+                \hline
+                2\% &36 periods\\
+                \hline
+                1\% &72 periods\\
+                \hline
+                0.5\% &144 periods\\
+                \hline
+            \end{tabular}
+        \end{center}
+
+        For example, if a bank provides a rate of $6\%$ p.a. compounded monthly for a saving plan, it requires about 12 years to double up the pricipal, approximately 140 months of compound. The approximated number of months could be smaller than approximated number of years since we have already made an overestimate at 72-rule.
+    \end{example}
+
+    \begin{exercise}
+        Find an applicable rule for tripling (3 times) the pricipal according to the computing strategy of a bank. Discuss the estimation result, and how to adjust when the rule is being used.
+    \end{exercise}
+
+    Another example in the study of physics would be the decay rate of radioactivity. It is called the half-life of an atom.
+
+    \begin{example}
+        The radioactivity of an radioactive atom can be modelled by the formula \[A=A_0 e^{-kt}\] where $A_0$ is the initial activity, $k$ is the decay constant presenting the rate of decay in seconds, and $t$ is the time passed in seconds. The half-life $t_{1/2}$ of the atom can be computed when $A=\frac{A_0}{2}$, so that \begin{align*}
+            \frac{A_0}{2}&=A_0 e^{-kt_{1/2}}\\
+            t_{1/2}&=\frac{\ln{2}}{k}
+        \end{align*}
+        By the half-life strategy, one could approximate the living time of an atom by its ratio of radioactivity: \begin{align*}
+            t_{1/2}&\sim \frac{\ln{2}}{k}\\
+            t_{1/2^n}&\sim \frac{n\ln{2}}{k}
+        \end{align*}
+        which means when the time arrives $\dfrac{n\ln{2}}{k}$, the remaining activity of an atom would be $\dfrac{1}{2^n}$ of its initial activity.
+    \end{example}
+
+    \begin{exercise}
+        Find the half-life of an atom if its decay constant is $6.03\times 10^{-23} s^{-1}$. Find also the time for purification, i.e. the remaining number is below 1\% of its initial.
+    \end{exercise}
+
+    Next, we may establish some useful limits based on logarithms.
+
+    \begin{proposition}
+        The following limits exists and are unique:\begin{enumerate}
+            \item $\displaystyle\lim_{x\to 0}\frac{\ln(x+1)}{x}=1$;
+            \item $\displaystyle\lim_{x\to 0}\frac{\ln(ax+1)}{bx}=\frac{a}{b}$;
+            \item $\displaystyle\lim_{x\to 0}\frac{\ln(ax+1)}{\ln(bx+1)}=\frac{a}{b}$;
+            \item $\displaystyle\lim_{x\to 0}\frac{\ln(ax+1)}{e^{bx}-1}=\frac{a}{b}$.
+        \end{enumerate}
+    \end{proposition}
+
+    \begin{proof}
+        The proof can be easily done by substitution. For the first limit, substitute $x\mapsto \ln(x+1)$ into $\displaystyle\lim_{x\to 0}\frac{e^x-1}{x}$ stated in previous section. For the remaining, I will leave them to students as exercise.
+    \end{proof}
+
+    Let's complete this section with one more concepts on comparison of order of functions, and its working logic. Recall the definition of order of polynomials.
+
+    \begin{definition}[Order of functions]
+        A polynomial $P(x)$ is said to be of order $n$ if the highest degree of $P(x)$ is $n$, i.e. \[P(x)=a_n x^n + a_{n-1} x^{n-1} + \cdots + a_0\] written in decending power of $x$, and denote $\deg{P}=n$. We also write $O(P)=O(x^n)$
+    \end{definition}
+
+    To compare different functions, we note that $e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!}$ covers any order of polynomials, and that means if any function $f$ can be finitely represented by a polynomial, it must have the property that $O(f)\leq O(e^x)$. In this situation, we can say \[\ln(f(x))\leq kx\] for some positive constant $k$.
+
+    However, for if $f$ is a positive function, we have no idea with polynomial to bound $f$, since any polynomial function may eventually having zeros - $f$ is always having some interval greater than the polynomial. We may observe $e^x$ is also always positive, and that yields a muich 'larger' definition on the upper bound:
+
+    \begin{definition}[Order of growth of functions]
+        Let $f>0$ be a positive function. Suppose there is a number $\rho$ such that \[\ln(f)=O(x^\rho),\] then $f$ is said to be of \textbf{order of growth $\rho$}.
+    \end{definition}
+
+    We can rewrite the equation as $\ln|\ln(f(x))|\sim\rho\ln{x}+\ln{k}$ with a constant $k$. Let's call $\sim$ to be \textit{comparable}, and this helps us to manage functions according to their growth rate. Just as a kindly reference, the concept occurs in complex analysis to manage with entire functions, as complex numbers has the form $z=re^{ix}$, and if polynomial is dicussed with complex numbers, the function should be considered as \[|f(z)|=|e^{P(z)}|\sim e^{A|z|^\rho}\] for some constant $\rho$. This time, $\rho$ is not restricted to integers but real numbers, since $|z|$ requires square-root method to compute the value.
+
+    \section{Fluxions}
 \end{document}
