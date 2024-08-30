@@ -371,6 +371,8 @@ INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\sfd\ttf2pk\UGBK.sfd
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\sfd\ttf2pk\Unicode.sfd
 OUTPUT eng.pdf
 INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\admin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT eng.aux
 INPUT C:\Users\admin\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\admin\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
