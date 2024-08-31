@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.4.3)  31 AUG 2024 18:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.4.3)  31 AUG 2024 09:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/d.tex
-(c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M2/Differentiation/d.tex
+**c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M2/Vectors/eng.tex
+(c:/Users/admin/Documents/GitHub/HKDSE-ByTopicNotes/M2/Vectors/eng.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
 (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -710,8 +710,8 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) (d.aux)
-\openout1 = `d.aux'.
+) (eng.aux)
+\openout1 = `eng.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
@@ -848,14 +848,6 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
-(C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
- (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -867,24 +859,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: ctex-zhmap-windows.tex 2022/07/14 v2.5.10 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
 {C:/Users/admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
 
-] (d.aux)
+] (eng.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29881 strings out of 474424
- 729668 string characters out of 5741740
- 1932496 words of memory out of 5000000
- 51677 multiletter control sequences out of 15000+600000
- 566569 words of font info for 64 fonts, out of 8000000 for 9000
+ 29808 strings out of 474424
+ 728520 string characters out of 5741740
+ 1928496 words of memory out of 5000000
+ 51626 multiletter control sequences out of 15000+600000
+ 560962 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,11n,107p,815b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on d.pdf (1 page, 77624 bytes).
+ 103i,11n,107p,809b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on eng.pdf (1 page, 25868 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 24 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
