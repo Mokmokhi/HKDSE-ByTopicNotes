@@ -1,0 +1,140 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{color,amsmath,amssymb,amsthm,physics}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{xcolor}
+
+\graphicspath{ {../images/} }
+
+\definecolor{shadecolor}{RGB}{220,220,220}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{A short course on Expansion}
+\fancyhf[HR]{\rightmark}
+\fancyhf[CF]{\thepage}
+\fancyhf[FL]{\copyright Mok Owen 2024}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+\newcommand{\cis}[1]{\mathrm{cis}({#1})}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\newtheorem{exercise}{Essential Practice}[section]
+\newenvironment{solution}{\begin{snugshade*} \underline{\textbf{Solution.}} \par}{\hfill \textit{\dots end of solution} \end{snugshade*}}
+\renewenvironment{proof}[1][Proof]{\begin{snugshade*} \underline{\textit{{#1}.}}\\}{\hfill \qedsymbol \end{snugshade*}}
+
+\begin{document}
+    \begin{abstract}
+        To whom it may concern, it is always interesting the generalize notions from real-valued case to complex-valued case. The content will cover multinomial theorem and Taylor's expansion. It would be nice whenever there is add-on from the viewpoint of functional analysis.
+    \end{abstract}
+
+    \section{Binomial theorem}
+
+    \subsection{Pascal's triangle}
+
+    Notice the following: for a polynomial with two terms, we would like to call it \textbf{binomials}, and we are always interested in studying its power expansion, as a lovely connection to approximate roots of equation, following Newton's method of fluxion. A \textbf{Pascal's triangle} is a first glance to see what happens to do powers on it. Let $a,b$ be numbers, observe the following\begin{align*}
+        (a+b)^0&=1\\
+        (a+b)^1&=a+b\\
+        (a+b)^2&=a^2+2ab+b^2\\
+        (a+b)^3&=a^3+3a^2b+3ab^2+b^3\\
+        &\vdots
+    \end{align*}
+    which is quite fascinating to find the pattern on coefficients $(1)\to(1,1)\to(1,2,1)\to(1,3,3,1)\to\cdots$ which could be built nicely by adding the $k$-th number to $(k+1)$-th number.
+
+    Let us write it properly. Define a representation space \[R:=\{(x_i):x_i\neq 0\textrm{ for finitely many }i\in\mathbb{Z}\}\] such that $1=:(\dots,0,1,0,0,\dots)\in R$. Define a mapping $\pi_2:R\to R$ by $(x_{i+1})\mapsto (x_i+x_{i+1})$ for all $i\in\mathbb{Z}$. This would be an analogue of Pascal's triangle in $R$.
+
+    \begin{example}
+        We may consider $(a+b)^0\equiv(\dots,0,1,0,0,\dots)$ as a starting point, and perform $\pi_2$ to increase its power.\begin{align*}
+            (a+b)&=\pi_2((a+b)^0)=(\dots,0,1,1,0,0,\dots)\\
+            (a+b)^2&=\pi_2((a+b)^1)=(\dots,0,1,2,1,0,0,\dots)\\
+            (a+b)^3&=\pi_2((a+b)^2)=(\dots,0,1,3,3,1,0,0,\dots)\\
+            (a+b)^4&=\pi_2((a+b)^3)=(\dots,0,1,4,6,4,1,0,0,\dots)\\
+            &\vdots
+        \end{align*}
+        This indeed matches the intuition of writing the coefficients of expansion.
+    \end{example}
+
+    \subsection{Binomial and multinomial theorem}
+
+    Since then, may we write \[(a+b)^n=\prod_{1\leq i\leq n}(a+b)\] where $a,b$ are numbers. We know that multiplication works over brackets but not inside one bracket, so objects in the same bracket will never multiply each other. This provides us an intuition that binomial power expansion is a combinatorial over $n$ brakets.
+    
+    The general term will therefore be a combination of $a$ and $b$: for if we need to choose $a^rb^{n-r}$, we are in fact considering $r$ brackets of $a$ and $n-r$ brackets of $b$. This suggest the general term of the expansion to be \[\begin{pmatrix}
+        n\\r
+    \end{pmatrix}\begin{pmatrix}
+        n-r\\n-r
+    \end{pmatrix}a^r b^{n-r}=\begin{pmatrix}
+        n\\r
+    \end{pmatrix}a^r b^{n-r}\] where $\begin{pmatrix}
+        n\\r
+    \end{pmatrix}:=\dfrac{n!}{r!(n-r)!}$ is the combinatorial symbol. Hence we have the binomial theorem in the following form:
+
+    \begin{theorem}[Binomial Theorem]
+        Let $a,b\in\mathbb{F}$ for some commutative ring $\mathbb{F}$. Let $n\in\mathbb{N}$. Then \[(a+b)^n=\sum_{r=0}^{n}\begin{pmatrix}
+            n\\r
+        \end{pmatrix}a^r b^{n-r}.\]
+    \end{theorem}
+
+    \begin{proof}[Proof by induction]
+        Suppose $(a+b)^n=\sum_{r=0}^{n}\begin{pmatrix}
+            n\\r
+        \end{pmatrix}a^r b^{n-r}$ is a true proposition, then \begin{align*}
+            (a+b)^{n+1}&=(a+b)^n(a+b)\\
+            &=(\sum_{r=0}^{n}\begin{pmatrix}
+                n\\r
+            \end{pmatrix}a^r b^{n-r})(a+b)\\
+            &=\sum_{r=0}^{n}\begin{pmatrix}
+                n\\r
+            \end{pmatrix}a^{r+1} b^{n-r} + \sum_{r=0}^{n}\begin{pmatrix}
+                n\\r
+            \end{pmatrix}a^r b^{n+1-r}\\
+            &=\sum_{r=1}^{n+1}\begin{pmatrix}
+                n\\r-1
+            \end{pmatrix}a^{r} b^{n+1-r} + \sum_{r=0}^{n}\begin{pmatrix}
+                n\\r
+            \end{pmatrix}a^r b^{n+1-r}\\
+            &=\sum_{r=0}^{n+1}\begin{pmatrix}
+                n+1\\r
+            \end{pmatrix}a^{r} b^{n+1-r}
+        \end{align*}
+        which follows by principle of M.I.
+    \end{proof}
+
+    On the other hand, if we insert the notion into pascal's triangle, it is much easier to verify:
+
+    \begin{proof}[Proof follows Pascal's Triangle]
+        For the coefficient representation $(x_r)$ where $x_r=\begin{pmatrix}
+            n\\r
+        \end{pmatrix}$, the mapping results in \[\pi_2((x_r))=(x_{r-1}+x_{r})=(\begin{pmatrix}
+            n\\r-1
+        \end{pmatrix}+\begin{pmatrix}
+            n\\r
+        \end{pmatrix})=(\begin{pmatrix}
+            n+1\\r
+        \end{pmatrix}).\]
+    \end{proof}
+
+    \begin{theorem}[Multinomial Theorem]
+        Let $\{a_i\}\in\mathbb{F}$ be a sequence in some commutative ring $\mathbb{F}$. Let $n\in\mathbb{N}$. Then \[(\sum_{i=1}^{k})^n=\sum_{}\begin{pmatrix}
+            n\\r
+        \end{pmatrix}a^r b^{n-r}.\]
+    \end{theorem}
+\end{document}
