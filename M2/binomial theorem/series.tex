@@ -346,8 +346,44 @@
         \end{pmatrix}\] for all $r\in \mathbb{N}_0$. The proof will be left as an exercise.
     \end{proof}
 
+    \begin{theorem}[Newton's binomial theorem]
+        Let $a,b\in\mathbb{F}$ for some commutative ring $\mathbb{F}$ with $\abs*{b}\leq \abs*{a}$. Let $n\in\mathbb{R}$. Then \[(a+b)^n=\sum_{r=0}^{\infty}\begin{pmatrix}
+            n\\r
+        \end{pmatrix}a^r b^{n-r}\] where $\begin{pmatrix}
+            n\\r
+        \end{pmatrix}$ is the real binomial coefficient defined above.
+    \end{theorem}
+
+    \begin{remark}
+        When the dicussion comes to real field, we need to take care of the radius of convergence.
+    \end{remark}
+
     \subsection{Complex binomial theorem}
 
     So far, the product definition for binomial coefficient holds for every real powers. However, some hocus-pocus are needed to verify the condition holds also for complex powers.
+
+    \begin{definition}[Imaginary unit]
+        Define $i$ the imaginary unit such that $i^2=-1$.
+    \end{definition}
+
+    \begin{lemma}[Euler's formula for complex numbers]
+        $e^{i\theta}=\cos{\theta}+i\sin{\theta}$.
+    \end{lemma}
+
+    \begin{definition}[Complex conjugate]
+        Let $z=x+yi\in\mathbb{C}$, then $\bar{z}=x-yi$ is the conjugate of $z$.
+    \end{definition}
+
+    \begin{definition}[Modulus]
+        The modulus of $z$ is defined by $\abs*{z}=\sqrt{z\bar{z}}=\sqrt{x^2+y^2}$.
+    \end{definition}
+
+    Our first step to complex binomial is the agreement of complex power, so we shall consider what does it mean by $x^i$. It could be a complex decomposition of $\cos{\ln{x}}+i\sin{\ln{x}}$ follows from Euler's, but it is meaningless to our construction. It should be very soon to observe that \[[(a+b)^i]^i=(a+b)^{-1}\] which we may come up with the decomposition of negative powers. Recall from Pascal's triangle that \[(a+b)^{-1}=(1,-1,1,-1,\dots)\in V,\] we are interested in the following proposition.
+
+    \begin{proposition}
+        Let $V(i)=\mathbb{C}^{\infty}$ be an infinite vector space. There is an inclusion $V\hookrightarrow V(i)$, and a mapping $\phi_2:V(i)\to V(i)$ such that \[(\phi_2\circ \phi_2)((a+b))=(a+b)^{-1}.\]
+    \end{proposition}
+
+    The first part is trivial, by identity mapping. The second part is our main goal, which is the hardest to claim. Notice the mapping is nontrivial, since \[(\phi_2^{-1}\circ \phi_2^{-1})((a+b))=(a+b)^{-1}.\]
 
 \end{document}
