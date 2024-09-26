@@ -60,18 +60,20 @@
     \end{align*}
     which is quite fascinating to find the pattern on coefficients $(1)\to(1,1)\to(1,2,1)\to(1,3,3,1)\to\cdots$ which could be built nicely by adding the $k$-th number to $(k+1)$-th number.
 
-    Let us write it properly. Define a representation space \[R:=\{(x_i):x_i\neq 0\textrm{ for finitely many }i\in\mathbb{Z}\}\] such that $1=:(\dots,0,1,0,0,\dots)\in R$. Define a mapping $\pi_2:R\to R$ by $(x_{i+1})\mapsto (x_i+x_{i+1})$ for all $i\in\mathbb{Z}$. This would be an analogue of Pascal's triangle in $R$.
+    Let us write it properly. Define an infiite vector space \[V:=\mathbb{R}^{\infty}=\{(x_i):i\in\mathbb{N}_0\}\] such that the identity element $e=:(1,0,0,\dots)\in V$. Define a mapping $\pi_2:V\to V$ by $(x_{i+1})\mapsto (x_i+x_{i+1})$ for all $i\in\mathbb{N}_0$. This would be an analogue of Pascal's triangle in $\mathbb{N}_0$.
 
     \begin{example}
-        We may consider $(a+b)^0\equiv(\dots,0,1,0,0,\dots)$ as a starting point, and perform $\pi_2$ to increase its power.\begin{align*}
-            (a+b)&=\pi_2((a+b)^0)=(\dots,0,1,1,0,0,\dots)\\
-            (a+b)^2&=\pi_2((a+b)^1)=(\dots,0,1,2,1,0,0,\dots)\\
-            (a+b)^3&=\pi_2((a+b)^2)=(\dots,0,1,3,3,1,0,0,\dots)\\
-            (a+b)^4&=\pi_2((a+b)^3)=(\dots,0,1,4,6,4,1,0,0,\dots)\\
+        We may consider $(a+b)^0=e$ as a starting point, and perform $\pi_2$ to increase its power.\begin{align*}
+            (a+b)&=\pi_2(e)=(1,1,0,0,\dots)\\
+            (a+b)^2&=\pi_2((a+b))=(1,2,1,0,0,\dots)\\
+            (a+b)^3&=\pi_2((a+b)^2)=(1,3,3,1,0,0,\dots)\\
+            (a+b)^4&=\pi_2((a+b)^3)=(1,4,6,4,1,0,0,\dots)\\
             &\vdots
         \end{align*}
         This indeed matches the intuition of writing the coefficients of expansion.
     \end{example}
+
+    It would be a convenience to figure out an inverse mapping for $\pi_2$. Denote the inverse mapping by $\pi_2^{-1}$. Notice \[\pi_2\circ\pi_2^{-1}=\id,\] which we could see \[(x_{i+1})\overset{\pi_2}{\mapsto}(x_i+x_{i+1})\overset{\pi_2^{-1}}{\mapsto} (x_{i+1})\] and that \[x_{i+1}=(x_{i+1}+x_{i})-x_i\] which implies \[\pi_2^{-1}(x_{i+1})=x_{i+1}-\pi_2^{-1}(x_i).\] Inductively, we obtain \[\pi_2^{-1}(x_{i+1})=x_{i+1}-x_i+x_{i-1}-\cdots+(-1)^i x_1+(-1)^{i+1}.\]
 
     \subsection{Binomial and multinomial theorem}
 
@@ -132,9 +134,90 @@
         \end{pmatrix}).\]
     \end{proof}
 
+    In addition, we could verify on Pascal's triangle that \[\pi_2^{-1}(\begin{pmatrix}
+        n\\r
+    \end{pmatrix})=\begin{pmatrix}
+        n-1\\r
+    \end{pmatrix}.\]
+
     \begin{theorem}[Multinomial Theorem]
-        Let $\{a_i\}\in\mathbb{F}$ be a sequence in some commutative ring $\mathbb{F}$. Let $n\in\mathbb{N}$. Then \[(\sum_{i=1}^{k})^n=\sum_{}\begin{pmatrix}
-            n\\r
-        \end{pmatrix}a^r b^{n-r}.\]
+        Let $\{a_i\}\in\mathbb{F}$ be a sequence in some commutative ring $\mathbb{F}$. Let $n\in\mathbb{N}$. Then \[(\sum_{i=1}^{k}a_i)^n=\sum_{r_1+r_2+\cdots+r_k=n}\begin{pmatrix}
+            n\\r_1
+        \end{pmatrix}\begin{pmatrix}
+            n-r_1\\r_2
+        \end{pmatrix}\cdots\begin{pmatrix}
+            n-r_1-r_2-\cdots-r_{k-2}\\r_{k-1}
+        \end{pmatrix}a_1^{r_1}a_2^{r_2}\cdots a_k^{r_k}.\]
+        In addition, we will define \[\begin{pmatrix}
+            n\\r_1,r_2,\dots,r_k
+        \end{pmatrix}:=\frac{n!}{r_1!r_2!\cdots r_k!}=\begin{pmatrix}
+            n\\r_1
+        \end{pmatrix}\begin{pmatrix}
+            n-r_1\\r_2
+        \end{pmatrix}\cdots\begin{pmatrix}
+            n-r_1-r_2-\cdots-r_{k-2}\\r_{k-1}
+        \end{pmatrix}\] so that the writing can be simplified to \[(\sum_{i=1}^{k}a_i)^n=\sum_{\sum_{i=1}^{k}r_i=n; r_i\geq 0}\begin{pmatrix}
+            n\\r_1,r_2,\dots,r_k
+        \end{pmatrix}\prod_{i=1}^k a_i^{r_k}.\]
     \end{theorem}
+
+    \begin{proof}
+        Proof is left as an exercise:\begin{enumerate}
+            \item Show, by mathematical induction, that \[\frac{n!}{r_1!r_2!\cdots r_k!}=\begin{pmatrix}
+                n\\r_1
+            \end{pmatrix}\begin{pmatrix}
+                n-r_1\\r_2
+            \end{pmatrix}\cdots\begin{pmatrix}
+                n-r_1-r_2-\cdots-r_{k-2}\\r_{k-1}
+            \end{pmatrix}\] is true for all positive integer $n$ with $\sum_{i=1}^{k}r_k=n$.
+            \item Prove, with the help of (a) and Mathematical induction, that \[(\sum_{i=1}^{k}a_i)^n=\sum_{\sum_{i=1}^{k}r_i=n; r_i\geq 0}\begin{pmatrix}
+                n\\r_1,r_2,\dots,r_k
+            \end{pmatrix}\prod_{i=1}^k a_i^{r_k}\] is true for all positive integer $n$ with $\sum_{i=1}^{k}r_k=n$.
+        \end{enumerate}
+    \end{proof}
+
+    \subsection{Binomial Theorem with negative indices}
+
+    Suppose we are going to extend the binomial theorem to negative indices, in polynomial forms, so that the theorem would be easier to be generalized. We identify $\begin{pmatrix}
+        n\\r
+    \end{pmatrix}$ to the entries discussed in Pascal's triangles, so whenever $r<0$, we set $\begin{pmatrix}
+        n\\r
+    \end{pmatrix}=0$. To agree with negative indices, we suspend the constraints when $r>n$. Consider the expansions \begin{align*}
+        \frac{1}{1+x}&=\sum_{r=0}^{\infty}(-1)^r x^r=(1,-1,1,-1,\dots)=((-1)^r)\in V,\\
+        \frac{1}{(1+x)^2}&=(-1)\derivative{x}\sum_{r=0}^{\infty}(-1)^r x^r=\sum_{r=0}^{\infty}(-1)^{r} \begin{pmatrix}
+            r+1\\1
+        \end{pmatrix}x^r=(1,-2,3,-4,\dots)\in V,\\
+        \frac{1}{(1+x)^3}&=\frac{1}{-2}\derivative{x}\sum_{r=0}^{\infty}(-1)^{r} (r+1)x^r=\sum_{r=0}^{\infty}(-1)^{r} \begin{pmatrix}
+            r+2\\2
+        \end{pmatrix}x^r=(1,-3,6,-10,\dots)\in V
+    \end{align*}
+
+    It is valid to develop the theory on this type of binomials dropping the restriction on $x$, as we can apply it to $p$-adic series with satisfactory. It is now the question of how to relate these coefficients to the defined parenthesis symbol. Notice the representation still satisfy Pascal's triangle: \[\pi_2((1,-1,1,-1,\dots))=(1,0,0,\dots)=e\in V,\] which provides us an intuition to compute the negative binomial coefficients.
+
+    \begin{theorem}
+        Given $n>0$ and $r\geq 0$ are integers, we have the negative binomial coefficient as \[\begin{pmatrix}
+            -n\\r
+        \end{pmatrix}=(-1)^r\begin{pmatrix}
+            r+n-1\\r
+        \end{pmatrix}\]
+    \end{theorem}
+
+    \begin{proof}
+        Let $n>0$ and $r\geq 0$ be integers. If $\begin{pmatrix}
+            -n\\r
+        \end{pmatrix}=(-1)^r\begin{pmatrix}
+            r+n-1\\r
+        \end{pmatrix}$ is true, then \[\pi_2^{-1}(\begin{pmatrix}
+            -n\\r
+        \end{pmatrix})=(-1)^r \pi_2^{-1}(\begin{pmatrix}
+            r+n-1\\r
+        \end{pmatrix})=(-1)^r \begin{pmatrix}
+            r+n-2\\r
+        \end{pmatrix}=\begin{pmatrix}
+            -(n+1)\\r
+        \end{pmatrix}.\]
+    \end{proof}
+
+    To facilitate the coefficient symbol, let's pay attention to how the assignment can be modified. We shall 
+
 \end{document}
