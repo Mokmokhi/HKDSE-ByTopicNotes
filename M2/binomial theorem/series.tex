@@ -28,7 +28,7 @@
 \newcommand{\id}{\mathtt{id}}
 \newcommand{\cis}[1]{\mathrm{cis}({#1})}
 
-\newtheorem{definition}{Definition}[section]
+\newtheorem*{definition}{Definition}
 \newtheorem*{theorem}{Theorem}
 \newtheorem*{corollary}{Corollary}
 \newtheorem*{lemma}{Lemma}
@@ -176,7 +176,7 @@
         \end{enumerate}
     \end{proof}
 
-    \subsection{Binomial Theorem with negative indices}
+    \subsection{Binomial Theorem with integral indices}
 
     Suppose we are going to extend the binomial theorem to negative indices, in polynomial forms, so that the theorem would be easier to be generalized. We identify $\begin{pmatrix}
         n\\r
@@ -218,6 +218,136 @@
         \end{pmatrix}.\]
     \end{proof}
 
-    To facilitate the coefficient symbol, let's pay attention to how the assignment can be modified. We shall 
+    To facilitate the coefficient symbol, let's pay attention to how the assignment can be modified. We shall see \[(-1)^r\begin{pmatrix}
+        r+n-1\\r
+    \end{pmatrix}=(-1)^r\frac{(r+n-1)(r+n-2)\cdots(n)}{r!}=\frac{1}{r!}\prod_{k=(-n)-r+1}^{-n}k\] and simultaneously the natural number version is \[\begin{pmatrix}
+        n\\r
+    \end{pmatrix}=\frac{(n)(n-1)\cdots(n-r+1)}{r!}=\frac{1}{r!}\prod_{k=(n)-r+1}^{n}k.\]
+
+    This observation awares us the similarity between positive and negative version, with the quoted difference in both expressions. Let's conclude the observation as a lemma.
+
+    \begin{lemma}
+        Let $n\in\mathbb{Z}$ and $r>0$. The integral binomial coefficient is given by \[\begin{pmatrix}
+            n\\r
+        \end{pmatrix}=\frac{1}{r!}\prod_{k=n-r+1}^{n}k.\]
+    \end{lemma}
+
+    However, the externity of $r=0$ is not a good habit for the construction. Instead, we may restate the computation in the following form.
+
+    \begin{theorem}[Integral binomial coefficients]
+        Let $n\in\mathbb{Z}$ and $r\geq 0$. The integral binomial coefficient is given by \[\begin{pmatrix}
+            n\\r
+        \end{pmatrix}=\frac{1}{r!(n-r)}\prod_{k=n-r}^{n}k=\frac{1}{r!(n-r)}\prod_{k=0}^r (n-k),\] and $\displaystyle\begin{pmatrix}
+            n\\n
+        \end{pmatrix}:=\lim_{r\to n}\begin{pmatrix}
+            n\\r
+        \end{pmatrix}$.
+    \end{theorem}
+
+    \begin{remark}
+        It is satisfying to see when $r>n>0$, all $\begin{pmatrix}
+            n\\r
+        \end{pmatrix}=0$; when $n=r>0$ or $r=0$, both follows the definition in natural binomial case.
+    \end{remark}
+
+    This small change in writing prohibits the error in calculating $\begin{pmatrix}
+        n\\0
+    \end{pmatrix}$ for all $n\in\mathbb{Z}$. We shall follow this form in the process to real case. We conclude this part by restating the integral binomial theorem.
+
+    \begin{theorem}[Integral binomial theorem]
+        Let $a,b\in\mathbb{F}$ for some commutative ring $\mathbb{F}$. Let $n\in\mathbb{Z}$. Then \[(a+b)^n=\sum_{r=0}^{\infty}\begin{pmatrix}
+            n\\r
+        \end{pmatrix}a^r b^{n-r}\] where $\begin{pmatrix}
+            n\\r
+        \end{pmatrix}$ is the integral binomial coefficient defined above.
+    \end{theorem}
+
+    \begin{proof}
+        By direct computation, \[(a+b)^n=a^n\sum_{r=0}^{\infty}\begin{pmatrix}
+            n\\r
+        \end{pmatrix}(\frac{b}{a})^r=\sum_{r=0}^{\infty}\begin{pmatrix}
+            n\\r
+        \end{pmatrix}a^{n-r}b^r.\]
+        Results followed by symmetry in factorization.
+    \end{proof}
+
+    \subsection{Real binomial theorem}
+
+    We herefore generalize the writing to real indices. We first find the form of rational exponents by considering the square root of polynomials (following Newton's division):\[(1+x)^{\frac{1}{2}}=1+\frac{1}{2}x-\frac{1}{8}x^2+\frac{1}{16}x^3-\frac{5}{128}x^4+\cdots\] and identify \[\begin{pmatrix}
+        \frac{1}{2}\\1
+    \end{pmatrix}=\frac{1}{2}, \begin{pmatrix}
+        \frac{1}{2}\\2
+    \end{pmatrix}=-\frac{1}{8}, \begin{pmatrix}
+        \frac{1}{2}\\3
+    \end{pmatrix}=\frac{1}{16}, \begin{pmatrix}
+        \frac{1}{2}\\4
+    \end{pmatrix}=-\frac{5}{128},\dots\]
+
+    Now, we propose the following:
+
+    \begin{proposition}
+        The square-root expansion coefficient is given by \[\begin{pmatrix}
+            \frac{1}{2}\\r
+        \end{pmatrix}=\frac{1}{r!(\frac{1}{2}-r)}\prod_{k=0}^{r}(\frac{1}{2}-k).\] 
+    \end{proposition}
+
+    \begin{proof}
+        Note that in an exapnsion multiplication, we have if \[(\sum_{i=0}^{\infty}a_i x^i)(\sum_{i=0}^{\infty}b_i x^i)=\sum_{i=0}^{\infty}c_i x^i,\] then \[c_k=\sum_{i+j=k;i\geq 0,j\geq 0}a_i b_j.\]
+
+        Therefore, \begin{align*}
+            \sum_{i=0}^r\begin{pmatrix}
+                \frac{1}{2}\\i
+            \end{pmatrix}\begin{pmatrix}
+                \frac{1}{2}\\r-i
+            \end{pmatrix}&=\begin{pmatrix}
+                1\\r
+            \end{pmatrix}
+        \end{align*}
+        which is the Vandermonde's identity. We need to show this is true for the proposed formula: \begin{align*}
+            \sum_{i=0}^r\begin{pmatrix}
+                \frac{1}{2}\\i
+            \end{pmatrix}\begin{pmatrix}
+                \frac{1}{2}\\r-i
+            \end{pmatrix}&=\sum_{i=0}^{r}\frac{1}{i!(r-i)!(\frac{1}{2}-i)(\frac{1}{2}-r+i)}\prod_{k=0}^{i}(\frac{1}{2}-k)\prod_{k=0}^{r-i}(\frac{1}{2}-k)\\
+            &=\sum_{i=0}^{r}\frac{1}{4^r}\frac{(2i)!(2r-2i)!}{(i!)^2[(r-i)!]^2}\frac{1}{(-1)^r}\\
+            &=\sum_{i=0}^{r}\begin{pmatrix}
+                2i\\i
+            \end{pmatrix}\begin{pmatrix}
+                2r-2i\\r-i
+            \end{pmatrix}(\frac{-1}{4})^r\\
+            &=\begin{cases}
+                1,&r=0,1\\
+                0,&\textrm{otherwise}
+            \end{cases}.
+        \end{align*}
+    \end{proof}
+
+    \begin{theorem}[Rational binomial coefficient]
+        Let $p\in\mathbb{Q}$. The rational binomial expansion coefficient is given by \[\begin{pmatrix}
+            p\\r
+        \end{pmatrix}=\frac{1}{r!(p-r)}\prod_{k=0}^{r}(p-k).\]
+    \end{theorem}
+
+    And the symbol extend to real powers by taking the convergent series $(p_n)$ to $q\notin\mathbb{Q}$, and the completion by the limit process gives the result:
+
+    \begin{theorem}[Real binomial coefficient]
+        Let $x\in\mathbb{R}$. The real binomial expansion coefficient is given by \[\begin{pmatrix}
+            x\\r
+        \end{pmatrix}=\frac{1}{r!(x-r)}\prod_{k=0}^{r}(x-k).\]
+    \end{theorem}
+
+    \begin{proof}
+        The proof would be obvious by choosing for all $x\in \mathbb{R}$ there is a pair $p<q\in\mathbb{Q}$ such that $p<x<q$, and show that \[\begin{pmatrix}
+            p\\r
+        \end{pmatrix}\leq\begin{pmatrix}
+            x\\r
+        \end{pmatrix}\leq\begin{pmatrix}
+            q\\r
+        \end{pmatrix}\] for all $r\in \mathbb{N}_0$. The proof will be left as an exercise.
+    \end{proof}
+
+    \subsection{Complex binomial theorem}
+
+    So far, the product definition for binomial coefficient holds for every real powers. However, some hocus-pocus are needed to verify the condition holds also for complex powers.
 
 \end{document}
