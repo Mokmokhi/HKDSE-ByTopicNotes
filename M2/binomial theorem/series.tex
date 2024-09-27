@@ -38,7 +38,7 @@
 \newtheorem*{example}{Example}
 \newtheorem*{axiom}{Axiom}
 
-\newtheorem{exercise}{Essential Practice}[section]
+\newtheorem*{exercise}{Try}
 \newenvironment{solution}{\begin{snugshade*} \underline{\textbf{Solution.}} \par}{\hfill \textit{\dots end of solution} \end{snugshade*}}
 \renewenvironment{proof}[1][Proof]{\begin{snugshade*} \underline{\textit{{#1}.}}\\}{\hfill \qedsymbol \end{snugshade*}}
 
@@ -60,7 +60,7 @@
     \end{align*}
     which is quite fascinating to find the pattern on coefficients $(1)\to(1,1)\to(1,2,1)\to(1,3,3,1)\to\cdots$ which could be built nicely by adding the $k$-th number to $(k+1)$-th number.
 
-    Let us write it properly. Define an infiite vector space \[V:=\mathbb{R}^{\infty}=\{(x_i):i\in\mathbb{N}_0\}\] such that the identity element $e=:(1,0,0,\dots)\in V$. Define a mapping $\pi_2:V\to V$ by $(x_{i+1})\mapsto (x_i+x_{i+1})$ for all $i\in\mathbb{N}_0$. This would be an analogue of Pascal's triangle in $\mathbb{N}_0$.
+    Let us write it properly. Define an infiite vector space \[V:=\mathbb{R}^{\infty}=\{(x_i):i\in\mathbb{N}_0\}\] such that the identity element $e=:(1,0,0,\dots)\in V$. Define a mapping $\pi_2:V\to V$ by $(x_{i+1})\mapsto (x_i+x_{i+1})$ for all $i\in\mathbb{N}_0$. This would be an analogue of Pascal's triangle in $V$.
 
     \begin{example}
         We may consider $(a+b)^0=e$ as a starting point, and perform $\pi_2$ to increase its power.\begin{align*}
@@ -381,9 +381,31 @@
     Our first step to complex binomial is the agreement of complex power, so we shall consider what does it mean by $x^i$. It could be a complex decomposition of $\cos{\ln{x}}+i\sin{\ln{x}}$ follows from Euler's, but it is meaningless to our construction. It should be very soon to observe that \[[(a+b)^i]^i=(a+b)^{-1}\] which we may come up with the decomposition of negative powers. Recall from Pascal's triangle that \[(a+b)^{-1}=(1,-1,1,-1,\dots)\in V,\] we are interested in the following proposition.
 
     \begin{proposition}
-        Let $V(i)=\mathbb{C}^{\infty}$ be an infinite vector space. There is an inclusion $V\hookrightarrow V(i)$, and a mapping $\phi_2:V(i)\to V(i)$ such that \[(\phi_2\circ \phi_2)((a+b))=(a+b)^{-1}.\]
+        Let $V(i)=\mathbb{C}^{\infty}$ be an infinite vector space. There is an inclusion $V\hookrightarrow V(i)$, and a mapping $\phi_2:V(i)\to V(i)$ such that \[(\phi_2\circ \phi_2)((a+b))=(a+b)^{-1}=\pi_2^{-1}((a+b)).\]
     \end{proposition}
 
     The first part is trivial, by identity mapping. The second part is our main goal, which is the hardest to claim. Notice the mapping is nontrivial, since \[(\phi_2^{-1}\circ \phi_2^{-1})((a+b))=(a+b)^{-1}.\]
+
+    Moreover, from Euler's formula, we may observe the following: Let $z=x+yi$, then \[(a+b)^{x+yi}=(a+b)^x (a+b)^{iy} \implies \begin{pmatrix}
+        z\\r
+    \end{pmatrix}=\sum_{j=0}^{r}\begin{pmatrix}
+        x\\j
+    \end{pmatrix}\begin{pmatrix}
+        iy\\j
+    \end{pmatrix}\] following Vandermonde's identity, if we would like to extend the binomial coefficient from real to complex power.
+
+    \begin{exercise}
+        Show the above relation.
+    \end{exercise}
+
+    Here comes to the computation part. We will make use of matrices, although the vector space is infinite, every entry is a projection with a partial vector. Define $\phi_2(x)$ by $x\mapsto Ax$, where $A\in\mathbb{C}^{\infty\times\infty}$ is an infinite matrix. We need to find the matrix $A$ such that \[A^2=\begin{bmatrix}
+        1&0&0&0&\cdots\\
+        -1&1&0&0&\cdots\\
+        1&-1&1&0&\cdots\\
+        -1&1&-1&1&\cdots\\
+        \vdots&\vdots&\vdots&\vdots&\ddots
+    \end{bmatrix}.\]
+
+    Since the matrix have nonzero norm, it is suggested to try 
 
 \end{document}
