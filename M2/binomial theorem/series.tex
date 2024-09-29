@@ -347,7 +347,7 @@
     \end{proof}
 
     \begin{theorem}[Newton's binomial theorem]
-        Let $a,b\in\mathbb{F}$ for some commutative ring $\mathbb{F}$ with $\abs*{b}\leq \abs*{a}$. Let $n\in\mathbb{R}$. Then \[(a+b)^n=\sum_{r=0}^{\infty}\begin{pmatrix}
+        Let $a,b\in\mathbb{F}$ for some commutative ring $\mathbb{F}$ with $\abs*{b}< \abs*{a}$. Let $n\in\mathbb{R}$. Then \[(a+b)^n=\sum_{r=0}^{\infty}\begin{pmatrix}
             n\\r
         \end{pmatrix}a^r b^{n-r}\] where $\begin{pmatrix}
             n\\r
@@ -378,34 +378,14 @@
         The modulus of $z$ is defined by $\abs*{z}=\sqrt{z\bar{z}}=\sqrt{x^2+y^2}$.
     \end{definition}
 
-    Our first step to complex binomial is the agreement of complex power, so we shall consider what does it mean by $x^i$. It could be a complex decomposition of $\cos{\ln{x}}+i\sin{\ln{x}}$ follows from Euler's, but it is meaningless to our construction. It should be very soon to observe that \[[(a+b)^i]^i=(a+b)^{-1}\] which we may come up with the decomposition of negative powers. Recall from Pascal's triangle that \[(a+b)^{-1}=(1,-1,1,-1,\dots)\in V,\] we are interested in the following proposition.
+    Our first step to complex binomial is the agreement of complex power, so we shall consider what does it mean by $x^i$. It could be a complex decomposition of $\cos{\ln{x}}+i\sin{\ln{x}}$ follows from Euler's, but it is meaningless to our construction. We now revisit some tools.
 
     \begin{proposition}
-        Let $V(i)=\mathbb{C}^{\infty}$ be an infinite vector space. There is an inclusion $V\hookrightarrow V(i)$, and a mapping $\phi_2:V(i)\to V(i)$ such that \[(\phi_2\circ \phi_2)((a+b))=(a+b)^{-1}=\pi_2^{-1}((a+b)).\]
+        Let $z,w\in\mathbb{C}$, then \[\derivative{z^w}{z}=wz^{w-1}.\]
     \end{proposition}
 
-    The first part is trivial, by identity mapping. The second part is our main goal, which is the hardest to claim. Notice the mapping is nontrivial, since \[(\phi_2^{-1}\circ \phi_2^{-1})((a+b))=(a+b)^{-1}.\]
-
-    Moreover, from Euler's formula, we may observe the following: Let $z=x+yi$, then \[(a+b)^{x+yi}=(a+b)^x (a+b)^{iy} \implies \begin{pmatrix}
-        z\\r
-    \end{pmatrix}=\sum_{j=0}^{r}\begin{pmatrix}
-        x\\j
-    \end{pmatrix}\begin{pmatrix}
-        iy\\j
-    \end{pmatrix}\] following Vandermonde's identity, if we would like to extend the binomial coefficient from real to complex power.
-
-    \begin{exercise}
-        Show the above relation.
-    \end{exercise}
-
-    Here comes to the computation part. We will make use of matrices, although the vector space is infinite, every entry is a projection with a partial vector. Define $\phi_2(x)$ by $x\mapsto Ax$, where $A\in\mathbb{C}^{\infty\times\infty}$ is an infinite matrix. We need to find the matrix $A$ such that \[A^2=\begin{bmatrix}
-        1&0&0&0&\cdots\\
-        -1&1&0&0&\cdots\\
-        1&-1&1&0&\cdots\\
-        -1&1&-1&1&\cdots\\
-        \vdots&\vdots&\vdots&\vdots&\ddots
-    \end{bmatrix}.\]
-
-    Since the matrix have nonzero norm, it is suggested to try 
+    \begin{proof}
+        By the definition of differentiation, we have 
+    \end{proof}
 
 \end{document}
