@@ -44,7 +44,7 @@
 
 \begin{document}
     \begin{abstract}
-        To whom it may concern, it is always interesting the generalize notions from real-valued case to complex-valued case. The content will cover multinomial theorem and Taylor's expansion. It would be nice whenever there is add-on from the viewpoint of functional analysis.
+        To whom it may concern, it is always interesting the generalize notions from real-valued case to complex-valued case. The content will cover binomial series with complex power. It would be nice whenever there is add-on from the viewpoint of functional analysis.
     \end{abstract}
 
     \section{Binomial theorem}
@@ -172,7 +172,7 @@
             \end{pmatrix}\] is true for all positive integer $n$ with $\sum_{i=1}^{k}r_k=n$.
             \item Prove, with the help of (a) and Mathematical induction, that \[(\sum_{i=1}^{k}a_i)^n=\sum_{\sum_{i=1}^{k}r_i=n; r_i\geq 0}\begin{pmatrix}
                 n\\r_1,r_2,\dots,r_k
-            \end{pmatrix}\prod_{i=1}^k a_i^{r_k}\] is true for all positive integer $n$ with $\sum_{i=1}^{k}r_k=n$.
+            \end{pmatrix}\prod_{i=1}^k a_i^{r_k}\] is true for all positive integer $n$.
         \end{enumerate}
     \end{proof}
 
@@ -286,39 +286,43 @@
                 1\\r
             \end{pmatrix}
         \end{align*}
-        which is the Vandermonde's identity. We need to show this is true for the proposed formula: Suppose $r\geq 2$, and assume \[2\begin{pmatrix}
-            \frac{1}{2}\\r-1
-        \end{pmatrix}+\sum_{i=1}^{r-2}\begin{pmatrix}
-            \frac{1}{2}\\i
-        \end{pmatrix}\begin{pmatrix}
-            \frac{1}{2}\\r-1-i
-        \end{pmatrix}=0,\] then notice \begin{align*}
-            \sum_{i=0}^r\begin{pmatrix}
-                \frac{1}{2}\\i
-            \end{pmatrix}\begin{pmatrix}
-                \frac{1}{2}\\r-i
-            \end{pmatrix}&=\frac{2r-1}{2r}\begin{pmatrix}
-                \frac{1}{2}\\r-1
-            \end{pmatrix}+\frac{1}{2}\sum_{i=1}^{r-1}(\frac{1}{r}-\frac{1}{r-i})\begin{pmatrix}
-                \frac{1}{2}\\i
-            \end{pmatrix}\begin{pmatrix}
-                \frac{1}{2}\\r-1-i
-            \end{pmatrix}\\
-            &=\frac{2r-1}{2r}\begin{pmatrix}
-                \frac{1}{2}\\r-1
-            \end{pmatrix}+\frac{1}{2r}\sum_{i=1}^{r-1}\begin{pmatrix}
-                \frac{1}{2}\\i
-            \end{pmatrix}\begin{pmatrix}
-                \frac{1}{2}\\r-1-i
-            \end{pmatrix}-\frac{1}{1-2r}\sum_{i=1}^{r-1}\begin{pmatrix}
-                \frac{1}{2}\\i
-            \end{pmatrix}\begin{pmatrix}
-                \frac{1}{2}\\r-i
-            \end{pmatrix}\\
+        which is the Vandermonde's identity. We need to show this is true for the proposed formula: Suppose $r\geq 2$, and assume \[\sum_{i=0}^{r}\begin{pmatrix}
+            r\\i
+        \end{pmatrix}\frac{\prod_{k=0}^{i-1}(\frac{1}{2}-k)\prod_{k=0}^{r-i-1}(\frac{1}{2}-k)}{r!}=0,\] indeed, for $r=2$, it can be verified directly that \[\sum_{i=0}^{2}\begin{pmatrix}
+            2\\i
+        \end{pmatrix}\frac{\prod_{k=0}^{i-1}(\frac{1}{2}-k)\prod_{k=0}^{2-i-1}(\frac{1}{2}-k)}{2!}=0,\] then notice \begin{align*}
+            &\sum_{i=0}^{r+1}\begin{pmatrix}
+                r+1\\i
+            \end{pmatrix}\frac{\prod_{k=0}^{i-1}(\frac{1}{2}-k)\prod_{k=0}^{r-i}(\frac{1}{2}-k)}{(r+1)!}\\
+            &=\sum_{i=0}^{r+1}\begin{pmatrix}
+                r\\i
+            \end{pmatrix}\frac{\prod_{k=0}^{i}(\frac{1}{2}-k)\prod_{k=0}^{r-i-1}(\frac{1}{2}-k)}{(r+1)!}+\sum_{i=0}^{r}\begin{pmatrix}
+                r\\i
+            \end{pmatrix}\frac{\prod_{k=0}^{i-1}(\frac{1}{2}-k)\prod_{k=0}^{r-i}(\frac{1}{2}-k)}{(r+1)!}\\
+            &=\frac{1-r}{1+r}\sum_{i=0}^{r}\begin{pmatrix}
+                r\\i
+            \end{pmatrix}\frac{\prod_{k=0}^{i-1}(\frac{1}{2}-k)\prod_{k=0}^{r-i-1}(\frac{1}{2}-k)}{r!}\\
             &=0
         \end{align*}
-        
+        Hence, we may conclude the proposition by applying the inductive result to \[\sum_{i=0}^{r}\frac{1}{i!(r-i)!}\prod_{k=0}^{i-1}(\frac{1}{2}-k)\prod_{k=0}^{r-i-1}(\frac{1}{2}-k)=\sum_{i=0}^{r}\begin{pmatrix}
+            r\\i
+        \end{pmatrix}\frac{\prod_{k=0}^{i-1}(\frac{1}{2}-k)\prod_{k=0}^{r-i-1}(\frac{1}{2}-k)}{r!}=\begin{cases}
+            1,&r=0,1,\\
+            0,&r\geq 2
+        \end{cases}.\]
     \end{proof}
+
+    \begin{proposition}
+        The $n$-th root expansion coefficient is given by \[\begin{pmatrix}
+            \frac{1}{n}\\r
+        \end{pmatrix}=\frac{1}{r!}\prod_{k=0}^{r-1}(\frac{1}{n}-k).\] 
+    \end{proposition}
+
+    \begin{proof}
+        Proof is similar to the previous proposition. It is left as an exercise for readers.
+    \end{proof}
+
+    Here comes the crucial extent on binomial coefficients.
 
     \begin{theorem}[Rational binomial coefficient]
         Let $p\in\mathbb{Q}$. The rational binomial expansion coefficient is given by \[\begin{pmatrix}
@@ -470,6 +474,78 @@
     \end{proposition}
 
     \begin{proof}
-        
+        If the expression $(1+z)^i$ is assumed to be expansive with $\abs*{z}<1$, we will immediately see \[(1+z)^{x+yi}=(1+z)^x(1+z)^{yi}\implies \begin{pmatrix}
+            x+yi\\r
+        \end{pmatrix}=\sum_{k=0}^{r}\begin{pmatrix}
+            x\\k
+        \end{pmatrix}\begin{pmatrix}
+            yi\\r-k
+        \end{pmatrix}.\]
     \end{proof}
+
+    Therefore, we make our last proposition to conclude the binomial series over complex powers.
+
+    \begin{theorem}
+        Given $z,\alpha \in\mathbb{C}$ with $\abs{z}<1$, the binomial series \[\sum_{r=0}^{\infty}\begin{pmatrix}
+            \alpha\\r
+        \end{pmatrix}z^r\] converges with radius of convergence $R=1$, and \[(1+z)^\alpha=\sum_{r=0}^{\infty}\begin{pmatrix}
+            \alpha\\r
+        \end{pmatrix}z^r.\]
+    \end{theorem}
+
+    \begin{proof}
+        First, we have \[\lim_{n\to\infty}\abs{\begin{pmatrix}
+            \alpha\\n+1
+        \end{pmatrix}/\begin{pmatrix}
+            \alpha\\n
+        \end{pmatrix}}=\lim_{n\to\infty}\abs{\frac{\alpha-n}{n+1}z}=\abs{z}<1.\] Then by ratio test, the series converges with radius of convergence $R=1$.
+
+        Second, let $g(z)=\sum_{r=0}^{\infty}\begin{pmatrix}
+            \alpha\\r
+        \end{pmatrix}z^r$, then \begin{align*}
+            g'(z)&=\sum_{r=0}^{\infty}(r+1)\begin{pmatrix}
+                \alpha\\r+1
+            \end{pmatrix}z^r=\alpha\sum_{r=0}^{\infty}\begin{pmatrix}
+                \alpha-1\\r
+            \end{pmatrix}z^r\\
+            (1+z)g'(z)&=\alpha\sum_{r=0}^{\infty}\begin{pmatrix}
+                \alpha-1\\r
+            \end{pmatrix}z^r+\alpha\sum_{r=1}^{\infty}\begin{pmatrix}
+                \alpha-1\\r-1
+            \end{pmatrix}z^{r}\\
+            &=\alpha+\alpha\sum_{r=1}^{\infty}\begin{pmatrix}
+                \alpha\\r
+            \end{pmatrix}z^r\\
+            &=\alpha g(z).
+        \end{align*}
+        Then \[g'(z)=\frac{\alpha g(z)}{1+z}.\] Let $h(z)=\frac{g(z)}{(1+z)^\alpha}$, then \[h'(z)=\frac{(1+z)^\alpha g'(z)-\alpha(1+z)^{\alpha-1}g(z)}{(1+z)^{2\alpha}}=\frac{(1+z)g'(z)-\alpha g(z)}{(1+z)^{\alpha+1}}=0\] which concludes $g(z)=k(1+z)^{\alpha}$.
+
+        Therefore, by the fact that $g(0)=1$, we have $k=1$, it follows \[(1+z)^\alpha=g(z)=\sum_{r=0}^{\infty}\begin{pmatrix}
+            \alpha\\r
+        \end{pmatrix}z^r.\]
+    \end{proof}
+
+    We conclude everything by the theorem:
+
+    \begin{theorem}[Newton's binomial theorem]
+        Let $z,w\in\mathbb{C}$ with $\abs{w}<\abs{z}$. Let $\alpha\in\mathbb{C}$. Then \[(z+w)^\alpha=\sum_{n=0}^{\infty}\begin{pmatrix}
+            \alpha\\n
+        \end{pmatrix}z^{\alpha-n}b^n,\] where $\begin{pmatrix}
+            \alpha\\n
+        \end{pmatrix}=\displaystyle\frac{1}{n!}\prod_{k=0}^{n-1}(\alpha-k)$ is the complex binomial coefficient defined before.
+    \end{theorem}
+
+    \section*{Ending}
+
+    It is quite interesting to review binomial theorem in such a way. This article might be a guidance for me in the future, which I have dealt with these concepts throughout the learning process:\begin{enumerate}
+        \item Binomial series;
+        \item Taylor series and Maclaurine series;
+        \item Convolution on series;
+        \item Holomorphic functions (although I make no attention here, it is it the principle assumption on complex powers);
+        \item Complex analysis (of course, this covers analytic functions).
+    \end{enumerate}
+
+    Hope this is fruitful enough in telling the story about Newton's generalization of binomial series, and be valuable to most secondary students who are interested in Mathematics, as an extension on the discussion of binomial theorem.
+
+    Very thanks to Mathginics posting a hinge on binomial series, and 0.5mins as a guidance on proving the convergence on binomial series, and online notes about binomial series (Math 311, Theory of Functions of a Complex Variable, University of Alberta, Spring 2014). Hope everyone is enjoying.
 \end{document}
