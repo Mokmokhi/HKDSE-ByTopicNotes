@@ -224,24 +224,12 @@
         n\\r
     \end{pmatrix}=\frac{(n)(n-1)\cdots(n-r+1)}{r!}=\frac{1}{r!}\prod_{k=(n)-r+1}^{n}k.\]
 
-    This observation awares us the similarity between positive and negative version, with the quoted difference in both expressions. Let's conclude the observation as a lemma.
-
-    \begin{lemma}
-        Let $n\in\mathbb{Z}$ and $r>0$. The integral binomial coefficient is given by \[\begin{pmatrix}
-            n\\r
-        \end{pmatrix}=\frac{1}{r!}\prod_{k=n-r+1}^{n}k.\]
-    \end{lemma}
-
-    However, the externity of $r=0$ is not a good habit for the construction. Instead, we may restate the computation in the following form.
+    This observation awares us the similarity between positive and negative version, with the quoted difference in both expressions. Let's conclude the observation as a theorem.
 
     \begin{theorem}[Integral binomial coefficients]
         Let $n\in\mathbb{Z}$ and $r\geq 0$. The integral binomial coefficient is given by \[\begin{pmatrix}
             n\\r
-        \end{pmatrix}=\frac{1}{r!(n-r)}\prod_{k=n-r}^{n}k=\frac{1}{r!(n-r)}\prod_{k=0}^r (n-k),\] and $\displaystyle\begin{pmatrix}
-            n\\n
-        \end{pmatrix}:=\lim_{r\to n}\begin{pmatrix}
-            n\\r
-        \end{pmatrix}$.
+        \end{pmatrix}=\frac{1}{r!}\prod_{k=n-r+1}^{n}k=\frac{1}{r!}\prod_{k=0}^{r-1} (n-k).\]
     \end{theorem}
 
     \begin{remark}
@@ -250,14 +238,10 @@
         \end{pmatrix}=0$; when $n=r>0$ or $r=0$, both follows the definition in natural binomial case.
     \end{remark}
 
-    This small change in writing prohibits the error in calculating $\begin{pmatrix}
-        n\\0
-    \end{pmatrix}$ for all $n\in\mathbb{Z}$. We shall follow this form in the process to real case. We conclude this part by restating the integral binomial theorem.
-
     \begin{theorem}[Integral binomial theorem]
-        Let $a,b\in\mathbb{F}$ for some commutative ring $\mathbb{F}$. Let $n\in\mathbb{Z}$. Then \[(a+b)^n=\sum_{r=0}^{\infty}\begin{pmatrix}
+        Let $a,b\in\mathbb{F}$ and $\abs*{b}<\abs*{a}$ for some commutative ring $\mathbb{F}$. Let $n\in\mathbb{Z}$. Then \[(a+b)^n=\sum_{r=0}^{\infty}\begin{pmatrix}
             n\\r
-        \end{pmatrix}a^r b^{n-r}\] where $\begin{pmatrix}
+        \end{pmatrix}a^{n-r} b^{r}\] where $\begin{pmatrix}
             n\\r
         \end{pmatrix}$ is the integral binomial coefficient defined above.
     \end{theorem}
@@ -268,7 +252,6 @@
         \end{pmatrix}(\frac{b}{a})^r=\sum_{r=0}^{\infty}\begin{pmatrix}
             n\\r
         \end{pmatrix}a^{n-r}b^r.\]
-        Results followed by symmetry in factorization.
     \end{proof}
 
     \subsection{Real binomial theorem}
@@ -288,11 +271,11 @@
     \begin{proposition}
         The square-root expansion coefficient is given by \[\begin{pmatrix}
             \frac{1}{2}\\r
-        \end{pmatrix}=\frac{1}{r!(\frac{1}{2}-r)}\prod_{k=0}^{r}(\frac{1}{2}-k).\] 
+        \end{pmatrix}=\frac{1}{r!}\prod_{k=0}^{r-1}(\frac{1}{2}-k).\] 
     \end{proposition}
 
     \begin{proof}
-        Note that in an exapnsion multiplication, we have if \[(\sum_{i=0}^{\infty}a_i x^i)(\sum_{i=0}^{\infty}b_i x^i)=\sum_{i=0}^{\infty}c_i x^i,\] then \[c_k=\sum_{i+j=k;i\geq 0,j\geq 0}a_i b_j.\]
+        Note that in an expansion multiplication, we have if \[(\sum_{i=0}^{\infty}a_i x^i)(\sum_{i=0}^{\infty}b_i x^i)=\sum_{i=0}^{\infty}c_i x^i,\] then \[c_k=\sum_{i+j=k;i\geq 0,j\geq 0}a_i b_j.\]
 
         Therefore, \begin{align*}
             \sum_{i=0}^r\begin{pmatrix}
@@ -303,23 +286,38 @@
                 1\\r
             \end{pmatrix}
         \end{align*}
-        which is the Vandermonde's identity. We need to show this is true for the proposed formula: \begin{align*}
+        which is the Vandermonde's identity. We need to show this is true for the proposed formula: Suppose $r\geq 2$, and assume \[2\begin{pmatrix}
+            \frac{1}{2}\\r-1
+        \end{pmatrix}+\sum_{i=1}^{r-2}\begin{pmatrix}
+            \frac{1}{2}\\i
+        \end{pmatrix}\begin{pmatrix}
+            \frac{1}{2}\\r-1-i
+        \end{pmatrix}=0,\] then notice \begin{align*}
             \sum_{i=0}^r\begin{pmatrix}
                 \frac{1}{2}\\i
             \end{pmatrix}\begin{pmatrix}
                 \frac{1}{2}\\r-i
-            \end{pmatrix}&=\sum_{i=0}^{r}\frac{1}{i!(r-i)!(\frac{1}{2}-i)(\frac{1}{2}-r+i)}\prod_{k=0}^{i}(\frac{1}{2}-k)\prod_{k=0}^{r-i}(\frac{1}{2}-k)\\
-            &=\sum_{i=0}^{r}\frac{1}{4^r}\frac{(2i)!(2r-2i)!}{(i!)^2[(r-i)!]^2}\frac{1}{(-1)^r}\\
-            &=\sum_{i=0}^{r}\begin{pmatrix}
-                2i\\i
+            \end{pmatrix}&=\frac{2r-1}{2r}\begin{pmatrix}
+                \frac{1}{2}\\r-1
+            \end{pmatrix}+\frac{1}{2}\sum_{i=1}^{r-1}(\frac{1}{r}-\frac{1}{r-i})\begin{pmatrix}
+                \frac{1}{2}\\i
             \end{pmatrix}\begin{pmatrix}
-                2r-2i\\r-i
-            \end{pmatrix}(\frac{-1}{4})^r\\
-            &=\begin{cases}
-                1,&r=0,1\\
-                0,&\textrm{otherwise}
-            \end{cases}.
+                \frac{1}{2}\\r-1-i
+            \end{pmatrix}\\
+            &=\frac{2r-1}{2r}\begin{pmatrix}
+                \frac{1}{2}\\r-1
+            \end{pmatrix}+\frac{1}{2r}\sum_{i=1}^{r-1}\begin{pmatrix}
+                \frac{1}{2}\\i
+            \end{pmatrix}\begin{pmatrix}
+                \frac{1}{2}\\r-1-i
+            \end{pmatrix}-\frac{1}{1-2r}\sum_{i=1}^{r-1}\begin{pmatrix}
+                \frac{1}{2}\\i
+            \end{pmatrix}\begin{pmatrix}
+                \frac{1}{2}\\r-i
+            \end{pmatrix}\\
+            &=0
         \end{align*}
+        
     \end{proof}
 
     \begin{theorem}[Rational binomial coefficient]
@@ -362,30 +360,116 @@
 
     So far, the product definition for binomial coefficient holds for every real powers. However, some hocus-pocus are needed to verify the condition holds also for complex powers.
 
-    \begin{definition}[Imaginary unit]
-        Define $i$ the imaginary unit such that $i^2=-1$.
+    Our first step to complex binomial is the agreement of complex power, so we shall consider what does it mean by $x^i$. It could be a complex decomposition of $\cos{\ln{x}}+i\sin{\ln{x}}$ follows from Euler's, but it is meaningless to our construction. 
+
+    Let us refind some of the useful tools.
+
+    \begin{definition}[The Gamma Function]
+        Let $z\in\mathbb{C}$, and define $\Gamma:\mathbb{C}\setminus(-\mathbb{N}_0)\to\mathbb{C}$ as \[\Gamma(z)=\int_{0}^{\infty}t^{z-1}e^{-t}dt.\] The defined function is called \textbf{the Gamma function}.
     \end{definition}
 
-    \begin{lemma}[Euler's formula for complex numbers]
-        $e^{i\theta}=\cos{\theta}+i\sin{\theta}$.
-    \end{lemma}
+    Notice the properties of Gamma function:\begin{itemize}
+        \item For $z\in\mathbb{C}$, $\Gamma(z)=(z-1)\Gamma(z-1)$;
+        \item For $n\in\mathbb{N}$, $\Gamma(n)=(n-1)!$;
+        \item $\Gamma(1)=1=0!$.
+    \end{itemize}
 
-    \begin{definition}[Complex conjugate]
-        Let $z=x+yi\in\mathbb{C}$, then $\bar{z}=x-yi$ is the conjugate of $z$.
+    These properties put $\Gamma$ to be a generalized factorial function, and we will later substitute $x!$ by $\Gamma(x+1)$.
+
+    Another useful tool for us is the following.
+
+    \begin{definition}[The Beta Function]
+        Let $z,w\in\mathbb{C}$, and define $B:\mathbb{C}\times\mathbb{C}\to \mathbb{C}$ as \[B(z,w)=\int_0^1 t^{z-1}(1-t)^{w-1}dt.\] The defined function is called \textbf{the beta function}.
     \end{definition}
 
-    \begin{definition}[Modulus]
-        The modulus of $z$ is defined by $\abs*{z}=\sqrt{z\bar{z}}=\sqrt{x^2+y^2}$.
-    \end{definition}
+    There is a fascinating relationship between $B$ and $\Gamma$ leading us to find our conclusion on complex binomial coefficient.
 
-    Our first step to complex binomial is the agreement of complex power, so we shall consider what does it mean by $x^i$. It could be a complex decomposition of $\cos{\ln{x}}+i\sin{\ln{x}}$ follows from Euler's, but it is meaningless to our construction. We now revisit some tools.
+    \begin{theorem}
+        Let $z,w\in\mathbb{C}\setminus(-\mathbb{N}_0)$, the following holds: \[B(z,w)=\frac{\Gamma(z)\Gamma(w)}{\Gamma(z+w)}\]
+    \end{theorem}
+
+    \begin{proof}
+        We start from multiplying $\Gamma(z+w)$ on both sides, which turns our deduction into showing $\Gamma(z+w)B(z,w)=\Gamma(z)\Gamma(w)$.\begin{align*}
+            \Gamma(z)\Gamma(w)&=(\int_{0}^{\infty}t^{z-1}e^{-t}dt)(\int_{0}^{\infty}s^{w-1}e^{-s}ds)\\
+            &=\int_{(0,\infty)\times(0,\infty)}t^{z-1}s^{w-1}e^{-t-s}dtds
+        \end{align*}
+        Here put $t=su$, then $u\in(0,\infty)$,\begin{align*}
+            \Gamma(z)\Gamma(w)&=\int_{(0,\infty)\times(0,\infty)}(su)^{z-1}s^{w-1}e^{-s(u-1)}sdu ds\\
+            &=\int_{0}^{\infty}(\int_{0}^{\infty}s^{z+w-1}e^{-s(u+1)}ds)u^{z-1}du\\
+            &=\int_{0}^{\infty}(\int_{0}^{\infty}s^{z+w-1}e^{-s}ds)\frac{u^{z-1}}{(1+u)^{z+w}}du\\
+            &=\Gamma(z+w)\int_{0}^{\infty}\frac{u^{z-1}}{(1+u)^{z+w}}du
+        \end{align*}
+        Substituting $v=\frac{u}{1+u}$, we have $v\in(0,1)$, \begin{align*}
+            \int_{0}^{\infty}\frac{u^{z-1}}{(1+u)^{z+w}}du&=\int_{0}^{1}v^{z-1}(1-v)^{w+1}(1-v)^{-2}dv\\
+            &=B(z,w)
+        \end{align*}
+        Hence, we conclude \[B(z,w)=\frac{\Gamma(z)\Gamma(w)}{\Gamma(z+w)}\] for all $z,w\in\mathbb{C}\setminus(-\mathbb{N}_0)$.
+    \end{proof}
+
+    By the theorem, we may immediately observe that \[\begin{pmatrix}
+        \alpha\\r
+    \end{pmatrix}=\frac{\Gamma(\alpha+1)}{\Gamma(r+1)\Gamma(\alpha-r+1)}=\frac{1}{r B(r,\alpha-r+1)},\] which is well-defined for $r>0$.
+
+    We also notice the general binomial coefficient satisfies our fundamental properties about binomial expansion.
 
     \begin{proposition}
-        Let $z,w\in\mathbb{C}$, then \[\derivative{z^w}{z}=wz^{w-1}.\]
+        Let $\alpha\in\mathbb{C}$ and $r\in\mathbb{N}$, the following holds:
+        \begin{enumerate}
+            \item $\begin{pmatrix}
+                \alpha\\r
+            \end{pmatrix}=\dfrac{\alpha-r+1}{r}\begin{pmatrix}
+                \alpha\\r-1
+            \end{pmatrix}$
+            \item $\begin{pmatrix}
+                \alpha\\r
+            \end{pmatrix}=\begin{pmatrix}
+                \alpha\\\alpha-r
+            \end{pmatrix}$;
+            \item $\begin{pmatrix}
+                \alpha\\r-1
+            \end{pmatrix}+\begin{pmatrix}
+                \alpha\\r
+            \end{pmatrix}=\begin{pmatrix}
+                \alpha+1\\r
+            \end{pmatrix}$.
+        \end{enumerate}
     \end{proposition}
 
     \begin{proof}
-        By the definition of differentiation, we have 
+        \begin{enumerate}
+            \item $\begin{pmatrix}
+                \alpha\\r
+            \end{pmatrix}=\dfrac{\Gamma(\alpha+1)}{\Gamma(r+1)\Gamma(\alpha-r+1)}=\dfrac{(n-r+1)\Gamma(\alpha+1)}{r\Gamma(r)\Gamma(\alpha-r+2)}=\dfrac{n-r+1}{r}\begin{pmatrix}
+                \alpha\\r-1
+            \end{pmatrix}$.
+            \item $\begin{pmatrix}
+                \alpha\\r
+            \end{pmatrix}=\dfrac{\Gamma(\alpha+1)}{\Gamma(r+1)\Gamma(\alpha-r+1)}=\dfrac{\Gamma(\alpha+1)}{\Gamma((\alpha-r)+1)\Gamma(\alpha-(\alpha-r)+1)}=\begin{pmatrix}
+                \alpha\\\alpha-r
+            \end{pmatrix}$.
+            \item $\begin{pmatrix}
+                \alpha\\r
+            \end{pmatrix}+\begin{pmatrix}
+                \alpha\\r-1
+            \end{pmatrix}=\dfrac{[(\alpha-r+1)+r]\Gamma(\alpha+1)}{r\Gamma(r)\Gamma(\alpha-r+1)}=\dfrac{\Gamma(\alpha+2)}{\Gamma(r+1)\Gamma(\alpha-r+1)}=\begin{pmatrix}
+                \alpha+1\\r
+            \end{pmatrix}$.
+        \end{enumerate}
     \end{proof}
 
+    We also prove one result that brought our intuition on $(1+x)^i$.
+
+    \begin{proposition}
+        The Vandermonde's identity holds for complex binomial coefficient: \[\begin{pmatrix}
+            x+yi\\r
+        \end{pmatrix}=\sum_{k=0}^{r}\begin{pmatrix}
+            x\\k
+        \end{pmatrix}\begin{pmatrix}
+            yi\\r-k
+        \end{pmatrix}.\]
+    \end{proposition}
+
+    \begin{proof}
+        
+    \end{proof}
 \end{document}
