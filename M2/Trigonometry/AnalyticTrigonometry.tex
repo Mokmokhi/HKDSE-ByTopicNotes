@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{color,amsmath,amssymb,amsthm,physics}
+\usepackage{graphicx,float}
+\usepackage{physics}
+\usepackage{pgfplots}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{xcolor}
+
+\graphicspath{ {../images/} }
+
+\definecolor{shadecolor}{RGB}{220,220,220}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[HL]{A short course on Expansion}
+\fancyhf[HR]{\rightmark}
+\fancyhf[CF]{\thepage}
+\fancyhf[FL]{\copyright Mok Owen 2024}
+
+\newcommand{\innerprod}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\id}{\mathtt{id}}
+\newcommand{\cis}[1]{\mathrm{cis}({#1})}
+
+\newtheorem*{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{example}{Example}
+\newtheorem*{axiom}{Axiom}
+
+\newtheorem*{exercise}{Try}
+\newenvironment{solution}{\begin{snugshade*} \underline{\textbf{Solution.}} \par}{\hfill \textit{\dots end of solution} \end{snugshade*}}
+\renewenvironment{proof}[1][Proof]{\begin{snugshade*} \underline{\textit{{#1}.}}\\}{\hfill \qedsymbol \end{snugshade*}}
+
+\begin{document}
+    \begin{abstract}
+        Usually we discuss about trigonometry with geometry sense, however, it would be quite interesting to discuss trigonometry with series and calculus. We shall call it mathematical analysis.
+    \end{abstract}
+
+    \section*{Defining trigonometric functions}
+
+    Let $\mathbb{C}$ be the set of complex numbers, and $V=(\mathbb{C}^n,+,\cdot)$ be the $n$-dimensional complex vector space, where $+:\mathbb{C}\times\mathbb{C}\to\mathbb{C}$ and $\cdot:\mathbb{C}\times\mathbb{C}\to\mathbb{C}$ are component-wise addition and multiplication respectively. Define a metric on $V$ by $d(z,w):=\norm*{z-w}$ implicitly as a metric induced by norm, so that a metric (open) ball of radius $\varepsilon\geq 0$ centered at $z_0$, in the universal meaning, is the set \[B(z_0,\varepsilon):=\{z\in V\mid d(z,z_0)<\varepsilon\}.\] A metric sphere of radius $\varepsilon\geq 0$ centered at $z_0$ is the set \[S(z_0,\varepsilon):=\{z\in V\mid d(z,z_0)=\varepsilon\}.\] A metric (closed) ball of radius $\varepsilon\geq 0$ centered at $z_0$ is the set \[\overline{B}(z_0,\varepsilon):=\{z\in V\mid d(z,z_0)\leq\varepsilon\}.\]
+    
+    Recall some of the meaning:
+
+    \begin{definition}[Projection]
+        A \textbf{projection} is a function $P:\mathbb{C}^n\to\mathbb{C}^m\times \mathbb{C}^{n-m}$, where $m\leq n$, such that $P\circ P = P$. We will denote $P^k$ to be the $k$-th composition $P^k=P\circ P^{k-1}$. In particular, $P^k=P$ for $k\in\mathbb{N}$.
+    \end{definition}
+
+    \begin{definition}[The Sine Function]
+        Define the \textbf{pseudo-sine function} $PS_m:\mathbb{C}^n\to\mathbb{C}^m\times \mathbb{C}^{n-m}$ be a projection from $\mathbb{C}^n$ to $\mathbb{C}^m\times\{0\}^{n-m}$. In particular, for $z=(z_1,z_2,\dots,z_m,z_{m+1},\dots,z_n)\in V$,  \[PS_m(z):=(z_1,z_2,\dots,z_m,0,\dots,0).\]
+    \end{definition}
+
+    It is not hard to check the pseudo-sine function is indeed a projection on $\mathbb{C}^m$, and we may observe that:
+
+    \begin{proposition}
+        The pseudo-sine function satisfies the following properties:
+        \begin{itemize}
+            \item Given the component-wise $PS_m(z+w)=PS_m(z)+PS_m(w)$.
+            \item $PS_m(zw)=PS_m(z)PS_m(w)$.
+        \end{itemize}
+    \end{proposition}
+
+    \begin{proof}
+        Both equality follows from the component-wise operation on $V$.
+    \end{proof}
+
+    The inner product on $V$ can be constructed from the usual sense of complex group. We may define $\innerprod{\cdot}{\cdot}:V\times V\to\mathbb{R}$ by the mapping \[\innerprod{x}{y}=\sum x_i \overline{y}_i\]
+\end{document}
