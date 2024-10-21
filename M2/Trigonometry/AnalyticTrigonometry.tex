@@ -19,7 +19,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhf[HL]{A short course on Expansion}
+\fancyhf[HL]{Pseudo-Trigonometry}
 \fancyhf[HR]{\rightmark}
 \fancyhf[CF]{\thepage}
 \fancyhf[FL]{\copyright Mok Owen 2024}
@@ -57,7 +57,7 @@
         A \textbf{projection} is a function $P:\mathbb{C}^n\to\mathbb{C}^m\times \mathbb{C}^{n-m}$, where $m\leq n$, such that $P\circ P = P$. We will denote $P^k$ to be the $k$-th composition $P^k=P\circ P^{k-1}$. In particular, $P^k=P$ for $k\in\mathbb{N}$.
     \end{definition}
 
-    \begin{definition}[The Sine Function]
+    \begin{definition}[The Pseudo-sine Function]
         Define the \textbf{pseudo-sine function} $PS_m:\mathbb{C}^n\to\mathbb{C}^m\times \mathbb{C}^{n-m}$ be a projection from $\mathbb{C}^n$ to $\mathbb{C}^m\times\{0\}^{n-m}$. In particular, for $z=(z_1,z_2,\dots,z_m,z_{m+1},\dots,z_n)\in V$,  \[PS_m(z):=(z_1,z_2,\dots,z_m,0,\dots,0).\]
     \end{definition}
 
@@ -75,5 +75,25 @@
         Both equality follows from the component-wise operation on $V$.
     \end{proof}
 
-    The inner product on $V$ can be constructed from the usual sense of complex group. We may define $\innerprod{\cdot}{\cdot}:V\times V\to\mathbb{R}$ by the mapping \[\innerprod{x}{y}=\sum x_i \overline{y}_i\]
+    The inner product on $V$ can be constructed from the usual sense of complex group. We define $\innerprod{\cdot}{\cdot}:V\times V\to\mathbb{C}$ by the mapping \[\innerprod{x}{y}=\sum x_i \overline{y}_i\] where $x_i$ denotes the $i$-th component of $x$ and $\overline{y}_i$ denotes the complex conjugate of $y_i$. The inner product is \begin{itemize}
+        \item Positive definite: $\innerprod{x}{x}\geq 0$, equality holds if and only if $x=0$.
+        \item Conjugate symmetric: $\innerprod{x}{y}=\overline{\innerprod{y}{x}}$.
+        \item Sesquilinearity: $\innerprod{ax+by}{z}=a\innerprod{x}{z}+b\innerprod{y}{z}$, $\innerprod{x}{ay+bz}=\overline{a}\innerprod{x}{y}+\overline{b}\innerprod{x}{z}$. 
+    \end{itemize}
+    The inner porduct induced a norm $\norm*{\cdot}=\norm*{\cdot}_V:=(\innerprod{p}{p})^{1/2}$ on $V$ satisfies \begin{itemize}
+        \item Absolute homogeneity: For $\alpha\in\mathbb{C}$, $\norm*{\alpha x}=\abs{\alpha}\norm*{x}$.
+        \item Triangle inequality: $\norm*{x+y}\leq \norm*{x}+\norm*{y}$.
+    \end{itemize}
+
+    Hence, we define the argument as the following:
+
+    \begin{definition}[Argument of a point]
+        Let $p\in V$. Define the argument of $p$, denoted by $\arg{p}$, in the following manner: \[\arg_m{p}:=\frac{\norm*{PS_m(p)}}{\norm{p-PS_m(p)}}.\]
+    \end{definition}
+
+    Analogous to the real-valued case, $\arg_m{p}$ here acts like the tangent function, but not really the same. The argument takes ratio against orthogonal space, still, not a meaningful value to use.
+
+    \begin{definition}[Exact argument of a point]
+        Let $p\in V$. The exact argument of a point $p$ is the function \[\arg{p}:=(\arg_1{p},\arg_2{p},\dots,\arg_{n-1}{p})\] which is a mapping $\mathbb{C}^n\to\mathbb{R}^{n-1}$.
+    \end{definition}
 \end{document}
